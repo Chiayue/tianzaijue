@@ -10,7 +10,7 @@ function modifiy_shopmall_tszc_1:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_tszc_1:IsHidden()
-	return false
+	return true
 end
 function modifiy_shopmall_tszc_1:OnCreated( kv )
 	if IsServer(  ) then
@@ -42,6 +42,11 @@ function modifiy_shopmall_tszc_1:OnAbilityExecuted( params )
 	if ability:GetAbilityName() =="ability_hero_2" then return end
 	local abilityname = string.sub(ability:GetAbilityName(),1,6)
 	if abilityname == "yxtfjn" then return end
+	if caster:GetPrimaryAttribute() ~= 2 then
+    	if RollPercent(70) then
+			return nil
+		end
+    end
 	local point = ability:GetCursorPosition()
 	local target = ability:GetCursorTarget()
 	local num  = 0
@@ -75,13 +80,6 @@ function modifiy_shopmall_tszc_1:OnAbilityExecuted( params )
 	local bfb = 0.6
 	if caster:HasModifier("modifier_yxtfjn_bsrxt") then
     	bfb = bfb *0.5
-    end
-    if caster:GetPrimaryAttribute() ~= 2 then
-    	if num<2 then
-    		num = 0
-    	else
-    		num = num-2
-    	end
     end
 	TimerUtil.createTimerWithDelay(0.4,function()
     	if num > 0 then

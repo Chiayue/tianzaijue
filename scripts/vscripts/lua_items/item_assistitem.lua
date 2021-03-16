@@ -185,7 +185,7 @@ function item_assistitem:OnRefresh( kv )
 end
 
 function item_assistitem:GetAttributes()
-  return MODIFIER_ATTRIBUTE_MULTIPLE
+  return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 

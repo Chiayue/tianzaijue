@@ -32,10 +32,14 @@ function blgj( keys )
 	if caster.blgj_radius == nil then
 		caster.blgj_radius = 0
 	end
+	i = i + caster.blgj_damage
 	radius = radius + caster.blgj_radius
 	local mj = caster:GetAgility()
 	local baseDamage2 = baseDamage + caster.blgj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x *shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.blgj_time == nil then
@@ -47,7 +51,7 @@ function blgj( keys )
 	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.blgj_multiple + 1 )
 	end	
-
+	
 	local units = FindAlliesInRadiusExdd(caster,point,radius)
 	local p1 = ParticleManager:CreateParticle("particles/mjjcjn_blgj_kid/invoker_kid_forge_spirit_ambient.vpcf", PATTACH_POINT_FOLLOW, target)
 	ParticleManager:SetParticleControl(p1, 0, point) -- Origin

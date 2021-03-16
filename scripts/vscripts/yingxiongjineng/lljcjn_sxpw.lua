@@ -17,7 +17,10 @@ function sxpw( keys )
 		caster.sxpw_damage = 0
 	end
 	local baseDamage2 = baseDamage + caster.sxpw_baseDamage
-	damage = (ll * (i+caster.sxpw_damage) + baseDamage2 ) * x
+	local damage = (ll * (i+caster.sxpw_damage) + baseDamage2 ) * x
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	if caster.sxpw_multiple == nil then
 		caster.sxpw_multiple = 0
 	end

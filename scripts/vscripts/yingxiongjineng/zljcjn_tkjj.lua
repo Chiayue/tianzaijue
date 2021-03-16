@@ -25,7 +25,12 @@ function tkjj( keys )
 		multiple = caster.tkjj_multiple +multiple
 	end	
 	local damage = (zl * i + baseDamage2 ) * x * multiple * shbs
-
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageMf(caster,target,ability,damage)
 
 

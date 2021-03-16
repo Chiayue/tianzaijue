@@ -155,6 +155,9 @@ function ldjsh( keys )
 	i = i + caster.ldj_damage
 	local baseDamage2 = baseDamage + caster.ldj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * multiple  * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 		
 	ApplyDamageEx(caster,target,ability,damage)
 

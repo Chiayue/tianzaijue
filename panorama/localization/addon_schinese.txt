@@ -50,7 +50,25 @@
 	"item_net_prefix_g4_q6"	"烈日 · "
 	"item_net_prefix_g4_q7"	"星河 · "
 	
+	"item_net_prefix_g6_q1"	"武曲 · "
+	"item_net_prefix_g6_q2"	"武曲 · "
+	"item_net_prefix_g6_q3"	"廉贞 · "
+	"item_net_prefix_g6_q4"	"禄存 · "
+	"item_net_prefix_g6_q5"	"巨门 · "
+	"item_net_prefix_g6_q6"	"破军 · "
+	"item_net_prefix_g6_q7"	"贪狼 · "
+	
+	"item_net_prefix_g7_q1"	"喜 · "
+	"item_net_prefix_g7_q2"	"喜 · "
+	"item_net_prefix_g7_q3"	"怒 · "
+	"item_net_prefix_g7_q4"	"哀 · "
+	"item_net_prefix_g7_q5"	"乐 · "
+	"item_net_prefix_g7_q6"	"惊 · "
+	"item_net_prefix_g7_q7"	"恐 · "
+	
 	//添加新的属性以后，要到随机装备的tooltip界面对应的js中添加对应的属性以保证顺序，否则不会显示
+	"item_attribute_format_common"	"{s:attr}<Panel class='AttrRange' /><Panel class='EnhanceValue' />"
+	
 	"item_attribute_ll"	"力量：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_zl"	"智力：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_mj"	"敏捷：<font color=\"#ffffff\">+{s:value}</font>"
@@ -89,6 +107,7 @@
 	"item_attribute_lqsj"	"冷却缩减：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fjsh"	"附加伤害：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_zzsh"	"最终伤害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_tswsh"	"投射物伤害：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_smz"	"生命值：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_smhf"	"生命回复：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_bgjyglhx" "被攻击20%概率回复血量：<font color=\"#ffffff\">+{s:value}</font>"
@@ -159,7 +178,8 @@
 	"info_game_over_prompt3"	"<font color='#e85411'>请尽快击杀灾厄领主，否则游戏将在 3 秒后结束</font>"
 	"info_game_over_prompt2"	"<font color='#e73c13'>请尽快击杀灾厄领主，否则游戏将在 2 秒后结束</font>"
 	"info_game_over_prompt1"	"<font color='#e61015'>请尽快击杀灾厄领主，否则游戏将在 1 秒后结束</font>"
-	"info_game_finish_prompt"	"恭喜通关，游戏即将结束"
+	"info_game_finish_prompt_win"	"恭喜通关，游戏结算中，请稍候..."
+	"info_game_finish_prompt_lose"	"游戏失败，游戏结算中，请稍候..."
 	"info_survival_boss_coming"	"灾厄领主即将到来，请注意"
 	"info_exceedthelimit"	"使用超过限制"
 	"info_exceedthecooltime"	"物品CD中"
@@ -170,6 +190,7 @@
 	"info_operation_overtime"	"操作超时，请稍后再试"
 	"info_operation_faild"	"未知错误，请稍后再试"
 	"info_operation_busy"	"操作频繁，请稍后再试"
+	"info_operation_success"	"操作成功"
 	
 	"error_position_unreachable" "无法到达目标地点"
 	"error_netequip_position" "无法装备到该位置"
@@ -232,19 +253,46 @@
 
 
 	"difficulty_name_23"		"修罗秘境--1阶段"
-	"difficulty_name_23_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:210%<br>结算晶石加成:680%<br>非正常模式掉落5阶强化石数量:1-3个<br>掉落征战钥匙概率:430%"
+	"difficulty_name_23_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:210%<br>结算晶石加成:680%<br>非正常模式掉落5阶强化石数量:1-5个<br>掉落征战钥匙概率:430%"
 	"difficulty_name_24"		"修罗秘境--2阶段"
-	"difficulty_name_24_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:220%<br>结算晶石加成:730%<br>非正常模式掉落5阶强化石数量:3-6个<br>掉落征战钥匙概率:460%"
+	"difficulty_name_24_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:220%<br>结算晶石加成:730%<br>非正常模式掉落5阶强化石数量:5-10个<br>掉落征战钥匙概率:460%"
 	"difficulty_name_25"		"修罗秘境--3阶段"
-	"difficulty_name_25_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:230%<br>结算晶石加成:780%<br>非正常模式掉落5阶强化石数量:6-9个<br>掉落征战钥匙概率:490%"
+	"difficulty_name_25_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:230%<br>结算晶石加成:780%<br>非正常模式掉落5阶强化石数量:10-15个<br>掉落征战钥匙概率:490%"
 	"difficulty_name_26"		"修罗秘境--4阶段"
-	"difficulty_name_26_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:240%<br>结算晶石加成:830%<br>非正常模式掉落5阶强化石数量:9-13个<br>掉落征战钥匙概率:520%"
+	"difficulty_name_26_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:240%<br>结算晶石加成:830%<br>非正常模式掉落5阶强化石数量:15-20个<br>掉落征战钥匙概率:520%"
 	"difficulty_name_27"		"修罗秘境--5阶段"	
-	"difficulty_name_27_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:250%<br>结算晶石加成:880%<br>非正常模式掉落5阶强化石数量:13-17个<br>掉落征战钥匙概率:550%"
+	"difficulty_name_27_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:250%<br>结算晶石加成:880%<br>非正常模式掉落5阶强化石数量:20-25个<br>掉落征战钥匙概率:550%"
 	"difficulty_name_28"		"修罗秘境--6阶段"
-	"difficulty_name_28_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:260%<br>结算晶石加成:930%<br>非正常模式掉落5阶强化石数量:17-22个<br>掉落征战钥匙概率:580%"
+	"difficulty_name_28_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:260%<br>结算晶石加成:930%<br>非正常模式掉落5阶强化石数量:25-30个<br>掉落征战钥匙概率:580%"
 	"difficulty_name_29"		"修罗秘境--7阶段"
-	"difficulty_name_29_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:270%<br>结算晶石加成:980%<br>非正常模式掉落5阶强化石数量:22-28个<br>掉落征战钥匙概率:610%"
+	"difficulty_name_29_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:270%<br>结算晶石加成:980%<br>非正常模式掉落5阶强化石数量:30-40个<br>掉落征战钥匙概率:600%"
+
+
+	"difficulty_name_30"		"修罗禁地--1阶段"
+	"difficulty_name_30_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:280%<br>结算晶石加成:1030%<br>非正常模式掉落6阶强化石数量:1-5个<br>掉落征战钥匙概率:420%"
+	"difficulty_name_31"		"修罗禁地--2阶段"
+	"difficulty_name_31_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:290%<br>结算晶石加成:1080%<br>非正常模式掉落6阶强化石数量:5-10个<br>掉落征战钥匙概率:640%"
+	"difficulty_name_32"		"修罗禁地--3阶段"
+	"difficulty_name_32_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:300%<br>结算晶石加成:1130%<br>非正常模式掉落6阶强化石数量:10-15个<br>掉落征战钥匙概率:660%"
+	"difficulty_name_33"		"修罗禁地--4阶段"
+	"difficulty_name_33_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:310%<br>结算晶石加成:1180%<br>非正常模式掉落6阶强化石数量:15-20个<br>掉落征战钥匙概率:680%"
+	"difficulty_name_34"		"修罗禁地--5阶段"	
+	"difficulty_name_34_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:320%<br>结算晶石加成:1230%<br>非正常模式掉落6阶强化石数量:20-25个<br>掉落征战钥匙概率:700%"
+	"difficulty_name_35"		"修罗禁地--6阶段"
+	"difficulty_name_35_desc"	"掉落存档装备:6阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:330%<br>结算晶石加成:1280%<br>非正常模式掉落6阶强化石数量:25-40个<br>掉落征战钥匙概率:720%"
+
+	"difficulty_name_36"		"净化修罗--1阶段"
+	"difficulty_name_36_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:340%<br>结算晶石加成:1330%<br>非正常模式掉落7阶强化石数量:1-5个<br>掉落征战钥匙概率:740%"
+	"difficulty_name_37"		"净化修罗--2阶段"
+	"difficulty_name_37_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:350%<br>结算晶石加成:1380%<br>非正常模式掉落7阶强化石数量:5-10个<br>掉落征战钥匙概率:760%"
+	"difficulty_name_38"		"净化修罗--3阶段"
+	"difficulty_name_38_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:360%<br>结算晶石加成:1430%<br>非正常模式掉落7阶强化石数量:10-15个<br>掉落征战钥匙概率:780%"
+	"difficulty_name_39"		"净化修罗--4阶段"
+	"difficulty_name_39_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:370%<br>结算晶石加成:1480%<br>非正常模式掉落7阶强化石数量:15-20个<br>掉落征战钥匙概率:800%"
+	"difficulty_name_40"		"净化修罗--5阶段"	
+	"difficulty_name_40_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:380%<br>结算晶石加成:1530%<br>非正常模式掉落7阶强化石数量:20-25个<br>掉落征战钥匙概率:820%"
+	"difficulty_name_41"		"净化修罗--6阶段"
+	"difficulty_name_41_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:390%<br>结算晶石加成:1580%<br>非正常模式掉落7阶强化石数量:25-40个<br>掉落征战钥匙概率:840%"
 
 	
 	"difficulty_mode_drop_down_tooltip"	"<font color='red'>房主</font>可点击选择当前难度的其他<font color='#FFD700'>模式</font>，不同模式会有一些特殊的设定"
@@ -497,13 +545,14 @@
 	"ui_net_equip_action_child_cancel"	"取消"
 	"ui_net_equip_action_enhance"	"强化"
 	"ui_net_equip_action_enhance_tooltip"	"[强化]<br>点击打开 [装备强化] 界面，可以使用 “强化石”对装备进行强化，强化可提升装备的所有属性。"
+	"ui_net_equip_action_save_pos_tooltip"	"[保存位置]<br>点击后可将当前装备位置保存至服务器<br>冷却时间：30s"
 	
 	"ui_attribute_net_equips_destroy_confirm"	"此操作将永久销毁装备，返还 <font color='gold'>{d:reward_jing}</font> 晶石，是否确定？"
 	
 	"ui_net_equip_enhance"	"强化"
 	"ui_net_equip_enhance_tooltip" "将装备拖至此界面后即可使用“强化石”对存档装备进行强化，提升装备属性<br><br>不同品阶、不同品质的装备，可强化次数不同：<br>1阶装备：不可强化<br>2阶装备：<font color=\"#5fc866\">优良=2</font>，<font color=\"#477bff\">稀有=2</font>，<font color=\"#a91ac8\">极品=3</font>，<font color=\"#fe6d15\">史诗=3</font>，<font color=\"#ffbc09\">传奇=4</font>，<font color=\"#d92b2b\">神话=5</font><br>3阶装备：<font color=\"#5fc866\">优良=3</font>，<font color=\"#477bff\">稀有=3</font>，<font color=\"#a91ac8\">极品=4</font>，<font color=\"#fe6d15\">史诗=4</font>，<font color=\"#ffbc09\">传奇=5</font>，<font color=\"#d92b2b\">神话=6</font><br>4阶装备：<font color=\"#5fc866\">优良=4</font>，<font color=\"#477bff\">稀有=4</font>，<font color=\"#a91ac8\">极品=5</font>，<font color=\"#fe6d15\">史诗=5</font>，<font color=\"#ffbc09\">传奇=6</font>，<font color=\"#d92b2b\">神话=7</font><br><br>强化石在<font color='gold'>难5及以上难度的非正常模式中会掉落</font>，也可通过通行证、商城等途径获得<br><br>强化石有品阶，只能使用和装备品阶一致的强化石进行强化。<br>低品阶的强化石可以4:1的比例抵扣高1阶的强化石"
 	"ui_net_equip_enhance_change_value_tooltip"	"装备属性提升比例"
-	"ui_net_equip_enhance_material_tooltip"	"强化材料<br>需要使用和装备品阶一致的强化石作为材料。强化时，如果对应品阶的强化石数量不足，会尝试使用低阶强化进行抵扣。"
+	"ui_net_equip_enhance_material_tooltip"	"强化材料<br>※需要使用和装备品阶一致的强化石作为材料<br>※强化时，如果对应品阶的强化石数量不足，会尝试使用低阶强化进行抵扣。"
 	"ui_net_equip_enhance_material_tooltip_grade"	"{s:grade}阶强化石"
 	"ui_net_equip_enhance_material_count_tooltip"	"持有数量/需求数量"
 	
@@ -989,6 +1038,10 @@
 	"store_item_shopmall_sstone_4_desc"	"可用来强化4阶及以上品阶的存档装备"
 	"store_item_shopmall_sstone_5"	"5阶强化石"
 	"store_item_shopmall_sstone_5_desc"	"可用来强化5阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_6"	"6阶强化石"
+	"store_item_shopmall_sstone_6_desc"	"可用来强化6阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_7"	"7阶强化石"
+	"store_item_shopmall_sstone_7_desc"	"可用来强化7阶及以上品阶的存档装备"
 	
 	"ui_tooltip_suit_not_equip"	"<未装备>"
 
@@ -1043,6 +1096,17 @@
 	"ui_message_boss_taunt_9"	"别送了，再送暴露了"
 	"ui_message_boss_taunt_10"	"好了好了，Q币已经发货了..."
 	"ui_message_boss_taunt_11"	"我还没用力，你怎么就躺下了？"
+	"ui_message_boss_taunt_12"	"血压还稳吗？"
+	"ui_message_boss_taunt_13"	"该去体检了呀..."
+	"ui_message_boss_taunt_14"	"还在刮！"
+	"ui_message_boss_taunt_15"	"你好脆啊~~~"
+	"ui_message_boss_taunt_16"	"就你叫的大声！安静点！！！"
+	"ui_message_boss_taunt_17"	"这个英雄不该这么菜啊..."
+	"ui_message_boss_taunt_18"	"你想长痛还是短痛？"
+	"ui_message_boss_taunt_19"	"哦吼，你的声音呢"
+	"ui_message_boss_taunt_20"	"要不去睡会吧，怪可怜的"
+	"ui_message_boss_taunt_21"	"到点了，到点了"
+	"ui_message_boss_taunt_22"	"刮得有点爽啊"
 	
 	"ui_status_difficulty"	"难度：{s:value}"
 	"ui_status_time"	"游戏时长：{s:value}"
@@ -1100,14 +1164,14 @@
 	"ui_top_actions_ranklist"	"排行榜"	
 	"ui_top_actions_game_finish"	"游戏结算界面"	
 	"ui_top_actions_store"	"商城"
-	"ui_top_actions_config"	"镜头高度"
+	"ui_top_actions_config"	"游戏设置"
 	"ui_top_actions_game_ui_desc"	"游戏功能介绍"
 	"ui_top_actions_game_ui_desc_tooltip"	"点击查看游戏功能介绍"
 	
 	"ui_minimap_action_key"	"钥匙，点击后打开[寻宝]界面"
 	"ui_minimap_action_ability"	"技能秘诀"
 	"ui_minimap_action_drug"	"药剂"
-	"ui_minimap_action_rune"	"符文页"
+	"ui_minimap_action_rune"	"符文"
 	"ui_minimap_action_treasure"	"宝物"
 	"ui_minimap_action_tooltip_own"	"<font color='white'>持有：{d:count}</font>"
 	
@@ -1131,16 +1195,40 @@
 	
 	"ui_config_camera"	"镜头高度"
 	"ui_config_camera_tooltip"	"镜头越高视野越广，但是可能导致卡顿，请酌情设置"
+	"ui_config_boss_taunt"	"关闭BOSS击杀弹幕"
+	"ui_config_boss_taunt_tooltip"	"选中后，将不再显示BOSS击杀玩家后的嘲讽弹幕"
+	"ui_config_bgm"	"关闭背景音乐"
 	
 	"ui_rank_tab_artifact"	"神器榜"
 	"ui_rank_tab_mapexp"	"历练榜"
+	"ui_rank_tab_pass_speed"	"竞速榜"
+	
 	"ui_rank_content_title_rank"	"排名"
 	"ui_rank_content_title_artifact"	"神器"
 	"ui_rank_content_title_score"	"战斗力"
 	"ui_rank_content_title_owner"	"拥有者"
+	"ui_rank_content_title_players"	"玩家"
+	"ui_rank_content_title_difficulty"	"难度"
+	"ui_rank_content_title_game_time"	"通关耗时"
+	"ui_rank_content_title_finish_time"	"通关时间"
 	
 	"ui_loading_qq_group"	"点击加入QQ群："
 	"ui_loading_qq_group_tooltip"	"点击后将暂时离开游戏，打开网页浏览器以加入QQ群<br><br>邀请码互相绑定，推荐进入互邀群。<br>请大家尽量不要在聊天群刷屏互邀，感谢配合！"
+	
+	
+	"ui_rune_title"	"符文"
+	"ui_rune_title_tooltip"	"<font color='gold'>符文</font><br>符文是一些特殊的BUFF，通过使用[符文页]来激活，激活后本局游戏一直有效<br><br><font color='gold'>符文页</font><br>符文页是消耗品，可通过商城、天灾之路等途径获得<br><br><font color='gold'>符文书</font><br>符文书是一个永久凭证，可通过商城、征战钥匙等途径获得。拥有符文书后，每次游戏开局都会自动激活某些符文"
+	"ui_rune_list_title_1"	"基础"
+	"ui_rune_list_title_2"	"中级"
+	"ui_rune_list_title_3"	"高级"
+	"ui_rune_list_title_4"	"超魔"
+	"ui_rune_list_title_5"	"特殊"
+	
+	"ui_rune_use_button"	"使用符文页（{s:count}）"
+	"ui_rune_use_button_tooltip"	"括号内显示的是点击后消耗的数量"
+	"ui_rune_use_count_tooltip"	"已使用次数/最大使用次数"
+	"ui_rune_page_pre"	"上一页"
+	"ui_rune_page_next"	"下一页"
 	
 	//-----------------------------------------UI V2 end----------------------------------------------
 	
@@ -1294,7 +1382,7 @@
 
 	"modifier_bw_4_4_Description"	"主属性提升+150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
 
-	"modifier_bw_4_5_Description"	"攻击距离+500<br/>每次攻击都会击退敌人50距离<br/>并造成当前攻击力 x0.1的纯粹伤害。<br/><font color=\"#ffffff\">（不会击退BOSS）</font><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+	"modifier_bw_4_5_Description"	"攻击距离+500<br/>每次攻击都会击退敌人50距离<br/>并造成当前攻击力 x20的物理伤害。<br/><font color=\"#ffffff\">（不会击退BOSS）</font><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
 
 	"modifier_bw_4_6_Description"	"攻击速度+99、移动速度+50<br/>全属性+6666<br/>魔法抗性+50%<br/>状态抗性+30%<br/>技能增强+99%<br/>攻击力+99%<br/><font color=\"#cfbf81\">4级宝物</font>"
 
@@ -1782,6 +1870,48 @@
 	//"achievement_difficulty_22_1_desc"					""
 	"achievement_difficulty_22_1_bonus"					"天命值+15"
 	//"achievement_difficulty_22_1_bonus_des
+
+
+	"achievement_difficulty_23_1"						"通关N23"
+	//"achievement_difficulty_23_1_desc"					""
+	"achievement_difficulty_23_1_bonus"					"天命值+10"
+	//"achievement_difficulty_23_1_bonus_des
+
+	"achievement_difficulty_24_1"						"通关N24"
+	//"achievement_difficulty_24_1_desc"					""
+	"achievement_difficulty_24_1_bonus"					"附加伤害+15%"
+	//"achievement_difficulty_24_1_bonus_des
+
+
+	"achievement_difficulty_25_1"						"通关N25"
+	//"achievement_difficulty_25_1_desc"					""
+	"achievement_difficulty_25_1_bonus"					"经验加成+15%,金钱加成+15%"
+	//"achievement_difficulty_25_1_bonus_des
+
+
+	"achievement_difficulty_26_1"						"通关N26"
+	//"achievement_difficulty_26_1_desc"					""
+	"achievement_difficulty_26_1_bonus"					"伤害减免+15"
+	//"achievement_difficulty_26_1_bonus_des
+
+
+	"achievement_difficulty_27_1"						"通关N27"
+	//"achievement_difficulty_27_1_desc"					""
+	"achievement_difficulty_27_1_bonus"					"初始杀敌数+1500"
+	//"achievement_difficulty_27_1_bonus_des
+
+
+	"achievement_difficulty_28_1"						"通关N28"
+	//"achievement_difficulty_28_1_desc"					""
+	"achievement_difficulty_28_1_bonus"					"初始给与1本宝物书"
+	//"achievement_difficulty_28_1_bonus_des
+
+
+	"achievement_difficulty_29_1"						"通关N29"
+	//"achievement_difficulty_29_1_desc"					""
+	"achievement_difficulty_29_1_bonus"					"初始给与一本5级天书"
+	//"achievement_difficulty_29_1_bonus_des
+
 
 
 	"achievement_difficulty_5_2"						"通关N5-狂暴模式"

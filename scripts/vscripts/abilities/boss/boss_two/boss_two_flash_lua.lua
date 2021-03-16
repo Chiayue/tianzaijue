@@ -63,9 +63,9 @@ end
 
 
 function boss_two_flash_lua:GetCooldown( nLevel )
-	return self.BaseClass.GetCooldown( self, nLevel )-0.25*GameRules:GetCustomGameDifficulty()
+	return self.BaseClass.GetCooldown( self, nLevel )
 end
 function boss_two_flash_lua:GetCastPoint()
-	return self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.04
+	return self.BaseClass.GetCastPoint( self )
 end
 

@@ -29,7 +29,7 @@ function lypj( keys )
 	if caster.lypj_damage == nil then
 		caster.lypj_damage = 0
 	end
-	
+	i = i + caster.lypj_damage
 	local mj = caster:GetIntellect()
 	local baseDamage2 = baseDamage + caster.lypj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
@@ -41,7 +41,7 @@ function lypj( keys )
 	if caster.lypj_multiple == nil then
 		caster.lypj_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.lypj_multiple + 1 )
 	end	
 
@@ -53,6 +53,9 @@ function lypj( keys )
    		ParticleManager:DestroyParticle(p1,true)          
    	end)
 	--StartSoundEventFromPosition("Hero_Jakiro.LiquidFire",point)--这个是双头龙液体火命中敌人的声音
+	if damage2 > 500000000 then
+		damage2 = 500000000
+	end
 		ApplyDamageMf(caster,target,ability,damage2)	
 			
 	local time = caster.lypj_time	--触发次数
@@ -71,12 +74,15 @@ function lypj( keys )
 			       ParticleManager:DestroyParticle(p1,true)          
 			 end)
 			local multiple = 1
-			if RollPercentage(20) then
+			if RollPercentage(50) then
 				multiple = caster.lypj_multiple +multiple
 			end	
+
 			damage2 = damage * multiple
-		
-				ApplyDamageMf(caster,target,ability,damage2)	
+			if damage2 > 500000000 then
+				damage2 = 500000000
+			end
+			ApplyDamageMf(caster,target,ability,damage2)	
 		
 			time = time - 1
 

@@ -21,15 +21,38 @@ local musics = {
 
 local playing = nil
 
+local playersCloseBGM = {}
+
+local forcePlay = {
+	["tzj.bgm_survival_boss_pre"] = true,
+	["dsadowski_01.stinger.dire_win"] = true,
+	["valve_ti5.stinger.radiant_lose"] = true,
+}
+
+local function EmitForAllPlayer(soundName,stop)
+	local players = PlayerUtil.GetAllPlayersID(false,true)
+	for _, PlayerID in pairs(players) do
+		local player = PlayerResource:GetPlayer(PlayerID)
+		if player then
+			if stop then
+				StopSoundOn(soundName,player)
+			elseif not playersCloseBGM[PlayerID] or forcePlay[soundName] then
+				EmitSoundOnClient(soundName,player)
+			end
+		end
+	end
+end
+
 local function EmitSount(soundName,duration)
 	if playing then
-		StopGlobalSound(playing.name)
+		EmitForAllPlayer(playing.name,true)
 		if playing.timer then
 			TimerUtil.removeTimer(playing.timer)
 		end
 	end
 	
-	EmitGlobalSound(soundName)
+	EmitForAllPlayer(soundName)
+	
 	local timer = nil
 	if duration then
 		timer = TimerUtil.createTimerWithDelay(duration,function()
@@ -82,4 +105,22 @@ function m.PlayLose()
 	EmitSount("valve_ti5.stinger.radiant_lose")
 end
 
+function m.Client_ToggleState(_,keys)
+	if PlayerUtil.IsValidPlayer(keys.PlayerID) then
+		playersCloseBGM[keys.PlayerID] = keys.close
+		
+		local player = PlayerResource:GetPlayer(keys.PlayerID)
+		if player and playing and not forcePlay[playing.name] then
+			--下面这个也可以，但是是从头开始播放的，应该是第三个参数设置的问题。暂时不研究了，就直接从头开始
+			--player:EmitSoundParams(playing.name,0,1,0)
+			if keys.close == 1 then
+				StopSoundOn(playing.name,player)
+			else
+				EmitSoundOnClient(playing.name,player)
+			end
+		end
+	end
+end
+
+RegisterEventListener("tzj_toggle_bgm",m.Client_ToggleState)
 return m;

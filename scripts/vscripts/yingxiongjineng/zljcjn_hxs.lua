@@ -26,6 +26,9 @@ function hxs( keys )
 	local baseDamage2 = baseDamage + caster.hxs_baseDamage
 	i = i + caster.hxs_damage
 	local damage = (zl * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	if RollPercentage(20) then
 			damage = damage * (caster.hxs_multiple + 1 )
 	end	

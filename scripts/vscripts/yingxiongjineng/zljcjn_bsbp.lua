@@ -32,10 +32,14 @@ function bsbp( keys )
 	if caster.bsbp_radius == nil then
 		caster.bsbp_radius = 0
 	end
+	i = i + caster.bsbp_damage
 	radius = radius + caster.bsbp_radius
 	local mj = caster:GetIntellect()
 	local baseDamage2 = baseDamage + caster.bsbp_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x *shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.bsbp_time == nil then

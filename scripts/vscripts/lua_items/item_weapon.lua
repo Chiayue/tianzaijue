@@ -24,7 +24,7 @@ function item_weapon:GetModifierAttackSpeedBonus_Constant( params )
 	return self.attack_speed
 end
 function item_weapon:GetAttributes()
-  return MODIFIER_ATTRIBUTE_MULTIPLE
+  return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 function item_weapon:GetModifierBonusStats_Agility( params )
 	return self.mj+self.qsx

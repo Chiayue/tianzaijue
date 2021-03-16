@@ -11,3 +11,19 @@ function yg18jstz( keys )
 	   		
 
 end
+
+
+
+function yg31jstz( keys )
+	
+	local caster = keys.caster
+	local target = keys.target
+	local ability = keys.ability
+	local damage = caster:GetAverageTrueAttackDamage(caster)*5
+	
+	ApplyDamageMf(caster,target,ability,damage)
+	--显示一个特殊效果
+	ShowOverheadMsg(target,OVERHEAD_ALERT_BONUS_SPELL_DAMAGE,damage)
+	   		
+
+end

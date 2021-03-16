@@ -4,6 +4,7 @@ m.playernum = 0
 m.intervalWave = 8
 --每波的时间
 m.time = 65
+m.reducetime = 0
 --进攻怪物数量
 m.num=80
 --初始波数
@@ -20,6 +21,7 @@ m.chs = {
 }
 --boss倒计时
 m.bosscountdown = 400
+m.reducebosstime = 0
 m.countdown = {
 	360,
 	355,
@@ -48,13 +50,29 @@ m.countdown = {
 	250,
 
 
-	240,--23
+	238,--23
 	236,
+	234,
 	232,
+	230,
 	228,
-	224,
-	220,
-	216, --29
+	226, --29
+
+
+	216,--30
+	214,
+	212,
+	210,
+	208,
+	206, --35
+
+	204, --36
+	202,
+	200,
+	198,
+	196,
+	194,--41
+
 
 
 }
@@ -96,7 +114,20 @@ m.max_boss = {
 	6,
 	6,
 
+	6,--30
+	6,
+	6,
+	6,
+	6,
+	6,
 
+
+	6,--36
+	6,
+	6,
+	6,
+	6,
+	6,--41
 
 }
 --出现第几个BOSS了
@@ -167,6 +198,21 @@ m.jyg={
 	32,
 	34,
 
+	36,
+	38,
+	40,
+	42,
+	44,
+	46,
+
+
+	48,
+	50,
+	52,
+	54,
+	56,
+	58
+
 
 
 
@@ -207,6 +253,20 @@ m.gjg={
 	52,
 	54,
 	56,
+
+	58,
+	60,
+	62,
+	64,
+	66,
+	68,
+
+	70,
+	70,
+	70,
+	70,
+	70,
+	70,
 
 }
 --难度模式
@@ -383,13 +443,28 @@ m.qhsdl={
 	[22]={28,40},
 
 
-	[23]={1,3}, 	
-	[24]={3,6},
-	[25]={6,9},
-	[26]={9,13},
-	[27]={13,17},
-	[28]={17,22},
-	[29]={22,28},
+	[23]={1,5}, 	
+	[24]={5,10},
+	[25]={10,15},
+	[26]={15,20},
+	[27]={20,25},
+	[28]={25,30},
+	[29]={30,40},
+
+	[30]={1,5}, 	
+	[31]={5,10},
+	[32]={10,15},
+	[33]={15,20},
+	[34]={20,25},
+	[35]={25,40},
+
+
+	[36]={1,5}, 	
+	[37]={5,10},
+	[38]={10,15},
+	[39]={15,20},
+	[40]={20,25},
+	[41]={25,40},
 }
 
 m.ysdl={
@@ -425,7 +500,21 @@ m.ysdl={
 	520,
 	550,
 	580,
-	610,
+	600,
+
+	620,--30
+	640,
+	660,
+	680,
+	700,
+	720,
+
+	740,--36
+	760,
+	780,
+	800,
+	820,
+	840,
 }
 
 
@@ -723,11 +812,7 @@ function m.AttackBossTimer(boss)
 			NotifyUtil.ShowGameOverHint()
 			--最终boss死亡判定胜利
 			if boss._IsFinalBoss then
-				--延迟结束
-				NotifyUtil.Top(nil,"#info_game_finish_prompt",5,"#98FB98",false,NotifyUtil.STYLE_BlackBack_Alpha)
-				TimerUtil.createTimerWithDelay(5,function()
-					m.PlayerWin()
-				end)
+				m.PlayerWin()
 			end
 			return 
 		end
@@ -805,22 +890,35 @@ function m.difficultygjg(difficulty)
 end
 
 function m.PlayerWin()
-	NotifyUtil.ShowSysMsg2(nil,"info_game_win")
 	local onlinePlayers = PlayerUtil.GetAllPlayersID(false,true)
-	m.BeforeGameFinished(true,onlinePlayers)
-	m.AfterGameFinished(true,onlinePlayers)
+	local error = m.BeforeGameFinished(true,onlinePlayers)
+	SrvDataMgr.GameFinished(true,onlinePlayers,error)
+	
 	m.GameRecord()
 	
-	bgm.PlayWin()
+	--延迟结束
+	NotifyUtil.Top(nil,"#info_game_finish_prompt_win",5,"#98FB98",false,NotifyUtil.STYLE_BlackBack_Alpha)
+	NotifyUtil.ShowSysMsg2(nil,"#info_game_win")
+	TimerUtil.createTimerWithDelay(5,function()
+		SendToAllClient("tzj_game_finish",{win=true})
+		bgm.PlayWin()
+	end)
+	
 end
 
 function m.PlayerLose()
-	NotifyUtil.ShowSysMsg2(nil,"info_game_lose")
 	local onlinePlayers = PlayerUtil.GetAllPlayersID(false,true)
-	m.BeforeGameFinished(false,onlinePlayers)
-	m.AfterGameFinished(false,onlinePlayers)
+	local error = m.BeforeGameFinished(false,onlinePlayers)
+	SrvDataMgr.GameFinished(false,onlinePlayers,error)
 	
-	bgm.PlayLose()
+	--延迟结束
+	NotifyUtil.Top(nil,"#info_game_finish_prompt_lose",5,"red",false,NotifyUtil.STYLE_BlackBack_Alpha)
+	NotifyUtil.ShowSysMsg2(nil,"info_game_lose")
+	TimerUtil.createTimerWithDelay(5,function()
+		SendToAllClient("tzj_game_finish",{win=false})
+		bgm.PlayLose()
+	end)
+	
 end
 --游戏结束时结算地图经验
 function m.finishedexp(playerID, playerWin )
@@ -868,11 +966,13 @@ function m.finishedjNetItem(playerID)
 
 	local hero = PlayerUtil.GetHero(playerID)
 	local net_equip = nil
-	if hero.netItem and #hero.netItem > 0 then
-		net_equip = {}
-		for key, item in pairs(hero.netItem) do
-			hero:AddItem(item)
-			table.insert(net_equip,item:entindex())
+	if hero then
+		if hero.netItem and #hero.netItem > 0 then
+			net_equip = {}
+			for key, item in pairs(hero.netItem) do
+				hero:AddItem(item)
+				table.insert(net_equip,item:entindex())
+			end
 		end
 	end
 	
@@ -892,20 +992,37 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 	local difficulty = GetGameDifficulty()
 
 	local store_items = {}
-	local bljc = 1  --mvp爆率加成
-	if #m.playeronline >= 2 and playerID == mvpnum then  
-		bljc = 1 + (#m.playeronline-1) *0.25 
-	end
-	if bljc > 1.75 then
-		bljc = 1.75
-	end
-	local we = math.ceil(m.ysdl[difficulty] * bljc)
-	if we and playerWin then 
-		if we < 100 then
-			if RollPercent(we) then
-				local bonusItem2 = {name="shopmall_68",count=1}
+	if hero then
+		local bljc = 1  --mvp爆率加成
+		if #m.playeronline >= 2 and playerID == mvpnum then  
+			bljc = 1 + (#m.playeronline-1) *0.25 
+		end
+		if bljc > 1.75 then
+			bljc = 1.75
+		end
+		local we = math.ceil(m.ysdl[difficulty] * bljc)
+		if we and playerWin then 
+			if we < 100 then
+				if RollPercent(we) then
+					local bonusItem2 = {name="shopmall_68",count=1}
+					table.insert(store_items,bonusItem2)
+					SrvStore.AddItem(playerID,"shopmall_68",nil,1,function(success,item,money)
+				        if success then
+				            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
+				        else
+				            print("shopmall_68")
+				        end
+				    end)
+				end
+			else
+				local we2 = math.floor(we/100)
+				local we3 = we - 100*we2
+				if RollPercent(we3) then
+					we2 = we2 +1
+				end
+				local bonusItem2 = {name="shopmall_68",count=we2}
 				table.insert(store_items,bonusItem2)
-				SrvStore.AddItem(playerID,"shopmall_68",nil,1,function(success,item,money)
+				SrvStore.AddItem(playerID,"shopmall_68",nil,we2,function(success,item,money)
 			        if success then
 			            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
 			        else
@@ -913,112 +1030,107 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 			        end
 			    end)
 			end
-		else
-			local we2 = math.floor(we/100)
-			local we3 = we - 100*we2
-			if RollPercent(we3) then
-				we2 = we2 +1
+		end
+
+		if mode ~= 1 and playerWin then
+			local lv = 2
+			if difficulty <=7 and difficulty >=5 then
+				lv = 2
+			elseif difficulty >=8 and difficulty <=14 then
+				lv = 3
+			elseif difficulty >=15 and difficulty <=22 then
+				lv = 4
+			elseif difficulty >=23 and difficulty <=29 then
+				lv = 5
+			elseif difficulty >=30 and difficulty <=35 then
+				lv = 6
+			elseif difficulty >=36 and difficulty <=41 then
+				lv = 7
 			end
-			local bonusItem2 = {name="shopmall_68",count=we2}
-			table.insert(store_items,bonusItem2)
-			SrvStore.AddItem(playerID,"shopmall_68",nil,we2,function(success,item,money)
+			local min = m.qhsdl[difficulty][1]
+			local max = m.qhsdl[difficulty][2]
+			local num = RandomInt(min,max)   --掉落强化石的数量
+			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
+			table.insert(store_items,bonusItem)
+			SrvStore.AddItem(playerID,"shopmall_sstone_"..lv,nil,num,function(success,item,money)
 		        if success then
-		            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
+		            Shopmall:UpdatePlayerdata( playerID,"shopmall_sstone_"..lv,item['stack'],item['invalid_time'])
 		        else
-		            print("shopmall_68")
+		            print("shopmall_sstone_"..lv)
 		        end
 		    end)
 		end
-	end
-
-	if mode ~= 1 and playerWin then
-		local lv = 2
-		if difficulty <=7 and difficulty >=5 then
-			lv = 2
-		end
-		if difficulty >=8 and difficulty <=14 then
-			lv = 3
-		end
-		if difficulty >=15 then
-			lv = 4
-		end
-		local min = m.qhsdl[difficulty][1]
-		local max = m.qhsdl[difficulty][2]
-		local num = RandomInt(min,max)   --掉落强化石的数量
-		local bonusItem = {name="shopmall_sstone_"..lv,count=num}
-		table.insert(store_items,bonusItem)
-		SrvStore.AddItem(playerID,"shopmall_sstone_"..lv,nil,num,function(success,item,money)
-	        if success then
-	            Shopmall:UpdatePlayerdata( playerID,"shopmall_sstone_"..lv,item['stack'],item['invalid_time'])
-	        else
-	            print("shopmall_sstone_"..lv)
-	        end
-	    end)
 	end
 	return store_items
 end
 
 function m.BeforeGameFinished(playerWin,onlinePlayers)
-	--标记游戏结束，不再出怪了
-	m.gameFinished = true
-	--两个失败逻辑不同步有时候倒计时会消失不了，这里强制清除
-	NotifyUtil.ShowGameOverHint()
-	shuaguai.DeletePlayerUnits()
-	
-	--成就信息
-	local achievements = m.Achievements(playerWin)
-	if achievements then
-		for pid, info in pairs(m.playerinfo) do
-			if achievements[pid] then
-				info.achv = achievements[pid]
+	local status,error = pcall(function()
+		--标记游戏结束，不再出怪了
+		m.gameFinished = true
+		--两个失败逻辑不同步有时候倒计时会消失不了，这里强制清除
+		NotifyUtil.ShowGameOverHint()
+		shuaguai.DeletePlayerUnits()
+		
+		--成就信息
+		local achievements = m.Achievements(playerWin)
+		if achievements then
+			for pid, info in pairs(m.playerinfo) do
+				if achievements[pid] then
+					info.achv = achievements[pid]
+				end
 			end
 		end
-	end
+		
+		--结算界面的信息
+		local boss = {}
+		for k,v in pairs(SurvivalBossDPS.GetBossData()) do
+			local id = v["idx"]
+			boss[id]={}
+			boss[id]["name"] = k
+			boss[id]["hero"] = v["hero"]
+			if v["die"] then
+				boss[id]["time"] = v.die - v.spawn
+			end
+			boss[id]["dps"] = SurvivalBossDPS.SortDPSWithPercent(v["dps"]) 
 	
-	--结算界面的信息
-	local boss = {}
-	for k,v in pairs(SurvivalBossDPS.GetBossData()) do
-		local id = v["idx"]
-		boss[id]={}
-		boss[id]["name"] = k
-		boss[id]["hero"] = v["hero"]
-		if v["die"] then
-			boss[id]["time"] = v.die - v.spawn
+			for pid,info in pairs(m.playerinfo) do
+				if(v.dps and v.dps[pid]) then
+					info.boss_damage = info.boss_damage + v.dps[pid]
+				end
+			end
 		end
-		boss[id]["dps"] = SurvivalBossDPS.SortDPSWithPercent(v["dps"]) 
-
+		local mvpsh = 0
+		local mvpnum =0
 		for pid,info in pairs(m.playerinfo) do
-			if(v.dps and v.dps[pid]) then
-				info.boss_damage = info.boss_damage + v.dps[pid]
+			if info.boss_damage > mvpsh then
+				mvpsh = info.boss_damage 
+				mvpnum = pid
 			end
 		end
-	end
-	local mvpsh = 0
-	local mvpnum =0
-	for pid,info in pairs(m.playerinfo) do
-		if info.boss_damage > mvpsh then
-			mvpsh = info.boss_damage 
-			mvpnum = pid
-		end
-	end
-	for pid,info in pairs(m.playerinfo) do
-		info.map_exp = m.finishedexp(pid, playerWin )
-		info.jing = m.finishedjing(pid, playerWin )
-		info.gold = PlagueLand.playergold[pid].totalgold
-		info.store_items = m.finishedStoreItem(pid,playerWin,mvpnum) --发放存档装备现在是游戏结算统一
-		info.net_items = m.finishedjNetItem(pid)
-		info.achv={}
-		local achilist=Sachievement:GetAchiThis( pid)
-		if achilist then
-			for k,v in pairs(achilist) do
-				table.insert(info.achv,v.id)
+		for pid,info in pairs(m.playerinfo) do
+			info.map_exp = m.finishedexp(pid, playerWin )
+			info.jing = m.finishedjing(pid, playerWin )
+			info.gold = PlagueLand.playergold[pid].totalgold
+			info.store_items = m.finishedStoreItem(pid,playerWin,mvpnum) --发放存档装备现在是游戏结算统一
+			info.net_items = m.finishedjNetItem(pid)
+			info.achv={}
+			local achilist=Sachievement:GetAchiThis( pid)
+			if achilist then
+				for k,v in pairs(achilist) do
+					table.insert(info.achv,v.id)
+				end
 			end
 		end
+		local mode = {diff=GetGameDifficulty(),mode=GetGameDifficultyModel(),winner=playerWin and TEAM_PLAYER or TEAM_ENEMY}
+		SetNetTableValue("endgame","boss",boss)
+		SetNetTableValue("endgame","player",m.playerinfo)
+		SetNetTableValue("endgame","mode",mode)
+	end)
+	
+	if not status then
+		return error
 	end
-	local mode = {diff=GetGameDifficulty(),mode=GetGameDifficultyModel(),winner=playerWin and TEAM_PLAYER or TEAM_ENEMY}
-	SetNetTableValue("endgame","boss",boss)
-	SetNetTableValue("endgame","player",m.playerinfo)
-	SetNetTableValue("endgame","mode",mode)
 end
 
 
@@ -1039,33 +1151,33 @@ function m.Achievements(playerWin)
 	end
 	for _, PlayerID in pairs(players) do
 		local player = PlayerResource:GetPlayer(PlayerID)
-		local unit = player:GetAssignedHero()
-		if playerWin then
-			Sachievement:SetAchiState( unit,"hero_single")
-			if difficulty>=5 then
-				Sachievement:SetAchiState( unit,"difficulty",difficulty.."_"..model,difficulty) --难度成就
-			else
-				Sachievement:SetAchiState( unit,"difficulty",difficulty,difficulty) --难度成就
+		if player then
+			local unit = player:GetAssignedHero()
+			if unit then
+				if playerWin then
+					Sachievement:SetAchiState( unit,"hero_single")
+					if difficulty>=5 then
+						Sachievement:SetAchiState( unit,"difficulty",difficulty.."_"..model,difficulty) --难度成就
+					else
+						Sachievement:SetAchiState( unit,"difficulty",difficulty,difficulty) --难度成就
+					end
+				end
+				if unit:GetDeaths()==0 then
+					Sachievement:SetAchiState( unit,"hidden",1,1)
+				end
+				if unit:GetDeaths()>=30 then
+					Sachievement:SetAchiState( unit,"hidden",3,unit:GetDeaths())
+				end
+				if unit:GetDeaths()>=100 then
+					Sachievement:SetAchiState( unit,"hidden",4,unit:GetDeaths())  
+				end
 			end
-		end
-		if unit:GetDeaths()==0 then
-			Sachievement:SetAchiState( unit,"hidden",1,1)
-		end
-		if unit:GetDeaths()>=30 then
-			Sachievement:SetAchiState( unit,"hidden",3,unit:GetDeaths())
-		end
-		if unit:GetDeaths()>=100 then
-			Sachievement:SetAchiState( unit,"hidden",4,unit:GetDeaths())  
 		end
 	end
 	
 	return nil
 end
 
-
-function m.AfterGameFinished(playerWin,onlinePlayers)
-	SrvDataMgr.GameFinished(playerWin,onlinePlayers)
-end
 
 function m.GameRecord()
 	local players = PlayerUtil.GetAllPlayersID()
@@ -1127,7 +1239,17 @@ function m.msmjq(hero)
 	--	end
 		return 10   
 	end)
+end
 
+
+---每十秒加金币和每十秒加杀敌数
+function m.msmtbnettable(hero)
+	if EntityNotNull(hero) then
+		TimerUtil.CreateTimerWithEntity(hero,function()
+			CustomNetTables:SetTableValue("UnitAttributes",tostring(hero:entindex()),hero.cas_table);
+			return 0.2
+		end)
+	end
 end
 
 ---开始刷 2阶中立怪

@@ -348,7 +348,6 @@ if Sachievement == nil then
 			},
 			
 
-
 			["22_1"]={
 				bonus=22,--所需完成次数  
 				reward={Attr_tmz=15,}
@@ -359,9 +358,10 @@ if Sachievement == nil then
 			},
 
 
+
 			["23_1"]={
 				bonus=23,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_tmz=10,}
 			},
 			["23_2"]={
 				bonus=23,--所需完成次数  
@@ -370,7 +370,7 @@ if Sachievement == nil then
 
 			["24_1"]={
 				bonus=24,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_fjsh=15,}
 			},
 			["24_3"]={
 				bonus=24,--所需完成次数  
@@ -379,7 +379,7 @@ if Sachievement == nil then
 
 			["25_1"]={
 				bonus=25,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_jqjc=15,Attr_jyjc=15}
 			},
 			["25_4"]={
 				bonus=25,--所需完成次数  
@@ -388,7 +388,7 @@ if Sachievement == nil then
 
 			["26_1"]={
 				bonus=26,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_shjm=15,}
 			},
 			["26_5"]={
 				bonus=26,--所需完成次数  
@@ -397,7 +397,7 @@ if Sachievement == nil then
 
 			["27_1"]={
 				bonus=27,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_sds=1500,}
 			},
 			["27_6"]={
 				bonus=27,--所需完成次数  
@@ -406,7 +406,7 @@ if Sachievement == nil then
 
 			["28_1"]={
 				bonus=28,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Giveitem={"item_bw_1"},}
 			},
 			["28_7"]={
 				bonus=28,--所需完成次数  
@@ -415,10 +415,118 @@ if Sachievement == nil then
 
 			["29_1"]={
 				bonus=29,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Giveitem={"item_xhp_wzts_5"}}
 			},
 			["29_7"]={
 				bonus=29,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["30_1"]={
+				bonus=30,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["30_2"]={
+				bonus=30,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["31_1"]={
+				bonus=31,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["31_3"]={
+				bonus=31,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["32_1"]={
+				bonus=32,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["32_4"]={
+				bonus=32,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["33_1"]={
+				bonus=33,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["33_5"]={
+				bonus=33,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["34_1"]={
+				bonus=34,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["34_6"]={
+				bonus=34,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["35_1"]={
+				bonus=35,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["35_7"]={
+				bonus=35,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["36_1"]={
+				bonus=36,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["36_2"]={
+				bonus=36,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["37_1"]={
+				bonus=37,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["37_3"]={
+				bonus=37,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["38_1"]={
+				bonus=38,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["38_4"]={
+				bonus=38,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["39_1"]={
+				bonus=39,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["39_5"]={
+				bonus=39,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["40_1"]={
+				bonus=40,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["40_6"]={
+				bonus=40,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["41_1"]={
+				bonus=41,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["41_7"]={
+				bonus=41,--所需完成次数  
 				reward={Attr_zzsh=1,}
 			},
 
@@ -592,7 +700,7 @@ end
 function Sachievement:NetSetAchiBtypeState( unit,ftype,pid)  --设置从服务器获取的单通关
 	local Achi=self:GetAchiState(unit)
 	Achi[ftype][pid]["hero_count"]=#Achi[ftype][pid]["herolist"]
-	if Achi[ftype][pid]["hero_count"]>=Achi[ftype][pid]["heronum"] and  Achi[ftype][pid]["state"] == false then  --如果英雄数量超过10个则成就解锁
+	if Achi[ftype][pid]["hero_count"]>=Achi[ftype][pid]["heronum"] then  --如果英雄数量超过10个则成就解锁
 		Achi[ftype][pid]["state"]=true
 		--self:SetReWard( unit,Achi[ftype][pid]["reward"])
 		self:SetThreeState(unit,pid,ftype,1)
@@ -686,6 +794,7 @@ function Sachievement:SetThreeState(unit,bid,btype,state)--设置三系成就
 			self:SetSueState(unit,ftype,bid)
 		else
 			Achi[ftype][bid]["state"]=true
+			self:SetSueState(unit,ftype,bid)
 			--self:SetReWard( unit,Achi[ftype][bid]["reward"])
 		end
 	end

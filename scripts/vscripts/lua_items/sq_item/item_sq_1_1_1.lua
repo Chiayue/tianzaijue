@@ -37,6 +37,7 @@ function item_sq_1_1_1:Spawn()
 				self.itemtype.item_attributes.tkjj_time = 1 * level
 				self.itemtype.item_attributes.gjz_max = 1 * level
 				self.itemtype.item_attributes.swzz_max = 1 * level
+				self.itemtype.item_attributes.bsxx_max = 1 * level
 			elseif sqtype == 3 then
 				self.itemtype.item_attributes.ldj_time = 1 * level
 				self.itemtype.item_attributes.fx_time = 1 * level
@@ -68,7 +69,12 @@ function item_sq_1_1_1:Spawn()
 				self.itemtype.item_attributes.swsw_max = 0.5 * level
 				self.itemtype.item_attributes.dyh_max = 0.5 * level
 				self.itemtype.item_attributes.qssw_max = 1 * level
-				
+			elseif sqtype == 10 then
+				self.itemtype.item_attributes.lxdf_multiple = 1 * level
+				self.itemtype.item_attributes.hdyj_multiple = 1 * level
+				self.itemtype.item_attributes.hpq_multiple = 1 * level
+				self.itemtype.item_attributes.hyqj_multiple = 1 * level
+				self.itemtype.item_attributes.lypj_multiple = 1 * level
 			end
 			self.itemtype.item_attributes_spe={}
 			show_list.item_attributes_spe={}

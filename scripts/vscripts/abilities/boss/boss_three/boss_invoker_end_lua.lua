@@ -131,7 +131,13 @@ function boss_invoker_end_lua:GetCooldown( nLevel )
 		local cd = self.BaseClass.GetCooldown( self, nLevel )- 0.15*GameRules:GetCustomGameDifficulty()
 		if self:GetCaster():HasModifier("modifier_boss_invoker_end_lua_bloodfier") then
 			cd = cd / 2
+			if cd < 1 then
+				cd = 1
+			end
 			return cd 
+		end
+		if cd < 1 then
+			cd = 1
 		end
 		return cd
 	end

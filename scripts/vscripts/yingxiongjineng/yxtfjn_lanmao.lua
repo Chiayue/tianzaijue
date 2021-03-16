@@ -1,5 +1,6 @@
 yxtfjn_lanmao = class({})
 LinkLuaModifier("modifier_yxtfjn_lanmao", "yingxiongjineng/modifier_yxtfjn_lanmao.lua", LUA_MODIFIER_MOTION_HORIZONTAL )
+LinkLuaModifier("modifier_yxtfjn_lanmao_buff", "yingxiongjineng/modifier_yxtfjn_lanmao_buff.lua", LUA_MODIFIER_MOTION_HORIZONTAL )
 
 --------------------------------------------------------------------------------
 function yxtfjn_lanmao:Precache( hContext )

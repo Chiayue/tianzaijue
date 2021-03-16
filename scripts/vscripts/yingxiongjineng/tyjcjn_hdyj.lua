@@ -29,10 +29,13 @@ function hdyj( keys )
 	if caster.hdyj_damage == nil then
 		caster.hdyj_damage = 0
 	end
-	
+	i = i + caster.hdyj_damage
 	local mj = caster:GetAverageTrueAttackDamage(caster)
 	local baseDamage2 = baseDamage + caster.hdyj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.hdyj_time == nil then
@@ -41,7 +44,7 @@ function hdyj( keys )
 	if caster.hdyj_multiple == nil then
 		caster.hdyj_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.hdyj_multiple + 1 )
 	end	
 
@@ -73,7 +76,7 @@ function hdyj( keys )
 			       ParticleManager:DestroyParticle(p1,true)          
 			 end)
 			local multiple = 1
-			if RollPercentage(20) then
+			if RollPercentage(50) then
 				multiple = caster.hdyj_multiple +multiple
 			end	
 			damage2 = damage * multiple

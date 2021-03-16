@@ -42,11 +42,6 @@ function m:OnEntityKilled( keys )
 	if unit:GetTeamNumber() ~= TEAM_PLAYER then --敌方单位死亡
 		--同步往服务器发怪物目前的数量
 		m.SyncEnemyCount(unit)
-		
-		--记录玩家的杀敌数和给予金钱
-		if killer then
-			m.RecordKills(killer,unit)
-		end
 
 		if unit.kaer then--boss卡尔的召唤物
 			for k,v in pairs(Stage.kezhw) do
@@ -60,6 +55,17 @@ function m:OnEntityKilled( keys )
 				end
 			end
 		end
+		
+		if killer == unit and unit:GetPlayerOwnerID() > -1 then
+			return;
+		end
+		
+		--记录玩家的杀敌数和给予金钱
+		if killer then
+			m.RecordKills(killer,unit)
+		end
+		
+		
 		local unitName = unit:GetUnitName()
 		if unitName == "wq_BOSS_1" then
 			--能量之心boss
@@ -114,23 +120,22 @@ end
 function m.RecordKills(killer,diedUnit)
 	local pid = killer:GetPlayerOwnerID()
 	local hero = PlayerUtil.GetHero(pid)
-	if hero ~= nil then
-		local sds = 1 --如果单位有杀敌数，则加上赋予的
-		if diedUnit.getsds then
-			sds= diedUnit.getsds
-		end
-		local unitKey = tostring(EntityHelper.getEntityIndex(hero))
-		local netTable = hero.cas_table
-		netTable["sds"] = netTable["sds"] + sds
-		SetNetTableValue("UnitAttributes",unitKey,netTable)
-		
+	if hero ~= nil then	
 		--记录dota自带的杀敌数量，仅仅记录数量，跟上边的杀敌数没有关系
 		PlayerResource:IncrementKills(pid,diedUnit:entindex())
 		if diedUnit.playchs then
 			local playerID = diedUnit.playchs -1
 			local caster = PlayerUtil.GetHero(playerID)
 			if caster then
-				if pid == playerID then
+				if pid ~= playerID or GetGameDifficulty() < 29 then
+					local sds = 1 --如果单位有杀敌数，则加上赋予的
+					if diedUnit.getsds then
+						sds= diedUnit.getsds
+					end
+					local unitKey = tostring(EntityHelper.getEntityIndex(hero))
+					local netTable = hero.cas_table
+					netTable["sds"] = netTable["sds"] + sds
+					SetNetTableValue("UnitAttributes",unitKey,netTable)
 					local gold = diedUnit:GetMinimumGoldBounty()
 					local jy = diedUnit:GetDeathXP()
 					if caster.cas_table.jqjc and gold > 0  then
@@ -143,24 +148,36 @@ function m.RecordKills(killer,diedUnit)
 					SendOverheadEventMessage( nil, 0, caster, gold, nil )
 					PlayerUtil.ModifyGold(caster,gold)
 				else
+					local sds = 1 --如果单位有杀敌数，则加上赋予的
+					if diedUnit.getsds then
+						sds= diedUnit.getsds
+					end
+					local unitKey = tostring(EntityHelper.getEntityIndex(caster))
+					local netTable = caster.cas_table
+					netTable["sds"] = netTable["sds"] + sds
+					SetNetTableValue("UnitAttributes",unitKey,netTable)
 					local gold = diedUnit:GetMinimumGoldBounty()
 					local jy = diedUnit:GetDeathXP()
 					local gold2 = 0
 					local jy2 = 0
+					
+					local ratioOwner = 0.8
+					local ratioKiller = 1 - ratioOwner
+					
 					if caster.cas_table.jqjc and gold > 0  then
-						gold2 = (gold + caster.cas_table.sgzjjb)* (1+caster.cas_table.jqjc/100) *0.5
+						gold2 = (gold + caster.cas_table.sgzjjb)* (1+caster.cas_table.jqjc/100) *ratioOwner
 					end
 					if caster.cas_table.jyjc then
-						jy2 = jy * (1+caster.cas_table.jyjc/100)*0.5
+						jy2 = jy * (1+caster.cas_table.jyjc/100)*ratioOwner
 					end
 					caster:AddExperience(jy2,DOTA_ModifyXP_Unspecified,  false, false)
 					SendOverheadEventMessage( nil, 0, caster, gold2, nil )
 					PlayerUtil.ModifyGold(caster,gold2)
 					if hero.cas_table.jqjc and gold > 0  then
-						gold2 = (gold + hero.cas_table.sgzjjb)* (1+hero.cas_table.jqjc/100) *0.5
+						gold2 = (gold + hero.cas_table.sgzjjb)* (1+hero.cas_table.jqjc/100) *ratioKiller
 					end
 					if hero.cas_table.jyjc then
-						jy2 = jy * (1+hero.cas_table.jyjc/100)*0.5
+						jy2 = jy * (1+hero.cas_table.jyjc/100)*ratioKiller
 					end
 					hero:AddExperience(jy2,DOTA_ModifyXP_Unspecified,  false, false)
 					SendOverheadEventMessage( nil, 0, hero, gold2, nil )
@@ -214,10 +231,6 @@ function m.DropItem(killer,unit)
 	--随机BOSS掉落物品
 	local lab = unit:GetContext("sjboss")
 	if lab then
-		if killer:GetPlayerOwnerID() == -1  then	--如果不是玩家杀死的，而是时间到了，则就不给予金币
-			UTIL_Remove(unit)
-			return nil
-		end
 		--如果是个人BOSS，则给召唤者的脚下掉落一个宝箱
 		if lab ==1 then
 			m.SummonedBoss_Personal(unit)
@@ -228,11 +241,6 @@ function m.DropItem(killer,unit)
 			m.SummonedBoss_Team(unit)
 		end
 	else
-		--掉落随机装备
-		if killer:GetPlayerOwnerID() == -1 and unit:GetUnitName() ~="zbbx_1"  then	--如果不是玩家杀死的，而是时间到了，则就不给予金币
-			UTIL_Remove(unit)
-			return nil
-		end
 		local pid = killer:GetPlayerOwnerID() 
 		killer = PlayerUtil.GetHero(pid)
 		itemdrop(killer,unit)

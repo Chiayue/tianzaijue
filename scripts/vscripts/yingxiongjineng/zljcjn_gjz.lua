@@ -40,6 +40,9 @@ function gjz( keys )
 	local baseDamage2 = baseDamage + caster.gjz_baseDamage
 	i = i + caster.gjz_damage
 	local damage = (zl * i + baseDamage2 ) * x * multiple * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local max  = 1 + caster.gjz_max 
 	for i=1,max do
 		local point2 = point

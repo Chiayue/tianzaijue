@@ -12,16 +12,16 @@ function zdb(keys)
 	local caster = keys.caster
 	local target = keys.target
 	local ability = keys.ability
-	local i = keys.ability:GetLevelSpecialValueFor("i", keys.ability:GetLevel() - 1)	
-	local max = keys.ability:GetLevelSpecialValueFor("max", keys.ability:GetLevel() - 1)	
+	local i = ability:GetLevelSpecialValueFor("i", ability:GetLevel() - 1)	
+	local max = ability:GetLevelSpecialValueFor("max", ability:GetLevel() - 1)	
 	local point = keys.target_points[1]
-	local projectileName = "particles/units/heroes/hero_magnataur/magnataur_shockwave.vpcf"
+	local projectileName = "particles/units/heroes/mengmabo.vpcf"
 	-- Ability variables
 	
 	
-	local powershot_max_range = ability:GetLevelSpecialValueFor( "shock_distance", keys.ability:GetLevel() -1 )
-	local powershot_max_movespeed = ability:GetLevelSpecialValueFor( "shock_speed", keys.ability:GetLevel() -1)
-	local powershot_radius = ability:GetLevelSpecialValueFor( "shock_width",keys.ability:GetLevel() - 1)
+	local powershot_max_range = ability:GetLevelSpecialValueFor( "shock_distance", ability:GetLevel() -1 )
+	local powershot_max_movespeed = ability:GetLevelSpecialValueFor( "shock_speed", ability:GetLevel() -1)
+	local powershot_radius = ability:GetLevelSpecialValueFor( "shock_width",ability:GetLevel() - 1)
 	local fv = caster:GetForwardVector()
 
 
@@ -38,7 +38,7 @@ function zdb(keys)
 		caster.zdb_time = 0
 	end
 
-
+	local gl = math.ceil(caster:GetLevel()/2)
 	powershot_max_range = powershot_max_range + caster.zdb_distance
 
 	powershot_radius = powershot_radius + caster.zdb_radius
@@ -85,6 +85,32 @@ function zdb(keys)
 				iVisionTeamNumber = caster:GetTeamNumber(),
 			}
 			local p = ProjectileManager:CreateLinearProjectile( projectileTable )
+			if caster:HasModifier("modifier_yxtfjn_mengma") then
+				if RollPercentage(gl) then
+					local point3 = point2 + RotateVector2D(fv,zdbfx[var]) * powershot_max_range
+						TimerUtil.createTimerWithDelay(1,function()
+							local projectileTable2 =
+							{
+								EffectName = projectileName,
+								Ability = ability,
+								vSpawnOrigin = point3,
+								vVelocity = RotateVector2D(fv,zdbfx[var]+180) * powershot_max_range,
+								fDistance = powershot_max_range,
+								fStartRadius = powershot_radius,
+								fEndRadius = powershot_radius,
+								Source = caster,
+								bHasFrontalCone = false,
+								bReplaceExisting = true,
+								iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
+								iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
+								iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
+								fExpireTime = GameRules:GetGameTime() + 5.0,
+								iVisionTeamNumber = caster:GetTeamNumber(),
+							}
+							local p2 = ProjectileManager:CreateLinearProjectile( projectileTable2 )	
+						end)
+					end
+				end
 			end
 
 		else 
@@ -106,7 +132,6 @@ function zdbsh( keys )
 	local shbs = ability:GetLevelSpecialValueFor("shbs", level)
 	local x = 1 + (level+caster.cas_table.grjndj) / 10 
 	local ll = caster:GetStrength()
-	
 	if caster.zdb_baseDamage == nil then
 		caster.zdb_baseDamage = 0
 	end
@@ -123,11 +148,16 @@ function zdbsh( keys )
 	i = i + caster.zdb_damage
 	local baseDamage2 = baseDamage + caster.zdb_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x * multiple * shbs
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageEx(caster,target,ability,damage)
 	--ability:ApplyDataDrivenModifier(caster, target, "modifier_lljcjn_zdb", {})
 --	ability:ApplyDataDrivenModifier(caster, caster, "modifier_lljcjn_zdb", {})
 	--end
 
 end
-
 

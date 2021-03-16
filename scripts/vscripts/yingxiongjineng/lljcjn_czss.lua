@@ -54,6 +54,9 @@ function czss( keys )
 		 	cs =max - 1
 		 end
 		 local damage2 = (cs * (ll*sh) + damage) *x * multiple
+		 if damage2 > 500000000 then
+			damage2 = 500000000
+	    	end
 		 cs = cs + 1
 		unit:SetModifierStackCount(modifier, unit, cs)		
 		ApplyDamageEx(caster,unit,ability,damage2)	
@@ -97,6 +100,9 @@ function czss( keys )
 					 	StartSoundEventFromPosition("Hero_Bristleback.QuillSpray.Cast",unit:GetAbsOrigin())
 					 end
 					 local damage2 = (cs * (ll*sh) + damage) *x *multiple
+					 if damage2 > 500000000 then
+						damage2 = 500000000
+					end
 					 cs = cs + 1
 					unit:SetModifierStackCount(modifier, unit, cs)		
 					ApplyDamageEx(caster,unit,ability,damage2)	

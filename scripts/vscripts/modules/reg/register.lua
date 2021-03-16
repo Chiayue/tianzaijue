@@ -1,5 +1,5 @@
 require("modules.CallBoss")
-require("modules.ItemManager")
+ItemManger = require("modules.ItemManager")
 UnitKV = require("modules.UnitKV")
 SurvivalBossDPS = require("modules.SurvivalBossDPS")
 PetAI = require("modules.PetAI")

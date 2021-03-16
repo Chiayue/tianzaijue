@@ -34,11 +34,14 @@ function zkfs( keys )
 		caster.zkfs_radius = 0
 	end
 	radius = radius + caster.zkfs_radius
+	i = i +caster.zkfs_damage
 	local mj = caster:GetAverageTrueAttackDamage(caster)
 	local baseDamage2 = baseDamage + caster.zkfs_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
-	
 	if caster.zkfs_time == nil then
 		caster.zkfs_time = 0
 	end

@@ -98,7 +98,9 @@ function txfh( keys )
 	local baseDamage2 = baseDamage + caster.txfh_baseDamage
 	i = i + caster.txfh_damage
 	local damage = (zl * i + baseDamage2 ) * x
-	
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	
 	if caster.txfh_time == nil then
 		caster.txfh_time = 0
@@ -243,7 +245,9 @@ function txpsh( keys )
 	local baseDamage2 = baseDamage + caster.txpsh_baseDamage
 	i = i + caster.txpsh_damage
 	local damage = (zl * i + baseDamage2 ) * x * 1.4
-
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	--============================================================================特效部分
 	local p1 = ParticleManager:CreateParticle( "particles/abilities/xb_yunshi/yunshi_ground.vpcf", PATTACH_ABSORIGIN, caster )
 	ParticleManager:SetParticleControl( p1, 0, point )

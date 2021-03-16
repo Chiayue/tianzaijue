@@ -314,7 +314,7 @@ function item_jewelry:OnRefresh( kv )
 end
 
 function item_jewelry:GetAttributes()
-  return MODIFIER_ATTRIBUTE_MULTIPLE
+  return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 

@@ -77,13 +77,14 @@ end
 function modifier_yxtfjn_lanmao:UpdateHorizontalMotion( me, dt )
 	if IsServer() then
 		local vLocation = nil
-		if self:GetParent() ~= nil and self:GetParent():IsAlive() then
-			local fDist = (self:GetParent():GetOrigin() - self:GetAbility().StartPos ):Length2D()/100
-			local enemies = FindUnitsInRadius(self:GetParent():GetTeamNumber(), self:GetParent():GetAbsOrigin(), nil, 400,
+		local caster = self:GetParent()
+		if caster ~= nil and caster:IsAlive() then
+			local fDist = (caster:GetOrigin() - self:GetAbility().StartPos ):Length2D()/100
+			local enemies = FindUnitsInRadius(caster:GetTeamNumber(), caster:GetAbsOrigin(), nil, 400,
                     DOTA_UNIT_TARGET_TEAM_ENEMY, DOTA_UNIT_TARGET_HERO+DOTA_UNIT_TARGET_BASIC,
                     DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, FIND_CLOSEST, false)
 			local target
-			local damage = fDist*fDist*self.i*self:GetParent():GetIntellect()
+			local damage = (2+fDist*fDist*self.i)*caster:GetIntellect()
 			for _,enemy in pairs(enemies) do
 				local hasenemy=true
 				for k,v in pairs(self.enemy) do
@@ -93,21 +94,33 @@ function modifier_yxtfjn_lanmao:UpdateHorizontalMotion( me, dt )
 				end
 				if hasenemy then
 					table.insert(self.enemy,enemy:GetEntityIndex())
-					ApplyDamageMf(self:GetParent(),enemy,self:GetAbility(),damage)	
+					ApplyDamageMf(caster,enemy,self:GetAbility(),damage)	
 				end
 			end
-            if self:GetParent():GetMana()<self.costmana then
+            if caster:GetMana()<self.costmana then
+            	if not caster:HasModifier("modifier_yxtfjn_lanmao_buff") then
+					caster:AddNewModifier( caster, nil, "modifier_yxtfjn_lanmao_buff", {duration = 10} )
+					caster:SetModifierStackCount( "modifier_yxtfjn_lanmao_buff",caster, math.ceil(fDist*8) )
+				end
                 self:Destroy()
             end
-            vLocation = self:GetParent():GetOrigin()+self:GetAbility().vDirection*self.speed
+            vLocation = caster:GetOrigin()+self:GetAbility().vDirection*self.speed
             
             local temp =( vLocation - self:GetAbility().StartPos ):Length2D()
-            local cc=self:GetParent():SpendMana(math.ceil(self.speed/self.costdis*self.costmana),self:GetAbility()) 
-            if not GridNav:CanFindPath( vLocation, self:GetParent():GetOrigin() ) then
+            local cc=caster:SpendMana(math.ceil(self.speed/self.costdis*self.costmana),self:GetAbility()) 
+            if not GridNav:CanFindPath( vLocation, caster:GetOrigin() ) then
+            	if not caster:HasModifier("modifier_yxtfjn_lanmao_buff") then
+					caster:AddNewModifier( caster, nil, "modifier_yxtfjn_lanmao_buff", {duration = 10} )
+					caster:SetModifierStackCount( "modifier_yxtfjn_lanmao_buff",caster, math.ceil(fDist*8) )
+				end
                 self:Destroy()
             end
-            local endDist = (self:GetParent():GetOrigin() - self:GetAbility().EndPos ):Length2D()
+            local endDist = (caster:GetOrigin() - self:GetAbility().EndPos ):Length2D()
             if  endDist<100 then
+          		if not caster:HasModifier("modifier_yxtfjn_lanmao_buff") then
+					caster:AddNewModifier( caster, nil, "modifier_yxtfjn_lanmao_buff", {duration = 10} )
+					caster:SetModifierStackCount( "modifier_yxtfjn_lanmao_buff",caster, math.ceil(fDist*8) )
+				end
                 self:Destroy()
             end
             

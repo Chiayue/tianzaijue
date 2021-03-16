@@ -51,6 +51,18 @@ local DifficultyModes = {
 	[27] = {1,6},
 	[28] = {1,7},
 	[29] = {1,7},
+	[30] = {1,2},
+	[31] = {1,3},
+	[32] = {1,4},
+	[33] = {1,5},
+	[34] = {1,6},
+	[35] = {1,7},
+	[36] = {1,2},
+	[37] = {1,3},
+	[38] = {1,4},
+	[39] = {1,5},
+	[40] = {1,6},
+	[41] = {1,7},
 }
 ---可选最大难度
 local selectableMaxDifficulty = 5
@@ -307,7 +319,7 @@ function m.Client_SelectDifficultyMode(_,keys)
 		local difficulty = keys.difficulty
 		local mode = keys.mode
 		
-		if difficulty > selectableMaxDifficulty then
+		if difficulty > selectableMaxDifficulty or not randomHeroes then
 			return;
 		end
 		

@@ -29,10 +29,13 @@ function hpq( keys )
 	if caster.hpq_damage == nil then
 		caster.hpq_damage = 0
 	end
-
+	i = i +caster.hpq_damage
 	local ll = caster:GetStrength()
 	local baseDamage2 = baseDamage + caster.hpq_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.hpq_time == nil then
@@ -41,7 +44,7 @@ function hpq( keys )
 	if caster.hpq_multiple == nil then
 		caster.hpq_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.hpq_multiple + 1 )
 	end	
 
@@ -84,7 +87,7 @@ function hpq( keys )
 			local p1 = ParticleManager:CreateParticle("particles/test/tusk_ti9_golden_walruspunch_start.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
 			ParticleManager:SetParticleControl(p1, 0, point) -- Origin
 			local multiple = 1
-			if RollPercentage(20) then
+			if RollPercentage(50) then
 				multiple = caster.hpq_multiple +multiple
 			end	
 			damage2 = damage * multiple

@@ -17,13 +17,7 @@ function boss_invoker_call_lua:OnSpellStart()
 	else
 		return
 	end
-	local num =   math.ceil(Stage.playernum /2  + GetGameDifficulty() /8)
-	if num < 2 then
-		num = 2
-	end
-	if num > 4 then
-		num = 4
-	end
+	local num =   2
 	if #Stage.kezhw>10 then
 		num=0
 	end
@@ -38,7 +32,7 @@ function boss_invoker_call_lua:OnSpellStart()
 		for i=1,num do
 			local unit= CreateUnitByName(unitname, hCaster:GetOrigin()+RandomVector(1200), true, hCaster, hCaster, hCaster:GetTeamNumber())	
 			local hp = hCaster:GetMaxHealth()	--设置怪物的动态血量	
-			local maxhp = hp * 0.3  --怪物7倍血量
+			local maxhp = hp * 0.6  --怪物7倍血量
 			unit:SetBaseMaxHealth(maxhp)
 
 			local armor = hCaster:GetPhysicalArmorBaseValue()	--设置怪物的动态护甲
@@ -51,12 +45,16 @@ function boss_invoker_call_lua:OnSpellStart()
 
 			local attack = hCaster:GetBaseDamageMax()
 		
-			local maxattack = attack * 0.4
+			local maxattack = attack * 0.2
 			unit:SetBaseDamageMin(maxattack)
 			unit:SetBaseDamageMax(maxattack)
+			if hCaster.shzj then
+				unit.shzj = hCaster.shzj
+			end
 
 			unit.kaer = 1
 			table.insert(Stage.kezhw,unit:GetEntityIndex())
+			unit:AddNewModifier(unit, nil, "modifier_kill", { duration = 10 })
 			--同步往服务器发怪物目前的数量
 			local  nowchs = #Stage.kezhw
 			for _, PlayerID in pairs(Stage.playeronline) do
@@ -92,11 +90,15 @@ function boss_invoker_call_lua:OnSpellStart()
 
 					local attack = hCaster:GetBaseDamageMax()
 				
-					local maxattack = attack * 0.4
+					local maxattack = attack * 0.2
 					unit:SetBaseDamageMin(maxattack)
 					unit:SetBaseDamageMax(maxattack)
+					if hCaster.shzj then
+						unit.shzj = hCaster.shzj
+					end
 					unit.kaer = 1
 					table.insert(Stage.kezhw,unit:GetEntityIndex())
+					unit:AddNewModifier(unit, nil, "modifier_kill", { duration = 10 })
 					--同步往服务器发怪物目前的数量
 					local  nowchs = #Stage.kezhw
 					for _, PlayerID in pairs(Stage.playeronline) do
@@ -121,11 +123,15 @@ function boss_invoker_call_lua:OnSpellStart()
 
 					local attack = hCaster:GetBaseDamageMax()
 				
-					local maxattack = attack * 0.4
+					local maxattack = attack * 0.2
 					unit:SetBaseDamageMin(maxattack)
 					unit:SetBaseDamageMax(maxattack)
+					if hCaster.shzj then
+						unit.shzj = hCaster.shzj
+					end
 					unit.kaer = 1
 					table.insert(Stage.kezhw,unit:GetEntityIndex())
+					unit:AddNewModifier(unit, nil, "modifier_kill", { duration = 10 })
 					--同步往服务器发怪物目前的数量
 					local  nowchs = #Stage.kezhw
 					for _, PlayerID in pairs(Stage.playeronline) do

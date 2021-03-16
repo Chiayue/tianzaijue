@@ -27,6 +27,8 @@
 	"npc_dota_hero_life_stealer"		"1"	//食尸鬼
 	"npc_dota_hero_lycan"				"1"	//狼人
 	"npc_dota_hero_spirit_breaker"		"1"	//白牛
+	"npc_dota_hero_rattletrap"			"1"	//发条技师
+	"npc_dota_hero_magnataur"			"1"	//猛犸
 
  
 

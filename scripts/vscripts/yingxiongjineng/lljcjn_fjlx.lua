@@ -27,6 +27,9 @@ function fjlx( keys )
 	if RollPercentage(20) then
 			damage = damage * (caster.fjlx_multiple + 1 )
 	end	
+	if damage > 1000000000 then
+		damage = 1000000000
+	end
 	ApplyDamageEx(caster,target,ability,damage)
 
 end

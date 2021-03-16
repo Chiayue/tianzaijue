@@ -37,7 +37,12 @@ function lpz( keys )
 	local baseDamage2 = baseDamage + caster.lpz_baseDamage
 	i = i+ caster.lpz_damage
 	local damage = (zl * i + baseDamage2 ) * x * multiple * shbs
-		
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end	
 	ApplyDamageMf(caster,target,ability,damage)
 
 
@@ -122,7 +127,7 @@ function lpzsf(keys)
 		iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
 		iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES,
 		iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
-	
+		fExpireTime = GameRules:GetGameTime() + 3.0,
 		iVisionTeamNumber = caster:GetTeamNumber()
 	}
 	local p = ProjectileManager:CreateLinearProjectile( projectileTable )

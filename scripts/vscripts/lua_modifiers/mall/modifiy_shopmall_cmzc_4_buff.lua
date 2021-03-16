@@ -4,7 +4,7 @@ modifiy_shopmall_cmzc_4_buff = class({})
 --------------------------------------------------------------------------------
 -- Classifications
 function modifiy_shopmall_cmzc_4_buff:IsHidden()
-	return false
+	return true
 end
 
 function modifiy_shopmall_cmzc_4_buff:GetTexture()
@@ -72,7 +72,6 @@ end
 
 function modifiy_shopmall_cmzc_4_buff:GetBonusDayVision( params )
 	if IsServer() then	
-		print("GetBonusDayVision",self:GetStackCount())
 		return self:GetStackCount()
 	end
 end

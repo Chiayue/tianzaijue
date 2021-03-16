@@ -8,7 +8,7 @@ function modifiy_shopmall_cmzc_2:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_cmzc_2:IsHidden()
-	return false
+	return true
 end
 function modifiy_shopmall_cmzc_2:OnCreated( kv )
 	

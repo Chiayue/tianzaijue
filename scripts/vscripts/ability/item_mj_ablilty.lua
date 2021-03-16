@@ -58,7 +58,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.jqz_radius == nil then
 							caster.jqz_radius = 0
 						end
-						z = math.ceil(RandomInt(10,z)/2)
+						z = RandomInt(1,z)
 						caster.jqz_radius = caster.jqz_radius + z
 						netTable["jqz_radius"] = caster.jqz_radius
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)		
@@ -134,7 +134,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.ltyj_radius == nil then
 							caster.ltyj_radius = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(1,z)
 						caster.ltyj_radius = caster.ltyj_radius + z
 						netTable["ltyj_radius"] = caster.ltyj_radius
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -202,7 +202,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.zzjt_radius == nil then
 							caster.zzjt_radius = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(1,z)
 						caster.zzjt_radius = caster.zzjt_radius + z
 						netTable["zzjt_radius"] = caster.zzjt_radius
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -1739,7 +1739,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.bsxx_damage == nil then
 							caster.bsxx_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.3,z*3))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*3))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.bsxx_damage = caster.bsxx_damage + z
 						netTable["bsxx_damage"] = caster.bsxx_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -1749,7 +1749,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.bsxx_radius == nil then
 							caster.bsxx_radius = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(1,z)
 						caster.bsxx_radius = caster.bsxx_radius + z
 						netTable["bsxx_radius"] = caster.bsxx_radius
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -2012,7 +2012,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.hxs_damage == nil then
 							caster.hxs_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.4,z*4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.5,z*5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.hxs_damage = caster.hxs_damage + z
 						netTable["hxs_damage"] = caster.hxs_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -2258,7 +2258,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.txpsh_count == nil then
 							caster.txpsh_count = 0
 						end
-						z = RandomInt(1,z)
+						z = 1
 						caster.txpsh_count = caster.txpsh_count + z
 						netTable["txpsh_count"] = caster.txpsh_count
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)		
@@ -2604,7 +2604,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.sjyj_damage == nil then
 							caster.sjyj_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*0.5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.sjyj_damage = caster.sjyj_damage + z
 						netTable["sjyj_damage"] = caster.sjyj_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -2624,7 +2624,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.sjyj_interval == nil then
 							caster.sjyj_interval = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z))
+						z = 0.02
 						caster.sjyj_interval = caster.sjyj_interval + z
 						netTable["sjyj_interval"] = caster.sjyj_interval
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)		
@@ -2700,7 +2700,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.hpq_damage == nil then
 							caster.hpq_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*2.2))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*2.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.hpq_damage = caster.hpq_damage + z
 						netTable["hpq_damage"] = caster.hpq_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -2843,7 +2843,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.hyqj_damage == nil then
 							caster.hyqj_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*1.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*2.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.hyqj_damage = caster.hyqj_damage + z
 						netTable["hyqj_damage"] = caster.hyqj_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3063,7 +3063,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.zkfs_damage == nil then
 							caster.zkfs_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.2,z*0.55))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*0.35))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.zkfs_damage = caster.zkfs_damage + z
 						netTable["zkfs_damage"] = caster.zkfs_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3131,7 +3131,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.hdyj_damage == nil then
 							caster.hdyj_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.2,z*0.75))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*0.7))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.hdyj_damage = caster.hdyj_damage + z
 						netTable["hdyj_damage"] = caster.hdyj_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3281,7 +3281,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.lxdf_damage == nil then
 							caster.lxdf_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*4.5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*2.5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.lxdf_damage = caster.lxdf_damage + z
 						netTable["lxdf_damage"] = caster.lxdf_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3380,7 +3380,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.bsbp_damage == nil then
 							caster.bsbp_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*1.55))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.1,z*1.6))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.bsbp_damage = caster.bsbp_damage + z
 						netTable["bsbp_damage"] = caster.bsbp_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3449,7 +3449,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.lypj_damage == nil then
 							caster.lypj_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*2.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*2))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.lypj_damage = caster.lypj_damage + z
 						netTable["lypj_damage"] = caster.lypj_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)

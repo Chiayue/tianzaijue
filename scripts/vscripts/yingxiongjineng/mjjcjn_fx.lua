@@ -130,7 +130,6 @@ function fxsh( keys )
 
 
 	local mj = caster:GetAgility()
-
 	if caster.fx_baseDamage == nil then
 		caster.fx_baseDamage = 0
 	end
@@ -147,7 +146,12 @@ function fxsh( keys )
 	i = i + caster.fx_damage
 	local baseDamage2 = baseDamage + caster.fx_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * multiple * shbs
-		
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageEx(caster,target,ability,damage)
 
 end

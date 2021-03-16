@@ -38,7 +38,9 @@ end
 			multiple = multiple +  caster.jxgh_multiple
 	end	
 	damage = damage * multiple		
-	
+	if damage > 500000000 then
+		damage = 500000000
+	end
 		
 	ApplyDamageMf(caster,target,ability,damage)
 		

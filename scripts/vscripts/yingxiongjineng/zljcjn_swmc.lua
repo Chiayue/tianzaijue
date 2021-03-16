@@ -40,6 +40,9 @@ function swmc( keys )
 			multiple = multiple +  caster.swmc_multiple
 	end	
 	damage = damage * multiple
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	heal = heal * multiple
 	if target:GetTeamNumber() ~= caster:GetTeamNumber() then
 		

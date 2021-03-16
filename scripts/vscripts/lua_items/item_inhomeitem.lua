@@ -112,7 +112,7 @@ function item_inhomeitem:OnRefresh( kv )
 end
 
 function item_inhomeitem:GetAttributes()
-  return MODIFIER_ATTRIBUTE_MULTIPLE
+  return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 

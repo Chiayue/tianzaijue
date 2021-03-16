@@ -52,21 +52,21 @@ function ShowSelectTreasureUI(iPlayerID,lv)
 	--用来一个个测试单独宝物的
 --	bw[1] = "modifier_bw_5_10"
 --	bw[2] = "modifier_bw_5_11"
---	bw[3] = "modifier_bw_5_9"
+--	bw[3] = "modifier_bw_4_5"
 	
-	CustomNetTables:SetTableValue( "tzj_storage", "tre_select_"..iPlayerID, bw )
+	CustomNetTables:SetTableValue( "tzj_storage", "tre_select_"..iPlayerID, bw)
 
 end
 
 ---确认选择宝物
-function UI_SelectTreasure(event,data)
+function UI_SelectTreasure(event,data,pz)
 	--if GameRules:IsGamePaused() then return end -item item_bw_1
 	local PlayerID = data.PlayerID;
 	local player = PlayerResource:GetPlayer(PlayerID)
 	if player == nil then return end
 	local hero = player:GetAssignedHero()
 	if hero == nil then return end
-	if not hero.SelectTreasure then
+	if not hero.SelectTreasure and not pz then
 		return nil
 	end
 	hero.SelectTreasure = nil
@@ -267,6 +267,49 @@ function AbilityEnhance(_,data )
 end
 
 
+--减少每波怪物出怪的总时间
+function reducesgtime(_,data )
+	if Stage.gameFinished then
+		return
+	end
+	local pid = data.PlayerID
+	if pid == 0 then
+		if Stage.time >=35 then
+			Stage.time = Stage.time - 1
+			Stage.reducetime = Stage.reducetime + 1
+			SendToAllClient("tzj_enemy_interval_reduce_return",{time=Stage.time,reduce=Stage.reducetime})
+		else
+			--返回不能再减了
+			SendToAllClient("tzj_enemy_interval_reduce_return",{max=true})
+		end
+	end
+end
+
+function reducebosstime(_,data )
+	if Stage.gameFinished then
+		return
+	end
+	local pid = data.PlayerID
+	if pid == 0 then
+		if Stage.bosscountdown >=50 then
+			Stage.bosscountdown = Stage.bosscountdown - 1
+			Stage.reducebosstime = Stage.reducebosstime + 1
+			SendToAllClient("tzj_enemy_interval_reduce_boss_return",{time=Stage.bosscountdown,reduce=Stage.reducebosstime})
+		else
+			--返回不能再减了
+			SendToAllClient("tzj_enemy_interval_reduce_boss_return",{max=true})
+		end
+	end
+end
+
+function reduceEnemyTimeInit(_,data)
+	
+	if PlayerUtil.IsValidPlayer(data.PlayerID) then
+		SendToClient(data.PlayerID,"tzj_enemy_interval_init",{boss={time=Stage.bosscountdown,reduce=Stage.reducebosstime},enemy={time=Stage.time,reduce=Stage.reducetime}})
+	end
+end
+
+
 function UI_ExecuteCourierAbility(_,keys)
 	if Stage.gameFinished then
 		return
@@ -292,6 +335,9 @@ CustomGameEventManager:RegisterListener("ui_event_backpack_menu_sell_item",UI_Ba
 CustomGameEventManager:RegisterListener("tzj_treasure_selection_confirm",UI_SelectTreasure)
 CustomGameEventManager:RegisterListener("tzj_treasure_selection_close",UI_CloseTreasureSelection)
 CustomGameEventManager:RegisterListener("tzj_execute_courier_ability",UI_ExecuteCourierAbility)
+CustomGameEventManager:RegisterListener("tzj_enemy_interval_reduce",reducesgtime)
+CustomGameEventManager:RegisterListener("tzj_enemy_interval_reduce_boss",reducebosstime)
+CustomGameEventManager:RegisterListener("tzj_enemy_interval_init",reduceEnemyTimeInit)
 
 
 ---lua modifiers

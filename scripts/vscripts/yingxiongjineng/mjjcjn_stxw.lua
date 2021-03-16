@@ -28,7 +28,9 @@ function stxw( keys )
 	local baseDamage2 = baseDamage + caster.stxw_baseDamage
 	i = i + caster.stxw_damage
 	local damage = (mj * i + baseDamage2 ) * x * 1.4
-	
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	duanshu= duanshu+ caster.stxw_count
 
 	local time = 0

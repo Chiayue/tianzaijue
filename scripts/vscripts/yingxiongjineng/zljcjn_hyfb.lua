@@ -31,6 +31,9 @@ function hyfb( keys )
 	i = i + caster.hyfb_damage
 	local count =0
 	local damage = (zl * i + baseDamage2 ) * x
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	TimerUtil.createTimerWithDelay(0.5,function()
 		if count < 5 then
 			StartSoundEventFromPosition("Hero_Jakiro.LiquidFire",point)
@@ -83,6 +86,9 @@ function hyfbsh(keys )
 	i = i + caster.hyfb_damage
 	local count =0
 	local damage = (zl * i + baseDamage2 ) * x /2  * multiple
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageMf(caster,target,ability,damage)
 	
 end

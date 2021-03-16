@@ -27,11 +27,11 @@ function modifier_boss_phoenix_turnegg_lua:OnDestroy( kv )
         local nFXIndex = ParticleManager:CreateParticle( "particles/units/heroes/hero_phoenix/phoenix_supernova_reborn.vpcf", PATTACH_CUSTOMORIGIN, nil )
 		ParticleManager:SetParticleControl( nFXIndex, 0, self:GetCaster():GetOrigin() )
         ParticleManager:ReleaseParticleIndex( nFXIndex )
-        
-		local caster = self:GetCaster()
-		caster:SetHealth(caster:GetMaxHealth())
-		local buff=caster:AddNewModifier(caster, self:GetAbility(), "modifier_boss_phoenix_turnegg_lua_effect", {})
-		buff:SetStackCount(buff:GetStackCount()+1)
+		if caster:IsAlive() then
+			caster:SetHealth(caster:GetMaxHealth())
+			local buff=caster:AddNewModifier(caster, self:GetAbility(), "modifier_boss_phoenix_turnegg_lua_effect", {})
+			buff:SetStackCount(buff:GetStackCount()+1)
+		end
 
 	end
 end

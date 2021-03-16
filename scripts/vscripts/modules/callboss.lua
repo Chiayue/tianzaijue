@@ -30,7 +30,7 @@ function CallGrBoss(caster,x,playerID)
 		local r  = #Tzboss.sjboss
 		local r2  = RandomInt(1,r)
 		local unitname = Tzboss.sjboss[r2]
-		local unit = CreateUnitByName(unitname, p, false, nil, nil, TEAM_ENEMY)
+		local unit = CreateUnitByName(unitname, p, false, nil, hero, TEAM_ENEMY)
 	
 		local difficulty =   GetGameDifficulty()
 		--设置随机BOSS的品质  --1是个人BOSS
@@ -47,9 +47,9 @@ function CallGrBoss(caster,x,playerID)
 		level = wave * 30
 		local hp = ma.bosshp[wave] * ma.bosshpxs[unitname] 	--设置怪物的动态血量
 		local maxhp = hp * sjbossHp[x]  * ma.nd_hp[difficulty] 
-		if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-			unit.shjs = string.format("%.2f",maxhp / 500000000)
-			maxhp = 500000000
+		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+			unit.shjs = string.format("%.2f",maxhp / 200000000)
+			maxhp = 200000000
 		end
 		unit:SetBaseMaxHealth(maxhp) 
 --
@@ -62,7 +62,10 @@ function CallGrBoss(caster,x,playerID)
 			unit:SetBaseMagicalResistanceValue(mk)
 		local attack = ma.bossdamage[wave] * ma.bossdamagexs[unitname]	--设置怪物的动态攻击
 		local maxattack = attack *sjbossDamage[x]  * ma.nd_gj[difficulty]
-		unit:SetBaseDamageMin(maxattack)
+		if maxattack > 100000000 then
+			unit.shzj = string.format("%.2f",maxattack / 100000000)
+			maxattack = 100000000
+		end
 		unit:SetBaseDamageMax(maxattack)
 
 		unit:CreatureLevelUp(level)
@@ -121,7 +124,7 @@ function CallTeamBoss(caster,x,playerID)
 		local r  = #Tzboss.sjboss
 		local r2  = RandomInt(1,r)
 		local unitname = Tzboss.sjboss[r2]
-		local unit = CreateUnitByName(unitname, p, false, nil, nil, TEAM_ENEMY)
+		local unit = CreateUnitByName(unitname, p, false, nil, hero, TEAM_ENEMY)
 		local difficulty =   GetGameDifficulty()
 		local playernum = Stage.playernum
 
@@ -140,9 +143,9 @@ function CallTeamBoss(caster,x,playerID)
 		level = wave * 30
 			local hp = ma.bosshp[wave] * ma.bosshpxs[unitname] 	--设置怪物的动态血量
 			local maxhp = hp * sjbossHp[x]  * ma.nd_hp[difficulty] * ma.rs_hp[playernum]--
-			if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-				unit.shjs = string.format("%.2f",maxhp / 500000000)
-				maxhp = 500000000
+			if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+				unit.shjs = string.format("%.2f",maxhp / 200000000)
+				maxhp = 200000000
 			end
 			unit:SetBaseMaxHealth(maxhp) 
 --
@@ -156,6 +159,10 @@ function CallTeamBoss(caster,x,playerID)
 
 			local attack = ma.bossdamage[wave] * ma.bossdamagexs[unitname]	--设置怪物的动态攻击
 			local maxattack = attack *sjbossDamage[x] * ma.rs_gj[playernum] --
+			if maxattack > 100000000 then
+				unit.shzj = string.format("%.2f",maxattack / 100000000)
+				maxattack = 100000000
+			end
 			unit:SetBaseDamageMin(maxattack)
 			unit:SetBaseDamageMax(maxattack)
 
@@ -304,9 +311,9 @@ function CallTyBoss2(caster,playerID)
 		local wave = caster.tybosstime
 		local hp = ma.tybosshp[wave]	--设置怪物的动态血量
 		local maxhp = hp  * ma.nd_hp[difficulty]
-		if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-			unit.shjs = string.format("%.2f",maxhp / 500000000)
-			maxhp = 500000000
+		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+			unit.shjs = string.format("%.2f",maxhp / 200000000)
+			maxhp = 200000000
 		end
 		unit:SetBaseMaxHealth(maxhp)
 --
@@ -320,6 +327,10 @@ function CallTyBoss2(caster,playerID)
 
 		local attack =  ma.tybossgj[wave]	--设置怪物的动态攻击
 		local maxattack = attack * ma.nd_gj[difficulty]
+		if maxattack > 100000000 then
+			unit.shzj = string.format("%.2f",maxattack / 100000000)
+			maxattack = 100000000
+		end
 		unit:SetBaseDamageMin(maxattack)
 		unit:SetBaseDamageMax(maxattack)
 		--BOSS的掉落率
@@ -363,9 +374,9 @@ function CallYmBoss(caster,playerID)
 		local wave = caster.zh_ym
 		local hp = ma.tybosshp[wave]	--设置怪物的动态血量
 		local maxhp = hp  * ma.nd_hp[difficulty]
-		if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-			unit.shjs = string.format("%.2f",maxhp / 500000000)
-			maxhp = 500000000
+		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+			unit.shjs = string.format("%.2f",maxhp / 200000000)
+			maxhp = 200000000
 		end
 		unit:SetBaseMaxHealth(maxhp)
 --
@@ -378,6 +389,10 @@ function CallYmBoss(caster,playerID)
 
 		local attack =  ma.tybossgj[wave]	--设置怪物的动态攻击
 		local maxattack = attack * ma.nd_gj[difficulty]
+		if maxattack > 100000000 then
+			unit.shzj = string.format("%.2f",maxattack / 100000000)
+			maxattack = 100000000
+		end
 		unit:SetBaseDamageMin(maxattack)
 		unit:SetBaseDamageMax(maxattack)
 		--BOSS的掉落率

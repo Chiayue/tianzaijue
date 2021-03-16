@@ -12,3 +12,19 @@ function ss_lvlup( keys )
 
 	
 end
+
+
+function mm_lvlup( keys )
+	
+	local hero = keys.caster
+	local id = hero:GetPlayerOwnerID()
+	local ability = keys.ability
+	local level = ability:GetLevel() 
+	if level ==4 then
+		local itemname = "item_lljcjn_zdb3"
+		hero:AddItemByName(itemname)
+	end
+
+
+	
+end

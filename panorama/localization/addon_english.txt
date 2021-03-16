@@ -51,6 +51,8 @@
 	"item_net_prefix_g4_q7" "Xinghe · "
 
 	//After adding new attributes, add the corresponding attributes to the js corresponding to the tooltip interface of the random equipment to ensure the order, otherwise it will not be displayed
+	"item_attribute_format_common"	"{s:attr}<Panel class='AttrRange' /><Panel class='EnhanceValue' />"
+	
 	"item_attribute_ll" "Power: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_zl" "Intelligence: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_mj" "Agility: <font color=\"#ffffff\">+{s:value}</font>"
@@ -157,7 +159,8 @@
 	"info_game_over_prompt3" "<font color='#e85411'>Please kill the Lord of Calamity as soon as possible, otherwise the game will end in 3 seconds</font>"
 	"info_game_over_prompt2" "<font color='#e73c13'>Please kill the Lord of Calamity as soon as possible, otherwise the game will end in 2 seconds</font>"
 	"info_game_over_prompt1" "<font color='#e61015'>Please kill the Lord of Calamity as soon as possible, otherwise the game will end in 1 second</font>"
-	"info_game_finish_prompt" "Congratulations on clearing the level, the game is about to end"
+	"info_game_finish_prompt_win" "Congratulations on clearing the level, the game is about to end"
+	"info_game_finish_prompt_lose"	"游戏失败，游戏结算中，请稍候..."
 	"info_survival_boss_coming" "Survival Lord is coming soon, please pay attention"
 	"info_exceedthelimit" "Use exceeds the limit"
 	"info_exceedthecooltime" "Item CD"
@@ -168,6 +171,7 @@
 	"info_operation_overtime" "Operation timed out, please try again later"
 	"info_operation_faild" "Unknown error, please try again later"
 	"info_operation_busy" "Frequent operation, please try again later"
+	"info_operation_success"	"SUCCESS"
 
 	"error_position_unreachable" "The target location cannot be reached"
 	"error_netequip_position" "Cannot equip to this position"

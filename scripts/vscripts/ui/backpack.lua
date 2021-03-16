@@ -85,9 +85,15 @@ end
 --物品移动到公共仓库
 function Backpack:pulickpack_input( hero, hitem,slot)
 	local tt=true
+	
 	for item_slot = 0,BackpackConfig.MaxBodyIndex do
 		local item = hero:GetItemInSlot(item_slot)
 		if item ~= nil and item:GetEntityIndex()==hitem then
+			--宝物不能移动至公共仓库
+			if ItemManger.IsTreasureItem(item:GetAbilityName()) then
+				return;
+			end
+		
 			tt=false
 			local pack = self:GetPublicBackpack()
 			if pack[slot]==-1 then
@@ -129,6 +135,13 @@ function Backpack:pulickpack_input( hero, hitem,slot)
 		local pack = self:GetBackpack(hero) or {}
 		for packIndex,itemIndex in pairs(pack) do
 			if itemIndex == hitem then
+				--宝物不能移动至公共仓库
+				local item = EntityHelper.findEntityByIndex(itemIndex)
+				if item and ItemManger.IsTreasureItem(item:GetAbilityName()) then
+					return;
+				end
+			
+			
 				local pack2 = self:GetPublicBackpack()
 				if pack2[slot]==-1 then
 					pack[packIndex]=-1

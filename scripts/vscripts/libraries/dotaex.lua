@@ -574,7 +574,10 @@ end
 --@param #string tableName
 --@param #string key
 --@param #table valueTable 必须是一个表
-function SetNetTableValue(tableName,key,valueTable)
+function SetNetTableValue(tableName,key,valueTable,force)
+	if tableName == "UnitAttributes" and not force then
+		return;
+	end
 	if type(tableName) == "string" and type(key) == "string" then
 		CustomNetTables:SetTableValue(tableName,key,valueTable);
 	end

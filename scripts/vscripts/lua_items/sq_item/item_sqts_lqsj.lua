@@ -16,7 +16,7 @@ end
 
 
 function item_sqts_lqsj:GetAttributes()
-  return MODIFIER_ATTRIBUTE_PERMANENT
+  return MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 

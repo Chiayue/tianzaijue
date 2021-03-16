@@ -51,6 +51,8 @@
 	"item_net_prefix_g4_q7"	"星河 · "
 	
 	//添加新的屬性以後，要到隨機裝備的tooltip介面對應的js中添加對應的屬性以保證順序，否則不會顯示
+	"item_attribute_format_common"	"{s:attr}<Panel class='AttrRange' /><Panel class='EnhanceValue' />"
+	
 	"item_attribute_ll"	"力量：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_zl"	"智力：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_mj"	"敏捷：<font color=\"#ffffff\">+{s:value}</font>"
@@ -159,7 +161,8 @@
 	"info_game_over_prompt3"	"<font color='#e85411'>請儘快擊殺災厄領主，否則遊戲將在 3 秒後結束</font>"
 	"info_game_over_prompt2"	"<font color='#e73c13'>請儘快擊殺災厄領主，否則遊戲將在 2 秒後結束</font>"
 	"info_game_over_prompt1"	"<font color='#e61015'>請儘快擊殺災厄領主，否則遊戲將在 1 秒後結束</font>"
-	"info_game_finish_prompt"	"恭喜通關，遊戲即將結束"
+	"info_game_finish_prompt_win"	"恭喜通關，遊戲結算中，請稍候…"
+	"info_game_finish_prompt_lose"	"遊戲失敗，遊戲結算中，請稍候…"
 	"info_survival_boss_coming"	"災厄領主即將到來，請注意"
 	"info_exceedthelimit"	"使用超過限制"
 	"info_exceedthecooltime"	"物品CD中"
@@ -170,6 +173,7 @@
 	"info_operation_overtime"	"操作超時，請稍後再試"
 	"info_operation_faild"	"未知錯誤，請稍後再試"
 	"info_operation_busy"	"操作頻繁，請稍後再試"
+	"info_operation_success"	"操作成功"
 	
 	"error_position_unreachable" "無法到達目標地點"
 	"error_netequip_position" "無法裝備到該位置"

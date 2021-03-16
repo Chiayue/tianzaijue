@@ -40,10 +40,14 @@ function lzfs( keys )
 	local point = target:GetAbsOrigin()
 	local baseDamage2 = baseDamage + caster.lzfs_baseDamage
 	local damage = (zsx * (i + caster.lzfs_damage) + baseDamage2 ) * x *shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2 = damage
-	if RollPercentage(20) then
+	if RollPercentage(50) then
 			damage2 = damage * (caster.lzfs_multiple + 1 )
 	end	
+	
 	local units = FindAlliesInRadiusExdd(caster,point,radius) --寻找玩家的敌对单位
 	StartSoundEventFromPosition("Hero_Ursa.Earthshock",point)
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_ursa/ursa_earthshock.vpcf", PATTACH_POINT_FOLLOW, target)
@@ -75,10 +79,11 @@ function lzfs( keys )
 			ParticleManager:SetParticleControl(particle, 0, point) -- Origin
 			ParticleManager:SetParticleControl(particle, 1, Vector(radius,radius,radius)) -- Destination
 			local multiple = 1
-			if RollPercentage(20) then
+			if RollPercentage(50) then
 				multiple = caster.lzfs_multiple +multiple
 			end	
 			local damage2 = damage * multiple
+			
 			if units ~= nil then
 				for key, unit in pairs(units) do
 					ApplyDamageEx(caster,unit,ability,damage2)

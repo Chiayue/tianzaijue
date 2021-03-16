@@ -35,6 +35,9 @@ function ltyj( keys )
 	if RollPercentage(20) then
 		damage2 = damage * (caster.ltyj_multiple+1)
 	end	
+	if damage2 > 1000000000 then
+		damage2 = 1000000000
+	end
 
 	local units = FindAlliesInRadiusExdd(caster,point,radius) --寻找玩家的敌对单位	
 	local particle = ParticleManager:CreateParticle("particles/hero/brewmaster_thunder_clap.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
@@ -74,6 +77,9 @@ function ltyj( keys )
 				multiple = caster.ltyj_multiple +multiple
 			end	
 			local damage2 = damage * multiple
+			if damage2 > 1000000000 then
+				damage2 = 1000000000
+			end
 			if units ~= nil then
 			for key, unit in pairs(units) do
 				ApplyDamageEx(caster,unit,ability,damage2)

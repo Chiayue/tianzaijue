@@ -129,6 +129,12 @@ function jqzsh( keys )
 	i = i + caster.jqz_damage
 	local baseDamage2 = baseDamage + caster.jqz_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * multiple * shbs
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageEx(caster,target,ability,damage)
 --	ability:ApplyDataDrivenModifier(caster, target, "modifier_mjjcjn_jqz", {})
 --	ability:ApplyDataDrivenModifier(caster, caster, "modifier_mjjcjn_jqz", {})

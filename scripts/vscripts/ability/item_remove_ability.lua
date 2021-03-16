@@ -15,17 +15,17 @@ function RemoveAbility(_,data)
 		local caster = PlayerUtil.GetHero(pid)
 		for _, name in pairs(abilities) do
 			for i=1,5 do			 
-				 if name == caster:GetAbilityByIndex(i-1):GetAbilityName() then
+				local ability = caster:GetAbilityByIndex(i-1)
+				 if ability and name == ability:GetAbilityName() then
 					local name2 = kjn[i] 		
-
 					local jnd = caster:GetAbilityPoints()
-					local jnd2 = caster:GetAbilityByIndex(i-1):GetLevel() -1
-					jnd = jnd +jnd2
-					caster:SetAbilityPoints(jnd)
-					 caster:AddAbility(name2)
-					 caster:FindAbilityByName(name2):SetLevel(1)
-					 caster:SwapAbilities(name2,name,true,true)
-					 caster:RemoveAbility(name)
+					local jnd2 = ability:GetLevel() -1
+				 	jnd = jnd +jnd2
+				    caster:SetAbilityPoints(jnd)
+					caster:AddAbility(name2)
+					caster:FindAbilityByName(name2):SetLevel(1)
+					caster:SwapAbilities(name2,name,true,true)
+					caster:RemoveAbility(name)
 						if name == "zljcjn_dyh1" then	--如果删除了技能，就让玩家所有的地狱火死亡
 							killdyh(caster)
 						elseif name == "zljcjn_dyh3" then	--如果删除了技能，就让玩家所有的地狱火死亡

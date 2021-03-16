@@ -102,6 +102,9 @@ function wdz(keys)
 	end
 
 	max = level +max + caster.wdz_count
+	if max >30 then
+		max = 30
+	end	
 	local interval = duration / max
 	local num = 0
 	local count = 0

@@ -184,6 +184,9 @@ function jxgh( keys )
 	local caster = keys.caster
 	local target = keys.target
 	local ability = keys.ability
+	if caster==nil then
+		return 
+	end
 	local damage = caster:GetAverageTrueAttackDamage(caster)* 0.12
 	
 	ApplyDamageMf(caster,target,ability,damage)

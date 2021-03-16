@@ -50,6 +50,9 @@ function CreateWard(keys)
 		duration = duration + caster.swsw_duration
 		local baseDamage2 = baseDamage + caster.swsw_baseDamage
 		local damage = (sx * i + baseDamage2 ) * x  * ((caster.cas_table["zhwsh"]+100)/100) * 2 * ewsh
+		if damage > 500000000 then
+			damage = 500000000
+		end
 		local damage2= damage
 		if caster.swsw_multiple == nil then
 			caster.swsw_multiple = 0

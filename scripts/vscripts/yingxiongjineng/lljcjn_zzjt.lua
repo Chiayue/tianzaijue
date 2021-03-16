@@ -32,6 +32,9 @@ function zzjt( keys )
 	i = i + caster.zzjt_damage
 	local baseDamage2 = baseDamage + caster.zzjt_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2 = damage 
 	if RollPercentage(20) then
 		damage2 = damage * (caster.zzjt_multiple+1)

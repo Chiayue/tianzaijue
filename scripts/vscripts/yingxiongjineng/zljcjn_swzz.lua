@@ -12,7 +12,7 @@ function swzz( keys )
 	local x = 1 + (level+caster.cas_table.grjndj) / 10
 	local modifier = keys.modifier
 	local shbs = ability:GetLevelSpecialValueFor("shbs", level)	
-	local particle_finger = "particles/units/heroes/hero_lion/lion_spell_finger_of_death.vpcf"
+	local particle_finger = "particles/units/siwangyizhi.vpcf"
 	local particle_finger_fx = ParticleManager:CreateParticle(particle_finger, PATTACH_ABSORIGIN_FOLLOW, caster)
 
 	local cs = caster:FindModifierByName(modifier):GetStackCount()
@@ -42,6 +42,9 @@ function swzz( keys )
 		multiple = caster.swzz_multiple + multiple
 	end	 
 	local damage = (zl * i + baseDamage2 ) * x 
+	if damage > 1000000000 then
+		damage = 1000000000
+	end
 	local damage2 = damage * multiple * shbs
 	
 	ParticleManager:SetParticleControlEnt(particle_finger_fx, 0, caster, PATTACH_POINT_FOLLOW, "attach_attack2", caster:GetAbsOrigin(), true)

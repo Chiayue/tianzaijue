@@ -22,7 +22,7 @@ function item_sq_pd:GetModifierAttackSpeedBonus_Constant( params )
 	return self.gjsd
 end
 function item_sq_pd:GetAttributes()
-  return MODIFIER_ATTRIBUTE_MULTIPLE
+  return MODIFIER_ATTRIBUTE_MULTIPLE + MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function item_sq_pd:GetModifierSpellAmplify_Percentage( params )	--力量
@@ -33,13 +33,6 @@ function item_sq_pd:GetModifierPercentageCooldown( params )
 end
 --------------------------------------------------------------------------------
 
-function item_sq_pd:IsDebuff()
-	return false
-end
-
-function item_sq_pd:GetTexture( params )
-    return "item_sq_pd"
-end
 function item_sq_pd:IsHidden()
 	return true
 	-- body
@@ -105,10 +98,17 @@ function item_sq_pd:OnRefresh( kv )
 	self.hyqj_time= 0
 	self.lypj_time= 0
 --9
-
 	self.qssw_max = 0
 	self.dyh_max = 0
 	self.swsw_max = 0
+
+--10
+	self.lxdf_multiple= 0
+	self.hdyj_multiple= 0
+	self.hpq_multiple= 0
+	self.hyqj_multiple= 0
+	self.lypj_multiple= 0
+
 
 	if IsServer() then
 		local itempro=self:GetAbility().itemtype
@@ -182,6 +182,9 @@ function item_sq_pd:OnRefresh( kv )
 		end
 		if itempro.item_attributes.swzz_max then
 			self.swzz_max=itempro.item_attributes.swzz_max
+		end
+		if itempro.item_attributes.bsxx_max then
+			self.bsxx_max=itempro.item_attributes.bsxx_max
 		end
 		
 		--神器3
@@ -271,6 +274,23 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.dyh_max then
 			self.dyh_max=itempro.item_attributes.dyh_max
 		end
+
+		--神器10
+		if itempro.item_attributes.lxdf_multiple then
+			self.lxdf_multiple=itempro.item_attributes.lxdf_multiple
+		end
+		if itempro.item_attributes.hdyj_multiple then
+			self.hdyj_multiple=itempro.item_attributes.hdyj_multiple
+		end
+		if itempro.item_attributes.hpq_multiple then
+			self.hpq_multiple=itempro.item_attributes.hpq_multiple
+		end
+		if itempro.item_attributes.hyqj_multiple then
+			self.hyqj_multiple=itempro.item_attributes.hyqj_multiple
+		end
+		if itempro.item_attributes.lypj_multiple then
+			self.lypj_multiple=itempro.item_attributes.lypj_multiple
+		end
 		
 		local attributes = {}
 		attributes["jqjc"] = self.jqjc
@@ -296,6 +316,7 @@ function item_sq_pd:OnRefresh( kv )
 		attributes2["tkjj_time"] = self.tkjj_time
 		attributes2["gjz_max"] = self.gjz_max
 		attributes2["swzz_max"] = self.swzz_max
+		attributes2["bsxx_max"] = self.bsxx_max
 
 		attributes2["ldj_time"] = self.ldj_time
 		attributes2["fx_time"] = self.fx_time
@@ -329,6 +350,12 @@ function item_sq_pd:OnRefresh( kv )
 		attributes2["dyh_max"] = self.dyh_max
 		attributes2["qssw_max"] = self.qssw_max
 		attributes2["swsw_max"] = self.swsw_max
+
+		attributes2["lxdf_multiple"] = self.lxdf_multiple
+		attributes2["hdyj_multiple"] = self.hdyj_multiple
+		attributes2["hpq_multiple"] = self.hpq_multiple
+		attributes2["hyqj_multiple"] = self.lypj_multiple
+		attributes2["lypj_multiple"] = self.lypj_multiple
 		AttributesSet2(self:GetParent(),attributes2)
 		
 		CustomNetTables:SetTableValue( "ItemsInfo", tostring( self:GetParent():GetPlayerOwnerID() ), HERO_CUSTOM_PRO )
@@ -410,6 +437,9 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.swzz_max then
 			self.swzz_max=itempro.item_attributes.swzz_max
 		end
+		if itempro.item_attributes.bsxx_max then
+			self.bsxx_max=itempro.item_attributes.bsxx_max
+		end
 		
 		--神器3
 		if itempro.item_attributes.ldj_time then
@@ -499,6 +529,23 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.dyh_max then
 			self.dyh_max=itempro.item_attributes.dyh_max
 		end
+
+		--神器8
+		if itempro.item_attributes.lxdf_multiple then
+			self.lxdf_multiple=itempro.item_attributes.lxdf_multiple
+		end
+		if itempro.item_attributes.hdyj_multiple then
+			self.hdyj_multiple=itempro.item_attributes.hdyj_multiple
+		end
+		if itempro.item_attributes.hpq_multiple then
+			self.hpq_multiple=itempro.item_attributes.hpq_multiple
+		end
+		if itempro.item_attributes.hyqj_multiple then
+			self.hyqj_multiple=itempro.item_attributes.hyqj_multiple
+		end
+		if itempro.item_attributes.lypj_multiple then
+			self.lypj_multiple=itempro.item_attributes.lypj_multiple
+		end
 		
 	end
 end
@@ -550,6 +597,7 @@ function item_sq_pd:OnDestroy( )
 		attributes2["tkjj_time"] = self.tkjj_time and -self.tkjj_time or nil
 		attributes2["gjz_max"] = self.gjz_max and -self.gjz_max or nil
 		attributes2["swzz_max"] = self.swzz_max and -self.swzz_max or nil
+		attributes2["bsxx_max"] = self.bsxx_max and -self.bsxx_max or nil
 
 		attributes2["ldj_time"] = self.ldj_time and -self.ldj_time or nil
 		attributes2["fx_time"] = self.fx_time and -self.fx_time or nil
@@ -583,6 +631,12 @@ function item_sq_pd:OnDestroy( )
 		attributes2["dyh_max"] = self.dyh_max and -self.dyh_max or nil
 		attributes2["swsw_max"] = self.swsw_max and -self.swsw_max or nil
 		attributes2["qssw_max"] = self.qssw_max and -self.qssw_max or nil
+
+		attributes2["lxdf_multiple"] = self.lxdf_multiple and -self.lxdf_multiple or nil
+		attributes2["hdyj_multiple"] = self.hdyj_multiple and -self.hdyj_multiple or nil
+		attributes2["hpq_multiple"] = self.hpq_multiple and -self.hpq_multiple or nil
+		attributes2["hyqj_multiple"] = self.hyqj_multiple and -self.hyqj_multiple or nil
+		attributes2["lypj_multiple"] = self.lypj_multiple and -self.lypj_multiple or nil
 
 		
 		AttributesSet2(self:GetParent(),attributes2)

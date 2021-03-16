@@ -27,6 +27,7 @@ function modifier_hn:OnCreated( kv )
 	self.ms_bonus = self:GetAbility():GetSpecialValueFor( "fiery_soul_move_speed_bonus" )
 	self.max_stacks = self:GetAbility():GetSpecialValueFor( "fiery_soul_max_stacks" )
 	self.duration = self:GetAbility():GetSpecialValueFor( "fiery_soul_stack_duration" )
+	self.jnsh = self:GetAbility():GetSpecialValueFor( "jnsh" )
 	if not IsServer() then return end
 	-- play effects
 	self:PlayEffects()
@@ -38,6 +39,7 @@ function modifier_hn:OnRefresh( kv )
 	self.ms_bonus = self:GetAbility():GetSpecialValueFor( "fiery_soul_move_speed_bonus" )
 	self.max_stacks = self:GetAbility():GetSpecialValueFor( "fiery_soul_max_stacks" )
 	self.duration = self:GetAbility():GetSpecialValueFor( "fiery_soul_stack_duration" )
+	self.jnsh = self:GetAbility():GetSpecialValueFor( "jnsh" )
 end
 
 
@@ -47,6 +49,7 @@ function modifier_hn:DeclareFunctions()
 	local funcs = {
 		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
 		MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT,
+		MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE,
 		MODIFIER_EVENT_ON_ABILITY_EXECUTED
 	}
 
@@ -60,7 +63,9 @@ end
 function modifier_hn:GetModifierAttackSpeedBonus_Constant( params )
 	return self:GetStackCount() * self.as_bonus
 end
-
+function modifier_hn:GetModifierSpellAmplify_Percentage( params )
+	return self:GetStackCount() * self.jnsh
+end
 function modifier_hn:OnAbilityExecuted( params )
 	if not IsServer() then return end
 	if params.unit~=self:GetParent() then return end

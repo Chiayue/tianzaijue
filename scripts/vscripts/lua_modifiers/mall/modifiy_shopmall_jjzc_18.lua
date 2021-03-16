@@ -10,7 +10,7 @@ function modifiy_shopmall_jjzc_18:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_jjzc_18:IsHidden()
-	return false
+	return true
 end
 
 

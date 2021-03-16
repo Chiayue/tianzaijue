@@ -20,7 +20,6 @@ m.source_box = 2
 --		
 --		acquire_source = 1 --物品来源，对应SrvNetEquip.source_xxx的值
 --		acquire_time = 1 --获得该物品的时间
---		_serverSlot = 1 --服务端存储的位置，游戏结束的时候如果位置发生了变化，会进行同步
 --	},
 --	[id] = ...
 --	...
@@ -42,8 +41,6 @@ local function FormatServerData(data)
 	end
 	if data.slot then
 		data.slot = tonumber(data.slot)
-		--初始位置，如果没有变化就不更新到服务器了
-		data._serverSlot = data.slot
 	end
 	return data
 end
@@ -70,8 +67,18 @@ function m.InitPlayerData(srv_data)
 		
 			local data = srv_data[PlayerUtil.GetAccountID(PlayerID)]
 			if data then
+				local existSlot = {}
 				for id, item in pairs(data) do
-					pd[id] = FormatServerData(item)
+					local formatted = FormatServerData(item);
+					--极端情况下有重复的，清空dota端的slot，重新分配
+					if item.slot then
+						if not existSlot[item.slot] then
+							existSlot[item.slot] = true
+						else
+							formatted.slot = nil
+						end
+					end
+					pd[id] = formatted
 				end
 			end
 		end
@@ -272,26 +279,18 @@ function m.SyncItemPosition()
 	local sendData = {}
 	local aids = nil
 	for PlayerID, data in pairs(playerData) do
+		local aid = PlayerUtil.GetAccountID(PlayerID);
+		if aids then
+			aids = aids..","..aid
+		else
+			aids = aid
+		end
+		--同步所有装备的数据
 		local changedItems = {}
-		
-		local needSync = false;
-		
 		for id, value in pairs(data) do
-			if value._serverSlot ~= value.slot then
-				needSync = true;
-				changedItems[id] = value.slot;
-			end
+			changedItems[id] = value.slot;
 		end
-		
-		if needSync then
-			local aid = PlayerUtil.GetAccountID(PlayerID);
-			if aids then
-				aids = aids..","..aid
-			else
-				aids = aid
-			end
-			sendData[aid] = changedItems
-		end
+		sendData[aid] = changedItems
 	end
 	
 	if aids then
@@ -302,7 +301,6 @@ function m.SyncItemPosition()
 			if not srvData or srvData.result == nil then
 				m.SyncItemPosition()
 			end
-		
 		end)
 	end
 end
@@ -426,4 +424,42 @@ function m.Enhance(PlayerID,itemServerID,score,attr,stoneName,stoneCount,success
 	
 end
 
+function m.Client_SavePosition(_,keys)
+	local PlayerID = keys.PlayerID
+	if playerData[PlayerID] and Stage.gameFinished then
+		local mark = PlayerUtil.getAttrByPlayer(PlayerID,"net_equip_save_action")
+		local time = GetGameTimeWithoutPause();
+		if mark and mark >= time then
+			SendToClient(PlayerID,"tzj_net_equip_save_position_return",{busy=true,time=time})
+			return;
+		else
+			time = time + 30
+			PlayerUtil.setAttrByPlayer(PlayerID,"net_equip_save_action",time)
+		end
+	
+		local sendData = {}
+		local aid = PlayerUtil.GetAccountID(PlayerID);
+		
+		--同步所有装备的数据
+		local changedItems = {}
+		for id, value in pairs(playerData[PlayerID]) do
+			changedItems[id] = value.slot;
+		end
+		sendData[aid] = changedItems
+		
+		local params = CreateRequestParams(aid,3)
+		params.data = JSON.encode(sendData)
+		SrvHttp.load("tzj_net_equip",params,function(srvData)
+			if not srvData or srvData.result == nil then
+				SendToClient(PlayerID,"tzj_net_equip_save_position_return",{success=false,time=time})
+			else
+				SendToClient(PlayerID,"tzj_net_equip_save_position_return",{success=true,time=time})
+			end
+		end)
+	else
+		SendToClient(PlayerID,"tzj_net_equip_save_position_return",{success=false})
+	end
+end
+
+CustomGameEventManager:RegisterListener("tzj_net_equip_save_position",m.Client_SavePosition)
 return m;

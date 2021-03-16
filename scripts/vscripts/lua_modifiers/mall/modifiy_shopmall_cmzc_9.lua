@@ -10,7 +10,7 @@ function modifiy_shopmall_cmzc_9:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_cmzc_9:IsHidden()
-	return false
+	return true
 end
 function modifiy_shopmall_cmzc_9:OnCreated( kv )
 	if IsServer(  ) then

@@ -48,7 +48,7 @@ function item_sqts_gjl:OnRefresh()
 end
 
 function item_sqts_gjl:GetAttributes()
-	return MODIFIER_ATTRIBUTE_PERMANENT 
+	return MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE 
 end
 
 

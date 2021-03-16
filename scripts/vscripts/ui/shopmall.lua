@@ -100,6 +100,7 @@ if Shopmall == nil then
     Shopmall.unit_battlepass = {}
     Shopmall.unit_quest = {}  --初始化任务
     Shopmall.finish_quest = {}  --存多个玩家多个任务
+    Shopmall.playerzc = {}  --存多个玩家多个任务
     Shopmall.herotype = {}  --存玩家对应英雄类型
     setmetatable(Shopmall,Shopmall)
     --price_magic 仙石价格
@@ -289,7 +290,7 @@ if Shopmall == nil then
             catalog1="certificate",
             catalog2="rune",
             canuse=false,
-            notSale=true,
+           -- notSale=true,
         },
         shopmall_57={--特殊专长礼包     
             price_jing=5000000,
@@ -846,10 +847,10 @@ if Shopmall == nil then
          --   notSale=true,   
         },
         shopmall_61 ={ ---3级神秘宝物书
-            price_jing=200,
+            price_jing=12000000,
             reward={  Giveitem={"item_smbw_3"},},
             catalog1="certificate",   
-            notSale=true, 
+        --    notSale=true, 
             canuse=false,   
         },
         shopmall_62 ={ ---4级神秘宝物书
@@ -888,11 +889,11 @@ if Shopmall == nil then
             notSale=true,   
         },
         shopmall_67 ={ ---吞噬卡
-            price_jing=200,
+            price_jing=888888,
             reward={  Giveitem={"item_xhp_tssq_2"},},
             catalog1="certificate",
             canuse=false,    
-            notSale=true,   
+       --     notSale=true,   
         },
         shopmall_sstone_2={--     2阶强化石
             price_jing=100,
@@ -903,7 +904,7 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_3={--     3阶强化石
-            price_jing=400,
+            price_jing=200,
             reward={},
             stack=0,
             catalog1="consumable",
@@ -911,6 +912,22 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_4={--     4阶强化石
+            price_jing=400,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+            canuse=false,    
+        },
+        shopmall_sstone_5={--     5阶强化石
+            price_jing=800,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+            canuse=false,    
+        },
+        shopmall_sstone_6={--     6阶强化石
             price_jing=1600,
             reward={},
             stack=0,
@@ -918,12 +935,13 @@ if Shopmall == nil then
             catalog2="enhance",
             canuse=false,    
         },
-        shopmall_sstone_5={--     4阶强化石
-            price_jing=6400,
+        shopmall_sstone_7={--     7阶强化石
+            price_jing=3200,
             reward={},
             stack=0,
             catalog1="consumable",
             catalog2="enhance",
+            notSale=true,
             canuse=false,    
         },
         shopmall_68 ={ ---征战钥匙
@@ -935,6 +953,14 @@ if Shopmall == nil then
             stack=0,
          	notSale=false,
             canuse=false,    
+        },
+        shopmall_69={--测试
+            price_jing=30000000,
+            reward={Attr_tmz2=1000},
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
         },
         --[[shopmall_29={--装备强化石(可堆叠)		(暂无，不需要弄)      价格：100晶石      时间：单局消耗      作用：强化一件装备，提升属性      说明：作用的存档装备等级和品质越高，需要消耗的强化石越多
             price_jing=4800,
@@ -1462,6 +1488,366 @@ if Shopmall == nil then
                     count = 1
                 }
             },
+            [31] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [32] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [33] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [34] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [35] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [36] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [37] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [38] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [39] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [40] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [41] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [42] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [43] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [44] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [45] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [46] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [47] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [48] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [49] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [50] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [51] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [52] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [53] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [54] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [55] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [56] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [57] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [58] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [59] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
+            [60] = {
+                [1] = { --普通版奖励
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
+                    state = 1,
+                    count = 2
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_68",
+                    state = 1,
+                    count = 2
+                }
+            },
 
         
         }
@@ -1497,6 +1883,36 @@ if Shopmall == nil then
         [28]={Giveshopmall=3000},--28.晶石+3000
         [29]={Giveshopmall=3000},--29.晶石+3000
         [30]={Giveshopmall=1},--30.三阶紫色特殊装备宝箱
+        [31]={Giveshopmall=2},
+        [32]={Giveshopmall=2},
+        [33]={Giveshopmall=2},
+        [34]={Giveshopmall=2},
+        [35]={Giveshopmall=2},
+        [36]={Giveshopmall=2},
+        [37]={Giveshopmall=2},
+        [38]={Giveshopmall=2},
+        [39]={Giveshopmall=2},
+        [40]={Giveshopmall=2},
+        [41]={Giveshopmall=2},
+        [42]={Giveshopmall=2},
+        [43]={Giveshopmall=2},
+        [44]={Giveshopmall=2},
+        [45]={Giveshopmall=2},
+        [46]={Giveshopmall=2},
+        [47]={Giveshopmall=2},
+        [48]={Giveshopmall=2},
+        [49]={Giveshopmall=2},
+        [50]={Giveshopmall=2},
+        [51]={Giveshopmall=2},
+        [52]={Giveshopmall=2},
+        [53]={Giveshopmall=2},
+        [54]={Giveshopmall=2},
+        [55]={Giveshopmall=2},
+        [56]={Giveshopmall=2},
+        [57]={Giveshopmall=2},
+        [58]={Giveshopmall=2},
+        [59]={Giveshopmall=2},
+        [60]={Giveshopmall=2},
     }
     Shopmall.BPreward_2={
         [1]={Giveshopmall=3000},--晶石+3000
@@ -1529,6 +1945,36 @@ if Shopmall == nil then
         [28]={Giveshopmall=5000},--28.晶石+5000
         [29]={Giveshopmall=20},--29.征战钥匙+20
         [30]={Giveshopmall=1},--30.三阶橙色特殊装备宝箱
+        [31]={Giveshopmall=2},
+        [32]={Giveshopmall=2},
+        [33]={Giveshopmall=2},
+        [34]={Giveshopmall=2},
+        [35]={Giveshopmall=2},
+        [36]={Giveshopmall=2},
+        [37]={Giveshopmall=2},
+        [38]={Giveshopmall=2},
+        [39]={Giveshopmall=2},
+        [40]={Giveshopmall=2},
+        [41]={Giveshopmall=2},
+        [42]={Giveshopmall=2},
+        [43]={Giveshopmall=2},
+        [44]={Giveshopmall=2},
+        [45]={Giveshopmall=2},
+        [46]={Giveshopmall=2},
+        [47]={Giveshopmall=2},
+        [48]={Giveshopmall=2},
+        [49]={Giveshopmall=2},
+        [50]={Giveshopmall=2},
+        [51]={Giveshopmall=2},
+        [52]={Giveshopmall=2},
+        [53]={Giveshopmall=2},
+        [54]={Giveshopmall=2},
+        [55]={Giveshopmall=2},
+        [56]={Giveshopmall=2},
+        [57]={Giveshopmall=2},
+        [58]={Giveshopmall=2},
+        [59]={Giveshopmall=2},
+        [60]={Giveshopmall=2},
     }
     Shopmall.quest_day_exp=30
     Shopmall.quest_week_exp=100
@@ -1729,6 +2175,7 @@ function Shopmall:SetPlayerdata( playerid,data )
         end
     end
     self.Playermall[playerid]=datatable
+    self.playerzc[playerid]={}
     --PrintTable(self.Playermall[playerid])
 	CustomNetTables:SetTableValue("shopmall", "player_data_"..playerid,self.Playermall[playerid])
 end
@@ -1858,10 +2305,20 @@ function Shopmall:SetStone(playerid,eventname,ftype,number)
     CustomNetTables:SetTableValue("PlayerInfo", "store_currency_"..playerid,data)
 end
 function Shopmall:GetMallState( playerid)
-	return self.Playermall[playerid]
+	return self.Playermall[playerid] or {}
 end
-
-function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
+function Shopmall:SendFWmessage( unit,shopmallitemname,tempname)
+    local maxtimes=Shopmall.list[shopmallitemname]['maxtimes']
+    local lasttime=maxtimes
+    local usetimes=PlayerUtil.getAttrByPlayer(unit:GetPlayerID(),shopmallitemname.."_usetimes")
+    if usetimes then
+        lasttime=maxtimes-usetimes
+    end
+    local temp={}
+    temp[shopmallitemname]=lasttime
+    SendToClient(unit:GetPlayerID(),"tzj_rune_added", {rune=tempname,max=temp}) --添加专长
+end
+function Shopmall:SetReWard( unit,reward,shopmallitemname)---给成就奖励和地图等级
     if type(reward) ~= "table" then
 		return
     end
@@ -1931,9 +2388,15 @@ function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
                             table.insert(tszc,vv.GiveModifity[1])
                         end
                     end
+                    
                     for i=1,v do
                         local r = RandomInt(1,#tszc)
                         unit:AddNewModifier(unit, nil, tszc[r], {} )
+                        local tempname=string.sub(tszc[r],9,string.len(tszc[r]))
+                        table.insert(self.playerzc[unit:GetPlayerID()],tempname)
+                        if shopmallitemname then
+                            self:SendFWmessage( unit,shopmallitemname,tempname)
+                        end
                         table.remove(tszc,r)
                     end             
             elseif  NameArray[2]=="zjzc" then --中级专长
@@ -1946,6 +2409,11 @@ function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
                     for i=1,v do
                         local r = RandomInt(1,#tszc)
                         unit:AddNewModifier(unit, nil, tszc[r], {} )
+                        local tempname=string.sub(tszc[r],9,string.len(tszc[r]))
+                        table.insert(self.playerzc[unit:GetPlayerID()],tempname)
+                        if shopmallitemname then
+                            self:SendFWmessage( unit,shopmallitemname,tempname)
+                        end
                         table.remove(tszc,r)
                     end             
             elseif  NameArray[2]=="gjzc" then --高级专长
@@ -1958,6 +2426,11 @@ function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
                     for i=1,v do
                         local r = RandomInt(1,#tszc)
                         unit:AddNewModifier(unit, nil, tszc[r], {} )
+                        local tempname=string.sub(tszc[r],9,string.len(tszc[r]))
+                        table.insert(self.playerzc[unit:GetPlayerID()],tempname)
+                        if shopmallitemname then
+                            self:SendFWmessage( unit,shopmallitemname,tempname)
+                        end
                         table.remove(tszc,r)
                     end             
             elseif  NameArray[2]=="cmzc" then --超魔专长
@@ -1970,6 +2443,11 @@ function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
                     for i=1,v do
                         local r = RandomInt(1,#tszc)
                         unit:AddNewModifier(unit, nil, tszc[r], {} )
+                        local tempname=string.sub(tszc[r],9,string.len(tszc[r]))
+                        table.insert(self.playerzc[unit:GetPlayerID()],tempname)
+                        if shopmallitemname then
+                            self:SendFWmessage( unit,shopmallitemname,tempname)
+                        end
                         table.remove(tszc,r)
                     end             
             elseif  NameArray[2]=="tszc" then --特殊专长
@@ -1982,6 +2460,11 @@ function Shopmall:SetReWard( unit,reward)---给成就奖励和地图等级
                     for i=1,v do
                         local r = RandomInt(1,#tszc)
                         unit:AddNewModifier(unit, nil, tszc[r], {} )
+                        local tempname=string.sub(tszc[r],9,string.len(tszc[r]))
+                        table.insert(self.playerzc[unit:GetPlayerID()],tempname)
+                        if shopmallitemname then
+                            self:SendFWmessage( unit,shopmallitemname,tempname)
+                        end
                         table.remove(tszc,r)
                     end             
             elseif  NameArray[2]=="Pm" then --直接给主属性
@@ -2052,7 +2535,7 @@ function Shopmall:GetItemNum(playerid,itemname)
     if itemdata[itemname] then
         return tonumber(itemdata[itemname]['stack'])
     else
-        return -1
+        return 0
     end
 end
 function Shopmall:InitQuest(playerid,ftype)
@@ -2068,7 +2551,7 @@ function Shopmall:InitQuest(playerid,ftype)
     end
     Shopmall.unit_quest[playerid] = quest
 end
-function Shopmall:uploadQuest()--统一上传初始化的任务
+function Shopmall:uploadQuest(times)--统一上传初始化的任务
 	if TableLen(Shopmall.unit_quest) == 0 then
 		return;
 	end
@@ -2078,8 +2561,13 @@ function Shopmall:uploadQuest()--统一上传初始化的任务
             PrintTable(arg2)
             return true
         else
-            print("InitQuest ",success,arg2)
-            return false
+            if times<=0 then
+                print("InitQuest ",success,arg2)
+                return false
+            else
+                print("InitQuest ",success,arg2)
+                Shopmall:uploadQuest(times-1)
+            end
         end
     
     end)
@@ -2114,6 +2602,9 @@ function Shopmall:GetPlayerRefreshTimes(playerid)
         times=times+1
     end 
     local itemdata=self:GetMallState(playerid)
+    if itemdata==nil then
+        return 0
+    end
     if itemdata[SrvStore.NAME_PLUS] then
         times=times+1
     end
@@ -2121,9 +2612,13 @@ function Shopmall:GetPlayerRefreshTimes(playerid)
 end
 function Shopmall:GetPlayerPluslevel(playerid)  --获取玩家plus是哪种0为没有卡，1为月卡和季卡，3为永久卡
     local itemdata=self:GetMallState(playerid)
+    if itemdata==nil then
+        return 0
+    end
     if itemdata[SrvStore.NAME_PLUS]==nil then
         return 0
     end
+    
     if SrvStore.IsPermanent(itemdata[SrvStore.NAME_PLUS]) then
         return 3
     end
@@ -2176,7 +2671,7 @@ function Shopmall:SetPlayerBP(playerid,data,isLast)
         temp.quest=self.unit_quest[playerid]
     end
     if isLast then
-        Shopmall:uploadQuest()
+        Shopmall:uploadQuest(5)
     end
     if data.reward then
         for k, v in pairs(data.reward['basic']) do
@@ -2558,33 +3053,56 @@ function Shopmall:shopmallconsumeitem(data)
                 end
             end
             local exceedLimit=false
+            local lasttimes=1 --剩余使用次数
+            local hasnum=Shopmall:GetItemNum(data.PlayerID,data.itemname)--拥有的数量
+            local clintnum=1--客户端传过来的数量
+            if data.count then
+                clintnum= tonumber(data.count) 
+            end
             if item['maxtimes'] then
                 local usetimes=PlayerUtil.getAttrByPlayer(data.PlayerID,data.itemname.."_usetimes")
                 if usetimes then
-                    if usetimes>=item['maxtimes'] then
-                        SendToClient(data.PlayerID,"ui_event_shopmall_consume_return",{success=false,item=data.itemname,ui=data.ui,info="#info_exceedthelimit",exceedLimit=true})
-                        return 
-                    else
-                        if usetimes+1==item['maxtimes'] then
-                            exceedLimit=true
-                        end
-                       PlayerUtil.setAttrByPlayer(data.PlayerID,data.itemname.."_usetimes",usetimes+1) 
-                    end
+                    lasttimes=item['maxtimes']-usetimes
                 else
-                    if item['maxtimes']==1 then
-                        exceedLimit=true
-                    end
-                    PlayerUtil.setAttrByPlayer(data.PlayerID,data.itemname.."_usetimes",1) 
+                    lasttimes=item['maxtimes']
                 end
             end
-            local count=1
+            local count=math.min(unpack({lasttimes,clintnum,hasnum})) --3者取最小，nil的时候不作判断
             local alldata=Shopmall.list
             local item=alldata[data.itemname]
             if item.stack==nil then
                 count=nil
             end
             local reward=nil
-            Shopmall:SetReWard( hero,item.reward)
+            if count~=nil and count<=0 then  --为0表示不能使用，要么数量限制到了要么拥有0个
+                local params = {success=false,item=data.itemname,ui=data.ui,exceedLimit=exceedLimit}      
+             	params.info = "#consumefail";
+                SendToClient(data.PlayerID,"ui_event_shopmall_consume_return",params)
+                return 
+            end
+            if item['maxtimes'] and count~=nil then
+                local usetimes=PlayerUtil.getAttrByPlayer(data.PlayerID,data.itemname.."_usetimes")
+                if usetimes then
+                    if usetimes>=item['maxtimes'] then
+                        SendToClient(data.PlayerID,"ui_event_shopmall_consume_return",{success=false,item=data.itemname,ui=data.ui,info="#info_exceedthelimit",exceedLimit=true})
+                        return 
+                    else
+                        if usetimes+count==item['maxtimes'] then
+                            exceedLimit=true
+                        end
+                       PlayerUtil.setAttrByPlayer(data.PlayerID,data.itemname.."_usetimes",usetimes+count) 
+                    end
+                else
+                    if item['maxtimes']==count then
+                        exceedLimit=true
+                    end
+                    PlayerUtil.setAttrByPlayer(data.PlayerID,data.itemname.."_usetimes",count) 
+                end
+            end
+            
+            for i=1,math.max(unpack({1,count})) do  --最少使用一次
+                Shopmall:SetReWard( hero,item.reward,data.itemname)
+            end
             SrvStore.ConsumeItem(data.PlayerID,data.itemname,count,reward,function(success,newItem)
                 if success==true then
                     if newItem then
@@ -2934,6 +3452,28 @@ function Shopmall:shopmallbuyitem(data)
         
     end
 end
+function Shopmall:tzj_rune_init(data)
+    --local player = PlayerResource:GetPlayer(data.PlayerID)
+    --if player == nil then return end
+    --local hero = player:GetAssignedHero()
+
+    local allname={"shopmall_15","shopmall_16","shopmall_17","shopmall_47","shopmall_48"}
+    local fwlist={}
+    for k,v in pairs(allname) do
+        local maxtimes=Shopmall.list[v]['maxtimes']
+        local lasttime=0
+        if maxtimes==nil then
+            maxtimes=0
+        end
+        lasttime=maxtimes
+        local usetimes=PlayerUtil.getAttrByPlayer(data.PlayerID,v.."_usetimes")
+        if usetimes then
+            lasttime=maxtimes-usetimes
+        end
+        fwlist[v]=lasttime
+    end
+    SendToClient(data.PlayerID,"tzj_rune_init_return",{rune=Shopmall.playerzc[data.PlayerID],max=fwlist})
+end
 -- 购买物品
 CustomGameEventManager:RegisterListener("ui_event_buymallitem",Dynamic_Wrap(Shopmall,"shopmallbuyitem"))
 -- 消耗物品
@@ -2945,3 +3485,6 @@ CustomGameEventManager:RegisterListener("tzj_battlepass_init",Dynamic_Wrap(Shopm
 CustomGameEventManager:RegisterListener("tzj_battlepass_request_get_reward",Dynamic_Wrap(Shopmall,"tzj_battlepass_request_get_reward"))
 --开箱子
 CustomGameEventManager:RegisterListener("tzj_chest_open",Dynamic_Wrap(Shopmall,"tzj_chest_open"))
+--获取专长
+CustomGameEventManager:RegisterListener("tzj_rune_init",Dynamic_Wrap(Shopmall,"tzj_rune_init"))
+

@@ -41,66 +41,87 @@ function m.IsLastDateOfMonth()
 end
 
 
-function m.GameFinished(playerWin,onlinePlayers)
-	SrvNetEquip.SyncItemPosition();
-
-
-	local difficulty = GetGameDifficulty()
-	local params = PlayerUtil.GetAllAccount(true)
-	params.nd = difficulty
-	
-	
-	if onlinePlayers then
-		local allData = {}
+function m.GameFinished(playerWin,onlinePlayers,error)
+	if not error then
+		local params = nil
+		local status,error = pcall(function()
+			params = PlayerUtil.GetAllAccount(true)
+			params.mode = 1;
+			
+			SrvNetEquip.SyncItemPosition();
+			
+			local difficulty = GetGameDifficulty()
+			params.nd = difficulty
 		
-		for _, PlayerID in pairs(onlinePlayers) do
-			local aid = PlayerUtil.GetAccountID(PlayerID)
-			if aid then
-				local data = {}
-				allData[aid] = data
+			if onlinePlayers then
+				local allData = {}
 				
-				--通关数据
-				if playerWin then
-					local passCount = SrvAchv.RecordPassCount(PlayerID)
-					if passCount then
-						data.passCount = passCount
+				for _, PlayerID in pairs(onlinePlayers) do
+					local aid = PlayerUtil.GetAccountID(PlayerID)
+					if aid then
+						local data = {}
+						allData[aid] = data
+						
+						--通关数据
+						if playerWin then
+							local passCount = SrvAchv.RecordPassCount(PlayerID)
+							if passCount then
+								data.passCount = passCount
+							end
+						end
+						--地图经验
+						local mapExp = m.GetMaxExpToServer(PlayerID,playerWin)
+						if mapExp then
+							data.mapExp = mapExp
+						end
+						
+						--成就
+						local achv = m.GetAchievementsToServer(PlayerID,difficulty,playerWin)
+						if achv then
+							data.achv = achv
+						end
+						
+						--通行证任务
+						local quest = m.GetBPQuest(PlayerID,difficulty,playerWin)
+						if quest then
+							quest.season = SrvBattlePass.GetSeason()
+							data.quest = quest
+						end
+						
+						local jing = m.GetJingToServer(PlayerID,playerWin)
+						if jing then
+							data.jing = jing
+						end
 					end
+					
 				end
-				--地图经验
-				local mapExp = m.GetMaxExpToServer(PlayerID,playerWin)
-				if mapExp then
-					data.mapExp = mapExp
-				end
-				
-				--成就
-				local achv = m.GetAchievementsToServer(PlayerID,difficulty,playerWin)
-				if achv then
-					data.achv = achv
-				end
-				
-				--通行证任务
-				local quest = m.GetBPQuest(PlayerID,difficulty,playerWin)
-				if quest then
-					quest.season = SrvBattlePass.GetSeason()
-					data.quest = quest
-				end
-				
-				local jing = m.GetJingToServer(PlayerID,playerWin)
-				if jing then
-					data.jing = jing
-				end
+				params.data = JSON.encode(allData)
 			end
 			
+			local custom = SrvPlayerCustom.ToServer();
+			if TableLen(custom) > 0 then
+				params.custom = JSON.encode(custom)
+			end
+		
+		end)
+		
+		if not params then
+			params = {mode=1}
+			params.error = "获取玩家id失败"
 		end
-		params.data = JSON.encode(allData)
+		
+		if not status then
+			if params.error then
+				params.error2 = params.error
+			end
+			params.error = error
+		end
+		
+		SrvHttp.load("tzj_gf",params)
+	else
+		SrvHttp.load("tzj_gf",{mode=1,error=error})
 	end
 	
-	local custom = SrvPlayerCustom.ToServer();
-	if TableLen(custom) > 0 then
-		params.custom = JSON.encode(custom)
-	end
-	
-	SrvHttp.load("tzj_gf",params)
 end
 
 ---获得某个玩家的通关经验数据，用于向服务器存储。返回空，则不同步。
@@ -164,6 +185,10 @@ end
 --	....
 --}
 function m.GetNetEquip(PlayerID,difficulty,playerWin)
+	--local 
+	--for pid,info in pairs(m.playerinfo) do
+	--	info.net_items = 
+	--end
 	
 end
 
@@ -176,6 +201,9 @@ end
 --	{name="xxxxx",count=nil/123,valid=nil/123}
 --}
 function m.GetStoreItem(PlayerID,difficulty,playerWin)
+	--for pid,info in pairs(m.playerinfo) do
+	--	info.net_items = 
+	--end
 	
 end
 

@@ -57,7 +57,7 @@ end
 
 
 function boss_shakeground_lua:GetCooldown( nLevel )
-	return self.BaseClass.GetCooldown( self, nLevel )-0.25*GameRules:GetCustomGameDifficulty()
+	return self.BaseClass.GetCooldown( self, nLevel )-0.2*GameRules:GetCustomGameDifficulty()
 end
 function boss_shakeground_lua:GetCastPoint()
 	local cd  = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.1

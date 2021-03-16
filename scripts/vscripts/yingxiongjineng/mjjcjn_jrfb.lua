@@ -46,6 +46,9 @@ function jrfb( keys )
 	local baseDamage2 = baseDamage + caster.jrfb_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x  * shbs
 	local sound = StartSoundEvent("Greevil.BladeFuryStart",caster)
+	if damage > 500000000 then
+		damage = 500000000
+	end
 
 	local particle = ParticleManager:CreateParticle( "particles/econ/items/juggernaut/jugg_ti8_sword/juggernaut_crimson_blade_fury_abyssal.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, caster )
 	ParticleManager:SetParticleControl( particle, 0, caster:GetAbsOrigin())

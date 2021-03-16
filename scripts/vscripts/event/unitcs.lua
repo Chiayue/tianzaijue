@@ -38,7 +38,8 @@ function m:OnNPCSpawned(keys)
 	if unit:IsRealHero() and unit.deathtreasures then --复活后添加宝物
 		
 		for k, v in pairs(unit.deathtreasures) do
-			UI_SelectTreasure(nil,{PlayerID=PlayerID,ab_name=v})
+			local pz = true
+			UI_SelectTreasure(nil,{PlayerID=PlayerID,ab_name=v},pz)
 		end
 		unit.deathtreasures=nil
 	end
@@ -55,7 +56,7 @@ function m.CreateHealthBar(unitIndex)
 		return;
 	end
 	healthBarUnits[unitIndex] = unitIndex
-	SetNetTableValue("UnitAttributes","health_bar_index",healthBarUnits)
+	SetNetTableValue("UnitAttributes","health_bar_index",healthBarUnits,true)
 end
 
 ---清除掉nettable中的数据，节省空间
@@ -64,7 +65,7 @@ function m.RemoveHealthBar(unitIndex)
 		return;
 	end
 	healthBarUnits[unitIndex] = nil
-	SetNetTableValue("UnitAttributes","health_bar_index",healthBarUnits)
+	SetNetTableValue("UnitAttributes","health_bar_index",healthBarUnits,true)
 end
 
 --在NPCSpawned事件的.响应中处理

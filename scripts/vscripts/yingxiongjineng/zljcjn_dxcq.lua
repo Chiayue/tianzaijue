@@ -140,7 +140,12 @@ function dxcqsh( keys )
 	i = i + caster.dxcq_damage
 	local baseDamage2 = baseDamage + caster.dxcq_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * multiple * shbs
-		
+	if caster.cas_table.tswsh > 100 then
+		damage = damage * caster.cas_table.tswsh /100
+	end
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	ApplyDamageMf(caster,target,ability,damage)
 
 end

@@ -186,6 +186,14 @@ end
 function PlagueLand:AddedToInventoryFilter(event )
 	local unit=EntIndexToHScript(event.inventory_parent_entindex_const)
 	local item=EntIndexToHScript(event.item_entindex_const)
+	
+	--不是自己的宝物，不能捡起来。即不能共享宝物
+	if ItemManger.IsTreasureItem(item:GetAbilityName()) and item:GetPurchaser() and item:GetPurchaser() ~= unit then
+		CreateItemOnGround(item,nil,unit:GetAbsOrigin(),100) 
+		return false;
+	end
+	
+	
 	local nameArray = string.split(item:GetAbilityName(), "_");
 	if #nameArray > 1 and nameArray[2]=="net" then 
 		if item:GetPurchaser() and item:GetPurchaser()==unit then
@@ -213,18 +221,26 @@ function PlagueLand:AddedToInventoryFilter(event )
 	end
 	
 	if item:IsStackable() then
+		local existItem = nil;
 		local hasPos = false;
 		for i=0,BackpackConfig.MaxBodyIndex do
 			local slotItem = unit:GetItemInSlot(i);
-			if slotItem == nil then
-				hasPos = true;
-			elseif item:GetAbilityName() == slotItem:GetAbilityName() then
-				return true;
+			if slotItem then
+				if item:GetAbilityName() == slotItem:GetAbilityName() then
+					existItem = slotItem
+					break;
+				end	
+			else
+				hasPos = true
 			end
 		end
 		
-		if hasPos then
-			return true;
+		if existItem then
+			--修复无限叠加的物品的bug（当同时拥有自己的和别人的消耗品的时候，新增消耗品两者会同时叠加）
+			existItem:SetCurrentCharges(existItem:GetCurrentCharges() + item:GetCurrentCharges())
+			return false;
+		elseif hasPos then
+			return true
 		elseif not Backpack:AddItemImmediate(unit,item,-1) then
 			CreateItemOnGround(item,nil,unit:GetAbsOrigin(),100)
 		end

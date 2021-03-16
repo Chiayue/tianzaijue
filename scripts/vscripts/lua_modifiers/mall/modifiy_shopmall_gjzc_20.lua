@@ -10,7 +10,7 @@ function modifiy_shopmall_gjzc_20:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_gjzc_20:IsHidden()
-	return false
+	return true
 end
 
 

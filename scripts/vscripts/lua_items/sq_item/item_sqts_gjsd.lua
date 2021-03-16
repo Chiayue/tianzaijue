@@ -21,7 +21,7 @@ function item_sqts_gjsd:GetModifierAttackSpeedBonus_Constant( params )
 
 end
 function item_sqts_gjsd:GetAttributes()
-  return MODIFIER_ATTRIBUTE_PERMANENT
+  return MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 

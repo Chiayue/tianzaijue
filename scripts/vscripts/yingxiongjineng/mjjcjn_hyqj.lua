@@ -29,10 +29,13 @@ function hyqj( keys )
 	if caster.hyqj_damage == nil then
 		caster.hyqj_damage = 0
 	end
-
+	i = i +caster.hyqj_damage
 	local mj = caster:GetAgility()
 	local baseDamage2 = baseDamage + caster.hyqj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.hyqj_time == nil then
@@ -41,7 +44,7 @@ function hyqj( keys )
 	if caster.hyqj_multiple == nil then
 		caster.hyqj_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.hyqj_multiple + 1 )
 	end	
 
@@ -64,7 +67,7 @@ function hyqj( keys )
 			local p1 = ParticleManager:CreateParticle("particles/units/heroes/hero_spirit_breaker/spirit_breaker_greater_bash.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
 			ParticleManager:SetParticleControl(p1, 0, point) -- Origin
 			local multiple = 1
-			if RollPercentage(20) then
+			if RollPercentage(50) then
 				multiple = caster.hyqj_multiple +multiple
 			end	
 			damage2 = damage * multiple

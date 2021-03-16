@@ -33,4 +33,7 @@ function modifiy_achi_hidden_3:OnDeath( params )
 		end
 	end
 end
+function modifiy_achi_hidden_3:GetAttributes()
+	return MODIFIER_ATTRIBUTE_PERMANENT 
+end
 --------------------------------------------------------------------------------

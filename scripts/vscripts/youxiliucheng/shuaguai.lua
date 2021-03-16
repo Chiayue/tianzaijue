@@ -122,8 +122,8 @@ function sg(wave,p2,s )
 		gjbs = gjbs*3
 		xlbs = xlbs*5
 		fybs = fybs*1.5
-		jqbs = jqbs*4
-		jybs = jybs*4
+		jqbs = jqbs*5
+		jybs = jybs*5
 		mxbs = mxbs*1.25
 	end
 	local unitname
@@ -138,9 +138,9 @@ function sg(wave,p2,s )
 	--if unit ~= nil then --存在该单位的时候刷新
 	local hp = ma.hpxs[unitname]	--设置怪物的动态血量
 	local maxhp = hp * ma.hp[wave]  *xlbs * ma.nd_hp[difficulty]  --怪物7倍血量
-	if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-		unit.shjs = string.format("%.2f",maxhp / 500000000)
-		maxhp = 500000000
+	if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+		unit.shjs = string.format("%.2f",maxhp / 200000000)
+		maxhp = 200000000
 	end
 	unit:SetBaseMaxHealth(maxhp)
 
@@ -153,6 +153,10 @@ function sg(wave,p2,s )
 
 	local attack = ma.attackxs[unitname]	--设置怪物的动态攻击
 	local maxattack = attack * ma.attack[wave]  *1.5 *gjbs * ma.nd_gj[difficulty]--所有怪攻击太高，先削弱测试
+	if maxattack > 100000000 then
+		unit.shzj = string.format("%.2f",maxattack / 100000000)
+		maxattack = 100000000
+	end
 	unit:SetBaseDamageMin(maxattack)
 	unit:SetBaseDamageMax(maxattack)
 	local gold =ma.goldxs[unitname]			--设置怪物的动态金钱奖励
@@ -163,7 +167,6 @@ function sg(wave,p2,s )
 	local xp = ma.xpxs[unitname]			--设置怪物的动态死亡经验奖励
 	local maxxp = xp * ma.xp[wave] * 10 	*jybs		--先设置10倍经验
 	unit:SetDeathXP(maxxp)
-
 	local level = Stage.wave*3 	--设置怪物的等级
 	unit:CreatureLevelUp(level)
 	if mxbs ~=1 then
@@ -179,6 +182,14 @@ function sg(wave,p2,s )
 			level2 = math.ceil(difficulty/2)
 		else
 			level2 = math.ceil(difficulty/1.5)
+			if level2 >15 then
+				level2 = 15
+			end
+			if difficulty >=36 then
+				if RollPercent(50) then
+					unit:AddAbility("yg3"..RandomInt(1,5)):SetLevel(1)
+				end
+			end
 		end
 		unit:FindAbilityByName(m.jygjn[rjn]):SetLevel(level2)
 		unit:SetModelScale(dx)
@@ -255,9 +266,9 @@ function m.SpwanAttackBoss(bossName,wave)
 		local hp = ba.hpxs[bossName] 	--设置怪物的动态血量
 		local maxhp = hp * ba.hp[wave]  * ma.nd_hp[difficulty]  * ma.bossrs_hp[Stage.playernum]  * ma.nd_hp2[difficulty]
 
-		if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-			boss.shjs = string.format("%.2f",maxhp / 500000000)
-			maxhp = 500000000
+		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+			boss.shjs = string.format("%.2f",maxhp / 200000000)
+			maxhp = 200000000
 		end
 
 		boss:SetBaseMaxHealth(maxhp)
@@ -277,7 +288,11 @@ function m.SpwanAttackBoss(bossName,wave)
 
 		local attack = ba.attackxs[bossName] * ma.nd_gj[difficulty]	 * ma.bossrs_gj[Stage.playernum]* ma.nd_gj2[difficulty]--设置怪物的动态攻击
 		local maxattack = attack * ba.attackmax[wave]  --最大攻击力
-		local minattack = attack * ba.attackmin[wave] --最小攻击力
+		if maxattack > 100000000 then
+			boss.shzj = string.format("%.2f",maxattack / 100000000)
+			maxattack = 100000000
+		end
+		local minattack = maxattack*0.5 --最小攻击力
 		boss:SetBaseDamageMin(minattack)
 		boss:SetBaseDamageMax(maxattack)
 

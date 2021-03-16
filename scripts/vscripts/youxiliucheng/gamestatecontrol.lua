@@ -4,9 +4,6 @@ m.wjsx={
 	"sjjll";
 	"sjjmj";
 	"sjjzl";
-	"gjjll";
-	"gjjmj";
-	"gjjzl";
 	"jyjc";
 	"jqjc";
 	"wlbjgl";
@@ -50,7 +47,9 @@ m.wjsx={
 	"wlct";
 	"mfct";
 	"tmz";
+	"tmz2";
 	"yxtfdj";
+	"tswsh";
 	
 }
 
@@ -97,15 +96,9 @@ function m.gameInProgress(hero,i)
 	hero.sjjll = 0		--初始每升一级增加的力量
 	hero.sjjmj = 0		--初始每升一级增加的敏捷
 	hero.sjjzl = 0		--初始每升一级增加的智力
-	hero.sjjsm = 0		--初始每升一级增加的生命
-	hero.sjjmf = 0		--初始每升一级增加的魔法
-	hero.sjjgs = 0		--初始每升一级增加的攻击速度
-	hero.sjjgjl = 0		--初始每升一级增加的攻击力
-	hero.sjjhj = 0		--初始每升一级增加的护甲
 
-	hero.gjjll = 0		--初始每次攻击增加的力量
-	hero.gjjmj = 0		--初始每次攻击增加的敏捷
-	hero.gjjzl = 0		--初始每次攻击增加的智力
+
+	
 	hero.jnmjts = 1     --技能秘籍提升
 	hero.swfhsj = 7   	--死亡复活时间
 	hero.shjm = 0		--初始的伤害减免百分比
@@ -119,6 +112,7 @@ function m.gameInProgress(hero,i)
 	hero.sds = 0       --初始英雄的杀敌数
 	hero.xyz = 65      --初始英雄的幸运值
 	hero.tmz = 0 	   --英雄的天命值，增加更高品质装备的掉落
+	hero.tmz2 = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.bbtime=0      --不爆存档的次数
 	hero.bfbtsll=0    	--百分比提升力量
 	hero.bfbtsmj=0 		--百分比提升敏捷
@@ -126,6 +120,7 @@ function m.gameInProgress(hero,i)
 	hero.bfbtsqsx=0 	--百分比提升全属性	
 	hero.tybosstime=1   
 	hero.dcsfcs = 0
+	hero.tswsh = 100  --投射物伤害
 	hero.zhwslbs=1  --召唤物数量倍数
 	PlayerUtil.setAttrByPlayer(i,"jnsds",0)	--技能书掉落点数（掉落技能书-1，点数为0的时候不会掉落技能书，每个回合开始+1）
 	hero.jyjc = 0	--玩家的初始经验加成
@@ -233,6 +228,7 @@ function m.gameInProgress(hero,i)
 	hero:SwapAbilities(name,name3,true,true)
 	hero:AddAbility("hero_state_pro"):SetLevel(1)
 	Stage.msmjq(hero) --开启每十秒加钱
+	Stage.msmtbnettable(hero)
 end
 
 

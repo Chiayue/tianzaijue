@@ -362,7 +362,7 @@ m.jnct={
 		"baseDamage";
 		"damage";
 		"interval";
-		"max";
+	--	"max";
 		"multiple";
 	}
 	,

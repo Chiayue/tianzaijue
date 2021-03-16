@@ -30,12 +30,15 @@ function lxdf( keys )
 	if caster.lxdf_damage == nil then
 		caster.lxdf_damage = 0
 	end
-	
+	i = i +caster.lxdf_damage
 	local mj = caster:GetHealth() * bfb /100
 	local xl = caster:GetHealth() - caster:GetHealth() *bfb / 100
 	caster:SetHealth(xl)	
 	local baseDamage2 = baseDamage + caster.lxdf_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
+	if damage > 500000000 then
+		damage = 500000000
+	end
 	local damage2= damage
 	
 	if caster.lxdf_time == nil then
@@ -44,7 +47,7 @@ function lxdf( keys )
 	if caster.lxdf_multiple == nil then
 		caster.lxdf_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 			damage2 = damage * (caster.lxdf_multiple + 1 )
 	end	
 
@@ -76,7 +79,7 @@ function lxdf( keys )
 			if caster.lxdf_multiple == nil then
 				caster.lxdf_multiple = 0
 			end
-			if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
+			if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
 					damage2 = damage * (caster.lxdf_multiple + 1 )
 			end	
 					

@@ -1,3 +1,12 @@
+local m = {}
+
+local treasures = {item_bw_1=true,item_smbw_1=true,item_smbw_2=true,item_smbw_3=true,item_smbw_4=true,item_smbw_5=true}
+
+function m.IsTreasureItem(itemName)
+	return treasures[itemName]
+end
+
+
 ---出售单个物品，对可分解物品会进行分解，返还杀敌数等奖励
 function cswp2(item,playerID)
 	  local totalMoney = 0;
@@ -91,3 +100,6 @@ function cswp3(ItemTable,playerID)
 		NotifyUtil.ShowSysMsg2(playerID,"add_sds",{value=sdsnum})
 	end
 end
+
+
+return m

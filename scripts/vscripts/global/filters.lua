@@ -8,8 +8,8 @@ local m = {};
 function m.register(context)
 	local gameMode = GameRules:GetGameModeEntity();
 	gameMode:SetDamageFilter( Dynamic_Wrap(m, "FilterDamage" ), context )
-	gameMode:SetModifyExperienceFilter( Dynamic_Wrap(m, "FilterExp" ), context )
-	gameMode:SetModifyGoldFilter( Dynamic_Wrap(m, "FilterGold" ), context )
+--	gameMode:SetModifyExperienceFilter( Dynamic_Wrap(m, "FilterExp" ), context )
+--	gameMode:SetModifyGoldFilter( Dynamic_Wrap(m, "FilterGold" ), context )
 	gameMode:SetExecuteOrderFilter( Dynamic_Wrap(m, "OrderFilter" ), context )
 	
 	--下面这个filter是在有物品通过dota的方式（非自定义属性）修改了单位属性的时候会触发。比如装备了武器，加了100攻击，就会触发事件
@@ -33,6 +33,10 @@ function m:FilterDamage(filterTable)
 	local damage = filterTable["damage"];
 	local damagetype = filterTable["damagetype_const"]
 
+	if attacker.shzj then --怪物的攻击力减少附带的额外伤害
+		damage = damage * attacker.shzj
+	end
+
 	if attacker and attacker:IsRealHero() then
 		if attacker.cas_table.fjsh >0 then --附加伤害，不分伤害类型  攻击者
 			damage=damage*(1+attacker.cas_table.fjsh/100)
@@ -44,7 +48,7 @@ function m:FilterDamage(filterTable)
 
 		if damagetype == 2 or damagetype == 4 then
 			if attacker.cas_table.mfct >0 then --魔法穿透  
-				damage=damage*(1+attacker.cas_table.mfct/100)  --公式算不来，算了算了
+				damage=damage*(1+attacker.cas_table.mfct/33)  --公式算不来，算了算了
 			end	
 			if attacker.cas_table.mfshts >0 then --魔法伤害提升
 				damage=damage*(1+attacker.cas_table.mfshts/100)
@@ -66,7 +70,7 @@ function m:FilterDamage(filterTable)
 					wlct = 80
 				end
 				if wlct > 0 and hj > 0 then
-					local hj2 = hj * (1-attacker.cas_table.wlct/100)
+					local hj2 = hj * (1-wlct/100)
 					local zqjs = 1- hj*0.06 / (1+ hj*0.06) 
 					local zhjs = 1- hj2*0.06 / (1+ hj2*0.06) 
 					damage = damage /zqjs * zhjs
@@ -134,18 +138,16 @@ function m:FilterDamage(filterTable)
 		end
 	end
 	
-	if victim.shjs then
-		damage = damage / victim.shjs
-	end
-	
-	
-	--使用修改后的伤害值
-	filterTable["damage"] = damage
-	
-	--统计生存boss的伤害
+	--按照减伤前的伤害，统计生存boss的伤害
 	if victim.isAttackBoss then
 		SurvivalBossDPS.DamageStatistic(attacker,victim,damage)
 	end
+	
+	if victim.shjs then
+		damage = damage / victim.shjs
+	end
+	--使用修改后的伤害值
+	filterTable["damage"] = damage
 	
 	
 	return true

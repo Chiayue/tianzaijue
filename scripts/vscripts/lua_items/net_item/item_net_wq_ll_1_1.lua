@@ -36,21 +36,24 @@ function item_net_wq_ll_1_1:Spawn()
 			selftype="assistitem"
 		end
 		--local namearray2= namearray[4]	由于有人建议，现在纯随机	
-		local baseprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro"],base_pro_num)
-		local speprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro"],spe_pro_num)
+		local baseprotable={}
+		local speprotable={}
+		if tonumber(namearray[5]) >= 6 and namearray[3] == "wq" then
+			baseprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro2"],base_pro_num)
+			speprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro2"],spe_pro_num)
+		else
+			baseprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro"],base_pro_num)
+			speprotable=Weightsgetvalue_one_key(NetItem_Pro_Weight[selftype]["base_ty_pro"],spe_pro_num)
+		end
 
 		buff_list.item_attributes={}
 		buff_list.item_attributes_spe={}
 		show_list.item_attributes={}
 		show_list.item_attributes_spe={}
-		
 		for i=1,#baseprotable do
 			local rarevalue=RandomFloat(NetItem_Rare["rare_"..itemrare]["pro_value"][1], NetItem_Rare["rare_"..itemrare]["pro_value"][2]) --品质区间
 			local k=baseprotable[i]
 			local result=RandomFloat(NetRare_Pro_Value[selftype][k][itemlevel][1],NetRare_Pro_Value[selftype][k][itemlevel][2])
-			if k == "yxtfjndjjc" then	--英雄天赋技能等级加成   (该词条不受品质浮动)
-				result=1
-			end
 		
 			local v=string.format("%.2f",result*rarevalue)	
 	
@@ -72,9 +75,6 @@ function item_net_wq_ll_1_1:Spawn()
 			local rarevalue=RandomFloat(NetItem_Rare["rare_"..itemrare]["pro_value"][1], NetItem_Rare["rare_"..itemrare]["pro_value"][2]) --品质区间
 			local k=speprotable[i]
 			local result=RandomFloat(NetRare_Pro_Value[selftype][k][itemlevel][1],NetRare_Pro_Value[selftype][k][itemlevel][2])
-			if k == "yxtfjndjjc" then	--英雄天赋技能等级加成   (该词条不受品质浮动)
-				result=1
-			end
 			local v=string.format("%.2f",result*rarevalue)	
 
 			if not item_zdl[k] then 
@@ -235,29 +235,38 @@ function item_net_wq_ll_1_1:GetstoneData(level,neednum,isfocus)
 	local stonename=Enhance_stonename[level]
 	local stonenum=Shopmall:GetItemNum(self:GetPurchaser():GetPlayerOwnerID(),stonename)
 	if level==2 then
+		
 		if stonenum<neednum then
 			SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,item=self:GetEntityIndex(),error=3})
+			self.error=3
 			return 3
 		else
 			if isfocus==false then
 				SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,error=2,item=self:GetEntityIndex(),data={item=Enhance_stonename[level],count=neednum}})
 			end
+			self.error=-1
+			self.rightlevel=level
+			self.stone=neednum
 			return -1,level,neednum
 		end
 	else
+		
 		if stonenum<neednum then
-			self:GetstoneData(level-1,neednum*4)
+			self:GetstoneData(level-1,neednum*4,isfocus)
 		else
 			if isfocus==false then
 				SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,error=2,item=self:GetEntityIndex(),data={item=Enhance_stonename[level],count=neednum}})
 			end
+			self.error=-1
+			self.rightlevel=level
+			self.stone=neednum
 			return -1,level,neednum
 		end
 	end
 end
 function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，改变self.enhance的值之后重新计算属性
 	if IsServer() then
-			local stone=0--需要的石头 
+			self.stone=0--需要的石头 
 			local stonename=""--需要的石头 
 			if self.lv<2 then
 				SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,item=self:GetEntityIndex(),error=1})
@@ -276,31 +285,31 @@ function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，�
 				self.tempdata['item_attributes_spe']=tempdata['item_attributes_spe']
 			end
 			if self.tempdata.enhance==nil then
-				stone=Enhance_qhxh[1]
+				self.stone=Enhance_qhxh[1]
 			else
 				if self.tempdata.enhance<EnhanceTimes[self.lv][self.pz] then  --是否强化满了
-					stone=Enhance_qhxh[self.tempdata.enhance+1]
+					self.stone=Enhance_qhxh[self.tempdata.enhance+1]
 				else
 					SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,item=self:GetEntityIndex(),error=1})
 					return 1
 				end
 			end
-			local error=-1
-			local rightlevel=self.lv
+			self.error=-1
+			self.rightlevel=self.lv
 			local isuseother=false
-			if stonenum<stone then
+			if stonenum<self.stone then
 				if self.lv>2 then
 					isuseother=true
-					error,rightlevel,stone=self:GetstoneData(self.lv-1,stone*4,isfocus)
+					self:GetstoneData(self.lv-1,self.stone*4,isfocus)
 				else
 					SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,item=self:GetEntityIndex(),error=3})
-					error=3
+					self.error=3
 				end
 			end
 			if isuseother==true and isfocus==false then  --是否确认使用其它强化石
-				return error,rightlevel,stone
+				return self.error,self.rightlevel,self.stone
 			end
-			if error==-1 then
+			if self.error==-1 then
 				local issuc=false
 				if self.tempdata.enhance==nil then
 					self.tempdata.enhance=0
@@ -320,6 +329,8 @@ function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，�
 				temp['item_attributes_spe']=tempdata['item_attributes_spe']
 				if issuc==true then
 					temp['enhance']=self.tempdata.enhance+1 --强化成功存入新的数据
+				else
+					temp['enhance']=self.tempdata.enhance--强化失败存入旧的数据
 				end
 				---装备强化
 				--@param #number PlayerID 玩家ID
@@ -331,11 +342,11 @@ function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，�
 				--@param #function callback 回调函数，调用参数：success,arg2,arg3
 				--success=true时，arg2、arg3均为nil
 				--success=false时，arg2代表失败原因：-1=服务器未响应，100=本地调用传入的参数异常，0=未知错误，1=服务器返回的参数异常，2=该装备在服务器上不存在，3=减少强化石数量失败（如果是数量不足，则arg3就代表实际拥有的强化石数量），4=装备数据更新失败
-			
-				SrvNetEquip.Enhance(self:GetPurchaser():GetPlayerOwnerID(),self.serverID,self.zdl,temp,Enhance_stonename[rightlevel],stone,issuc,function(success,arg2,arg3)
+				stonenum=Shopmall:GetItemNum(self:GetPurchaser():GetPlayerOwnerID(),Enhance_stonename[self.rightlevel])
+				SrvNetEquip.Enhance(self:GetPurchaser():GetPlayerOwnerID(),self.serverID,self.zdl,temp,Enhance_stonename[self.rightlevel],self.stone,issuc,function(success,arg2,arg3)
 					if success then
 						print("Enhance_true")
-						Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),Enhance_stonename[rightlevel],(stonenum-stone),nil)
+						Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),Enhance_stonename[self.rightlevel],(stonenum-self.stone),nil)
 						if issuc==true then
 							self.tempdata.enhance=self.tempdata.enhance+1
 							self:ReFreshData()
@@ -345,6 +356,9 @@ function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，�
 						end
 						return 5
 					else
+						if arg2==3 then
+							Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),Enhance_stonename[self.rightlevel],arg3,nil)
+						end
 						SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_net_equip_enhance_return",{success=false,error=arg2,item=self:GetEntityIndex()})
 						print("Enhance_false",arg2,arg3)
 						return 6

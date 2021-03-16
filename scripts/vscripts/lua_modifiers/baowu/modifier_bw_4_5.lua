@@ -56,16 +56,18 @@ function modifier_bw_4_5:OnAttackLanded( params )
 				}
 				if hTarget.isboss ~= 1 then
 					hTarget:AddNewModifier( self:GetParent(), nil, "modifier_knockback", kv_knockback )
+		
 				end
-			local damageInfo =
-			{
-				victim = hTarget,
-				attacker = self:GetParent(),
-				damage = self:GetParent():GetAverageTrueAttackDamage(self:GetParent()) *0.1,
-				damage_type = DAMAGE_TYPE_PURE,
-				ability = nil,
-			}
-			ApplyDamage( damageInfo )
+				local damageInfo =
+					{
+						victim = hTarget,
+						attacker = self:GetParent(),
+						damage = self:GetParent():GetAverageTrueAttackDamage(self:GetParent()) * 20,
+						damage_type = DAMAGE_TYPE_PHYSICAL,
+						ability = nil,
+					}
+					ApplyDamage( damageInfo )
+			
 			end
 		end
 	end

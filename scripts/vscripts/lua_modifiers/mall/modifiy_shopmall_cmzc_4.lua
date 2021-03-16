@@ -10,7 +10,7 @@ function modifiy_shopmall_cmzc_4:GetTexture()
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_cmzc_4:IsHidden()
-	return false
+	return true
 end
 function modifiy_shopmall_cmzc_4:DeclareFunctions()
 	local funcs = {

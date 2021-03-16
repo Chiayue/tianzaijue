@@ -18,7 +18,7 @@ end
 
 
 function item_sqts_jnsh:GetAttributes()
-  return MODIFIER_ATTRIBUTE_PERMANENT
+  return MODIFIER_ATTRIBUTE_PERMANENT + MODIFIER_ATTRIBUTE_IGNORE_INVULNERABLE
 end
 
 function item_sqts_jnsh:GetModifierSpellAmplify_Percentage( params )	--力量

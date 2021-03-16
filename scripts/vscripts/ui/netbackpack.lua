@@ -1,3 +1,5 @@
+LinkLuaModifier( "modifier_item_net_aaaa", "lua_items/net_item/modifier_item_net_aaaa", LUA_MODIFIER_MOTION_NONE )
+
 NetEquip=require("server.NetEquip")
 if Netbackpack == nil then
 	Netbackpack = {}
@@ -24,15 +26,12 @@ NetbackpackConfig.EquipNum = 6
 NetbackpackConfig.MaxItem = 54
 
 function Netbackpack:refreshmodifier( unit)
-	LinkLuaModifier( "modifier_item_net_aaaa", "lua_items/net_item/modifier_item_net_aaaa", LUA_MODIFIER_MOTION_NONE )
-	unit:RemoveModifierByName("modifier_item_net_aaaa")
 	local buff_list={}
 	buff_list.item_attributes={}
-	local hasitem=false
 	for i=1,6 do
 		local itemindex= self:GetItemIndex( unit, i )
 		if itemindex~=-1 then
-			local item=EntIndexToHScript(self:GetItemIndex( unit, i ))
+			local item=EntIndexToHScript(itemindex)
 			local itemattrtable=item.itemtype --CustomNetTables:GetTableValue( "ItemsInfo", tostring(item) )
 			if itemattrtable then
 				for k,V in pairs(itemattrtable) do 
@@ -44,7 +43,6 @@ function Netbackpack:refreshmodifier( unit)
 								else
 									buff_list.item_attributes[kk]=buff_list.item_attributes[kk]+itemattrtable[k][kk]
 								end
-								hasitem=true
 							end
 						end
 					end
@@ -54,10 +52,15 @@ function Netbackpack:refreshmodifier( unit)
 		end
 	end
 	
-	if hasitem then
-		CustomNetTables:SetTableValue( "ItemsInfo", "modifier_item_net_aaaa", buff_list) 
-		unit:AddNewModifier( unit, nil, "modifier_item_net_aaaa", {} )
+	unit._net_equip_buff_list = buff_list
+	CustomNetTables:SetTableValue( "ItemsInfo", "modifier_item_net_aaaa_"..unit:entindex(), buff_list) 
+	
+	local modifier = unit:FindModifierByName("modifier_item_net_aaaa")
+	if not modifier then
+		modifier = unit:AddNewModifier( unit, nil, "modifier_item_net_aaaa", {} )
 	end
+	modifier:ForceRefresh()
+	
 	return true
 end
 Netbackpack.DelEquipState=function( state)
@@ -630,7 +633,7 @@ function Netbackpack:equipItem( unit, packIndex )
 	--end
 end
 function Netbackpack:unequipItem( unit, packIndex)
-	if packIndex > 6 and packIndex < 0 then return false end
+	if packIndex > 6 or packIndex <= 0 then return false end
 	local swapindex=self:GetNotUseIndex(unit)
 	if swapindex ==-1 then  --包包满了
 		local pack = self:GetNetbackpack(unit)
@@ -940,11 +943,6 @@ function Netbackpack:__call( unit )
 end
 -- 存储背包物品对换位置
 function UI_NetbackpackSwapPosition( event,data )
-	if Stage.gameFinished then
-		--游戏结束后就不会再同步位置了，所以就不让移动了
-		NotifyUtil.ShowError(data.PlayerID,"#info_game_finished_tip_net_equip")
-		return
-	end
 	--if GameRules:IsGamePaused() then return end
 	if type(data.packIndex1) == "number" and type(data.packIndex2) == "number" then
 		local player = PlayerResource:GetPlayer(data.PlayerID)
@@ -986,11 +984,6 @@ end
 
 -- 双击装备物品
 function UI_Netbackpack_double_equip( event,data )
-	if Stage.gameFinished then
-		--游戏结束后就不会再同步位置了，所以就不让移动了
-		NotifyUtil.ShowError(data.PlayerID,"#info_game_finished_tip_net_equip")
-		return
-	end
 	--if GameRules:IsGamePaused() then return end
 	if type(data.packIndex) == "number" then
 		local player = PlayerResource:GetPlayer(data.PlayerID)
@@ -1005,11 +998,6 @@ function UI_Netbackpack_double_equip( event,data )
 end
 -- 双击取下物品
 function UI_Netbackpack_double_unequip( event,data )
-	if Stage.gameFinished then
-		--游戏结束后就不会再同步位置了，所以就不让移动了
-		NotifyUtil.ShowError(data.PlayerID,"#info_game_finished_tip_net_equip")
-		return
-	end
 	--if GameRules:IsGamePaused() then return end
 	if type(data.packIndex) == "number" then
 		local player = PlayerResource:GetPlayer(data.PlayerID)
@@ -1032,9 +1020,12 @@ function tzj_net_equip_enhance( event,data )
 		GameRules:GetGameModeEntity().enhancetime[data.PlayerID]=0
 	end
 	
-	if GameRules:GetGameModeEntity().enhancetime[data.PlayerID]>Time() then
-		SendToClient(data.PlayerID,"tzj_net_equip_enhance_return",{success=false,error=5})
-		return 
+	
+	if data.force==nil then
+		if GameRules:GetGameModeEntity().enhancetime[data.PlayerID]>Time() then
+			SendToClient(data.PlayerID,"tzj_net_equip_enhance_return",{success=false,error=5})
+			return 
+		end
 	end
 	GameRules:GetGameModeEntity().enhancetime[data.PlayerID]=Time()+1
 	if type(data.item) == "number" then
