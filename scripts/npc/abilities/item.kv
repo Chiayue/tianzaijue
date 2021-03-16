@@ -1,0 +1,4576 @@
+"KeyValue"
+{
+	"example"
+	{
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"魔法防御"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_helf"					"魔法吸血"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_helf"					"物理吸血"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"pure_helf"						"纯粹吸血"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_percentage"			"魔法恢复百分比"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_magical_outgoing"	"造成魔法百分比回蓝"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_magical_incoming"	"受到魔法百分比回蓝"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_physical_outgoing"	"造成物理百分比回蓝"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_physical_incoming"	"受到物理百分比回蓝"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_pure_outgoing"		"造成纯粹百分比回蓝"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"攻击速度"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"攻击速度百分比"
+			}
+			"13"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed"				"移动速度"
+			}
+			"14"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed_percentage"		"移动速度百分比"
+			}
+			"15"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_range_of_range"			"远程攻击范围"
+			}
+			"16"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_range_of_melee"			"近战攻击范围"
+			}
+			"17"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"魔法恢复每秒"
+			}
+			"18"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_percentage"			"魔法恢复百分比"
+			}
+			"19"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"生命值"
+			}
+			"20"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_mana"					"魔法值"
+			}
+			"21"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"物理攻击力"
+			}
+			"22"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"魔法攻击力"
+			}
+			"23"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"物理防御"
+			}
+			"24"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_helf"					"普攻吸血"
+			}
+		}
+	}
+	"item_axe"
+	{
+		"ID"									"1050001"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_axe"
+		"AbilityTextureName"					"item_axe"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_axe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"150"
+			}
+		}
+	}
+	"item_staff_1"
+	{
+		"ID"									"1050002"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_staff"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_staff"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"120"
+			}
+		}
+	}
+	"item_physical_chainmail_1"
+	{
+		"ID"									"1050003"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_physical_chainmail"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_physical_chainmail"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"300"
+			}
+		}
+	}
+	"item_magical_cloak_1"
+	{
+		"ID"									"1050004"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_magical_cloak"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_magical_cloak"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"300"
+			}
+		}
+	}
+	"item_red_booster_1"
+	{
+		"ID"									"1050005"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_red_booster"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_red_booster"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"500"
+			}
+		}
+	}
+	"item_blue_booster_1"
+	{
+		"ID"									"1050006"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_blue_booster"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_blue_booster"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_mana"					"200"
+			}
+		}
+	}
+	"item_gloves_1"
+	{
+		"ID"									"1050007"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/base_ability_attribute"
+		"AbilityTextureName"					"item_gloves"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_gloves"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"30"
+			}
+		}
+	}
+	"item_ballista_1"
+	{
+		"ID"									"1050008"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ballista"
+		"AbilityTextureName"					"item_ballista"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_ballista"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_range_of_range"			"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_count"					"3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aoe_range"						"1000"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_octarine_core_1"
+	{
+		"ID"									"1050009"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_octarine_core"
+		"AbilityTextureName"					"item_octarine_core"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_octarine_core"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_mana"					"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen_percentage"			"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduction"			"40"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"4000"
+			}
+		}
+	}
+	"item_panic_button_1"
+	{
+		"ID"									"1050010"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_panic_button"
+		"AbilityTextureName"					"item_panic_button"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_panic_button"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor_pct"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor_pct"				"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"800"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_per"					"40"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_rapier_1"
+	{
+		"ID"									"1050011"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_rapier"
+		"AbilityTextureName"					"item_rapier"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_rapier"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack_pct"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack_pct"			"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"800"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per"					"40"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_craggy_coat_1"
+	{
+		"ID"									"1050012"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_craggy_coat"
+		"AbilityTextureName"					"item_havoc_hammer"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_craggy_coat"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_count"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_add"					"2"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"aoe_range"						"400"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"knockback_duration"			"0.1"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_per"					"20"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_dragon_scale_1"
+	{
+		"ID"									"1050013"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_dragon_scale"
+		"AbilityTextureName"					"item_cloak_of_flames"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_dragon_scale"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"450"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"450"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"3000"
+			}
+		}
+	}
+	"item_guard_shoe_1"
+	{
+		"ID"									"1050014"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_guard_shoe"
+		"AbilityTextureName"					"item_woodland_striders"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_guard_shoe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed"				"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_reduce"				"100"
+			}
+		}
+	}
+	"item_mask_of_fear_1"
+	{
+		"ID"									"1050015"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_mask_of_fear"
+		"AbilityTextureName"					"item_helm_of_undying"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_mask_of_fear"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"60"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_of_fear"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_sign_pct"				"100"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_pct_bonus"		"100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_thunder_hammer_1"
+	{
+		"ID"									"1050016"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_thunder_hammer"
+		"AbilityTextureName"					"item_maelstrom"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_thunder_hammer"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magic_damage_extra"			"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"jump_count"					"5"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"jump_radius"					"1000"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"jump_delay"					"0.25"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"cooldown"						"0.2"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_beast_horns_1"
+	{
+		"ID"									"1050017"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_beast_horns"
+		"AbilityTextureName"					"item_minotaur_horn"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_beast_horns"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"450"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"450"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_pct"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_duration"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_angel_relics_1"
+	{
+		"ID"									"1050018"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_angel_relics"
+		"AbilityTextureName"					"item_infused_raindrop"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_angel_relics"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"15"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"stun_duration"					"0.5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"around_damage_pct"				"60"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"500"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ori_damage_pct"				"250"
+			}
+		}
+	}
+	"item_encouraging_gem_1"
+	{
+		"ID"									"1050019"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_encouraging_gem"
+		"AbilityTextureName"					"item_hyperstone"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_encouraging_gem"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stack_account"					"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_duration"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_vampire_fang_1"
+	{
+		"ID"									"1050020"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_vampire_fang"
+		"AbilityTextureName"					"item_vampire_fangs"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_vampire_fang"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_helf"					"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"450"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"round_bonus"					"15"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_divergent_gem_1"
+	{
+		"ID"									"1050021"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_divergent_gem"
+		"AbilityTextureName"					"item_gem"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_divergent_gem"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"2000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_damage_punishment_pct""20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_rebound_pct"			"400"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"1200"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_mantas_1"
+	{
+		"ID"									"1050022"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_mantas"
+		"AbilityTextureName"					"item_manta"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"10"
+		"AbilitySharedCooldown"					"item_mantas"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_for_illusion"				"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attribute_have_pct"			"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_duration"					"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_extra"				"0"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"600"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"600"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_count"				"3"
+			}
+		}
+	}
+	"item_heart_of_focus_1"
+	{
+		"ID"									"1050023"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_heart_of_focus"
+		"AbilityTextureName"					"item_holy_locket"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_heart_of_focus"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stack_account"					"6"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_stack_account"			"6"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_time"						"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_messenger_of_anubis_1"
+	{
+		"ID"									"1050024"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_messenger_of_anubis"
+		"AbilityTextureName"					"item_vladmir"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_messenger_of_anubis"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_count"				"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_outgoing_damage"		"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_incoming_damage"		"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration_time"					"30"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_outgoing_damage2"		"300"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"600"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"600"
+			}
+		}
+	}
+	"item_heterodimensionality_1"
+	{
+		"ID"									"1050025"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_heterodimensionality"
+		"AbilityTextureName"					"item_mirror_shield"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"3"
+		"AbilitySharedCooldown"					"item_heterodimensionality"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_reduce_pct"				"15"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_self_pct"				"60"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_recover_pct"			"20"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduce"				"50"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damagefactor"					"1200"
+			}
+		}
+	}
+	"item_time_hourglass_1"
+	{
+		"ID"									"1050026"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_time_hourglass"
+		"AbilityTextureName"					"time_hourglass"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"9"
+		"AbilitySharedCooldown"					"item_time_hourglass"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"back_time"						"4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"350"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_add"					"10"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"800"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"800"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"20"
+			}
+		}
+	}
+	"item_bfury_1_1"
+	{
+		"ID"									"1050027"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_bfury_1"
+		"AbilityTextureName"					"item_bfury"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_bfury_1"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_starting_width"			"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_ending_width"			"720"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_distance"				"700"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_damage"					"100"
+			}
+		}
+	}
+	"item_crystal_sword_1"
+	{
+		"ID"									"1050028"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_crystal_sword"
+		"AbilityTextureName"					"item_lesser_crit"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_crystal_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"250"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"400"
+			}
+		}
+	}
+	"item_doubleside_sword_1"
+	{
+		"ID"									"1050029"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_doubleside_sword"
+		"AbilityTextureName"					"item_paladin_sword"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_doubleside_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"-20"
+			}
+		}
+	}
+	"item_frozen_heart_1"
+	{
+		"ID"									"1050030"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_frozen_heart"
+		"AbilityTextureName"					"item_ex_machina"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_frozen_heart"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"1000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration_time"					"3"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_metor_butterfly_sword_1"
+	{
+		"ID"									"1050031"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_metor_butterfly_sword"
+		"AbilityTextureName"					"item_ethereal_blade"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"3"
+		"AbilitySharedCooldown"					"item_metor_butterfly_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"150"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"metor_count"					"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"metor_damage_bonus"			"4"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_crescent_sword_1"
+	{
+		"ID"									"1050032"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_crescent_sword"
+		"AbilityTextureName"					"item_yasha"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"3"
+		"AbilitySharedCooldown"					"item_crescent_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"150"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"push_distance"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"invi_duration"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"knockback_duration"			"0.1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"40"
+			}
+		}
+	}
+	"item_ice_sword_1"
+	{
+		"ID"									"1050033"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ice_sword"
+		"AbilityTextureName"					"item_princes_knife"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_ice_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack_pct"			"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"move_speed_punish_pct"			"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_punish_pct"		"50"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"3"
+			}
+		}
+	}
+	"item_invisible_cloak_1"
+	{
+		"ID"									"1050035"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_invisible_cloak"
+		"AbilityTextureName"					"item_cloak"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_invisible_cloak"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_doubleclick_wand_1"
+	{
+		"ID"									"1050036"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_doubleclick_wand_1"
+		"AbilityTextureName"					"item_kaya"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_doubleclick_wand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_time"						"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"acceleration"					"500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"600"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_factor"					"350"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"600"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"40"
+			}
+		}
+	}
+	"item_tutankhamun_mask"
+	{
+		"ID"									"1050037"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_tutankhamun_mask"
+		"AbilityTextureName"					"item_tutankhamun_mask"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_tutankhamun_mask"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"700"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_pct"				"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"450"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"450"
+			}
+		}
+	}
+	"item_longinus"
+	{
+		"ID"									"1050038"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_longinus"
+		"AbilityTextureName"					"item_hurricane_pike"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_longinus"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical2magical"				"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_count"					"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shield_health"					"40"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"5"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"1500"
+			}
+		}
+	}
+	"item_ghost_shawl"
+	{
+		"ID"									"1050039"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ghost_shawl"
+		"AbilityTextureName"					"item_nether_shawl"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"8"
+		"AbilitySharedCooldown"					"item_ghost_shawl"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduction"			"80"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"450"
+			}
+		}
+	}
+	"item_magic_cube"
+	{
+		"ID"									"1050040"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_magic_cube"
+		"AbilityTextureName"					"item_magic_cube"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"8"
+		"AbilitySharedCooldown"					"item_magic_cube"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical2magical"				"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cube_count"					"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cube_radius"					"350"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"1000"
+			}
+		}
+	}
+	"item_sunshine_sword_1"
+	{
+		"ID"									"1050041"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_sunshine_sword_1"
+		"AbilityTextureName"					"item_radiance"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_sunshine_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_factor"					"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_miss1"					"30 40 50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"250"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"sunshine_start"				"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"sunshine_end"					"600"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"disarm_duration"				"2"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"50"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"50"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"50"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage"					"250"
+			}
+			"13"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"600"
+			}
+		}
+	}
+	"item_maya_shield_1"
+	{
+		"ID"									"1050042"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_maya_shield_1"
+		"AbilityTextureName"					"item_vanguard"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_maya_shield"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"block"							"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"6"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_book_of_betrayal"
+	{
+		"ID"									"1050043"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_book_of_betrayal"
+		"AbilityTextureName"					"item_necronomicon"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_book_of_betrayal"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_count"						"3"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage_pct"				"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"500"
+			}
+		}
+	}
+	"item_mystletainn"
+	{
+		"ID"									"1050044"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_mystletainn"
+		"AbilityTextureName"					"item_bloodthorn"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_mystletainn"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_absorb"					"4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_per_health"				"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"critical_per_attack"			"4"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"critical_mult"					"10"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack_pct"			"40"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_helf"					"0"
+			}
+		}
+	}
+	"item_last_prism"
+	{
+		"ID"									"1050045"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_last_prism"
+		"AbilityTextureName"					"item_seer_stone"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_last_prism"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_factor"				"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_count"					"5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_magical_factor"			"500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor_reduce"			"250"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"25"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"1000"
+			}
+		}
+	}
+	"item_ninja_tool"
+	{
+		"ID"									"1050046"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ninja_tool"
+		"AbilityTextureName"					"item_ninja_gear"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"8"
+		"AbilitySharedCooldown"					"item_ninja_tool"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"dagger_count"					"8"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"500"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"900"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"1000"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"500"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"500"
+			}
+		}
+	}
+	"item_courage_medallion"
+	{
+		"ID"									"1050047"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_courage_medallion"
+		"AbilityTextureName"					"item_solar_crest"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_courage_medallion"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_pct"					"110"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_pct"						"110"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"800"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"2000"
+			}
+		}
+	}
+	"item_sage_contract"
+	{
+		"ID"									"1050048"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_sage_contract"
+		"AbilityTextureName"					"item_sage_contract"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_sage_contract"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attribute_pct"					"80"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"600"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"600"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"4000"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"10"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"5"
+			}
+		}
+	}
+	"item_list_of_assassins"
+	{
+		"ID"									"1050049"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_list_of_assassins"
+		"AbilityTextureName"					"item_recipe_scroll"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"6"
+		"AbilitySharedCooldown"					"item_list_of_assassins"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_count"					"5"
+			}
+		}
+	}
+	"item_satan_power"
+	{
+		"ID"									"1050050"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_satan_power"
+		"AbilityTextureName"					"item_satanic"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_satan_power"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_damage"					"150"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"min_damage"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"absorb_pct"					"25"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"3000"
+			}
+		}
+	}
+	"item_gante_sword"
+	{
+		"ID"									"1050051"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_gante_sword"
+		"AbilityTextureName"					"item_deso"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_gante_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"1200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_reduce_pct"				"5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor_reduce_pct_boss"			"0.5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"debuff_duration"				"8"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"100"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_bonus_pct"				"100"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"5"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_redsword"
+	{
+		"ID"									"1050052"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_redsword"
+		"AbilityTextureName"					"item_apotheosis_blade"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_redsword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"1800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_helf"					"25"
+			}
+		}
+	}
+	"item_strength_ring"
+	{
+		"ID"									"1050053"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_strength_ring"
+		"AbilityTextureName"					"item_circlet"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_strength_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"120"
+			}
+		}
+	}
+	"item_magical_ring"
+	{
+		"ID"									"1050054"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_magical_ring"
+		"AbilityTextureName"					"item_mantle"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_magical_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"150"
+			}
+		}
+	}
+	"item_strength_gloves"
+	{
+		"ID"									"1050055"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_strength_gloves"
+		"AbilityTextureName"					"item_gauntlets"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_strength_gloves"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack_pct"			"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"10"
+			}
+		}
+	}
+	"item_magical_gloves"
+	{
+		"ID"									"1050056"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_magical_gloves"
+		"AbilityTextureName"					"item_arcane_ring"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_magical_gloves"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack_pct"			"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_mana"					"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"5"
+			}
+		}
+	}
+	"item_blood_suck"
+	{
+		"ID"									"1050057"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_blood_suck"
+		"AbilityTextureName"					"item_lifesteal"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_blood_suck"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"blood_suck"					"5"
+			}
+		}
+	}
+	"item_health_ring"
+	{
+		"ID"									"1050058"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_health_ring"
+		"AbilityTextureName"					"item_ring_of_regen"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_health_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"20"
+			}
+		}
+	}
+	"item_mana_ring"
+	{
+		"ID"									"1050059"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_mana_ring"
+		"AbilityTextureName"					"item_clarity"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_mana_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"10"
+			}
+		}
+	}
+	"item_gold_hand"
+	{
+		"ID"									"1050060"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_gold_hand"
+		"AbilityTextureName"					"item_royal_jelly2"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_gold_hand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_earn"						"2"
+			}
+		}
+	}
+	"item_evasion_talisman"
+	{
+		"ID"									"1050061"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_evasion_talisman"
+		"AbilityTextureName"					"item_talisman_of_evasion"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_evasion_talisman"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"evasion_pct"					"15"
+			}
+		}
+	}
+	"item_tiny_magicbox"
+	{
+		"ID"									"1050062"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_tiny_magicbox"
+		"AbilityTextureName"					"item_bottle"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_tiny_magicbox"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_boost"					"100"
+			}
+		}
+	}
+	"item_voodo_mask"
+	{
+		"ID"									"1050063"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_voodo_mask"
+		"AbilityTextureName"					"item_voodoo_mask"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_voodo_mask"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_helf"					"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"100"
+			}
+		}
+	}
+	"item_broken_talisman"
+	{
+		"ID"									"1050064"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_broken_talisman"
+		"AbilityTextureName"					"item_aghanims_shard"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_broken_talisman"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"black_damage"					"100"
+			}
+		}
+	}
+	"item_farm_axe"
+	{
+		"ID"									"1050065"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_farm_axe"
+		"AbilityTextureName"					"item_quelling_blade"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_farm_axe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"extra_damage"					"15"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"150"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"150"
+			}
+		}
+	}
+	"item_beast_skin"
+	{
+		"ID"									"1050066"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_beast_skin"
+		"AbilityTextureName"					"item_platemail"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_beast_skin"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"200"
+			}
+		}
+	}
+	"item_speedOf_shoe"
+	{
+		"ID"									"1050067"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_speedOf_shoe"
+		"AbilityTextureName"					"item_tranquil_boots_active"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_speedOf_shoe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed"				"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"20"
+			}
+		}
+	}
+	"item_zhi_spear"
+	{
+		"ID"									"1050068"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_zhi_spear"
+		"AbilityTextureName"					"item_blade_of_alacrity"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_zhi_spear"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_extra"				"600"
+			}
+		}
+	}
+	"item_zhi_bow"
+	{
+		"ID"									"1050069"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_zhi_bow"
+		"AbilityTextureName"					"item_eagle"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_zhi_bow"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"20"
+			}
+		}
+	}
+	"item_zhi_staff"
+	{
+		"ID"									"1050070"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_zhi_staff"
+		"AbilityTextureName"					"item_sheepstick"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_zhi_staff"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"25"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_extra"					"600"
+			}
+		}
+	}
+	"item_zhi_wand"
+	{
+		"ID"									"1050071"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_zhi_wand"
+		"AbilityTextureName"					"item_branches"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_zhi_wand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduce"				"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"15"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"400"
+			}
+		}
+	}
+	"item_iron_shield"
+	{
+		"ID"									"1050072"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_iron_shield"
+		"AbilityTextureName"					"item_buckler_active"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_iron_shield"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"deduce_damage_pct"				"15"
+			}
+		}
+	}
+	"item_iron_robe"
+	{
+		"ID"									"1050073"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_iron_robe"
+		"AbilityTextureName"					"item_pipe"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_iron_robe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"450"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_ingoing_damage"		"20"
+			}
+		}
+	}
+	"item_goldess_hand"
+	{
+		"ID"									"1050074"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_goldess_hand"
+		"AbilityTextureName"					"item_midas"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilityCooldown"						"3"
+		"AbilitySharedCooldown"					"item_goldess_hand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"35"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_bonus"					"10"
+			}
+		}
+	}
+	"item_light_fingertips"
+	{
+		"ID"									"1050075"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_light_fingertips"
+		"AbilityTextureName"					"item_iron_talon"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_light_fingertips"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"15"
+			}
+		}
+	}
+	"item_wind_shoe"
+	{
+		"ID"									"1050076"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_wind_shoe"
+		"AbilityTextureName"					"item_arcane_boots2"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_wind_shoe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed"				"200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_miss"					"15"
+			}
+		}
+	}
+	"item_unlock_ring_1"
+	{
+		"ID"									"1050077"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_unlock_ring_1"
+		"AbilityTextureName"					"item_timeless_relic"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_unlock_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"4000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_reduce"				"50"
+			}
+		}
+	}
+	"item_panduo_box"
+	{
+		"ID"									"1050078"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_panduo_box"
+		"AbilityTextureName"					"item_river_painter7"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_panduo_box"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_increase"				"25"
+			}
+		}
+	}
+	"item_guduo_box"
+	{
+		"ID"									"1050079"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_guduo_box"
+		"AbilityTextureName"					"item_river_painter"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_guduo_box"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_increase"				"30"
+			}
+		}
+	}
+	"item_guxi_box"
+	{
+		"ID"									"1050080"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_guxi_box"
+		"AbilityTextureName"					"item_river_painter3"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_guxi_box"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_increase"				"30"
+			}
+		}
+	}
+	"item_kaxixi_box"
+	{
+		"ID"									"1050081"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_kaxixi_box"
+		"AbilityTextureName"					"item_river_painter4"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_kaxixi_box"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_increase"			"3"
+			}
+		}
+	}
+	"item_luxifu_box"
+	{
+		"ID"									"1050082"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_luxifu_box"
+		"AbilityTextureName"					"item_river_painter5"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_luxifu_box"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_increase"				"25"
+			}
+		}
+	}
+	"item_wild_bow"
+	{
+		"ID"									"1050083"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_wild_bow"
+		"AbilityTextureName"					"item_grove_bow"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_wild_bow"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_range_of_range"			"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_bonus"					"2"
+			}
+		}
+	}
+	"item_inheritate_cloth"
+	{
+		"ID"									"1050084"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_inheritate_cloth"
+		"AbilityTextureName"					"item_glimmer_cape"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_inheritate_cloth"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"inheritate_attribute"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"2000"
+			}
+		}
+	}
+	"item_purple_medicine"
+	{
+		"ID"									"1050085"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_purple_medicine"
+		"AbilityTextureName"					"item_bottle_invisibility"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_purple_medicine"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"3"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"20"
+			}
+		}
+	}
+	"item_wild_wand"
+	{
+		"ID"									"1050086"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_wild_wand"
+		"AbilityTextureName"					"item_trident"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_wild_wand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_range_of_range"			"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_atbonus"				"2"
+			}
+		}
+	}
+	"item_ignorance_hat"
+	{
+		"ID"									"1050087"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ignorance_hat"
+		"AbilityTextureName"					"item_witless_shako"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_ignorance_hat"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"4000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_everytimes"		"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_jade_pendant"
+	{
+		"ID"									"1050088"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_jade_pendant"
+		"AbilityTextureName"					"item_third_eye"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_jade_pendant"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_everystack"		"2"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_everystack"				"500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_restriction"			"80"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_fatal_magicalwand"
+	{
+		"ID"									"1050089"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_fatal_magicalwand"
+		"AbilityTextureName"					"item_dagon"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"3"
+		"AbilitySharedCooldown"					"item_fatal_magicalwand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"900"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"250"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_recover"					"20"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"70"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+		}
+	}
+	"item_famous_wand"
+	{
+		"ID"									"1050090"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_famous_wand"
+		"AbilityTextureName"					"item_tome_of_knowledge"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"0"
+		"AbilitySharedCooldown"					"item_famous_wand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_helf"					"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_outgoing"				"80"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"1200"
+			}
+		}
+	}
+	"item_ghostest_book"
+	{
+		"ID"									"1050091"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ghostest_book"
+		"AbilityTextureName"					"item_demonicon"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"8"
+		"AbilitySharedCooldown"					"item_ghostest_book"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_crit_chance"			"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_crit_damage"			"250"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"800"
+			}
+		}
+	}
+	"item_summon_flag"
+	{
+		"ID"									"1050092"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_summon_flag"
+		"AbilityTextureName"					"item_dimensional_doorway"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_summon_flag"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"summon_atkbonus"				"100"
+			}
+		}
+	}
+	"item_summon_wand"
+	{
+		"ID"									"1050093"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_summon_wand"
+		"AbilityTextureName"					"item_travel_slippers"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_summon_wand"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"summon_atkspedbonus"			"100"
+			}
+		}
+	}
+	"item_lifetime_stone"
+	{
+		"ID"									"1050094"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_lifetime_stone"
+		"AbilityTextureName"					"item_ring_of_tarrasque"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_lifetime_stone"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"healthpct_bonus"				"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"2000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_percentage"		"20"
+			}
+		}
+	}
+	"item_nohesitate_stone"
+	{
+		"ID"									"1050095"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_nohesitate_stone"
+		"AbilityTextureName"					"item_nohesitate_stone"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_nohesitate_stone"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"cooldown_reduce"				"0.5"
+			}
+		}
+	}
+	"item_endurance_belt"
+	{
+		"ID"									"1050097"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_endurance_belt"
+		"AbilityTextureName"					"item_belt_of_strength"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_endurance_belt"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"300"
+			}
+		}
+	}
+	"item_magician_ring"
+	{
+		"ID"									"1050098"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_magician_ring"
+		"AbilityTextureName"					"item_magician_ring"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_magician_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_mana"					"200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regen"					"40"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"666"
+			}
+		}
+	}
+	"item_blood_mask"
+	{
+		"ID"									"1050099"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_blood_mask"
+		"AbilityTextureName"					"item_mask_of_madness"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_blood_mask"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"45"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_per"				"100"
+			}
+		}
+	}
+	"item_perfect_ring"
+	{
+		"ID"									"1050100"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_perfect_ring"
+		"AbilityTextureName"					"item_ring_of_health"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_perfect_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"120"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"120"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"200"
+			}
+		}
+	}
+	"item_hand_of_mida_1"
+	{
+		"ID"									"1050101"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_hand_of_mida"
+		"AbilityTextureName"					"item_hand_of_midas"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_hand_of_mida_1"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"creep_damage_bonus"			"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_bonus"					"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystal_bonus"					"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_percentage"		"30"
+			}
+		}
+	}
+	"item_hero_sword"
+	{
+		"ID"									"1050102"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_hero_sword"
+		"AbilityTextureName"					"item_mind_breaker"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_hero_sword"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"elit_damage_bonus"				"50"
+			}
+		}
+	}
+	"item_hero_staff"
+	{
+		"ID"									"1050103"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_hero_staff"
+		"AbilityTextureName"					"item_rod_of_atos"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_hero_staff"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"elit_damage_bonus"				"50"
+			}
+		}
+	}
+	"item_unknowned_item_1"
+	{
+		"ID"									"1050106"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_unknowned_item_1"
+		"AbilityTextureName"					"recipe"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_unknowned_item_1"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"item_unknowned_item_2"
+	{
+		"ID"									"1050107"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_unknowned_item_2"
+		"AbilityTextureName"					"recipe"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_unknowned_item_2"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"item_unknowned_item_3"
+	{
+		"ID"									"1050108"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_unknowned_item_3"
+		"AbilityTextureName"					"recipe"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_unknowned_item_3"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"item_unknowned_item_4"
+	{
+		"ID"									"1050109"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_unknowned_item_4"
+		"AbilityTextureName"					"recipe"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_unknowned_item_4"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"item_light_speaker_amulet"
+	{
+		"ID"									"1050110"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_light_speaker_amulet"
+		"AbilityTextureName"					"item_light_speaker_amulet"
+		"MaxLevel"								"1"
+		"Rarity"								"1"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"light_speaker_amulet"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"delay"							"4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"80"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"0.2"
+			}
+		}
+	}
+	"item_rolling_staff"
+	{
+		"ID"									"1050111"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_rolling_staff"
+		"AbilityTextureName"					"item_rolling_staff"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_rolling_staff"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count"							"4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"150"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"30"
+			}
+		}
+	}
+	"item_lightning_whip"
+	{
+		"ID"									"1050112"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_lightning_whip"
+		"AbilityTextureName"					"item_gungir"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilityCooldown"						"0.2"
+		"AbilitySharedCooldown"					"item_gungir"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"lightning_count"				"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"75"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_tick"					"0.2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_tick"				"25"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"root_duration"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"150"
+			}
+		}
+	}
+	"item_holy_shroud"
+	{
+		"ID"									"1050113"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_holy_shroud"
+		"AbilityTextureName"					"item_eternal_shroud"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"14"
+		"AbilitySharedCooldown"					"item_holy_shroud"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_helf"					"12"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_pct"				"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_health_pct"			"20"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shield_pct"					"50"
+			}
+		}
+	}
+	"item_daedalus"
+	{
+		"ID"									"1050114"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_daedalus"
+		"AbilityTextureName"					"item_greater_crit"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_daedalus"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage_pct"				"625"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"unlock_level"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_attack"				"900"
+			}
+		}
+	}
+	"item_angle_blade"
+	{
+		"ID"									"1050115"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_angle_blade"
+		"AbilityTextureName"					"item_falcon_blade"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_angle_blade"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"333"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"33"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_miss"					"33"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_pct"					"33"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_pct"				"33"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_pct"					"33"
+			}
+		}
+	}
+	"item_reincarnation_lamp"
+	{
+		"ID"									"1050116"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_reincarnation_lamp"
+		"AbilityTextureName"					"item_reincarnation_lamp"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilityCooldown"						"20"
+		"AbilitySharedCooldown"					"item_reincarnation_lamp"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"7"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal_pct"						"3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen_bonus"			"100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"1000"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"100"
+			}
+		}
+	}
+	"item_ancient_astrolabe"
+	{
+		"ID"									"1050117"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_ancient_astrolabe"
+		"AbilityTextureName"					"item_ancient_astrolabe"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_ancient_astrolabe"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"3"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"350"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_damage_pct"				"30"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal_pct"						"35"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"min_health_pct"				"10"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduce_max_pct"			"80"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"3000"
+			}
+		}
+	}
+	"item_demon_ring"
+	{
+		"ID"									"1050118"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_demon_ring"
+		"AbilityTextureName"					"item_soul_ring"
+		"MaxLevel"								"1"
+		"Rarity"								"2"
+		"CountMax"								"1"
+		"AbilityCooldown"						"10"
+		"AbilitySharedCooldown"					"item_demon_ring"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_cost_pct"				"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"10"
+			}
+		}
+	}
+	"item_leader_certificate"
+	{
+		"ID"									"1050119"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_leader_certificate"
+		"AbilityTextureName"					"item_book_of_shadows"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_leader_certificate"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"time_max"						"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"800"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_bonus"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"hp_regen"						"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"status_health"					"2000"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"350"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"350"
+			}
+		}
+	}
+	"item_fire_elf_scepter"
+	{
+		"ID"									"1050120"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_fire_elf_scepter"
+		"AbilityTextureName"					"item_force_staff_wr_arcana_alt"
+		"MaxLevel"								"1"
+		"Rarity"								"3"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_fire_elf_scepter"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regen"					"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"incoming_reduce"				"0.1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stack"							"10"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"magical_strengthen"			"0.3"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1500"
+			}
+		}
+	}
+	"item_blade_of_flame"
+	{
+		"ID"									"1050121"
+		"BaseClass"								"item_lua"
+		"ScriptFile"							"abilities/items/item_blade_of_flame"
+		"AbilityTextureName"					"item_overwhelming_blink"
+		"MaxLevel"								"1"
+		"Rarity"								"4"
+		"CountMax"								"1"
+		"AbilitySharedCooldown"					"item_blade_of_flame"
+		"ItemLevel"								"1"
+		"ItemBaseLevel"							"1"
+		"MaxUpgradeLevel"						"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_attack"				"900"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_count"					"4"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_count"				"2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ignite_count"					"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed"					"60"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ignite_duration"				"5"
+			}
+		}
+	}
+}

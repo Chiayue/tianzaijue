@@ -1,0 +1,42 @@
+--动态加载列表（按先后由上至下）
+return {
+
+	"core/Settings",
+	"core/Filters",
+
+	"mods/dota_td",
+	"mods/GameStates/GSManager",
+	"mods/building",
+	"mods/build_system",
+	"mods/player_data",
+	"mods/game_mode",
+	"mods/Game",
+	"mods/spawner",
+	"mods/Commander",
+	"mods/items",
+	"mods/draw",
+	"mods/notification",
+	"mods/attribute",
+	"mods/EomDebug",
+	"mods/select_item",
+	"mods/select_spellcard",
+	"mods/hand_cards_hero",
+	"mods/hand_cards_spell",
+	"mods/asset_modifiers",
+	"mods/Artifact",
+	"mods/GameShopHero",
+	"mods/Consumable",
+	"mods/CardGrowingUp",
+	"mods/Birthplace",
+	"mods/Exchanger",
+	"mods/TalentGeneral",
+	"mods/Courier",
+	"mods/TreasureBox",
+	"mods/tags",
+	"mods/contract",
+
+
+	"mods/difficulty/3",
+	"mods/difficulty/2",
+	"mods/difficulty/1",
+}

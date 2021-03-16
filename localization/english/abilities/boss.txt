@@ -1,0 +1,115 @@
+//--------------------------------------------------------------------------------------------------
+// BOSS技能描述
+"DOTA_Tooltip_modifier_boss" 				"Leadership"
+"DOTA_Tooltip_modifier_boss_Description"	"Bonus attributes:<br>+ %dMODIFIER_PROPERTY_TOOLTIP% HP<br>+ %dMODIFIER_PROPERTY_TOOLTIP% Physical Damage<br>+ %dMODIFIER_PROPERTY_TOOLTIP% Magical Damage<br>+ %dMODIFIER_PROPERTY_TOOLTIP% Physical armor<br>+ %dMODIFIER_PROPERTY_TOOLTIP% Magic armor"
+
+"DOTA_Tooltip_ability_sk_1" "Burrowstrike"
+"DOTA_Tooltip_ability_sk_1_Description" "Burrows into the ground and tunnels forward, damaging and stunning enemy units above him as he resurfaces."
+
+"DOTA_Tooltip_ability_sk_2" "Epicenter"
+"DOTA_Tooltip_ability_sk_2_Description" "After channeling for 2 seconds, sends a disturbance into the earth, causing earthshake and massive damage to nearby enemies."
+
+"DOTA_Tooltip_ability_sk_3" "Sand Storm"
+"DOTA_Tooltip_ability_sk_3_Description" "Creates a fearsome sandstorm, damaging enemy units within its range and causing them to miss their attacks. Last for %duration% seconds."
+
+"DOTA_Tooltip_ability_sk_4" "Sand Smash"
+"DOTA_Tooltip_ability_sk_4_Description" "Bury his head and smash the ground with his tail, taking %damage_reduce%%% less damage. Affected enemy units take damage constantly. Lasts for %duration% seconds."
+
+"DOTA_Tooltip_ability_sk_5" "Slam"
+"DOTA_Tooltip_ability_sk_5_Description" "Sweeps his tail, damaging and knocking enemies in to the air."
+
+"DOTA_Tooltip_ability_sk_8" "Deafening Blast"
+"DOTA_Tooltip_ability_sk_8_Description" "Unleashes mighty sonic waves around, damaging and knocking enemies back."
+
+"DOTA_Tooltip_ability_kingkong_1" "Giant Boulder"
+"DOTA_Tooltip_ability_kingkong_1_Description" "Toss a Giant Boulder at the target area, stunning and damaging enemy units around."
+
+"DOTA_Tooltip_ability_kingkong_2" "Roar"
+"DOTA_Tooltip_ability_kingkong_2_Description" "Creates a gigantic wave of sound in front of him, dealing heavy damage to all enemy units in its wake."
+
+"DOTA_Tooltip_ability_kingkong_3" "Call of Jungle"
+"DOTA_Tooltip_ability_kingkong_3_Description" "Summons beast soldiers to fight for him."
+
+"DOTA_Tooltip_ability_kingkong_4" "Heal of Vitality"
+"DOTA_Tooltip_ability_kingkong_4_Description" "When his HP is lower than %trigger_pct%%%, he automatically receives healing from the Jungle. Lasts for %addon1% seconds."
+
+"DOTA_Tooltip_ability_kingkong_5" "Wilderness Rage"
+"DOTA_Tooltip_ability_kingkong_5_Description" "When his HP is lower than %trigger_pct%%%, he goes into a frenzy, providing massive attack speed and the ability to deal cleave damage. Attacks of this enraged beast will knock his enemies back."
+
+"DOTA_Tooltip_ability_kingkong_6" "Charge"
+"DOTA_Tooltip_ability_kingkong_6_Description" "Fixes his sight on a target location and starts charging through all objects. All enemy units passed through will be hit and knocked back."
+
+"DOTA_Tooltip_ability_kingkong_7" "Gravel Storm"
+"DOTA_Tooltip_ability_kingkong_7_Description" "Summons a storm of gravels and beast army. Becomes invincible while channeling. Gravel Storm will be interrupted if his army is fully eliminated."
+
+"DOTA_Tooltip_ability_kingkong_8" "Mirror Charge"
+"DOTA_Tooltip_ability_kingkong_8_Description" "After channeling for 2 seconds, releases 4 mirror image around him that charges enemies. All enemy units passed through will be hit and knocked back."
+
+"DOTA_Tooltip_ability_omniknight_1" "Corrosive Track"
+"DOTA_Tooltip_ability_omniknight_1_Description" "Tracks random enemies on the battlefield, enhancing its damage taken. Tracked enemy units will explode upon death. If the target survives the Tracking duration, Wicked Knight will be stunned."
+"DOTA_Tooltip_ability_omniknight_1_duration" "Track Duration: "
+
+"DOTA_Tooltip_ability_omniknight_2" "Corrupted Traction"
+"DOTA_Tooltip_ability_omniknight_2_Description" "Wicked Knight's corrupted power brings his enemy in, damaging it based on the traction dislance."
+
+"DOTA_Tooltip_ability_omniknight_3" "Light of Annihilation"
+"DOTA_Tooltip_ability_omniknight_3_Description" "Wicked Knight transforms into wave energy that flies across the battlefield, damaging all the enemy units along his path. The damage increases as he flies farther."
+
+"DOTA_Tooltip_ability_omniknight_4" "Hammer of Horror"
+"DOTA_Tooltip_ability_omniknight_4_Description" "Deals massive damage with his hammer."
+
+"DOTA_Tooltip_ability_omniknight_5" "Skeleton Knight"
+"DOTA_Tooltip_ability_omniknight_5_Description" "When Wicked Knight's HP is lower than %trigger_pct%%%, every enemy units he killed will be transformed into a skeleton knight that serves him."
+
+"DOTA_Tooltip_ability_omniknight_6" "Nether Swap"
+"DOTA_Tooltip_ability_omniknight_6_Description" "Instantaneously swaps his positions with the farthest unit."
+
+"DOTA_Tooltip_ability_omniknight_7" "Image of Annihilation"
+"DOTA_Tooltip_ability_omniknight_7_Description" "When Wicked Knight's HP is lower than %trigger_pct%%%, he summons 2 invincible images of himself that last till the end of the round."
+
+"DOTA_Tooltip_ability_omniknight_8" "Extinction Blast"
+"DOTA_Tooltip_ability_omniknight_8_Description" "At his desperate moment, Wicked Kight blew himself up with his images."
+
+"DOTA_Tooltip_ability_jakiro_1" "Dual Breath"
+"DOTA_Tooltip_ability_jakiro_1_Description" "One of his heads gets to determine the effect of their breath.<br>Ice Form: attacks multiple units, slowing their attack and movement speed.<br>Fire Form: ignites its target that deals damage over time."
+
+"DOTA_Tooltip_ability_jakiro_2" "Dragon Egg"
+"DOTA_Tooltip_ability_jakiro_2_Description" "When all the Dragon Eggs are eliminated, Jakiro will fly back to the battlefield and place a new Dragon Egg."
+
+"DOTA_Tooltip_ability_jakiro_3" "Formshift"
+"DOTA_Tooltip_ability_jakiro_3_Description" "When he fails to kill any unit within %interval% seconds, Jakiro will release a more powerful self, increasing his damage and leaving a Dragon Egg at the current position."
+
+"DOTA_Tooltip_ability_jakiro_4" "Ice Path"
+"DOTA_Tooltip_ability_jakiro_4_Description" "Can be cast under Ice Form: creates a path of ice that stuns and damages enemies that touch it.<br>Icy Eggs will cast the same spell at the same time."
+
+"DOTA_Tooltip_ability_jakiro_5" "Macropyre"
+"DOTA_Tooltip_ability_jakiro_5_Description" "Can be cast under Fire Form: Jakiro exhales a wide line of lasting flames, which deals damage per second to any enemy units caught in the fire.<br>Fiery Eggs will cast the same spell at the same time."
+
+"DOTA_Tooltip_ability_jakiro_6" "Activation"
+"DOTA_Tooltip_ability_jakiro_6_Description" "Flies to a random location and orders all the Dragon Eggs on the battlefied to cast their talent spells."
+
+"DOTA_Tooltip_ability_jakiro_7" "Energy Beam"
+"DOTA_Tooltip_ability_jakiro_7_Description" "Flies into the air, unleashing deal Energy Beams that sweeping among enemies.<br>All the Dragon Eggs will cast the same spell at the same time."
+
+"DOTA_Tooltip_ability_jakiro_8" "Resurrection"
+"DOTA_Tooltip_ability_jakiro_8_Description" "When Jakiro's HP is lower than %trigger_pct%%%, he activates Resurrection Ritual, becoming invincible and constantly draining health from Dragon Eggs. The ritual will be interrupted if all the Eggs are destroyed during it."
+
+"DOTA_Tooltip_ability_nian_1"	"Claw"
+"DOTA_Tooltip_ability_nian_1_Description"	"Nian attack deal full damage to unit in area."
+"DOTA_Tooltip_ability_nian_2"	"Skew"
+"DOTA_Tooltip_ability_nian_2_physical2physical"	"%damage：physical attack*"
+"DOTA_Tooltip_ability_nian_2_Description"	"Nian charge toward and skew enemy up, the skewed unit will be drag to the final destination."
+"DOTA_Tooltip_ability_nian_3"	"Horn Toss"
+"DOTA_Tooltip_ability_nian_3_stun_duration"	"stun:"
+"DOTA_Tooltip_ability_nian_3_Description"	"Nian tosses any enemies in front of him, launching them to his rear . Enemies spend seconds in the air, then take damage and are stunned for seconds upon landing. Horn Toss will cast when Nian uses Skew"
+"DOTA_Tooltip_ability_nian_4"	"Flee"
+"DOTA_Tooltip_ability_nian_4_impact_stun_duration"	"stun:"
+"DOTA_Tooltip_ability_nian_4_Description"	"Nian run away from enemy , leap toward the weak backline"
+"DOTA_Tooltip_ability_nian_5"	"Jump"
+"DOTA_Tooltip_ability_nian_5_Description"	"Nian jump toward the farthest unti, catch him and tear it apart."
+"DOTA_Tooltip_ability_nian_6"	"flame breath"
+"DOTA_Tooltip_ability_nian_6_Description"	"Nian keeping breath fire toward front, deal damage and slows enemy"
+"DOTA_Tooltip_ability_nian_7"	"Beast form"
+"DOTA_Tooltip_ability_nian_7_Description"	"Nian atake less damage, but when Nian taken certain among of damage , it will fallen on the ground and let any attack"
+"DOTA_Tooltip_ability_nian_8"	"Desperate counterattack"
+"DOTA_Tooltip_ability_nian_8_Description"	"Nian launch the strongest attack when fearing danger, slash a huge area in front him."

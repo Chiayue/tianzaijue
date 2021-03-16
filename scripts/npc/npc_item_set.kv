@@ -1,0 +1,3487 @@
+"DOTAAbilities"
+{
+	"item_cloak_datadriven"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_cloak"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"	"5"
+		"RequiredLevel"	"1"
+		"LevelsBetweenUpgrades"	"1"
+		// Valve's version of this item uses the ID "31".
+		"ID"	"30311"
+		"ItemQuality"	"component"
+		"Model"	"models/props_gameplay/red_box.vmdl"
+		"Effect"	"particles/generic_gameplay/dropped_item.vpcf"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"550"
+		"SideShop"	"1"
+		"ItemShopTags"	"magic_resist"
+		"ItemAliases"	"cloak"
+		"Modifiers"
+		{
+			"modifier_item_cloak_datadriven"
+			{
+				"Passive"	"1"
+				"IsHidden"	"0"
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"100"
+				}
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_magic_resist_percentage"	"1"
+			}
+		}
+	}
+	"item_set_01_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3001"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		
+		"Modifiers"
+		{
+			"modifier_item_set_01_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%bonus_damage_percent"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"40"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_percent"	"30"
+			}
+		}
+	}
+	"item_tz_3_1_2"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3002"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_01_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+					
+				}
+				"IsHidden"	"1"
+			}
+		}
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"50"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"20"
+			}
+		}
+	}
+	"item_tz_3_1_3"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3003"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_01_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"TARGET"
+						"ModifierName"	"modifier_item_set__03_debuff"
+						"duration"	"%duration"
+					}
+				}
+				"IsHidden"	"1"
+			}
+
+			"modifier_item_set__03_debuff"
+			{
+				"IsDebuff" "1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%armor"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"30"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"armor"	"-4"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"5"
+			}
+		}
+	}
+
+	"item_tz_3_2_1"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3004"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_02_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"1000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"70"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"7"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health_regen"	"50"
+			}
+		}
+	}
+	"item_tz_3_2_2"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3005"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_02_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"60"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"40"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"4"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"30"
+			}
+		}
+	}
+	"item_tz_3_2_3"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3006"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_02_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"%magic_resistance"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"400"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"30"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"4"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"magic_resistance"	"12"
+			}
+		}
+	}
+
+"item_tz_3_3_1"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/潮汐水灵项链"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityCooldown"	"30"
+		"AbilityCastRange"	"1800"
+		"ID"	"2010"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"500"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"ItemRequirements"	{}
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"item_set_03_01"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_04_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+				}
+				"Aura"	"modifier_item_set_04_01_aura"
+				"Aura_Radius"	"1200"
+				"Aura_Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"	"DOTA_UNIT_TARGET_HERO"
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_04_01_aura"
+			{
+				"IsBuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all_aura"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all_aura"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all_aura"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_healthregan_aura"
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"	"%bonus_manaregan_aura"
+				}
+				"IsHidden"	"0"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"300"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"10"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"arua_bonus_all"	"30"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"arua_hp_regen"	"10"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"arua_magic_regen"	"5"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all_aura"	"30"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_healthregan_aura"	"10"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_manaregan_aura"	"5"
+			}
+		}
+	}
+	"item_tz_3_3_2"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3008"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_03_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"600"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"80"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"20"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"30"
+			}
+		}
+	}
+
+	"item_tz_3_3_3"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3009"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_03_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"700"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"60"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"20"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"3"
+			}
+		}
+	}
+	
+
+	"item_set_05_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3013"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"AbilityCooldown"	"30"
+		"AbilityManaCost"	"500"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"item_set_05_01"
+			}
+		}
+
+		"AbilityCastRange"	"800"
+		"Modifiers"
+		{
+			"modifier_item_set_05_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_05_01_debuff"
+			{
+				"Duration"          "3"
+	            "Passive"           "0"
+	            "IsHidden"          "0"
+	            "IsBuff"            "0"
+	            "IsDebuff"          "1"
+	            "IsPurgable"        "1"
+	            
+	            "StatusEffectName"     "particles/status_fx/status_effect_frost.vpcf"
+	            "StatusEffectPriority" "10"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-30"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"55"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"spellnum"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"slowmovespeed"	"30"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"3"
+			}
+		}
+	}
+
+	"item_set_05_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3014"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_05_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"55"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"spell_damage"	"10"
+			}
+		}
+	}
+	"item_set_05_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3015"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_05_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"55"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"mana_regen"	"10"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"3"
+			}
+		}
+	}
+
+	"item_set_06_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3016"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"AbilityCooldown"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"Target"	"CASTER"
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"item_set_06_01"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_06_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%bonus_health_regen"
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_06_01_buff"
+			{
+				"Duration"	"12"
+				"Properties"
+				{
+					
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"20"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"1.5"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+				
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"135"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"12"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health_regen"	"50"
+			}
+		}
+	}
+	"item_set_06_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3017"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_06_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"1200"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"95"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"8"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"30"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attacked_hp_regen"	"60"
+			}
+		}
+	}
+	"item_set_06_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3018"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_06_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"1000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"95"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_percent"	"-10"
+			}
+		}
+	}
+
+	"item_set_07_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3019"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_07_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_castmana"	"50"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"30"
+			}
+			
+		}
+	}
+
+	"item_set_07_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3020"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_07_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE"	"%bonus_mana_regen"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mana_regen"	"-1"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"30"
+			}
+			
+		}
+	}
+	"item_set_07_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3021"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_07_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"	"%bonus_mana_regen"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mana_regen"	"-100"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"30"
+			}
+			
+		}
+	}
+
+	"item_set_08_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3022"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_08_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"	"%bonus_mana_regen"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"400"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"135"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mana_regen"	"55"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"4"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit_damage"	"10"
+			}
+		}
+	}
+
+	"item_set_08_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3023"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_08_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+					"MODIFIER_PROPERTY_EVASION_CONSTANT"	"%bonus_evasion"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"900"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"80"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"30"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_evasion"	"15"
+			}
+		}
+	}
+	"item_set_08_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3024"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_08_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"600"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"18"
+			}
+		}
+	}
+
+	"item_set_09_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3025"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"AbilityCooldown"	"90"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+	        {
+	            "ModifierName"          "modifier_item_set_09_01_buff"
+	            "Target"                "CASTER"
+	        }
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_09_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_09_01_buff"
+			{
+				"Duration"	"30"
+				"OnCreated"
+				{
+					"RunScript"
+						{
+							"ScriptFile"	"lua_items/itemequip.lua"
+							"Function"	"item_set_09_01_str"
+						}
+				}	
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"20000"
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"200"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"20"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"30"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"-30"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"-100"
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+						{
+							"ScriptFile"	"lua_items/itemequip.lua"
+							"Function"	"item_set_09_01"
+						}
+				}
+				
+			}
+			"modifier_item_set_09_01_buff_str"
+			{
+				"Duration"	"30"
+				"IsHidden"	"1"	
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"1"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3500"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength_percent"	"10"
+			}
+		}
+	}
+
+	"item_set_09_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3026"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_09_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3500"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"10"
+			}
+		}
+	}
+
+	"item_set_09_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3027"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_09_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_strength"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3500"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_strength"	"200"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit_damage"	"50"
+			}
+		}
+	}
+
+	"item_set_10_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3028"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_10_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+				}
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+						{
+							"ScriptFile"	"lua_items/itemequip.lua"
+							"Function"	"item_set_10_01"
+						}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"20"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"150"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"take_percent"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"take_damage"	"1000"
+			}
+		}
+	}
+
+	"item_set_10_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3029"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_10_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"150"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"10"
+			}
+		}
+	}
+	"item_set_10_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"ID"	"3030"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"AbilityCastRange" "900"
+		"Modifiers"
+		{
+			"modifier_item_set_10_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_agility"
+				}
+				"IsHidden"	"1"
+				"Aura"                  "modifier_item_set_10_03_aruadebuff"
+	            "Aura_Radius"           "900"
+	            "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	            "Aura_Types"            "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+			}
+			"modifier_item_set_10_03_aruadebuff"
+			{
+				"IsDebuff"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%take_armor"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"take_armor"	"-7"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_agility"	"150"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"10"
+			}
+		}
+	}
+
+	"item_set_11_01"
+	{
+		"BaseClass"	"item_lua"
+		"ScriptFile"	"lua_modifiers/suit_item/item_set_11_01"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3031"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"220"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"take_percent"	"5"
+			}
+		}
+	}
+
+	"item_set_11_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3032"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"AbilityCooldown"	"30"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+				"FireSound"
+	        {
+	            "EffectName"    "Hero_Pugna.Decrepify"
+	            "Target"        "TARGET"
+	        }
+			"ApplyModifier"
+	        {
+	            "ModifierName"          "modifier_item_set_11_02_buff"
+	            "Target"                "CASTER"
+	        }
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_11_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_11_02_buff"
+			{
+				"Duration"	"5"
+				"IsDebuff"          "1"
+    
+	            "EffectName"        "particles/units/heroes/hero_pugna/pugna_decrepify.vpcf"
+	            "EffectAttachType"  "follow_origin"
+	    
+	            "Properties"
+	            {
+	                "MODIFIER_PROPERTY_MAGICAL_RESISTANCE_DECREPIFY_UNIQUE" "50"
+	                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "30" 
+	            }
+
+	            "States"
+	            {
+	                "MODIFIER_STATE_DISARMED"       "MODIFIER_STATE_VALUE_ENABLED"
+	                "MODIFIER_STATE_ATTACK_IMMUNE"  "MODIFIER_STATE_VALUE_ENABLED"
+	            } 
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"150"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"take_percent"	"5"
+			}
+		}
+	}
+
+	"item_set_11_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3033"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_11_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_intellect"	"160"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"40"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"15"
+			}
+		}
+	}
+
+	"item_set_12_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"ID"	"3034"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_12_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+				}
+				"Aura"                  "modifier_item_set_12_01_aura"
+	            "Aura_Radius"           "1200"
+	            "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	            "Aura_Types"            "DOTA_UNIT_TARGET_HERO"
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_12_01_aura"
+			{	
+				"IsBuff"	"1"
+				"OnCreated"
+				{
+					"RunScript"
+	                {
+	                    "ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_01_create"
+	                }
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+	                {
+					"ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_01_destory"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"400"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"40"
+				}
+			}
+			"modifier_item_set_12_01_aura_str"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"220"
+				}
+			}
+			"modifier_item_set_12_01_aura_agi"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"220"
+				}
+			}
+			"modifier_item_set_12_01_aura_int"
+			{
+				"IsHidden"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"220"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			
+		}
+	}
+	"item_set_12_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3035"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_12_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+				}
+				"IsHidden"	"1"
+				"Aura"                  "modifier_item_set_12_02_aura"
+	            "Aura_Radius"           "1200"
+	            "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	            "Aura_Types"            "DOTA_UNIT_TARGET_HERO"
+			}
+			"modifier_item_set_12_02_aura"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"10"
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"15"
+				}
+				"OnCreated"
+				{
+					"RunScript"
+	                {
+	                    "ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_02_create"
+	                }
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+	                {
+					"ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_02_destory"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			
+		}
+	}
+	"item_set_12_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3036"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_12_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_STATS_AGILITY_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_STRENGTH_BONUS"	"%bonus_all"
+					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_all"
+				}
+				"IsHidden"	"1"
+				"Aura"                  "modifier_item_set_12_03_aura"
+	            "Aura_Radius"           "1200"
+	            "Aura_Teams"            "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	            "Aura_Types"            "DOTA_UNIT_TARGET_HERO"
+			}
+			"modifier_item_set_12_03_aura"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"80"
+					"MODIFIER_PROPERTY_MANA_REGEN_CONSTANT"	"20"
+					
+				}
+				"OnCreated"
+				{
+					"RunScript"
+	                {
+	                    "ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_03_create"
+	                }
+				}
+				"OnDestroy"
+				{
+					"RunScript"
+	                {
+					"ScriptFile"	"lua_items/itemequip.lua"
+					"Function"	"item_set_12_03_destory"
+					}
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_all"	"50"
+			}
+			
+		}
+	}
+
+	"item_set_13_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3037"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_13_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+					"MODIFIER_PROPERTY_MANA_REGEN_PERCENTAGE"	"%bonus_mana_regen"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mana_regen"	"120"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"3"
+			}
+		}
+	}
+	"item_set_13_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3038"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_13_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"320"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit"	"5"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_crit_damage"	"30"
+			}
+			
+		}
+	}
+	"item_set_13_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3039"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_13_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"3000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"275"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"27"
+			}
+			
+		}
+	}
+
+	"item_set_14_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3040"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_14_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"lua_items/itemequip.lua"
+						"Function"	"item_set_14_01"
+					}
+				}
+			}
+			"modifier_item_set_14_01_debuff"
+			{
+				"IsDebuff" "1"
+				"Duration"	"5"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"-3"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus_percent"	"15"
+			}
+			
+		}
+	}
+	"item_set_14_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3041"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_14_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"lua_items/itemequip.lua"
+						"Function"	"item_set_14_02"
+					}
+				}
+			}
+			"modifier_item_set_14_02_debuff"
+			{
+				"IsDebuff" "1"
+				"Duration"	"5"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS"	"8"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus_percent"	"15"
+			}
+			
+		}
+	}
+
+	"item_set_14_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3042"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_14_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"lua_items/itemequip.lua"
+						"Function"	"item_set_14_03"
+					}
+				}
+				"ThinkInterval" "60"
+
+	            "OnIntervalThink"
+	            {
+	                "RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"lua_items/itemequip.lua"
+						"Function"	"item_set_14_03_setstr"
+					}
+	            }
+
+			}
+			"modifier_item_set_14_03_debuff"
+			{
+				"Duration"  "7"
+	            "IsDebuff"  "1"
+
+	            "EffectName"    "particles/units/heroes/hero_viper/viper_poison_debuff.vpcf"
+	            "EffectAttachType"  "follow_origin"
+
+	            "ThinkInterval" "1.0"
+
+	            "OnIntervalThink"
+	            {
+	                "Damage"
+	                {
+	                    "Target"    "TARGET"
+	                    "Type"      "DAMAGE_TYPE_MAGICAL"
+	                    "Damage"    "2000"
+	                }
+	            }
+			}
+			
+
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus_percent"	"15"
+			}
+			
+		}
+	}
+
+	"item_set_15_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3043"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"AbilityCooldown"	"60"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			 "RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"item_set_15_01"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_15_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_15_01_buff"
+			{
+				"Duration"	"10"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"8000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_armor"	"10"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"60"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_level"	"2"
+			}
+			
+		}
+	}
+
+	"item_set_15_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3044"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_15_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_cooldown"	"10"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_level"	"1"
+			}
+			
+		}
+	}
+
+	"item_set_15_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3045"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_15_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_BONUS"	"%bonus_health"
+				}
+				"IsHidden"	"1"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_health"	"2000"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"300"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_damage"	"10"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_spell_level"	"2"
+			}
+			
+		}
+	}
+	"item_set_16_01"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"3046"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"AbilityCooldown"	"70"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"item_set_16_01_spell"
+			}
+			"FireSound"
+	        {
+	            "EffectName"    "Hero_Slark.ShadowDance"
+	            "Target"        "CASTER"
+	        }
+
+	        "FireEffect"
+	        {
+	            "EffectName"    ""
+	            "EffectAttachType"  "follow_origin"
+	            "Target"        "CASTER"
+	        }
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_16_01"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"%bonus_damage_percent"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+				}
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"lua_items/itemequip.lua"
+						"Function"	"item_set_16_01"
+					}
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_16_01_debuff"
+			{
+				"Duration"	"10"
+				"IsDebuff"	"1"
+				"IsHidden"	"0"
+				
+			}
+			"modifier_item_set_16_01_buff"
+			{
+				"Duration"	"3"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"10"
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"	"-50"
+					"MODIFIER_PROPERTY_INVISIBILITY_LEVEL"	"3"
+				}
+				"States"
+				{
+					
+					"MODIFIER_STATE_INVISIBLE"	"MODIFIER_STATE_VALUE_ENABLED"
+					
+				}
+				"OnCreated"
+	            {
+	                "AttachEffect"
+	                {
+	                    "Target"                    "CASTER"
+	                    "EffectName"                "particles/units/heroes/hero_slark/slark_shadow_dance.vpcf"
+	                    "EffectAttachType"          "follow_origin"
+	                    "ControlPointEntities"
+	                    {
+	                        "CASTER"                "attach_head"
+	                        "CASTER"                "attach_hitloc"
+	                        "CASTER"                "attach_hitloc"
+	                        "CASTER"                "attach_hitloc"
+	                    }
+	                }
+	            }
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_item_set_16_01_buff_se"
+					}
+				}
+			}
+			"modifier_item_set_16_01_buff_se"
+			{
+				"Duration"	"5"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE"	"50"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"50"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"	"20"
+				}
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"250"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"1000"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage_percent"	"30"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"50"
+			}
+			
+		}
+	}
+
+	"item_set_16_02"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3047"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_16_02"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_item_set_16_02_buff"
+					}
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_16_02_buff"
+			{
+				"Duration"	"3"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"10"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"320"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"600"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_movement_speed"	"30"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_attackspeed"	"20"
+			}
+			
+		}
+	}
+
+	"item_set_16_03"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ptzb/llwq1"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ID"	"3048"
+		"ItemQuality"	"rare"
+		"ItemCastOnPickup"	"0"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemPurchasable"	"1"
+		"SideShop"	"1"
+		"OnEquip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_equip"
+			}
+		}
+		"OnUnequip"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"lua_items/itemequip.lua"
+				"Function"	"suit_unequip"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_item_set_16_03"
+			{
+				"Passive"	"1"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"%bonus_damage"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%bonus_attackspeed"
+				}
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"Target"	"CASTER"
+						"ModifierName"	"modifier_item_set_16_03_buff"
+					}
+				}
+				"IsHidden"	"1"
+			}
+			"modifier_item_set_16_03_buff"
+			{
+				"Duration"	"3"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE"	"300"
+				}
+				"Attributes"	"MODIFIER_ATTRIBUTE_MULTIPLE"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_mainbonus"	"320"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bonus_damage"	"800"
+			}
+			
+			
+		}
+	}
+}

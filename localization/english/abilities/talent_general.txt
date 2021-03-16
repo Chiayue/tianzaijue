@@ -1,0 +1,75 @@
+"DOTA_Tooltip_ability_talent_general_wealth" 						                "Wealth"
+"DOTA_Tooltip_ability_talent_general_wealth_Description" 			                "Add initial gold"
+"DOTA_Tooltip_ability_talent_general_wealth_init_gold_bonus" 		                "Bonus:"
+
+"DOTA_Tooltip_ability_talent_general_study" 								        "Study"
+"DOTA_Tooltip_ability_talent_general_study_Description" 					        "Gain bonus DATA exp"
+"DOTA_Tooltip_ability_talent_general_study_player_levelxp_bonus_pct" 		        "%Bonus:"
+
+"DOTA_Tooltip_ability_talent_general_boss_killer" 								    "Killer"
+"DOTA_Tooltip_ability_talent_general_boss_killer_Description" 					    "Gain bonus gold while killing BOSS"
+"DOTA_Tooltip_ability_talent_general_boss_killer_round_gold_bonus_pct" 			    "%Bonus:"
+
+"DOTA_Tooltip_ability_talent_general_lucky" 								        "Lucky"
+"DOTA_Tooltip_ability_talent_general_lucky_Description" 					        "Trigger Lucky Card to get a FREE hero card per %refresh_round_count% round"
+
+"DOTA_Tooltip_ability_talent_general_blacksmiths" 								    "Forger"
+"DOTA_Tooltip_ability_talent_general_blacksmiths_Description" 					    "Increase additional chance to rank item up while reforging"
+"DOTA_Tooltip_ability_talent_general_blacksmiths_remake_levelup_chance" 		    "%Chance:"
+
+"DOTA_Tooltip_ability_talent_general_hoarder" 								        "Hoarder"
+"DOTA_Tooltip_ability_talent_general_hoarder_Description" 					        "Strengthen attack for heroes per unused %gold_per% gold"
+"DOTA_Tooltip_ability_talent_general_hoarder_attack_bonus_pct" 				        "%Attack bonus:"
+"DOTA_Tooltip_ability_talent_general_max_stack" 							        "Max stacks:"
+"DOTA_Tooltip_modifier_talent_general_hoarder_buff" 						        "Hoarder"
+"DOTA_Tooltip_modifier_talent_general_hoarder_buff_Description" 			        "+ %dMODIFIER_PROPERTY_TOOLTIP%%% physical attack <br> + %dMODIFIER_PROPERTY_TOOLTIP%%% magical attack"
+
+"DOTA_Tooltip_ability_talent_general_desire_to_fight" 						        "Bloody Fight"
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_Description" 			        "Strengthen attack for alive heroes whenever a hero died"
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_attack_bonus_pct" 		        "%Attack bonus:"
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_max_stack" 			        "Max stacks:"
+"DOTA_Tooltip_modifier_talent_general_desire_to_fight_buff" 				        "Bloody Fight"
+"DOTA_Tooltip_modifier_talent_general_desire_to_fight_buff_Description" 	        "+ %dMODIFIER_PROPERTY_TOOLTIP%%% physical attack <br> + %dMODIFIER_PROPERTY_TOOLTIP%%% magical attack"
+
+"DOTA_Tooltip_ability_talent_general_rob" 						                    "Rob"
+"DOTA_Tooltip_ability_talent_general_rob_Description" 			                    "Gain extra crystals whenever kills certain enemies"
+"DOTA_Tooltip_ability_talent_general_rob_kill_count" 			                    "Kills:"
+"DOTA_Tooltip_ability_talent_general_rob_crystal" 				                    "Crystal:"
+
+"DOTA_Tooltip_ability_talent_general_killing_spree" 				                "Killing Spree"
+"DOTA_Tooltip_ability_talent_general_killing_spree_Description" 	                "Provide bonus gold with each kill, and stacks reset if any hero die"
+"DOTA_Tooltip_ability_talent_general_killing_spree_reward_per" 			            "%Bonus:"
+"DOTA_Tooltip_ability_talent_general_killing_spree_max_stack" 			            "Max stacks:"
+
+"DOTA_Tooltip_ability_talent_general_lone_wolf" 						            "Lone Wolf"
+"DOTA_Tooltip_ability_talent_general_lone_wolf_Description" 			            "Strengthen attack for heroes with no active relationship"
+"DOTA_Tooltip_ability_talent_general_lone_wolf_attack_bonus_pct" 		            "%Attack bonus:"
+"DOTA_Tooltip_modifier_talent_general_lone_wolf_buff" 				                "Lone Wolf"
+"DOTA_Tooltip_modifier_talent_general_lone_wolf_buff_Description" 	                "+ %dMODIFIER_PROPERTY_TOOLTIP%%% physical attack <br> + %dMODIFIER_PROPERTY_TOOLTIP%%% magical attack"
+
+"DOTA_Tooltip_ability_talent_general_accrual" 						                "Deposit"
+"DOTA_Tooltip_ability_talent_general_accrual_Description" 			                "Gain certain proportion of unused gold at the round end"
+"DOTA_Tooltip_ability_talent_general_accrual_gold_pct" 				                "%Proportion:"
+"DOTA_Tooltip_ability_talent_general_accrual_max_gold" 				                "Gain Limit:"
+
+"DOTA_Tooltip_ability_talent_general_greed" 						                "Greed"
+"DOTA_Tooltip_ability_talent_general_greed_Description" 			                "Delay the leaving time of treasure box"
+"DOTA_Tooltip_ability_talent_general_greed_duration_bonus" 			                "Extra time:"
+
+"DOTA_Tooltip_ability_talent_general_gold_command" 						            "Calm"
+"DOTA_Tooltip_ability_talent_general_gold_command_Description" 			            "Provide bonus attributes for commander"
+"DOTA_Tooltip_ability_talent_general_gold_command_attribute_bonus_pct" 		        "%Attributes bonus:"
+"DOTA_Tooltip_modifier_talent_general_gold_command_buff" 				            "Calm"
+"DOTA_Tooltip_modifier_talent_general_gold_command_buff_Description" 	            "+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) physical attack <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) magical attack <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) physical armor <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) magical armor <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) max health <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%dMODIFIER_PROPERTY_TOOLTIP2%) max mana <br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% (%fMODIFIER_PROPERTY_TOOLTIP2%) mana regen"
+
+"DOTA_Tooltip_ability_talent_general_battle_scarred" 								"Battle Scarred"
+"DOTA_Tooltip_ability_talent_general_battle_scarred_Description" 					"Gain bonus DATA exp"
+"DOTA_Tooltip_ability_talent_general_battle_scarred_player_levelxp_bonus_pct" 		"%Bonus:"
+
+"DOTA_Tooltip_ability_talent_general_treasure_hunter" 								"Treasure Hunter"
+"DOTA_Tooltip_ability_talent_general_treasure_hunter_Description" 					"Gain extra chance to get higher RANK heroes"
+"DOTA_Tooltip_ability_talent_general_treasure_hunter_free_draw_card_bonus_chance" 	"%Chance:"
+
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms" 							"Weapon Master"
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms_Description" 				"Gain extra chance to get higher RANK items"
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms_good_item_bonus_chance" 	"%Chance:"

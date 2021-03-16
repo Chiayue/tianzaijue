@@ -1,0 +1,37 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Default_Keys = 
+	[
+		{
+			Key = "TAB"
+			Command = "ToggleStorage"
+		},
+		{
+			Key = "P"
+			Command = "ToggleIngameShop"
+		},
+	]
+	HideInTools = false
+	IsPlayable = true
+	IsTemplate = false
+	maps = 
+	[
+		"tzj5",
+	]
+	CheckAFKPlayers = false
+	DefaultMap = ""
+	DisableIK = false
+	EnablePickRules = false
+	EventGame = false
+	hero_picker = 
+	{
+	}
+	HeroGuidesSupported = false
+	ForceDefaultGuide = false
+	MinimalPrecache = false
+	MinPlayers = 1
+	MaxPlayers = 4
+	map_options = [  ]
+	PenaltiesEnabled = false
+	TeamCount = 1
+}

@@ -1,0 +1,9 @@
+"RewardShowTitleLab"			"Own："
+"RewardShow_HeroXP"				"{s:hero_name} EXP x{s:xp}"
+"RewardShow_Close"				"Click to skip"
+
+"RewardShow_TotalMoonStone"		"Moon rock in total"
+"RewardShow_TotalStarStone"		"Star stone in total"
+"RewardShow_TotalStarDust"		"Galaxy powder in total"
+"RewardShow_TotalHeroXP"		"Global EXP in total"
+"RewardShow_TotalBPXP"			"BattlePass EXP in total"

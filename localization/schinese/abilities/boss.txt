@@ -1,0 +1,117 @@
+//--------------------------------------------------------------------------------------------------
+// BOSS技能描述
+"DOTA_Tooltip_modifier_boss" 				"王者之姿"
+"DOTA_Tooltip_modifier_boss_Description"	"首领的属性增幅：<br>+ %dMODIFIER_PROPERTY_TOOLTIP% 生命值<br>+ %dMODIFIER_PROPERTY_TOOLTIP% 物理攻击力<br>+ %dMODIFIER_PROPERTY_TOOLTIP% 魔法攻击力<br>+ %dMODIFIER_PROPERTY_TOOLTIP% 物理防御力<br>+ %dMODIFIER_PROPERTY_TOOLTIP% 魔法防御力"
+
+"DOTA_Tooltip_ability_sk_1" "穿刺"
+"DOTA_Tooltip_ability_sk_1_Description" "钻入地下后向目标前进,穿出地面时对上方的单位造成伤害和击晕"
+
+"DOTA_Tooltip_ability_sk_2" "地震"
+"DOTA_Tooltip_ability_sk_2_Description" "吟唱2秒，引发周围大地震，对周围的单位造成大量伤害"
+
+"DOTA_Tooltip_ability_sk_3" "沙尘暴"
+"DOTA_Tooltip_ability_sk_3_Description" "释放一个持续%duration%秒的沙尘暴，对在内的单位造成持续伤害，并有概率使其攻击丢失。"
+
+"DOTA_Tooltip_ability_sk_4" "拍击"
+"DOTA_Tooltip_ability_sk_4_Description" "钻入地下后使用尾巴拍击地面，期间自身受到的伤害减少%damage_reduce%%%，被击中的单位造成伤害。持续%duration%秒"
+
+"DOTA_Tooltip_ability_sk_5" "强力扫尾"
+"DOTA_Tooltip_ability_sk_5_Description" "用尾巴进行横扫打击，对单位造成伤害并将其震飞。"
+
+"DOTA_Tooltip_ability_sk_8" "冲击波"
+"DOTA_Tooltip_ability_sk_8_Description" "以自身为中心,向四周释放大量的冲击波,对击中的单位造成伤害和击退。"
+
+"DOTA_Tooltip_ability_kingkong_1" "巨石"
+"DOTA_Tooltip_ability_kingkong_1_Description" "金刚投掷出一个巨石砸向地面，对范围内的单位造成伤害和眩晕。"
+
+"DOTA_Tooltip_ability_kingkong_2" "咆哮"
+"DOTA_Tooltip_ability_kingkong_2_Description" "金刚发出咆哮声波，对其轨迹上的单位造成伤害。"
+
+"DOTA_Tooltip_ability_kingkong_3" "呼唤"
+"DOTA_Tooltip_ability_kingkong_3_Description" "召唤出野兽小兵来帮助它进行战斗。"
+
+"DOTA_Tooltip_ability_kingkong_4" "恢复"
+"DOTA_Tooltip_ability_kingkong_4_Description" "血量低于%trigger_pct%%%后，金刚进入治疗状态，持续%addon1%秒"
+
+"DOTA_Tooltip_ability_kingkong_5" "狂暴"
+"DOTA_Tooltip_ability_kingkong_5_Description" "血量低于%trigger_pct%%%后，金刚进入狂怒形态，大幅度增加攻击速度，攻击变成范围攻击并且会有击退效果。"
+
+"DOTA_Tooltip_ability_kingkong_6" "冲撞"
+"DOTA_Tooltip_ability_kingkong_6_Description" "金刚向一个方向发起冲撞，对路径上的单位造成伤害和击飞。"
+
+"DOTA_Tooltip_ability_kingkong_7" "石头雨"
+"DOTA_Tooltip_ability_kingkong_7_Description" "金刚施法释放石头雨，并召唤出野兽小兵。释放石头雨期间金刚处于无敌状态，当野兽小兵全部死亡后，石头雨会中断。"
+
+"DOTA_Tooltip_ability_kingkong_8" "分身冲撞"
+"DOTA_Tooltip_ability_kingkong_8_Description" "吟唱2秒后，以自身为中心向周围释放出四个分身进行冲撞，对路径上的单位造成伤害和击飞。"
+
+"DOTA_Tooltip_ability_omniknight_1" "暗之标记"
+"DOTA_Tooltip_ability_omniknight_1_Description" "对场上随机单位释放标记，被标记的单位受到的伤害增加，死亡后会发生一次爆炸。如果标记期间内单位没有死亡，暗骑士会晕眩自身"
+"DOTA_Tooltip_ability_omniknight_1_duration" "标记存在时间时间："
+
+"DOTA_Tooltip_ability_omniknight_2" "暗之涡流"
+"DOTA_Tooltip_ability_omniknight_2_Description" "将目标拖到身边，根据拖拽的距离对目标造成伤害。"
+
+"DOTA_Tooltip_ability_omniknight_3" "湮灭之光"
+"DOTA_Tooltip_ability_omniknight_3_Description" "暗骑士化身成湮灭之光在战场中移动，对沿途上的单位造成伤害，暗骑士移动的越远，造成的伤害越高。"
+
+"DOTA_Tooltip_ability_omniknight_4" "湮灭之锤"
+"DOTA_Tooltip_ability_omniknight_4_Description" "挥动大锤对目标造成伤害"
+
+"DOTA_Tooltip_ability_omniknight_5" "骷髅骑士"
+"DOTA_Tooltip_ability_omniknight_5_Description" "自身血量低于%trigger_pct%%%时生效，每次击杀单位后会召唤出一名骷髅骑士进行作战。"
+
+"DOTA_Tooltip_ability_omniknight_6" "移行换位"
+"DOTA_Tooltip_ability_omniknight_6_Description" "使自己和距离最远的单位发生位置互换。"
+
+"DOTA_Tooltip_ability_omniknight_7" "湮灭分身"
+"DOTA_Tooltip_ability_omniknight_7_Description" "血量低于%trigger_pct%%%后，召唤出2个湮灭分身进行作战，湮灭分身不会受到伤害并一直持续到战斗结束。"
+
+"DOTA_Tooltip_ability_omniknight_8" "湮灭爆轰"
+"DOTA_Tooltip_ability_omniknight_8_Description" "暗骑士进行最后一搏，在全场释放轰炸。湮灭分身也会一起释放。"
+
+"DOTA_Tooltip_ability_jakiro_1" "攻击形态"
+"DOTA_Tooltip_ability_jakiro_1_Description" "冰火巨龙有两种攻击形态。<br>冰形态：攻击减少目标攻击速度和移动速度，可同时对多人进行攻击。<br>火形态：攻击附加点燃，对目标造成持续伤害。"
+
+"DOTA_Tooltip_ability_jakiro_2" "龙蛋"
+"DOTA_Tooltip_ability_jakiro_2_Description" "当场上的龙蛋全部被消灭后，冰火巨龙会立即飞回战场中心重新放置新的龙蛋。"
+
+"DOTA_Tooltip_ability_jakiro_3" "形态切换"
+"DOTA_Tooltip_ability_jakiro_3_Description" "当冰火巨龙%interval%秒内没有击杀单位时，会进行一次形态切换并在当前位置种下一颗龙蛋，每次切换形态都会增加自身的攻击力。"
+
+"DOTA_Tooltip_ability_jakiro_4" "冰封"
+"DOTA_Tooltip_ability_jakiro_4_Description" "冰形态下可进行释放：晕眩路径上所有的敌人。 <br>冰龙蛋会一起释放冰封"
+
+"DOTA_Tooltip_ability_jakiro_5" "烈焰"
+"DOTA_Tooltip_ability_jakiro_5_Description" "火形态下可进行释放：对区域内的敌人造成持续伤害。<br>火龙蛋会一起释放烈焰"
+
+"DOTA_Tooltip_ability_jakiro_6" "激活"
+"DOTA_Tooltip_ability_jakiro_6_Description" "冰火巨龙飞回战场随机位置，使场上所有的蛋释放一次技能冰封和烈焰。"
+
+"DOTA_Tooltip_ability_jakiro_7" "能量光束"
+"DOTA_Tooltip_ability_jakiro_7_Description" "冰火巨龙从天降落，双头同时喷射光束进行扫射攻击。<br>所有的龙蛋也会一起释放能量光束。"
+
+"DOTA_Tooltip_ability_jakiro_8" "重生"
+
+"DOTA_Tooltip_ability_nian_1" "猛兽利爪"
+"DOTA_Tooltip_ability_nian_1_Description" "年兽的攻击会对范围内的单位造成全额伤害。"
+"DOTA_Tooltip_ability_nian_2" "巨角冲撞"
+"DOTA_Tooltip_ability_nian_2_physical2physical"			"%伤害：物理攻击*"
+"DOTA_Tooltip_ability_nian_2_Description" "年兽向前冲刺，用它巨大的犄角将敌人挑起，被挑起的单位将被拖拽至终点。"
+"DOTA_Tooltip_ability_nian_3" "长角抛物"
+"DOTA_Tooltip_ability_nian_3_stun_duration"			"晕眩时间："
+"DOTA_Tooltip_ability_nian_3_Description" "年兽顶起前方的敌人，将其甩在身后并在其落地时猛踏地面将其晕眩。施放巨角冲撞时必定触发该技能。"
+"DOTA_Tooltip_ability_nian_4" "逃窜"
+"DOTA_Tooltip_ability_nian_4_impact_stun_duration"			"晕眩时间："
+"DOTA_Tooltip_ability_nian_4_Description" "年兽逃离敌人的包围圈，向防御较弱的后排跳跃。"
+"DOTA_Tooltip_ability_nian_5" "猛扑"
+"DOTA_Tooltip_ability_nian_5_Description" "年兽向一个最远的单位猛扑，抓住目标后将其撕碎。"
+"DOTA_Tooltip_ability_nian_6" "喷射火焰"
+"DOTA_Tooltip_ability_nian_6_Description" "年兽向前方持续喷射火焰，造成伤害与减速。"
+"DOTA_Tooltip_ability_nian_7" "猛兽姿态"
+"DOTA_Tooltip_ability_nian_7_Description" "凶猛的年兽将受到较少的伤害。但当年兽受到一定量伤害时，会进入倒地状态任人宰割。"
+"DOTA_Tooltip_ability_nian_8" "绝境反击"
+"DOTA_Tooltip_ability_nian_8_Description" "年兽感受到危机时爆发出最强一击。向前方造成一次大范围的拍击。"
+
+
+

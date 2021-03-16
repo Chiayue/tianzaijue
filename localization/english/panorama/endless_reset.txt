@@ -1,0 +1,6 @@
+"GameOver_EndlessReset"				"重置轮回"
+"EndlessResetLast"			"返回上一层"
+"EndlessResetStart"			"回到梦开始的地方"
+"EndlessResetStart_EndlessLabel"				"轮回层数"
+"EndlessResetStart_ResetLabel"				"重置"
+"EndlessResetStart_RewardLabel"				"奖励"

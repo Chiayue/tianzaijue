@@ -1,0 +1,1008 @@
+// 物品品质
+"DOTA_Custom_Rarity_Tooltip_1"	"(N)"
+"DOTA_Custom_Rarity_Tooltip_2"	"(R)"
+"DOTA_Custom_Rarity_Tooltip_3"	"(SR)"
+"DOTA_Custom_Rarity_Tooltip_4"	"(SSR)"
+"Item_RarityLevel"	"{s:rarity_level}"
+
+//物品名字
+"DOTA_Tooltip_ability_item_crystal"						"魂晶"
+"DOTA_Tooltip_ability_item_builder_egg"					"小鸡金蛋"
+"DOTA_Tooltip_ability_item_goldchest"					"大金币"
+"DOTA_Tooltip_ability_item_staff_1"						"长老杖"
+"DOTA_Tooltip_ability_item_physical_chainmail_1"		"银鳞甲"
+"DOTA_Tooltip_ability_item_magical_cloak_1"				"绝缘斗篷"
+"DOTA_Tooltip_ability_item_red_booster_1"				"红宝石"
+"DOTA_Tooltip_ability_item_blue_booster_1"				"蓝宝石"
+"DOTA_Tooltip_ability_item_gloves_1"					"加速手套"
+"DOTA_Tooltip_ability_item_mask_1"						"恐怖面具"
+"DOTA_Tooltip_ability_item_sealed_apotheosis_blade_1"	"被封印的封神之刃"
+"DOTA_Tooltip_ability_item_apotheosis_blade_1"			"封神之刃"
+"DOTA_Tooltip_ability_item_sealed_ring_of_disaster_1"	"被封印的灾星之戒"
+"DOTA_Tooltip_ability_item_ring_of_disaster_1"		"	灾星之戒"
+"DOTA_Tooltip_ability_item_quickening_1"				"翡翠吊坠"
+"DOTA_Tooltip_ability_item_talisman_1"					"平安灵符"
+"DOTA_Tooltip_ability_item_midas_1"						"迈达斯之手"
+"DOTA_Tooltip_ability_item_aether_1"					"以太棱镜"
+"DOTA_Tooltip_ability_item_horn_1"						"猛兽头角"
+"DOTA_Tooltip_ability_item_angel_1"						"天使遗物"
+"DOTA_Tooltip_ability_item_hyper_1"						"震颤宝石"
+"DOTA_Tooltip_ability_item_guardian_boots_1"			"警卫靴"
+"DOTA_Tooltip_ability_item_seerstone_1"					"洞察石"
+"DOTA_Tooltip_ability_item_octarine_1"					"玲珑心"
+"DOTA_Tooltip_ability_item_claw_1"						"魔童爪"
+"DOTA_Tooltip_ability_item_stromhammer_1"				"雷霆锤"
+"DOTA_Tooltip_ability_item_vampirefangs_1"				"嗜血獠牙"
+"DOTA_Tooltip_ability_item_lesser_1"					"水晶剑"
+"DOTA_Tooltip_ability_item_king_flag_1"					"君王旗帜"
+"DOTA_Tooltip_ability_item_blademail_1"					"刃甲"
+"DOTA_Tooltip_ability_item_necro_1"						"恶魔读本"
+"DOTA_Tooltip_ability_item_king_staff_1"				"暴君权杖"
+"DOTA_Tooltip_ability_item_obliterating_orb_1"			"抹灭法球"
+"DOTA_Tooltip_ability_item_deso_1"						"寂灭"
+"DOTA_Tooltip_ability_item_helm_of_undying_1"			"不朽头盔"
+"DOTA_Tooltip_ability_item_crimsonrobe_1"				"灼烧斗篷"
+"DOTA_Tooltip_ability_item_dagen_1"						"夺命魔法杖"
+"DOTA_Tooltip_ability_item_mirror_1"					"漫射宝石"
+"DOTA_Tooltip_ability_item_ring_of_aghanim_1"			"阿哈利姆法戒"
+"DOTA_Tooltip_ability_item_bfuryaxe_1"					"狂战斧"
+"DOTA_Tooltip_ability_item_craggycoat_1"				"崎岖铠甲"
+"DOTA_Tooltip_ability_item_manta_axe_1"					"幻影斧"
+"DOTA_Tooltip_ability_item_rapier_sword_1"				"圣剑"
+"DOTA_Tooltip_ability_item_panicbutton_1"				"圣灯"
+"DOTA_Tooltip_ability_item_endless_carnage_1"			"戮尽斗篷"
+
+//效果字段
+"DOTA_Tooltip_ability_item_axe_1_magical_attack"						"+$magical_attack"
+"DOTA_Tooltip_ability_item_staff_1_magical_attack"						"+$magical_attack"
+"DOTA_Tooltip_ability_item_physical_chainmail_1_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_magical_cloak_1_magical_armor"				"+$magical_armor"
+"DOTA_Tooltip_ability_item_red_booster_1_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_blue_booster_1_status_mana"					"+$status_mana"
+"DOTA_Tooltip_ability_item_gloves_1_attack_speed"						"+$attack_speed"
+
+//Lore字段
+"DOTA_CustomTooltip_common_item_lore"						"←拖动物品到英雄身上装备<br></br>●点击物品重铸"
+
+//变量定义
+"dota_ability_variable_physical_attack"						"物理攻击力"
+"dota_ability_variable_magical_attack"						"魔法攻击力"
+"dota_ability_variable_physical_armor"						"物理护甲"
+"dota_ability_variable_magical_armor"						"魔法护甲"
+"dota_ability_variable_physical_armor_pct"					"物理防御提升"
+"dota_ability_variable_magical_armor_pct"					"魔法防御提升"
+"dota_ability_variable_status_health"						"生命值"
+"dota_ability_variable_status_mana"							"魔法值"
+"dota_ability_variable_mana_regen"							"魔法恢复"
+"dota_ability_variable_health_regen"						"生命恢复"
+"dota_ability_variable_attack_speed"						"攻击速度"
+"dota_ability_variable_attack_speed_percentage"				"攻速"
+"dota_ability_variable_attack_miss"							"闪避"
+"dota_ability_variable_attack_range_of_range"				"攻击范围（远程）"
+"dota_ability_variable_movement_speed"						"移动速度"
+"dota_ability_variable_attack_helf"							"攻击吸血"
+"dota_ability_variable_attack_percentage"					"攻击提升百分比"
+"dota_ability_variable_mana_regen_outgoing"					"伤害吸蓝"
+"dota_ability_variable_physical_attack_pct"					"物理攻击提升"
+"dota_ability_variable_magical_attack_pct"					"魔法攻击提升"
+"dota_ability_variable_gold_earn"							"攻击获取金币"
+"dota_ability_variable_magical_helf"						"魔法伤害吸血"
+"dota_ability_variable_magical_crit_chance"					"魔法暴击概率"
+"dota_ability_variable_magical_crit_damage"					"魔法暴击伤害"
+"dota_ability_variable_crit_chance"							"普攻暴击概率"
+"dota_ability_variable_crit_damage_pct"						"普攻暴击伤害"
+"dota_ability_variable_health_regen_per"					"普攻回血"
+"dota_ability_variable_creep_damage_bonus"					"对非精英怪伤害"
+"dota_ability_variable_elit_damage_bonus"					"对精英伤害"
+
+"dota_ability_variable_summon_attack_speed_pct"				"召唤随从攻速"
+"dota_ability_variable_healthpct_bonus"                     "生命值上限"
+"dota_ability_variable_health_regen_percentage"             "生命恢复增强"
+
+//稻草人
+ "DOTA_Tooltip_ability_item_scarecrow_1"								"稻草人"
+ "DOTA_Tooltip_ability_item_scarecrow_1_description"					"佩戴者技能伤害提高%damage_pct%%%，但攻击力受到相同百分比惩罚 \n<h1>额外效果</h1> 移除攻击力降低惩罚  "
+ "DOTA_Tooltip_ability_item_scarecrow_1_Lore"							"我是一个没有感情的技能机器"
+ "DOTA_Tooltip_modifier_item_scarecrow_1"								"阿斯顿马丁"
+ "DOTA_Tooltip_modifier_item_scarecrow_1_description"					"都开不起"
+
+//物品格锁
+ "DOTA_Tooltip_ability_item_lock_3"						"物品格锁"
+ "DOTA_Tooltip_ability_item_lock_3_description"			"这个格子被锁定了，但它将在 3 级解锁。"
+ "DOTA_Tooltip_ability_item_lock_3_Lore"				""
+ "DOTA_Tooltip_ability_item_lock_5"						"物品格锁"
+ "DOTA_Tooltip_ability_item_lock_5_description"			"这个格子被锁定了，但它将在 5 级解锁。"
+ "DOTA_Tooltip_ability_item_lock_5_Lore"				""
+
+
+// // // // // // // // // // // // // // // // // // // // 白装
+
+// 砍柴斧
+"DOTA_Tooltip_ability_item_axe"									  "砍柴斧"
+"DOTA_Tooltip_ability_item_axe_crit_damage_pct"					  "%+$crit_damage_pct"
+"DOTA_Tooltip_ability_item_axe_crit_chance"						  "%+$crit_chance"
+"DOTA_Tooltip_ability_item_axe_physical_attack"					  "+$physical_attack"
+
+
+// 力量手环
+"DOTA_Tooltip_ability_item_strength_ring"							 "力量手环"
+"DOTA_Tooltip_ability_item_strength_ring_physical_attack"			 "+$physical_attack"
+
+// 智力法袍
+"DOTA_Tooltip_ability_item_magical_ring"							 "智力法袍"
+"DOTA_Tooltip_ability_item_magical_ring_magical_attack"				 "+$magical_attack"
+"DOTA_Tooltip_ability_item_magical_ring_crit_chance"				 "%+$crit_chance"
+"DOTA_Tooltip_ability_item_magical_ring_crit_damage_pct"			 "%+$crit_damage_pct"
+
+// 力量手套
+"DOTA_Tooltip_ability_item_strength_gloves"							 "力量手套"
+"DOTA_Tooltip_ability_item_strength_gloves_physical_attack_pct"		 "%+$physical_attack_pct"
+"DOTA_Tooltip_ability_item_strength_gloves_health_regen"		     "+$health_regen"
+"DOTA_Tooltip_ability_item_strength_gloves_status_health"		     "+$status_health"
+
+// 法强之戒
+"DOTA_Tooltip_ability_item_magical_gloves"							 "法强之戒"
+"DOTA_Tooltip_ability_item_magical_gloves_magical_attack_pct"		 "%+$magical_attack_pct"
+"DOTA_Tooltip_ability_item_magical_gloves_mana_regen"		         "+$mana_regen"
+"DOTA_Tooltip_ability_item_magical_gloves_status_mana"		         "+$status_mana"
+
+// 吸血脸
+"DOTA_Tooltip_ability_item_blood_suck"								 "吸血脸"
+"DOTA_Tooltip_ability_item_blood_suck_description"					 "+%blood_suck%%%攻击吸血"
+
+// 恢复戒指
+"DOTA_Tooltip_ability_item_health_ring"								 "恢复戒指"
+"DOTA_Tooltip_ability_item_health_ring_health_regen"				 "+$health_regen"
+
+// 枫糖浆
+"DOTA_Tooltip_ability_item_gold_hand"								 "枫糖浆"
+"DOTA_Tooltip_ability_item_gold_hand_gold_earn"						 "+$gold_earn"
+"DOTA_Tooltip_ability_item_gold_hand_description"		             "我，秦始皇，打钱"
+"DOTA_Tooltip_modifier_item_gold_hand"								 "真甜！"
+"DOTA_Tooltip_modifier_item_gold_hand_description"				     "甜了 %dMODIFIER_PROPERTY_TOOLTIP% 枚金币了"
+
+// 恢复法戒
+"DOTA_Tooltip_ability_item_mana_ring"								 "净化药瓶"
+"DOTA_Tooltip_ability_item_mana_ring_mana_regen"					 "+$mana_regen"
+
+// 小魔瓶
+"DOTA_Tooltip_ability_item_tiny_magicbox"							 "小魔瓶"
+"DOTA_Tooltip_ability_item_tiny_magicbox_description"				 "每回合开始战斗时获得 %mana_boost% 点魔法值。"
+"DOTA_Tooltip_modifier_item_tiny_magicbox"							 "小魔瓶"
+"DOTA_Tooltip_modifier_item_tiny_magicbox_description"				 "每回合开始战斗时获得 %dMODIFIER_PROPERTY_TOOLTIP% 点魔法值。"
+
+// 闪避符
+"DOTA_Tooltip_ability_item_evasion_talisman"						 "闪避符"
+"DOTA_Tooltip_ability_item_evasion_talisman_evasion_pct"			 "%+$evasion"
+
+// 巫毒面具
+"DOTA_Tooltip_ability_item_voodo_mask"								 "巫毒面具"
+"DOTA_Tooltip_ability_item_voodo_mask_magical_helf"					 "%+$magical_helf"
+"DOTA_Tooltip_ability_item_voodo_mask_magical_attack"				 "+$magical_attack"
+
+// 破碎的酒桶
+"DOTA_Tooltip_ability_item_broken_cask"								 "破碎的酒桶"
+"DOTA_Tooltip_ability_item_broken_cask_description"					 "%chance%%% 的概率格挡 %black_damage% 点物理伤害。"
+
+// 破碎的护符
+"DOTA_Tooltip_ability_item_broken_talisman"					         "破碎的护符"
+"DOTA_Tooltip_ability_item_broken_talisman_description"		         "%chance%%% 的概率格挡 %black_damage% 点伤害。"
+"DOTA_Tooltip_modifier_item_broken_talisman"		         "格挡"
+"DOTA_Tooltip_modifier_item_broken_talisman_description"		         "概率格挡伤害"
+
+// 伐木斧
+"DOTA_Tooltip_ability_item_farm_axe"								 "伐木斧"
+"DOTA_Tooltip_ability_item_farm_axe_physical_attack"				 "+$physical_attack"
+"DOTA_Tooltip_ability_item_farm_axe_magical_attack"				     "+$magical_attack"
+"DOTA_Tooltip_ability_item_farm_axe_extra_damage"				     "%+$creep_damage_bonus"
+
+// 快速手套
+"DOTA_Tooltip_ability_item_speed_hand"								 "快速手套"
+"DOTA_Tooltip_ability_item_speed_hand_attack_speed"					 "+$attack_speed"
+
+// 附魔板甲
+"DOTA_Tooltip_ability_item_beast_skin"					             "附魔板甲"
+"DOTA_Tooltip_ability_item_beast_skin_physical_armor"				 "+$physical_armor"
+"DOTA_Tooltip_ability_item_beast_skin_magical_armor"				 "+$magical_armor"
+
+// 抗魔斗篷
+"DOTA_Tooltip_ability_item_magical_beast_skin"						 "抗魔斗篷"
+"DOTA_Tooltip_ability_item_magical_beast_skin_magical_armor"		 "+$magical_armor"
+
+// 敏捷之靴
+"DOTA_Tooltip_ability_item_speedOf_shoe"							 "敏捷之靴"
+"DOTA_Tooltip_ability_item_speedOf_shoe_movement_speed"				 "+$movement_speed"
+"DOTA_Tooltip_ability_item_speedOf_shoe_attack_speed"				 "+$attack_speed"
+
+// 断裂的恐鳌之戒
+// "DOTA_Tooltip_ability_item_lifespan_stone"							 "断裂的恐鳌之戒"
+// "DOTA_Tooltip_ability_item_lifespan_stone_status_health"			 "+$status_health"
+
+// 力量药瓶
+"DOTA_Tooltip_ability_item_panduo_box"								 "力量药瓶"
+"DOTA_Tooltip_ability_item_panduo_box_Description"					 "<h1>力量滋长</h1>每佩戴一回合增加 %attack_increase% 点物理攻击力"
+"DOTA_Tooltip_modifier_item_panduo_box"								 "物理攻击成长"
+"DOTA_Tooltip_modifier_item_panduo_box_Description"					 "物理攻击提高 %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 智力药瓶
+"DOTA_Tooltip_ability_item_luxifu_box"								 "智力药瓶"
+"DOTA_Tooltip_ability_item_luxifu_box_Description"					 "<h1>智力滋长</h1>每佩戴一回合增加 %attack_increase% 点魔法攻击力"
+"DOTA_Tooltip_ability_item_luxifu_box_Description"					 "每佩戴一回合增加 %attack_increase% 点魔法攻击力"
+"DOTA_Tooltip_modifier_item_luxifu_box"								 "魔法攻击成长"
+"DOTA_Tooltip_modifier_item_luxifu_box_Description"					 "魔法攻击提高 %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 魔肤药瓶
+"DOTA_Tooltip_ability_item_guduo_box"								 "魔肤药瓶"
+"DOTA_Tooltip_ability_item_guduo_box_Description"					 "<h1>魔防滋长</h1>每佩戴一回合增加 %armor_increase% 点魔法护甲"
+"DOTA_Tooltip_modifier_item_guduo_box"								 "魔法护甲成长"
+"DOTA_Tooltip_modifier_item_guduo_box_Description"					 "魔法护甲提高 %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 钢铁药瓶
+"DOTA_Tooltip_ability_item_guxi_box"								 "钢铁药瓶"
+"DOTA_Tooltip_ability_item_guxi_box_Description"					 "<h1>物防滋长</h1>每佩戴一回合增加 %armor_increase% 点物理护甲"
+"DOTA_Tooltip_modifier_item_guxi_box"								 "物理护甲成长"
+"DOTA_Tooltip_modifier_item_guxi_box_Description"					 "物理护甲提高 %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 咯系系魔盒
+"DOTA_Tooltip_ability_item_kaxixi_box"								 "急速药瓶"
+"DOTA_Tooltip_ability_item_kaxixi_box_Description"					 "<h1>攻速滋长</h1>每佩戴一回合增加 %attackspeed_increase% 点攻击速度"
+"DOTA_Tooltip_modifier_item_kaxixi_box"								 "攻击速度成长"
+"DOTA_Tooltip_modifier_item_kaxixi_box_Description"					 "攻击速度提高 %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 随从旗帜
+"DOTA_Tooltip_ability_item_summon_flag"								 "随从旗帜"
+"DOTA_Tooltip_ability_item_summon_flag_Description"					 "携带者的召唤物提高%summon_atkbonus%%%双攻"
+"DOTA_Tooltip_modifier_item_summon_flag"							 "随从旗帜"
+"DOTA_Tooltip_modifier_item_summon_flag_Description"				 "双攻增加"
+
+// 随从权杖
+"DOTA_Tooltip_ability_item_summon_wand"								 "随从权杖"
+"DOTA_Tooltip_ability_item_summon_wand_Description"					 "携带者的召唤物提高%summon_atkspedbonus%的攻速"
+"DOTA_Tooltip_modifier_item_summon_wand_buff"							 "随从权杖"
+"DOTA_Tooltip_modifier_item_summon_wand_buff_Description"				 "攻速提升%dMODIFIER_PROPERTY_TOOLTIP%点"
+
+// 恐鳌之戒
+"DOTA_Tooltip_ability_item_lifetime_stone"							 "恐鳌之戒"
+"DOTA_Tooltip_ability_item_lifetime_stone_healthpct_bonus"			 "%+$healthpct_bonus"
+"DOTA_Tooltip_ability_item_lifetime_stone_status_health"		     "+$status_health"
+"DOTA_Tooltip_ability_item_lifetime_stone_health_regen_percentage"	 "%+$health_regen_percentage"
+"DOTA_Tooltip_modifier_item_lifetime_stone"							 "生命上限增加"
+"DOTA_Tooltip_modifier_item_lifetime_stone_Description"				 "生命上限增加"
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  蓝装
+
+// 制式长矛
+"DOTA_Tooltip_ability_item_zhi_spear"							 "制式长矛"
+"DOTA_Tooltip_ability_item_zhi_spear_physical_attack"			 "+$physical_attack"
+"DOTA_Tooltip_ability_item_zhi_spear_description"				 "<h1>额外</h1>近战单位每次攻击有 %chance%%% 的概率造成额外 %physical_extra% 点伤害"
+
+// 制式弓箭
+"DOTA_Tooltip_ability_item_zhi_bow"								 "制式弓箭"
+"DOTA_Tooltip_ability_item_zhi_bow_physical_attack"				 "+$physical_attack"
+"DOTA_Tooltip_ability_item_zhi_bow_description"					 "<h1>分裂</h1>远程单位每次攻击有 %chance%%% 的概率额外攻击一个目标"
+
+// 制式法杖
+"DOTA_Tooltip_ability_item_zhi_staff"							 "制式法杖"
+"DOTA_Tooltip_ability_item_zhi_staff_magical_attack"			 "+$magical_attack"
+"DOTA_Tooltip_ability_item_zhi_staff_description"				 "<h1>额外</h1>每次攻击有 %chance%%% 的概率造成 %magical_extra% 点额外伤害"
+
+// 制式木杖
+"DOTA_Tooltip_ability_item_zhi_wand"							 "制式木杖"
+"DOTA_Tooltip_ability_item_zhi_wand_magical_attack"				 "+$magical_attack"
+"DOTA_Tooltip_ability_item_zhi_wand_description"				 "<h1>减少冷却</h1>每次攻击有 %chance%%% 的概率减少自己所有技能%cooldown_reduce%%%冷却 "
+
+// 精钢盾牌
+"DOTA_Tooltip_ability_item_iron_shield"							 "精钢盾牌"
+"DOTA_Tooltip_ability_item_iron_shield_physical_armor"			 "+$physical_armor"
+"DOTA_Tooltip_ability_item_iron_shield_magical_armor"			 "+$magical_armor"
+"DOTA_Tooltip_ability_item_iron_shield_description"				 "<h1>精钢铸造</h1>减少 %deduce_damage_pct%%% 受到的伤害"
+
+// 铁法袍
+"DOTA_Tooltip_ability_item_iron_robe"							 "铁法袍"
+"DOTA_Tooltip_ability_item_iron_robe_magical_armor"				 "+$magical_armor"
+"DOTA_Tooltip_ability_item_iron_robe_description"				 "<h1>减伤</h1>减少%magical_ingoing_damage%%%受到的魔法伤害  "
+
+// 偷金手
+"DOTA_Tooltip_ability_item_goldess_hand"						 "偷金手"
+"DOTA_Tooltip_ability_item_goldess_hand_attack_speed"			 "+$attack_speed"
+"DOTA_Tooltip_ability_item_goldess_hand_description"			 "<h1>偷金</h1>普通攻击时有%chance%%% 的几率获得%gold_bonus% 枚金币"
+"DOTA_Tooltip_modifier_item_goldess_hand"						 "偷金"
+"DOTA_Tooltip_modifier_item_goldess_hand_description"			 "此装备获取金钱%dMODIFIER_PROPERTY_TOOLTIP%"
+
+//点金手
+ "DOTA_Tooltip_ability_item_hand_of_mida_1"						    "点金手"
+ "DOTA_Tooltip_ability_item_hand_of_mida_1_description"			    "<h1>点金</h1>杀死敌人时，有 %chance%%% 概率获得 %gold_bonus% 金币和 %crystal_bonus% 魂晶"
+ "DOTA_Tooltip_ability_item_hand_of_mida_1_creep_damage_bonus"	    "%+$creep_damage_bonus"
+ "DOTA_Tooltip_ability_item_hand_of_mida_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+
+
+// 闪电指套
+"DOTA_Tooltip_ability_item_light_fingertips"					 "闪电指套"
+"DOTA_Tooltip_ability_item_light_fingertips_attack_speed"		 "+$attack_speed"
+"DOTA_Tooltip_ability_item_light_fingertips_description"		 "<h1>连击</h1>普通攻击时有 %chance%%% 的几率连击一次"
+
+// 蓝晶石
+"DOTA_Tooltip_ability_item_bluess_stone"						 "蓝晶石"
+"DOTA_Tooltip_ability_item_bluess_stone_status_mana"			 "+$status_mana"
+
+// 御风靴
+"DOTA_Tooltip_ability_item_wind_shoe"							"御风靴"
+"DOTA_Tooltip_ability_item_wind_shoe_movement_speed"			"+$movement_speed"
+"DOTA_Tooltip_ability_item_wind_shoe_description"				"<h1>闪避</h1> %attack_miss%%% 的几率闪避所有伤害"
+
+// 封印之刃
+"DOTA_Tooltip_ability_item_unlock_sowrd"						"封印之刃"
+"DOTA_Tooltip_ability_item_unlock_sowrd_physical_attack"		"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_sowrd_description"			"<h1>封印</h1> </h1>杀死 %unlock_count% 个怪物后解锁，增加 %unlock_physical_attack% 点物理攻击力 </h1>"
+"DOTA_Tooltip_modifier_item_unlock_sowrd"						"封印的力量"
+"DOTA_Tooltip_modifier_item_unlock_sowrd_description"		   "已杀死 %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封印之杖
+"DOTA_Tooltip_ability_item_unlock_wand"							"封印之杖"
+"DOTA_Tooltip_ability_item_unlock_wand_magical_attack"			"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_wand_description"				"<h1>封印</h1> 杀死%unlock_count%个怪物后解锁，额外增加%unlock_magical_attack%点魔法攻击力"
+"DOTA_Tooltip_modifier_item_unlock_wand"						"封印的法力"
+"DOTA_Tooltip_modifier_item_unlock_wand_description"			"已杀死 %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 已解封的封印之杖
+"DOTA_Tooltip_ability_item_unlock_wand_1"						"已解封的封印之杖(R)"
+"DOTA_Tooltip_ability_item_unlock_wand_1_description"			"<h1>解封</h1> 封印已解锁，增加更高的魔法攻击力"
+"DOTA_Tooltip_ability_item_unlock_wand_1_magical_attack"		"+$magical_attack"
+
+
+
+// 被封印的封神之刃
+"DOTA_Tooltip_ability_item_unlock_godsowrd"						"被封印的封神之刃"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_physical_attack"		"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_description"			"<h1>封印</h1> </h1>杀死 %unlock_count% 个怪物后解锁，自身物理伤害提升 %physical_damage_up%%% </h1>"
+"DOTA_Tooltip_modifier_item_unlock_godsowrd"					"封印神力"
+"DOTA_Tooltip_modifier_item_unlock_godsowrd_description"		"已杀死 %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封神之刃
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1"					"封神之刃"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1_physical_attack"	"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1_description"		"<h1>解封</h1> 自身物理伤害提升 %physical_damage_up%%% </h1>"
+
+// 被封印的封神之杖
+"DOTA_Tooltip_ability_item_unlock_godwand"						"被封印的封神之杖"
+"DOTA_Tooltip_ability_item_unlock_godwand_magical_attack"		"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_godwand_description"			"<h1>封印</h1> </h1>杀死 %unlock_count% 个怪物后解锁，自身魔法伤害提升 %magical_damage_up%%% </h1> "
+"DOTA_Tooltip_modifier_item_unlock_godwand"						"封印神力"
+"DOTA_Tooltip_modifier_item_unlock_godwand_description"		 "已杀死 %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封神之杖
+"DOTA_Tooltip_ability_item_unlock_godwand_1"					"封神之杖"
+"DOTA_Tooltip_ability_item_unlock_godwand_1_magical_attack"		"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_godwand_1_description"		"<h1>解封</h1> 自身魔法伤害提升 %magical_damage_up%%% </h1> "
+
+// 被封印的星戒
+"DOTA_Tooltip_ability_item_unlock_ring"							"被封印的星戒"
+"DOTA_Tooltip_ability_item_unlock_ring_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_unlock_ring_description"				"<h1>封印</h1>杀死%unlock_count%个怪物后解锁，全伤害减免%incoming_reduce%%%，并且自身生命值提高%status_health_after%"
+"DOTA_Tooltip_modifier_item_unlock_ring"						"封印神力"
+"DOTA_Tooltip_modifier_item_unlock_ring_description"			"已杀死 %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 星戒
+"DOTA_Tooltip_ability_item_unlock_ring_1"						"星戒"
+"DOTA_Tooltip_ability_item_unlock_ring_1_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_unlock_ring_1_description"			"<h1>星之神力</h1>来自星星的力量，全伤害减免 %incoming_reduce%%%"
+
+// 林野长弓
+"DOTA_Tooltip_ability_item_wild_bow"							"林野长弓"
+"DOTA_Tooltip_ability_item_wild_bow_attack_range_of_range"		"+$attack_range_of_range"
+"DOTA_Tooltip_ability_item_wild_bow_description"				"<h1>穿刺</h1> 每次攻击有 %chance%%% 的几率增加 %attack_bonus% 点物理攻击，额外攻击力附着在装备上"
+"DOTA_Tooltip_modifier_item_wild_bow"				            "林野长弓"
+"DOTA_Tooltip_modifier_item_wild_bow_description"				"物理攻击提升了%dMODIFIER_PROPERTY_TOOLTIP%点"
+
+// 林野法杖
+"DOTA_Tooltip_ability_item_wild_wand"							"林野法杖"
+"DOTA_Tooltip_ability_item_wild_wand_attack_range_of_range"		"+$attack_range_of_range"
+"DOTA_Tooltip_ability_item_wild_wand_description"				"<h1>聚能</h1> 每次攻击有 %chance%%% 的几率增加 %magical_atbonus% 点魔法攻击，额外攻击力附着在装备上"
+"DOTA_Tooltip_modifier_item_wild_wand"				"林野法杖"
+"DOTA_Tooltip_modifier_item_wild_wand_description"				"魔法攻击提升了%dMODIFIER_PROPERTY_TOOLTIP%点"
+
+// 幽灵披风
+"DOTA_Tooltip_ability_item_inheritate_cloth"					"幽灵披风"
+"DOTA_Tooltip_ability_item_inheritate_cloth_Description"		"<h1>继承</h1> 死亡之后将自身 %inheritate_attribute%%% 属性继承给最近的队友"
+"DOTA_Tooltip_modifier_item_inheritate_cloth_buff"				"继承者"
+"DOTA_Tooltip_modifier_item_inheritate_cloth_buff_description"				"继承了以下属性：<br>+%dMODIFIER_PROPERTY_TOOLTIP%点物理攻击<br>+%dMODIFIER_PROPERTY_TOOLTIP%点魔法攻击<br>+%dMODIFIER_PROPERTY_TOOLTIP%点物理护甲<br>+%dMODIFIER_PROPERTY_TOOLTIP%点魔法护甲<br>+%dMODIFIER_PROPERTY_TOOLTIP%点攻击速度"
+
+
+// 专注药瓶
+"DOTA_Tooltip_ability_item_purple_medicine"						"专注药瓶"
+"DOTA_Tooltip_ability_item_purple_medicine_attack_speed"		"+$attack_speed"
+"DOTA_Tooltip_ability_item_purple_medicine_Description"			"<h1>专注</h1> 每次攻击增加 %attack_speed_bonus% 点攻速，回合结束清零"
+"DOTA_Tooltip_modifier_item_purple_medicine"		            "专注"
+"DOTA_Tooltip_modifier_item_purple_medicine_Description"			"额外提升%dMODIFIER_PROPERTY_TOOLTIP%点攻速"
+
+// 劣质魔豆
+"DOTA_Tooltip_ability_item_broken_bean"							"劣质魔豆"
+"DOTA_Tooltip_ability_item_broken_bean_Description"				"<h1>一次性装备</h1> 本回合所有属性提高 %bonus_pct%%%，使用后消失"
+
+// 神奇铠甲
+"DOTA_Tooltip_ability_item_magic_armor"							"神奇铠甲"
+"DOTA_Tooltip_ability_item_magic_armor_Description"				"<h1>一次性装备</h1> 本回合物理及魔法护甲提升 %armor_increase%%%，使用后消失"
+
+// 罪恶药瓶
+"DOTA_Tooltip_ability_item_evil_medicine"						"罪恶药瓶"
+"DOTA_Tooltip_ability_item_evil_medicine_Description"			"<h1>一次性装备</h1> 本回合受到的所有伤害减少 %incoming_reduce%%%，使用后消失"
+
+// 地灵剑气(法)
+"DOTA_Tooltip_ability_item_ground_sick_sword"					"地灵剑气(法)"
+"DOTA_Tooltip_ability_item_ground_sick_sword_Description"		"<h1>一次性装备</h1> 本回合魔法攻击提升 %attacktemp%，使用后消失"
+
+// 地灵剑气(法)
+"DOTA_Tooltip_ability_item_ground_sick_sword1"					"地灵剑气(物)"
+"DOTA_Tooltip_ability_item_ground_sick_sword1_Description"		"<h1>一次性装备</h1> 本回合物理攻击提升 %attacktemp%，使用后消失"
+
+//双刃剑
+"DOTA_Tooltip_ability_item_doubleside_sword_1"					"双刃剑"
+"DOTA_Tooltip_ability_item_doubleside_sword_1_attack_speed"	    "<font color='#e03e2e'>降低攻速</font>"
+"DOTA_Tooltip_ability_item_doubleside_sword_1_description"		"<h1>穿刺</h1> 普攻时有 %crit_chance%%% 概率造成%crit_damage_pct%%%的伤害"
+
+//急速宝石
+ "DOTA_Tooltip_ability_item_nohesitate_stone"					            "急速宝石"
+ "DOTA_Tooltip_ability_item_nohesitate_stone_Description"					"<h1>急速冷却</h1>佩戴者技能冷却缩减%cooldown_reduce%秒"
+ "DOTA_Tooltip_ability_item_nohesitate_stone_attack_speed_percentage"		"%+$attack_speed_percentage"
+
+
+
+//耐力腰带
+"DOTA_Tooltip_ability_item_endurance_belt"					"耐力腰带"
+"DOTA_Tooltip_ability_item_endurance_belt_description"		""
+"DOTA_Tooltip_ability_item_endurance_belt_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_endurance_belt_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_endurance_belt_magical_armor"					"+$magical_armor"
+
+//魔法师戒指
+"DOTA_Tooltip_ability_item_magician_ring"					            "魔法师戒指"
+"DOTA_Tooltip_ability_item_magician_ring_description"		            "成为最强魔法师的入门戒指"
+"DOTA_Tooltip_ability_item_magician_ring_magical_attack"		        "+$magical_attack"
+"DOTA_Tooltip_ability_item_magician_ring_status_mana"					"+$status_mana"
+"DOTA_Tooltip_ability_item_magician_ring_mana_regen"					"+$mana_regen"
+
+//嗜血面具
+"DOTA_Tooltip_ability_item_blood_mask"					"嗜血面具"
+"DOTA_Tooltip_ability_item_blood_mask_description"		""
+"DOTA_Tooltip_ability_item_blood_mask_attack_speed"					"+$attack_speed"
+"DOTA_Tooltip_ability_item_blood_mask_health_regen_per"					"+$health_regen_per"
+
+//全能指环
+"DOTA_Tooltip_ability_item_perfect_ring"					"全能指环"
+"DOTA_Tooltip_ability_item_perfect_ring_description"		""
+"DOTA_Tooltip_ability_item_perfect_ring_physical_attack"				"+$physical_attack"
+"DOTA_Tooltip_ability_item_perfect_ring_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_perfect_ring_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_perfect_ring_magical_armor"					"+$magical_armor"
+
+//英雄长剑
+"DOTA_Tooltip_ability_item_hero_sword"					"英雄长剑"
+"DOTA_Tooltip_ability_item_hero_sword_physical_attack"				"+$physical_attack"
+"DOTA_Tooltip_ability_item_hero_sword_elit_damage_bonus"					"%+$elit_damage_bonus"
+
+//英雄法杖
+"DOTA_Tooltip_ability_item_hero_staff"					"英雄法杖"
+"DOTA_Tooltip_ability_item_hero_staff_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_hero_staff_elit_damage_bonus"					"%+$elit_damage_bonus"
+
+
+
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  紫装
+
+// 无知小帽
+"DOTA_Tooltip_ability_item_ignorance_hat"								"无知小帽"
+"DOTA_Tooltip_ability_item_ignorance_hat_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_ignorance_hat_Description"					"<h1>无知</h1> 每次受到攻击会额外增加 %health_regen_everytimes% 点生命恢复，回合重置"
+
+//嗜血獠牙
+ "DOTA_Tooltip_ability_item_vampire_fang_1"								"嗜血獠牙"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_attack_helf"					"%+$attack_helf"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_physical_attack"				"+$physical_attack"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_Lore"						"一只可爱的吸血鬼的留下来的遗物，非常好用"
+
+//振奋宝石
+ "DOTA_Tooltip_ability_item_encouraging_gem_1"							"振奋宝石"
+ "DOTA_Tooltip_ability_item_encouraging_gem_1_description"				"<h1>振奋</h1> 每次攻击额外获得 %attack_speed_bonus% 点攻击速度，此效果最多叠加 %stack_account%层，持续 %time_duration% 秒"
+ "DOTA_Tooltip_ability_item_encouraging_gem_1_attack_speed"				"+$attack_speed"
+ "DOTA_Tooltip_modifier_attack_speed_bonus_buff1"						"攻速提升"
+ "DOTA_Tooltip_modifier_attack_speed_bonus_buff1_Description" 			"攻速提升 %dMODIFIER_PROPERTY_TOOLTIP2%"
+
+//专注之心
+ "DOTA_Tooltip_ability_item_heart_of_focus_1"							 "专注之心"
+ "DOTA_Tooltip_ability_item_heart_of_focus_1_Description"				 "<h1>专注</h1> 持续攻击同一目标时，每次攻击都会额外提升 %attack_speed_bonus% 点攻击速度， 最高提升 120 点 \n<h1>凝神</h1> 6层专注时攻击有 %chance%%% 的概率造成眩晕，持续 %stun_time% 秒"
+ "DOTA_Tooltip_modifier_item_heart_of_focus_1"							 "专注"
+ "DOTA_Tooltip_modifier_item_heart_of_focus_1_Description" 				 "攻击速度提升 %dMODIFIER_PROPERTY_TOOLTIP2% "
+
+
+//闪避便鞋
+ "DOTA_Tooltip_ability_item_guard_shoe_1"								"闪避便鞋"
+ "DOTA_Tooltip_ability_item_guard_shoe_1_description"					"<h1>闪避</h1> 佩戴者有%chance%%%的概率闪避%incoming_reduce%%%伤害"
+ "DOTA_Tooltip_ability_item_guard_shoe_1_movement_speed"				"+$movement_speed"
+ "DOTA_Tooltip_ability_item_guard_shoe_1_Lore"							"踏雪无痕"
+ "DOTA_Tooltip_modifier_item_guard_shoe_1"								"闪避便鞋"
+ "DOTA_Tooltip_modifier_item_guard_shoe_1_Description"					"移速增加%dMODIFIER_PROPERTY_TOOLTIP%<br>%dMODIFIER_PROPERTY_TOOLTIP2%%%概率闪避所有伤害"
+
+//灼烧斗篷
+ "DOTA_Tooltip_ability_item_dragon_scale_1"								"灼烧斗篷"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_status_health"				"+$status_health"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_description"					"<h1>灼烧</h1> 灼烧周围 %range% 范围内的敌方单位，每秒造成等同于自身魔法护甲的魔法伤害"
+
+ //浩劫巨锤
+"DOTA_Tooltip_ability_item_craggy_coat_1"								"浩劫巨锤"
+"DOTA_Tooltip_ability_item_craggy_coat_1_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_craggy_coat_1_description"					"<h1>浩劫</h1>受到伤害时有%chance%%%概率击退周围敌人，并造成基于%health_per%%%自身最大生命值的魔法伤害\n<h1>重装</h1>每%armor_count%点护甲额外提升%health_add%点生命值上限"
+"DOTA_Tooltip_modifier_item_craggy_coat_1"					"重装"
+"DOTA_Tooltip_modifier_item_craggy_coat_1_description"					"生命值提升%dMODIFIER_PROPERTY_TOOLTIP%点"
+
+
+//水晶剑
+ "DOTA_Tooltip_ability_item_crystal_sword_1"							"水晶剑"
+ "DOTA_Tooltip_ability_item_crystal_sword_1_physical_attack"			"+$physical_attack"
+ "DOTA_Tooltip_ability_item_crystal_sword_1_description"				"<h1>暴击</h1> 普通攻击时有 %crit_chance%%% 概率造成 %crit_damage_pct%%% 的暴击伤害"
+
+//狂战斧
+ "DOTA_Tooltip_ability_item_bfury_1_1"									"狂战斧"
+ "DOTA_Tooltip_ability_item_bfury_1_1_physical_attack"					"+$physical_attack"
+ "DOTA_Tooltip_ability_item_bfury_1_1_description"						"<h1>分裂</h1> 仅近战单位佩戴有效，对攻击主目标附近的敌方单位进行分裂攻击，造成%cleave_damage%%%的伤害"
+
+//翡翠吊坠
+ "DOTA_Tooltip_ability_item_jade_pendant"								"翡翠吊坠"
+ "DOTA_Tooltip_ability_item_jade_pendant_health_regen"					"+$health_regen"
+ "DOTA_Tooltip_ability_item_jade_pendant_description"					"<h1>存活者耐力</h1> 每回合战斗结束时，如果携带者血量百分比大于%health_restriction%%%，则增加携带者%health_everystack%点生命值上限"
+ "DOTA_Tooltip_modifier_item_jade_pendant"								"翡翠吊坠"
+ "DOTA_Tooltip_modifier_item_jade_pendant_description"					"增加了%dMODIFIER_PROPERTY_TOOLTIP%点最大生命值"
+
+//夺命法杖
+ "DOTA_Tooltip_ability_item_fatal_magicalwand"							"夺命法杖"
+ "DOTA_Tooltip_ability_item_fatal_magicalwand_magical_attack"			"+$magical_attack"
+ "DOTA_Tooltip_ability_item_fatal_magicalwand_description"			    "<h1>魔法爆轰</h1> 每次施法后对随机敌人进行魔法爆轰，造成%damage%%%魔法攻击力的魔法伤害\n<h1>法力回复</h1> 杀死敌人后立即回复%mana_recover%点魔法值"
+
+// 幽灵披巾
+"DOTA_Tooltip_ability_item_ghost_shawl"									"虚无头巾"
+"DOTA_Tooltip_ability_item_ghost_shawl_magical_attack"			        "+$magical_attack"
+"DOTA_Tooltip_ability_item_ghost_shawl_description"						"<h1>虚无形态</h1>受到物理攻击时进入虚无形态，增加 %mana_regen% 点魔法回复，持续 %duration% 秒。虚灵状态下冷却缩减增加 %cooldown_reduction%%%"
+// "DOTA_Tooltip_ability_item_ghost_shawl_Lore"							"小矮人为魔法师设计的披巾"
+
+// 背叛之书
+"DOTA_Tooltip_ability_item_book_of_betrayal"							"招安录"
+"DOTA_Tooltip_ability_item_book_of_betrayal_magical_attack"			    "+$magical_attack"
+"DOTA_Tooltip_ability_item_book_of_betrayal_description"				"<h1>招安</h1> 攻击目标生命值小于 %trigger_pct%%% 时，会转变为友方单位，最多只能转换 %max_count% 个单位，对精英怪、宝箱及首领无效，被招安单位增加招安录携带者 %bonus_damage_pct%%% 的攻击力"
+// "DOTA_Tooltip_ability_item_book_of_betrayal_Lore"						"明枪易躲暗箭难防"
+"DOTA_Tooltip_modifier_item_book_of_betrayal_buff"						"招安录"
+"DOTA_Tooltip_modifier_item_book_of_betrayal_buff_description"		  	"该单位已经被招安"
+
+//恐惧面具
+ "DOTA_Tooltip_ability_item_mask_of_fear_1"							    "恐惧面具"
+ "DOTA_Tooltip_ability_item_mask_of_fear_1_attack_speed_pct_bonus"	    "+$attack_speed"
+ "DOTA_Tooltip_ability_item_mask_of_fear_1_description"					"<h1>恐惧</h1> 普通攻击有%chance%%%的几率让敌人恐惧 %time_of_fear% 秒，对宝箱和首领无效"
+//  "DOTA_Tooltip_ability_item_mask_of_fear_1_Lore"						"畏惧吧少年"
+
+//弯月刀
+"DOTA_Tooltip_ability_item_crescent_sword_1"							"弯月刀"
+"DOTA_Tooltip_ability_item_crescent_sword_1_attack_speed"				"+$attack_speed"
+"DOTA_Tooltip_ability_item_crescent_sword_1_crit_chance"				"%+暴击概率"
+"DOTA_Tooltip_ability_item_crescent_sword_1_crit_damage_pct"			"%+暴击伤害"
+"DOTA_Tooltip_ability_item_crescent_sword_1_description"				"<h1>月轮</h1> 触发暴击后将隐身 %invi_duration% 秒，免疫所有伤害并推开敌人 %push_distance% 码"
+"DOTA_Tooltip_modifier_item_crescent_sword_1"			"月轮"
+"DOTA_Tooltip_modifier_item_crescent_sword_1_description"				"暴击后隐身"
+// "DOTA_Tooltip_ability_item_crescent_sword_1_Lore"						"弯弯月刀，漫漫长夜"
+
+//冰刀
+"DOTA_Tooltip_ability_item_ice_sword_1"								"冰刀"
+"DOTA_Tooltip_ability_item_ice_sword_1_magical_attack_pct"			"%+魔法攻击"
+"DOTA_Tooltip_ability_item_ice_sword_1_attack_speed_percentage"		"%+攻速"
+"DOTA_Tooltip_ability_item_ice_sword_1_description"					"<h1>冰刀</h1>攻击使敌人降低%move_speed_punish_pct%%%移动速度，%attack_speed_punish_pct%%%攻击速度"
+"DOTA_Tooltip_modifier_item_ice_sword_debuff"						"极致低温"
+"DOTA_Tooltip_modifier_item_ice_sword_debuff_description"			"降低攻速移速"
+//  "DOTA_Tooltip_ability_item_ice_sword_1_Lore"							"藏在冬日里的杀手"
+
+// 暗杀名单
+"DOTA_Tooltip_ability_item_list_of_assassins"							"暗杀名单"
+"DOTA_Tooltip_ability_item_list_of_assassins_physical_attack"			"+$physical_attack"
+"DOTA_Tooltip_ability_item_list_of_assassins_description"		        "<h1>暗杀</h1> 向血量最低的一名敌人投掷%bonus_count%枚匕首，造成%physical2physical%%%攻击力的物理伤害"
+
+//隐身斗篷
+"DOTA_Tooltip_ability_item_invisible_cloak_1"							"隐身斗篷"
+"DOTA_Tooltip_ability_item_invisible_cloak_1_description"							"<h1>隐身</h1>回合开始时进入隐身状态。当其他友方英雄全部死亡时，脱离隐身"
+"DOTA_Tooltip_ability_item_invisible_cloak_1_magical_attack"			"+魔法攻击"
+"DOTA_Tooltip_modifier_item_invisible_cloak_buff"				"隐身斗篷"
+"DOTA_Tooltip_modifier_item_invisible_cloak_buff_description"				"隐身状态，当队友全部死亡时效果消失"
+
+// 图坦卡蒙面具
+"DOTA_Tooltip_ability_item_tutankhamun_mask"							"图坦卡蒙面具"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_magical_armor"				"+$magical_armor"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_description"				"<h1>魔法师的复仇</h1> 每次施放法术对伤害过自身的单位造成一次等同于%physical2physical%%%攻击力的物理伤害"
+// "DOTA_Tooltip_ability_item_tutankhamun_mask_Lore"						"神秘埃及法老王的诅咒面具"
+
+//猛兽犄角
+ "DOTA_Tooltip_ability_item_beast_horns_1"						        "猛兽犄角"
+ "DOTA_Tooltip_ability_item_beast_horns_1_description"			        "<h1>野性霸体</h1> 当生命低于%health_pct%%%的时候开启野性霸体，%time_duration%秒内无视所有物理伤害"
+//  "DOTA_Tooltip_ability_item_beast_horns_1_Lore"					        "有了猛兽犄角，美女都会害怕"
+ "DOTA_Tooltip_ability_item_beast_horns_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_beast_horns_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_modifier_beast_horns_magical_immune"						"野性霸体"
+ "DOTA_Tooltip_modifier_beast_horns_magical_immune_Description"		    "物理免疫"
+
+//玲珑心
+"DOTA_Tooltip_ability_item_octarine_core_1"								"玲珑心"
+"DOTA_Tooltip_ability_item_octarine_core_1_description"					"<h1>冷却缩减</h1>所有技能和物品的冷却时间减少%cooldown_reduction%%%"
+// "DOTA_Tooltip_ability_item_octarine_core_1_Lore"						"我好了"
+"DOTA_Tooltip_ability_item_octarine_core_1_mana_regen_percentage"		"%+$mana_regen"
+"DOTA_Tooltip_ability_item_octarine_core_1_status_mana"					"+$status_mana"
+"DOTA_Tooltip_ability_item_octarine_core_1_status_health"				"+$status_health"
+
+//智慧战旗
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1"						"智慧战旗"
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1_mana_regen"			  "+$mana_regen"
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1_description"			"<h1>运筹帷幄</h1> %range% 范围内无友方英雄时，每秒提升佩戴者 %magical_attack_bonus% 点魔法攻击力，最高叠加 %stack_count% 层"
+//  "DOTA_Tooltip_ability_item_banner_of_warrior_1_Lore"					"聪明人总是单独行动"
+ "DOTA_Tooltip_modifier_item_banner_of_warrior_1"						"智慧战旗"
+ "DOTA_Tooltip_modifier_item_banner_of_warrior_1_Description" 			"魔法攻击提升 %dMODIFIER_PROPERTY_TOOLTIP2%"
+
+
+//雷霆锤
+ "DOTA_Tooltip_ability_item_thunder_hammer_1"							"雷霆锤"
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_magical_damage"			"+魔法攻击"
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_description"				"<h1>额外效果</h1> 普通攻击有 %chance%%% 的几率释放闪电，对所有弹射目标造成%magic_damage_extra%倍攻击力的魔法伤害"
+//  "DOTA_Tooltip_ability_item_thunder_hammer_1_Lore"						"来自于雷电法王的力量"
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_magical_attack"			"+$magical_attack"
+
+// 玛雅神盾
+"DOTA_Tooltip_ability_item_maya_shield_1"								"玛雅神盾"
+"DOTA_Tooltip_ability_item_maya_shield_1_health_regen"					"+$health_regen"
+"DOTA_Tooltip_ability_item_maya_shield_1_block"					        "+伤害格挡"
+"DOTA_Tooltip_ability_item_maya_shield_1_description"					"<h1>神盾之力</h1>每回合开始战斗后，每隔 %interval% 秒会释放玛雅神盾之力，免疫伤害 %duration% 秒"
+"DOTA_Tooltip_modifier_item_maya_shield_1_buff"					"神盾之力"
+"DOTA_Tooltip_modifier_item_maya_shield_1_buff_description"					"免疫所有伤害"
+// "DOTA_Tooltip_ability_item_maya_shield_1_Lore"							"玛雅的传说无人可以知晓，但又十分奇妙"
+
+//异次元之壁
+ "DOTA_Tooltip_ability_item_heterodimensionality_1"						"异次元之壁"
+ "DOTA_Tooltip_ability_item_heterodimensionality_1_mana_regen"			"+$mana_regen"
+ "DOTA_Tooltip_ability_item_heterodimensionality_1_description"			"<h1>破壁</h1>每次释放技能 %range% 范围内将受到怪物当前生命值%health_reduce_pct%%%的魔法伤害，对BOSS及宝箱无效，最高不超过携带者攻击力之和的%damagefactor%%%\n<h1>次元突破</h1> 释放技能时，如果佩戴者生命值低于 %health_self_pct%%% 的时候会恢复当前生命值的 %health_recover_pct%%%"
+ "DOTA_Tooltip_modifier_item_heterodimensionality_1"					"恢复"
+ "DOTA_Tooltip_modifier_item_heterodimensionality_1_Description"		"释放技能时恢复自身血量总值的%dMODIFIER_PROPERTY_TOOLTIP2%%% "
+ "DOTA_Tooltip_modifier_heterodimensionality_buff"					    "破壁"
+ "DOTA_Tooltip_modifier_heterodimensionality_buff_Description"		    "受到施法者生命值相关的魔法伤害"
+
+
+//圣灯
+"DOTA_Tooltip_ability_item_panic_button_1"								"圣灯"
+"DOTA_Tooltip_ability_item_panic_button_1_description"					"<h1>圣光之辉</h1> 周围%range%范围的友军受到的伤害减少%incoming_per%%%"
+"DOTA_Tooltip_ability_item_panic_button_1_Lore"							"拖动物品到英雄身上装备，点击物品图标打开商店"
+"DOTA_Tooltip_ability_item_panic_button_1_physical_armor_pct"			"%+$physical_armor_pct"
+"DOTA_Tooltip_ability_item_panic_button_1_magical_armor_pct"			"%+$magical_armor_pct"
+"DOTA_Tooltip_modifier_item_panic_button_1"							 	"圣光之辉"
+"DOTA_Tooltip_modifier_item_panic_button_1_Description" "				周围的队友受到的伤害减少 %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_item_panic_button_debuff"						"圣光之辉"
+"DOTA_Tooltip_modifier_item_panic_button_debuff_Description" 			"受到的伤害减少 %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+//圣剑
+"DOTA_Tooltip_ability_item_rapier_1"									"圣剑"
+"DOTA_Tooltip_ability_item_rapier_1_description"						"<h1>圣剑之耀</h1> 周围%range%范围的敌人受到的伤害增加%damage_per%%%"
+"DOTA_Tooltip_ability_item_rapier_1_Lore"								"这下牛笔了"
+"DOTA_Tooltip_ability_item_rapier_1_physical_attack_pct"				"%+$physical_attack_pct"
+"DOTA_Tooltip_ability_item_rapier_1_magical_attack_pct"					"%+$magical_attack_pct"
+"DOTA_Tooltip_modifier_item_rapier_1"							 		"圣剑之耀"
+"DOTA_Tooltip_modifier_item_rapier_1_Description"					   "周围敌人受到的伤害增加 %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_item_rapier_debuff"								"圣剑之耀"
+"DOTA_Tooltip_modifier_item_rapier_debuff_Description" 					"受到的伤害增加 %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  橙色
+
+// 灭世枪
+"DOTA_Tooltip_ability_item_gante_sword"									"灭世枪"
+"DOTA_Tooltip_ability_item_gante_sword_physical_attack"				    "+$physical_attack"
+"DOTA_Tooltip_ability_item_gante_sword_description"						"<h1>灭世</h1>攻击敌人的时候有%chance%%%的概率进入灭世状态，提升%attack_bonus_pct%%%物理攻击力和%attack_speed_bonus%%%攻速，持续%duration%秒。\n<h1>灭甲</h1>每次攻击敌人都会降低敌人当前%armor_reduce_pct%%%(首领%armor_reduce_pct_boss%%%)的物理护甲，持续%debuff_duration%秒。"
+"DOTA_Tooltip_modifier_item_gante_sword_buff"						    "灭世"
+"DOTA_Tooltip_modifier_item_gante_sword_buff_Description"				"提升%dMODIFIER_PROPERTY_TOOLTIP%%%攻击力和%dMODIFIER_PROPERTY_TOOLTIP%%%攻速"
+"DOTA_Tooltip_modifier_item_gante_sword_armor_reduce_buff"				"灭甲"
+"DOTA_Tooltip_modifier_item_gante_sword_armor_reduce_buff_Description"	"物理护甲降低%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// 勇气勋章
+"DOTA_Tooltip_ability_item_courage_medallion"							"勇气勋章"
+"DOTA_Tooltip_ability_item_courage_medallion_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_courage_medallion_status_health"			    "+$status_health"
+"DOTA_Tooltip_ability_item_courage_medallion_description"				"<h1>陷阵</h1> 每回合开始战斗时增加%movespeed%点移速，%attack_pct%%%物理攻击力与%armor_pct%%%物理护甲的加成，效果在%duration%秒内递减\n<h1>趁胜追击</h1> 每次击杀单位或队友阵亡，[陷阵]效果重置"
+"DOTA_Tooltip_modifier_item_courage_medallion_buff"						"勇气勋章"
+"DOTA_Tooltip_modifier_item_courage_medallion_buff_Description"			"增加%dMODIFIER_PROPERTY_TOOLTIP%点移速<br>增加%dMODIFIER_PROPERTY_TOOLTIP%%%物理攻击力<br>增加%dMODIFIER_PROPERTY_TOOLTIP%%%物理护甲"
+
+// 圣法书
+"DOTA_Tooltip_ability_item_famous_wand"									"圣法书"
+"DOTA_Tooltip_ability_item_famous_wand_magical_attack"                  "+$magical_attack"
+"DOTA_Tooltip_ability_item_famous_wand_description"						"<h1>法典</h1> 魔法伤害提高%magical_outgoing%%%\n<h1>法术吸血</h1>获得%magical_helf%%%法术吸血"
+
+// 米斯特汀
+"DOTA_Tooltip_ability_item_mystletainn"									"米斯特汀"
+"DOTA_Tooltip_ability_item_mystletainn_physical_attack_pct"		    	"%+$physical_attack_pct"
+//"DOTA_Tooltip_ability_item_mystletainn_attack_helf"		    	        "%+$attack_helf"
+"DOTA_Tooltip_ability_item_mystletainn_description"						"<h1>榭寄生</h1>每秒吸取拥有者%health_absorb%%%的生命值，吸取的每点生命值会增加%attack_per_health%点物理攻击力，持续%duration%秒\n<h1>弑神</h1>每吸取%critical_per_attack%次生命，下一次攻击将会造成%critical_mult%倍伤害"
+"DOTA_Tooltip_modifier_item_mystletainn_buff"							"米斯特汀"
+"DOTA_Tooltip_modifier_item_mystletainn_buff_description"				"该单位暂时提升了攻击力，但将持续损失生命值"
+"DOTA_Tooltip_modifier_item_mystletainn"							    "米斯特汀"
+"DOTA_Tooltip_modifier_item_mystletainn_description"				    "每秒提升%dMODIFIER_PROPERTY_TOOLTIP%攻击力"
+
+//漫射宝石
+ "DOTA_Tooltip_ability_item_divergent_gem_1"							"漫射宝石"
+ "DOTA_Tooltip_ability_item_divergent_gem_1_status_health"				"+$status_health"
+ "DOTA_Tooltip_ability_item_divergent_gem_1_description"				"<h1>抗魔</h1> 完全免疫魔法伤害， 但将额外受到 %physical_damage_punishment_pct%%% 物理伤害 \n<h1>刃甲</h1> 将受到的物理伤害以 %magical_rebound_pct%%% 的倍率反弹给 %range% 范围内的所有敌人"
+//  "DOTA_Tooltip_ability_item_divergent_gem_1_Lore"						"我怕体罚，不怕唾沫星"
+ "DOTA_Tooltip_modifier_item_divergent_gem_1"							"反弹物理"
+ "DOTA_Tooltip_modifier_item_divergent_gem_1_Description" 				"免疫魔法伤害，受到额外物理伤害，且反弹 %dMODIFIER_PROPERTY_TOOLTIP2%%% 受到的物理伤害给范围内 %dMODIFIER_PROPERTY_TOOLTIP% 的敌人"
+
+//幻影斧
+ "DOTA_Tooltip_ability_item_mantas_1"									"幻影斧"
+ "DOTA_Tooltip_ability_item_mantas_1_physical_attack"                   "+$physical_attack"
+ "DOTA_Tooltip_ability_item_mantas_1_magical_attack"                    "+$magical_attack"
+ "DOTA_Tooltip_ability_item_mantas_1_description"						"<h1>幻影</h1> 创造%illusion_count%个幻象，继承本体 %attribute_have_pct%%% 的属性。幻象持续 %time_duration% 秒"
+ "DOTA_Tooltip_ability_item_mantas_1_Lore"							    "据说是用幻影长矛手的衣服上的金属做的斧头"
+
+// 撒旦之邪力
+"DOTA_Tooltip_ability_item_satan_power"									"撒旦之邪力"
+"DOTA_Tooltip_ability_item_satan_power_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_satan_power_description"						"<h1>邪力</h1> 增加不稳定的主攻击力，最高增加%max_damage%%%，最低增加%min_damage%%% \n<h1>邪力侵袭</h1> 开战时吸取所有友军%absorb_pct%%%的同类主攻击力"
+"DOTA_Tooltip_modifier_item_satan_power_debuff"                         "邪力汲取"
+"DOTA_Tooltip_modifier_item_satan_power_debuff_description"             "被撒旦之邪力汲取力量，每1点导致自己失去1%与撒旦之邪力拥有者主攻击力相同类型的攻击力"
+"DOTA_Tooltip_modifier_item_satan_power"								"撒旦之邪力"
+"DOTA_Tooltip_modifier_item_satan_power_description"					"获得邪力，每1点提升1%%%主攻击力"
+"DOTA_Tooltip_modifier_item_satan_power_buff"							"支配邪力"
+"DOTA_Tooltip_modifier_item_satan_power_buff_description"				"使用邪力汲取友方的力量，每1点汲取友方1%%%属于自己主攻击力类型的攻击力"
+
+//阿努比斯的使者
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1"						"阿努比斯的使者"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_physical_attack"       "+$physical_attack"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_magical_attack"        "+$magical_attack"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_description"			"<h1>死神之力</h1> 死亡时能分裂为 %illusion_count% 个幻象，幻象具有 %illusion_outgoing_damage%%% 属性"
+//  "DOTA_Tooltip_ability_item_messenger_of_anubis_1_Lore"				"死神，来收人了"
+
+
+//弩炮
+"DOTA_Tooltip_ability_item_ballista_1"									"弩炮"
+"DOTA_Tooltip_ability_item_ballista_1_description"						"<h1>远程分裂</h1>每 %attack_count%次普攻触发，对目标周围%aoe_range%范围内的单位发射分裂箭"
+// "DOTA_Tooltip_ability_item_ballista_1_Lore"							"远处OB，伤害第一"
+"DOTA_Tooltip_ability_item_ballista_1_attack_speed_percentage"			"%+$attack_speed"
+"DOTA_Tooltip_ability_item_ballista_1_attack_range_of_range"			"+$attack_range_of_range"
+
+ // 幻境魔方
+"DOTA_Tooltip_ability_item_magic_cube"									"幻境魔方"
+"DOTA_Tooltip_ability_item_magic_cube_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_magic_cube_description"						"<h1>幻术魔方</h1> 施法时召唤%cube_count%个魔方，对周围的单位造成%magical2magical%%%魔法伤害与%stun_duration%秒晕眩"
+// "DOTA_Tooltip_ability_item_magic_cube_Lore"							"大多数法师认为魔方谜题仅仅是个宝贝"
+
+ //双击法杖
+"DOTA_Tooltip_ability_item_doubleclick_wand_1"							"双击法杖"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_attack_speed"				"+$attack_speed"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_magical_attack"			"+$magical_attack"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_description"				"<h1>双重施法</h1> 佩戴者在普通攻击时有%chance%%%概率打出一发导弹，造成等同于 %damage_factor%%% 魔法攻击力的魔法伤害，导弹还将晕眩目标 %stun_time% 秒"
+// "DOTA_Tooltip_ability_item_doubleclick_wand_1_Lore"					"这里是导弹工厂~"
+
+// 朗基努斯之枪
+"DOTA_Tooltip_ability_item_longinus"									"朗基努斯之枪"
+"DOTA_Tooltip_ability_item_longinus_magical_attack"                     "+$magical_attack"
+"DOTA_Tooltip_ability_item_longinus_description"						"<h1>纯粹之枪</h1> 每%attack_count%次攻击造成一次%magical2magical%%%魔法攻击力的纯粹伤害\n<h1>AT力场</h1>每隔%interval%秒展开一个等同于 %shield_health%%% 魔法攻击力的护盾。"
+// "DOTA_Tooltip_ability_item_longinus_Lore"							"穿透神圣不可侵犯的结界"
+
+//流行蝴蝶剑
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1"							"流星蝴蝶剑"
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1_description"				"<h1>落星</h1> 普通攻击有 %chance%%% 的几率释放 %metor_count% 道流星，伤害为自身攻击力的 %metor_damage_bonus% 倍"
+//  "DOTA_Tooltip_ability_item_metor_butterfly_sword_1_Lore"					"流星降落，蝴蝶掠过"
+//  "DOTA_Tooltip_modifier_item_metor_butterfly_sword_1"							"流星"
+//  "DOTA_Tooltip_modifier_item_metor_butterfly_sword_1_description"				"持有者可召唤流星"
+
+//时间沙漏
+ "DOTA_Tooltip_ability_item_time_hourglass_1"							"时间沙漏"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_physical_armor"			"+$physical_armor"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_mana_regen"				"+$mana_regen"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_description"				"<h1>回溯</h1> 佩戴者每隔一段时间会回到%back_time%秒前的状态，包括生命、魔法、技能冷却及位置 \n<h1>时间锁定</h1> 触发时间沙漏效果时锁定周围%radius%范围单位%duration%秒，并增加其%cooldown_add%秒技能冷却时间"
+//  "DOTA_Tooltip_ability_item_time_hourglass_1_Lore"						"掌控时间的仔"
+ "DOTA_Tooltip_modifier_item_time_hourglass_1"							"漏斗"
+ "DOTA_Tooltip_modifier_item_time_hourglass_1_description"				"倒回去"
+ "DOTA_Tooltip_modifier_item_time_hourglass_buff"						"隐身"
+ "DOTA_Tooltip_modifier_item_time_hourglass_buff_description"			"别人看不见你了"
+
+// 忍者用具
+"DOTA_Tooltip_ability_item_ninja_tool"									"忍者用具"
+"DOTA_Tooltip_ability_item_ninja_tool_physical_attack"					"+$physical_attack"
+"DOTA_Tooltip_ability_item_ninja_tool_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_ninja_tool_magical_armor"					"+$magical_armor"
+"DOTA_Tooltip_ability_item_ninja_tool_description"						"<h1>替身术</h1> 受到伤害时移动到周围随机位置并在原地生成一个挨打的木人，木人持续 %duration% 秒 \n<h1>忍者镖</h1> 触发效果时向周围丢出%dagger_count%枚飞镖，每个飞镖造成等同于 %physical2physical%%% 物理攻击力的物理伤害"
+
+// 最终棱镜
+"DOTA_Tooltip_ability_item_last_prism"									"最终棱镜"
+"DOTA_Tooltip_ability_item_last_prism_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_last_prism_description"						"<h1>聚焦</h1>生成一颗棱镜环绕自身，周围任意单位施法时棱镜会对随机一个敌方单位造成等同于佩戴者%magical_factor%%%魔法攻击力的魔法伤害\n<h1>集束冲击</h1>触发%active_count%次聚焦后额外发动一次集束冲击，每秒造成%active_magical_factor%%%魔法伤害并降低其%magical_armor_reduce%点魔法护甲，持续%duration%秒"
+"DOTA_Tooltip_ability_item_last_prism_mana_regen"						"+$mana_regen"
+
+// 贤哲密契
+"DOTA_Tooltip_ability_item_sage_contract"								"贤哲密契"
+"DOTA_Tooltip_ability_item_sage_contract_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_sage_contract_magical_armor"					"+$magical_armor"
+"DOTA_Tooltip_ability_item_sage_contract_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_sage_contract_health_regen"					"+$health_regen"
+"DOTA_Tooltip_ability_item_sage_contract_mana_regen"					"+$mana_regen"
+"DOTA_Tooltip_ability_item_sage_contract_description"					"<h1>贤哲密契</h1>开始战斗时与最近的一名友方单位建立连接，该单位的属性会增加自身的%attribute_pct%%%，并共享治疗效果\n<h1>共生</h1>任一契约者的生命值没有低于0前，双方都不会死亡。"
+"DOTA_Tooltip_modifier_item_sage_contract_link"					"共生"
+"DOTA_Tooltip_modifier_item_sage_contract_link_description"					"契约中，另一契约者死亡前不会死去"
+
+// 赤红利刃
+"DOTA_Tooltip_ability_item_redsword"									 "赤红利刃"
+"DOTA_Tooltip_ability_item_redsword_physical_attack"					 "+$physical_attack"
+"DOTA_Tooltip_ability_item_redsword_attack_helf"						 "%+$attack_helf"
+
+
+//日月星辉剑
+"DOTA_Tooltip_ability_item_sunshine_sword_1"							"日月星辉剑"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_physical_attack"	        "+$physical_attack"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_description"				"<h1>日月星辉</h1>攻击有 %chance%%% 的几率释放日月波，造成 %damage_factor%%% 攻击力的物理伤害。"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_Lore"						"日光照亮前方"
+
+//冰霜之心
+ "DOTA_Tooltip_ability_item_frozen_heart_1"								"冰霜之心"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_description"					"\n<h1>冰霜之心</h1>攻击佩戴者的敌人有%chance%%%的几率被冰冻"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_Lore"						"女王的心是不会化的"
+ "DOTA_Tooltip_modifier_item_frozen_heart_1_description"				"冰冻你的敌人"
+ "DOTA_Tooltip_modifier_item_frozen_heart_1"							"冰冻了"
+
+//亡灵法书
+ "DOTA_Tooltip_ability_item_ghostest_book"								"亡灵法书"
+ "DOTA_Tooltip_ability_item_ghostest_book_description"					"\n<h1>无穷法力</h1>佩戴者释放技能之后将会补满自身的的魔法"
+ "DOTA_Tooltip_ability_item_ghostest_book_magical_crit_chance"			"%+$magical_crit_chance"
+ "DOTA_Tooltip_ability_item_ghostest_book_magical_crit_damage"			"%+$magical_crit_damage"
+  "DOTA_Tooltip_ability_item_ghostest_book_magical_attack"			    "+$magical_attack"
+ "DOTA_Tooltip_ability_item_ghostest_book_Lore"							"亡灵法师的力量"
+
+
+//天使遗物
+ "DOTA_Tooltip_ability_item_angel_relics_1"								"天使遗物"
+ "DOTA_Tooltip_ability_item_angel_relics_1_magical_attack"				"+$magical_attack"
+ "DOTA_Tooltip_ability_item_angel_relics_1_description"					"<h1>圣光洗礼</h1>攻击敌人有 %chance%%% 的几率洗礼敌人，造成自身%ori_damage_pct%%%的魔法伤害，并对周围%range% 的范围造成 %around_damage_pct%%% 的伤害，同时使敌人眩晕 %stun_duration% 秒"
+ "DOTA_Tooltip_ability_item_angel_relics_1_Lore"						"天使留下来的神物"
+
+// 未鉴定的装备(N)
+ "DOTA_Tooltip_ability_item_unknowned_item_1"							"未鉴定的装备(N)"
+ "DOTA_Tooltip_ability_item_unknowned_item_1_description"				"随机获得一件稀有度为 N 的装备"
+ "DOTA_Tooltip_ability_item_unknowned_item_1_Lore"						"在一个未知市场里的物品，经常被用于各大探险者交易"
+// 未鉴定的装备(R)
+ "DOTA_Tooltip_ability_item_unknowned_item_2"							"未鉴定的装备(R)"
+ "DOTA_Tooltip_ability_item_unknowned_item_2_description"				"随机获得一件稀有度为 R 的装备"
+ "DOTA_Tooltip_ability_item_unknowned_item_2_Lore"						"在一个未知市场里的物品，是大家比较喜欢买的交易物品"
+// 未鉴定的装备(SR)
+ "DOTA_Tooltip_ability_item_unknowned_item_3"							"未鉴定的装备(SR)"
+ "DOTA_Tooltip_ability_item_unknowned_item_3_description"				"随机获得一件稀有度为 SR 的装备"
+ "DOTA_Tooltip_ability_item_unknowned_item_3_Lore"						"勇者靠着自己的勇气夺得的产物，但因为钱财而作为商品出售"
+// 未鉴定的装备(SSR)
+ "DOTA_Tooltip_ability_item_unknowned_item_4"							"未鉴定的装备(SSR)"
+ "DOTA_Tooltip_ability_item_unknowned_item_4_description"				"随机获得一件稀有度为 SSR 的装备"
+ "DOTA_Tooltip_ability_item_unknowned_item_4_Lore"						"这片孤岛最值钱的商品之一，无法用价格衡量其作用"
+
+//轻语吊坠
+ "DOTA_Tooltip_ability_item_light_speaker_amulet"								"轻语吊坠"
+ "DOTA_Tooltip_ability_item_light_speaker_amulet_description"					"<h1>轻语</h1>承受的%damage_pct%%%伤害在%delay%秒内缓慢结算"
+ "DOTA_Tooltip_modifier_item_light_speaker_amulet"								"轻语吊坠"
+ "DOTA_Tooltip_modifier_item_light_speaker_amulet_Description"					"缓慢结算受到的所有伤害"
+
+//碾压权杖
+ "DOTA_Tooltip_ability_item_rolling_staff"								"碾压权杖"
+ "DOTA_Tooltip_ability_item_rolling_staff_attack_speed"					"+$attack_speed"
+ "DOTA_Tooltip_ability_item_rolling_staff_description"					"<h1>碾压</h1>每攻击 %count% 次，下次对目标周围 %radius% 范围敌人造成 %damage_pct%%% 伤害"
+
+//掘金铲子
+"DOTA_Tooltip_ability_item_gold_shovel" "掘金铲子"
+"DOTA_Tooltip_ability_item_gold_shovel_Description" "战斗结束时英雄存活的话有%chance%%%概率获得随机钱袋/魂晶袋"
+
+//长弓
+"DOTA_Tooltip_ability_item_long_bow" "长弓"
+"DOTA_Tooltip_ability_item_long_bow_Description" "【猎手】对距离自己超过%distance%的敌人造成伤害提高%damage_bonus_pct%%%"
+
+//冰霜药剂
+"DOTA_Tooltip_ability_item_frost_potion" "冰霜药剂"
+"DOTA_Tooltip_ability_item_frost_potion_Description" "回合开始获取%health_shield_pct%%%生命值的【护盾】，护盾破碎时冻结周围敌人%duration%秒。【护盾】抵挡税前伤害，护盾存在时免疫控制"
+
+//强攻装甲
+"DOTA_Tooltip_ability_item_assault_armor" "强攻装甲"
+"DOTA_Tooltip_ability_item_assault_armor_Description" "+200物防，+200魔防。【强攻】对自己周围%radius%码范围内的敌人造成伤害提高%damage_bonus_pct%%%"
+
+//残忍短剑
+"DOTA_Tooltip_ability_item_cruel_dagger" "残忍短剑"
+"DOTA_Tooltip_ability_item_cruel_dagger_Description" "【破甲】攻击无视目标%igore_armor_pct%%%的护甲与抗性。【强袭】对生命值大于%health_trigger%%%的敌人造成%damage_bonus_pct%%%伤害"
+
+//魔爆匕首
+"DOTA_Tooltip_ability_item_manablast_dagger" "魔爆匕首"
+"DOTA_Tooltip_ability_item_manablast_dagger_Description" "【破甲】攻击无视目标%igore_armor_pct%%%的护甲与抗性。【魔爆】对敌人造成消耗魔法值%mana_cost_pct%%%的额外伤害"
+
+//淬毒钉刺
+"DOTA_Tooltip_ability_item_poison_sting" "淬毒钉刺"
+"DOTA_Tooltip_ability_item_poison_sting_Description" "普攻有%chance%%%概率使目标【中毒】。【中毒】每一层中毒每秒造成30魔法伤害"
+
+"DOTA_Tooltip_ability_item_insight_order" "洞察之令"
+"DOTA_Tooltip_ability_item_insight_order_Description" "+100魔攻。释放法力技能时，有%chance%%%概率立即再次释放一次"
+
+//闪电鞭
+"DOTA_Tooltip_ability_item_lightning_whip" "闪电鞭"
+"DOTA_Tooltip_ability_item_lightning_whip_attack_speed" "+$attack_speed"
+"DOTA_Tooltip_ability_item_lightning_whip_Description" "<h1>闪电五连鞭</h1>攻击时对敌人施放最多%lightning_count%道闪电鞭，每次造成%damage_pct%%%攻击力的魔法伤害并缠绕目标。缠绕对目标造成每秒%damage_per_tick%%%攻击力的魔法伤害"
+"DOTA_Tooltip_modifier_item_lightning_whip_root"                "闪电鞭"
+"DOTA_Tooltip_modifier_item_lightning_whip_root_Description"    "每秒造成%dMODIFIER_PROPERTY_TOOLTIP%点魔法伤害"
+
+//圣洁法衣
+"DOTA_Tooltip_ability_item_holy_shroud" "圣洁法衣"
+"DOTA_Tooltip_ability_item_holy_shroud_magical_helf" "%+$magical_helf"
+"DOTA_Tooltip_ability_item_holy_shroud_magical_armor" "+$magical_armor"
+"DOTA_Tooltip_ability_item_holy_shroud_health_regen_pct" "%+$health_regen"
+"DOTA_Tooltip_ability_item_holy_shroud_Description" "<h1>庇佑</h1>每当生命值减少%trigger_health_pct%%%，创造一个能吸收[%shield_pct%%%使用者缺失生命值]点伤害的护盾。"
+"DOTA_Tooltip_modifier_item_holy_shroud_buff"               "圣洁法衣"
+"DOTA_Tooltip_modifier_item_holy_shroud_buff_Description"   "可吸收%dMODIFIER_PROPERTY_TOOLTIP%点伤害"
+
+//代达罗斯
+"DOTA_Tooltip_ability_item_daedalus"							"代达罗斯"
+"DOTA_Tooltip_ability_item_daedalus_physical_attack"			"+$physical_attack"
+"DOTA_Tooltip_ability_item_daedalus_description"				"<h1>暴击</h1> 普通攻击时有 %crit_chance%%% 概率造成 %crit_damage_pct%%% 的暴击伤害"
+"DOTA_Tooltip_modifier_item_daedalus"							"代达罗斯"
+"DOTA_Tooltip_modifier_item_daedalus_description"				"普通攻击有%dMODIFIER_PROPERTY_TOOLTIP%%%概率造成%dMODIFIER_PROPERTY_TOOLTIP%%%暴击"
+
+//天使战刃
+"DOTA_Tooltip_ability_item_angle_blade"							"天使战刃"
+"DOTA_Tooltip_ability_item_angle_blade_attack_speed"			"+$attack_speed"
+"DOTA_Tooltip_ability_item_angle_blade_attack_miss"				"%+$attack_miss"
+"DOTA_Tooltip_ability_item_angle_blade_magical_attack"		    "+$magical_attack"
+"DOTA_Tooltip_ability_item_angle_blade_description"				"<h1>猎空</h1>只要有技能处于冷却状态，就提供%movespeed_pct%%%移动速度，%attack_speed_pct%%%攻击速度与%cooldown_pct%%%冷却缩减。"
+
+//七星灯
+"DOTA_Tooltip_ability_item_reincarnation_lamp"							"七星灯"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_health_regen"			    "+$health_regen"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_description"				"<h1>招魂</h1>除携带者外的任意英雄死后会在%duration%秒后复活，并且增加%health_regen_bonus%点生命回复，持续到回合结束。\n<h1>续命</h1>吸收所有满血英雄的生命回复与治疗，每%interval%秒分摊给所有受伤的英雄，每次治疗有%heal_pct%%%血量的基础回复量。"
+
+//远古星盘
+"DOTA_Tooltip_ability_item_ancient_astrolabe"							"远古星盘"
+"DOTA_Tooltip_ability_item_ancient_astrolabe_status_health"				"+$status_health"
+"DOTA_Tooltip_ability_item_ancient_astrolabe_description"				"<h1>涤罪之焰</h1>每%interval%秒对自己和周围%radius%范围的敌人造成%health_damage_pct%%%最大生命值的伤害，自身会净化所有负面状态并在接下来的%duration%秒内逐渐回复%heal_pct%%%生命值，敌人则会受到等量的持续伤害效果。\n<h1>气运之末</h1>根据损失的生命值将获得额外的伤害减免，%min_health_pct%%%生命值时获得最大%damage_reduce_max_pct%%%的伤害减免。"
+
+//恶魔之戒
+"DOTA_Tooltip_ability_item_demon_ring"									"恶魔之戒"
+"DOTA_Tooltip_ability_item_demon_ring_health_regen"						"+$health_regen"
+"DOTA_Tooltip_ability_item_demon_ring_description"						"<h1>交易</h1>每%interval%秒消耗自身%health_cost_pct%%%的生命值刷新所有技能冷却并回复所有魔法。"
+
+//领袖证明
+"DOTA_Tooltip_ability_item_leader_certificate"						    "领袖证明"
+"DOTA_Tooltip_ability_item_leader_certificate_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_leader_certificate_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_leader_certificate_magical_armor"			"+$magical_armor"
+"DOTA_Tooltip_ability_item_leader_certificate_description"				"<h1>领袖魅力</h1>领袖凭借个人魅力能够鼓舞团队士气。回合开始后领袖每在场上存活%interval%秒钟，领袖周围%radius%码的友方单位增加护甲、生命恢复以及攻击速度。<br><br>存活%time_max%秒后达到加成上限，该状态持续至回合结束。"
+"DOTA_Tooltip_modifier_item_leader_certificate_buff"				    "领袖魅力"
+"DOTA_Tooltip_modifier_item_leader_certificate_buff_Description"		"攻击速度提升%dMODIFIER_PROPERTY_TOOLTIP%<br>生命恢复速度提升%dMODIFIER_PROPERTY_TOOLTIP%<br>物理护甲提升%dMODIFIER_PROPERTY_TOOLTIP%<br>魔法护甲提升%dMODIFIER_PROPERTY_TOOLTIP%"
+"DOTA_Tooltip_modifier_item_leader_certificate"				            "领袖证明"
+"DOTA_Tooltip_modifier_item_leader_certificate_Description"		        "根据领袖星级、成员数量和层数给予队友属性加成"
+
+//火精灵权杖
+"DOTA_Tooltip_ability_item_fire_elf_scepter"						    "火精灵权杖"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_physical_armor"			    "+$physical_armor"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_magical_armor"			    "+$magical_armor"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_description"				"<h1>火精灵的祝福</h1>周围%radius%码内每存在%stack%层燃烧，提供%health_regen%点生命恢复、%incoming_reduce%%%减伤和%magical_strengthen%%%魔法伤害增强。减伤无法超过100%。"
+"DOTA_Tooltip_modifier_item_fire_elf_scepter"				            "火精灵的祝福"
+"DOTA_Tooltip_modifier_item_fire_elf_scepter_Description"		        "生命恢复提升%dMODIFIER_PROPERTY_TOOLTIP%<br>全伤害减免%dMODIFIER_PROPERTY_TOOLTIP%%%<br>魔法伤害增加%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+//烈焰之刃
+"DOTA_Tooltip_ability_item_blade_of_flame"						        "烈焰之刃"
+"DOTA_Tooltip_ability_item_blade_of_flame_magical_attack"			    "+$magical_attack"
+"DOTA_Tooltip_ability_item_blade_of_flame_attack_speed"			        "+$attack_speed"
+//"DOTA_Tooltip_ability_item_blade_of_flame_magical_strengthen"			"%+ 魔法伤害"
+"DOTA_Tooltip_ability_item_blade_of_flame_description"				    "<h1>燃焰领域</h1>每秒对周围%radius%码的敌方单位附加%ignite_count%层燃烧 \n<h1>烈焰复仇</h1>每攻击%attack_count%次，对敌方造成燃烧总层数*%damage_per_count%%%*魔法攻击的额外魔法伤害"
+"DOTA_Tooltip_modifier_item_blade_of_flame"				                "燃焰领域"
+"DOTA_Tooltip_modifier_item_blade_of_flame"		                        "持续灼烧敌方单位"

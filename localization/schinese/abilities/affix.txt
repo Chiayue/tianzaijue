@@ -1,0 +1,4 @@
+//--------------------------------------------------------------------------------------------------
+// 词条词缀
+"DOTA_Tooltip_ability_affix_profession" "职业天赋"
+"DOTA_Tooltip_ability_affix_profession_Description" "直接解锁随机一种羁绊的技能。"

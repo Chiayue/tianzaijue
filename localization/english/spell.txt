@@ -1,0 +1,351 @@
+//大火球术
+"DOTA_Tooltip_ability_sp_fireball"                                      "Maga Fireball"
+"DOTA_Tooltip_ability_sp_fireball_Description"                          "Deals damage and stun to enemies.Damage reduced for Ancient units."
+//"DOTA_Tooltip_ability_sp_fireball_Description"                          "Deals massive Magical Damage(%damage%+%damage_pct%%% max health pool) and stuns enemies %stun_duration% seconds. The damage is reduced for Ancient units."
+
+//冻结
+"DOTA_Tooltip_ability_sp_frozen"                                        "Freeze"
+"DOTA_Tooltip_ability_sp_frozen_Description"                            "Freeze enemies for %duration% seconds."
+//"DOTA_Tooltip_ability_sp_frozen_Description"                            "Freeze enemies within %radius% units range for %duration% seconds."
+
+//生命之雨
+"DOTA_Tooltip_ability_sp_peaceful"                                      "Rain of Vitality"
+"DOTA_Tooltip_ability_sp_peaceful_Description"                          "Constantly regen HP in range %radius%"
+//"DOTA_Tooltip_ability_sp_peaceful_Description"                          "Constantly regen HP in range %radius%."
+"DOTA_Tooltip_modifier_sp_peaceful_aura"                                "Rain of Vitality"
+"DOTA_Tooltip_modifier_sp_peaceful_aura_Description"                    "Constantly regen HP"
+
+//牵引
+"DOTA_Tooltip_ability_sp_upheavals"                                     "Traction"
+"DOTA_Tooltip_ability_sp_upheavals_Description"                         "Pull enemy units toward center and deal damage to them"
+// "DOTA_Tooltip_ability_sp_upheavals_Description"                         "Sucks %radius% enemy units in, dealing %damage_pct%%% of max health pool magic damage and stun %stun_duration% seconds. Cannot affect ancient units."
+"DOTA_Tooltip_modifier_sp_upheavals_motion"                             "Traction"
+"DOTA_Tooltip_modifier_sp_upheavals_motion_Description"                 "Pull enemy toward center"
+
+//大灾变
+"DOTA_Tooltip_ability_sp_cataclysm"                                     "Cataclysm"
+"DOTA_Tooltip_ability_sp_cataclysm_Description"                         "Constantly damage and slow enemies"
+// "DOTA_Tooltip_ability_sp_cataclysm_Description"                         "Constantly damage %damage_pct%%% of max health pool(ancient units%damage_pct_ancient%%%) and slow enemies %slow_move_speed%%% movespeed within its range %radius%."
+"DOTA_Tooltip_modifier_sp_cataclysm_aura"                               "Cataclysm"
+"DOTA_Tooltip_modifier_sp_cataclysm_aura_Description"                   "Constantly damage and slow movespeed"
+
+//恐惧
+"DOTA_Tooltip_ability_sp_fear"                                          "Terror"
+"DOTA_Tooltip_ability_sp_fear_Description"                              "Terrorize enemies in range %radius%"
+// "DOTA_Tooltip_ability_sp_fear_Description"                              "Terrorize %radius% enemies in %duration% seconds."
+"DOTA_Tooltip_modifier_sp_fear_debuff"                                  "Additional damage by Terrorize"
+"DOTA_Tooltip_modifier_sp_fear_debuff_Description"                      "+ %dMODIFIER_PROPERTY_TOOLTIP%%% damage taken"
+
+//圣灵庇佑
+"DOTA_Tooltip_ability_sp_invincible"                                    "Guardian Angel"
+"DOTA_Tooltip_ability_sp_invincible_Description"                        "Guardian allies from any damage"
+// "DOTA_Tooltip_ability_sp_invincible_Description"                        "Guardian all the allies within its %radius% from any damage for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_invincible_buff"                              "Guardian Angel"
+"DOTA_Tooltip_modifier_sp_invincible_buff_Description"                  "Whoisyourdaddy"
+
+//撒豆成兵
+"DOTA_Tooltip_ability_sp_door"                                          "Summoning Jutsu"
+"DOTA_Tooltip_ability_sp_door_Description"                              "Summons allies to serve your army"
+// "DOTA_Tooltip_ability_sp_door_Description"                              "Summons %number_of_creeps% allies to serve your army, it has %inherited_percent%%% of commander attribute"
+
+//天罚雷电
+"DOTA_Tooltip_ability_sp_thunderbolt"                                   "Thundergod's Wrath"
+"DOTA_Tooltip_ability_sp_thunderbolt_Description"                       "Strikes enemies to cause damage and mini stun, damage permantly increase by used <br>Already Used{d:used_count}"
+// "DOTA_Tooltip_ability_sp_thunderbolt_Description"                       "Strikes range %radius% enemies with a bolt of lightning and causes %damage% magical damage mini stun %stun_time% seconds, every times use Thundergod's Wrath will permantly increase damage by %damage_per_stack% <br>Already Used{d:used_count}"
+"DOTA_Tooltip_modifier_lightning_bolt_debuff"                           "paralysis"
+"DOTA_Tooltip_modifier_lightning_bolt_debuff_Description"               "Can not move"
+
+//策反
+"DOTA_Tooltip_ability_sp_defections"                                    "Pursuade"
+"DOTA_Tooltip_ability_sp_defections_Description"                        "Pursuade hurted enemies to surrender, can NOT target ancient units"
+// "DOTA_Tooltip_ability_sp_defections_Description"                        "Pursuade range %radius% an enemy unit which health is lower %health_pct%%% to surrender and join your army, can not target ancient units and have duration %duration% seconds"
+
+//残暴之力
+"DOTA_Tooltip_ability_sp_revolt"                                        "Horror"
+"DOTA_Tooltip_ability_sp_revolt_Description"                            "Grant allies ability to deal critical damage"
+// "DOTA_Tooltip_ability_sp_revolt_Description"                            "Make %radius% range allies' attack has %crit_chance%%% chance cause %crit_damage%%%critical damage, duration is %duration% seconds"
+"DOTA_Tooltip_modifier_sp_revolt_buff"                                  "Horror"
+"DOTA_Tooltip_modifier_sp_revolt_buff_Description"                      "Attack has %dMODIFIER_PROPERTY_TOOLTIP%%% chance cause %dMODIFIER_PROPERTY_TOOLTIP%%% critical damage"
+
+//地狱火
+"DOTA_Tooltip_ability_sp_golem"                                         "Mini Chaos Golem"
+"DOTA_Tooltip_ability_sp_golem_Description"                             "Summons a Golem　to stun enemies. Goleam last %duration% seconds and has flaming fists"
+// "DOTA_Tooltip_ability_sp_golem_Description"                             "Summons a Mini Chaos Golem stuns %radius% enemies for %stun_duration% seconds. Goleam last %duration% seconds and has flaming fists and permanent immolation,also inheritate personal commander attributes"
+"npc_dota_sp_golem"                                                     "Mini Chaos Golem"
+"DOTA_Tooltip_ability_sp_golem_flaming_fists"                           "Flaming Fists"
+"DOTA_Tooltip_ability_sp_golem_flaming_fists_Description"               "Cause extra damage to target nearby units when attack 。"
+"DOTA_Tooltip_ability_sp_golem_flaming_fists_physical2physical"         "%Damage：Physical Damage*"
+"DOTA_Tooltip_ability_sp_golem_flaming_fists_radius"                    "Range："
+"DOTA_Tooltip_ability_sp_golem_permanent_immolation"                    "permanent_immolation"
+"DOTA_Tooltip_ability_sp_golem_permanent_immolation_Description"        "Mini Chaos Golem burns its nearby enemies。"
+"DOTA_Tooltip_ability_sp_golem_permanent_immolation_magical2magical"    "%Damage：Magical Damage*"
+"DOTA_Tooltip_ability_sp_golem_permanent_immolation_radius"             "Range："
+
+//背水一战
+"DOTA_Tooltip_ability_sp_lastfight"                                     "Last Stand"
+"DOTA_Tooltip_ability_sp_lastfight_Description"                         "Increases allies' attack and lose hp provide extra bonus attack"
+// "DOTA_Tooltip_ability_sp_lastfight_Description"                         "Increases range %radius% allies' %base_attack_bonus_pct%%% magical/physical damage for %duration% seconds, every %hp_loss%%% lose hp will provide extra bonus attack %extra_attack_bonus_pct%%%"
+"DOTA_Tooltip_modifier_sp_lastfight_buff"                               "Last Stand"
+"DOTA_Tooltip_modifier_sp_lastfight_buff_Description"                   "Provide %dMODIFIER_PROPERTY_TOOLTIP%%% physical/magical damage"
+
+//召回
+"DOTA_Tooltip_ability_sp_recall"                                        "Recall"
+"DOTA_Tooltip_ability_sp_recall_Description"                            "Recalls and heals the target hero"
+// "DOTA_Tooltip_ability_sp_recall_Description"                            "Recalls and heals the target hero and heal %health_recover_pct%%% health"
+
+//回春术
+"DOTA_Tooltip_ability_sp_recover"                                       "Rejuvenation"
+"DOTA_Tooltip_ability_sp_recover_Description"                           "Heals %health_recover_pct%%% the target hero and allies around him"
+// "DOTA_Tooltip_ability_sp_recover_Description"                           "Heals %health_recover_pct%%% the target hero and allies around him"
+"DOTA_Tooltip_modifier_sp_recover_buff"                                 "Rejuvenation"
+"DOTA_Tooltip_modifier_sp_recover_buff_Description"                     "- %dMODIFIER_PROPERTY_TOOLTIP%%% damage taken"
+
+//战时支援
+"DOTA_Tooltip_ability_sp_attackhorn"                                    "War Aid"
+"DOTA_Tooltip_ability_sp_attackhorn_Description"                        "Grants allies Lifesteal ability"
+// "DOTA_Tooltip_ability_sp_attackhorn_Description"                        "Grants the target hero and allies around him Lifesteal for %duration% seconds, every attack lifesteal %base_recover% + %recocer_pct%%% of max health pool "
+"DOTA_Tooltip_modifier_sp_attackhorn_buff"                              "War Aid"
+"DOTA_Tooltip_modifier_sp_attackhorn_buff_Description"                  "Attack lifesteal %dMODIFIER_PROPERTY_TOOLTIP% + max health pool of %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+//群体薄葬
+"DOTA_Tooltip_ability_sp_shallowgrave"                                  "Shadow Grave"
+"DOTA_Tooltip_ability_sp_shallowgrave_Description"                      "Blesses the allied units"
+// "DOTA_Tooltip_ability_sp_shallowgrave_Description"                      "Blesses the allied units within its range. Affected units will become unkillable for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_shallowgrave_buff"                            "Shadow Grave"
+"DOTA_Tooltip_modifier_sp_shallowgrave_buff_Description"                "Not Dead Temporary"
+
+//残废
+"DOTA_Tooltip_ability_sp_cripple"                                       "Cripple"
+"DOTA_Tooltip_ability_sp_cripple_Description"                           "Reduces the %movespeed_reduce_pct%%% movement speed and %damage_reduce_pct%%% damage of enemy units in the target area %radius% for %duration% seconds."
+// "DOTA_Tooltip_ability_sp_cripple_Description"                           "Reduces the %movespeed_reduce_pct%%% movement speed and %damage_reduce_pct%%% damage of enemy units in the target area %radius% for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_cripple_debuff"                               "Cripple"
+"DOTA_Tooltip_modifier_sp_cripple_debuff_Description"                   "move speed slow %dMODIFIER_PROPERTY_TOOLTIP%%%，damage reduce by %dMODIFIER_PROPERTY_TOOLTIP2%%%"
+
+//肉体忍耐
+"DOTA_Tooltip_ability_sp_physicalendurance"                             "Endurance"
+"DOTA_Tooltip_ability_sp_physicalendurance_Description"                 "Grants allies ability to heal themselves"
+// "DOTA_Tooltip_ability_sp_physicalendurance_Description"                 "Grants the allies in the %radius% area the ability to heal themselves %recocer_pct%%% upon being attacked. Last for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_physicalendurance_buff"                       "Endurance"
+"DOTA_Tooltip_modifier_sp_physicalendurance_buff_Description"           "Grants the allies in the %radius% area the ability to heal themselves %dMODIFIER_PROPERTY_TOOLTIP%%% health"
+
+//稻草人
+"DOTA_Tooltip_ability_sp_scarecrow"                                     "Scarecrow"
+"DOTA_Tooltip_ability_sp_scarecrow_Description"                         "Summons a Scarecrow to taunt enemies"
+// "DOTA_Tooltip_ability_sp_scarecrow_Description"                         "Summons a Scarecrow at the target location that taunts range %radius% enemies for %duration% seconds."
+
+//守护塔
+"DOTA_Tooltip_ability_sp_tower"                                         "Guardian Tower"
+"DOTA_Tooltip_ability_sp_tower_Description"                             "Summons an invincible Guardian Tower in the battlefield"
+// "DOTA_Tooltip_ability_sp_tower_Description"                             "Summons an invincible Guardian Tower that deals %inherited_percent%%% the corrupted damage as your Commander. Attacks from Guardian Tower will reduce both physical and magic resistance %armor_reduction% upon hit. Last for %duration% seconds, max stacks %max_stack_count%"
+"DOTA_Tooltip_modifier_sp_tower_debuff"                                 "Smash"
+"DOTA_Tooltip_modifier_sp_tower_debuff_Description"                     "Armor reduced by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//金币券
+"DOTA_Tooltip_ability_sp_goldbag"                                       "Gold Coupon"
+"DOTA_Tooltip_ability_sp_goldbag_Description"                           "Redeem a random amount of Gold"
+// "DOTA_Tooltip_ability_sp_goldbag_Description"                           "Redeem a random amount of Gold in a range of %goldearn_min%~%goldearn_max%."
+"Combat_sp_goldbag"	                                                    "{s:player_name}：use【Gold Coupon】spell card get：<font color='#F4C14E'>{d:int_good}Gold</font>"
+
+//魂晶券
+"DOTA_Tooltip_ability_sp_crystalbag"                                    "Crystal Coupon"
+"DOTA_Tooltip_ability_sp_crystalbag_Description"                        "Redeem a random amount of Crystal"
+// "DOTA_Tooltip_ability_sp_crystalbag_Description"                        "Redeem a random amount of Soul Crystal in a range of %crystalearn_min%~%crystalearn_max%."
+"Combat_sp_crystalbag"	                                                "{s:player_name}：use【Crystal Coupon】spell card get：<font color='#4ECECC'>{d:int_crystal}Crystal</font>"
+
+//大金币券
+"DOTA_Tooltip_ability_sp_largegold"                                       "Big Gold Coupon"
+"DOTA_Tooltip_ability_sp_largegold_Description"                           "Redeem a random amount of Gold"
+// "DOTA_Tooltip_ability_sp_largegold_Description"                           "Redeem a random amount of Gold in a range of %goldearn_min%~%goldearn_max%."
+"Combat_sp_largegold"	                                                    "{s:player_name}：use【Big Gold Coupon】spell card get：<font color='#F4C14E'>{d:int_good}Gold</font>"
+
+//大魂晶券
+"DOTA_Tooltip_ability_sp_largecrystal"                                    "Big Crystal Coupon"
+"DOTA_Tooltip_ability_sp_largecrystal_Description"                        "Redeem a random amount of Crystal"
+// "DOTA_Tooltip_ability_sp_largecrystal_Description"                        "Redeem a random amount of Soul Crystal in a range of %crystalearn_min%~%crystalearn_max%."
+"Combat_sp_largecrystal"	                                                "{s:player_name}：use【Big Crystal Coupon】spell card get：<font color='#4ECECC'>{d:int_crystal}Crystal</font>"
+
+//迷雾
+"DOTA_Tooltip_ability_sp_spike"                                         "Flash Grenade"
+"DOTA_Tooltip_ability_sp_spike_Description"                             "Produces a burst to affect enemies by missing attacks"
+// "DOTA_Tooltip_ability_sp_spike_Description"                             "Produces a sudden burst of blinding light. Affected radius %radius% enemies will miss %miss_chance%%% of their attacks for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_spike_debuff"                                 "Flash Grenade"
+"DOTA_Tooltip_modifier_sp_spike_debuff_Description"                     "Will miss their attack"
+
+//石肤
+"DOTA_Tooltip_ability_sp_stoneskin"                                     "Stone Skin"
+"DOTA_Tooltip_ability_sp_stoneskin_Description"                         "Grants allies extra armor"
+// "DOTA_Tooltip_ability_sp_stoneskin_Description"                         "Increases %radius% allies %bonus_armor% physical and magic resistance for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_stoneskin_debuff"                             "Stone Skin"
+"DOTA_Tooltip_modifier_sp_stoneskin_debuff_Description"                 "magical/physical resistance increase %dMODIFIER_PROPERTY_TOOLTIP%"
+
+//作战鼓舞
+"DOTA_Tooltip_ability_sp_phydouble"                                     "Physical Doping"
+"DOTA_Tooltip_ability_sp_phydouble_Description"                         "Doubles allies physical damage"
+// "DOTA_Tooltip_ability_sp_phydouble_Description"                         "Doubles %radius% allies physical damage %increasepct%%% for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_phydouble_buff"                               "Physical Doping"
+"DOTA_Tooltip_modifier_sp_phydouble_buff_Description"                   "Double physical attack"
+
+//神念赐予
+"DOTA_Tooltip_ability_sp_magdouble"                                     "Magic Doping"
+"DOTA_Tooltip_ability_sp_magdouble_Description"                         "Doubles allies magical damage"
+// "DOTA_Tooltip_ability_sp_magdouble_Description"                         "Doubles %radius% allies Magical Damage %increasepct%%% for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_magdouble_buff"                               "Magic Doping"
+"DOTA_Tooltip_modifier_sp_magdouble_buff_Description"                   "Double Magical attack"
+
+//破甲
+"DOTA_Tooltip_ability_sp_breakarmor"                                    "Weapon Master"
+"DOTA_Tooltip_ability_sp_breakarmor_Description"                        "Make %radius% allies ignores enemies' armor"
+// "DOTA_Tooltip_ability_sp_breakarmor_Description"                        "Make %radius% allies ignores the enemies' %ignore_armor_pct%%% armor."
+"DOTA_Tooltip_modifier_sp_breakarmor_buff"                              "Weapon Master"
+"DOTA_Tooltip_modifier_sp_breakarmor_buff_Description"                  "Ignores %dMODIFIER_PROPERTY_TOOLTIP%%% resistance"
+
+//射爆
+"DOTA_Tooltip_ability_sp_shootfar"                                      "Marksmanship"
+"DOTA_Tooltip_ability_sp_shootfar_Description"                          "Increases ranged units' attack range and grants them ability to realease an extra hit"
+// "DOTA_Tooltip_ability_sp_shootfar_Description"                          "Increases %radius% ranged units' attack range by %bonus_attack_range% and grants them a %chance%%% realease an extra hit, last %duration% seconds"
+"DOTA_Tooltip_modifier_sp_shootfar_buff"                                "Marksmanship"
+"DOTA_Tooltip_modifier_sp_shootfar_buff_Description"                    "attack range increase, has chance release an extra hit"
+
+//鸡舍
+"DOTA_Tooltip_ability_sp_chicken"                                       "Wicked Coop"
+"DOTA_Tooltip_ability_sp_chicken_Description"                           "Creates a portal that summons a Suicide Chick"
+// "DOTA_Tooltip_ability_sp_chicken_Description"                           "Creates a portal for %duration% seconds at the target location that summons a Suicide Chick from its coop every second, damage is the %damage_pct%%% of targets max health pool"
+
+//地雷
+"DOTA_Tooltip_ability_sp_mine"                                          "Mining"
+"DOTA_Tooltip_ability_sp_mine_Description"                              "Plants mines on the battlefield"
+// "DOTA_Tooltip_ability_sp_mine_Description"                              "Plants %count% mines on the battlefield. (Deals %mine_radius% ranged pure damage as %damage_pct%%% of your commander's damage)"
+
+//冰冻陷阱
+"DOTA_Tooltip_ability_sp_frozenarea"                                    "Stasis Trap"
+"DOTA_Tooltip_ability_sp_frozenarea_Description"                        "Freezes the enemies for %duration% seconds"
+// "DOTA_Tooltip_ability_sp_frozenarea_Description"                        "Freezes the enemies for %duration% seconds in range %radius%."
+
+//暴击
+"DOTA_Tooltip_ability_sp_crit"                                          "Power Strike"
+"DOTA_Tooltip_ability_sp_crit_Description"                              "Increases the attack speed and grants ability to deal critical damage. "
+// "DOTA_Tooltip_ability_sp_crit_Description"                              "Increases the attack speed by %attack_speed_pct%%% and grants a %crit_chance%%% chance to deal %crit_damage%%% critical damage. Last for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_crit_buff"                                    "Power Strike"
+"DOTA_Tooltip_modifier_sp_crit_buff_Description"                        "Increases the attack speed and deal critical damage on hit"
+
+//掠夺
+"DOTA_Tooltip_ability_sp_loot"                                          "Plunder"
+"DOTA_Tooltip_ability_sp_loot_Description"                              "Steals golds with each attacks"
+// "DOTA_Tooltip_ability_sp_loot_Description"                              "Steals %attack_pergold% gold with each attacks for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_loot_buff"                                    "Plunder"
+"DOTA_Tooltip_modifier_sp_loot_buff_Description"                        "Gain gold every attack"
+
+//炮击
+"DOTA_Tooltip_ability_sp_cannon"                                        "Bombard"
+"DOTA_Tooltip_ability_sp_cannon_Description"                            "Luanches guided missiles to all the battlefield"
+// "DOTA_Tooltip_ability_sp_cannon_Description"                            "Luanches %count_min%~%count_max% of guided missiles to all the battlefield. Damage:%damage_pct%%% of max health pool(ancient units %damage_pct_ancient%%%) magical damage."
+
+//英雄不朽
+"DOTA_Tooltip_ability_sp_revive"                                        "Immortal Resurrect"
+"DOTA_Tooltip_ability_sp_revive_Description"                            "Resurrects random heroes"
+// "DOTA_Tooltip_ability_sp_revive_Description"                            "Resurrects random %revive_count% heroes in the target area regardless of fraction."
+
+//伤害加深
+"DOTA_Tooltip_ability_sp_overwhelm"                                     "Demonic Curse"
+"DOTA_Tooltip_ability_sp_overwhelm_Description"                         "Curses the enemies to receive more damage"
+// "DOTA_Tooltip_ability_sp_overwhelm_Description"                         "Curses the enemies within its range to receive %incoming_damage%%% more damage for %duration% seconds, effect can stacks"
+"DOTA_Tooltip_modifier_sp_overwhelm_buff"                               "Demonic Curse"
+"DOTA_Tooltip_modifier_sp_overwhelm_buff_Description"                   "damage taken increase %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+//妖术
+"DOTA_Tooltip_ability_sp_frog"                                          "Hex"
+"DOTA_Tooltip_ability_sp_frog_Description"                              "Transforms enemies into harmless frogs"
+// "DOTA_Tooltip_ability_sp_frog_Description"                              "Transforms %radius% ranged enemy units into harmless frogs for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_frog_buff"                                    "Hex"
+"DOTA_Tooltip_modifier_sp_frog_buff_Description"                        "Been hexed"
+
+//征税诏令
+"DOTA_Tooltip_ability_sp_tax"                                           "Interest Contract"
+"DOTA_Tooltip_ability_sp_tax_Description"                               "Increase tax in this round"
+// "DOTA_Tooltip_ability_sp_tax_Description"                               "Increase the interest income by %tax_increase%%%."
+
+//星辉炼化术
+"DOTA_Tooltip_ability_sp_crystal"                                       "Profiteer"
+"DOTA_Tooltip_ability_sp_crystal_Description"                           "Gets illegal Crystals in proportion of heroes' stars"
+// "DOTA_Tooltip_ability_sp_crystal_Description"                           "Gets illegal Soul Crystals that twice the sum of all heroes' Star Levels on the battlefield,every stars provide %factor% crystals"
+"Combat_sp_crystal"	                                                    "{s:player_name}：use【Profiteer】spell card get：<font color='#4ECECC'>{d:int_crystal}crystal</font>"
+
+//炼金术
+"DOTA_Tooltip_ability_sp_crystalgold"                                   "Gold Alchemy"
+"DOTA_Tooltip_ability_sp_crystalgold_Description"                       "Trade %crystal_needed% crystal for %gold_earn% gold"
+// "DOTA_Tooltip_ability_sp_crystalgold_Description"                       "Trade %crystal_needed% Soul Crystal for %gold_earn% gold."
+
+//反向炼金术
+"DOTA_Tooltip_ability_sp_goldcrystal"                                   "Crystal Alchemy"
+"DOTA_Tooltip_ability_sp_goldcrystal_Description"                       "Trade %gold_needed% gold for %crystal_earn% Crystal."
+// "DOTA_Tooltip_ability_sp_goldcrystal_Description"                       "Trade %gold_needed% for %crystal_earn% Sould Crystal."
+
+//贪婪黄金挑战
+"DOTA_Tooltip_ability_sp_goldcreep"                                     "Golden Mutation"
+"DOTA_Tooltip_ability_sp_goldcreep_Description"                         "Enemies in the next round will be stronger but provide more gold"
+// "DOTA_Tooltip_ability_sp_goldcreep_Description"                         "Enemies in the next round will be stronger than usual, health increase %health_pct%%% and damage increase %attack_pct%%%. Killing the mutated units will loot extra gold, effect can be stacked"
+"DOTA_Tooltip_modifier_goldchallenge_buff"                              "Golden Mutation"
+"DOTA_Tooltip_modifier_goldchallenge_buff_Description"                  "Stronger than ususal. Loot <font color='#f4c14eff'> %dMODIFIER_PROPERTY_TOOLTIP% Bounties </font><br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）HP<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）Physical DMG<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）Magical DMG"
+
+//贪婪魂晶挑战
+"DOTA_Tooltip_ability_sp_crystalcreep"                                  "Crystal Mutation"
+"DOTA_Tooltip_ability_sp_crystalcreep_Description"                      "Enemies in the next round will be stronger but provide more crystal"
+// "DOTA_Tooltip_ability_sp_crystalcreep_Description"                      "Enemies in the next round will be stronger than usual, health increase %health_pct%%% and damage increase %attack_pct%%%. Killing the mutated units will loot extra Soul Crystal."
+"DOTA_Tooltip_modifier_crystalcreep_buff"                               "Crystal Mutation"
+"DOTA_Tooltip_modifier_crystalcreep_buff_description"                   "Stronger than ususal. Loot <font color='#4ececcff'> %dMODIFIER_PROPERTY_TOOLTIP% Soul Crystal </font><br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）HP<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）Physical DMG<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%）Magical DMG"
+
+//利刃武装
+"DOTA_Tooltip_ability_sp_physical"                                      "Mighty Potion"
+"DOTA_Tooltip_ability_sp_physical_Description"                          "Permanently increases physical damage. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_physical_Description"                          "Permanently increases all the heroes' physical damage by +%physical_atkbonus%.Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_physical_buff"                                "Mighty Potion"
+//"DOTA_Tooltip_modifier_sp_physical_buff_Description"                    "Physical damage increased by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//奥法钻研
+"DOTA_Tooltip_ability_sp_magical"                                       "Arcane Potion"
+"DOTA_Tooltip_ability_sp_magical_Description"                           "Permanently increases magical damage. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_magical_Description"                           "Permanently increases all the heroes' Magical Damage+%magical_atkbonus%.Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_magical_buff"                                 "Arcane Potion"
+//"DOTA_Tooltip_modifier_sp_magical_buff_Description"                     "Magical Damage increased by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//速发咒语
+"DOTA_Tooltip_ability_sp_cooldown"                                      "Spell Potion"
+"DOTA_Tooltip_ability_sp_cooldown_Description"                          "Permanently reduces ability cooldown. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_cooldown_Description"                          "Permanently reduces all the heroes' ability cooldown by %cooldown_reduce% seconds till end of the game.Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_cooldown_buff"                                "Spell Potion"
+//"DOTA_Tooltip_modifier_sp_cooldown_buff_Description"                    "CD reduced by %fMODIFIER_PROPERTY_TOOLTIP% seconds"
+
+//宁静
+"DOTA_Tooltip_ability_sp_hpregen"                                       "Regen Potion"
+"DOTA_Tooltip_ability_sp_hpregen_Description"                           "Permanently increases HP regen. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_hpregen_Description"                           "Permanently increases all the heroes' HP regen by %health_regenbonus% till end of the game. Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_hpregen_buff"                                 "Regen Potion"
+//"DOTA_Tooltip_modifier_sp_hpregen_buff_Description"                     "Health regen increased by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//能量充盈
+"DOTA_Tooltip_ability_sp_manaregen"                                     "Mana Potion"
+"DOTA_Tooltip_ability_sp_manaregen_Description"                         "Permanently increases mana regen. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_manaregen_Description"                         "Permanently increases all the heroes' %mana_regenbonus% Mana regen till end of the game.Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_manaregen_buff"                               "Mana Potion"
+//"DOTA_Tooltip_modifier_sp_manaregen_buff_Description"                   "Mana regen increased by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//精钢不坏
+"DOTA_Tooltip_ability_sp_defend"                                        "Armor Potion"
+"DOTA_Tooltip_ability_sp_defend_Description"                            "Permanently increases armor. Effect can be stacked<br>already use{d:used_count}"
+// "DOTA_Tooltip_ability_sp_defend_Description"                            "Permanently increases all the heroes' physical and magic resistance by %armorbonus% till end of the game. Effect can be stacked<br>already use{d:used_count}"
+//"DOTA_Tooltip_modifier_sp_defend_buff"                                  "Armor Potion"
+//"DOTA_Tooltip_modifier_sp_defend_buff_Description"                      "Both resistance increased by %dMODIFIER_PROPERTY_TOOLTIP%."
+
+//法术卡属性
+"DOTA_Tooltip_modifier_sp_aura"                                         "aura Magic"
+"DOTA_Tooltip_modifier_sp_aura_Description"                             "+ %dMODIFIER_PROPERTY_TOOLTIP% physical damage<br>+ %dMODIFIER_PROPERTY_TOOLTIP% magical damage<br>+ %1fMODIFIER_PROPERTY_TOOLTIP%%% cooldown reduced <br>+ %1fMODIFIER_PROPERTY_TOOLTIP% health regen<br>+ %1fMODIFIER_PROPERTY_TOOLTIP% mana regen<br>+ %dMODIFIER_PROPERTY_TOOLTIP% physical armor<br>+ %dMODIFIER_PROPERTY_TOOLTIP% magical armor<br>+ %dMODIFIER_PROPERTY_TOOLTIP% attackspeed"
+
+//集火
+"DOTA_Tooltip_ability_sp_focus"                                         "Focus Fire"
+"DOTA_Tooltip_ability_sp_focus_Description"                             "Orders allies to attack the same target"
+// "DOTA_Tooltip_ability_sp_focus_Description"                             "Orders allies within %radius% units range to attack the same target. Affected enemy target takes %bonus_damage_pct%%% more damage for %duration% seconds."
+"DOTA_Tooltip_modifier_sp_focus_buff"                                   "Focus"
+"DOTA_Tooltip_modifier_sp_focus_buff_Description"                       "Firing"
+"DOTA_Tooltip_modifier_sp_focus_debuff"                                 "Be Focus"
+"DOTA_Tooltip_modifier_sp_focus_debuff_Description"                     "Taken damage increase"
+

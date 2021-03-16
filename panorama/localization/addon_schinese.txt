@@ -1,0 +1,2266 @@
+"addon"
+{
+	"addon_game_name"			"天灾诀"
+	
+	"info_game_lose"	"灾厄降临，现世沦陷"
+	"info_game_win"		"灾厄解除，光明永驻"
+	
+	"item_quality_1"	"普通"
+	"item_quality_2"	"优良"
+	"item_quality_3"	"稀有"
+	"item_quality_4"	"极品"
+	"item_quality_5"	"史诗"
+	"item_quality_6"	"传奇"
+	"item_quality_7"	"神话"
+	
+	"item_slot_weapon"	"武器"
+	"item_slot_armor"	"防具"
+	"item_slot_accessory"	"饰品"
+	"item_slot_special"	"特殊装备"
+	
+	"item_net_prefix_g1_q1"	"普通  · "
+	"item_net_prefix_g1_q2"	"优良 · "
+	"item_net_prefix_g1_q3"	"精致 · "
+	"item_net_prefix_g1_q4"	"卓越 · "
+	"item_net_prefix_g1_q5"	"勇者 · "
+	"item_net_prefix_g1_q6"	"传世 · "
+	"item_net_prefix_g1_q7"	"神圣 · "
+	
+	"item_net_prefix_g2_q1"	"初级 · "
+	"item_net_prefix_g2_q2"	"人级 · "
+	"item_net_prefix_g2_q3"	"黄级 · "
+	"item_net_prefix_g2_q4"	"玄级 · "
+	"item_net_prefix_g2_q5"	"地级 · "
+	"item_net_prefix_g2_q6"	"天级 · "
+	"item_net_prefix_g2_q7"	"神级 · "
+	
+	"item_net_prefix_g3_q1"	"冒险者 · "
+	"item_net_prefix_g3_q2"	"风之深拥 · "
+	"item_net_prefix_g3_q3"	"怒焰精灵 · "
+	"item_net_prefix_g3_q4"	"冰霜气息 · "
+	"item_net_prefix_g3_q5"	"雷霆暴怒 · "
+	"item_net_prefix_g3_q6"	"女神祝福 · "
+	"item_net_prefix_g3_q7"	"神之传承 · "
+	
+	"item_net_prefix_g4_q1"	"萤火 · "
+	"item_net_prefix_g4_q2"	"微星 · "
+	"item_net_prefix_g4_q3"	"群星 · "
+	"item_net_prefix_g4_q4"	"半月 · "
+	"item_net_prefix_g4_q5"	"皓月 · "
+	"item_net_prefix_g4_q6"	"烈日 · "
+	"item_net_prefix_g4_q7"	"星河 · "
+	
+	//添加新的属性以后，要到随机装备的tooltip界面对应的js中添加对应的属性以保证顺序，否则不会显示
+	"item_attribute_ll"	"力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_zl"	"智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mj"	"敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_qsx"	"全属性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_damage"	"攻击力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjdtsxsh"	"攻击附带单体主属性伤害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_attack_speed"	"攻击速度：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_attack_damage_plus"	"普通攻击触发额外伤害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjqtsxsh"	"攻击附带群体主属性伤害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_jnsh"	"技能增强：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_qsx"	"全属性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjxx"	"攻击吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_fsxx"	"法术吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlxx"	"物理吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjshj"	"攻击减少护甲：<font color=\"#ffffff\">{s:value}</font>"
+
+	"item_attribute_gjl"	"攻击力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjsd"	"攻击速度：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_wlbjgl"	"物理暴击概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlbjsh"	"物理暴击伤害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfbjgl"	"魔法暴击概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfbjsh"	"魔法暴击伤害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_sjjll"	"升级加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjmj"	"升级加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjzl"	"升级加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_wlshts"	"物理伤害提升：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfshts"	"魔法伤害提升：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlct"	"护甲穿透：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfct"	"魔法穿透：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_zhwsh"	"召唤物强度：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjl"	"攻击距离：<font color=\"#ffffff\">+{s:value}</font>"
+
+
+
+	"item_attribute_lqsj"	"冷却缩减：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_fjsh"	"附加伤害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_zzsh"	"最终伤害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_smz"	"生命值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_smhf"	"生命回复：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_bgjyglhx" "被攻击20%概率回复血量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_qjxx" "伤害吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_rx" "状态抗性：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_sb" "闪避：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfz" "魔法值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_hj" "护甲：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_shjm" "减伤系数：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_shhm" "免伤概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_pgshjs" "格挡伤害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mfhf" "魔法恢复：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mfkx" "魔法抗性：<font color=\"#ffffff\">+{s:value}%</font>"
+	
+	"item_attribute_bgjyglhl" "被攻击20%概率回复蓝量：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_gjzjll" "攻击有5%的概率增加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjmj" "攻击有5%的概率增加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjzl" "攻击有5%的概率增加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjqsx" "攻击有5%的概率增加全属性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjll" "杀怪有5%的概率增加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjmj" "杀怪有5%的概率增加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjzl" "杀怪有5%的概率增加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjqsx" "杀怪有5%的概率增加全属性：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_sgzjsmz" "杀怪有5%的概率增加生命值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_smzhfbfb" "生命恢复：<font color=\"#ffffff\">+{s:value}% /s</font>"
+	"item_attribute_gjhfxl" "攻击回复自身血量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_lqsj" "冷却缩减：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjgjd" "攻击间隔降低：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_bfbtsll" "力量：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtsmj" "敏捷：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtszl" "智力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtsqsx" "全属性：<font color=\"#ffffff\">+{s:value}%</font>"
+
+	"item_attribute_jqjc" "金钱收益：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_jyjc" "经验收益：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_msmjq" "每十秒金钱：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjjb" "杀怪增加金币：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_grjndj" "个人技能等级：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_ggjndj" "公共技能等级：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_damage_bfb"	"攻击力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtssm"	"生命值：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_ydsd"	"移动速度：<font color=\"#ffffff\">+{s:value}</font>"
+
+
+
+	
+	"alter_public_exist_item"	"公共仓库有：{s:name}<Panel>"
+	"alter_player_have_item"	"我有：{s:name}<Panel>"
+	"alert_dps_rank_total"	"BOSS战·总输出：<br>1. {s:name1}<Panel class='DpsRankSep'/>{s:value1}<Panel class='DpsRankSep'/><font color='yellow'>★</font><br>2. {s:name2}<Panel class='DpsRankSep'/>{s:value2}<br>3. {s:name3}<Panel class='DpsRankSep'/>{s:value3}<br>4. {s:name4}<Panel class='DpsRankSep'/>{s:value4}"
+	"alert_dps_rank_second"	"BOSS战·秒伤：<br>1. {s:name1}<Panel class='DpsRankSep'/>{s:value1}<Panel class='DpsRankSep'/><font color='yellow'>★</font><br>2. {s:name2}<Panel class='DpsRankSep'/>{s:value2}<br>3. {s:name3}<Panel class='DpsRankSep'/>{s:value3}<br>4. {s:name4}<Panel class='DpsRankSep'/>{s:value4}"
+	"alert_boss_position"	"<font color='yellow'>快来打BOSS！</font>"
+	
+	"tip_item_treasure_give_nothing"	"宝物已被移除，<font color='yellow'>“皇者之路”</font>得到增强"
+	"tip_item_treasure_full"	"宝物拥有已达到上限,无法再使用了"
+	"tip_hero_died"	"<font color='red'>{s:hero}</font> 已离我们而去..."
+	
+	"info_game_over_prompt"	"请尽快击杀灾厄领主，否则游戏将在{s:time}秒后结束"
+	"info_game_over_prompt10"	"<font color='#F5CD1E'>请尽快击杀灾厄领主，否则游戏将在 10 秒后结束</font>"
+	"info_game_over_prompt9"	"<font color='#F3BE1B'>请尽快击杀灾厄领主，否则游戏将在 9 秒后结束</font>"
+	"info_game_over_prompt8"	"<font color='#f0ae1d'>请尽快击杀灾厄领主，否则游戏将在 8 秒后结束</font>"
+	"info_game_over_prompt7"	"<font color='#ef9e1a'>请尽快击杀灾厄领主，否则游戏将在 7 秒后结束</font>"
+	"info_game_over_prompt6"	"<font color='#ed8d18'>请尽快击杀灾厄领主，否则游戏将在 6 秒后结束</font>"
+	"info_game_over_prompt5"	"<font color='#eb7b14'>请尽快击杀灾厄领主，否则游戏将在 5 秒后结束</font>"
+	"info_game_over_prompt4"	"<font color='#ea6912'>请尽快击杀灾厄领主，否则游戏将在 4 秒后结束</font>"
+	"info_game_over_prompt3"	"<font color='#e85411'>请尽快击杀灾厄领主，否则游戏将在 3 秒后结束</font>"
+	"info_game_over_prompt2"	"<font color='#e73c13'>请尽快击杀灾厄领主，否则游戏将在 2 秒后结束</font>"
+	"info_game_over_prompt1"	"<font color='#e61015'>请尽快击杀灾厄领主，否则游戏将在 1 秒后结束</font>"
+	"info_game_finish_prompt"	"恭喜通关，游戏即将结束"
+	"info_survival_boss_coming"	"灾厄领主即将到来，请注意"
+	"info_exceedthelimit"	"使用超过限制"
+	"info_exceedthecooltime"	"物品CD中"
+	"info_maplevelnolimit"	"购买限制，地图等级未达到{s:level}级"
+	"info_cantbuy"	"无法重复购买"
+	"info_mall_error"	"购买失败，请稍后再试"
+	
+	"info_operation_overtime"	"操作超时，请稍后再试"
+	"info_operation_faild"	"未知错误，请稍后再试"
+	"info_operation_busy"	"操作频繁，请稍后再试"
+	
+	"error_position_unreachable" "无法到达目标地点"
+	"error_netequip_position" "无法装备到该位置"
+	"error_netequip_swapposition" "无法交换装备到该位置"
+	
+	"info_game_finished_tip_net_equip"	"游戏结束后，无法改变装备位置"
+	
+	
+	//-----------------------------------------UI  V2 begin----------------------------------------------
+	"difficulty_name_1"	"人间试炼--1阶段"
+	"difficulty_name_1_desc"	"掉落存档装备:1阶<br>存档装备品质区间:<font color=\"#5fc866\">绿</font>，<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>结算历练值加成:0%<br>结算晶石加成:0%<br>掉落征战钥匙概率:10%"
+	"difficulty_name_2"	"人间试炼--2阶段"
+	"difficulty_name_2_desc"	"掉落存档装备:1阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:10%<br>结算晶石加成:10%<br>掉落征战钥匙概率:20%"
+	"difficulty_name_3"	"人间试炼--3阶段"
+	"difficulty_name_3_desc"	"掉落存档装备:1阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:20%<br>结算晶石加成:20%<br>掉落征战钥匙概率:30%"
+
+	"difficulty_name_4"	"深渊磨练--1阶段"
+	"difficulty_name_4_desc"	"掉落存档装备:2阶<br>存档装备品质区间:<font color=\"#5fc866\">绿</font>，<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>结算历练值加成:30%<br>结算晶石加成:40%<br>掉落征战钥匙概率:40%"
+	"difficulty_name_5"	"深渊磨练--2阶段"
+	"difficulty_name_5_desc"	"掉落存档装备:2阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:40%<br>结算晶石加成:60%<br>非正常模式掉落2阶强化石数量:1-10个<br>掉落征战钥匙概率:50%"
+	"difficulty_name_6"	"深渊磨练--3阶段"
+	"difficulty_name_6_desc"	"掉落存档装备:2阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:50%<br>结算晶石加成:80%<br>非正常模式掉落2阶强化石数量:5-15个<br>掉落征战钥匙概率:60%"
+	"difficulty_name_7"	"深渊磨练--4阶段"
+	"difficulty_name_7_desc"	"掉落存档装备:2阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:60%<br>结算晶石加成:100%<br>非正常模式掉落2阶强化石数量:10-20个<br>掉落征战钥匙概率:80%"
+	
+
+	"difficulty_name_8"		"炼狱闯荡--1阶段"
+	"difficulty_name_8_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font><br><br>结算历练值加成:70%<br>结算晶石加成:130%<br>非正常模式掉落3阶强化石数量:1-4个<br>掉落征战钥匙概率:100%"
+	"difficulty_name_9"		"炼狱闯荡--2阶段"
+	"difficulty_name_9_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>结算历练值加成:80%<br>结算晶石加成:160%<br>非正常模式掉落3阶强化石数量:4-8个<br>掉落征战钥匙概率:120%"
+	"difficulty_name_10"	"炼狱闯荡--3阶段"
+	"difficulty_name_10_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:90%<br>结算晶石加成:190%<br>非正常模式掉落3阶强化石数量:8-12个<br>掉落征战钥匙概率:140%"
+	"difficulty_name_11"	"炼狱闯荡--4阶段"
+	"difficulty_name_11_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:100%<br>结算晶石加成:220%<br>非正常模式掉落3阶强化石数量:12-16个<br>掉落征战钥匙概率:160%"
+	"difficulty_name_12"	"炼狱闯荡--5阶段"	
+	"difficulty_name_12_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:110%<br>结算晶石加成:250%<br>非正常模式掉落3阶强化石数量:16-20个<br>掉落征战钥匙概率:180%"
+	"difficulty_name_13"	"炼狱闯荡--6阶段"
+	"difficulty_name_13_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:120%<br>结算晶石加成:280%<br>非正常模式掉落3阶强化石数量:20-25个<br>掉落征战钥匙概率:200%"
+	"difficulty_name_14"	"炼狱闯荡--7阶段"
+	"difficulty_name_14_desc"	"掉落存档装备:3阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:130%<br>结算晶石加成:310%<br>非正常模式掉落3阶强化石数量:25-35个<br>掉落征战钥匙概率:250%"
+
+
+	"difficulty_name_15"		"轮回地狱--1阶段"
+	"difficulty_name_15_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>结算历练值加成:140%<br>结算晶石加成:350%<br>非正常模式掉落4阶强化石数量:1-3个<br>掉落征战钥匙概率:270%"
+	"difficulty_name_16"		"轮回地狱--2阶段"
+	"difficulty_name_16_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>结算历练值加成:150%<br>结算晶石加成:390%<br>非正常模式掉落4阶强化石数量:3-6个<br>掉落征战钥匙概率:290%"
+	"difficulty_name_17"		"轮回地狱--3阶段"
+	"difficulty_name_17_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:160%<br>结算晶石加成:430%<br>非正常模式掉落4阶强化石数量:6-9个<br>掉落征战钥匙概率:310%"
+	"difficulty_name_18"		"轮回地狱--4阶段"
+	"difficulty_name_18_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:170%<br>结算晶石加成:470%<br>非正常模式掉落4阶强化石数量:9-13个<br>掉落征战钥匙概率:330%"
+	"difficulty_name_19"		"轮回地狱--5阶段"	
+	"difficulty_name_19_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:180%<br>结算晶石加成:510%<br>非正常模式掉落4阶强化石数量:13-17个<br>掉落征战钥匙概率:350%"
+	"difficulty_name_20"		"轮回地狱--6阶段"
+	"difficulty_name_20_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:190%<br>结算晶石加成:550%<br>非正常模式掉落4阶强化石数量:17-22个<br>掉落征战钥匙概率:370%"
+	"difficulty_name_21"		"轮回地狱--7阶段"
+	"difficulty_name_21_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:200%<br>结算晶石加成:590%<br>非正常模式掉落4阶强化石数量:22-28个<br>掉落征战钥匙概率:390%"
+	"difficulty_name_22"		"轮回地狱--8阶段"
+	"difficulty_name_22_desc"	"掉落存档装备:4阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:210%<br>结算晶石加成:630%<br>非正常模式掉落4阶强化石数量:28-40个<br>掉落征战钥匙概率:410%"
+
+
+
+	"difficulty_name_23"		"修罗秘境--1阶段"
+	"difficulty_name_23_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:210%<br>结算晶石加成:680%<br>非正常模式掉落5阶强化石数量:1-3个<br>掉落征战钥匙概率:430%"
+	"difficulty_name_24"		"修罗秘境--2阶段"
+	"difficulty_name_24_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:220%<br>结算晶石加成:730%<br>非正常模式掉落5阶强化石数量:3-6个<br>掉落征战钥匙概率:460%"
+	"difficulty_name_25"		"修罗秘境--3阶段"
+	"difficulty_name_25_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:230%<br>结算晶石加成:780%<br>非正常模式掉落5阶强化石数量:6-9个<br>掉落征战钥匙概率:490%"
+	"difficulty_name_26"		"修罗秘境--4阶段"
+	"difficulty_name_26_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:240%<br>结算晶石加成:830%<br>非正常模式掉落5阶强化石数量:9-13个<br>掉落征战钥匙概率:520%"
+	"difficulty_name_27"		"修罗秘境--5阶段"	
+	"difficulty_name_27_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:250%<br>结算晶石加成:880%<br>非正常模式掉落5阶强化石数量:13-17个<br>掉落征战钥匙概率:550%"
+	"difficulty_name_28"		"修罗秘境--6阶段"
+	"difficulty_name_28_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:260%<br>结算晶石加成:930%<br>非正常模式掉落5阶强化石数量:17-22个<br>掉落征战钥匙概率:580%"
+	"difficulty_name_29"		"修罗秘境--7阶段"
+	"difficulty_name_29_desc"	"掉落存档装备:5阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:270%<br>结算晶石加成:980%<br>非正常模式掉落5阶强化石数量:22-28个<br>掉落征战钥匙概率:610%"
+
+	
+	"difficulty_mode_drop_down_tooltip"	"<font color='red'>房主</font>可点击选择当前难度的其他<font color='#FFD700'>模式</font>，不同模式会有一些特殊的设定"
+	
+	"difficulty_mode_1" "正常模式"
+	"difficulty_mode_short_1" "正常"
+	"difficulty_mode_2" "狂暴模式"
+	"difficulty_mode_short_2" "狂暴"
+	"difficulty_mode_desc_2" "怪物强度+100%,怪物的基础经验和基础金钱+100%"
+	"difficulty_mode_3" "奥术模式"
+	"difficulty_mode_short_3" "奥术"
+	"difficulty_mode_desc_3" "怪物技能cd-30%"
+	"difficulty_mode_4" "灾难模式"
+	"difficulty_mode_short_4" "灾难"
+	"difficulty_mode_desc_4" "高级怪物出现概率+100%,精英怪出现概率+50%"
+	"difficulty_mode_5" "地狱模式"
+	"difficulty_mode_short_5" "地狱"
+	"difficulty_mode_desc_5" "怪物移动速度+30%,攻击速度+40,攻击力+40%"
+	"difficulty_mode_6" "赏金模式"
+	"difficulty_mode_short_6" "赏金"
+	"difficulty_mode_desc_6" "金钱提升+100%,但是每次死亡会损失所有金币"
+	"difficulty_mode_7" "噩梦模式"
+	"difficulty_mode_short_7" "噩梦"
+	"difficulty_mode_desc_7" "每20秒给场上存活的英雄添加一个负面效果"
+	
+	
+	"ability_property_baseDamage"	"基础伤害"
+	"ability_property_damage"	"伤害系数"
+	"ability_property_baseHeal"	"基础治疗"
+	"ability_property_heal"	"治疗系数"
+	"ability_property_radius"	"影响范围"
+	"ability_property_distance"	"最大距离"
+	"ability_property_chance"	"触发概率%"
+	"ability_property_interval"	"-触发间隔"
+	"ability_property_duration"	"持续时间"
+	"ability_property_count"	"打击次数"
+	"ability_property_max"	"最大数量"
+	"ability_property_time"	"多次触发"
+	"ability_property_multiple"	"伤害倍数"
+	
+	"advanced_property_spell_damage"	"技能伤害："
+	"advanced_property_cooldown"		"冷却缩减："
+	"advanced_property_wlbjgl"		"物理暴击概率："
+	"advanced_property_wlbjgl_desc"	"造成物理伤害时有概率暴击(最高为100)"
+
+	"advanced_property_wlbjsh"		"物理暴击伤害："
+	"advanced_property_wlbjsh_desc"	"暴击时造成的物理伤害提升"
+
+	"advanced_property_mfbjgl"		"魔法暴击概率："
+	"advanced_property_mfbjgl_desc"	"造成魔法伤害时有概率暴击(最高为100)"
+
+	"advanced_property_mfbjsh"		"魔法暴击伤害："
+	"advanced_property_mfbjsh_desc"	"暴击时造成的魔法伤害提升"
+
+
+	"advanced_property_extra_damage"		"附加伤害："
+	"advanced_property_extra_damage_desc"	"造成的所有伤害都会受到额外乘算(不受物理魔法伤害加成)"
+
+	"advanced_property_final_damage"		"最终伤害："
+	"advanced_property_final_damage_desc"	"造成的所有伤害在最后会受到乘算"
+	
+	"advanced_property_damage_reduce"				"伤害减免："
+	"advanced_property_damage_reduce_desc"			"降低受到的伤害，数值越高受到伤害越少，但是不会降至0伤害"
+
+	"advanced_property_physical_damage_lifesteal"	"物理吸血："
+	"advanced_property_physical_damage_lifesteal_desc"	"造成的物理伤害（无论技能还是普通攻击）会治疗自己"
+
+	"advanced_property_damage_immune"				"免伤概率："
+	"advanced_property_damage_immune_desc"			"有概率能免疫本次伤害(最高免伤概率为80)"
+
+	"advanced_property_magic_damage_lifesteal"		"法术吸血："
+	"advanced_property_magic_damage_lifesteal_desc"	"造成的魔法伤害会治疗自己"
+
+	
+	"advanced_property_heal_amplify"				"治疗提升："
+	"advanced_property_heal_amplify_desc"			"提升治疗百分比"
+
+	"advanced_property_damage_lifesteal"			"伤害吸血："
+	"advanced_property_damage_lifesteal_desc"		"造成的所有伤害都会治疗自己"
+	
+	"advanced_property_strength_bonus_percentage"	"百分比提升力量："
+	"advanced_property_strength_bonus_percentage_desc"	"提供英雄基础力量一定百分比的加成，以绿字形式显示"
+
+	"advanced_property_agility_bonus_percentage"	"百分比提升敏捷："
+	"advanced_property_agility_bonus_percentage_desc"	"提供英雄基础敏捷一定百分比的加成，以绿字形式显示"
+
+	"advanced_property_intellect_bonus_percentage"	"百分比提升智力："
+	"advanced_property_intellect_bonus_percentage_desc"	"提供英雄基础智力一定百分比的加成，以绿字形式显示"
+
+	"advanced_property_wlct"	"物理穿透："
+	"advanced_property_wlct_desc"	"无视目标对应的百分比护甲(最高无视80%)"
+
+	"advanced_property_mfct"	"魔法穿透："
+	"advanced_property_mfct_desc"	"无视目标对应的百分比魔法抗性(最高无视80%)"
+
+	"advanced_property_strength_levelup"	"升级加力量"
+	"advanced_property_strength_levelup_desc"	"英雄等级每提升1级,增加对应数值的力量"
+
+	"advanced_property_agility_levelup"	"升级加敏捷"
+	"advanced_property_agility_levelup_desc"	"英雄等级每提升1级,增加对应数值的敏捷"
+
+	"advanced_property_intellect_levelup"	"升级加智力"
+	"advanced_property_intellect_levelup_desc"	"英雄等级每提升1级,增加对应数值的智力"
+	
+	"advanced_property_qsx_bonus_percentage"	"百分比提升全属性："
+	"advanced_property_qsx_bonus_percentage_desc"	"提供英雄基础全属性一定百分比的加成，以绿字形式显示"
+	
+	"advanced_property_wlshts"	"物理伤害提升："
+	"advanced_property_wlshts_desc"	"每1点数值提升对应的物理伤害,与其他数值乘算"
+
+	"advanced_property_mfshts"	"魔法伤害提升："
+	"advanced_property_mfshts_desc"	"每1点数值提升对应的魔法伤害,与其他数值乘算"
+
+	"advanced_property_zhwsh"		"召唤物强度："
+	"advanced_property_zhwsh_desc"	"增加召唤物的防御血量和攻击(目前召唤物不继承其他属性)"
+
+
+	
+	
+	"advanced_property_gold_bonus_by_kill"			"杀怪金币加成："
+	"advanced_property_gold_bonus_by_kill_desc"		"每杀死一个单位会获得额外金币(受到百分比金钱加成)"
+
+	"advanced_property_exp_bonus_by_kill"			"杀怪经验加成："
+	"advanced_property_exp_bonus_by_kill_desc"		"每杀死一个单位会获得额外经验(受到百分比经验加成)"
+
+	"advanced_property_gold_bonus_by_time"			"每十秒加金币："
+	"advanced_property_gold_bonus_by_time_desc"		"每过10秒会增加对应的金币(受到百分比金钱加成)"
+
+	
+	"advanced_property_ability_level_bonus"				"技能等级加成："
+	"advanced_property_ability_level_bonus_desc"		"每1点技能等级增加自身技能10%的基础伤害(英雄天赋不在其中)"
+
+	"advanced_property_gold_bonus_percentage"			"金币收益提升："
+	"advanced_property_gold_bonus_percentage_desc"		"增加获得的百分比金钱收益"
+
+	"advanced_property_exp_bonus_percentage"			"经验收益提升："
+	"advanced_property_exp_bonus_percentage_desc"		"增加获得的百分比经验收益"
+	
+	"advanced_property_lucky"							"幸运值："
+	"advanced_property_lucky_desc"						"每1点幸运值增加1点击杀灾厄领主存档装备爆率(超过100点没有额外效果)"
+	
+	"advanced_property_tmz"			"天命值"
+	"advanced_property_tmz_desc"	"天命值越高，击杀灾厄领主获得的存档装备品质越好"
+	
+	"ui_btn_confirm"	"确定"
+	"ui_btn_cancel"		"取消"
+	"ui_btn_cancel_auto"		"取消({s:time})"
+	"ui_btn_refresh"	"刷新"
+	"ui_btn_receive"	"领取"
+	"ui_btn_received"	"已领取"
+	
+	"ui_currency_magic_stone"	"仙石"
+	"ui_currency_magic_stone_desc"	"用来在商城购买道具，通过充值获得。"
+	"ui_currency_jing_stone"	"晶石"
+	"ui_currency_jing_stone_desc"	"用来在商城购买道具，主要通过游戏内击杀怪物（游戏结束时发放奖励）、天灾之路、游戏活动等途径获取。"
+	
+	"ui_mark_none"	"无"
+	"ui_mark_not_active"	"未激活"
+	"ui_mark_active"	"已激活"
+	
+	//显示长数字，使用ShowLargeNumberForLabel函数。默认文本为西式的千分显示，后面会加上简化的 xxx.xx万/亿。
+	//中英文表述值不一样。中文以常见的万亿来显示，英文显示K，M，B
+	"ui_large_number_unit_1"	"万"
+	"ui_large_number_unit_2"	"亿"
+	
+	"ui_popup_tooltip"	"【ESC】或【点击任意位置】关闭弹窗"
+	
+	"ui_topbar_monster_count_lbl"	"怪物数量"
+	"ui_topbar_monster_count_tooltip"	"存活数量/最大数量，当存活数量超过最大数量时，进入游戏失败倒计时"
+	"ui_topbar_boss_timer_tooltip_title"	"<font color='#FFDB77'>灾厄领主</font>"
+	"ui_topbar_boss_timer_tooltip_content"	"<br/>倒计时结束后，强大的灾厄领主将会出现在地图中间的祭坛上<br/><br/>灾厄领主有存在时间，在存在时间内没有被击杀则游戏失败<br/><br/>一局游戏会有多个领主，击杀全部领主后游戏胜利<br/><br/><font color='white'>※点击可查看灾厄领主刷新详情</font>"
+	"ui_topbar_attack_timer_round"	"第{s:round}波"
+	"ui_topbar_attack_timer_tooltip"	"倒计时结束后，开始下一波刷怪"
+	
+	"ui_topbar_survival_stages_title"	"灾厄领主"
+	"ui_topbar_survival_stages_subtitle"	"点击已被击杀的领主头像，可查看伤害统计信息"
+	"ui_topbar_survival_stages_time"	"刷新时间"
+	"ui_topbar_survival_stages_boss_tooltip"	"击杀耗时{s:time}"
+	
+	"ui_boss_hp_timer_tooltip"	"倒计时结束后，如果BOSS未死亡，游戏结束"
+	
+	"ui_forbidden_hint"	"数据加载失败，即将退出游戏<br/><br/>※请不要使用本地服务器<br/>※请不要使用作弊模式"
+	"ui_forbidden_test_hint"	"数据加载失败，即将退出游戏<br/><br/>可能原因：<br/>※使用了本地服务器<br/>※开启了作弊模式"
+	
+	"ui_setup_title_hero"		"选择英雄"
+	"ui_setup_title_difficulty"	"选择难度"
+	"ui_setup_difficulty_locked_tooltip"	"通关上一难度后，解锁此难度"
+	"ui_setup_popup_not_select_hero"	"请点击英雄图片选择英雄"
+	"ui_setup_popup_not_host"	"没有权限，请等待房主选择难度"
+	"ui_setup_loading_hint"	"游戏加载中，请稍候..."
+	"ui_setup_loading_time_count"	"数据加载超时{s:count}次"
+	"ui_setup_loading_disconnect"	"断开连接"
+	"ui_setup_loading_disconnect_tooltip"	"如果长时间加载不出来数据，可以尝试断开连接重新开始"
+	"ui_setup_hero_primary_tooltip_str"	"力量英雄<br><br>力量英雄拥有强健的体魄，受到负面效果的持续时间将会缩短"
+	"ui_setup_hero_primary_tooltip_agi"	"敏捷英雄"
+	"ui_setup_hero_primary_tooltip_int"	"智力英雄<br><br>智力英雄对法术颇有研究，在释放技能的时候有几率触发多次施法"
+	"ui_setup_refresh_hero_tooltip"	"随机可选英雄，不会随机到随机过的英雄<br/><br/>通过PLUS、通行证等途径可获得刷新次数<br/><br/>当前可刷新 <font color='yellow'>{s:count}</font> 次"
+	
+	"ui_setup_now_difficulty"	"当前难度：{s:value}"
+	
+	"ui_treasure_selection_title"	"请选择需要的宝物"
+	"ui_treasure_selection_close_toggle"	"关闭确认"
+	"ui_treasure_selection_close_toggle_tooltip"	"选中，关闭窗口会进行确认<br>取消，关闭窗口无需确认"
+	"ui_treasure_selection_close_confirm"	"确定关闭吗？关闭后将不会获得任何物品"
+	
+	"ui_attribute_button_tooltip_delete"	"删除技能"
+	"ui_attribute_button_tooltip_move"	"移动技能"
+	"ui_attribute_button_tooltip_net_equip"	"存档装备"
+	"ui_attribute_button_tooltip_net_equip_full"	"存档装备<br><br><font color='red'>存档位已满，新装备将无法保存</font><br>可以使用[分解]销毁存档装备"
+	
+	"ui_attribute_button_tooltip_active_fixed"	"点击按钮可使界面常驻"
+	
+	"ui_attribute_content_tab_title_advanced"	"高级属性"
+	"ui_attribute_content_tab_title_ability"	"技能强化"
+	
+	"ui_attribute_ability_button_enhance"	"强化一次"
+	"ui_attribute_ability_button_enhance_desc"	"消耗<font color='yellow'>{s:price}杀敌积分</font>随机强化某个技能的一条属性"
+	"ui_attribute_ability_button_enhance_max"	"一键强化"
+	"ui_attribute_ability_button_enhance_max_desc"	"消耗<font color='yellow'>全部杀敌积分</font>强化技能，每<font color='yellow'>{s:price}</font>点杀敌积分可随机强化某个技能的一条属性"
+	"ui_attribute_ability_kill_score"	"杀敌积分：{d:value}"
+	
+	"ui_attribute_content_advanced_title_attack"	"攻击"
+	"ui_attribute_content_advanced_title_defense"	"防御"
+	"ui_attribute_content_advanced_title_special"	"特殊"
+	
+	"ui_attribute_delete_ability_title"	"点击选择你要删除的技能"
+	"ui_attribute_delete_ability_button_delete_all"	"删除全部"
+	"ui_attribute_delete_ability_button_delete"	"删除"
+	"ui_attribute_delete_ability_confirm_all"	"确定删除<font color='red'>所有技能</font>么？"
+	"ui_attribute_delete_ability_confirm_selection"	"确定删除<font color='red'>选中的技能</font>么？"
+	"ui_attribute_delete_ability_hint_no_ability"	"没有可以删除的技能"
+	
+	"ui_attribute_move_ability_title"	"调整技能顺序"
+	"ui_attribute_move_ability_title_desc"	"点击技能图标下方的箭头或直接拖动技能图标来变换位置"
+	
+	"ui_attribute_net_equips_title"	"存档装备"
+	"ui_attribute_net_equips_title_desc"	"存档装备永久存在，每局游戏都生效。<br/><br/>存档装备主要通过游戏内击杀灾厄领主（难度越高奖励越好）、装备钥匙开宝箱、天灾之路等途径获得<br/><br/>每次获得的存档装备属性随机，一切看脸，白嫖神装不是梦！"
+	
+	"ui_net_equip_total_score"	"总战斗力："
+	"ui_net_equip_tips"	"※装备位置在游戏结算时才会被记录<br>※如果装备不显示，可尝试点击英雄"
+	
+	"ui_net_equip_action_equip"		"装备"
+	"ui_net_equip_action_unequip"	"卸下"
+	"ui_net_equip_action_destroy"	"分解"
+	"ui_net_equip_action_destroy_tooltip"	"分解后可获得 <font color='gold'>{d:reward_jing}</font> 晶石<br><br>按住ALT键，不进行确认直接删除"
+	"ui_net_equip_action_batch_delete"	"分解"
+	"ui_net_equip_action_batch_delete_tooltip"	"[分解]<br>可以一次性分解多件装备"
+	"ui_net_equip_action_batch_delete_operation"	"<font color='red'>装备分解</font>：<br>点击装备图标进行选择，选择完毕点击[确定]按钮，分解选中的装备<br><br>按住鼠标左键进行拖动，可以进行批量操作"
+	"ui_net_equip_action_child_ok"	"确定"
+	"ui_net_equip_action_child_cancel"	"取消"
+	"ui_net_equip_action_enhance"	"强化"
+	"ui_net_equip_action_enhance_tooltip"	"[强化]<br>点击打开 [装备强化] 界面，可以使用 “强化石”对装备进行强化，强化可提升装备的所有属性。"
+	
+	"ui_attribute_net_equips_destroy_confirm"	"此操作将永久销毁装备，返还 <font color='gold'>{d:reward_jing}</font> 晶石，是否确定？"
+	
+	"ui_net_equip_enhance"	"强化"
+	"ui_net_equip_enhance_tooltip" "将装备拖至此界面后即可使用“强化石”对存档装备进行强化，提升装备属性<br><br>不同品阶、不同品质的装备，可强化次数不同：<br>1阶装备：不可强化<br>2阶装备：<font color=\"#5fc866\">优良=2</font>，<font color=\"#477bff\">稀有=2</font>，<font color=\"#a91ac8\">极品=3</font>，<font color=\"#fe6d15\">史诗=3</font>，<font color=\"#ffbc09\">传奇=4</font>，<font color=\"#d92b2b\">神话=5</font><br>3阶装备：<font color=\"#5fc866\">优良=3</font>，<font color=\"#477bff\">稀有=3</font>，<font color=\"#a91ac8\">极品=4</font>，<font color=\"#fe6d15\">史诗=4</font>，<font color=\"#ffbc09\">传奇=5</font>，<font color=\"#d92b2b\">神话=6</font><br>4阶装备：<font color=\"#5fc866\">优良=4</font>，<font color=\"#477bff\">稀有=4</font>，<font color=\"#a91ac8\">极品=5</font>，<font color=\"#fe6d15\">史诗=5</font>，<font color=\"#ffbc09\">传奇=6</font>，<font color=\"#d92b2b\">神话=7</font><br><br>强化石在<font color='gold'>难5及以上难度的非正常模式中会掉落</font>，也可通过通行证、商城等途径获得<br><br>强化石有品阶，只能使用和装备品阶一致的强化石进行强化。<br>低品阶的强化石可以4:1的比例抵扣高1阶的强化石"
+	"ui_net_equip_enhance_change_value_tooltip"	"装备属性提升比例"
+	"ui_net_equip_enhance_material_tooltip"	"强化材料<br>需要使用和装备品阶一致的强化石作为材料。强化时，如果对应品阶的强化石数量不足，会尝试使用低阶强化进行抵扣。"
+	"ui_net_equip_enhance_material_tooltip_grade"	"{s:grade}阶强化石"
+	"ui_net_equip_enhance_material_count_tooltip"	"持有数量/需求数量"
+	
+	"ui_net_equip_enhance_result_success"	"强化成功"
+	"ui_net_equip_enhance_result_1"	"此装备不可强化"
+	"ui_net_equip_enhance_result_2"	"<Panel>数量不足，可通过以下方式强化："
+	"ui_net_equip_enhance_result_2_detail"	"使用{s:count}个<Panel>强化"
+	"ui_net_equip_enhance_result_3"	"强化失败，<Panel>数量不足"
+	"ui_net_equip_enhance_result_3_detail"	"强化石在<font color='gold'>难5及以上难度的非正常模式中会掉落</font>，也可通过通行证、商城等途径获得"
+	"ui_net_equip_enhance_result_4"	"强化失败"
+	
+	"ui_net_equip_enhance_invalid_grade_1"	"1阶装备不可强化"
+	
+	"ui_net_equip_enhance_bonus_now"	"当前等级"
+	"ui_net_equip_enhance_bonus_next"	"下一等级"
+	"ui_net_equip_enhance_button_enhance"	"强化"
+	"ui_net_equip_enhance_chance"	"成功率{s:chance}"
+	
+	"ui_net_equip_enhance_helper_button_store"	"打开商城"
+	"ui_net_equip_enhance_helper_button_close"	"我知道了"
+	
+	"ui_net_equip_enhance_item_hint"	"请拖动存档装备至此界面"
+	"ui_net_equip_enhance_item_desc"	"{s:grade}阶 / {s:quality}"
+	
+	"ui_mission_panel_title"	"随机任务"
+	"ui_mission_panel_title_timer"	"倒计时"
+	"ui_mission_panel_title_reward"	"奖励"
+	"ui_mission_panel_title_reward_extra"	"额外"
+	"ui_mission_tooltip_condition_value"	"任务完成情况：完成值/最大值，完成值达到一定值时，会激活下方的任务完成度"
+	"ui_mission_tooltip_step"	"任务完成度，不同的完成度会影响最终的任务奖励"
+	"ui_mission_tooltip_timer"	"倒计时结束后，将根据任务完成度发放奖励"
+	"ui_mission_tooltip_reward"	"任务结束后，自动在金币、属性、物品三种奖励中随机一种发放，并有几率额外获得选择宝物的机会（每局游戏第一次完成任务时必然会获得一次选择机会）"
+	"ui_mission_tooltip_reward_gold"	"获得随机数量的金币奖励，金币数量和当前波次以及当前持有的金币数量正相关"
+	"ui_mission_tooltip_reward_attribute"	"获得随机数量的主属性加成，加成数值和当前波次，当前的主属性值以及任务完成度正相关"
+	"ui_mission_tooltip_reward_item"	"获得一件装备，装备等阶和英雄等阶正相关，保底的装备品质和任务完成度有关：<br>D=优良<br>C=精致<br>B=极品<br>A=传说<br>S=史诗"
+	"ui_mission_tooltip_reward_extra"	"有几率获得宝物，几率与数量和任务完成度有关：<br>D=30%，1个<br>C=50%，1个<br>B=70%，1个<br>A=100%，1个<br>S=100%，2个"
+	"ui_mission_tooltip_mini"	"当前任务完成度：{s:step}<br><br><font color='#757575'>*点击显示任务详情</font>"
+	"ui_mission_refresh_tip"	"距离任务刷新还有：{s:time} s"
+	"ui_mission_refresh_tooltip_tile"	"随机任务刷新中"
+	"ui_mission_refresh_no_mission"	"当前无任务"
+	"ui_mission_result_label"	"本次任务奖励"
+	"ui_mission_result_reward_gold"	"金币增加：{s:value}"
+	"ui_mission_result_reward_attribute"	"主属性增加：{s:value}"
+	"ui_mission_result_reward_extra"	"抽取宝物的机会"
+	"ui_mission_bottom_button_deatil"	"详情"
+	"ui_mission_bottom_button_reward"	"奖励"
+	
+	"ui_mission_mini_new_tip"	"新任务：{s:name}"
+	
+	"mission_type_killmonster"	"击杀小怪"
+	"mission_type_killmonster_desc"	"每杀死一只进攻怪（各类BOSS都不计入），完成值+1"
+	"mission_type_usestonetime"	"使用命运石次数"
+	"mission_type_usestonetime_desc"	"每使用一次命运石，完成值+1"
+	"mission_type_costgold"	"消耗金币"
+	"mission_type_costgold_desc"	"每次消耗金币，完成值+消耗数量"
+	"mission_type_getgold"	"获得金币"
+	"mission_type_getgold_desc"	"每次获得金币，完成值+获得数量"
+	"mission_type_deathtime"	"死亡次数"
+	"mission_type_deathtime_desc"	"每死亡一次，完成值+1"
+	"mission_type_bosspoint"	"获得BOSS点数"
+	"mission_type_bosspoint_desc"	"BOSS死亡后，给予击杀者BOSS携带的BOSS点数"
+	
+	"ui_storage_title_treasure"	"宝物"
+	"ui_storage_title_treasure_tooltip"	"[宝物]是一些特殊的BUFF效果，获得后可以加强英雄的各方面能力。<br>可通过“随机任务”、“商店购买”、“击杀灾厄领主”等多种途径获得宝物"
+	"ui_storage_title_personal"	"个人"
+	"ui_storage_title_personal_tooltip"	"双击物品即可快速移动至物品栏中"
+	"ui_storage_title_public"	"公共"
+	"ui_storage_title_public_tooltip"	"ALT+左键点击物品，可向其他人发送该物品信息"
+	
+	"ui_storage_sell_batch"	"批量出售<br>点击后，选择要出售的物品，再点击[确定]即可批量出售物品"
+	
+	"ui_storage_context_menu_move_to_backpack"	"移至个人仓库"
+	"ui_storage_context_menu_move_to_body"	"移至物品栏"
+	"ui_storage_context_menu_sell"	"出售"
+	"ui_storage_context_menu_drop"	"丢弃"
+	"ui_storage_context_menu_alert"	"提醒队友"
+	"ui_storage_context_menu_decompose"	"分解"
+	
+	"ui_boss_dps_damage_per_sec"	"每秒伤害"
+	"ui_boss_dps_damage_total"	"总伤害"
+	
+	"ui_random_item_tooltip_grade"	"{s:value}阶"
+	"ui_random_item_tooltip_net_equip"	"存档装备"
+	"ui_random_item_tooltip_equip_score"	"战斗力：{d:value}"
+	"ui_random_item_tooltip_advanced_attributes_header"	"高级属性"
+	
+	"ui_game_data_tab_achievement"	"成就"
+	"ui_game_data_tab_store"	"商城"
+	"ui_game_data_tab_pass"	"天灾之路"
+	"ui_game_data_tab_mine"	"我的"
+	"ui_game_data_tab_warehouse"	"仓库"
+	
+	"ui_game_data_achievement_tab_hero"	"英雄"
+	"ui_game_data_achievement_tab_difficulty"	"难度"
+	"ui_game_data_achievement_tab_hidden"	"隐藏"
+	
+	"ui_game_data_achievement_finish_tooltip"	"{s:time} 达成"
+	
+	"ui_game_data_achievement_hero_tab_all"	"全部"
+	"ui_game_data_achievement_hero_tab_str"	"力量"
+	"ui_game_data_achievement_hero_tab_agi"	"敏捷"
+	"ui_game_data_achievement_hero_tab_int"	"智力"
+	"ui_game_data_achievement_hero_tab_other"	"其他"
+	
+	"ui_game_data_achievement_hero_search_holder"	"请输入英雄名字进行查找"
+	
+	"ui_game_data_achievement_hero_item_hero_all"	"全英雄"
+	"ui_game_data_achievement_hero_item_hero_str"	"力量英雄"
+	"ui_game_data_achievement_hero_item_hero_agi"	"敏捷英雄"
+	"ui_game_data_achievement_hero_item_hero_int"	"智力英雄"
+	
+	"ui_game_data_mine_title_account"	"账户"
+	"ui_game_data_mine_title_map_level"	"历练"
+	"ui_game_data_mine_title_invite"	"邀请"
+	
+	"ui_game_data_mine_refresh_ms"	"充值完成以后，如果仙石数量没有正常刷新，请手动点击刷新<br><br>冷却时间：30s"
+	"ui_game_data_mine_refresh_ms_cooldown"	"冷却中，请稍后再试"
+	
+	"ui_invite_title"	"填写邀请码"
+	"ui_invite_input_holder"	"输入邀请码，领取专属奖励"
+	"ui_invite_input_button"	"领取奖励"
+	"ui_invite_list_button_count"	"我的邀请"
+	"ui_invite_list_button_reward"	"我的奖励"
+	"ui_invite_bind_title"	"绑定玩家"
+	"ui_invite_bind_title_tooltip"	"在上方输入某玩家的专属邀请码，即可绑定该玩家<br><br>绑定成功后，该玩家邀请人数+1，你则获得以下奖励：<br>※立即获得2000晶石<br>※和绑定玩家一起游戏，结算时你们获得的历练值和晶石将提升10%<br><br>*绑定关系每月1日重置"
+	"ui_invite_my_code"	"你的邀请码："
+	"ui_invite_my_code_tips"	"如何推广？"
+	
+	"ui_invite_count"	"邀请 {s:now}/{s:max}"
+	"ui_invite_count_reward"	"奖励 {s:reward}"
+	
+	"ui_invite_active_error_empty"	"请输入邀请码"
+	"ui_invite_active_error_binded"	"已经绑定了一位玩家，不可重复绑定"
+	"ui_invite_active_error_binded_self"	"不能绑定自己"
+	 
+	"invite_fail0" "未知错误"
+	"invite_fail1" "参数错误"
+	"invite_fail2" "要绑定的玩家不存在<br><br>请确认该玩家是否进行过游戏，并进入了结算界面"
+	"invite_fail3" "已经绑定了某个玩家了"
+	"invite_fail4" "不能绑定自己"
+	"InvitePlatform_fail0" "未知错误"
+	"InvitePlatform_fail1" "参数错误"
+	"InvitePlatform_fail2" "邀请码不存在或已经失效"
+	"InvitePlatform_fail3" "已使用过该邀请码"
+	"consumefail"	"使用失败，请稍后再试"
+	"consumefail2"	"该物品不存在"
+	"keybox_fail1"	"宝箱钥匙数量不正确"
+	"keybox_fail2"	"存档背包格子数量不够"
+	"ui_invite_active_result_success"	"领取成功"
+	"ui_invite_bind_result_success"	"绑定成功"
+	"ui_invite_active_result_faild"	"领取失败，请稍后再试"
+	"ui_invite_reward_receive_time"	"领取时间：{s:time}"
+	
+	"ui_game_data_mine_invite_plus"	"PLUS+{s:plus}天"
+	
+	"ui_game_data_mine_plus_valid"	"PLUS有效期："
+	"ui_game_data_mine_plus_content"	"效果："
+	"ui_game_data_mine_plus_not_active"	"尚未激活"
+	"ui_game_data_mine_plus_permanent"	"永久"
+	
+	"ui_game_data_mine_cert_not_active"	"未激活，双击图标前往购买页"
+	"ui_game_data_mine_cert_active"		"<font color='gold'>已激活</font>"
+	
+	"ui_game_data_mine_map_level_exp"	"历练值：{s:now}/{s:max}"
+	"ui_game_data_mine_map_level_lvl"	"等级：{s:now}"
+	
+	"ui_game_data_mine_recharge_get_ms"	"获取仙石"
+	"ui_game_data_mine_recharge_count"	"数量"
+	"ui_game_data_mine_recharge_money"	"金额"
+	"ui_game_data_mine_recharge_unit"	"元"
+	"ui_game_data_mine_recharge_unit2"	"$"
+	"ui_game_data_mine_recharge_pay_option_alipay"	"支付宝"
+	"ui_game_data_mine_recharge_pay_option_wechat"	"微信"
+	"ui_game_data_mine_recharge_checkout"	"支付"
+	"ui_recharge_magic_stone"	"仙石"
+	"ui_recharge_count_tip"	"必须是100的整数倍"
+	"ui_recharge_option_paypal_tooltip"	"使用PayPal支付时，除了上方计算的总金额，还需要额外支付一定数量的手续费，请知悉"
+	"ui_recharge_paypal_open_browser"	"打开浏览器付款"
+	"ui_recharge_paypal_pay_confirm"	"我已付款"
+	"ui_recharge_paypal_description"	"付款流程：<br/>1.点击 [打开浏览器付款] 按钮前往PayPal网页进行支付<br>2.支付成功后，点击 [我已付款] 按钮，更新付款结果<br><br>·如果点击[我已付款]提示失败，可再次尝试。若多次失败，请联系游戏作者，感谢配合！"
+	
+	"ui_recharge_tooltip_error_no_option"	"请选择付款方式"
+	"ui_recharge_tooltip_cancel_confirm"	"确定要取消订单吗？"
+	"ui_recharge_tooltip_try_again"	"服务器未响应，请再试一次"
+	"ui_recharge_tooltip_success"	"付款成功，感谢支持!"
+	"ui_recharge_tooltip_closed"	"付款失败，该订单可能已被关闭"
+	"ui_recharge_tooltip_init_faild"	"发起支付请求失败，请重试"
+	"ui_recharge_expire_time"	"支付剩余时间：{s:timeout}"
+	"ui_recharge_tooltip_open_browser_confirm"	"即将离开游戏，在网页浏览器中进行支付操作，是否确认？"
+	"ui_recharge_tooltip_paypal_confirm"	"使用PayPal支付时，由于包含手续费，实际付款金额将比 {s:value} 多，是否确认？"
+	"ui_recharge_tooltip_count_invalid"	"数量必须是100的整数倍"
+	
+	"ui_recharge_pay_option_alipay"	"支付宝"
+	"ui_recharge_pay_option_wechat"	"微信"
+	"ui_recharge_pay_option_paypal"	"PayPal"
+	
+	"ui_warehouse_item_use_tooltip"	"<font color='#ffe16f'>左键双击或右键点击可进行使用</font>"
+	"ui_warehouse_item_action_use"	"使用"
+	
+	"ui_warehouse_item_use_faild"	"使用<font color='#ffe16f'>{s:name}</font>失败，请稍后再试"
+	
+	"ui_battlepass_description"	"<font color='gold'>概述</font><br>天灾之路是一个阶段性的活动，一般以一个自然月为一个赛季。<br/><br/>每个赛季内，持有通行证的玩家通过提升通行证等级可获取丰厚奖励。<br/><br/><font color='gold'>通行证等级</font><br>通行证等级主要通过完成[通行证任务]来提升。任务包括每日任务（每天早上8:00刷新）和每周任务（周一早上8:00刷新）。<br>完成任务后，在游戏结算时发放通行证经验奖励。<br>新的赛季通行证等级将被重置。<br/><br/><font color='gold'>高级通行证</font><br>玩家默认持有基础通行证，如有需要，可在商城购买[高级通行证]。<br>激活高级通行证后，将获得双倍奖励，享受双倍快乐！<br><font color='#00FF00'>高级通行证有效期为一个赛季</font>"
+	"ui_bp_basic_title"	"基础通行证<br><br>通过完成任务提升通行证等级，即可领取丰厚奖励"
+	"ui_bp_advanced_title"	"高级通行证<br><br>需要在商城购买 [高级通行证] 激活后，才可领取这些奖励"
+	
+	"ui_bp_level_tooltip"	"通行证等级<br><br>完成右侧任务获取通行证经验来提升等级"
+	"ui_game_data_pass_reward_received_tooltip"	"领取于 {s:time}"
+	"ui_game_data_pass_reward_received_success_tooltip"	"领取成功"
+	"ui_game_data_pass_reward_received_faild_tooltip"	"领取失败，请稍后再试"
+	"ui_game_data_pass_cant_receive_tooltip"	"等级不足，无法领取奖励"
+	"ui_game_data_pass_cant_receive_tooltip2"	"尚未激活高级通行证，是否前去购买？"
+	"ui_game_data_pass_task_daily"	"每日"
+	"ui_game_data_pass_task_weekly"	"每周"
+	"ui_game_data_pass_task_finished_tooltip"	"{s:finish}完成"
+	"ui_game_data_pass_season_tip"	"第{s:season}赛季，距离结束还有{s:time}天"
+	"ui_game_data_pass_season_tip2"	"第{s:season}赛季，距离结束还有{s:time}"
+	"ui_game_data_pass_season_tip3"	"第{s:season}赛季，已结束"
+	//英文翻译到时候要给时间加上UTC+08:00的说明
+	"ui_game_data_pass_season_tip_tooltip"	"赛季结束时间：<br/>{s:timeTooltip}"
+	
+	"ui_game_data_store_title_pass"	"通行证"
+	"ui_game_data_store_title_groceries"	"道具"
+	"ui_game_data_store_buy_title"	"购买商品"
+	"ui_game_data_store_buy_count"	"数量"
+	"ui_game_data_store_buy_balance"	"余额：{d:value}"
+	"ui_game_data_store_buy_option_ms"	"仙石购买"
+	"ui_game_data_store_buy_option_js"	"晶石购买"
+	"ui_game_data_store_buy_own_item_tip"	"已拥有，不可重复购买"
+	
+	"ui_game_data_store_buy_count_tooltip"	"请输入数量"
+	
+	"ui_game_data_store_buy_result_tooltip_success"	"你获得了<font color='#ffe16f'>{s:name}</font>"
+	"ui_game_data_store_buy_result_tooltip_success_stack"	"获得<font color='#ffe16f'>{s:count}</font>个<font color='#ffe16f'>{s:name}</font>，目前持有<font color='#ffe16f'>{s:total}</font>个"
+	"ui_game_data_store_buy_result_tooltip_faild"	"购买失败，请稍后再试"
+	
+	"store_catalog_content_search_holder"	"请输入物品名称进行查找"
+	
+	"ui_store_buy_balance_not_enough"	"余额不足"
+	"ui_store_buy_balance_check_tooltip_1"	"仙石不足"
+	"ui_store_buy_balance_check_tooltip_2"	"晶石不足<br><br><span class='SmallText'>晶石主要通过游戏结算奖励、天灾之路等途径获得</span>"
+	
+	"ui_store_buy_result_button_check"	"前往查看"
+	"ui_store_buy_result_button_use"	"立即使用"
+	"ui_store_buy_result_button_jing"	"知道了"
+	"ui_store_buy_result_button_xian"	"前往充值"
+	
+	"store_catalog_all"	"全部"
+	"store_catalog_consumable"	"消耗品"
+	"store_catalog_certificate"	"凭证"
+	"store_catalog_chest"	"钥匙"
+	"store_catalog_package"	"礼包"
+	"store_catalog_visual"	"外观"
+	
+	"store_catalog_secondary_all"	"全部"
+	"store_catalog_secondary_none"	"其他"
+	"store_catalog_secondary_plus"	"PLUS"
+	"store_catalog_secondary_pass"	"通行证"
+	"store_catalog_secondary_vip"	"会员"
+	"store_catalog_secondary_drug"	"药剂"
+	"store_catalog_secondary_rune"	"符文"
+	"store_catalog_secondary_pet"	"宠物"
+	"store_catalog_secondary_title"	"称号"
+	"store_catalog_secondary_aura"	"光环"
+	"store_catalog_secondary_equip_2"	"二阶装备"
+	"store_catalog_secondary_equip_3"	"三阶装备"
+	"store_catalog_secondary_enhance"	"强化"
+	"store_catalog_secondary_normal_1"	"通用"
+	
+	"store_item_own_mark"	"前往查看"
+	"store_item_own_mark_tooltip"	"已永久持有"
+	"store_item_tooltip_bp_cant_buy_last"	"赛季结束前一天，不可购买通行证"
+	
+	"store_item_tooltip_buy_plus_success"	"购买成功<br/><br/>PLUS有效期延长{s:day}天，至{s:invalid}"
+	"store_item_tooltip_buy_plus_permanent_success"	"购买成功，PLUS永久生效"
+	
+	"store_item_plus_desc_mine"	"金钱加成+20%<br/>经验加成+20%<br/>英雄随机次数+1<br/>历练值获取+30%<br/>每次开局奖励1级天书x1"
+	"store_item_plus_permanent_desc_mine"	"金钱加成+20%<br/>经验加成+20%<br/>英雄随机次数+1<br/>历练值获取+50%<br/>每次开局奖励1级天书x1"
+	
+	"store_item_shopmall_1"		"高级通行证"
+	"store_item_shopmall_1_desc"	"购买后激活以下效果：<br/>·解锁[天灾之路]高级通行证奖励<br/>·立刻获得500通行证经验"
+	"store_item_shopmall_2"		"PLUS月卡"
+	"store_item_shopmall_2_desc"	"PLUS效果：<br/>金钱加成+20%<br/>经验加成+20%<br/>英雄随机次数+1<br/>历练值获取+30%<br/>每次开局奖励1级天书x1<br><br>购买后，PLUS有效期延长<font color='gold'>31天</font>"
+	
+	"store_item_shopmall_45"		"PLUS季卡"
+	"store_item_shopmall_45_desc"	"PLUS效果：<br/>金钱加成+20%<br/>经验加成+20%<br/>英雄随机次数+1<br/>历练值获取+30%<br/>每次开局奖励1级天书x1<br><br>购买后，PLUS有效期延长<font color='gold'>93天</font>"
+	
+	"store_item_shopmall_46"		"PLUS永久卡"
+	"store_item_shopmall_46_desc"	"PLUS效果：<br/>金钱加成+20%<br/>经验加成+20%<br/>英雄随机次数+1<br/>历练值获取+50%<br/>每次开局奖励1级天书x1<br><br>购买后，<font color='yellow'>PLUS永久生效</font><br>并立刻获得限定宠物：<font color='yellow'>末日宝宝</font>（出战时英雄技能等级+2,金钱加成+12%）"
+
+	"store_item_shopmall_3"		"智慧之书"
+	"store_item_shopmall_3_desc"	"每局游戏开局，奖励一本技能秘笈<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_4"		"贤者神石"
+	"store_item_shopmall_4_desc"	"金钱加成+30%<br/>经验加成+30%<br/><br/>购买后，下一局生效"
+	"store_item_shopmall_5"		"初级会员"
+	"store_item_shopmall_5_desc"	"初始三维+10<br/>初始金钱+2000<br/>初始杀敌数+50"
+	"store_item_shopmall_6"		"中级会员"
+	"store_item_shopmall_6_desc"	"初始三维+15<br/>金钱加成+5%<br/>经验加成+5%<br/>最终伤害+3%<br/>初始杀敌数+100"
+	"store_item_shopmall_7"		"高级会员"
+	"store_item_shopmall_7_desc"	"全属性+10%<br/>初始三维+20<br/>减伤系数+20<br/>最终伤害+5%<br/>金钱加成+12%<br/>经验加成+12%<br/>每10秒杀敌数+10<br/>宝物槽位额外+3<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_8"		"基础符文书"
+	"store_item_shopmall_8_desc"	"每局游戏开局，随机激活3个不重复的基础符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_9"		"中级符文书Ⅰ"
+	"store_item_shopmall_9_desc"	"每局游戏开局，随机激活1个不重复的中级符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_10"		"高级符文书Ⅰ"
+	"store_item_shopmall_10_desc"	"每局游戏开局，随机激活1个不重复的高级符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_11"		"超魔符文书Ⅰ"
+	"store_item_shopmall_11_desc"	"每局游戏开局，随机激活1个不重复的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_12"		"特殊符文书Ⅰ"
+	"store_item_shopmall_12_desc"	"每局游戏开局，随机激活1个的特殊天赋<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_13"		"技能秘诀"
+	"store_item_shopmall_13_desc"	"使用后获得一本技能秘笈<br/><br/>每局最多使用5次，单局有效"
+	"store_item_shopmall_14"		"宝物"
+	"store_item_shopmall_14_desc"	"使用后获得一件宝物<br/><br/>每局最多使用1次，单局有效"
+	"store_item_shopmall_15"		"初级符文页"
+	"store_item_shopmall_15_desc"	"使用后随机激活1个的基础符文<br/><br/>每局最多使用3次，单局有效"
+	"store_item_shopmall_16"		"中级符文页"
+	"store_item_shopmall_16_desc"	"使用后随机激活1个的中级符文<br/><br/>每局最多使用2次，单局有效"
+	"store_item_shopmall_17"		"高级符文页"
+	"store_item_shopmall_17_desc"	"使用后随机激活1个的高级符文<br/><br/>每局最多使用1次，单局有效"
+	"store_item_shopmall_47"		"超魔符文页"
+	"store_item_shopmall_47_desc"	"使用后随机激活1个的超魔符文<br/><br/><br/>每局最多使用1次，单局有效。"
+	"store_item_shopmall_48"		"特殊符文页"
+	"store_item_shopmall_48_desc"	"使用后随机激活1个的特殊符文<br/><br/><br/>每局最多使用1次，单局有效"
+	"store_item_shopmall_18"		"战吼药剂"
+	"store_item_shopmall_18_desc"	"使用后9999码范围内的友方英雄：<br/>基础攻击：+50%<br/>持续时间：30s<br/>冷却时间：1200s"	
+	"store_item_shopmall_19"		"狂暴药剂"
+	"store_item_shopmall_19_desc"	"使用后9999码范围内的友方英雄：<br/>攻击速度：+50<br/>持续时间：30s<br/>冷却时间：1200s"
+	"store_item_shopmall_20"		"秘术药剂"
+	"store_item_shopmall_20_desc"	"使用后9999码范围内的友方英雄：<br/>技能伤害：+20%<br/>持续时间：30s<br/>冷却时间：1200s"
+	"store_item_shopmall_21"		"潜能药剂"
+	"store_item_shopmall_21_desc"	"使用后9999码范围内的友方英雄：<br/>冷却缩减：-20%<br/>持续时间：30s<br/>冷却时间：1200s"
+	"store_item_shopmall_22"		"守护药剂"
+	"store_item_shopmall_22_desc"	"使用后9999码范围内的友方英雄：<br/>减伤系数：+30<br/>持续时间：30s<br/>冷却时间：1200s"
+	"store_item_shopmall_23"		"二阶极品装备钥匙"
+	"store_item_shopmall_23_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：二阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_24"		"二阶史诗装备钥匙"
+	"store_item_shopmall_24_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：二阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_25"		"二阶传奇装备钥匙"
+	"store_item_shopmall_25_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：二阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_26"		"三阶极品装备钥匙"
+	"store_item_shopmall_26_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：三阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_27"		"三阶史诗装备钥匙"
+	"store_item_shopmall_27_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：三阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_28"		"三阶传奇装备钥匙"
+	"store_item_shopmall_28_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_29"		"二阶极品武器装备钥匙"
+	"store_item_shopmall_29_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：武器<br>品阶：二阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_30"		"二阶极品防具装备钥匙"
+	"store_item_shopmall_30_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：防具<br>品阶：二阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_31"		"二阶极品首饰装备钥匙"
+	"store_item_shopmall_31_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：首饰<br>品阶：二阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_32"		"二阶极品特殊装备钥匙"
+	"store_item_shopmall_32_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：特殊装备<br>品阶：二阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_33"		"三阶极品武器装备钥匙"
+	"store_item_shopmall_33_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：武器<br>品阶：三阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_34"		"三阶极品防具装备钥匙"
+	"store_item_shopmall_34_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：防具<br>品阶：三阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_35"		"三阶极品首饰装备钥匙"
+	"store_item_shopmall_35_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：首饰<br>品阶：三阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_36"		"三阶极品特殊装备钥匙"
+	"store_item_shopmall_36_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：特殊装备<br>品阶：三阶<br>最低品质：<font color=\"#a91ac8\">极品</font>"
+	"store_item_shopmall_37"		"三阶史诗武器装备钥匙"
+	"store_item_shopmall_37_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：武器<br>品阶：三阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_38"		"三阶史诗防具装备钥匙"
+	"store_item_shopmall_38_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：防具<br>品阶：三阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_39"		"三阶史诗首饰装备钥匙"
+	"store_item_shopmall_39_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：首饰<br>品阶：三阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_40"		"三阶史诗特殊装备钥匙"
+	"store_item_shopmall_40_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：特殊装备<br>品阶：三阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_41"		"三阶传奇武器装备钥匙"
+	"store_item_shopmall_41_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：武器<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_42"		"三阶传奇防具装备钥匙"
+	"store_item_shopmall_42_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：防具<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_43"		"三阶传奇首饰装备钥匙"
+	"store_item_shopmall_43_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：首饰<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_44"		"三阶传奇特殊装备钥匙"
+	"store_item_shopmall_44_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：特殊装备<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_49"		"中级符文书Ⅱ"
+	"store_item_shopmall_49_desc"	"每局游戏开局，随机激活1个不重复的中级符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_50"		"中级符文书Ⅲ"
+	"store_item_shopmall_50_desc"	"每局游戏开局，随机激活1个不重复的中级符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_51"		"高级符文书Ⅱ"
+	"store_item_shopmall_51_desc"	"每局游戏开局，随机激活1个不重复的高级符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_52"		"高级符文书Ⅲ"
+	"store_item_shopmall_52_desc"	"每局游戏开局，随机激活1个不重复的高级符文<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_53"		"白银会员"
+	"store_item_shopmall_53_desc"	"全属性+10%<br/>初始三维+20<br/>幸运值+10<br/>天命值+30(击杀灾厄BOSS掉落高品质装备的概率提升30%)<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_54"		"黄金会员"
+	"store_item_shopmall_54_desc"	"全属性+20%<br/>初始三维+50<br/><br/>幸运值+15<br/>天命值+50(击杀灾厄BOSS掉落高品质装备的概率提升50%)<br/><br/><font color='gold'>永久生效</font>"
+
+
+	"store_item_shopmall_55"		"超魔符文书Ⅱ"
+	"store_item_shopmall_55_desc"	"每局游戏开局，随机激活1个不重复的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_56"		"超魔符文书Ⅲ"
+	"store_item_shopmall_56_desc"	"每局游戏开局，随机激活1个不重复的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_57"		"特殊符文书Ⅱ"
+	"store_item_shopmall_57_desc"	"每局游戏开局，随机激活1个不重复的特殊符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_58"		"特殊符文书Ⅲ"
+	"store_item_shopmall_58_desc"	"每局游戏开局，随机激活1个不重复的特殊符文<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_59"		"1级神秘宝物书"
+	"store_item_shopmall_59_desc"	"每局游戏开局，给予一本1级神秘宝物书<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_60"		"2级神秘宝物书"
+	"store_item_shopmall_60_desc"	"每局游戏开局，给予一本2级神秘宝物书<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_61"		"3级神秘宝物书"
+	"store_item_shopmall_61_desc"	"每局游戏开局，给予一本3级神秘宝物书<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_62"		"4级神秘宝物书"
+	"store_item_shopmall_62_desc"	"每局游戏开局，给予一本4级神秘宝物书<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_63"		"11阶能量之心凭证"
+	"store_item_shopmall_63_desc"	"可以将10阶能量之心升级成11阶能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_64"		"12阶能量之心凭证"
+	"store_item_shopmall_64_desc"	"可以将11阶能量之心升级成12阶能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_65"		"13阶能量之心凭证"
+	"store_item_shopmall_65_desc"	"可以将12阶能量之心升级成13阶能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_66"		"14阶能量之心凭证"
+	"store_item_shopmall_66_desc"	"可以将13阶能量之心升级成14阶能量之心<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_67"		"吞噬卡"
+	"store_item_shopmall_67_desc"	"每局游戏开局，给予一颗吞噬丹<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_68"		"征战钥匙"
+	"store_item_shopmall_68_desc"	"使用后可开启通用宝箱获得一件商城道具<br/><br/>一级奖池（90%）：<br/>晶石<br/>基础符文页<br/>中级符文页<br/>高级符文页<br/>二阶强化石<br/>三阶强化石<br/>四阶强化石<br/><br/>二级奖池（9%）：<br/>初级会员<br/>中级会员<br/>贤者神石<br/>中级符文书Ⅰ<br/>中级符文书Ⅱ<br/>中级符文书Ⅲ<br/>一级神秘宝物书<br/><br/>三级奖池（0.9%）：<br/>100w晶石（7.2%）<br/>吞噬卡（10.1%）<br/>白银会员（1.8%）<br/>高级符文书Ⅰ（33.3%）<br/>高级符文书Ⅱ（10.6%）<br/>高级符文书Ⅲ（3.3%）<br/>超魔符文书Ⅰ（5.4%）<br/>超魔符文书Ⅱ（1.8%）<br/>超魔符文书Ⅲ（0.6%）（非卖品）<br/>11级能量之心（20%）<br/>12级能量之心（5.4%）<br/>二级神秘宝物书（3.6%）<br/><br/>四级奖池（0.1%）：<br/>黄金会员（37.1%）<br/>特殊符文书Ⅰ（20.6%）<br/>特殊符文书Ⅱ（6.1%）<br/>特殊符文书Ⅲ（2%）（非卖品）<br/>13级能量之心（20.6%）<br/>14级能量之心（5.1%）<br/>三级神秘宝物书（8.2%）<br/><br/><font color='gold'>奖池内除[非卖品]外的道具会不定期在商城中进行出售</font>"
+
+
+
+	"store_item_shopmall_cw_1_1"		"晴儿宝宝"
+	"store_item_shopmall_cw_1_1_desc"	"类别：宠物<br/>作用：出战时英雄杀怪金币+10"
+	"store_item_shopmall_cw_1_2"		"金龟子"
+	"store_item_shopmall_cw_1_2_desc"	"类别：宠物<br/>作用：出战时英雄金钱加成+5%"
+	"store_item_shopmall_cw_1_3"		"碧磷"
+	"store_item_shopmall_cw_1_3_desc"	"类别：宠物<br/>作用：出战时英雄经验加成+5%"
+	"store_item_shopmall_cw_1_101"		"冰龙宝宝"
+	"store_item_shopmall_cw_1_101_desc"	"类别：宠物<br/>作用：出战时英雄杀怪增加金币+10,金钱加成+5%"
+	"store_item_shopmall_cw_1_201"		"金色冰龙宝宝"
+	"store_item_shopmall_cw_1_201_desc"	"类别：宠物<br/>作用：出战时英雄杀怪增加金币+10,金钱加成+5%,经验加成+5%"
+	"store_item_shopmall_cw_3_11"		"末日宝宝"
+	"store_item_shopmall_cw_3_11_desc"	"类别：宠物<br/>作用：出战时英雄技能等级+2,金钱加成+12%"
+	"store_item_shopmall_gh_1_1"		"坚韧光环"
+	"store_item_shopmall_gh_1_1_desc"	"类别：光环<br/>作用：出战时英雄护甲+10"
+	"store_item_shopmall_gh_1_2"		"御魔光环"
+	"store_item_shopmall_gh_1_2_desc"	"类别：光环<br/>作用：出战时英雄魔法抗性+10"
+	"store_item_shopmall_gh_1_3"		"回复光环"
+	"store_item_shopmall_gh_1_3_desc"	"类别：光环<br/>作用：出战时英雄生命回复+1%"
+	"store_item_shopmall_gh_1_4"		"冥想光环"
+	"store_item_shopmall_gh_1_4_desc"	"类别：光环<br/>作用：出战时英雄魔法回复+3"
+	"store_item_shopmall_gh_1_101"		"生命光环"
+	"store_item_shopmall_gh_1_101_desc"	"类别：光环<br/>作用：出战时英雄护甲+10,魔法抗性+10"
+	"store_item_shopmall_gh_1_201"		"金色生命光环"
+	"store_item_shopmall_gh_1_201_desc"	"类别：光环<br/>作用：出战时英雄生命回复+1%,魔法回复+3"	
+	"store_item_shopmall_ch_1_1"		"无名"
+	"store_item_shopmall_ch_1_1_desc"	"类别：称号<br/>作用：出战时英雄英雄全属性+30<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_1_2"		"无名"
+	"store_item_shopmall_ch_1_2_desc"	"类别：称号<br/>作用：出战时英雄英雄基础全属性+2%<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_1_3"		"无名"
+	"store_item_shopmall_ch_1_3_desc"	"类别：称号<br/>作用：出战时英雄英雄主属性+50<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_1_4"		"无名"
+	"store_item_shopmall_ch_1_4_desc"	"类别：称号<br/>作用：出战时英雄英雄基础主属性+4%<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_2_13"		"饭店玩家--白"
+	"store_item_shopmall_ch_2_13_desc"	"类别：称号<br/>作用：天命值+10<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_3_13"		"饭店玩家--橙"
+	"store_item_shopmall_ch_3_13_desc"	"类别：称号<br/>作用：天命值+15<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_4_13"		"饭店玩家--金"
+	"store_item_shopmall_ch_4_13_desc"	"类别：称号<br/>作用：天命值+20<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_1_101"		"无名"
+	"store_item_shopmall_ch_1_101_desc"	"类别：称号<br/>作用：出战时英雄英雄个人技能等级+1<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_1_201"		"无名"
+	"store_item_shopmall_ch_1_201_desc"	"类别：称号<br/>作用：出战时英雄英雄个人技能等级+1.5<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_2_14"		"大佬"
+	"store_item_shopmall_ch_2_14_desc"	"类别：称号<br/>作用：天命值+5,幸运值+3<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_3_14"		"混子"
+	"store_item_shopmall_ch_3_14_desc"	"类别：称号<br/>作用：天命值+8,幸运值+5<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_4_14"		"萌新"
+	"store_item_shopmall_ch_4_14_desc"	"类别：称号<br/>作用：天命值+13,幸运值+8<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	
+	"store_item_shopmall_sstone_2"	"2阶强化石"
+	"store_item_shopmall_sstone_2_desc"	"可用来强化2阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_3"	"3阶强化石"
+	"store_item_shopmall_sstone_3_desc"	"可用来强化3阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_4"	"4阶强化石"
+	"store_item_shopmall_sstone_4_desc"	"可用来强化4阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_5"	"5阶强化石"
+	"store_item_shopmall_sstone_5_desc"	"可用来强化5阶及以上品阶的存档装备"
+	
+	"ui_tooltip_suit_not_equip"	"<未装备>"
+
+	"map_level_bonus_2"						"全属性+10*(历练等级-1)"
+	"map_level_bonus_3"						"金币+500*(历练等级-1)"
+	"map_level_bonus_4"						"攻击速度+20"
+	"map_level_bonus_5"						"杀怪金币+20"
+	"map_level_bonus_6"						"金钱收益+10%"
+	"map_level_bonus_7"						"经验收益+10%"
+	"map_level_bonus_8"						"个人技能等级+1"
+	"map_level_bonus_9"						"升级全属性+5"
+	"map_level_bonus_10"					"初始杀敌数+200"
+	"map_level_bonus_11"					"每10秒杀敌数+10"
+	"map_level_bonus_12"					"技能伤害+15%"
+	"map_level_bonus_13"					"暴击伤害+30%"
+	"map_level_bonus_14"					"暴击概率+5%"
+	"map_level_bonus_15"					"附加伤害+5%"
+	"map_level_bonus_16"					"最终伤害+5%"
+	"map_level_bonus_17"					"初始杀敌数+300"
+	"map_level_bonus_18"					"金钱收益+20%"
+	"map_level_bonus_19"					"经验收益+20%"
+	"map_level_bonus_20"					"个人技能等级+1"
+
+	
+	
+	"ui_shop_title_primary" "初级物品"
+	"ui_shop_title_middle" "中级物品"
+	"ui_shop_title_advanced" "高级物品"
+	
+	"ui_shop_title_boss_score" "BOSS点数"
+	"ui_shop_title_kills" "杀敌积分"
+	
+	"ui_shop_title_treasure" "宝物"
+	"ui_shop_title_storage" "仓库"
+	"ui_shop_button_tooltip" "点击打开游戏商店<br><br>快捷键：P"
+	
+	"ui_shop_drag_sell"	"拖至此处出售"
+	
+	"ui_message_system"	"系统提示"
+	"ui_message_enemy"	"酱油怪"
+	"ui_message_enemy_taunt_1"	"叽叽叽..."
+	"ui_message_enemy_taunt_2"	"咕咕咕..."
+	"ui_message_enemy_taunt_3"	"？？？"
+	"ui_message_boss_taunt_1"	"就这？"
+	"ui_message_boss_taunt_2"	"死了个最菜的"
+	"ui_message_boss_taunt_3"	"小子，再回去练练吧"
+	"ui_message_boss_taunt_4"	"嗯...刚才是不是拍死了一只蚊子"
+	"ui_message_boss_taunt_5"	"哈？"
+	"ui_message_boss_taunt_6"	"？"
+	"ui_message_boss_taunt_7"	"一群蝼蚁"
+	"ui_message_boss_taunt_8"	"第几次了，我都烦了！"
+	"ui_message_boss_taunt_9"	"别送了，再送暴露了"
+	"ui_message_boss_taunt_10"	"好了好了，Q币已经发货了..."
+	"ui_message_boss_taunt_11"	"我还没用力，你怎么就躺下了？"
+	
+	"ui_status_difficulty"	"难度：{s:value}"
+	"ui_status_time"	"游戏时长：{s:value}"
+	
+	"ui_bc_title"	"领主挑战"
+	"ui_bc_title_tooltip"	"点击领主头像可以召唤相应的领主，击败后可获得丰厚奖励<br><br>[套装领主]、[个人领主]会出现在自己出生点对应的路线上<br><br>[团队领主]会出现地图中央的祭坛上"
+	"ui_bc_mini_tooltip"	"点击打开领主挑战界面，可以挑战各种领主。<br>击败领主后可获得套装、随机装备、BOSS点数等各种奖励。"
+	"ui_bc_tab_suit"	"套装领主"
+	"ui_bc_tab_personal"	"个人领主"
+	"ui_bc_tab_team"	"团队领主"
+	
+	"ui_bc_tab_suit_short"	"套装"
+	"ui_bc_tab_personal_short"	"个人"
+	"ui_bc_tab_team_short"	"团队"
+	
+	"ui_bc_combat_power"	"英雄等级要求：{s:value}"
+	"ui_bc_suit_grade_1"	"初级领主"
+	"ui_bc_suit_grade_2"	"中级领主"
+	"ui_bc_suit_grade_3"	"高级领主"
+	"ui_bc_suit_grade_4"	"顶级领主"
+	
+	"ui_dynamic_cost_gold"	"开启花费金币 <font color='white'>{s:value}</font>"
+	"ui_dynamic_cost_kill_score"	"花费杀敌积分 <font color='white'>{s:value}</font>"
+	"ui_dynamic_cost_boss_point"	"花费BOSS点数 <font color='white'>{s:value}</font>"
+	
+	"ui_scoreboard_title_level"	"等级"
+	"ui_scoreboard_title_gold"	"金币"
+	"ui_scoreboard_title_bosspoint"	"BOSS点数"
+	"ui_scoreboard_title_killscore"	"杀敌积分"
+	"ui_scoreboard_title_death"	"死亡次数"
+	"ui_scoreboard_title_kill"	"杀敌数"
+	
+	"ui_endgame_mvp_kill"	"杀敌数"
+	"ui_endgame_mvp_boss_damage"	"BOSS伤害"
+	"ui_endgame_player_header_difficulty"	"难度{s:difficulty_num}：{s:difficulty} / {s:mode}"
+	"ui_endgame_player_header_kill"	"杀敌数"
+	"ui_endgame_player_header_boss_damage"	"BOSS伤害"
+	"ui_endgame_player_header_jing"	"晶石奖励"
+	"ui_endgame_player_header_gold"	"总金币"
+	"ui_endgame_player_header_map_exp"	"历练值"
+	"ui_endgame_player_header_ability"	"技能"
+	"ui_endgame_player_header_treasure"	"宝物"
+	"ui_endgame_player_header_net_item"	"存档装备"
+	"ui_endgame_player_header_store_item"	"额外奖励"
+	"ui_endgame_button_achievement"	"新成就"
+	"ui_endgame_button_improve"	"我要变强"
+	"ui_endgame_button_leave"	"离开游戏"
+	"ui_endgame_button_close"	"关闭界面"
+	"ui_endgame_button_close_tooltip"	"关闭后，可通过左上角【游戏结算界面】入口再次打开"
+	"ui_endgame_achievement_tooltip" "本局共达成 {s:count} 个成就"
+	"ui_endgame_achievement_tooltip_hidden"	"隐藏成就"
+	"ui_endgame_boss_time_tooltip"	"击杀耗时"
+	
+	"ui_top_actions_game_data"	"个人档案"	
+	"ui_top_actions_ranklist"	"排行榜"	
+	"ui_top_actions_game_finish"	"游戏结算界面"	
+	"ui_top_actions_store"	"商城"
+	"ui_top_actions_config"	"镜头高度"
+	"ui_top_actions_game_ui_desc"	"游戏功能介绍"
+	"ui_top_actions_game_ui_desc_tooltip"	"点击查看游戏功能介绍"
+	
+	"ui_minimap_action_key"	"钥匙，点击后打开[寻宝]界面"
+	"ui_minimap_action_ability"	"技能秘诀"
+	"ui_minimap_action_drug"	"药剂"
+	"ui_minimap_action_rune"	"符文页"
+	"ui_minimap_action_treasure"	"宝物"
+	"ui_minimap_action_tooltip_own"	"<font color='white'>持有：{d:count}</font>"
+	
+	"ui_minimap_action_go_store"	"数量不足，是否前往商城购买？"
+	
+	"ui_waiting_overtime"	"操作超时，请稍后再试<br><br><span class='BottomTip'>点击任意位置关闭此界面</span>"
+	
+	"ui_chest_result_return_game"	"返回游戏"
+	"ui_chest_result_continue"	"继续开宝箱"
+	"ui_chest_open_tip"	"点击宝箱即可使用当前选择的钥匙开启"
+	"ui_chest_open_all"	"打开全部（{s:count}）"
+	"ui_chest_close"	"点击此处关闭界面"
+	"ui_chest_keys_title"	"左键选择钥匙"
+	"ui_chest_keys_using"	"※当前使用的钥匙，鼠标双击可定位至该钥匙"
+	"ui_chest_hint_no_keys"	"没有钥匙，是否前去购买？"
+	"ui_chest_hint_no_keys2"	"没有钥匙"
+	"ui_chest_type_equip"	"装备宝箱<br><br>打开后可获得存档装备"
+	"ui_chest_type_normal"	"通用宝箱<br><br>打开后可获得各种道具，道具类型取决于使用的钥匙"
+	
+	"ui_chest_own_tooltip"	"重复获得唯一性道具，已转换为晶石"
+	
+	"ui_config_camera"	"镜头高度"
+	"ui_config_camera_tooltip"	"镜头越高视野越广，但是可能导致卡顿，请酌情设置"
+	
+	"ui_rank_tab_artifact"	"神器榜"
+	"ui_rank_tab_mapexp"	"历练榜"
+	"ui_rank_content_title_rank"	"排名"
+	"ui_rank_content_title_artifact"	"神器"
+	"ui_rank_content_title_score"	"战斗力"
+	"ui_rank_content_title_owner"	"拥有者"
+	
+	"ui_loading_qq_group"	"点击加入QQ群："
+	"ui_loading_qq_group_tooltip"	"点击后将暂时离开游戏，打开网页浏览器以加入QQ群<br><br>邀请码互相绑定，推荐进入互邀群。<br>请大家尽量不要在聊天群刷屏互邀，感谢配合！"
+	
+	//-----------------------------------------UI V2 end----------------------------------------------
+	
+	"modifier_bw_1_1_Description"	"护甲+20点<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_2_Description"	"生命回复+200,生命回复+3%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_3_Description"	"魔法回复+10,魔法回复+1%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_4_Description"	"力量+200,魔法抗性+20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_5_Description"	"敏捷+200,攻击速度+30<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_6_Description"	"智力+200,技能增强+20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_7_Description"	"全属性+300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_8_Description"	"每秒金钱+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_9_Description"	"一次性给与3w金币<br/>每一波增加25%的金币获得量<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_10_Description"	"一次性给与10W经验<br/>每一波增加25%的经验获得量<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+	
+	"modifier_bw_1_11_Description"	"攻击力+30%<br/>攻击速度+30<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_12_Description"	"暴击概率+5%<br/>暴击伤害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_13_Description"	"魔法值+150<br/>魔法回复+15<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_1_14_Description"	"智力+400<br/>每10s回复周围1000码友方单位125点魔法值<br/><br/><br/><br/><font color=\"#cfbf81\">1级宝物</font>"
+
+	"modifier_bw_2_1_Description"	"护甲+30点<br/>反弹20%受到的伤害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_2_Description"	"生命回复+5%<br/>魔法抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_3_Description"	"攻击力+2000<br/>每次攻击有20%的概率造成500%的伤害<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+	
+	"modifier_bw_2_4_Description"	"智力+600<br/>技能增强+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_5_Description"	"敏捷+600<br/>攻击速度+50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_6_Description"	"力量+600<br/>魔法抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_7_Description"	"1200码光环<br/>+15护甲<br/>+2000生命回复<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_7_buff_Description"	"+15护甲<br/>+2000生命回复<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_8_Description"	"1200码范围光环<br/>+30点攻速<br/>+5%移动速度<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_8_buff_Description"	"+30点攻速<br/>+5%移动速度<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_9_Description"	"+60移动速度<br/>+300全属性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_10_Description"	"+1200力量<br/>+2000攻击力<br/>+15点护甲<br/>每秒损失4%当前生命值<br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_11_Description"	"+30000生命值<br/>+2000生命回复<br/>50%格挡1000点近战攻击或者500点远程攻击伤害<br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_12_Description"	"力量+550<br/>敏捷+550<br/>攻击距离+200<br/> (<font color=\"#ffffff\">攻击距离加成只对远程英雄生效</font>)<br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_13_Description"	"攻击速度+40<br/>攻击有20%的概率释放连环闪电<br/>在650范围内4个目标之间跳跃<br/>闪电将造成3*主属性的魔法伤害。触发闪电时无视闪避<br/>冷却CD 0.5S<br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_14_Description"	"魔法抗性+30<br/>护甲-20<br/>技能增强+25%<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_15_Description"	"攻击距离+100<br/>攻击减少目标20点魔法抗性,持续6S<br/>(<font color=\"#ffffff\">只对远程英雄生效</font>)<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_15_buff_Description"	"魔法抗性-20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_16_Description"	"+1500次属性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_17_Description"	"护甲+50<br/>攻击速度-50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_18_Description"	"最大生命值+100%<br/>魔法值-80%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_19_Description"	"生命回复+2000<br/>冷却缩减-10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_20_Description"	"生命值+10000<br/>魔法值+200<br/>魔法恢复+10<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_21_Description"	"智力+900<br/>魔法恢复+15<br/>移动速度+40<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_22_Description"	"魔法值+300<br/>施法距离+300<br/>魔法回复+12<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_23_Description"	"魔法消耗-10%<br/>移动速度+30<br/>(<font color=\"#ffffff\">与奥术节能只会生效一个</font>)<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_24_Description"	"全属性+250<br/>生命回复+5%<br/>魔法恢复+2%<br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_25_Description"	"杀怪增加+80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_26_Description"	"金钱加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_2_27_Description"	"经验加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2级宝物</font>"
+
+	"modifier_bw_3_1_Description"	"攻击力7000<br/>攻击距离+200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_2_Description"	"攻击力+80%<br/>攻击速度+50<br/>攻击吸血+5%<br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_3_Description"	"魔法抗性+40<br/>状态抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_4_Description"	"攻击速度+50<br/>每次攻击附带5*敏捷的物理伤害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_5_Description"	"技能增强+80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_6_Description"	"冷却缩减-17%<br/>魔法恢复+5<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_7_Description"	"佩戴者生命值低于20%时被施加一次强驱散<br/>并且回复携带者50%的生命值<br/>cd:10S<br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_8_Description"	"攻击有5%的概率创造一个不可选中,无法被攻击的幻象<br/>拥有自身的被动技能效果,造成50%的伤害<br/>持续10S<br/> CD：20S<br/>最多存在一个幻象<br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_9_Description"	"攻击有2%的概率,<br/>将自己周围600码内的敌人击退<br/>造成50%的减速,持续3S,并造成<br/>30*力量的物理伤害<br/><font color=\"#ffffff\">(不会击退BOSS)</font><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_10_Description"	"攻击力+10000<br/>攻击降低目标20点护甲<br/>持续7秒。<br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_10_buff_Description"	"护甲-20点<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_11_Description"	"攻击速度+80<br/>攻击有20%的概率释放连环闪电<br/>在650范围内8个目标之间跳跃<br/>闪电造成10*主属性的魔法伤害<br/>触发闪电时无视闪避<br/>CD 0.5S <font color=\"#ffffff\">(不会和漩涡同时触发)</font><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_12_Description"	"敏捷+1500<br/>闪避+35%<br/>攻击力+8000<br/>移动速度+15%<br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_13_Description"	"攻击力+12000<br/>每次攻击有20%的概率造成1350%的伤害<br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_14_Description"	"力量+1500<br/>攻击力+6000<br/>攻击吸血+10%<br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_15_Description"	"力量+3000<br/>生命值+50000<br/>生命回复+5%<br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_16_Description"	"作用范围1500码<br/>友军攻击力+30%<br/>友军护甲+20<br/>友军攻击速度+50<br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_16_buff_Description"	"攻击力+30%<br/>护甲+20<br/>攻击速度+50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_17_Description"	"生命值+20000<br/>魔法值+500<br/>智力+2000<br/>技能伤害+30%<br/>魔法恢复+30<br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_18_Description"	"生命值+30000<br/>魔法值+600<br/>魔法回复+10<br/>法术吸血+5%<br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_19_Description"	"全属性+900<br/>每过20S对周围发出一阵弱化冲击<br/>减少周围1200码内敌方单位40点魔法抗性<br/>持续5s<br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_20_Description"	"智力+2000<br/>每1.5s释放一个高伤害的魔法爆发<br/>冲击，对敌方单位造成智力*30的魔法伤害<br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_21_Description"	"杀怪增加+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_22_Description"	"金钱加成+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+	"modifier_bw_3_23_Description"	"经验加成+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3级宝物</font>"
+
+
+
+	"modifier_bw_4_1_Description"	"移动速度+150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_4_2_Description"	"攻击力+40000<br/>攻击降低目标40点护甲。<br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_2_buff_Description"	"护甲-45点<br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_3_Description"	"全属性+8888<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_4_Description"	"主属性提升+150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_5_Description"	"攻击距离+500<br/>每次攻击都会击退敌人50距离<br/>并造成当前攻击力 x0.1的纯粹伤害。<br/><font color=\"#ffffff\">（不会击退BOSS）</font><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_6_Description"	"攻击速度+99、移动速度+50<br/>全属性+6666<br/>魔法抗性+50%<br/>状态抗性+30%<br/>技能增强+99%<br/>攻击力+99%<br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_7_Description"	"攻击速度+300<br/>金钱加成+100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+	"modifier_bw_4_8_Description"	"智力+7777<br/>技能伤害+100%<br/>魔法恢复+60<br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+
+
+
+	"modifier_bw_5_1_Description"	"攻击力+50000，敏捷+25000<br/>被动:攻击命中有20%概率召唤闪电对目标敌人造成120*敏捷的物理伤害并使目标进入感电状态,额外承受20%的物理伤害,持续3S<br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_2_Description"	"智力+33333<br/>技能伤害+200%<br/>被动:每隔2S对周围随机目标发出以太冲击，造成160*智力的魔法伤害，并使目标受到的法术伤害提升30%，持续3s<br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_3_Description"	"攻击力+66666，力量+18000<br/>被动:每击杀一个boss,武器能量+1,每点能量+3%技能伤害和200点力量<br/>最多拥有100点能量<br/><br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_4_Description"	"生命值10W，防御+200<br/>魔法抗性+33<br/>减伤系数+50<br/>被动:每3秒对周围900的敌方单位造成英雄最大生命值*3.5的魔法伤害<br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_5_Description"	"攻击力+46666，攻击速度+100<br/>敏捷+20000<br/>被动:<br/>攻击有1%概率增加自身150%的基础敏捷和33%概率附带群星之力,对目标额外造成88*敏捷的物理伤害<br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_6_Description"	"1200码内友军基础攻击力+100%<br/>攻击速度+100，移动速度+20%回复效果+25%<br/>技能伤害+100%<br/>攻击距离+200<br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_7_Description"	"攻击力+77777<br/>攻击速度+122<br/>12%概率50倍暴击<br/>被动:使目标的回复效果降低30%<br/><br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_8_Description"	"智力+36666<br/>被动:<br/>施法时将消耗法力值的40%换成能量点储存起来，超过500点即释放并对周围600码内的单位造成能量*智力的魔法伤害。<br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_9_Description"	"力量+22222<br/>智力+18888<br/>每次施法回复20%的最大生命值<br/><br/><br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_10_Description"	"攻击力+99999<br/>自身护甲-150点<br/>被动:攻击命中有1%的概率减少目标5%的当前生命上限<br/><br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+	"modifier_bw_5_11_Description"	"基础攻击力+666%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">5级宝物</font>"
+
+
+	"modifier_bw_all_1_Description"	"攻击速度+200<br/>护甲-40点<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_2_Description"	"<font color='white'>“移除自身所有的宝物，且以后获得的宝物也会默认移除”</font><br><br>每移除一件宝物,自身属性<br/>提升1.2倍<br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_3_Description"	"无法使用技能<br/>每过50S增加10%全属性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_4_Description"	"每60S增加5%全属性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_5_Description"	"当前基础力量+60%<br/>其他属性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_6_Description"	"当前基础敏捷+60%<br/>其他属性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_7_Description"	"当前基础智力+60%<br/>其他属性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_8_Description"	"技能增强+100%<br/>攻击速度-200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_9_Description"	"将自身的基础防御力*30转移到主属性上<br/>基础护甲清空<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_10_Description"	"提升自身50%的基础护甲<br/>降低自身20%基础全属性<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_11_Description"	"随机降低攻击,护甲,力量,敏捷,智力,最大生命值的一项<br/>10-30%再随机增加其中一个随机属性,增加(20-50%)<br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_12_Description"	"你被单位击杀后<br/>下一次复活后,对目标的造成的伤害提升50%<br/>（直至目标死亡）<br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_13_Description"	"远程英雄对近身单位额外造成20%伤害<br/><font color=\"#fff\">(只对远程敏捷单位生效，300码以外)</font><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_14_Description"	"远程英雄对近身单位额外造成30%伤害<br/><font color=\"#fff\">(只对远程敏捷单位生效，900码以外)</font><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_15_Description"	"体型变大1.5倍<br/>生命值+100%<br/>攻击力+200%<br/>攻击速度-80<br/>移动速度-30%<br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_16_Description"	"生命回复+6%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_17_Description"	"魔法值+200<br/>魔法恢复+20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_18_Description"	"生命值+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_19_Description"	"力量提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_20_Description"	"敏捷提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+	
+	"modifier_bw_all_21_Description"	"智力提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+	
+	"modifier_bw_all_22_Description"	"攻击+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_23_Description"	"护甲+30点<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_24_Description"	"攻击速度+40<br/>移动速度+10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_25_Description"	"技能的伤害提升40%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_26_Description"	"攻击距离+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_27_Description"	"只对远程单位生效,每一级攻击目标+1,(额外攻击不附带攻击特效)<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_28_Description"	"对目标的第一次伤害<br/>最终伤害提升100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_29_Description"	"对生命值高于70%的单位<br/>最终伤害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_30_Description"	"对生命值低于25%的单位<br/>最终伤害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+	
+	"modifier_bw_all_31_Description"	"有(10+3*灵巧等级)%的概率躲避伤害<br/>当灵巧等级达到满时级,每过10S<br/>就会获得3S轻盈的状态,该状态下,闪避任何伤害<br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_32_Description"	"攻击变成投射物,（贯穿目标）距离为单位的攻击距离的双倍,飞行速度为之前的两倍，命中会触发被动效果（对近战无效）<br/><font color=\"#cfbf81\">神秘宝物</font>"
+	
+	"modifier_bw_all_33_Description"	"近战攻击变成350码范围攻击<br/>攻击速度速度减半<br/>命中会触发被动效果<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+	
+	"modifier_bw_all_34_Description"	"所受伤害减少30%<br/>移动速度降低15%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_35_Description"	"魔法消耗-10%<br/> (<font color=\"#ffffff\">与暗淡胸针只会生效一个</font>)<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_39_Description"	"金钱加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_40_Description"	"经验加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_41_Description"	"地狱火数量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_42_Description"	"群蛇守卫数量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_43_Description"	"死亡守卫数量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_44_Description"	"攻击命中敌人增加自身等级的金币<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_45_Description"	"每次击杀小怪增加当前等级/6的全属性<br/>死亡复活时间+7s<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_46_Description"	"每过60s增加 当前等级的平方 * 当前波数的金币<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_47_Description"	"每次灾厄领主出现时,永久增加30%的基础属性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_48_Description"	"死亡有30%的概率原地复活<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_49_Description"	"每次死亡都会增加当前等级*3的全属性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_50_Description"	"死亡复活时间-6s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_51_Description"	"金钱加成+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_52_Description"	"经验加成+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_53_Description"	"金钱加成+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_54_Description"	"经验加成+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_55_Description"	"使用技能提升数值+25%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_56_Description"	"使用技能提升数值+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_57_Description"	"每过120S都能获得1个宝物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_58_Description"	"立刻获得2个宝物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_59_Description"	"立刻获得3个宝物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_60_Description"	"立刻获得5个宝物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_61_Description"	"从商店购买技能提升消费杀敌数8折<br/>与其他卡不叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_62_Description"	"从商店购买技能提升消费杀敌数6折<br/>与其他卡不叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_63_Description"	"从商店购买技能提升消费杀敌数4折<br/>与其他卡不叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_64_Description"	"从商店购买技能提升消费杀敌数2折<br/>与其他卡不叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_65_Description"	"使用技能提升数值+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_66_Description"	"击杀怪物金币+150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_67_Description"	"击杀怪物金币+300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_68_Description"	"召唤物强度+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_69_Description"	"召唤物强度+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_70_Description"	"召唤物强度+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_71_Description"	"每过75s都会给予1本当前等级/30的技能天书<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_72_Description"	"每过90S都会给予1件品质紫色,等级为(英雄等级/30)+1的随机装备<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_73_Description"	"每过90S都会给予1件品质橙色,等级为(英雄等级/30)+1的随机装备<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_74_Description"	"每过90S都会给予1件品质金色,等级为(英雄等级/30)+1的随机装备<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_75_Description"	"每过90S都会给予1件品质红色,等级为(英雄等级/30)+1的随机装备<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_76_Description"	"己方出口怪物强度+50%<br/> 怪物掉落金钱,经验+50%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_77_Description"	"己方出口怪物强度+100%<br/> 怪物掉落金钱,经验+100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_78_Description"	"减伤系数+100<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_79_Description"	"杀敌点数+2000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_80_Description"	"杀敌点数+6000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_81_Description"	"杀敌点数+20000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_82_Description"	"杀敌点数+60000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_83_Description"	"每10秒杀敌点数+20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_84_Description"	"每10秒杀敌点数+40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_85_Description"	"每10秒杀敌点数+80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_86_Description"	"每10秒杀敌点数+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_87_Description"	"天赋技能等级+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_88_Description"	"每隔3S就会对周围随机敌方单位发出一道火属性气流<br/>对经过的敌人造成当前等级/2+10的主属性的魔法伤害<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_89_Description"	"每隔15S就会冰冻周围800码的敌方单位<br/>造成当前等级*2*智力的魔法伤害<br/冰冻1.5s(对boss单位冰冻0.5s)<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_90_Description"	"每隔3秒鞭笞周围的单位<br/>造成攻击力*英雄等级/2的物理伤害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_91_Description"	"减少周围1200码内敌方单位的50%的回复效果<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_92_Description"	"每秒回复周围1200码内友方单位5%的最大生命值和5%的魔法值<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_93_Description"	"跳跃结束会对目标区域内300码的单位造成 5*力量的物理伤害<br/>并眩晕目标0.8S(眩晕对boss单位无效)<br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_94_Description"	"跳跃结束会增加自身50点攻击速度和50%的基础攻击力<br/>持续3s,不叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_95_Description"	"跳跃结束有50%的概率刷新跳跃cd	<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_96_Description"	"每过20S进入一次狂暴状态<br/>增加100+当前等级*2的攻击速度和等值百分比基础攻击力<br/>并减少10+当前等级的护甲<br/>持续12s<br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_97_Description"	"每一次死亡都有9+当前等级/10的概率获得1本宝物书<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_98_Description"	"攻击命中时造成敌方当前生命值20%的物理伤害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_99_Description"	"每次攻击减少目标以当前英雄等级/10的护甲,持续10s<br/>可叠加,每次减甲独立计算<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_100_Description"	"每次攻击随机对周围敌方单位发射1枚聚合炮<br/>伤害为智力*30的魔法伤害<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+	"modifier_bw_all_101_Description"	"每次施法转化当前魔法值的20%为技能伤害<br/>持续20S,不可叠加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘宝物</font>"
+
+
+	"achievement_hero_single_1"						"通关1次"
+	"achievement_hero_single_1_desc"				"使用该英雄通关1次"
+	"achievement_hero_single_1_bonus"				"使用该英雄时每次升级主属性+3"
+	//"achievement_hero_single_1_bonus_desc"		""
+
+	"achievement_hero_single_2"						"通关3次"
+	"achievement_hero_single_2_desc"				"使用该英雄通关3次"
+	"achievement_hero_single_2_bonus"				"使用该英雄时主属性+30"
+	//"achievement_hero_single_2_bonus_desc"		""
+
+	"achievement_hero_single_3"						"通关10次"
+	"achievement_hero_single_3_desc"				"使用该英雄通关10次"
+	"achievement_hero_single_3_bonus"				"使用该英雄时最终伤害+5%"
+	//"achievement_hero_single_3_bonus_desc"		""
+
+	"achievement_hero_single_4"						"通关20次"
+	"achievement_hero_single_4_desc"				"使用该英雄通关20次"
+	"achievement_hero_single_4_bonus"				"使用该英雄时每次升级主属性+10"
+	//"achievement_hero_single_4_bonus_desc"		""
+
+	"achievement_hero_single_5"						"通关30次"
+	"achievement_hero_single_5_desc"				"使用该英雄通关30次"
+	"achievement_hero_single_5_bonus"				"使用该英雄时英雄天赋等级+1"
+	//"achievement_hero_single_5_bonus_desc"		""
+
+
+	"achievement_hero_str_1"						"1阶"
+	"achievement_hero_str_1_desc"					"任意10个力量英雄通关1次以上"
+	"achievement_hero_str_1_bonus"					"每次升级力量+3"
+	//"achievement_hero_str_1_bonus_desc"			""
+
+	"achievement_hero_str_2"						"2阶"
+	"achievement_hero_str_2_desc"					"任意10个力量英雄通关3次以上"
+	"achievement_hero_str_2_bonus"					"力量+100"
+	//"achievement_hero_str_2_bonus_desc"			""
+
+
+	"achievement_hero_str_3"						"3阶"
+	"achievement_hero_str_3_desc"					"任意10个力量英雄通关10次以上"
+	"achievement_hero_str_3_bonus"					"最终伤害+10%"
+	//"achievement_hero_str_3_bonus_desc"			""
+
+
+	"achievement_hero_str_4"						"4阶"
+	"achievement_hero_str_4_desc"					"任意10个力量英雄通关20次以上"
+	"achievement_hero_str_4_bonus"					"经验加成+20%"
+	//"achievement_hero_str_4_bonus_desc"			""
+
+	"achievement_hero_str_5"						"5阶"
+	"achievement_hero_str_5_desc"					"任意10个力量英雄通关30次以上"
+	"achievement_hero_str_5_bonus"					"力量英雄天赋等级+1"
+	//"achievement_hero_str_5_bonus_desc"			""
+
+
+	"achievement_hero_agi_1"						"1阶"
+	"achievement_hero_agi_1_desc"					"任意10个敏捷英雄通关1次以上"
+	"achievement_hero_agi_1_bonus"					"每次升级敏捷+3"
+	//"achievement_hero_agi_1_bonus_desc"			""
+
+	"achievement_hero_agi_2"						"2阶"
+	"achievement_hero_agi_2_desc"					"任意10个敏捷英雄通关3次以上"
+	"achievement_hero_agi_2_bonus"					"敏捷+100"
+	//"achievement_hero_agi_2_bonus_desc"			""
+
+
+	"achievement_hero_agi_3"						"3阶"
+	"achievement_hero_agi_3_desc"					"任意10个敏捷英雄通关10次以上"
+	"achievement_hero_agi_3_bonus"					"最终伤害+10%"
+	//"achievement_hero_agi_3_bonus_desc"			""
+
+
+	"achievement_hero_agi_4"						"4阶"
+	"achievement_hero_agi_4_desc"					"任意10个敏捷英雄通关20次以上"
+	"achievement_hero_agi_4_bonus"					"经验加成+20%"
+	//"achievement_hero_agi_4_bonus_desc"			""
+
+	"achievement_hero_agi_5"						"5阶"
+	"achievement_hero_agi_5_desc"					"任意10个敏捷英雄通关30次以上"
+	"achievement_hero_agi_5_bonus"					"敏捷英雄天赋等级+1"
+	//"achievement_hero_agi_5_bonus_desc"			""
+
+
+	"achievement_hero_int_1"						"1阶"
+	"achievement_hero_int_1_desc"					"任意10个智力英雄通关1次以上"
+	"achievement_hero_int_1_bonus"					"每次升级智力+3"
+	//"achievement_hero_int_1_bonus_desc"			""
+
+	"achievement_hero_int_2"						"2阶"
+	"achievement_hero_int_2_desc"					"任意10个智力英雄通关3次以上"
+	"achievement_hero_int_2_bonus"					"智力+100"
+	//"achievement_hero_int_2_bonus_desc"			""
+
+
+	"achievement_hero_int_3"						"3阶"
+	"achievement_hero_int_3_desc"					"任意10个智力英雄通关10次以上"
+	"achievement_hero_int_3_bonus"					"最终伤害+10%"
+	//"achievement_hero_int_3_bonus_desc"			""
+
+
+	"achievement_hero_int_4"						"4阶"
+	"achievement_hero_int_4_desc"					"任意10个智力英雄通关20次以上"
+	"achievement_hero_int_4_bonus"					"经验加成+20%"
+	//"achievement_hero_int_4_bonus_desc"			""
+
+	"achievement_hero_int_5"						"5阶"
+	"achievement_hero_int_5_desc"					"任意10个智力英雄通关30次以上"
+	"achievement_hero_int_5_bonus"					"智力英雄天赋等级+1"
+	//"achievement_hero_int_5_bonus_desc"			""
+	
+	"achievement_hero_all_1"						"1阶"
+	"achievement_hero_all_1_desc"					"完成力量,敏捷和智力英雄的1阶段解锁"
+	"achievement_hero_all_1_bonus"					"暴击概率+5%，暴击伤害+20%"
+	//"achievement_hero_all_1_bonus_desc"			""
+
+	"achievement_hero_all_2"						"2阶"
+	"achievement_hero_all_2_desc"					"完成力量,敏捷和智力英雄的2阶段解锁"
+	"achievement_hero_all_2_bonus"					"经验加成+20%"
+	//"achievement_hero_all_2_bonus_desc"			""
+
+
+	"achievement_hero_all_3"						"3阶"
+	"achievement_hero_all_3_desc"					"完成力量,敏捷和智力英雄的3阶段解锁"
+	"achievement_hero_all_3_bonus"					"全局吸血+3%"
+	//"achievement_hero_all_3_bonus_desc"			""
+
+
+	"achievement_hero_all_4"						"4阶"
+	"achievement_hero_all_4_desc"					"完成力量,敏捷和智力英雄的4阶段解锁"
+	"achievement_hero_all_4_bonus"					"初始给予一本2阶神秘宝物书"
+	//"achievement_hero_all_4_bonus_desc"			""
+
+	"achievement_hero_all_5"						"5阶"
+	"achievement_hero_all_5_desc"					"完成力量,敏捷和智力英雄的5阶段解锁"
+	"achievement_hero_all_5_bonus"					"初始给予一本3阶神秘宝物书"
+	//"achievement_hero_all_5_bonus_desc"			""
+
+
+	"achievement_difficulty_1"						"通关N1"
+	//"achievement_difficulty_1_desc"					""
+	"achievement_difficulty_1_bonus"				"初始三维+30"
+	//"achievement_difficulty_1_bonus_desc"			""
+
+
+	"achievement_difficulty_2"						"通关N2"
+	//"achievement_difficulty_2_desc"					""
+	"achievement_difficulty_2_bonus"				"金钱加成+20%"
+	//"achievement_difficulty_2_bonus_des
+
+	"achievement_difficulty_3"						"通关N3"
+	//"achievement_difficulty_3_desc"					""
+	"achievement_difficulty_3_bonus"				"经验加成+20%"
+	//"achievement_difficulty_3_bonus_des
+
+	"achievement_difficulty_4"						"通关N4"
+	//"achievement_difficulty_4_desc"					""
+	"achievement_difficulty_4_bonus"				"个人技能等级+1"
+	//"achievement_difficulty_4_bonus_des 				
+
+
+	"achievement_difficulty_5_1"						"通关N5"
+	//"achievement_difficulty_5_1_desc"					""
+	"achievement_difficulty_5_1_bonus"				"初始给与一件宝物"
+	//"achievement_difficulty_5_1_bonus_des
+
+	"achievement_difficulty_6_1"						"通关N6"
+	//"achievement_difficulty_6_1_desc"					""
+	"achievement_difficulty_6_1_bonus"				"杀怪金币+30"
+	//"achievement_difficulty_6_1_bonus_des
+
+
+	"achievement_difficulty_7_1"						"通关N7"
+	//"achievement_difficulty_7_1_desc"					""
+	"achievement_difficulty_7_1_bonus"				"初始给与一本2级天书"
+	//"achievement_difficulty_7_1_bonus_des
+
+	"achievement_difficulty_8_1"						"通关N8"
+	//"achievement_difficulty_8_1_desc"					""
+	"achievement_difficulty_8_1_bonus"				"每10秒+杀敌点数10"
+	//"achievement_difficulty_8_1_bonus_des
+
+	"achievement_difficulty_9_1"						"通关N9"
+	//"achievement_difficulty_9_1_desc"					""
+	"achievement_difficulty_9_1_bonus"					"初始杀敌点数+500"
+	//"achievement_difficulty_9_1_bonus_des
+
+
+	"achievement_difficulty_10_1"						"通关N10"
+	//"achievement_difficulty_10_1_desc"					""
+	"achievement_difficulty_10_1_bonus"					"宝物+1"
+	//"achievement_difficulty_10_1_bonus_des
+
+
+	"achievement_difficulty_11_1"						"通关N11"
+	//"achievement_difficulty_11_1_desc"					""
+	"achievement_difficulty_11_1_bonus"					"暴击伤害+40%"
+	//"achievement_difficulty_11_1_bonus_des
+
+
+	"achievement_difficulty_12_1"						"通关N12"
+	//"achievement_difficulty_12_1_desc"					""
+	"achievement_difficulty_12_1_bonus"					"初始给与一本3级天书"
+	//"achievement_difficulty_12_1_bonus_des
+
+	"achievement_difficulty_13_1"						"通关N13"
+	//"achievement_difficulty_13_1_desc"					""
+	"achievement_difficulty_13_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_13_1_bonus_des
+
+	"achievement_difficulty_14_1"						"通关N14"
+	//"achievement_difficulty_14_1_desc"					""
+	"achievement_difficulty_14_1_bonus"					"初始给与一本1级神秘宝物书"
+	//"achievement_difficulty_14_1_bonus_des
+
+	"achievement_difficulty_15_1"						"通关N15"
+	//"achievement_difficulty_15_1_desc"					""
+	"achievement_difficulty_15_1_bonus"					"天命值+10"
+	//"achievement_difficulty_15_1_bonus_des
+
+	"achievement_difficulty_16_1"						"通关N16"
+	//"achievement_difficulty_16_1_desc"					""
+	"achievement_difficulty_16_1_bonus"					"初始天赋技能等级+1"
+	//"achievement_difficulty_16_1_bonus_des
+
+	"achievement_difficulty_17_1"						"通关N17"
+	//"achievement_difficulty_17_1_desc"					""
+	"achievement_difficulty_17_1_bonus"					"英雄天赋等级上限+1"
+	//"achievement_difficulty_17_1_bonus_des
+
+
+	"achievement_difficulty_18_1"						"通关N18"
+	//"achievement_difficulty_18_1_desc"					""
+	"achievement_difficulty_18_1_bonus"					"初始给与一本4级天书"
+	//"achievement_difficulty_18_1_bonus_des
+
+
+	"achievement_difficulty_19_1"						"通关N19"
+	//"achievement_difficulty_19_1_desc"					""
+	"achievement_difficulty_19_1_bonus"					"使用技能提升数值+20%"
+	//"achievement_difficulty_19_1_bonus_des
+
+
+	"achievement_difficulty_20_1"						"通关N20"
+	//"achievement_difficulty_20_1_desc"					""
+	"achievement_difficulty_20_1_bonus"					"初始给与一本2级神秘宝物书"
+	//"achievement_difficulty_20_1_bonus_des
+
+
+	"achievement_difficulty_21_1"						"通关N21"
+	//"achievement_difficulty_21_1_desc"					""
+	"achievement_difficulty_21_1_bonus"					"初始给与一个个人BOSS号角*20"
+	//"achievement_difficulty_21_1_bonus_des
+
+
+
+	"achievement_difficulty_22_1"						"通关N22"
+	//"achievement_difficulty_22_1_desc"					""
+	"achievement_difficulty_22_1_bonus"					"天命值+15"
+	//"achievement_difficulty_22_1_bonus_des
+
+
+	"achievement_difficulty_5_2"						"通关N5-狂暴模式"
+	//"achievement_difficulty_5_2_desc"					""
+	"achievement_difficulty_5_2_bonus"					"物理穿透+2"
+	//"achievement_difficulty_5_2_bonus_desc"			""
+
+
+	"achievement_difficulty_6_3"						"通关N6-奥术模式"
+	//"achievement_difficulty_6_3_desc"					""
+	"achievement_difficulty_6_3_bonus"					"冷却缩减-2%"
+	//"achievement_difficulty_6_3_bonus_desc"			""
+
+
+	"achievement_difficulty_7_4"						"通关N7-灾难模式"
+	//"achievement_difficulty_7_4_desc"					""
+	"achievement_difficulty_7_4_bonus"					"魔法穿透+2"
+	//"achievement_difficulty_7_4_bonus_desc"			""
+
+
+
+
+	"achievement_difficulty_8_2"						"通关N8-狂暴模式"
+	//"achievement_difficulty_8_2_desc"					""
+	"achievement_difficulty_8_2_bonus"					"物理穿透+2"
+	//"achievement_difficulty_8_2_bonus_desc"			""
+
+
+	
+
+	"achievement_difficulty_9_3"						"通关N9-奥术模式"
+	//"achievement_difficulty_9_3_desc"					""
+	"achievement_difficulty_9_3_bonus"					"冷却缩减-2%"
+	//"achievement_difficulty_9_3_bonus_desc"			""
+
+
+
+
+	"achievement_difficulty_10_4"						"通关N10-灾难模式"
+	//"achievement_difficulty_10_4_desc"					""
+	"achievement_difficulty_10_4_bonus"					"魔法穿透+2"
+	//"achievement_difficulty_10_4_bonus_desc"			""
+
+
+	
+
+	"achievement_difficulty_11_5"						"通关N11-地狱模式"
+	//"achievement_difficulty_11_5_desc"					""
+	"achievement_difficulty_11_5_bonus"					"移动速度+10"
+	//"achievement_difficulty_11_5_bonus_desc"			""
+
+
+
+	"achievement_difficulty_12_5"						"通关N12-地狱模式"
+	//"achievement_difficulty_12_5_desc"					""
+	"achievement_difficulty_12_5_bonus"					"移动速度+10"
+	//"achievement_difficulty_12_5_bonus_desc"			""
+
+
+
+	"achievement_difficulty_13_6"						"通关N13-赏金模式"
+	//"achievement_difficulty_13_6_desc"					""
+	"achievement_difficulty_13_6_bonus"					"金钱加成+10%"
+	//"achievement_difficulty_13_6_bonus_desc"			""
+
+
+	"achievement_difficulty_14_7"						"通关N14-噩梦模式"
+	//"achievement_difficulty_14_7_desc"					""
+	"achievement_difficulty_14_7_bonus"					"最终伤害+10%"
+	//"achievement_difficulty_14_7_bonus_desc"			""
+
+
+
+	"achievement_difficulty_15_2"						"通关N15-狂暴模式"
+	//"achievement_difficulty_15_2_desc"					""
+	"achievement_difficulty_15_2_bonus"					"攻击速度+10"
+	//"achievement_difficulty_15_2_bonus_desc"			""
+
+
+	"achievement_difficulty_15_3"						"通关N15-奥术模式"
+	//"achievement_difficulty_15_3_desc"					""
+	"achievement_difficulty_15_3_bonus"					"冷却缩减-2%"
+	//"achievement_difficulty_15_3_bonus_desc"			""
+
+
+	"achievement_difficulty_15_4"						"通关N15-灾难模式"
+	//"achievement_difficulty_15_4_desc"					""
+	"achievement_difficulty_15_4_bonus"					"魔法回复+5"
+	//"achievement_difficulty_15_4_bonus_desc"			""
+
+
+	"achievement_difficulty_15_5"						"通关N15-地狱模式"
+	//"achievement_difficulty_15_5_desc"					""
+	"achievement_difficulty_15_5_bonus"					"移动速度+10"
+	//"achievement_difficulty_15_5_bonus_desc"			""
+
+	"achievement_difficulty_15_6"						"通关N15-赏金模式"
+	//"achievement_difficulty_15_6_desc"					""
+	"achievement_difficulty_15_6_bonus"					"金钱加成+10%"
+	//"achievement_difficulty_15_6_bonus_desc"			""
+
+
+	"achievement_difficulty_15_7"						"通关N15-噩梦模式"
+	//"achievement_difficulty_15_7_desc"				""
+	"achievement_difficulty_15_7_bonus"					"最终伤害+10%"
+	//"achievement_difficulty_15_7_bonus_desc"			""
+
+
+
+
+
+
+
+
+
+
+
+	//无尽模式不同
+
+
+	"achievement_hidden_1"						"惜命"
+	"achievement_hidden_1_desc"					"你是个高手！"
+	"achievement_hidden_1_bonus"				"初始金币+200"
+	//"achievement_hidden_1_bonus_desc"			""
+
+	"achievement_hidden_2"						"一技到底"
+	"achievement_hidden_2_desc"					"这套技能有点吊！"
+	"achievement_hidden_2_bonus"				"技能伤害+5%"
+	//"achievement_hidden_2_bonus_desc"			""
+
+
+	"achievement_hidden_3"						"尸体"
+	"achievement_hidden_3_desc"					"躺过？"
+	"achievement_hidden_3_bonus"				"每次死亡,增加1*英雄等级的全属性"
+	//"achievement_hidden_3_bonus_desc"			""
+
+
+
+	"achievement_hidden_4"						"死神"
+	"achievement_hidden_4_desc"					"你可太惨了..."
+	"achievement_hidden_4_bonus"				"复活时间-1s"
+	//"achievement_hidden_4_bonus_desc"			""
+
+	"item_tz_3_1_title"							"金镶玉套装"
+	"item_tz_3_1_attribute"						"套装效果：<br>	最大生命值+2000<br>	全属性+100 <br>  移动速度+30<br> 攻击吸血6%"	
+
+
+	"item_tz_3_2_title"							"枯木逢春套装"
+	"item_tz_3_2_attribute"						"套装效果：<br>	全属性+80<br>	最大生命值+2500<br>  护甲+15 	<br> 被动：枯木逢春--每过5秒回复7.5*力量+5%自身生命值的生命值"
+
+	"item_tz_3_3_title"							"潮汐水灵套装"
+	"item_tz_3_3_attribute"						"套装效果：<br>被动：水灵光环:<br>周围友军的百分比伤害减免+20<br>周围友军的主属性+100<br>暴击概率+5%<br> 作用范围：1500码（只对英雄单位生效）"
+
+
+	"item_tz_3_4_title"							"冰霜亡灵套装"
+	"item_tz_3_4_attribute"						"套装效果：<br>最大生命值+1200<br/>力量敏捷+50<br/>智力+200<br/>技能伤害+20%<br/>被动:周围单位的攻击速度-20,移动速度-20%<br/>影响范围:800"
+
+
+
+	"item_tz_4_1_title"							"大地脉动套装"
+	"item_tz_4_1_attribute"						"套装效果：<br>全属性+220<br>最大生命值+5000<br>	护甲+25 <br> 生命回复+2%"
+
+	"item_tz_4_2_title"							"法力流失套装"
+	"item_tz_4_2_attribute"						"套装效果：<br>释放技能耗蓝增加+50% <br> 每秒流逝自身1%的最大魔法值  <br> 降低100%魔法回复速率<br>技能伤害提升200%"
+
+
+	"item_tz_4_3_title"							"漫天黄沙套装"
+	"item_tz_4_3_attribute"						"套装效果：<br>	全属性+195<br>	最大生命值+4500<br>  护甲+10 <br>攻击速度+60 	"
+
+
+	"item_tz_4_4_title"							"雷霆悸动套装"
+	"item_tz_4_4_attribute"						"套装效果：<br>力量敏捷+150<br>智力+400<br>  技能伤害+40%<br>被动：每过4S会选择3个单位劈下3道闪电，对目标造成15*智力的魔法伤害<br/>作用范围:900码"
+
+
+	"item_tz_4_5_title"							"泰坦套装"
+	"item_tz_4_5_attribute"						"套装效果：<br>	力量+2000 <br> 最大生命值+15000 <br>护甲+40<br>魔法抗性+20%"
+
+
+	"item_tz_4_6_title"							"海王套装"
+	"item_tz_4_6_attribute"						"套装效果：<br>全属性+500<br> 被动：每10秒获得一次海神的祝福,全属性+600,移动速度+30,攻击速度+60,技能伤害+30%,生命回复+2%.持续5s"
+
+
+
+	"item_tz_4_7_title"							"幽魂套装"
+	"item_tz_4_7_attribute"						"套装效果：<br>最大生命值+8000 <br> 智力+2000 <br> 护甲+10 <br>	被动：幽魂领域--减少周围1200码内敌人25点魔法抗性"
+
+
+
+	"item_tz_4_8_title"							"人生套装"
+	"item_tz_4_8_attribute"						"套装效果：<br>被动：周围1500码内的友方英雄单位全属性+450,技能伤害等级+2<br>	被动：每20次普通攻击都会减少目标2%的最大生命值上限,最多5次"
+
+
+	"item_tz_5_1_title"							"火焰焚天套装"
+	"item_tz_5_1_attribute"						"套装效果：<br>最大生命值+30000<br>	   主属性+2000<br>			暴击概率+10%<br>技能伤害+50%<br>魔法回复+30<br>	  最终伤害+20%<br>	被动：每过5S，对周围发出一团火焰，对周围900码的敌人造成 30*主属性的魔法伤害"
+
+
+	"item_tz_5_2_title"							"毒龙套装"
+	"item_tz_5_2_attribute"						"套装效果：<br>生命值 +50000<br>主属性提升30%  <br>护甲+50<br>魔抗+30<br>	被动：每分钟损失自身2%的最大生命值 <br/>血量低于70%,主属性提升从40%提升至50% <br/>当血量低于40%,主属性提升从50%提升至60%"
+
+
+	"item_tz_5_3_title"							"万世生命套装"
+	"item_tz_5_3_attribute"						"套装效果：<br>最大生命值+35000<br>	技能伤害+40%	<br>技能等级伤害+6	<br>暴击概率+10%"
+
+
+	"item_tz_5_4_title"							"黑暗执行者套装"
+	"item_tz_5_4_attribute"						"套装效果：<br>主属性+1500 <br> 攻击力+4000<br>  攻击速度+80 <br> 移动速度 +40	<br>每次攻击有20%的概率造成800%的伤害  <br>  暴击概率+5%"
+
+
+	"ability_mj_baseDamage" 			"基础伤害增加{s:value}点"
+	"ability_mj_damage" 				"伤害系数增加{s:value}点"
+	"ability_mj_baseHeal" 		        "基础治疗增加{s:value}点"
+	"ability_mj_heal" 					"治疗系数增加{s:value}点"
+	"ability_mj_radius" 		 		"作用范围增加{s:value}码"
+	"ability_mj_distance" 			    "飞行距离增加{s:value}码"
+	"ability_mj_chance" 				"触发概率增加{s:value}%"
+	"ability_mj_interval"				"伤害间隔降低{s:value}秒"
+	"ability_mj_duration"  			    "持续时间增加{s:value}秒"
+	"ability_mj_count" 					"打击次数增加{s:value}次"
+	"ability_mj_max" 					"投射物个数增加{s:value}道"
+	"ability_mj_time" 					"多重触发增加{s:value}次"
+	"ability_mj_multiple" 				"幸运一击伤害增加{s:value}倍"
+
+	"randomquest_1"							"完成任务，奖励<font color=\"#ffb413\">[ {s:value}点主属性 ]</font>"
+	"randomquest_2"							"完成任务，奖励<font color=\"#ffb413\">[ {s:value}金币 ]</font>"
+	"randomquest_3"							"完成任务，奖励<font color=\"#ffb413\">[ {s:value}物品 ]</font>"
+	"randomquest_4"							"完成任务，奖励<font color=\"#ffb413\">[ {s:value} 宝物]</font>"
+	"add_money" 						"回收物品，增加{s:value}个金币"
+	"add_sds" 							"回收物品，增加{s:value}杀敌积分"
+	"pray_money" 						"祈福获得{s:value}个金币"
+	"add_ll" 							"使用了能量晶石<Panel> 增加{s:value}点力量"
+	"add_mj" 							"使用了能量晶石<Panel> 增加{s:value}点敏捷"
+	"add_zl" 							"使用了能量晶石<Panel> 增加{s:value}点智力"
+	"add_qsx" 							"使用了能量晶石<Panel> 增加{s:value}点全属性"
+	"level_not"							"等级不足"			
+	"ct_not"							"该技能暂时没有特殊词条"
+	"sds_not"							"杀敌积分不足，目前杀敌积分为{s:value}点"
+	"sds_not2"							"杀敌积分不足，还需要{s:value}点"
+	"ablity_not"						"没有可升级的技能，使用失败"
+	"money_no"							"金币不足"
+	"money_not"							"金币不足,使用失败。还需要{s:value}点金币"
+	"nlzx_not"							"没有{s:value}级能量之心凭证,无法升级"
+	"add_tz_boss"						"使用命运石，开出<font color=\"#ffb413\">[ 套装领主召唤卷轴 ]</font>"
+	"add_individualBoss"				"使用命运石，开出<font color=\"#ffb413\">[ 个人领主召唤卷轴 ]</font>"
+	"add_teamBoss"						"使用命运石，开出<font color=\"#ffb413\">[ 团队领主召唤卷轴 ]</font>"
+	"add_money_box"						"使用命运石，开出<font color=\"#ffb413\">[ 金币宝箱 ]</font>"
+	"add_ablity_mj"						"使用命运石，开出<font color=\"#ffb413\">[ {s:value}本技能秘诀 ]</font>"
+	"pray_exp"							"使用命运石，开出<font color=\"#ffb413\">[ {s:value}点经验 ]</font>"
+	"add_zbbx"                          "使用命运石，开出<font color=\"#ffb413\">[ 装备宝箱 ]</font>"
+	"mys_jns"							"使用命运石，开出<font color=\"#ffb413\">[ 技能天书 ]</font>"
+	"mys_jns"							"使用命运石，开出<font color=\"#ffb413\">[ 技能天书 ]</font>"
+	"mys_qsx" 							"使用命运石，开出<font color=\"#ffb413\">[ {s:value}点全属性 ]</font>"
+	"item_qw"							"<font color=\"#20ecea\">成功召唤装备BOSS，击杀便可升级[ 能量之心 ]</font>"
+	"individualBoss_item_box"			"<font color=\"#35ed58\">个人BOSS已被击杀，装备宝箱已经掉落在英雄脚下，拾取即可开启</font>"
+	"teamBoss_item_box"					"<font color=\"#35ed58\">团队BOSS已被击杀，装备宝箱已经掉落在英雄脚下，拾取即可开启。奖励杀敌积分{s:value}点</font>"
+	"buy_bw" 							"第{s:value}次购买宝物,还需要BOSS点数{s:boss_point}点"
+	"ym_cs" 							"第{s:value}次召唤冤魔,还需要BOSS点数{s:boss_point}点"
+	"ym_die" 							"击杀第{s:value}只冤魔,获得杀敌数{s:sds}点"
+	"tz_die" 							"套装BOSS死亡,奖励召唤者 杀怪金币加成+{s:value}点,全属性+{s:qsx}点"
+	"boss_death"						"<font color=\"#35ed58\">灾厄领主已被击杀，奖励一件宝物</font><Panel>"
+	"ability_high"						"技能已达到最高等级"
+	"ability_full"						"技能已满，无法学习"
+	"ability_ts"						"技能已经学习过，提升一级技能等级！"
+	"ability_cg"						"技能学习成功"
+	"bw_cc"								"宝物购买达到上限！"
+	"ym_cc"								"召唤次数达到上限！"
+	"call_tzboss"						"<font color=\"#DC143C\">[ {s:hero} ] 召唤了套装领主--{s:name}</font>"
+	"call_grboss"						"<font color=\"#FFFF00\">{s:hero}</font>召唤了个人领主-<font color=\"#DC143C\">{s:name}</font>"
+	"call_teamboss"						"<font color=\"#FFFF00\">{s:hero}</font>召唤了团队领主-<font color=\"#DC143C\">{s:name}</font>"
+	"call_tyboss"						"<font color=\"#FFFF00\">{s:hero}</font>召唤了贪欲魔王-<font color=\"#DC143C\">{s:name}</font>"
+	"call_ymboss"						"<font color=\"#FFFF00\">{s:hero}</font>召唤了冤念之主-<font color=\"#DC143C\">{s:name}</font>"
+	"aiou_jll" 							"星灵恩赐,增加{s:value}点力量"
+	"aiou_jmj" 							"星灵恩赐,增加{s:value}点敏捷"
+	"aiou_jzl" 							"星灵恩赐,增加{s:value}点智力"
+	"aiou_gold" 						"星灵恩赐,增加{s:value}点金币"
+	"aiou_item" 						"星灵恩赐,获得一件装备"
+	"aiou_bw" 							"星灵恩赐,获得一件宝物"
+	"mrsz_xj" 							"消耗金币,增加{s:value}点全属性"
+	"hdfl_bw" 							"神力重铸,获得一件宝物"
+	"net_item" 							"幸运的获得一件存档装备。可以在存档装备界面查看"
+	"nettable_js" 						"分解存档装备成功，获得 <font color='gold'>{s:value}</font> 晶石"
+	"tscs_cg" 							"融合神器成功！！！"
+	"not_item" 							"该位置没有神器"
+	"tscs_not" 							"融合次数达到上限！！！"
+
+	"ui_wave_random_event"	"随机事件"
+	"events1"							"赫尔墨斯降临,金钱加成+{s:value}%,持续120s"
+	"events2"							"马可波罗降临,经验加成+{s:value}%,持续120s"
+	"events3"							"出门捡到钱,获得{s:value}个金币"
+	"events4"							"醍醐灌顶,获得{s:value}点经验"
+	"events5"							"遭遇高人传功,获得{s:value}点全属性"
+	"events6"							"遇到南华老仙,获得1本{s:value}级天书"
+	"events7"							"出门捡到宝了,获得{s:value}本宝物"
+	"events8"							"邪恶浓度大幅度增加,进攻怪物强度增加,进攻怪物的金钱和经验奖励提升{s:value}%，持续120s"
+	"events9"							"邪恶浓度小幅度增加,进攻怪物血量和防御增加,进攻怪物的金钱和经验奖励提升{s:value}%，持续120s"
+	"events10"							"邪恶浓度小幅度增加,进攻怪物血量和攻击增加,进攻怪物的金钱和经验奖励提升{s:value}%，持续120s"
+	"jstzboss_1"						"首次击杀初级领主Lv3，奖励{s:value}本宝物<Panel>"
+	"jstzboss_2"						"首次击杀中级领主Lv3，奖励{s:value}本宝物<Panel>"
+	"jstzboss_3"						"首次击杀高级领主Lv3，奖励{s:value}本宝物<Panel>"
+	"jstzboss_4"						"首次击杀顶级领主Lv3，奖励{s:value}本宝物<Panel>"
+
+	"bc_tz_3_1_desc"					"<font color=\"#ffd861\">消耗3000金币</font><br/><br/>召唤一个普通的初级领主,占3个生存数量,击杀后可掉落 1 件蓝色套装散件<br/><br/>击杀后召唤者BOSS点数+ 1<br>杀怪金币加成+1<br>全属性+3<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_3_2_desc"					"<font color=\"#ffd861\">消耗6000金币</font><br/><br/>召唤一个强力的初级领主,占3个生存数量,击杀后可掉落 2 件蓝色套装散件<br/><br/>击杀后召唤者BOSS点数+ 1<br>杀怪金币加成+1<br>全属性+5<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_3_3_desc"					"<font color=\"#ffd861\">消耗1.2W金币</font><br/><br/>召唤一个危险的初级领主,占3个生存数量,击杀后可掉落 1 套蓝色套装<br/><br/>击杀后召唤者BOSS点数+ 2<br>杀怪金币加成+2<br>全属性+10<br>首次击杀奖励一本宝物<br><br>召唤冷却：{s:cooldown}s"
+
+	"bc_tz_4_1_desc"					"<font color=\"#ffd861\">消耗2W金币</font><br/><br/>召唤一个普通的中级领主,占3个生存数量,击杀后可掉落 1 件紫色套装散件<br/><br/>击杀后召唤者BOSS点数+ 2<br>杀怪金币加成+2<br>全属性+10<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_4_2_desc"					"<font color=\"#ffd861\">消耗3W金币</font><br/><br/>召唤一个强力的中级领主,占3个生存数量,击杀后可掉落 2 件紫色套装散件<br/><br/>击杀后召唤者BOSS点数+ 2<br>杀怪金币加成+2<br>全属性+15<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_4_3_desc"					"<font color=\"#ffd861\">消耗4W金币</font><br/><br/>召唤一个危险的中级领主,占3个生存数量,击杀后可掉落 1 套紫色套装<br/><br/>击杀后召唤者BOSS点数+ 3<br>首次击杀奖励一本宝物<br>杀怪金币加成+3<br>全属性+20<br><br>召唤冷却：{s:cooldown}s"
+
+	"bc_tz_5_1_desc"					"<font color=\"#ffd861\">消耗6W金币</font><br/><br/>召唤一个普通的高级领主,占3个生存数量,击杀后可掉落 1 件高级紫色套装散件<br/><br/>击杀后召唤者BOSS点数+ 4<br>杀怪金币加成+3<br>全属性+20<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_5_2_desc"					"<font color=\"#ffd861\">消耗8W金币</font><br/><br/>召唤一个强力的高级领主,占3个生存数量,击杀后可掉落 2 件高级紫色套装散件<br/><br/>击杀后召唤者BOSS点数+ 5<br>杀怪金币加成+3<br>全属性+30<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_5_3_desc"					"<font color=\"#ffd861\">消耗10W金币</font><br/><br/>召唤一个危险的高级领主,占3个生存数量,击杀后可掉落 1 套高级紫色套装<br/><br/>击杀后召唤者BOSS点数+ 6<br>杀怪金币加成+6<br>全属性+40<br>首次击杀奖励一本宝物<br><br>召唤冷却：{s:cooldown}s"
+
+	"bc_tz_6_1_desc"					"<font color=\"#ffd861\">消耗15W金币</font><br/><br/>召唤一个普通的顶级领主,占3个生存数量,击杀后可掉落 1 件橙色套装散件<br/><br/>击杀后召唤者BOSS点数+ 7<br>杀怪金币加成+6<br>全属性+50<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_6_2_desc"					"<font color=\"#ffd861\">消耗20W金币</font><br/><br/>召唤一个强力的顶级领主,占3个生存数量,击杀后可掉落 2 件橙色套装散件<br/><br/>击杀后召唤者BOSS点数+ 8<br>杀怪金币加成+6<br>全属性+70<br><br>召唤冷却：{s:cooldown}s"
+	"bc_tz_6_3_desc"					"<font color=\"#ffd861\">消耗25W金币</font><br/><br/>召唤一个危险的顶级领主,占3个生存数量,击杀后可掉落 1 套橙色套装<br/><br/>击杀后召唤者BOSS点数+ 10<br>杀怪金币加成+12<br>全属性+100<br>首次击杀奖励一本宝物<br><br>召唤冷却：{s:cooldown}s"
+
+	"bc_gr_1_desc"					"<font color=\"#ffd861\">消耗5W金币</font><br/><br/>召唤一个地狱级领主,占5个生存数量,爆率为<font color=\"#FFFF00\">  1 </font><br/><br/>击杀后在<font color=\"#ffd861\"> 召唤者 </font>脚下掉落一个宝箱<br/>开启可以获得不定数量的随机装备<br/><br/>爆率越高,击杀难度越大,但是宝箱奖励可能更丰富<br/><br/>击杀后召唤者BOSS点数+ 4<br><br>召唤冷却：{s:cooldown}s"
+	"bc_gr_2_desc"					"<font color=\"#ffd861\">消耗10W金币</font><br/><br/>召唤一个地狱级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 3 </font><br/><br/>击杀后召唤者BOSS点数+ 6<br><br>召唤冷却：{s:cooldown}s"	
+	"bc_gr_3_desc"					"<font color=\"#ffd861\">消耗20W金币</font><br/><br/>召唤一个地狱级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 5 </font><br/><br/>击杀后召唤者BOSS点数+ 8<br><br>召唤冷却：{s:cooldown}s"	
+	"bc_gr_4_desc"					"<font color=\"#ffd861\">消耗40W金币</font><br/><br/>召唤一个地狱级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 10 </font><br/><br/>击杀后召唤者BOSS点数+ 10<br><br>召唤冷却：{s:cooldown}s"
+	"bc_gr_5_desc"					"<font color=\"#ffd861\">消耗80W金币</font><br/><br/>召唤一个地狱级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 20 </font><br/><br/>击杀后召唤者BOSS点数+ 20<br><br>召唤冷却：{s:cooldown}s"	
+	
+
+	"bc_team_1_desc"				"<font color=\"#ffd861\">消耗5W金币</font><br/><br/>召唤一个深渊级领主,,占5个生存数量,爆率为<font color=\"#FFFF00\"> 1 </font><br/><br/>击杀后在<font color=\"#ffd861\"> 所有人 </font>脚下掉落一个宝箱<br/>开启可以获得不定数量的随机装备<br/><br/>爆率越高,击杀难度越大,但是宝箱奖励可能更丰富<br/><br/>击杀后所有人BOSS点数+ 4<br><br>召唤冷却：{s:cooldown}s"
+	"bc_team_2_desc"					"<font color=\"#ffd861\">消耗10W金币</font><br/><br/>召唤一个深渊级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 3 </font><br/><br/>击杀后所有人BOSS点数+ 6<br><br>召唤冷却：{s:cooldown}s"	
+	"bc_team_3_desc"					"<font color=\"#ffd861\">消耗20W金币</font><br/><br/>召唤一个深渊级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 5 </font><br/><br/>击杀后所有人BOSS点数+ 8<br><br>召唤冷却：{s:cooldown}s"	
+	"bc_team_4_desc"					"<font color=\"#ffd861\">消耗40W金币</font><br/><br/>召唤一个深渊级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 10 </font><br/><br/>击杀后所有人BOSS点数+ 10<br><br>召唤冷却：{s:cooldown}s"
+	"bc_team_5_desc"					"<font color=\"#ffd861\">消耗80W金币</font><br/><br/>召唤一个深渊级领主,占5个生存数量,爆率为<font color=\"#FFFF00\"> 20 </font><br/><br/>击杀后所有人BOSS点数+ 20<br><br>召唤冷却：{s:cooldown}s"
+
+	"bc_gr_1_name"					"地狱级领主 X1"
+	"bc_gr_2_name"					"地狱级领主 X3"
+	"bc_gr_3_name"					"地狱级领主 X5"
+	"bc_gr_4_name"					"地狱级领主 X10"
+	"bc_gr_5_name"					"地狱级领主 X20"
+
+	"bc_team_1_name"				"深渊级领主 X1"
+	"bc_team_2_name"				"深渊级领主 X3"
+	"bc_team_3_name"				"深渊级领主 X5"
+	"bc_team_4_name"				"深渊级领主 X10"
+	"bc_team_5_name"				"深渊级领主 X20"
+
+
+	"bp_reward_item_BPreward_base_1"				"游戏初始金币+1000"
+	"bp_reward_item_jing_plus_1"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_2"				"游戏初始英雄智力+20"
+	"bp_reward_item_BPreward_plus_2"				"三阶极品首饰装备钥匙"
+
+	"bp_reward_item_BPreward_base_3"				"游戏初始英雄敏捷+25"
+	"bp_reward_item_jing_plus_3"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_4"				"游戏初始英雄力量+30"
+	"bp_reward_item_BPreward_plus_4"				"征战钥匙+5"
+
+	"bp_reward_item_BPreward_base_5"				"征战钥匙+5"
+	"bp_reward_item_BPreward_plus_5"				"三阶极品首饰装备钥匙"
+
+	"bp_reward_item_BPreward_base_6"				"二阶极品首饰装备钥匙"
+	"bp_reward_item_BPreward_plus_6"				"中级专长--消耗*10"
+
+	"bp_reward_item_BPreward_base_7"				"英雄魔法回复+2"
+	"bp_reward_item_jing_plus_7"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_8"				"游戏初始杀敌数+50"
+	"bp_reward_item_BPreward_plus_8"				"技能秘笈数量+50"
+
+	"bp_reward_item_BPreward_base_9"				"基础专长--消耗*10"
+	"bp_reward_item_BPreward_plus_9"				"宝物数量+5"
+
+	"bp_reward_item_BPreward_base_10"				"二阶极品防具装备钥匙"
+	"bp_reward_item_BPreward_plus_10"				"三阶极品特殊装备钥匙"
+
+	"bp_reward_item_BPreward_base_11"				"二阶极品武器装备钥匙"
+	"bp_reward_item_BPreward_plus_11"				"征战钥匙+5"
+
+	"bp_reward_item_BPreward_base_12"				"英雄技能伤害+5%"
+	"bp_reward_item_BPreward_plus_12"				"秘术药剂+20"
+
+	"bp_reward_item_BPreward_base_13"				"英雄暴击伤害+20%"
+	"bp_reward_item_jing_plus_13"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_14"				"英雄暴击概率+2%"
+	"bp_reward_item_jing_plus_14"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_15"				"英雄个人技能等级+1"
+	"bp_reward_item_BPreward_plus_15"				"第一赛季plus版宠物奖励"
+
+	"bp_reward_item_BPreward_base_16"				"征战钥匙+10"
+	"bp_reward_item_BPreward_plus_16"				"高级专长--消耗*10"
+
+	"bp_reward_item_BPreward_base_17"				"选英雄界面刷新英雄次数+1"
+	"bp_reward_item_BPreward_plus_17"				"征战钥匙+10"
+
+	"bp_reward_item_BPreward_base_18"				"英雄附加伤害+2%"
+	"bp_reward_item_BPreward_plus_18"				"守护药剂+20"
+
+	"bp_reward_item_BPreward_base_19"				"英雄最终伤害+2%"
+	"bp_reward_item_jing_plus_19"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_20"				"征战钥匙+5"
+	"bp_reward_item_BPreward_plus_20"				"三阶史诗防具装备钥匙"
+
+	"bp_reward_item_BPreward_base_21"				"英雄个人技能等级+1"
+	"bp_reward_item_jing_plus_21"					"晶石+3000"
+
+	"bp_reward_item_jing_base_22"					"晶石+2000"
+	"bp_reward_item_jing_plus_22"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_23"				"英雄金钱加成+3%"
+	"bp_reward_item_BPreward_plus_23"				"征战钥匙+10"
+
+	"bp_reward_item_BPreward_base_24"				"英雄经验加成+3%"
+	"bp_reward_item_BPreward_plus_24"				"三阶史诗武器装备钥匙"
+
+	"bp_reward_item_BPreward_base_25"				"第一赛季基础光环奖励"
+	"bp_reward_item_BPreward_plus_25"				"第一赛季plus光环奖励"
+
+	"bp_reward_item_BPreward_base_26"				"高级专长--消耗*10"
+	"bp_reward_item_BPreward_plus_26"				"宝物数量*10"
+
+	"bp_reward_item_BPreward_base_27"				"征战钥匙+10"
+	"bp_reward_item_jing_plus_27"					"晶石+5000"
+
+	"bp_reward_item_jing_base_28"					"晶石+3000"
+	"bp_reward_item_jing_plus_28"					"晶石+5000"
+
+	"bp_reward_item_jing_base_29"					"晶石+3000"
+	"bp_reward_item_BPreward_plus_29"				"征战钥匙+20"
+
+	"bp_reward_item_BPreward_base_30"				"三阶极品特殊装备钥匙"
+	"bp_reward_item_BPreward_plus_30"				"三阶史诗特殊装备钥匙"
+
+
+	"bp_quest_day_difficulty_0"							"通关任意难度"
+	"bp_quest_day_difficulty_1"							"通关N1"
+	"bp_quest_day_difficulty_2"							"通关N2"
+	"bp_quest_day_difficulty_3"							"通关N3"
+	"bp_quest_day_difficulty_4"							"通关N4"
+	"bp_quest_day_difficulty_5"							"通关N5"
+	"bp_quest_day_difficulty_6"							"通关N6"
+	"bp_quest_day_difficulty_7"							"通关N7"
+
+	"bp_quest_day_hero_pass_1"							"使用力量英雄通关"
+	"bp_quest_day_hero_pass_2"							"使用敏捷英雄通关"
+	"bp_quest_day_hero_pass_3"							"使用智力英雄通关"
+
+	"bp_quest_day_hero_killboss_1"						"击杀灾厄领主伐木机"
+	"bp_quest_day_hero_killboss_2"						"击杀灾厄领主卡尔"
+	"bp_quest_day_hero_killboss_3"						"击杀灾厄领主死亡骑士"
+	"bp_quest_day_hero_killboss_4"						"击杀灾厄领主山丘巨人"
+	"bp_quest_day_hero_killboss_5"						"击杀灾厄领主凤凰"
+	"bp_quest_day_hero_killboss_6"						"击杀灾厄领主幻影刺客"
+
+
+	"bp_quest_day_hero_killunit_1"						"击杀5000个小怪"
+
+	"bp_quest_day_hero_getboss_1"						"获得500Boss点数"	
+
+	"bp_quest_week_difficulty_5_2"						"通关N5狂暴模式"	
+	"bp_quest_week_difficulty_6_3"						"通关N6奥术模式"
+	"bp_quest_week_difficulty_7_4"						"通关N7灾难模式"
+	"bp_quest_week_difficulty_8_2"						"通关N8狂暴模式"
+	"bp_quest_week_difficulty_9_3"						"通关N9奥术模式"
+	"bp_quest_week_difficulty_10_4"						"通关N10灾难模式"
+
+	"bp_quest_week_hero_killunit_1"						"累积击杀小怪30000只"
+
+	"bp_quest_week_difficulty_11_5"						"通关N11地狱模式"
+	"bp_quest_week_difficulty_12_5"						"通关N12地狱模式"
+	"bp_quest_week_difficulty_13_6"						"通关N13赏金模式"
+	"bp_quest_week_difficulty_14_7"						"通关N14噩梦模式"
+	"bp_quest_week_difficulty_7"						"通关N7累计3次"
+	"bp_quest_week_difficulty_8"						"通关N8累计3次"
+	"bp_quest_week_difficulty_9"						"通关N9累计3次"
+	"bp_quest_week_difficulty_10"						"通关N10累计3次"
+
+	"bp_quest_week_hero_getboss_1"						"获得3000BOSS点数"
+
+	"npc_dota_hero_hoodwink_desc"	"《修仙诀》玩家专属"
+	"npc_dota_hero_dark_willow_desc"	"《诛仙诀》玩家专属"
+}
+

@@ -1,0 +1,56 @@
+"MainPage_Title"	"Mainpage"
+"MainPage_Screen"	"Screen"
+"MainPage_Prompt"	"View"
+
+"MainPage_SwithBtn_Heroes"  	                                "Hero"
+"HeroesWindow_HeroLevel_Title"	                                "HeroLevel"
+"HeroesWindow_HeroLevelUp_Button"	                            "Level up"
+"HeroesWindow_HeroLevelUp_ButtonDescription"	                "Level card up by StarStore"
+"HeroesWindow_LevelView_LevelLabel"	                            "Lv-{d:level}"
+"HeroesWindow_LevelView_UnlockLabel_GoldCard"	                "Goldcard Unlock"
+"HeroesWindow_LevelView_UnlockLabel_Memory" 	                "Memory Unlock"
+"HeroesWindow_LevelView_UnlockLabel_RandomAttribute" 	        "Random attribute"
+"HeroesWindow_LevelView_UnlockLabel_RandomAttribute_MaxVal" 	"Random max level attribute"
+"HeroesWindow_LevelView_UnlockLabel_physical_attack" 	        "Physical attack +%val%"
+"HeroesWindow_LevelView_UnlockLabel_magical_attack" 	        "Magical attack +%val%"
+"HeroesWindow_LevelView_UnlockLabel_physical_armor" 	        "Physical armor +%val%"
+"HeroesWindow_LevelView_UnlockLabel_magical_armor" 		        "Magical armor +%val%"
+"HeroesWindow_LevelView_UnlockLabel_status_health" 		        "Health +%val%"
+"HeroesWindow_LevelView_UnlockLabel_status_mana" 		        "Mana +%val%"
+"HeroesWindow_LevelView_UnlockLabel_mana_regen" 		        "Mana regen +%val%"
+"HeroesWindow_LevelView_UnlockLabel_attackt_speed" 		        "Attack speed +%val%"
+"HeroesWindow_LevelView_UnlockLabel_movespeed" 			        "Move speed +%val%"
+
+"MainPage_SwithBtn_Commander"  	                            "COMMANDER"
+"MainPage_SwithBtn_SpellCard"	                            "SPELL"
+"MainPage_SwithBtn_Items"	                                "ITEM"
+"MainPage_SwithBtn_Artifact"	                            "ARTIFACT"
+
+// 指挥官
+"MainPage_Commander_Search_WaitInput"			            "Input the commander you want to search"
+"MainPage_Commander_Major_Interface_UnlockInfoLabel"		"Unlock schedule:"
+"MainPage_Commander_InfoAttributes_PhyAtkName"	            "Physical attack"
+"MainPage_Commander_InfoAttributes_PhyArmName"	            "Physical armor"
+"MainPage_Commander_InfoAttributes_PhyArmInfo"	            "{d:phy_arm_per}% damage reduce"
+"MainPage_Commander_InfoAttributes_MagAtkName"	            "Magical attack"
+"MainPage_Commander_InfoAttributes_MagArmName"	            "Magical armor"
+"MainPage_Commander_InfoAttributes_MagArmInfo"	            "{d:mag_arm_per}% damage reduce"
+"MainPage_Commander_InfoAttributes_AtkSpdName"	            "Attack speed"
+"MainPage_Commander_InfoAttributes_AtkSpdInfo"	            "（{s:atk_interval} Attack interval"
+"MainPage_Commander_InfoAttributes_AtkRagName"	            "Attack range"
+
+// 法术牌
+"MainPage_SpellCard_Search_WaitInput"			            "Input the spell you want to search"
+"MainPage_SpellCard_Major_Interface_UnlockInfoLabel"		"Unlock schedule:"
+
+// 装备
+"MainPage_Items_Search_WaitInput"                           "Input the item you want to search"
+"MainPage_Items_Major_Interface_Label"                      "ITEM"
+
+
+// 神器
+"MainPage_Artifact_Search_WaitInput"                        "Input the Artifact you want to search"
+"MainPage_Artifact_Major_Interface_Label"                   "ARTIFACT"
+
+// 组卡
+"MainPage_SwithBtn_CardGroup"	                            "Card Group"

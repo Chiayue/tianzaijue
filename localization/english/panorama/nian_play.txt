@@ -1,0 +1,6 @@
+"NianPlayTitle"				"The nian is coming !!!"
+"NianPlay"					"Nian"
+"NianPlayDescription"		"Nian is possibly occured after killing the last bass! Get rewards every daily first kill of Nian!"
+"NianRewardDetail"			"Red envelope reward"
+"NianErrorTip"				"Coming soon"
+"NianGoToOpenRedEnvelope"	"To open"

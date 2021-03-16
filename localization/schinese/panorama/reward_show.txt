@@ -1,0 +1,9 @@
+"RewardShowTitleLab"			"你已拥有："
+"RewardShow_HeroXP"				"{s:hero_name}经验x{s:xp}"
+"RewardShow_Close"				"点此区域跳过"
+
+"RewardShow_TotalMoonStone"		"总计获得月石"
+"RewardShow_TotalStarStone"		"总计获得星石"
+"RewardShow_TotalStarDust"		"总计获得星辉"
+"RewardShow_TotalHeroXP"		"总计获得通用英雄经验"
+"RewardShow_TotalBPXP"			"总计获得战争通行证经验"

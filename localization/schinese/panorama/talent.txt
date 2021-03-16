@@ -1,0 +1,5 @@
+"TalentLearnCheck"		"消耗1点天赋点学习？"
+"TalentLearnCheck_Y"		"学习"
+"TalentLearnCheck_N"		"取消"
+"TalentsLearnPoint"		"剩余天赋点"
+"TalentsLearnReset"		"重置天赋"

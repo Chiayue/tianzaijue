@@ -1,0 +1,100 @@
+//--------------------------------------------------------------------------------------------------
+// 怪物技能特性
+"DOTA_Tooltip_ability_sand_wind" "Sand Storm"
+"DOTA_Tooltip_ability_sand_wind_Description" "Has a %chance%%% chance to creates a fearsome sandstorm that he can be invisible in it when taking damage. Enemies movespeed will be slowed within its range. Duration: %slow_down_duration% seconds."
+"DOTA_Tooltip_modifier_sand_wind_buff" "Sand Storm"
+"DOTA_Tooltip_modifier_sand_wind_buff_Description" "Invisible, cannot be attacked."
+"DOTA_Tooltip_modifier_sand_wind_debuff" "Sand Storm"
+"DOTA_Tooltip_modifier_sand_wind_debuff_Description" "Movespeed slowed by sandstorm."
+
+"DOTA_Tooltip_ability_enemy_shield" "Shield"
+"DOTA_Tooltip_ability_enemy_shield_Description" "Has %block_times% times of instances."
+"DOTA_Tooltip_modifier_enemy_shield_buff" "Shield"
+"DOTA_Tooltip_modifier_enemy_shield_buff_Description" "Absorbs the next %dMODIFIER_PROPERTY_TOOLTIP% instances of attacks."
+
+"DOTA_Tooltip_ability_enemy_knockback" "Knockback"
+"DOTA_Tooltip_ability_enemy_knockback_Description" "Knocks its target back when attacking, can be activated once in a while."
+"DOTA_Tooltip_modifier_enemy_knockback" "Knockback"
+"DOTA_Tooltip_modifier_enemy_knockback_Description" "Can Knocks back enemies when attacks."
+
+"DOTA_Tooltip_ability_enemy_irritable" "Rapid"
+"DOTA_Tooltip_ability_enemy_irritable_Description" "When attacking, it has a %chance%%% chance to increase attack speed by %attackspeed_perstack%."
+"DOTA_Tooltip_modifier_enemy_irritable" "Rapid"
+"DOTA_Tooltip_modifier_enemy_irritable_Description" "Increased attack speed."
+
+"DOTA_Tooltip_ability_enemy_seismicwave" "Stampede"
+"DOTA_Tooltip_ability_enemy_seismicwave_Description" "When attacking, it has a %chance%%% chance to slam the ground, stunning and damaging enemies within %range% units."
+"DOTA_Tooltip_modifier_enemy_seismicwave" "Stampede"
+"DOTA_Tooltip_modifier_enemy_seismicwave_Description" "It may slam the ground when attacking."
+
+"DOTA_Tooltip_ability_enemy_locktarget" "Target Priority"
+"DOTA_Tooltip_ability_enemy_locktarget_Description" "Prioritize attacks on marked units."
+
+"DOTA_Tooltip_ability_enemy_division" "Split"
+"DOTA_Tooltip_ability_enemy_division_Description" "When its health reaches %trigger_health_pct%%%, it channels for %duration% seconds, splitting into %diversion_count% units that cannot attack."
+"DOTA_Tooltip_modifier_enemy_division" "Split"
+"DOTA_Tooltip_modifier_enemy_division_Description" "Splits when its health is low."
+
+"DOTA_Tooltip_ability_enemy_towerking" "Defence Tower"
+"DOTA_Tooltip_ability_enemy_towerking_Description" "Places a Defence Tower that summons no attackbility units once in a while."
+
+"DOTA_Tooltip_ability_enemy_reborn" "Reborn"
+"DOTA_Tooltip_ability_enemy_reborn_Description" "Transforms into a Fiery Egg when takes a lethal damage. The Fiery Egg can be broken by %unlock_times% attacks, or it will hatch after %duration% seconds."
+"DOTA_Tooltip_modifier_enemy_reborn" "Reborn"
+"DOTA_Tooltip_modifier_enemy_reborn_Description" "Attempts to reborn when it takes lethal damage"
+"DOTA_Tooltip_modifier_enemy_reborn_buff" "Reborn"
+"DOTA_Tooltip_modifier_enemy_reborn_buff_Description" "Takes %dMODIFIER_PROPERTY_TOOLTIP% attacks to break."
+
+"DOTA_Tooltip_ability_enemy_firepath" "Trail of Flames"
+"DOTA_Tooltip_ability_enemy_firepath_Description" "Lays down a Trail of Flames when it moves. The Trail lasts %duration% seconds, damaging enemies by %damage_factor%%% of their Max HP per second."
+"DOTA_Tooltip_modifier_enemy_firepath" "Trail of Flames"
+"DOTA_Tooltip_modifier_enemy_firepath_Description" "Lays down a Trail of Flames when it moves."
+
+"DOTA_Tooltip_ability_enemy_wrestling" "Toss Back"
+"DOTA_Tooltip_ability_enemy_wrestling_Description" "Toss the enemy away."
+
+"DOTA_Tooltip_ability_enemy_healthrecovery" "Heal"
+"DOTA_Tooltip_ability_enemy_healthrecovery_Description" "When its health reaches %health_triggle%%%, it heals %heal_pct%%% of its Max HP per second for %duration% seconds."
+"DOTA_Tooltip_modifier_enemy_healthrecovery_buff" "Heal"
+"DOTA_Tooltip_modifier_enemy_healthrecovery_buff_Description" "Healing."
+
+"DOTA_Tooltip_ability_enemy_ice" "Frostbite"
+"DOTA_Tooltip_ability_enemy_ice_Description" "Has a %chance%%% chance to freeze its target for %ice_duration% seconds."
+"DOTA_Tooltip_modifier_enemy_ice" "Frostbite"
+"DOTA_Tooltip_modifier_enemy_ice_Description" "Has a chance to feeze its enemies."
+
+"DOTA_Tooltip_ability_enemy_atk" "Strengthened"
+"DOTA_Tooltip_ability_enemy_atk_Description" "Has a %chance%%% chance to gain %attack%%% attacks. Stacks up to %count%."
+"DOTA_Tooltip_modifier_enemy_atk" "Strengthened"
+"DOTA_Tooltip_modifier_enemy_atk_Description" "Has a chance to increase attack while attacking."
+"DOTA_Tooltip_modifier_enemy_atk_buff" "Strengthened"
+"DOTA_Tooltip_modifier_enemy_atk_buff_Description" "Damage increased by %dMODIFIER_PROPERTY_TOOLTIP%%%."
+
+"DOTA_Tooltip_ability_enemy_bubbleshiled" "Space Distortion"
+"DOTA_Tooltip_ability_enemy_bubbleshiled_Description" "Causes the incoming ranged attacks to miss. The chance of Distortion is %miss_chance%%%, and the duration is %duration% seconds."
+"DOTA_Tooltip_modifier_enemy_bubbleshiled" "Space Distortion"
+"DOTA_Tooltip_modifier_enemy_bubbleshiled_Description" "Causes ranged enemies to miss their attacks."
+
+"DOTA_Tooltip_ability_enemy_lockpig" "Mark"
+"DOTA_Tooltip_ability_enemy_lockpig_Description" "Marks an enemy, enhancing its damage taken by %incoming_pct%%%. The death of the marked unit deals area damage equals to %damage_factor% of its max HP."
+"DOTA_Tooltip_modifier_enemy_lockpig" "Mark"
+"DOTA_Tooltip_modifier_enemy_lockpig_Description" "Can mark an enemy."
+"DOTA_Tooltip_modifier_enemy_lockpig_lockbuff" "Marked"
+"DOTA_Tooltip_modifier_enemy_lockpig_lockbuff_Description" "Takes extra damage, and explodes upon death."
+
+"DOTA_Tooltip_ability_enemy_implate" "Earth Spike"
+"DOTA_Tooltip_ability_enemy_implate_Description" "Rock spikes burst from the earth along a straight path. Enemy units are hurled into the air, taking damage that euqals to %damage_factor% of its attack."
+"DOTA_Tooltip_modifier_enemy_implate" "Earth Spike"
+"DOTA_Tooltip_modifier_enemy_implate_Description" "Casts Earth Spike once in a while."
+
+"DOTA_Tooltip_ability_enemy_rage" "Rage"
+"DOTA_Tooltip_ability_enemy_rage_Description" "When its health reaches %health_trigger_pct%%%, increases its movement and attack speed."
+"DOTA_Tooltip_modifier_enemy_rage" "Rage"
+"DOTA_Tooltip_modifier_enemy_rage_Description"	"Increases its movement and attack speed when its health is low."
+"DOTA_Tooltip_modifier_enemy_rage_buff" "Rage"
+"DOTA_Tooltip_modifier_enemy_rage_buff_Description" "Gains movement and attack speed."
+
+"DOTA_Tooltip_ability_enemy_slaughter" "slaughter"
+"DOTA_Tooltip_ability_enemy_slaughter_Description" "Blinks nearby an enemy to attack it."
+"DOTA_Tooltip_modifier_enemy_slaughter" "slaughter"
+"DOTA_Tooltip_modifier_enemy_slaughter_Description" "Can blink nearby an enemy."

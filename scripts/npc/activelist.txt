@@ -1,0 +1,93 @@
+"whitelist"
+{
+	"npc_dota_hero_omniknight" 			"1"	//全能骑士
+	"npc_dota_hero_sven" 				"1"	// 斯温
+	"npc_dota_hero_elder_titan" 		"1"	//上古巨神
+	"npc_dota_hero_bristleback" 		"1"	//钢背兽
+	"npc_dota_hero_night_stalker" 		"1"	//夜魔
+	"npc_dota_hero_abaddon" 			"1"	//亚巴顿
+	"npc_dota_hero_alchemist" 			"1"	//炼金术士
+	"npc_dota_hero_abyssal_underlord" 	"1"	//孽主
+	"npc_dota_hero_axe" 				"1"	//斧王
+	"npc_dota_hero_beastmaster" 		"1"	//兽王
+	"npc_dota_hero_legion_commander" 	"1"	//军团指挥官
+	"npc_dota_hero_pudge" 				"1"	//帕吉
+	"npc_dota_hero_centaur" 			"1"	//半人马酋长
+	"npc_dota_hero_wisp"				"1"	//艾欧
+	"npc_dota_hero_treant"				"1"	//树精卫士
+	"npc_dota_hero_doom_bringer"		"1"	//末日使者
+	"npc_dota_hero_phoenix"				"1"	//凤凰
+	"npc_dota_hero_mars"				"1"	//玛尔斯
+	"npc_dota_hero_sand_king"			"1"	//沙王
+	"npc_dota_hero_dragon_knight"		"1"	//龙骑士
+	"npc_dota_hero_slardar"				"1"	//斯拉达
+	"npc_dota_hero_tusk"				"1"	//巨牙海明
+	"npc_dota_hero_earthshaker"			"1"	//撼地神牛
+	"npc_dota_hero_skeleton_king"		"1"	//骷髅王
+	"npc_dota_hero_life_stealer"		"1"	//食尸鬼
+	"npc_dota_hero_lycan"				"1"	//狼人
+	"npc_dota_hero_spirit_breaker"		"1"	//白牛
+
+ 
+
+
+	"npc_dota_hero_drow_ranger" 		"1"//卓尔游侠
+	"npc_dota_hero_juggernaut" 			"1"//主宰
+	"npc_dota_hero_windrunner" 			"1"//风行
+	"npc_dota_hero_mirana" 				"1"//pom
+	"npc_dota_hero_antimage" 			"1"//敌法
+	"npc_dota_hero_phantom_assassin" 	"1"//幻影刺客
+	"npc_dota_hero_nevermore" 			"1"//影魔
+	"npc_dota_hero_vengefulspirit" 		"1"//复仇之魂
+	"npc_dota_hero_bounty_hunter" 		"1"//赏金猎人
+	"npc_dota_hero_sniper" 				"1"//狙击手
+	"npc_dota_hero_naga_siren" 			"1"//娜迦海妖
+	"npc_dota_hero_bloodseeker" 		"1"//血魔
+	"npc_dota_hero_faceless_void" 		"1"//虚空假面
+	"npc_dota_hero_terrorblade" 		"1"//恐怖利刃
+	"npc_dota_hero_gyrocopter" 			"1"//矮人直升机
+	"npc_dota_hero_razor" 				"1"//电棍
+	"npc_dota_hero_nyx_assassin" 		"1"//司夜刺客
+	"npc_dota_hero_troll_warlord"		"1"	//巨魔战将
+	"npc_dota_hero_hoodwink"			"1"	//苏嫣儿
+	"npc_dota_hero_dark_willow"			"1"	//碧瑶
+//	"npc_dota_hero_morphling"			"1"	//水人
+//	"npc_dota_hero_lone_druid"			"1"	//德鲁伊 
+	"npc_dota_hero_ursa"				"1"	//熊战士
+//	"npc_dota_hero_slark"				"1"	//斯拉克
+//	"npc_dota_hero_spectre"				"1"	//幽鬼
+	"npc_dota_hero_viper"				"1"	//冥界亚龙
+	"npc_dota_hero_templar_assassin"	"1"	//圣堂刺客
+
+
+
+
+
+
+	"npc_dota_hero_keeper_of_the_light" "1"//光法
+	"npc_dota_hero_invoker" 			"1"//祈求者
+	"npc_dota_hero_crystal_maiden"	    "1"//水晶室女
+//	"npc_dota_hero_dazzle"			    "1"//戴泽
+	"npc_dota_hero_lich"			    "1"//巫妖
+	"npc_dota_hero_leshrac" 			"1"//拉席克
+	"npc_dota_hero_furion" 				"1"//先知
+	"npc_dota_hero_silencer" 			"1"//沉默术士
+	"npc_dota_hero_obsidian_destroyer"  "1"//殁境神蚀者 
+	"npc_dota_hero_lina" 				"1"//莉娜
+	"npc_dota_hero_queenofpain" 		"1"//痛苦女王
+	"npc_dota_hero_zuus" 				"1"//宙斯
+	"npc_dota_hero_ogre_magi" 			"1"//食人魔法师
+	"npc_dota_hero_oracle" 				"1"//神谕者
+	"npc_dota_hero_skywrath_mage" 		"1"//天怒法师
+	"npc_dota_hero_tinker" 				"1"//修补匠
+	"npc_dota_hero_winter_wyvern" 		"1"//寒冬飞龙
+	"npc_dota_hero_jakiro" 				"1"//双头龙
+	"npc_dota_hero_enigma"				"1"//谜团
+	"npc_dota_hero_death_prophet"		"1"//死亡先知
+	"npc_dota_hero_puck"				"1"//帕克
+//	"npc_dota_hero_lion"				"1"//莱恩
+	"npc_dota_hero_warlock"				"1"//术士
+//	"npc_dota_hero_enchantress"			"1"//魅惑魔女
+	"npc_dota_hero_storm_spirit"		"1"//蓝猫
+	"npc_dota_hero_void_spirit"			"1"//紫猫
+}

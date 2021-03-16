@@ -1,0 +1,135 @@
+// 主界面
+"Handbook_Main"	                "MAIN PAGE"
+"PlayerLevel"	                "LV {s:player_level}"
+"PlayerNextLevel"	            "Lock until {s:player_nextlevel} level"
+"PlayerNoVip"	                "Non-Vip"
+"PlayerDoubleXP"		        "Double DATA Exp"
+"PlayerTalent"	                "TALENT"
+"PlayerTalentPanel_NeedUse"	    "Free talent"
+"PlayerItemLockInfo_Title"	    "Schedule"
+"TypeNameLabel_Spell"		    "SPELL"
+"TypeNameLabel_Item"		    "ITEM"
+"TypeNameLabel_Artifact"	    "ARTIFACT"
+"PlayerAdventureProgress_Title"	"Adventure Schedule"
+"BattlePassSwithBtn_Order"	    "Season {s:bp_order}"
+"TaskSwithLabel"			    "TASK"
+"TaskSwith_UpdateTime"		    "Refresh:{s:task_update_time}"
+"BP_RecvSucceed"			    "Receive success"
+"BPReceive"					    "Receive all"
+"BPBuy"						    "Activate battlepass"
+"BPBuyActive"					"Active battlepass"
+"BPBuyXP"					    "Level purchase"
+"BP_BuyXPSucceed"			    "Purchase success"
+"BattlePassDoubleXP"		    "Double Bp exp, time left{d:value}"
+
+
+// 组卡
+"Handbook_CardGroup"	        "HERO"
+"CardGroup_Save"		        "Save"
+"CardGroup_SaveError"	        "Fail to save"
+"CardGroup_SaveSucceed"	        "Save success"
+"CardGroup_Use"			        "RESET"
+"CardGroup_UseSucceed"	        "Set success"
+"CardGroup_ChangeNameSucceed"	"Changed"
+"CardGroup_ResetBtn"	        "Discard changes"
+"CardGroup_SwichView"	        "Show mode"
+"CardGroup_SwichView_Hero"		"Hero"
+"CardGroup_SwichView_Relation"	"Relationship"
+"CardGroup_AddCardKindLimit"	"Max card varieties"
+"CardPool_Filter"				"Screen"
+"CardPool_FilterHave"			"Own"
+"CardPool_FilterEntry"			"Input key word"
+"CardPool_FilterTag"			"Choose the relationship"
+"CardPool_AddCardGroupBtn"		"Add"
+"CardGroup_AllCardLevelUp"		"Level up all heroes"
+
+// 卡牌成长相关
+"CardGrowupLevel"				            "LV:{s:level}"
+"CardGrowupXP"					            "{s:xp_cur}/{s:xp_max}"
+"CardGoColleted"			                "Go collect"
+"CardGrowup_NotHaveLab"			            "Hero is locked, open treasure box to collect or summon this hero 100 ROUNDs into battlefield"
+"CardGrowup_HeroTaskLabel"					"{d:need_round}回合后经验+1  （{d:max_level}级后不再获得）"
+"CardGrowup_LevelUp"			            "Level up"
+"CardGrowup_HeroXP"				            "Current exp"
+"CardGrowup_CommonXP"			            "Global exp"
+"CardGrowup_LevelUpGrowupTelentTitle"		"Improvment"
+"CardGrowup_LevelUpGrowupTelent"			"{s:levelup_talent}"
+"CardGrowup_Talent_GoldCard"				"Unlock gold card"
+"CardGrowup_Talent_Memory" 					"Unlock memory"
+"CardGrowup_Talent_RandomAttribute" 		"Random attribute"
+"CardGrowup_Talent_RandomAttribute_MaxVal" 	"Random max level attribute"
+"CardGrowup_Talent_physical_attack" 		"+{s:val} physical attack"
+"CardGrowup_Talent_magical_attack" 			"+{s:val} magical attack"
+"CardGrowup_Talent_physical_armor" 			"+{s:val} physical armor"
+"CardGrowup_Talent_magical_armor" 			"+{s:val} magical armor"
+"CardGrowup_Talent_status_health" 			"+{s:val} health"
+"CardGrowup_Talent_status_mana" 			"+{s:val} mana"
+"CardGrowup_Talent_mana_regen" 				"+{s:val} mana regen"
+"CardGrowup_Talent_attackt_speed" 			"+{s:val} attack speed"
+"CardGrowup_Talent_movement_speed" 			"+{s:val} move speed"
+"CardGrowup_Talent_AttributeAll" 			"+{s:val}% all attribute"
+"CardAttribute_Hp" 				"Health："
+"CardAttribute_AtkPhy" 			"Physical Attack"
+"CardAttribute_AtkMgc" 			"Magical Attack"
+"CardAttribute_ArmPhy" 			"Physical Armor"
+"CardAttribute_ArmMgc" 			"Magical Armor"
+
+// 指挥官
+"CommanderStages"			"Commander owned:{d:has}/{d:all}"
+
+// 信使
+"CourierStages"				"Courier owned:{d:has}/{d:all}"
+"TitleStages"				"Title owned:{d:has}/{d:all}"
+
+// 物品
+"Handbook_GameItem"			"ITEM"
+"ItemSearch"				"Input item to search"
+"GameItemStages"			"Item owned:{d:has}/{d:all}"
+"ItemUnlockLevel"			"Lock until DATA level {d:level}"
+
+// 法术卡
+"Handbook_GameSpCard"		"SPELL"
+"SpellSearch"				"Input spell name to search"
+"GameSpellStage"			"Card owned:{d:has}/{d:all}"
+
+// 神器
+"Handbook_GameArtifact"		"ARTIFACT"
+"ArtifactSearch"			"Input Artifact to search"
+"GameArtifactStage"			"Artifact Owned:{d:has}/{d:all}"
+
+// 指挥官
+"Handbook_GameCommander"	"COMMANDER"
+"CommanderSearch"	        "Input commander to search"
+"SelectedCmd"	            "SELECT"
+"Cmd_Talented"	            "TALENT"
+"CmdTalent_Header"	        "TALENT"
+"NotEnough_CmdTalents"	    "Not enough talent"
+"UNLOCKHERO"	            "Locked hero"
+"LockFromGames"	            "Gain commander exp by gameplay"
+"SelectedCommanderSuccees"	"Switch success"
+"CantSetCommander"	        "Only switch while preparation"
+
+// 头像框
+"Handbook_Avatar"			"Border"
+"Avatarborder_Using"		"Current border"
+"Avatarborder_Equip"		"Equiped"
+"Avatarborder_UnLock"		"Unlock"
+
+// 信使
+"Handbook_Courier"			"COURIER"
+"CourierModelTitle"			"COURIER"
+"CourierSave"				"Save"
+"CourierSave_NoChange"		"Default"
+
+//收藏
+"Handbook_Museum"			"ILLUSTRATION"
+
+// 结算
+"GameOver_TalentAddXp"	"Talent Bonus:{d:italentaddxp}"
+"GameOver_Vipaddxp"		"PLUS Bonus:{d:ivipaddxp}"
+"GameOver_Vipaddbp"		"PLUS Bonus:{d:ivipbpxp}"
+"GameOver_Doublebp"		"Double Bonus:{d:idoublebpxp}"
+"NewLevel_Occur"		"Level up~"
+"Gameover_balance"		"Game Balance"
+"Gameover_Over"		    "Leave Game"
+"CommanderExp_full"		"EXP Add Limit"

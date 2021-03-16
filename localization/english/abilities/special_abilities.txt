@@ -1,0 +1,52 @@
+//--------------------------------------------------------------------------------------------------
+// 怪物技能特性
+"DOTA_Tooltip_ability_nothingness"                          "Ghost Form"
+"DOTA_Tooltip_ability_nothingness_Description"              "Enter ghost form when hurted, becoming immune to physical damage, while taking extra %magical_incoming_percentage%%% magical damage"
+
+"DOTA_Tooltip_ability_promise"                              "Wuji"
+"DOTA_Tooltip_ability_promise_Description"                  "Immune to magical damage, while taking extra %physical_incoming_percentage%%% physical damage"
+
+"DOTA_Tooltip_ability_magic_shock"                          "Magic Pulse"
+"DOTA_Tooltip_ability_magic_shock_Description"              "Trigger a magic pulse to deal %abilitydamage% magical damage when deals damage"
+
+"DOTA_Tooltip_ability_immortal"                             "Reincarnation"
+"DOTA_Tooltip_ability_immortal_Description"                 "%respawn_pct%%% chance to reincarnate after death"
+
+"DOTA_Tooltip_ability_shield_strike"                        "Bash"
+"DOTA_Tooltip_ability_shield_strike_Description"            "Grants ability on hit to stun enemy for %abilityduration% second"
+"DOTA_Tooltip_modifier_shield_strike"						"Bash"
+"DOTA_Tooltip_modifier_shield_strike_Description"			"Ability on hit to stun the target"
+
+"DOTA_Tooltip_ability_puncture"                             "Puncture"
+"DOTA_Tooltip_ability_puncture_Description"                 "Reduce %physical_armor_reduce% armor by basic attack for %abilityduration% second, %max_stack_count% stacks at most"
+
+"DOTA_Tooltip_ability_holy_light"                           "Purification"
+"DOTA_Tooltip_ability_holy_light_Description"               "Heals friendly unit %health% health"
+
+"DOTA_Tooltip_ability_snowstorm"                            "Snowstorm"
+"DOTA_Tooltip_ability_snowstorm_Description"                "Deal %abilitydamage% damage to enemies in %radius% radius and slow them %speed_slow_pct%%% movespeed for %slow_duration% second"
+
+"DOTA_Tooltip_ability_shield"                               "Shield"
+"DOTA_Tooltip_ability_shield_Description"                   "Randomly grant friendly unit a shield which blocks %damage_block% damage"
+
+"DOTA_Tooltip_ability_shining_armor"                        "Shining Armor"
+"DOTA_Tooltip_ability_shining_armor_Description"            "Strengthen %physical_armor_bonus% armor for friendly units in %radius% radius"
+
+"DOTA_Tooltip_ability_roots"                                "Roots"
+"DOTA_Tooltip_ability_roots_Description"                    "%rooted_pct%%% chance to root the target on hit for %rooted_duration% second, rooted unit can NOT move or attack and get sustained damage"
+"DOTA_Tooltip_modifier_roots"						        "Roots"
+"DOTA_Tooltip_modifier_roots_Description"			        "Ability to root the target on hit"
+
+"DOTA_Tooltip_ability_split_attack"                         "Split Attack"
+"DOTA_Tooltip_ability_split_attack_Description"             "Extra attack %extra_attack_count% units and deals %extra_attack_damage_pct%%% attack damage"
+"DOTA_Tooltip_modifier_split_attack"						"Split Attack"
+"DOTA_Tooltip_modifier_split_attack_Description"			"Damage to additional units"
+
+"DOTA_Tooltip_ability_rejuvenation"                         "Rejuvenation"
+"DOTA_Tooltip_ability_rejuvenation_Description"             "Strengthen %health_regen_bonus% health regen per second for friendly units in %radius% radius"
+
+"DOTA_Tooltip_ability_enemy_ogre_med_1"                     "Stick Strike"
+"DOTA_Tooltip_ability_enemy_ogre_med_1_Description"         "Waves its stick to strike enemies, deals stun for %stun_duration% second and damage equal to %physical2physical%%% physical attack"
+
+"DOTA_Tooltip_ability_enemy_bfuryaxe"                       "Cleave"
+"DOTA_Tooltip_ability_enemy_bfuryaxe_Description"           "Deals %enemy_bfuryaxe%%% of attack damage in a cone up to %cleave_distance% around the target"

@@ -1,0 +1,2412 @@
+"KeyValue"
+{
+	"sp_fireball"
+	{
+		"Unique"								"1070001"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_fireball"
+		"AbilityTextureName"					"invoker_chaos_meteor"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"13"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"land_time"						"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_health"				"2000"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"knockback_time"				"0.2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct_ancient"			"2"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"380"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+		}
+	}
+	"sp_frozen"
+	{
+		"Unique"								"1070002"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_frozen"
+		"AbilityTextureName"					"crystal_maiden_frostbite"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_damage_spell"			"100"
+			}
+		}
+	}
+	"sp_peaceful"
+	{
+		"Unique"								"1070003"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_peaceful"
+		"AbilityTextureName"					"enchantress_natures_attendants"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal_pct"						"12"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"period"						"0.5"
+			}
+		}
+	}
+	"sp_upheavals"
+	{
+		"Unique"								"1070004"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_upheavals"
+		"AbilityTextureName"					"dark_seer_vacuum"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"pull_duration"					"0.5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"30"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+		}
+	}
+	"sp_cataclysm"
+	{
+		"Unique"								"1070005"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_cataclysm"
+		"AbilityTextureName"					"warlock_upheaval"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_pct"					"0.5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"slow_move_speed"				"35"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"0.2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_pct_ancient"			"0.02"
+			}
+		}
+	}
+	"sp_fear"
+	{
+		"Unique"								"1070006"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_fear"
+		"AbilityTextureName"					"enchantress_untouchable"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_damage"				"25"
+			}
+		}
+	}
+	"sp_invincible"
+	{
+		"Unique"								"1070007"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_invincible"
+		"AbilityTextureName"					"omniknight_guardian_angel"
+		"Rarity"								"SR"
+		"GoldCost"								"200"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"4"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"4"
+			}
+		}
+	}
+	"sp_door"
+	{
+		"Unique"								"1070008"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_door"
+		"AbilityTextureName"					"mud_golem_rock_destroy"
+		"Rarity"								"SR"
+		"GoldCost"								"200"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"number_of_creeps"				"5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"inherited_percent"				"50"
+			}
+		}
+	}
+	"sp_thunderbolt"
+	{
+		"Unique"								"1070009"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_thunderbolt"
+		"AbilityTextureName"					"zuus_lightning_bolt"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"10000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_stack"				"1000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_time"						"5"
+			}
+		}
+	}
+	"sp_defections"
+	{
+		"Unique"								"1070010"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_defections"
+		"AbilityTextureName"					"enchantress_enchant"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_pct"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"20"
+			}
+		}
+	}
+	"sp_revolt"
+	{
+		"Unique"								"1070011"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_revolt"
+		"AbilityTextureName"					"ogre_magi_bloodlust"
+		"Rarity"								"SSR"
+		"GoldCost"								"400"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage"					"200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_golem"
+	{
+		"Unique"								"1070012"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_golem"
+		"AbilityTextureName"					"warlock_rain_of_chaos"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"land_time"						"0.5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"20"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"inherited_percent"				"200"
+			}
+		}
+	}
+	"sp_golem_flaming_fists"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_golem_flaming_fists"
+		"AbilityTextureName"					"warlock_golem_flaming_fists"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"100"
+			}
+		}
+	}
+	"sp_golem_permanent_immolation"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_golem_permanent_immolation"
+		"AbilityTextureName"					"warlock_golem_permanent_immolation"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical2magical"				"100"
+			}
+		}
+	}
+	"sp_lastfight"
+	{
+		"Unique"								"1070013"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_lastfight"
+		"AbilityTextureName"					"life_stealer_rage_immortal_gold"
+		"Rarity"								"SR"
+		"GoldCost"								"200"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"4"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_attack_bonus_pct"			"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"hp_loss"						"5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"extra_attack_bonus_pct"		"5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+		}
+	}
+	"sp_recall"
+	{
+		"Unique"								"1070014"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_recall"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_recover_pct"			"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+	"sp_recover"
+	{
+		"Unique"								"1070015"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_recover"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_recover_pct"			"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduction"				"80"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"5"
+			}
+		}
+	}
+	"sp_attackhorn"
+	{
+		"Unique"								"1070016"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_attackhorn"
+		"AbilityTextureName"					"invoker/immortal/invoker_alacrity"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_recover"					"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"recocer_pct"					"5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"15"
+			}
+		}
+	}
+	"sp_shallowgrave"
+	{
+		"Unique"								"1070017"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_shallowgrave"
+		"AbilityTextureName"					"invoker/immortal/invoker_alacrity"
+		"Rarity"								"SR"
+		"GoldCost"								"200"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"4"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_limit"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"5"
+			}
+		}
+	}
+	"sp_cripple"
+	{
+		"Unique"								"1070018"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_cripple"
+		"AbilityTextureName"					"enchantress_untouchable"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduce_pct"				"60"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_reduce_pct"			"60"
+			}
+		}
+	}
+	"sp_physicalendurance"
+	{
+		"Unique"								"1070019"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_physicalendurance"
+		"AbilityTextureName"					"treant_living_armor"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"health_recocer_pct"			"1.5"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"15"
+			}
+		}
+	}
+	"sp_scarecrow"
+	{
+		"Unique"								"1070020"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_scarecrow"
+		"AbilityTextureName"					"invoker_chaos_meteor"
+		"Rarity"								"N"
+		"GoldCost"								"50"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+		}
+	}
+	"sp_tower"
+	{
+		"Unique"								"1070021"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_tower"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"inherited_percent"				"200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_reduction"				"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"debuff_duration"				"10"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_stack_count"				"20"
+			}
+		}
+	}
+	"sp_goldbag"
+	{
+		"Unique"								"1070022"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_goldbag"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"goldearn_min"					"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"goldearn_max"					"500"
+			}
+		}
+	}
+	"sp_crystalbag"
+	{
+		"Unique"								"1070023"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_crystalbag"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystalearn_min"				"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystalearn_max"				"20"
+			}
+		}
+	}
+	"sp_spike"
+	{
+		"Unique"								"1070024"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_spike"
+		"AbilityTextureName"					"enchantress_untouchable"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"miss_chance"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"15"
+			}
+		}
+	}
+	"sp_stoneskin"
+	{
+		"Unique"								"1070025"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_stoneskin"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_armor"					"1000"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+		}
+	}
+	"sp_phydouble"
+	{
+		"Unique"								"1070026"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_phydouble"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"increasepct"					"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_magdouble"
+	{
+		"Unique"								"1070027"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_magdouble"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"increasepct"					"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_breakarmor"
+	{
+		"Unique"								"1070028"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_breakarmor"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ignore_armor_pct"				"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_shootfar"
+	{
+		"Unique"								"1070029"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_shootfar"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_RANGED_ONLY | DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_attack_range"			"400"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_chicken"
+	{
+		"Unique"								"1070030"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_chicken"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"summon_interval"				"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"10"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"explosion_radius"				"300"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"900"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1200"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"125"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_pct_ancient"			"0.4"
+			}
+		}
+	}
+	"sp_mine"
+	{
+		"Unique"								"1070031"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_mine"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PURE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count"							"5"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mine_radius"					"350"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mine_delay"					"1"
+			}
+		}
+	}
+	"sp_frozenarea"
+	{
+		"Unique"								"1070032"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_frozenarea"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+		}
+	}
+	"sp_crit"
+	{
+		"Unique"								"1070033"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_crit"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_pct"				"20"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_chance"					"20"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crit_damage"					"150"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_loot"
+	{
+		"Unique"								"1070034"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_loot"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_per_gold"				"2"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+		}
+	}
+	"sp_cannon"
+	{
+		"Unique"								"1070035"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_cannon"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"8"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"600"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count_min"						"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count_max"						"12"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"0.5"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_pct"					"8"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_pct_ancient"			"0.2"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"land_time"						"1"
+			}
+		}
+	}
+	"sp_revive"
+	{
+		"Unique"								"1070036"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_revive"
+		"Rarity"								"SSR"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"2"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_DEAD"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"revive_count"					"3"
+			}
+		}
+	}
+	"sp_overwhelm"
+	{
+		"Unique"								"1070037"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_overwhelm"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_damage"				"30"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+		}
+	}
+	"sp_frog"
+	{
+		"Unique"								"1070038"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_frog"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed"						"100"
+			}
+		}
+	}
+	"sp_tax"
+	{
+		"Unique"								"1070039"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_tax"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"2"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"tax_increase"					"15"
+			}
+		}
+	}
+	"sp_crystal"
+	{
+		"Unique"								"1070040"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_crystal"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"10"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"factor"						"2"
+			}
+		}
+	}
+	"sp_crystalgold"
+	{
+		"Unique"								"1070041"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_crystalgold"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystal_needed"				"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_earn"						"1000"
+			}
+		}
+	}
+	"sp_goldcrystal"
+	{
+		"Unique"								"1070042"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_goldcrystal"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"4"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_needed"					"1000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystal_earn"					"100"
+			}
+		}
+	}
+	"sp_goldcreep"
+	{
+		"Unique"								"1070043"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_goldcreep"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"10"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"5"
+		"DrawWeight"							"2"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"gold_earn_factor"				"1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"model_scale"					"1.2"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_pct"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_pct"					"50"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"chance"						"3"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"round_factor"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_gold"						"10"
+			}
+		}
+	}
+	"sp_crystalcreep"
+	{
+		"Unique"								"1070044"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_crystalcreep"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"10"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"model_scale"					"1.2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_pct"					"50"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_pct"					"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"round_factor"					"0.25"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_crys"						"1"
+			}
+		}
+	}
+	"sp_physical"
+	{
+		"Unique"								"1070045"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_physical"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_atkbonus"				"50"
+			}
+		}
+	}
+	"sp_magical"
+	{
+		"Unique"								"1070046"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_magical"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_atkbonus"				"50"
+			}
+		}
+	}
+	"sp_cooldown"
+	{
+		"Unique"								"1070047"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_cooldown"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cooldown_reduce"				"15"
+			}
+		}
+	}
+	"sp_hpregen"
+	{
+		"Unique"								"1070048"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_hpregen"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_regenbonus"				"8"
+			}
+		}
+	}
+	"sp_manaregen"
+	{
+		"Unique"								"1070049"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_manaregen"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"mana_regenbonus"				"2"
+			}
+		}
+	}
+	"sp_defend"
+	{
+		"Unique"								"1070050"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_defend"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"3"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armorbonus"					"75"
+			}
+		}
+	}
+	"sp_focus"
+	{
+		"Unique"								"1070051"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_focus"
+		"Rarity"								"N"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"is_contrast"							"0"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"2000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage_pct"				"20"
+			}
+		}
+	}
+	"sp_largegold"
+	{
+		"Unique"								"1070052"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_largegold"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"goldearn_min"					"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"goldearn_max"					"1000"
+			}
+		}
+	}
+	"sp_largecrystal"
+	{
+		"Unique"								"1070053"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_largecrystal"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystalearn_min"				"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"crystalearn_max"				"100"
+			}
+		}
+	}
+	"sp_magical_single"
+	{
+		"Unique"								"1070054"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_magical_single"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_atkbonus"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+	"sp_physical_single"
+	{
+		"Unique"								"1070055"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_physical_single"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_atkbonus"				"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+	"sp_defend_single"
+	{
+		"Unique"								"1070056"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_defend_single"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armorbonus"					"120"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+	"sp_attackspeed_single"
+	{
+		"Unique"								"1070057"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_attackspeed_single"
+		"Rarity"								"R"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_speed_bonus"			"30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+	"sp_exp"
+	{
+		"Unique"								"1070058"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/spell/sp_exp"
+		"Rarity"								"SR"
+		"GoldCost"								"100"
+		"CrystalCost"							"15"
+		"CrystalRate"							"100"
+		"MaxLevel"								"1"
+		"AbilityManaCost"						"10"
+		"AbilityCooldown"						"1"
+		"IsConsumables"							"1"
+		"MaxCount"								"0"
+		"DrawWeight"							"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ALLIES_YES"
+		"is_contrast"							"1"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"exp"							"2"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1"
+			}
+		}
+	}
+}

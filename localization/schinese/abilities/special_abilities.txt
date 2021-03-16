@@ -1,0 +1,52 @@
+//--------------------------------------------------------------------------------------------------
+// 怪物技能特性
+"DOTA_Tooltip_ability_nothingness" "虚无"
+"DOTA_Tooltip_ability_nothingness_Description" "受到伤害虚无自己，不会受到物理伤害，受到的魔法伤害提高%magical_incoming_percentage%%%"
+
+"DOTA_Tooltip_ability_promise" "无极"
+"DOTA_Tooltip_ability_promise_Description" "不会受到魔法伤害，受到的物理伤害提高%physical_incoming_percentage%%%"
+
+"DOTA_Tooltip_ability_magic_shock" "魔法冲击"
+"DOTA_Tooltip_ability_magic_shock_Description" "对敌人造成伤害时，会触发魔法冲击，对目标造成%abilitydamage%魔法伤害。"
+
+"DOTA_Tooltip_ability_immortal" "不死单位"
+"DOTA_Tooltip_ability_immortal_Description" "死亡后有%respawn_pct%%%概率复活。"
+
+"DOTA_Tooltip_ability_shield_strike" "盾击"
+"DOTA_Tooltip_ability_shield_strike_Description" "攻击时眩晕目标%abilityduration%秒。"
+"DOTA_Tooltip_modifier_shield_strike"						"盾击"
+"DOTA_Tooltip_modifier_shield_strike_Description"			"攻击时会造成敌人眩晕"
+
+"DOTA_Tooltip_ability_puncture" "穿刺"
+"DOTA_Tooltip_ability_puncture_Description" "攻击削弱目标%physical_armor_reduce%护甲，持续%abilityduration%秒。可叠加%max_stack_count%次。"
+
+"DOTA_Tooltip_ability_holy_light" "圣光"
+"DOTA_Tooltip_ability_holy_light_Description" "治疗友方目标%health%生命值。"
+
+"DOTA_Tooltip_ability_snowstorm" "暴风雪"
+"DOTA_Tooltip_ability_snowstorm_Description" "对%radius%码范围内敌方单位造成%abilitydamage%伤害，并减速%speed_slow_pct%%%，持续%slow_duration%秒。"
+
+"DOTA_Tooltip_ability_shield" "护盾"
+"DOTA_Tooltip_ability_shield_Description" "对随机友方释放护盾，护盾可以抵挡%damage_block%伤害。"
+
+"DOTA_Tooltip_ability_shining_armor" "闪耀盔甲"
+"DOTA_Tooltip_ability_shining_armor_Description" "周围%radius%码范围内的友方单位提高%physical_armor_bonus%护甲。"
+
+"DOTA_Tooltip_ability_roots" "根须"
+"DOTA_Tooltip_ability_roots_Description" "攻击有%rooted_pct%%%概率缠绕目标%rooted_duration%秒，目标无法移动和攻击，并受到伤害。"
+"DOTA_Tooltip_modifier_roots"						"根须"
+"DOTA_Tooltip_modifier_roots_Description"			"攻击有概率缠绕目标"
+
+"DOTA_Tooltip_ability_split_attack" "劈叉攻击"
+"DOTA_Tooltip_ability_split_attack_Description" "额外攻击%extra_attack_count%个单位，造成%extra_attack_damage_pct%%%伤害。"
+"DOTA_Tooltip_modifier_split_attack"						"劈叉攻击"
+"DOTA_Tooltip_modifier_split_attack_Description"			"攻击对额外目标造成伤害"
+
+"DOTA_Tooltip_ability_rejuvenation" "回春"
+"DOTA_Tooltip_ability_rejuvenation_Description" "增加%health_regen_bonus%周围%radius%码内所有友方单位每秒生命回复。"
+
+"DOTA_Tooltip_ability_enemy_ogre_med_1" "巨棒打击"
+"DOTA_Tooltip_ability_enemy_ogre_med_1_Description" "挥舞巨棒进行打击，造成%physical2physical%%%物理攻击的伤害，并眩晕%stun_duration%秒。"
+
+"DOTA_Tooltip_ability_enemy_bfuryaxe"       "分裂攻击"
+"DOTA_Tooltip_ability_enemy_bfuryaxe_Description" "攻击造成范围伤害。"

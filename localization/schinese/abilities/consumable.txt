@@ -1,0 +1,15 @@
+// 消耗品
+
+//星光闪耀
+"DOTA_Tooltip_ability_consumable_mp" 					"星光闪耀"
+"DOTA_Tooltip_ability_consumable_mp_Description"		"本回合场上英雄星级+1。"
+
+//轮回之力
+"DOTA_Tooltip_ability_consumable_hero_help" 				"轮回之力"
+"DOTA_Tooltip_ability_consumable_hero_help_Description"		"复活场上所有阵亡英雄，对其他所有玩家都有效。"
+"DOTA_Tooltip_modifier_consumable_hero_help"		        "轮回之力"
+"DOTA_Tooltip_modifier_consumable_hero_help_Description"    "减少百分之80的伤害"
+
+//心跳停止
+"DOTA_Tooltip_ability_consumable_heartbreak" 				"心跳停止"
+"DOTA_Tooltip_ability_consumable_heartbreak_Description"	"使自己场上所有敌方单位生命值变为1，对精英怪伤害效果减半，对首领无效"

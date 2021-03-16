@@ -1,0 +1,15 @@
+"UnitNumber_14"			"{s:val_14}omen"
+"UnitNumber_9"			"{s:val_9}hundred million"
+"UnitNumber_5"			"{s:val_5}0 thousand"
+"UnitNumber_1"			"{s:val_1}"
+
+"UnitNumberC_14"			"{s:valc_14}兆"
+"UnitNumberC_9"			"{s:valc_9}hundred million"
+"UnitNumberC_5"			"{s:valc_5}0 thousand"
+"UnitNumberC_1"			"{s:valc_1}"
+
+"Number_Unit_Thousand"	"K"
+"Number_Unit_Million"	"M"
+"Number_Unit_Billion"	"G"
+"Number_Unit_Trillion"	"T"
+"Number_Unit_Quadrillion"	"P"

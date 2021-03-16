@@ -1,0 +1,2135 @@
+"addon"
+{
+	"addon_game_name"			"天災訣"
+	
+	"info_game_lose"	"災厄降臨，現世淪陷"
+	"info_game_win"		"災厄解除，光明永駐"
+	
+	"item_quality_1"	"普通"
+	"item_quality_2"	"優良"
+	"item_quality_3"	"稀有"
+	"item_quality_4"	"極品"
+	"item_quality_5"	"史詩"
+	"item_quality_6"	"傳奇"
+	"item_quality_7"	"神話"
+	
+	"item_slot_weapon"	"武器"
+	"item_slot_armor"	"防具"
+	"item_slot_accessory"	"飾品"
+	"item_slot_special"	"特殊裝備"
+	
+	"item_net_prefix_g1_q1"	"普通  · "
+	"item_net_prefix_g1_q2"	"優良 · "
+	"item_net_prefix_g1_q3"	"精緻 · "
+	"item_net_prefix_g1_q4"	"卓越 · "
+	"item_net_prefix_g1_q5"	"勇者 · "
+	"item_net_prefix_g1_q6"	"傳世 · "
+	"item_net_prefix_g1_q7"	"神聖 · "
+	
+	"item_net_prefix_g2_q1"	"初級 · "
+	"item_net_prefix_g2_q2"	"人級 · "
+	"item_net_prefix_g2_q3"	"黃級 · "
+	"item_net_prefix_g2_q4"	"玄級 · "
+	"item_net_prefix_g2_q5"	"地級 · "
+	"item_net_prefix_g2_q6"	"天級 · "
+	"item_net_prefix_g2_q7"	"神級 · "
+	
+	"item_net_prefix_g3_q1"	"冒險者 · "
+	"item_net_prefix_g3_q2"	"風之深擁 · "
+	"item_net_prefix_g3_q3"	"怒焰精靈 · "
+	"item_net_prefix_g3_q4"	"冰霜氣息 · "
+	"item_net_prefix_g3_q5"	"雷霆暴怒 · "
+	"item_net_prefix_g3_q6"	"女神祝福 · "
+	"item_net_prefix_g3_q7"	"神之傳承 · "
+	
+	"item_net_prefix_g4_q1"	"螢火 · "
+	"item_net_prefix_g4_q2"	"微星 · "
+	"item_net_prefix_g4_q3"	"群星 · "
+	"item_net_prefix_g4_q4"	"半月 · "
+	"item_net_prefix_g4_q5"	"皓月 · "
+	"item_net_prefix_g4_q6"	"烈日 · "
+	"item_net_prefix_g4_q7"	"星河 · "
+	
+	//添加新的屬性以後，要到隨機裝備的tooltip介面對應的js中添加對應的屬性以保證順序，否則不會顯示
+	"item_attribute_ll"	"力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_zl"	"智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mj"	"敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_qsx"	"全屬性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_damage"	"攻擊力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjdtsxsh"	"攻擊附帶單體主屬性傷害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_attack_speed"	"攻擊速度：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_attack_damage_plus"	"普通攻擊觸發額外傷害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjqtsxsh"	"攻擊附帶群體主屬性傷害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_jnsh"	"技能增強：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_qsx"	"全屬性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjxx"	"攻擊吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_fsxx"	"法術吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlxx"	"物理吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjshj"	"攻擊減少護甲：<font color=\"#ffffff\">{s:value}</font>"
+
+	"item_attribute_gjl"	"攻擊力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjsd"	"攻擊速度：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_wlbjgl"	"物理暴擊概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlbjsh"	"物理暴擊傷害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfbjgl"	"魔法暴擊概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfbjsh"	"魔法暴擊傷害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_sjjll"	"升級加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjmj"	"升級加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjzl"	"升級加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_wlshts"	"物理傷害提升：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfshts"	"魔法傷害提升：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_wlct"	"護甲穿透：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfct"	"魔法穿透：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_zhwsh"	"召喚物強度：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjl"	"攻擊距離：<font color=\"#ffffff\">+{s:value}</font>"
+
+
+
+	"item_attribute_lqsj"	"冷卻縮減：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_fjsh"	"附加傷害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_zzsh"	"最終傷害：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_smz"	"生命值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_smhf"	"生命回復：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_bgjyglhx" "被攻擊20%概率回復血量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_qjxx" "傷害吸血：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_rx" "狀態抗性：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_sb" "閃避：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_mfz" "魔法值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_hj" "護甲：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_shjm" "減傷係數：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_shhm" "免傷概率：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_pgshjs" "格擋傷害：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mfhf" "魔法恢復：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_mfkx" "魔法抗性：<font color=\"#ffffff\">+{s:value}%</font>"
+	
+	"item_attribute_bgjyglhl" "被攻擊20%概率回復藍量：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_gjzjll" "攻擊有5%的概率增加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjmj" "攻擊有5%的概率增加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjzl" "攻擊有5%的概率增加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_gjzjqsx" "攻擊有5%的概率增加全屬性：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjll" "殺怪有5%的概率增加力量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjmj" "殺怪有5%的概率增加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjzl" "殺怪有5%的概率增加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjqsx" "殺怪有5%的概率增加全屬性：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_sgzjsmz" "殺怪有5%的概率增加生命值：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_smzhfbfb" "生命恢復：<font color=\"#ffffff\">+{s:value}% /s</font>"
+	"item_attribute_gjhfxl" "攻擊回復自身血量：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_lqsj" "冷卻縮減：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjjgjd" "攻擊間隔降低：<font color=\"#ffffff\">+{s:value}</font>"
+
+	"item_attribute_bfbtsll" "力量：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtsmj" "敏捷：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtszl" "智力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtsqsx" "全屬性：<font color=\"#ffffff\">+{s:value}%</font>"
+
+	"item_attribute_jqjc" "金錢收益：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_jyjc" "經驗收益：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_msmjq" "每十秒金錢：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sgzjjb" "殺怪增加金幣：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_grjndj" "個人技能等級：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_ggjndj" "公共技能等級：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_damage_bfb"	"攻擊力：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_bfbtssm"	"生命值：<font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_ydsd"	"移動速度：<font color=\"#ffffff\">+{s:value}</font>"
+
+
+
+	
+	"alter_public_exist_item"	"公共倉庫有：{s:name}<Panel>"
+	"alter_player_have_item"	"我有：{s:name}<Panel>"
+	"alert_dps_rank_total"	"BOSS戰·總輸出：<br>1. {s:name1}<Panel class='DpsRankSep'/>{s:value1}<Panel class='DpsRankSep'/><font color='yellow'>★</font><br>2. {s:name2}<Panel class='DpsRankSep'/>{s:value2}<br>3. {s:name3}<Panel class='DpsRankSep'/>{s:value3}<br>4. {s:name4}<Panel class='DpsRankSep'/>{s:value4}"
+	"alert_dps_rank_second"	"BOSS戰·秒傷：<br>1. {s:name1}<Panel class='DpsRankSep'/>{s:value1}<Panel class='DpsRankSep'/><font color='yellow'>★</font><br>2. {s:name2}<Panel class='DpsRankSep'/>{s:value2}<br>3. {s:name3}<Panel class='DpsRankSep'/>{s:value3}<br>4. {s:name4}<Panel class='DpsRankSep'/>{s:value4}"
+	"alert_boss_position"	"<font color='yellow'>快來打BOSS！</font>"
+	
+	"tip_item_treasure_give_nothing"	"寶物已被移除，<font color='yellow'>“皇者之路”</font>得到增強"
+	"tip_item_treasure_full"	"寶物擁有已達到上限,無法再使用了"
+	"tip_hero_died"	"<font color='red'>{s:hero}</font> 已離我們而去..."
+	
+	"info_game_over_prompt"	"請儘快擊殺災厄領主，否則遊戲將在{s:time}秒後結束"
+	"info_game_over_prompt10"	"<font color='#F5CD1E'>請儘快擊殺災厄領主，否則遊戲將在 10 秒後結束</font>"
+	"info_game_over_prompt9"	"<font color='#F3BE1B'>請儘快擊殺災厄領主，否則遊戲將在 9 秒後結束</font>"
+	"info_game_over_prompt8"	"<font color='#f0ae1d'>請儘快擊殺災厄領主，否則遊戲將在 8 秒後結束</font>"
+	"info_game_over_prompt7"	"<font color='#ef9e1a'>請儘快擊殺災厄領主，否則遊戲將在 7 秒後結束</font>"
+	"info_game_over_prompt6"	"<font color='#ed8d18'>請儘快擊殺災厄領主，否則遊戲將在 6 秒後結束</font>"
+	"info_game_over_prompt5"	"<font color='#eb7b14'>請儘快擊殺災厄領主，否則遊戲將在 5 秒後結束</font>"
+	"info_game_over_prompt4"	"<font color='#ea6912'>請儘快擊殺災厄領主，否則遊戲將在 4 秒後結束</font>"
+	"info_game_over_prompt3"	"<font color='#e85411'>請儘快擊殺災厄領主，否則遊戲將在 3 秒後結束</font>"
+	"info_game_over_prompt2"	"<font color='#e73c13'>請儘快擊殺災厄領主，否則遊戲將在 2 秒後結束</font>"
+	"info_game_over_prompt1"	"<font color='#e61015'>請儘快擊殺災厄領主，否則遊戲將在 1 秒後結束</font>"
+	"info_game_finish_prompt"	"恭喜通關，遊戲即將結束"
+	"info_survival_boss_coming"	"災厄領主即將到來，請注意"
+	"info_exceedthelimit"	"使用超過限制"
+	"info_exceedthecooltime"	"物品CD中"
+	"info_maplevelnolimit"	"購買限制，地圖等級未達到{s:level}級"
+	"info_cantbuy"	"無法重複購買"
+	"info_mall_error"	"購買失敗，請稍後再試"
+	
+	"info_operation_overtime"	"操作超時，請稍後再試"
+	"info_operation_faild"	"未知錯誤，請稍後再試"
+	"info_operation_busy"	"操作頻繁，請稍後再試"
+	
+	"error_position_unreachable" "無法到達目標地點"
+	"error_netequip_position" "無法裝備到該位置"
+	"error_netequip_swapposition" "無法交換裝備到該位置"
+	
+	"info_game_finished_tip_net_equip"	"遊戲結束後，無法改變裝備位置"
+	
+	
+	//-----------------------------------------UI  V2 begin----------------------------------------------
+	"difficulty_name_1"	"人間試煉--1階段"
+	"difficulty_name_1_desc"	"掉落存檔裝備:1階<br>存檔裝備品質區間:<font color=\"#5fc866\">綠</font>，<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>結算歷練值加成:0%<br>結算晶石加成:0%<br>掉落征戰鑰匙概率:10%"
+	"difficulty_name_2"	"人間試煉--2階段"
+	"difficulty_name_2_desc"	"掉落存檔裝備:1階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:10%<br>結算晶石加成:10%<br>掉落征戰鑰匙概率:20%"
+	"difficulty_name_3"	"人間試煉--3階段"
+	"difficulty_name_3_desc"	"掉落存檔裝備:1階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:20%<br>結算晶石加成:20%<br>掉落征戰鑰匙概率:30%"
+
+	"difficulty_name_4"	"深淵磨練--1階段"
+	"difficulty_name_4_desc"	"掉落存檔裝備:2階<br>存檔裝備品質區間:<font color=\"#5fc866\">綠</font>，<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>結算歷練值加成:30%<br>結算晶石加成:40%<br>掉落征戰鑰匙概率:40%"
+	"difficulty_name_5"	"深淵磨練--2階段"
+	"difficulty_name_5_desc"	"掉落存檔裝備:2階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:40%<br>結算晶石加成:60%<br>非正常模式掉落2階強化石數量:1-10個<br>掉落征戰鑰匙概率:50%"
+	"difficulty_name_6"	"深淵磨練--3階段"
+	"difficulty_name_6_desc"	"掉落存檔裝備:2階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:50%<br>結算晶石加成:80%<br>非正常模式掉落2階強化石數量:5-15個<br>掉落征戰鑰匙概率:60%"
+	"difficulty_name_7"	"深淵磨練--4階段"
+	"difficulty_name_7_desc"	"掉落存檔裝備:2階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:60%<br>結算晶石加成:100%<br>非正常模式掉落2階強化石數量:10-20個<br>掉落征戰鑰匙概率:80%"
+	
+
+	"difficulty_name_8"		"煉獄闖蕩--1階段"
+	"difficulty_name_8_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font><br><br>結算歷練值加成:70%<br>結算晶石加成:130%<br>非正常模式掉落3階強化石數量:1-4個<br>掉落征戰鑰匙概率:100%"
+	"difficulty_name_9"		"煉獄闖蕩--2階段"
+	"difficulty_name_9_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>結算歷練值加成:80%<br>結算晶石加成:160%<br>非正常模式掉落3階強化石數量:4-8個<br>掉落征戰鑰匙概率:120%"
+	"difficulty_name_10"	"煉獄闖蕩--3階段"
+	"difficulty_name_10_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:90%<br>結算晶石加成:190%<br>非正常模式掉落3階強化石數量:8-12個<br>掉落征戰鑰匙概率:140%"
+	"difficulty_name_11"	"煉獄闖蕩--4階段"
+	"difficulty_name_11_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:100%<br>結算晶石加成:220%<br>非正常模式掉落3階強化石數量:12-16個<br>掉落征戰鑰匙概率:160%"
+	"difficulty_name_12"	"煉獄闖蕩--5階段"	
+	"difficulty_name_12_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:110%<br>結算晶石加成:250%<br>非正常模式掉落3階強化石數量:16-20個<br>掉落征戰鑰匙概率:180%"
+	"difficulty_name_13"	"煉獄闖蕩--6階段"
+	"difficulty_name_13_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:120%<br>結算晶石加成:280%<br>非正常模式掉落3階強化石數量:20-25個<br>掉落征戰鑰匙概率:200%"
+	"difficulty_name_14"	"煉獄闖蕩--7階段"
+	"difficulty_name_14_desc"	"掉落存檔裝備:3階<br>存檔裝備品質區間:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:130%<br>結算晶石加成:310%<br>非正常模式掉落3階強化石數量:25-35個<br>掉落征戰鑰匙概率:250%"
+
+
+	"difficulty_name_15"		"輪回地獄--1階段"
+	"difficulty_name_15_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font><br><br>結算歷練值加成:140%<br>結算晶石加成:350%<br>非正常模式掉落4階強化石數量:1-3個<br>掉落征戰鑰匙概率:270%"
+	"difficulty_name_16"		"輪回地獄--2階段"
+	"difficulty_name_16_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font><br><br>結算歷練值加成:150%<br>結算晶石加成:390%<br>非正常模式掉落4階強化石數量:3-6個<br>掉落征戰鑰匙概率:290%"
+	"difficulty_name_17"	"輪回地獄--3階段"
+	"difficulty_name_17_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#477bff\">藍</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:160%<br>結算晶石加成:430%<br>非正常模式掉落4階強化石數量:6-9個<br>掉落征戰鑰匙概率:310%"
+	"difficulty_name_18"	"輪回地獄--4階段"
+	"difficulty_name_18_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:170%<br>結算晶石加成:470%<br>非正常模式掉落4階強化石數量:9-13個<br>掉落征戰鑰匙概率:210%"
+	"difficulty_name_19"	"輪回地獄--5階段"	
+	"difficulty_name_19_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>結算歷練值加成:180%<br>結算晶石加成:510%<br>非正常模式掉落4階強化石數量:13-17個<br>掉落征戰鑰匙概率:330%"
+	"difficulty_name_20"	"輪回地獄--6階段"
+	"difficulty_name_20_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:190%<br>結算晶石加成:550%<br>非正常模式掉落4階強化石數量:17-22個<br>掉落征戰鑰匙概率:350%"
+	"difficulty_name_21"	"輪回地獄--7階段"
+	"difficulty_name_21_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:200%<br>結算晶石加成:590%<br>非正常模式掉落4階強化石數量:22-28個<br>掉落征戰鑰匙概率:375%"
+	"difficulty_name_22"	"輪回地獄--8階段"
+	"difficulty_name_22_desc"	"掉落存檔裝備:4階<br>存檔裝備品質區間:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">紅</font><br><br>結算歷練值加成:210%<br>結算晶石加成:630%<br>非正常模式掉落4階強化石數量:28-40個<br>掉落征戰鑰匙概率:450%"
+	
+
+	
+	"difficulty_mode_drop_down_tooltip"	"<font color='red'>房主</font>可點擊選擇當前難度的其他<font color='#FFD700'>模式</font>，不同模式會有一些特殊的設定"
+	
+	"difficulty_mode_1" "正常模式"
+	"difficulty_mode_short_1" "正常"
+	"difficulty_mode_2" "狂暴模式"
+	"difficulty_mode_short_2" "狂暴"
+	"difficulty_mode_desc_2" "怪物強度+100%,怪物的基礎經驗和基礎金錢+100%"
+	"difficulty_mode_3" "奧術模式"
+	"difficulty_mode_short_3" "奧術"
+	"difficulty_mode_desc_3" "怪物技能cd-30%"
+	"difficulty_mode_4" "災難模式"
+	"difficulty_mode_short_4" "災難"
+	"difficulty_mode_desc_4" "高級怪物出現概率+100%,精英怪出現概率+50%"
+	"difficulty_mode_5" "地獄模式"
+	"difficulty_mode_short_5" "地獄"
+	"difficulty_mode_desc_5" "怪物移動速度+30%,攻擊速度+40,攻擊力+40%"
+	"difficulty_mode_6" "賞金模式"
+	"difficulty_mode_short_6" "賞金"
+	"difficulty_mode_desc_6" "金錢提升+100%,但是每次死亡會損失所有金幣"
+	"difficulty_mode_7" "噩夢模式"
+	"difficulty_mode_short_7" "噩夢"
+	"difficulty_mode_desc_7" "每半分鐘給場上存活的英雄添加一個負面效果,隨著時間的增加,負面效果的添加間隔也會縮短"
+	
+	
+	"ability_property_baseDamage"	"基礎傷害"
+	"ability_property_damage"	"傷害係數"
+	"ability_property_baseHeal"	"基礎治療"
+	"ability_property_heal"	"治療係數"
+	"ability_property_radius"	"影響範圍"
+	"ability_property_distance"	"最大距離"
+	"ability_property_chance"	"觸發概率%"
+	"ability_property_interval"	"-觸發間隔"
+	"ability_property_duration"	"持續時間"
+	"ability_property_count"	"打擊次數"
+	"ability_property_max"	"最大數量"
+	"ability_property_time"	"多次觸發"
+	"ability_property_multiple"	"傷害倍數"
+	
+	"advanced_property_spell_damage"	"技能傷害："
+	"advanced_property_cooldown"		"冷卻縮減："
+	"advanced_property_wlbjgl"	"物理暴擊概率："
+	"advanced_property_wlbjsh"	"物理暴擊傷害："
+	"advanced_property_mfbjgl"	"魔法暴擊概率："
+	"advanced_property_mfbjsh"	"魔法暴擊傷害："
+	"advanced_property_extra_damage"	"附加傷害："
+	"advanced_property_final_damage"	"最終傷害："
+	
+	"advanced_property_damage_reduce"				"傷害減免："
+	"advanced_property_physical_damage_lifesteal"	"物理吸血："
+	"advanced_property_damage_immune"				"免傷概率："
+	"advanced_property_magic_damage_lifesteal"		"法術吸血："
+	"advanced_property_heal_amplify"				"治療提升："
+	"advanced_property_damage_lifesteal"			"傷害吸血："
+	
+	"advanced_property_strength_bonus_percentage"	"百分比提升力量："
+	"advanced_property_agility_bonus_percentage"	"百分比提升敏捷："
+	"advanced_property_intellect_bonus_percentage"	"百分比提升智力："
+
+	"advanced_property_wlct"	"物理穿透："
+	"advanced_property_mfct"	"魔法穿透："
+	"advanced_property_strength_levelup"	"升級加力量"
+	"advanced_property_agility_levelup"	"升級加敏捷"
+	"advanced_property_intellect_levelup"	"升級加智力"
+	
+	"advanced_property_qsx_bonus_percentage"	"百分比提升全屬性："
+	
+	"advanced_property_wlshts"	"物理傷害提升："
+	"advanced_property_mfshts"	"魔法傷害提升："
+	"advanced_property_zhwsh"	"召喚物強度："
+	
+	
+	"advanced_property_gold_bonus_by_kill"	"殺怪金幣加成："
+	"advanced_property_exp_bonus_by_kill"		"殺怪經驗加成："
+	"advanced_property_gold_bonus_by_time"	"每十秒加金幣："
+	
+	"advanced_property_ability_level_bonus"	"技能等級加成："
+	"advanced_property_gold_bonus_percentage"	"金幣收益提升："
+	"advanced_property_exp_bonus_percentage"	"經驗收益提升："
+	
+	"advanced_property_lucky"	"幸運值："
+	
+	"ui_btn_confirm"	"確定"
+	"ui_btn_cancel"		"取消"
+	"ui_btn_cancel_auto"		"取消({s:time})"
+	"ui_btn_refresh"	"刷新"
+	"ui_btn_receive"	"領取"
+	"ui_btn_received"	"已領取"
+	
+	"ui_currency_magic_stone"	"仙石"
+	"ui_currency_magic_stone_desc"	"用來在商城購買道具，通過充值獲得。"
+	"ui_currency_jing_stone"	"晶石"
+	"ui_currency_jing_stone_desc"	"用來在商城購買道具，主要通過遊戲內擊殺怪物（遊戲結束時發放獎勵）、天災之路、遊戲活動等途徑獲取。"
+	
+	"ui_mark_none"	"無"
+	"ui_mark_not_active"	"未啟動"
+	"ui_mark_active"	"已啟動"
+	
+	//顯示長數位，使用ShowLargeNumberForLabel函數。預設文本為西式的千分顯示，後面會加上簡化的 xxx.xx萬/億。
+	//中英文表述值不一樣。中文以常見的萬億來顯示，英文顯示K，M，B
+	"ui_large_number_unit_1"	"萬"
+	"ui_large_number_unit_2"	"億"
+	
+	"ui_popup_tooltip"	"【ESC】或【點擊任意位置】關閉彈窗"
+	
+	"ui_topbar_monster_count_lbl"	"怪物數量"
+	"ui_topbar_monster_count_tooltip"	"存活數量/最大數量，當存活數量超過最大數量時，進入遊戲失敗倒計時"
+	"ui_topbar_boss_timer_tooltip_title"	"<font color='#FFDB77'>災厄領主</font>"
+	"ui_topbar_boss_timer_tooltip_content"	"<br/>倒計時結束後，強大的災厄領主將會出現在地圖中間的祭壇上<br/><br/>災厄領主有存在時間，在存在時間內沒有被擊殺則遊戲失敗<br/><br/>一局遊戲會有多個領主，擊殺全部領主後遊戲勝利<br/><br/><font color='white'>※點擊可查看災厄領主刷新詳情</font>"
+	"ui_topbar_attack_timer_round"	"第{s:round}波"
+	"ui_topbar_attack_timer_tooltip"	"倒計時結束後，開始下一波刷怪"
+	
+	"ui_topbar_survival_stages_title"	"災厄領主"
+	"ui_topbar_survival_stages_subtitle"	"點擊已被擊殺的領主頭像，可查看傷害統計資訊"
+	"ui_topbar_survival_stages_time"	"刷新時間"
+	"ui_topbar_survival_stages_boss_tooltip"	"擊殺耗時{s:time}"
+	
+	"ui_boss_hp_timer_tooltip"	"倒計時結束後，如果BOSS未死亡，遊戲結束"
+	
+	"ui_forbidden_hint"	"資料載入失敗，即將退出遊戲<br/><br/>※請不要使用本機伺服器<br/>※請不要使用作弊模式"
+	"ui_forbidden_test_hint"	"資料載入失敗，即將退出遊戲<br/><br/>可能原因：<br/>※使用了本機伺服器<br/>※開啟了作弊模式"
+	
+	"ui_setup_title_hero"		"選擇英雄"
+	"ui_setup_title_difficulty"	"選擇難度"
+	"ui_setup_difficulty_locked_tooltip"	"通關上一難度後，解鎖此難度"
+	"ui_setup_popup_not_select_hero"	"請點擊英雄圖片選擇英雄"
+	"ui_setup_popup_not_host"	"沒有許可權，請等待房主選擇難度"
+	"ui_setup_loading_hint"	"遊戲載入中，請稍候..."
+	"ui_setup_loading_time_count"	"數據載入超時{s:count}次"
+	"ui_setup_loading_disconnect"	"斷開連接"
+	"ui_setup_loading_disconnect_tooltip"	"如果長時間載入不出來資料，可以嘗試斷開連接重新開始"
+	"ui_setup_hero_primary_tooltip_str"	"力量英雄<br><br>力量英雄擁有強健的體魄，受到負面效果的持續時間將會縮短"
+	"ui_setup_hero_primary_tooltip_agi"	"敏捷英雄"
+	"ui_setup_hero_primary_tooltip_int"	"智力英雄<br><br>智力英雄對法術頗有研究，在釋放技能的時候有幾率觸發多次施法"
+	"ui_setup_refresh_hero_tooltip"	"隨機可選英雄，不會隨機到隨機過的英雄<br/><br/>通過PLUS、通行證等途徑可獲得刷新次數<br/><br/>當前可刷新 <font color='yellow'>{s:count}</font> 次"
+	
+	
+	"ui_treasure_selection_title"	"請選擇需要的寶物"
+	"ui_treasure_selection_close_confirm"	"確定關閉嗎？關閉後將不會獲得任何物品"
+	
+	"ui_attribute_button_tooltip_delete"	"刪除技能"
+	"ui_attribute_button_tooltip_move"	"移動技能"
+	"ui_attribute_button_tooltip_net_equip"	"存檔裝備"
+	
+	"ui_attribute_button_tooltip_active_fixed"	"點擊按鈕可使介面常駐"
+	
+	"ui_attribute_content_tab_title_advanced"	"高級屬性"
+	"ui_attribute_content_tab_title_ability"	"技能強化"
+	
+	"ui_attribute_ability_button_enhance"	"強化一次"
+	"ui_attribute_ability_button_enhance_desc"	"消耗<font color='yellow'>{s:price}殺敵積分</font>隨機強化某個技能的一條屬性"
+	"ui_attribute_ability_button_enhance_max"	"一鍵強化"
+	"ui_attribute_ability_button_enhance_max_desc"	"消耗<font color='yellow'>全部殺敵積分</font>強化技能，每<font color='yellow'>{s:price}</font>點殺敵積分可隨機強化某個技能的一條屬性"
+	"ui_attribute_ability_kill_score"	"殺敵積分：{d:value}"
+	
+	"ui_attribute_content_advanced_title_attack"	"攻擊"
+	"ui_attribute_content_advanced_title_defense"	"防禦"
+	"ui_attribute_content_advanced_title_special"	"特殊"
+	
+	"ui_attribute_delete_ability_title"	"點擊選擇你要刪除的技能"
+	"ui_attribute_delete_ability_button_delete_all"	"刪除全部"
+	"ui_attribute_delete_ability_button_delete"	"刪除"
+	"ui_attribute_delete_ability_confirm_all"	"確定刪除<font color='red'>所有技能</font>麼？"
+	"ui_attribute_delete_ability_confirm_selection"	"確定刪除<font color='red'>選中的技能</font>麼？"
+	"ui_attribute_delete_ability_hint_no_ability"	"沒有可以刪除的技能"
+	
+	"ui_attribute_move_ability_title"	"調整技能順序"
+	"ui_attribute_move_ability_title_desc"	"點擊技能圖示下方的箭頭或直接拖動技能圖示來變換位置"
+	
+	"ui_attribute_net_equips_title"	"存檔裝備"
+	"ui_attribute_net_equips_title_desc"	"存檔裝備永久存在，每局遊戲都生效。<br/><br/>存檔裝備主要通過遊戲內擊殺災厄領主（難度越高獎勵越好）、裝備鑰匙開寶箱、天災之路等途徑獲得<br/><br/>每次獲得的存檔裝備屬性隨機，一切看臉，白嫖神裝不是夢！"
+	
+	"ui_net_equip_total_score"	"總戰鬥力："
+	"ui_net_equip_tips"	"※裝備位置在遊戲結算時才會被記錄<br>※如果裝備不顯示，可嘗試點擊英雄"
+	
+	"ui_net_equip_action_equip"		"裝備"
+	"ui_net_equip_action_unequip"	"卸下"
+	"ui_net_equip_action_destroy"	"分解"
+	"ui_net_equip_action_destroy_tooltip"	"分解後可獲得 <font color='gold'>{d:reward_jing}</font> 晶石<br><br>按住ALT鍵，不進行確認直接刪除"
+	"ui_net_equip_action_batch_delete"	"分解"
+	"ui_net_equip_action_batch_delete_tooltip"	"[分解]<br>可以一次性分解多件裝備"
+	"ui_net_equip_action_batch_delete_operation"	"<font color='red'>裝備分解</font>：<br>點擊裝備圖示進行選擇，選擇完畢點擊[確定]按鈕，分解選中的裝備<br><br>按住滑鼠左鍵進行拖動，可以進行批量操作"
+	"ui_net_equip_action_child_ok"	"確定"
+	"ui_net_equip_action_child_cancel"	"取消"
+	"ui_net_equip_action_enhance"	"強化"
+	"ui_net_equip_action_enhance_tooltip"	"[強化]<br>點擊打開 [裝備強化] 介面，可以使用 “強化石”對裝備進行強化，強化可提升裝備的所有屬性。"
+	
+	"ui_attribute_net_equips_destroy_confirm"	"此操作將永久銷毀裝備，返還 <font color='gold'>{d:reward_jing}</font> 晶石，是否確定？"
+	
+	"ui_net_equip_enhance"	"強化"
+	"ui_net_equip_enhance_tooltip" "將裝備拖至此介面後即可使用“強化石”對存檔裝備進行強化，提升裝備屬性<br><br>不同品階、不同品質的裝備，可強化次數不同：<br>1階裝備：不可強化<br>2階裝備：<font color=\"#5fc866\">優良=2</font>，<font color=\"#477bff\">稀有=2</font>，<font color=\"#a91ac8\">極品=3</font>，<font color=\"#fe6d15\">史詩=3</font>，<font color=\"#ffbc09\">傳奇=4</font>，<font color=\"#d92b2b\">神話=5</font><br>3階裝備：<font color=\"#5fc866\">優良=3</font>，<font color=\"#477bff\">稀有=3</font>，<font color=\"#a91ac8\">極品=4</font>，<font color=\"#fe6d15\">史詩=4</font>，<font color=\"#ffbc09\">傳奇=5</font>，<font color=\"#d92b2b\">神話=6</font><br>4階裝備：<font color=\"#5fc866\">優良=4</font>，<font color=\"#477bff\">稀有=4</font>，<font color=\"#a91ac8\">極品=5</font>，<font color=\"#fe6d15\">史詩=5</font>，<font color=\"#ffbc09\">傳奇=6</font>，<font color=\"#d92b2b\">神話=7</font><br><br>強化石在<font color='gold'>難5及以上難度的非正常模式中會掉落</font>，也可通過通行證、商城等途徑獲得<br><br>強化石有品階，只能使用和裝備品階一致的強化石進行強化。<br>低品階的強化石可以4:1的比例抵扣高1階的強化石"
+	"ui_net_equip_enhance_change_value_tooltip"	"裝備屬性提升比例"
+	"ui_net_equip_enhance_material_tooltip"	"強化材料<br>需要使用和裝備品階一致的強化石作為材料。強化時，如果對應品階的強化石數量不足，會嘗試使用低階強化進行抵扣。"
+	"ui_net_equip_enhance_material_tooltip_grade"	"{s:grade}階強化石"
+	"ui_net_equip_enhance_material_count_tooltip"	"持有數量/需求數量"
+	
+	"ui_net_equip_enhance_result_success"	"強化成功"
+	"ui_net_equip_enhance_result_1"	"此裝備不可強化"
+	"ui_net_equip_enhance_result_2"	"<Panel>數量不足，可通過以下方式強化："
+	"ui_net_equip_enhance_result_2_detail"	"使用{s:count}個<Panel>強化"
+	"ui_net_equip_enhance_result_3"	"強化失敗，<Panel>數量不足"
+	"ui_net_equip_enhance_result_3_detail"	"強化石在<font color='gold'>難5及以上難度的非正常模式中會掉落</font>，也可通過通行證、商城等途徑獲得"
+	"ui_net_equip_enhance_result_4"	"強化失敗"
+	
+	"ui_net_equip_enhance_invalid_grade_1"	"1階裝備不可強化"
+	
+	"ui_net_equip_enhance_bonus_now"	"當前等級"
+	"ui_net_equip_enhance_bonus_next"	"下一等級"
+	"ui_net_equip_enhance_button_enhance"	"強化"
+	"ui_net_equip_enhance_chance"	"成功率{s:chance}"
+	
+	"ui_net_equip_enhance_helper_button_store"	"打開商城"
+	"ui_net_equip_enhance_helper_button_close"	"我知道了"
+	
+	"ui_net_equip_enhance_item_hint"	"請拖動存檔裝備至此介面"
+	"ui_net_equip_enhance_item_desc"	"{s:grade}階 / {s:quality}"
+	
+	"ui_mission_panel_title"	"隨機任務"
+	"ui_mission_panel_title_timer"	"倒計時"
+	"ui_mission_panel_title_reward"	"獎勵"
+	"ui_mission_panel_title_reward_extra"	"額外"
+	"ui_mission_tooltip_condition_value"	"任務完成情況：完成值/最大值，完成值達到一定值時，會啟動下方的任務完成度"
+	"ui_mission_tooltip_step"	"任務完成度，不同的完成度會影響最終的任務獎勵"
+	"ui_mission_tooltip_timer"	"倒計時結束後，將根據任務完成度發放獎勵"
+	"ui_mission_tooltip_reward"	"任務結束後，自動在金幣、屬性、物品三種獎勵中隨機一種發放，並有幾率額外獲得選擇寶物的機會（每局遊戲第一次完成任務時必然會獲得一次選擇機會）"
+	"ui_mission_tooltip_reward_gold"	"獲得亂數量的金幣獎勵，金幣數量和當前波次以及當前持有的金幣數量正相關"
+	"ui_mission_tooltip_reward_attribute"	"獲得亂數量的主屬性加成，加成數值和當前波次，當前的主屬性值以及任務完成度正相關"
+	"ui_mission_tooltip_reward_item"	"獲得一件裝備，裝備等階和英雄等階正相關，保底的裝備品質和任務完成度有關：<br>D=優良<br>C=精緻<br>B=極品<br>A=傳說<br>S=史詩"
+	"ui_mission_tooltip_reward_extra"	"有幾率獲得寶物，幾率與數量和任務完成度有關：<br>D=30%，1個<br>C=50%，1個<br>B=70%，1個<br>A=100%，1個<br>S=100%，2個"
+	"ui_mission_tooltip_mini"	"當前任務完成度：{s:step}<br><br><font color='#757575'>*點擊顯示任務詳情</font>"
+	"ui_mission_refresh_tip"	"距離任務刷新還有：{s:time} s"
+	"ui_mission_refresh_tooltip_tile"	"隨機任務刷新中"
+	"ui_mission_refresh_no_mission"	"當前無任務"
+	"ui_mission_result_label"	"本次任務獎勵"
+	"ui_mission_result_reward_gold"	"金幣增加：{s:value}"
+	"ui_mission_result_reward_attribute"	"主屬性增加：{s:value}"
+	"ui_mission_result_reward_extra"	"抽取寶物的機會"
+	"ui_mission_bottom_button_deatil"	"詳情"
+	"ui_mission_bottom_button_reward"	"獎勵"
+	
+	"ui_mission_mini_new_tip"	"新任務：{s:name}"
+	
+	"mission_type_killmonster"	"擊殺小怪"
+	"mission_type_killmonster_desc"	"每殺死一隻進攻怪（各類BOSS都不計入），完成值+1"
+	"mission_type_usestonetime"	"使用命運石次數"
+	"mission_type_usestonetime_desc"	"每使用一次命運石，完成值+1"
+	"mission_type_costgold"	"消耗金幣"
+	"mission_type_costgold_desc"	"每次消耗金幣，完成值+消耗數量"
+	"mission_type_getgold"	"獲得金幣"
+	"mission_type_getgold_desc"	"每次獲得金幣，完成值+獲得數量"
+	"mission_type_deathtime"	"死亡次數"
+	"mission_type_deathtime_desc"	"每死亡一次，完成值+1"
+	"mission_type_bosspoint"	"獲得BOSS點數"
+	"mission_type_bosspoint_desc"	"BOSS死亡後，給予擊殺者BOSS攜帶的BOSS點數"
+	
+	"ui_storage_title_treasure"	"寶物"
+	"ui_storage_title_treasure_tooltip"	"[寶物]是一些特殊的BUFF效果，獲得後可以加強英雄的各方面能力。<br>可通過“隨機任務”、“商店購買”、“擊殺災厄領主”等多種途徑獲得寶物"
+	"ui_storage_title_personal"	"個人"
+	"ui_storage_title_personal_tooltip"	"按兩下物品即可快速移動至物品欄中"
+	"ui_storage_title_public"	"公共"
+	"ui_storage_title_public_tooltip"	"ALT+左鍵點擊物品，可向其他人發送該物品資訊"
+	
+	"ui_storage_sell_batch"	"批量出售<br>點擊後，選擇要出售的物品，再點擊[確定]即可批量出售物品"
+	
+	"ui_storage_context_menu_move_to_backpack"	"移至個人倉庫"
+	"ui_storage_context_menu_move_to_body"	"移至物品欄"
+	"ui_storage_context_menu_sell"	"出售"
+	"ui_storage_context_menu_drop"	"丟棄"
+	"ui_storage_context_menu_alert"	"提醒隊友"
+	"ui_storage_context_menu_decompose"	"分解"
+	
+	"ui_boss_dps_damage_per_sec"	"每秒傷害"
+	"ui_boss_dps_damage_total"	"總傷害"
+	
+	"ui_random_item_tooltip_grade"	"{s:value}階"
+	"ui_random_item_tooltip_net_equip"	"存檔裝備"
+	"ui_random_item_tooltip_equip_score"	"戰鬥力：{d:value}"
+	"ui_random_item_tooltip_advanced_attributes_header"	"高級屬性"
+	
+	"ui_game_data_tab_achievement"	"成就"
+	"ui_game_data_tab_store"	"商城"
+	"ui_game_data_tab_pass"	"天災之路"
+	"ui_game_data_tab_mine"	"我的"
+	"ui_game_data_tab_warehouse"	"倉庫"
+	
+	"ui_game_data_achievement_tab_hero"	"英雄"
+	"ui_game_data_achievement_tab_difficulty"	"難度"
+	"ui_game_data_achievement_tab_hidden"	"隱藏"
+	
+	"ui_game_data_achievement_finish_tooltip"	"{s:time} 達成"
+	
+	"ui_game_data_achievement_hero_tab_all"	"全部"
+	"ui_game_data_achievement_hero_tab_str"	"力量"
+	"ui_game_data_achievement_hero_tab_agi"	"敏捷"
+	"ui_game_data_achievement_hero_tab_int"	"智力"
+	"ui_game_data_achievement_hero_tab_other"	"其他"
+	
+	"ui_game_data_achievement_hero_search_holder"	"請輸入英雄名字進行查找"
+	
+	"ui_game_data_achievement_hero_item_hero_all"	"全英雄"
+	"ui_game_data_achievement_hero_item_hero_str"	"力量英雄"
+	"ui_game_data_achievement_hero_item_hero_agi"	"敏捷英雄"
+	"ui_game_data_achievement_hero_item_hero_int"	"智力英雄"
+	
+	"ui_game_data_mine_title_account"	"帳戶"
+	"ui_game_data_mine_title_map_level"	"歷練"
+	"ui_game_data_mine_title_invite"	"邀請"
+	
+	"ui_game_data_mine_refresh_ms"	"充值完成以後，如果仙石數量沒有正常刷新，請手動點擊刷新<br><br>冷卻時間：30s"
+	"ui_game_data_mine_refresh_ms_cooldown"	"冷卻中，請稍後再試"
+	
+	"ui_invite_title"	"填寫邀請碼"
+	"ui_invite_input_holder"	"輸入邀請碼，領取專屬獎勵"
+	"ui_invite_input_button"	"領取獎勵"
+	"ui_invite_list_button_count"	"我的邀請"
+	"ui_invite_list_button_reward"	"我的獎勵"
+	"ui_invite_bind_title"	"綁定玩家"
+	"ui_invite_bind_title_tooltip"	"在上方輸入某玩家的專屬邀請碼，即可綁定該玩家<br><br>綁定成功後，該玩家邀請人數+1，你則獲得以下獎勵：<br>※立即獲得2000晶石<br>※和綁定玩家一起遊戲，結算時你們獲得的歷練值和晶石將提升10%<br><br>*綁定關係每月1日重置"
+	"ui_invite_my_code"	"你的邀請碼："
+	"ui_invite_my_code_tips"	"如何推廣？"
+	
+	"ui_invite_count"	"邀請 {s:now}/{s:max}"
+	"ui_invite_count_reward"	"獎勵 {s:reward}"
+	
+	"ui_invite_active_error_empty"	"請輸入邀請碼"
+	"ui_invite_active_error_binded"	"已經綁定了一位玩家，不可重複綁定"
+	"ui_invite_active_error_binded_self"	"不能綁定自己"
+	 
+	"invite_fail0" "未知錯誤"
+	"invite_fail1" "參數錯誤"
+	"invite_fail2" "要綁定的玩家不存在<br><br>請確認該玩家是否進行過遊戲，並進入了結算介面"
+	"invite_fail3" "已經綁定了某個玩家了"
+	"invite_fail4" "不能綁定自己"
+	"InvitePlatform_fail0" "未知錯誤"
+	"InvitePlatform_fail1" "參數錯誤"
+	"InvitePlatform_fail2" "邀請碼不存在或已經失效"
+	"InvitePlatform_fail3" "已使用過該邀請碼"
+	"consumefail"	"使用失敗，請稍後再試"
+	"consumefail2"	"該物品不存在"
+	"keybox_fail1"	"寶箱鑰匙數量不正確"
+	"keybox_fail2"	"存檔背包格子數量不夠"
+	"ui_invite_active_result_success"	"領取成功"
+	"ui_invite_bind_result_success"	"綁定成功"
+	"ui_invite_active_result_faild"	"領取失敗，請稍後再試"
+	"ui_invite_reward_receive_time"	"領取時間：{s:time}"
+	
+	"ui_game_data_mine_invite_plus"	"PLUS+{s:plus}天"
+	
+	"ui_game_data_mine_plus_valid"	"PLUS有效期："
+	"ui_game_data_mine_plus_content"	"效果："
+	"ui_game_data_mine_plus_not_active"	"尚未啟動"
+	"ui_game_data_mine_plus_permanent"	"永久"
+	
+	"ui_game_data_mine_cert_not_active"	"未啟動，按兩下圖示前往購買頁"
+	"ui_game_data_mine_cert_active"		"<font color='gold'>已啟動</font>"
+	
+	"ui_game_data_mine_map_level_exp"	"歷練值：{s:now}/{s:max}"
+	"ui_game_data_mine_map_level_lvl"	"等級：{s:now}"
+	
+	"ui_game_data_mine_recharge_get_ms"	"獲取仙石"
+	"ui_game_data_mine_recharge_count"	"數量"
+	"ui_game_data_mine_recharge_money"	"金額"
+	"ui_game_data_mine_recharge_unit"	"元"
+	"ui_game_data_mine_recharge_unit2"	"$"
+	"ui_game_data_mine_recharge_pay_option_alipay"	"支付寶"
+	"ui_game_data_mine_recharge_pay_option_wechat"	"微信"
+	"ui_game_data_mine_recharge_checkout"	"支付"
+	"ui_recharge_magic_stone"	"仙石"
+	"ui_recharge_count_tip"	"必須是100的整數倍"
+	"ui_recharge_option_paypal_tooltip"	"使用PayPal支付時，除了上方計算的總金額，還需要額外支付一定數量的手續費，請知悉"
+	"ui_recharge_paypal_open_browser"	"打開流覽器付款"
+	"ui_recharge_paypal_pay_confirm"	"我已付款"
+	"ui_recharge_paypal_description"	"付款流程：<br/>1.點擊 [打開流覽器付款] 按鈕前往PayPal網頁進行支付<br>2.支付成功後，點擊 [我已付款] 按鈕，更新付款結果<br><br>·如果點擊[我已付款]提示失敗，可再次嘗試。若多次失敗，請聯繫遊戲作者，感謝配合！"
+	
+	"ui_recharge_tooltip_error_no_option"	"請選擇付款方式"
+	"ui_recharge_tooltip_cancel_confirm"	"確定要取消訂單嗎？"
+	"ui_recharge_tooltip_try_again"	"伺服器未回應，請再試一次"
+	"ui_recharge_tooltip_success"	"付款成功，感謝支持!"
+	"ui_recharge_tooltip_closed"	"付款失敗，該訂單可能已被關閉"
+	"ui_recharge_tooltip_init_faild"	"發起支付請求失敗，請重試"
+	"ui_recharge_expire_time"	"支付剩餘時間：{s:timeout}"
+	"ui_recharge_tooltip_open_browser_confirm"	"即將離開遊戲，在網頁流覽器中進行支付操作，是否確認？"
+	"ui_recharge_tooltip_paypal_confirm"	"使用PayPal支付時，由於包含手續費，實際付款金額將比 {s:value} 多，是否確認？"
+	"ui_recharge_tooltip_count_invalid"	"數量必須是100的整數倍"
+	
+	"ui_recharge_pay_option_alipay"	"支付寶"
+	"ui_recharge_pay_option_wechat"	"微信"
+	"ui_recharge_pay_option_paypal"	"PayPal"
+	
+	"ui_warehouse_item_use_tooltip"	"<font color='#ffe16f'>左鍵按兩下或右鍵點擊可進行使用</font>"
+	"ui_warehouse_item_action_use"	"使用"
+	
+	"ui_warehouse_item_use_faild"	"使用<font color='#ffe16f'>{s:name}</font>失敗，請稍後再試"
+	
+	"ui_battlepass_description"	"<font color='gold'>概述</font><br>天災之路是一個階段性的活動，一般以一個自然月為一個賽季。<br/><br/>每個賽季內，持有通行證的玩家通過提升通行證等級可獲取豐厚獎勵。<br/><br/><font color='gold'>通行證等級</font><br>通行證等級主要通過完成[通行證任務]來提升。任務包括每日任務（每天早上8:00刷新）和每週任務（週一早上8:00刷新）。<br>完成任務後，在遊戲結算時發放通行證經驗獎勵。<br>新的賽季通行證等級將被重置。<br/><br/><font color='gold'>高級通行證</font><br>玩家默認持有基礎通行證，如有需要，可在商城購買[高級通行證]。<br>啟動高級通行證後，將獲得雙倍獎勵，享受雙倍快樂！<br><font color='#00FF00'>高級通行證有效期為一個賽季</font>"
+	"ui_bp_basic_title"	"基礎通行證<br><br>通過完成任務提升通行證等級，即可領取豐厚獎勵"
+	"ui_bp_advanced_title"	"高級通行證<br><br>需要在商城購買 [高級通行證] 啟動後，才可領取這些獎勵"
+	
+	"ui_bp_level_tooltip"	"通行證等級<br><br>完成右側任務獲取通行證經驗來提升等級"
+	"ui_game_data_pass_reward_received_tooltip"	"領取於 {s:time}"
+	"ui_game_data_pass_reward_received_success_tooltip"	"領取成功"
+	"ui_game_data_pass_reward_received_faild_tooltip"	"領取失敗，請稍後再試"
+	"ui_game_data_pass_cant_receive_tooltip"	"等級不足，無法領取獎勵"
+	"ui_game_data_pass_cant_receive_tooltip2"	"尚未啟動高級通行證，是否前去購買？"
+	"ui_game_data_pass_task_daily"	"每日"
+	"ui_game_data_pass_task_weekly"	"每週"
+	"ui_game_data_pass_task_finished_tooltip"	"{s:finish}完成"
+	"ui_game_data_pass_season_tip"	"第{s:season}賽季，距離結束還有{s:time}天"
+	"ui_game_data_pass_season_tip2"	"第{s:season}賽季，距離結束還有{s:time}"
+	"ui_game_data_pass_season_tip3"	"第{s:season}賽季，已結束"
+	//英文翻譯到時候要給時間加上UTC+08:00的說明
+	"ui_game_data_pass_season_tip_tooltip"	"賽季結束時間：<br/>{s:timeTooltip}"
+	
+	"ui_game_data_store_title_pass"	"通行證"
+	"ui_game_data_store_title_groceries"	"道具"
+	"ui_game_data_store_buy_title"	"購買商品"
+	"ui_game_data_store_buy_count"	"數量"
+	"ui_game_data_store_buy_balance"	"餘額：{d:value}"
+	"ui_game_data_store_buy_option_ms"	"仙石購買"
+	"ui_game_data_store_buy_option_js"	"晶石購買"
+	"ui_game_data_store_buy_own_item_tip"	"已擁有，不可重複購買"
+	
+	"ui_game_data_store_buy_count_tooltip"	"請輸入數量"
+	
+	"ui_game_data_store_buy_result_tooltip_success"	"你獲得了<font color='#ffe16f'>{s:name}</font>"
+	"ui_game_data_store_buy_result_tooltip_success_stack"	"獲得<font color='#ffe16f'>{s:count}</font>個<font color='#ffe16f'>{s:name}</font>，目前持有<font color='#ffe16f'>{s:total}</font>個"
+	"ui_game_data_store_buy_result_tooltip_faild"	"購買失敗，請稍後再試"
+	
+	"store_catalog_content_search_holder"	"請輸入物品名稱進行查找"
+	
+	"ui_store_buy_balance_not_enough"	"餘額不足"
+	"ui_store_buy_balance_check_tooltip_1"	"仙石不足"
+	"ui_store_buy_balance_check_tooltip_2"	"晶石不足<br><br><span class='SmallText'>晶石主要通過遊戲結算獎勵、天災之路等途徑獲得</span>"
+	
+	"ui_store_buy_result_button_check"	"前往查看"
+	"ui_store_buy_result_button_use"	"立即使用"
+	"ui_store_buy_result_button_jing"	"知道了"
+	"ui_store_buy_result_button_xian"	"前往充值"
+	
+	"store_catalog_all"	"全部"
+	"store_catalog_consumable"	"消耗品"
+	"store_catalog_certificate"	"憑證"
+	"store_catalog_chest"	"鑰匙"
+	"store_catalog_package"	"禮包"
+	"store_catalog_visual"	"外觀"
+	
+	"store_catalog_secondary_all"	"全部"
+	"store_catalog_secondary_none"	"其他"
+	"store_catalog_secondary_plus"	"PLUS"
+	"store_catalog_secondary_pass"	"通行證"
+	"store_catalog_secondary_vip"	"會員"
+	"store_catalog_secondary_drug"	"藥劑"
+	"store_catalog_secondary_rune"	"符文"
+	"store_catalog_secondary_pet"	"寵物"
+	"store_catalog_secondary_title"	"稱號"
+	"store_catalog_secondary_aura"	"光環"
+	"store_catalog_secondary_equip_2"	"二階裝備"
+	"store_catalog_secondary_equip_3"	"三階裝備"
+	"store_catalog_secondary_enhance"	"強化"
+	"store_catalog_secondary_normal_1"	"通用"
+	
+	"store_item_own_mark"	"前往查看"
+	"store_item_own_mark_tooltip"	"已永久持有"
+	"store_item_tooltip_bp_cant_buy_last"	"賽季結束前一天，不可購買通行證"
+	
+	"store_item_tooltip_buy_plus_success"	"購買成功<br/><br/>PLUS有效期延長{s:day}天，至{s:invalid}"
+	"store_item_tooltip_buy_plus_permanent_success"	"購買成功，PLUS永久生效"
+	
+	"store_item_plus_desc_mine"	"金錢加成+20%<br/>經驗加成+20%<br/>英雄隨機次數+1<br/>歷練值獲取+30%<br/>每次開局獎勵1級天書x1"
+	"store_item_plus_permanent_desc_mine"	"金錢加成+20%<br/>經驗加成+20%<br/>英雄隨機次數+1<br/>歷練值獲取+50%<br/>每次開局獎勵1級天書x1"
+	
+	"store_item_shopmall_1"		"高級通行證"
+	"store_item_shopmall_1_desc"	"購買後啟動以下效果：<br/>·解鎖[天災之路]高級通行證獎勵<br/>·立刻獲得500通行證經驗"
+	"store_item_shopmall_2"		"PLUS月卡"
+	"store_item_shopmall_2_desc"	"PLUS效果：<br/>金錢加成+20%<br/>經驗加成+20%<br/>英雄隨機次數+1<br/>歷練值獲取+30%<br/>每次開局獎勵1級天書x1<br><br>購買後，PLUS有效期延長<font color='gold'>31天</font>"
+	
+	"store_item_shopmall_45"		"PLUS季卡"
+	"store_item_shopmall_45_desc"	"PLUS效果：<br/>金錢加成+20%<br/>經驗加成+20%<br/>英雄隨機次數+1<br/>歷練值獲取+30%<br/>每次開局獎勵1級天書x1<br><br>購買後，PLUS有效期延長<font color='gold'>93天</font>"
+	
+	"store_item_shopmall_46"		"PLUS永久卡"
+	"store_item_shopmall_46_desc"	"PLUS效果：<br/>金錢加成+20%<br/>經驗加成+20%<br/>英雄隨機次數+1<br/>歷練值獲取+50%<br/>每次開局獎勵1級天書x1<br><br>購買後，<font color='yellow'>PLUS永久生效</font><br>並立刻獲得限定寵物：<font color='yellow'>末日寶寶</font>（出戰時英雄技能等級+2,金錢加成+12%）"
+
+	"store_item_shopmall_3"		"智慧之書"
+	"store_item_shopmall_3_desc"	"每局遊戲開局，獎勵一本技能秘笈<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_4"		"賢者神石"
+	"store_item_shopmall_4_desc"	"金錢加成+30%<br/>經驗加成+30%<br/><br/>購買後，下一局生效"
+	"store_item_shopmall_5"		"初級會員"
+	"store_item_shopmall_5_desc"	"初始三維+10<br/>初始金錢+2000<br/>初始殺敵數+50"
+	"store_item_shopmall_6"		"中級會員"
+	"store_item_shopmall_6_desc"	"初始三維+15<br/>金錢加成+5%<br/>經驗加成+5%<br/>最終傷害+3%<br/>初始殺敵數+100"
+	"store_item_shopmall_7"		"高級會員"
+	"store_item_shopmall_7_desc"	"全屬性+10%<br/>初始三維+20<br/>減傷係數+20<br/>最終傷害+5%<br/>金錢加成+12%<br/>經驗加成+12%<br/>每10秒殺敵數+10<br/>寶物槽位額外+3<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_8"		"基礎符文書"
+	"store_item_shopmall_8_desc"	"每局遊戲開局，隨機啟動3個不重複的基礎符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_9"		"中級符文書Ⅰ"
+	"store_item_shopmall_9_desc"	"每局遊戲開局，隨機啟動1個不重複的中級符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_10"		"高級符文書Ⅰ"
+	"store_item_shopmall_10_desc"	"每局遊戲開局，隨機啟動1個不重複的高級符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_11"		"超魔符文書Ⅰ"
+	"store_item_shopmall_11_desc"	"每局遊戲開局，隨機啟動1個不重複的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_12"		"特殊符文書Ⅰ"
+	"store_item_shopmall_12_desc"	"每局遊戲開局，隨機啟動1個的特殊天賦<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_13"		"技能秘訣"
+	"store_item_shopmall_13_desc"	"使用後獲得一本技能秘笈<br/><br/>每局最多使用5次，單局有效"
+	"store_item_shopmall_14"		"寶物"
+	"store_item_shopmall_14_desc"	"使用後獲得一件寶物<br/><br/>每局最多使用1次，單局有效"
+	"store_item_shopmall_15"		"初級符文頁"
+	"store_item_shopmall_15_desc"	"使用後隨機啟動1個的基礎符文<br/><br/>每局最多使用3次，單局有效"
+	"store_item_shopmall_16"		"中級符文頁"
+	"store_item_shopmall_16_desc"	"使用後隨機啟動1個的中級符文<br/><br/>每局最多使用2次，單局有效"
+	"store_item_shopmall_17"		"高級符文頁"
+	"store_item_shopmall_17_desc"	"使用後隨機啟動1個的高級符文<br/><br/>每局最多使用1次，單局有效"
+	"store_item_shopmall_47"		"超魔符文頁"
+	"store_item_shopmall_47_desc"	"使用後隨機啟動1個的超魔符文<br/><br/><br/>每局最多使用1次，單局有效。"
+	"store_item_shopmall_48"		"特殊符文頁"
+	"store_item_shopmall_48_desc"	"使用後隨機啟動1個的特殊符文<br/><br/><br/>每局最多使用1次，單局有效"
+	"store_item_shopmall_18"		"戰吼藥劑"
+	"store_item_shopmall_18_desc"	"使用後9999碼範圍內的友方英雄：<br/>基礎攻擊：+50%<br/>持續時間：30s<br/>冷卻時間：1200s"	
+	"store_item_shopmall_19"		"狂暴藥劑"
+	"store_item_shopmall_19_desc"	"使用後9999碼範圍內的友方英雄：<br/>攻擊速度：+50<br/>持續時間：30s<br/>冷卻時間：1200s"
+	"store_item_shopmall_20"		"秘術藥劑"
+	"store_item_shopmall_20_desc"	"使用後9999碼範圍內的友方英雄：<br/>技能傷害：+20%<br/>持續時間：30s<br/>冷卻時間：1200s"
+	"store_item_shopmall_21"		"潛能藥劑"
+	"store_item_shopmall_21_desc"	"使用後9999碼範圍內的友方英雄：<br/>冷卻縮減：-20%<br/>持續時間：30s<br/>冷卻時間：1200s"
+	"store_item_shopmall_22"		"守護藥劑"
+	"store_item_shopmall_22_desc"	"使用後9999碼範圍內的友方英雄：<br/>減傷係數：+30<br/>持續時間：30s<br/>冷卻時間：1200s"
+	"store_item_shopmall_23"		"二階極品裝備鑰匙"
+	"store_item_shopmall_23_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：二階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_24"		"二階史詩裝備鑰匙"
+	"store_item_shopmall_24_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：二階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_25"		"二階傳奇裝備鑰匙"
+	"store_item_shopmall_25_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：二階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_26"		"三階極品裝備鑰匙"
+	"store_item_shopmall_26_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：三階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_27"		"三階史詩裝備鑰匙"
+	"store_item_shopmall_27_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：三階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_28"		"三階傳奇裝備鑰匙"
+	"store_item_shopmall_28_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：隨機<br>品階：三階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_29"		"二階極品武器裝備鑰匙"
+	"store_item_shopmall_29_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：武器<br>品階：二階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_30"		"二階極品防具裝備鑰匙"
+	"store_item_shopmall_30_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：防具<br>品階：二階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_31"		"二階極品首飾裝備鑰匙"
+	"store_item_shopmall_31_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：首飾<br>品階：二階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_32"		"二階極品特殊裝備鑰匙"
+	"store_item_shopmall_32_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：特殊裝備<br>品階：二階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_33"		"三階極品武器裝備鑰匙"
+	"store_item_shopmall_33_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：武器<br>品階：三階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_34"		"三階極品防具裝備鑰匙"
+	"store_item_shopmall_34_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：防具<br>品階：三階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_35"		"三階極品首飾裝備鑰匙"
+	"store_item_shopmall_35_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：首飾<br>品階：三階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_36"		"三階極品特殊裝備鑰匙"
+	"store_item_shopmall_36_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：特殊裝備<br>品階：三階<br>最低品質：<font color=\"#a91ac8\">極品</font>"
+	"store_item_shopmall_37"		"三階史詩武器裝備鑰匙"
+	"store_item_shopmall_37_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：武器<br>品階：三階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_38"		"三階史詩防具裝備鑰匙"
+	"store_item_shopmall_38_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：防具<br>品階：三階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_39"		"三階史詩首飾裝備鑰匙"
+	"store_item_shopmall_39_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：首飾<br>品階：三階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_40"		"三階史詩特殊裝備鑰匙"
+	"store_item_shopmall_40_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：特殊裝備<br>品階：三階<br>最低品質：<font color=\"#fe6d15\">史詩</font>"
+	"store_item_shopmall_41"		"三階傳奇武器裝備鑰匙"
+	"store_item_shopmall_41_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：武器<br>品階：三階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_42"		"三階傳奇防具裝備鑰匙"
+	"store_item_shopmall_42_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：防具<br>品階：三階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_43"		"三階傳奇首飾裝備鑰匙"
+	"store_item_shopmall_43_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：首飾<br>品階：三階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_44"		"三階傳奇特殊裝備鑰匙"
+	"store_item_shopmall_44_desc"	"使用後可開啟裝備寶箱獲得一件存檔裝備<br><br>部位：特殊裝備<br>品階：三階<br>最低品質：<font color=\"#ffbc09\">傳奇</font>"
+	"store_item_shopmall_49"		"中級符文書Ⅱ"
+	"store_item_shopmall_49_desc"	"每局遊戲開局，隨機啟動1個不重複的中級符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_50"		"中級符文書Ⅲ"
+	"store_item_shopmall_50_desc"	"每局遊戲開局，隨機啟動1個不重複的中級符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_51"		"高級符文書Ⅱ"
+	"store_item_shopmall_51_desc"	"每局遊戲開局，隨機啟動1個不重複的高級符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_52"		"高級符文書Ⅲ"
+	"store_item_shopmall_52_desc"	"每局遊戲開局，隨機啟動1個不重複的高級符文<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_53"		"白銀會員"
+	"store_item_shopmall_53_desc"	"全屬性+10%<br/>初始三維+20<br/>幸運值+10<br/>天命值+30(擊殺災厄BOSS掉落高品質裝備的概率提升30%)<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_54"		"黃金會員"
+	"store_item_shopmall_54_desc"	"全屬性+20%<br/>初始三維+50<br/><br/>幸運值+15<br/>天命值+50(擊殺災厄BOSS掉落高品質裝備的概率提升50%)<br/><br/><font color='gold'>永久生效</font>"
+
+
+	"store_item_shopmall_55"		"超魔符文書Ⅱ"
+	"store_item_shopmall_55_desc"	"每局遊戲開局，隨機啟動1個不重複的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_56"		"超魔符文書Ⅲ"
+	"store_item_shopmall_56_desc"	"每局遊戲開局，隨機啟動1個不重複的超魔符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_57"		"特殊符文書Ⅱ"
+	"store_item_shopmall_57_desc"	"每局遊戲開局，隨機啟動1個不重複的特殊符文<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_58"		"特殊符文書Ⅲ"
+	"store_item_shopmall_58_desc"	"每局遊戲開局，隨機啟動1個不重複的特殊符文<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_59"		"1級神秘寶物書"
+	"store_item_shopmall_59_desc"	"每局遊戲開局，給予一本1級神秘寶物書<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_60"		"2級神秘寶物書"
+	"store_item_shopmall_60_desc"	"每局遊戲開局，給予一本2級神秘寶物書<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_61"		"3級神秘寶物書"
+	"store_item_shopmall_61_desc"	"每局遊戲開局，給予一本3級神秘寶物書<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_62"		"4級神秘寶物書"
+	"store_item_shopmall_62_desc"	"每局遊戲開局，給予一本4級神秘寶物書<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_63"		"11階能量之心憑證"
+	"store_item_shopmall_63_desc"	"可以將10階能量之心升級成11階能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_64"		"12階能量之心憑證"
+	"store_item_shopmall_64_desc"	"可以將11階能量之心升級成12階能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_65"		"13階能量之心憑證"
+	"store_item_shopmall_65_desc"	"可以將12階能量之心升級成13階能量之心<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_66"		"14階能量之心憑證"
+	"store_item_shopmall_66_desc"	"可以將13階能量之心升級成14階能量之心<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_67"		"吞噬卡"
+	"store_item_shopmall_67_desc"	"每局遊戲開局，給予一顆吞噬丹<br/><br/><font color='gold'>永久生效</font>"
+
+	"store_item_shopmall_68"		"征戰鑰匙"
+	"store_item_shopmall_68_desc"	"使用後可開啟通用寶箱獲得一件商城道具<br/><br/>一級獎池（90%）：<br/>晶石<br/>基礎符文頁<br/>中級符文頁<br/>高級符文頁<br/>二階強化石<br/>三階強化石<br/>四階強化石<br/><br/>二級獎池（9%）：<br/>初級會員<br/>中級會員<br/>賢者神石<br/>中級符文書Ⅰ<br/>中級符文書Ⅱ<br/>中級符文書Ⅲ<br/>一級神秘寶物書<br/><br/>三級獎池（0.9%）：<br/>吞噬卡<br/>白銀會員<br/>高級符文書Ⅰ<br/>高級符文書Ⅱ<br/>高級符文書Ⅲ<br/>超魔符文書Ⅰ<br/>超魔符文書Ⅱ<br/>超魔符文書Ⅲ<br/>11級能量之心<br/>12級能量之心<br/>二級神秘寶物書<br/><br/>四級獎池（0.1%）：<br/>黃金會員<br/>特殊符文書Ⅰ<br/>特殊符文書Ⅱ<br/>特殊符文書Ⅲ<br/>13級能量之心<br/>14級能量之心<br/>三級神秘寶物書"
+
+
+
+	"store_item_shopmall_cw_1_1"		"晴兒寶寶"
+	"store_item_shopmall_cw_1_1_desc"	"類別：寵物<br/>作用：出戰時英雄殺怪金幣+10"
+	"store_item_shopmall_cw_1_2"		"金龜子"
+	"store_item_shopmall_cw_1_2_desc"	"類別：寵物<br/>作用：出戰時英雄金錢加成+5%"
+	"store_item_shopmall_cw_1_3"		"碧磷"
+	"store_item_shopmall_cw_1_3_desc"	"類別：寵物<br/>作用：出戰時英雄經驗加成+5%"
+	"store_item_shopmall_cw_1_101"		"冰龍寶寶"
+	"store_item_shopmall_cw_1_101_desc"	"類別：寵物<br/>作用：出戰時英雄殺怪增加金幣+10,金錢加成+5%"
+	"store_item_shopmall_cw_1_201"		"金色冰龍寶寶"
+	"store_item_shopmall_cw_1_201_desc"	"類別：寵物<br/>作用：出戰時英雄殺怪增加金幣+10,金錢加成+5%,經驗加成+5%"
+	"store_item_shopmall_cw_3_11"		"末日寶寶"
+	"store_item_shopmall_cw_3_11_desc"	"類別：寵物<br/>作用：出戰時英雄技能等級+2,金錢加成+12%"
+	"store_item_shopmall_gh_1_1"		"堅韌光環"
+	"store_item_shopmall_gh_1_1_desc"	"類別：光環<br/>作用：出戰時英雄護甲+10"
+	"store_item_shopmall_gh_1_2"		"禦魔光環"
+	"store_item_shopmall_gh_1_2_desc"	"類別：光環<br/>作用：出戰時英雄魔法抗性+10"
+	"store_item_shopmall_gh_1_3"		"回復光環"
+	"store_item_shopmall_gh_1_3_desc"	"類別：光環<br/>作用：出戰時英雄生命回復+1%"
+	"store_item_shopmall_gh_1_4"		"冥想光環"
+	"store_item_shopmall_gh_1_4_desc"	"類別：光環<br/>作用：出戰時英雄魔法回復+3"
+	"store_item_shopmall_gh_1_101"		"生命光環"
+	"store_item_shopmall_gh_1_101_desc"	"類別：光環<br/>作用：出戰時英雄護甲+10,魔法抗性+10"
+	"store_item_shopmall_gh_1_201"		"金色生命光環"
+	"store_item_shopmall_gh_1_201_desc"	"類別：光環<br/>作用：出戰時英雄生命回復+1%,魔法回復+3"	
+	"store_item_shopmall_ch_1_1"		"無名"
+	"store_item_shopmall_ch_1_1_desc"	"類別：稱號<br/>作用：出戰時英雄英雄全屬性+30"
+	"store_item_shopmall_ch_1_2"		"無名"
+	"store_item_shopmall_ch_1_2_desc"	"類別：稱號<br/>作用：出戰時英雄英雄基礎全屬性+2%"
+	"store_item_shopmall_ch_1_3"		"無名"
+	"store_item_shopmall_ch_1_3_desc"	"類別：稱號<br/>作用：出戰時英雄英雄主屬性+50"
+	"store_item_shopmall_ch_1_4"		"無名"
+	"store_item_shopmall_ch_1_4_desc"	"類別：稱號<br/>作用：出戰時英雄英雄基礎主屬性+4%"
+	"store_item_shopmall_ch_2_13"		"飯店玩家--白"
+	"store_item_shopmall_ch_2_13_desc"	"類別：稱號<br/>作用：幸運值+10<br/>每點幸運值增加1%的存檔裝備爆率"
+	"store_item_shopmall_ch_3_13"		"飯店玩家--橙"
+	"store_item_shopmall_ch_3_13_desc"	"類別：稱號<br/>作用：幸運值+15<br/>每點幸運值增加1%的存檔裝備爆率"
+	"store_item_shopmall_ch_4_13"		"飯店玩家--金"
+	"store_item_shopmall_ch_4_13_desc"	"類別：稱號<br/>作用：幸運值+20<br/>每點幸運值增加1%的存檔裝備爆率"
+	"store_item_shopmall_ch_1_101"		"無名"
+	"store_item_shopmall_ch_1_101_desc"	"類別：稱號<br/>作用：出戰時英雄英雄個人技能等級+1"
+	"store_item_shopmall_ch_1_201"		"無名"
+	"store_item_shopmall_ch_1_201_desc"	"類別：稱號<br/>作用：出戰時英雄英雄個人技能等級+1.5"
+	
+	"store_item_shopmall_sstone_2"	"2階強化石"
+	"store_item_shopmall_sstone_2_desc"	"可用來強化2階及以上品階的存檔裝備"
+	"store_item_shopmall_sstone_3"	"3階強化石"
+	"store_item_shopmall_sstone_3_desc"	"可用來強化3階及以上品階的存檔裝備"
+	"store_item_shopmall_sstone_4"	"4階強化石"
+	"store_item_shopmall_sstone_4_desc"	"可用來強化4階及以上品階的存檔裝備"
+	
+	"ui_tooltip_suit_not_equip"	"<未裝備>"
+
+	"map_level_bonus_2"						"全屬性+10*(歷練等級-1)"
+	"map_level_bonus_3"						"金幣+500*(歷練等級-1)"
+	"map_level_bonus_4"						"攻擊速度+20"
+	"map_level_bonus_5"						"殺怪金幣+20"
+	"map_level_bonus_6"						"金錢收益+10%"
+	"map_level_bonus_7"						"經驗收益+10%"
+	"map_level_bonus_8"						"個人技能等級+1"
+	"map_level_bonus_9"						"升級全屬性+5"
+	"map_level_bonus_10"					"初始殺敵數+200"
+	"map_level_bonus_11"					"每10秒殺敵數+10"
+	"map_level_bonus_12"					"技能傷害+15%"
+	"map_level_bonus_13"					"暴擊傷害+30%"
+	"map_level_bonus_14"					"暴擊概率+5%"
+	"map_level_bonus_15"					"附加傷害+5%"
+	"map_level_bonus_16"					"最終傷害+5%"
+	"map_level_bonus_17"					"初始殺敵數+300"
+	"map_level_bonus_18"					"金錢收益+20%"
+	"map_level_bonus_19"					"經驗收益+20%"
+	"map_level_bonus_20"					"個人技能等級+1"
+
+	
+	
+	"ui_shop_title_primary" "初級物品"
+	"ui_shop_title_middle" "中級物品"
+	"ui_shop_title_advanced" "高級物品"
+	
+	"ui_shop_title_boss_score" "BOSS點數"
+	"ui_shop_title_kills" "殺敵積分"
+	
+	"ui_shop_title_treasure" "寶物"
+	"ui_shop_title_storage" "倉庫"
+	"ui_shop_button_tooltip" "點擊打開遊戲商店<br><br>快速鍵：P"
+	
+	"ui_shop_drag_sell"	"拖至此處出售"
+	
+	"ui_message_system"	"系統提示"
+	"ui_message_enemy"	"醬油怪"
+	"ui_message_enemy_taunt_1"	"嘰嘰嘰..."
+	"ui_message_enemy_taunt_2"	"咕咕咕..."
+	"ui_message_enemy_taunt_3"	"？？？"
+	"ui_message_boss_taunt_1"	"就這？"
+	"ui_message_boss_taunt_2"	"死了個最菜的"
+	"ui_message_boss_taunt_3"	"小子，再回去練練吧"
+	"ui_message_boss_taunt_4"	"嗯...剛才是不是拍死了一隻蚊子"
+	"ui_message_boss_taunt_5"	"哈？"
+	"ui_message_boss_taunt_6"	"？"
+	"ui_message_boss_taunt_7"	"一群螻蟻"
+	"ui_message_boss_taunt_8"	"第幾次了，我都煩了！"
+	"ui_message_boss_taunt_9"	"別送了，再送暴露了"
+	"ui_message_boss_taunt_10"	"好了好了，Q幣已經發貨了..."
+	"ui_message_boss_taunt_11"	"我還沒用力，你怎麼就躺下了？"
+	
+	"ui_status_difficulty"	"難度：{s:value}"
+	"ui_status_time"	"遊戲時長：{s:value}"
+	
+	"ui_bc_title"	"領主挑戰"
+	"ui_bc_title_tooltip"	"點擊領主頭像可以召喚相應的領主，擊敗後可獲得豐厚獎勵<br><br>[套裝領主]、[個人領主]會出現在自己出生點對應的路線上<br><br>[團隊領主]會出現地圖中央的祭壇上"
+	"ui_bc_mini_tooltip"	"點擊打開領主挑戰介面，可以挑戰各種領主。<br>擊敗領主後可獲得套裝、隨機裝備、BOSS點數等各種獎勵。"
+	"ui_bc_tab_suit"	"套裝領主"
+	"ui_bc_tab_personal"	"個人領主"
+	"ui_bc_tab_team"	"團隊領主"
+	
+	"ui_bc_tab_suit_short"	"套裝"
+	"ui_bc_tab_personal_short"	"個人"
+	"ui_bc_tab_team_short"	"團隊"
+	
+	"ui_bc_combat_power"	"英雄等級要求：{s:value}"
+	"ui_bc_suit_grade_1"	"初級領主"
+	"ui_bc_suit_grade_2"	"中級領主"
+	"ui_bc_suit_grade_3"	"高級領主"
+	"ui_bc_suit_grade_4"	"頂級領主"
+	
+	"ui_dynamic_cost_gold"	"開啟花費金幣 <font color='white'>{s:value}</font>"
+	"ui_dynamic_cost_kill_score"	"花費殺敵積分 <font color='white'>{s:value}</font>"
+	"ui_dynamic_cost_boss_point"	"花費BOSS點數 <font color='white'>{s:value}</font>"
+	
+	"ui_scoreboard_title_level"	"等級"
+	"ui_scoreboard_title_gold"	"金幣"
+	"ui_scoreboard_title_bosspoint"	"BOSS點數"
+	"ui_scoreboard_title_killscore"	"殺敵積分"
+	"ui_scoreboard_title_death"	"死亡次數"
+	"ui_scoreboard_title_kill"	"殺敵數"
+	
+	"ui_endgame_mvp_kill"	"殺敵數"
+	"ui_endgame_mvp_boss_damage"	"BOSS傷害"
+	"ui_endgame_player_header_difficulty"	"難度{s:difficulty_num}：{s:difficulty} / {s:mode}"
+	"ui_endgame_player_header_kill"	"殺敵數"
+	"ui_endgame_player_header_boss_damage"	"BOSS傷害"
+	"ui_endgame_player_header_jing"	"晶石獎勵"
+	"ui_endgame_player_header_gold"	"總金幣"
+	"ui_endgame_player_header_map_exp"	"歷練值"
+	"ui_endgame_player_header_ability"	"技能"
+	"ui_endgame_player_header_treasure"	"寶物"
+	"ui_endgame_player_header_net_item"	"存檔裝備"
+	"ui_endgame_player_header_store_item"	"額外獎勵"
+	"ui_endgame_button_achievement"	"新成就"
+	"ui_endgame_button_improve"	"我要變強"
+	"ui_endgame_button_leave"	"離開遊戲"
+	"ui_endgame_button_close"	"關閉介面"
+	"ui_endgame_button_close_tooltip"	"關閉後，可通過左上角【遊戲結算介面】入口再次打開"
+	"ui_endgame_achievement_tooltip" "本局共達成 {s:count} 個成就"
+	"ui_endgame_achievement_tooltip_hidden"	"隱藏成就"
+	"ui_endgame_boss_time_tooltip"	"擊殺耗時"
+	
+	"ui_top_actions_game_data"	"個人檔案"	
+	"ui_top_actions_ranklist"	"排行榜"	
+	"ui_top_actions_game_finish"	"遊戲結算介面"	
+	"ui_top_actions_store"	"商城"
+	"ui_top_actions_config"	"鏡頭高度"
+	"ui_top_actions_game_ui_desc"	"遊戲功能介紹"
+	"ui_top_actions_game_ui_desc_tooltip"	"點擊查看遊戲功能介紹"
+	
+	"ui_minimap_action_key"	"鑰匙，點擊後打開[尋寶]介面"
+	"ui_minimap_action_ability"	"技能秘訣"
+	"ui_minimap_action_drug"	"藥劑"
+	"ui_minimap_action_rune"	"符文頁"
+	"ui_minimap_action_treasure"	"寶物"
+	"ui_minimap_action_tooltip_own"	"<font color='white'>持有：{d:count}</font>"
+	
+	"ui_waiting_overtime"	"操作超時，請稍後再試<br><br><span class='BottomTip'>點擊任意位置關閉此介面</span>"
+	
+	"ui_chest_result_return_game"	"返回遊戲"
+	"ui_chest_result_continue"	"繼續開寶箱"
+	"ui_chest_open_tip"	"點擊寶箱即可使用當前選擇的鑰匙開啟"
+	"ui_chest_open_all"	"打開全部（{s:count}）"
+	"ui_chest_close"	"點擊此處關閉介面"
+	"ui_chest_keys_title"	"左鍵選擇鑰匙"
+	"ui_chest_keys_using"	"※當前使用的鑰匙，滑鼠按兩下可定位至該鑰匙"
+	"ui_chest_hint_no_keys"	"沒有鑰匙，是否前去購買？"
+	"ui_chest_hint_no_keys2"	"沒有鑰匙"
+	"ui_chest_type_equip"	"裝備寶箱<br><br>打開後可獲得存檔裝備"
+	"ui_chest_type_normal"	"通用寶箱<br><br>打開後可獲得各種道具，道具類型取決於使用的鑰匙"
+	
+	"ui_chest_own_tooltip"	"重複獲得唯一性道具，已轉換為晶石"
+	
+	"ui_config_camera"	"鏡頭高度"
+	"ui_config_camera_tooltip"	"鏡頭越高視野越廣，但是可能導致卡頓，請酌情設置"
+	
+	"ui_rank_tab_artifact"	"神器榜"
+	"ui_rank_tab_mapexp"	"歷練榜"
+	"ui_rank_content_title_rank"	"排名"
+	"ui_rank_content_title_artifact"	"神器"
+	"ui_rank_content_title_score"	"戰鬥力"
+	"ui_rank_content_title_owner"	"擁有者"
+	
+	"ui_loading_qq_group"	"點擊加入QQ群："
+	"ui_loading_qq_group_tooltip"	"點擊後將暫時離開遊戲，打開網頁流覽器以加入QQ群<br><br>邀請碼互相綁定，推薦進入互邀群。<br>請大家儘量不要在聊天群刷屏互邀，感謝配合！"
+	
+	//-----------------------------------------UI V2 end----------------------------------------------
+	
+	"modifier_bw_1_1_Description"	"護甲+20點<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_2_Description"	"生命回復+200,生命回復+3%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_3_Description"	"魔法回復+10,魔法回復+1%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_4_Description"	"力量+200,魔法抗性+20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_5_Description"	"敏捷+200,攻擊速度+30<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_6_Description"	"智力+200,技能增強+20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_7_Description"	"全屬性+300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_8_Description"	"每秒金錢+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_9_Description"	"一次性給與3w金幣<br/>每一波增加25%的金幣獲得量<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_10_Description"	"一次性給與10W經驗<br/>每一波增加25%的經驗獲得量<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+	
+	"modifier_bw_1_11_Description"	"攻擊力+30%<br/>攻擊速度+30<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_12_Description"	"暴擊概率+5%<br/>暴擊傷害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_13_Description"	"魔法值+150<br/>魔法回復+15<br/><br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_1_14_Description"	"智力+400<br/>每10s回復周圍1000碼友方單位125點魔法值<br/><br/><br/><br/><font color=\"#cfbf81\">1級寶物</font>"
+
+	"modifier_bw_2_1_Description"	"護甲+30點<br/>反彈20%受到的傷害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_2_Description"	"生命回復+5%<br/>魔法抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_3_Description"	"攻擊力+2000<br/>每次攻擊有20%的概率造成500%的傷害<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+	
+	"modifier_bw_2_4_Description"	"智力+600<br/>技能增強+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_5_Description"	"敏捷+600<br/>攻擊速度+50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_6_Description"	"力量+600<br/>魔法抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_7_Description"	"1200碼光環<br/>+15護甲<br/>+2000生命回復<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_7_buff_Description"	"+15護甲<br/>+2000生命回復<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_8_Description"	"1200碼範圍光環<br/>+30點攻速<br/>+5%移動速度<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_8_buff_Description"	"+30點攻速<br/>+5%移動速度<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_9_Description"	"+60移動速度<br/>+300全屬性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_10_Description"	"+1200力量<br/>+2000攻擊力<br/>+15點護甲<br/>每秒損失4%當前生命值<br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_11_Description"	"+30000生命值<br/>+2000生命回復<br/>50%格擋1000點近戰攻擊或者500點遠程攻擊傷害<br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_12_Description"	"力量+550<br/>敏捷+550<br/>攻擊距離+200<br/> (<font color=\"#ffffff\">攻擊距離加成隻對遠端英雄生效</font>)<br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_13_Description"	"攻擊速度+40<br/>攻擊有20%的概率釋放連環閃電<br/>在650範圍內4個目標之間跳躍<br/>閃電將造成3*主屬性的魔法傷害。觸發閃電時無視閃避<br/>冷卻CD 0.5S<br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_14_Description"	"魔法抗性+30<br/>護甲-20<br/>技能增強+25%<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_15_Description"	"攻擊距離+100<br/>攻擊減少目標20點魔法抗性,持續6S<br/>(<font color=\"#ffffff\">只對遠程英雄生效</font>)<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_15_buff_Description"	"魔法抗性-20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_16_Description"	"+1500次屬性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_17_Description"	"護甲+50<br/>攻擊速度-50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_18_Description"	"最大生命值+100%<br/>魔法值-80%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_19_Description"	"生命回復+2000<br/>冷卻縮減-10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_20_Description"	"生命值+10000<br/>魔法值+200<br/>魔法恢復+10<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_21_Description"	"智力+900<br/>魔法恢復+15<br/>移動速度+40<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_22_Description"	"魔法值+300<br/>施法距離+300<br/>魔法回復+12<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_23_Description"	"魔法消耗-10%<br/>移動速度+30<br/>(<font color=\"#ffffff\">與奧術節能只會生效一個</font>)<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_24_Description"	"全屬性+250<br/>生命回復+5%<br/>魔法恢復+2%<br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_25_Description"	"殺怪增加+80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_26_Description"	"金錢加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_2_27_Description"	"經驗加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">2級寶物</font>"
+
+	"modifier_bw_3_1_Description"	"攻擊力7000<br/>攻擊距離+200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_2_Description"	"攻擊力+80%<br/>攻擊速度+50<br/>攻擊吸血+5%<br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_3_Description"	"魔法抗性+40<br/>狀態抗性+20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_4_Description"	"攻擊速度+50<br/>每次攻擊附帶5*敏捷的物理傷害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_5_Description"	"技能增強+80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_6_Description"	"冷卻縮減-17%<br/>魔法恢復+5<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_7_Description"	"佩戴者生命值低於20%時被施加一次強驅散<br/>並且回復攜帶者50%的生命值<br/>cd:10S<br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_8_Description"	"攻擊有5%的概率創造一個不可選中,無法被攻擊的幻象<br/>擁有自身的被動技能效果,造成50%的傷害<br/>持續10S<br/> CD：20S<br/>最多存在一個幻象<br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_9_Description"	"攻擊有2%的概率,<br/>將自己周圍600碼內的敵人擊退<br/>造成50%的減速,持續3S,並造成<br/>30*力量的物理傷害<br/><font color=\"#ffffff\">(不會擊退BOSS)</font><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_10_Description"	"攻擊力+10000<br/>攻擊降低目標20點護甲<br/>持續7秒。<br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_10_buff_Description"	"護甲-20點<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_11_Description"	"攻擊速度+80<br/>攻擊有20%的概率釋放連環閃電<br/>在650範圍內8個目標之間跳躍<br/>閃電造成10*主屬性的魔法傷害<br/>觸發閃電時無視閃避<br/>CD 0.5S <font color=\"#ffffff\">(不會和漩渦同時觸發)</font><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_12_Description"	"敏捷+1500<br/>閃避+35%<br/>攻擊力+8000<br/>移動速度+15%<br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_13_Description"	"攻擊力+12000<br/>每次攻擊有20%的概率造成1350%的傷害<br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_14_Description"	"力量+1500<br/>攻擊力+6000<br/>攻擊吸血+10%<br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_15_Description"	"力量+3000<br/>生命值+50000<br/>生命回復+5%<br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_16_Description"	"作用範圍1500碼<br/>友軍攻擊力+30%<br/>友軍護甲+20<br/>友軍攻擊速度+50<br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_16_buff_Description"	"攻擊力+30%<br/>護甲+20<br/>攻擊速度+50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_17_Description"	"生命值+20000<br/>魔法值+500<br/>智力+2000<br/>技能傷害+30%<br/>魔法恢復+30<br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_18_Description"	"生命值+30000<br/>魔法值+600<br/>魔法回復+10<br/>法術吸血+5%<br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_19_Description"	"全屬性+900<br/>每過20S對周圍發出一陣弱化衝擊<br/>減少周圍1200碼內敵方單位40點魔法抗性<br/>持續5s<br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_20_Description"	"智力+2000<br/>每1.5s釋放一個高傷害的魔法爆發<br/>衝擊，對敵方單位造成智力*30的魔法傷害<br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_21_Description"	"殺怪增加+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_22_Description"	"金錢加成+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+	"modifier_bw_3_23_Description"	"經驗加成+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">3級寶物</font>"
+
+
+
+	"modifier_bw_4_1_Description"	"移動速度+150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_4_2_Description"	"攻擊力+40000<br/>攻擊降低目標40點護甲。<br/><br/><br/><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_2_buff_Description"	"護甲-45點<br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_3_Description"	"全屬性+8888<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_4_Description"	"主屬性提升+150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_5_Description"	"攻擊距離+500<br/>每次攻擊都會擊退敵人50距離<br/>並造成當前攻擊力 x0.1的純粹傷害。<br/><font color=\"#ffffff\">（不會擊退BOSS）</font><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_6_Description"	"攻擊速度+99、移動速度+50<br/>全屬性+6666<br/>魔法抗性+50%<br/>狀態抗性+30%<br/>技能增強+99%<br/>攻擊力+99%<br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_7_Description"	"攻擊速度+300<br/>金錢加成+100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+	"modifier_bw_4_8_Description"	"智力+7777<br/>技能傷害+100%<br/>魔法恢復+60<br/><br/><br/><br/><font color=\"#cfbf81\">4級寶物</font>"
+
+
+
+	"modifier_bw_5_1_Description"	"攻擊力+50000，敏捷+25000<br/>被動:攻擊命中有20%概率召喚閃電對目標敵人造成120*敏捷的物理傷害並使目標進入感電狀態,額外承受20%的物理傷害,持續3S<br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_2_Description"	"智力+33333<br/>技能傷害+200%<br/>被動:每隔2S對周圍隨機目標發出乙太衝擊，造成160*智力的魔法傷害，並使目標受到的法術傷害提升30%，持續3s<br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_3_Description"	"攻擊力+66666，力量+18000<br/>被動:每擊殺一個boss,武器能量+1,每點能量+3%技能傷害和200點力量<br/>最多擁有100點能量<br/><br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_4_Description"	"生命值10W，防禦+200<br/>魔法抗性+33<br/>減傷係數+50<br/>被動:每3秒對周圍900的敵方單位造成英雄最大生命值*3.5的魔法傷害<br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_5_Description"	"攻擊力+46666，攻擊速度+100<br/>敏捷+20000<br/>被動:<br/>攻擊有1%概率增加自身150%的基礎敏捷和33%概率附帶群星之力,對目標額外造成88*敏捷的物理傷害<br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_6_Description"	"1200碼內友軍基礎攻擊力+100%<br/>攻擊速度+100，移動速度+20%回復效果+25%<br/>技能傷害+100%<br/>攻擊距離+200<br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_7_Description"	"攻擊力+77777<br/>攻擊速度+122<br/>12%概率50倍暴擊<br/>被動:使目標的回復效果降低30%<br/><br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_8_Description"	"智力+36666<br/>被動:<br/>施法時將消耗法力值的40%換成能量點儲存起來，超過500點即釋放並對周圍600碼內的單位造成能量*智力的魔法傷害。<br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_9_Description"	"力量+22222<br/>智力+18888<br/>每次施法回復20%的最大生命值<br/><br/><br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_10_Description"	"攻擊力+99999<br/>自身護甲-150點<br/>被動:攻擊命中有1%的概率減少目標5%的當前生命上限<br/><br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+	"modifier_bw_5_11_Description"	"基礎攻擊力+666%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">5級寶物</font>"
+
+
+	"modifier_bw_all_1_Description"	"攻擊速度+200<br/>護甲-40點<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_2_Description"	"<font color='white'>“移除自身所有的寶物，且以後獲得的寶物也會默認移除”</font><br><br>每移除一件寶物,自身屬性<br/>提升1.2倍<br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_3_Description"	"無法使用技能<br/>每過50S增加10%全屬性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_4_Description"	"每60S增加5%全屬性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_5_Description"	"當前基礎力量+60%<br/>其他屬性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_6_Description"	"當前基礎敏捷+60%<br/>其他屬性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_7_Description"	"當前基礎智力+60%<br/>其他屬性-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_8_Description"	"技能增強+100%<br/>攻擊速度-200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_9_Description"	"將自身的基礎防禦力*30轉移到主屬性上<br/>基礎護甲清空<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_10_Description"	"提升自身50%的基礎護甲<br/>降低自身20%基礎全屬性<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_11_Description"	"隨機降低攻擊,護甲,力量,敏捷,智力,最大生命值的一項<br/>10-30%再隨機增加其中一個隨機屬性,增加(20-50%)<br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_12_Description"	"你被單位擊殺後<br/>下一次復活後,對目標的造成的傷害提升50%<br/>（直至目標死亡）<br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_13_Description"	"遠端英雄對近身單位額外造成20%傷害<br/><font color=\"#fff\">(只對遠端敏捷單位生效，300碼以外)</font><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_14_Description"	"遠端英雄對近身單位額外造成30%傷害<br/><font color=\"#fff\">(只對遠端敏捷單位生效，900碼以外)</font><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_15_Description"	"體型變大1.5倍<br/>生命值+100%<br/>攻擊力+200%<br/>攻擊速度-80<br/>移動速度-30%<br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_16_Description"	"生命回復+6%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_17_Description"	"魔法值+200<br/>魔法恢復+20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_18_Description"	"生命值+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_19_Description"	"力量提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_20_Description"	"敏捷提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+	
+	"modifier_bw_all_21_Description"	"智力提升+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+	
+	"modifier_bw_all_22_Description"	"攻擊+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_23_Description"	"護甲+30點<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_24_Description"	"攻擊速度+40<br/>移動速度+10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_25_Description"	"技能的傷害提升40%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_26_Description"	"攻擊距離+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_27_Description"	"只對遠端單位生效,每一級攻擊目標+1,(額外攻擊不附帶攻擊特效)<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_28_Description"	"對目標的第一次傷害<br/>最終傷害提升100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_29_Description"	"對生命值高於70%的單位<br/>最終傷害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_30_Description"	"對生命值低於25%的單位<br/>最終傷害+30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+	
+	"modifier_bw_all_31_Description"	"有(10+3*靈巧等級)%的概率躲避傷害<br/>當靈巧等級達到滿時級,每過10S<br/>就會獲得3S輕盈的狀態,該狀態下,閃避任何傷害<br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_32_Description"	"攻擊變成投射物,（貫穿目標）距離為單位的攻擊距離的雙倍,飛行速度為之前的兩倍，命中會觸發被動效果（對近戰無效）<br/><font color=\"#cfbf81\">神秘寶物</font>"
+	
+	"modifier_bw_all_33_Description"	"近戰攻擊變成350碼範圍攻擊<br/>攻擊速度速度減半<br/>命中會觸發被動效果<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+	
+	"modifier_bw_all_34_Description"	"所受傷害減少30%<br/>移動速度降低15%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_35_Description"	"魔法消耗-10%<br/> (<font color=\"#ffffff\">與暗淡胸針只會生效一個</font>)<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_39_Description"	"金錢加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_40_Description"	"經驗加成+30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_41_Description"	"地獄火數量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_42_Description"	"群蛇守衛數量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_43_Description"	"死亡守衛數量+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_44_Description"	"攻擊命中敵人增加自身等級的金幣<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_45_Description"	"每次擊殺小怪增加當前等級/6的全屬性<br/>死亡復活時間+7s<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_46_Description"	"每過60s增加 當前等級的平方 * 當前波數的金幣<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_47_Description"	"每次災厄領主出現時,永久增加30%的基礎屬性<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_48_Description"	"死亡有30%的概率原地復活<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_49_Description"	"每次死亡都會增加當前等級*3的全屬性<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_50_Description"	"死亡復活時間-6s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_51_Description"	"金錢加成+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_52_Description"	"經驗加成+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_53_Description"	"金錢加成+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_54_Description"	"經驗加成+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_55_Description"	"使用技能提升數值+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_56_Description"	"使用技能提升數值+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_57_Description"	"每過120S都能獲得1個寶物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_58_Description"	"立刻獲得2個寶物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_59_Description"	"立刻獲得3個寶物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_60_Description"	"立刻獲得5個寶物<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_61_Description"	"從商店購買技能提升消費殺敵數8折<br/>與其他卡不疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_62_Description"	"從商店購買技能提升消費殺敵數6折<br/>與其他卡不疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_63_Description"	"從商店購買技能提升消費殺敵數4折<br/>與其他卡不疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_64_Description"	"從商店購買技能提升消費殺敵數2折<br/>與其他卡不疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_65_Description"	"使用技能提升數值+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_66_Description"	"擊殺怪物金幣+150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_67_Description"	"擊殺怪物金幣+300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_68_Description"	"召喚物強度+50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_69_Description"	"召喚物強度+100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_70_Description"	"召喚物強度+200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_71_Description"	"每過75s都會給予1本當前等級/30的技能天書<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_72_Description"	"每過90S都會給予1件品質紫色,等級為(英雄等級/30)+1的隨機裝備<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_73_Description"	"每過90S都會給予1件品質橙色,等級為(英雄等級/30)+1的隨機裝備<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_74_Description"	"每過90S都會給予1件品質金色,等級為(英雄等級/30)+1的隨機裝備<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_75_Description"	"每過90S都會給予1件品質紅色,等級為(英雄等級/30)+1的隨機裝備<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_76_Description"	"己方出口怪物強度+50%<br/> 怪物掉落金錢,經驗+50%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_77_Description"	"己方出口怪物強度+100%<br/> 怪物掉落金錢,經驗+100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_78_Description"	"減傷係數+100<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_79_Description"	"殺敵點數+2000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_80_Description"	"殺敵點數+6000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_81_Description"	"殺敵點數+20000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_82_Description"	"殺敵點數+60000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_83_Description"	"每10秒殺敵點數+20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_84_Description"	"每10秒殺敵點數+40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_85_Description"	"每10秒殺敵點數+80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_86_Description"	"每10秒殺敵點數+200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_87_Description"	"天賦技能等級+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_88_Description"	"每隔3S就會對周圍隨機敵方單位發出一道火屬性氣流<br/>對經過的敵人造成當前等級/2+10的主屬性的魔法傷害<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_89_Description"	"每隔15S就會冰凍周圍800碼的敵方單位<br/>造成當前等級*2*智力的魔法傷害<br/冰凍1.5s(對boss單位冰凍0.5s)<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_90_Description"	"每隔3秒鞭笞周圍的單位<br/>造成攻擊力*英雄等級/2的物理傷害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_91_Description"	"減少周圍1200碼內敵方單位的50%的回復效果<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_92_Description"	"每秒回復周圍1200碼內友方單位5%的最大生命值和5%的魔法值<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_93_Description"	"跳躍結束會對目的地區域內300碼的單位造成 5*力量的物理傷害<br/>並眩暈目標0.8S(眩暈對boss單位無效)<br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_94_Description"	"跳躍結束會增加自身50點攻擊速度和50%的基礎攻擊力<br/>持續3s,不疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_95_Description"	"跳躍結束有50%的概率刷新跳躍cd	<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_96_Description"	"每過20S進入一次狂暴狀態<br/>增加100+當前等級*2的攻擊速度和等值百分比基礎攻擊力<br/>並減少10+當前等級的護甲<br/>持續12s<br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_97_Description"	"每一次死亡都有9+當前等級/10的概率獲得1本寶物書<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_98_Description"	"攻擊命中對附帶敵方當前生命值20%的物理傷害<br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_99_Description"	"每次攻擊減少目標以當前英雄等級/10的護甲,持續10s<br/>可疊加,每次減甲獨立計算<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_100_Description"	"每次攻擊隨機對周圍敵方單位發射1枚聚合炮<br/>傷害為智力*30的魔法傷害<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+	"modifier_bw_all_101_Description"	"每次施法轉化當前魔法值的20%為技能傷害<br/>持續20S,不可疊加<br/><br/><br/><br/><font color=\"#cfbf81\">神秘寶物</font>"
+
+
+	"achievement_hero_single_1"						"通關1次"
+	"achievement_hero_single_1_desc"				"使用該英雄通關1次"
+	"achievement_hero_single_1_bonus"				"使用該英雄時每次升級主屬性+3"
+	//"achievement_hero_single_1_bonus_desc"		""
+
+	"achievement_hero_single_2"						"通關3次"
+	"achievement_hero_single_2_desc"				"使用該英雄通關3次"
+	"achievement_hero_single_2_bonus"				"使用該英雄時主屬性+30"
+	//"achievement_hero_single_2_bonus_desc"		""
+
+	"achievement_hero_single_3"						"通關10次"
+	"achievement_hero_single_3_desc"				"使用該英雄通關10次"
+	"achievement_hero_single_3_bonus"				"使用該英雄時最終傷害+5%"
+	//"achievement_hero_single_3_bonus_desc"		""
+
+	"achievement_hero_single_4"						"通關20次"
+	"achievement_hero_single_4_desc"				"使用該英雄通關20次"
+	"achievement_hero_single_4_bonus"				"使用該英雄時每次升級主屬性+10"
+	//"achievement_hero_single_4_bonus_desc"		""
+
+	"achievement_hero_single_5"						"通關30次"
+	"achievement_hero_single_5_desc"				"使用該英雄通關30次"
+	"achievement_hero_single_5_bonus"				"使用該英雄時英雄天賦等級+1"
+	//"achievement_hero_single_5_bonus_desc"		""
+
+
+	"achievement_hero_str_1"						"1階"
+	"achievement_hero_str_1_desc"					"任意10個力量英雄通關1次以上"
+	"achievement_hero_str_1_bonus"					"每次升級力量+3"
+	//"achievement_hero_str_1_bonus_desc"			""
+
+	"achievement_hero_str_2"						"2階"
+	"achievement_hero_str_2_desc"					"任意10個力量英雄通關3次以上"
+	"achievement_hero_str_2_bonus"					"力量+100"
+	//"achievement_hero_str_2_bonus_desc"			""
+
+
+	"achievement_hero_str_3"						"3階"
+	"achievement_hero_str_3_desc"					"任意10個力量英雄通關10次以上"
+	"achievement_hero_str_3_bonus"					"最終傷害+10%"
+	//"achievement_hero_str_3_bonus_desc"			""
+
+
+	"achievement_hero_str_4"						"4階"
+	"achievement_hero_str_4_desc"					"任意10個力量英雄通關20次以上"
+	"achievement_hero_str_4_bonus"					"經驗加成+20%"
+	//"achievement_hero_str_4_bonus_desc"			""
+
+	"achievement_hero_str_5"						"5階"
+	"achievement_hero_str_5_desc"					"任意10個力量英雄通關30次以上"
+	"achievement_hero_str_5_bonus"					"力量英雄天賦等級+1"
+	//"achievement_hero_str_5_bonus_desc"			""
+
+
+	"achievement_hero_agi_1"						"1階"
+	"achievement_hero_agi_1_desc"					"任意10個敏捷英雄通關1次以上"
+	"achievement_hero_agi_1_bonus"					"每次升級敏捷+3"
+	//"achievement_hero_agi_1_bonus_desc"			""
+
+	"achievement_hero_agi_2"						"2階"
+	"achievement_hero_agi_2_desc"					"任意10個敏捷英雄通關3次以上"
+	"achievement_hero_agi_2_bonus"					"敏捷+100"
+	//"achievement_hero_agi_2_bonus_desc"			""
+
+
+	"achievement_hero_agi_3"						"3階"
+	"achievement_hero_agi_3_desc"					"任意10個敏捷英雄通關10次以上"
+	"achievement_hero_agi_3_bonus"					"最終傷害+10%"
+	//"achievement_hero_agi_3_bonus_desc"			""
+
+
+	"achievement_hero_agi_4"						"4階"
+	"achievement_hero_agi_4_desc"					"任意10個敏捷英雄通關20次以上"
+	"achievement_hero_agi_4_bonus"					"經驗加成+20%"
+	//"achievement_hero_agi_4_bonus_desc"			""
+
+	"achievement_hero_agi_5"						"5階"
+	"achievement_hero_agi_5_desc"					"任意10個敏捷英雄通關30次以上"
+	"achievement_hero_agi_5_bonus"					"敏捷英雄天賦等級+1"
+	//"achievement_hero_agi_5_bonus_desc"			""
+
+
+	"achievement_hero_int_1"						"1階"
+	"achievement_hero_int_1_desc"					"任意10個智力英雄通關1次以上"
+	"achievement_hero_int_1_bonus"					"每次升級智力+3"
+	//"achievement_hero_int_1_bonus_desc"			""
+
+	"achievement_hero_int_2"						"2階"
+	"achievement_hero_int_2_desc"					"任意10個智力英雄通關3次以上"
+	"achievement_hero_int_2_bonus"					"智力+100"
+	//"achievement_hero_int_2_bonus_desc"			""
+
+
+	"achievement_hero_int_3"						"3階"
+	"achievement_hero_int_3_desc"					"任意10個智力英雄通關10次以上"
+	"achievement_hero_int_3_bonus"					"最終傷害+10%"
+	//"achievement_hero_int_3_bonus_desc"			""
+
+
+	"achievement_hero_int_4"						"4階"
+	"achievement_hero_int_4_desc"					"任意10個智力英雄通關20次以上"
+	"achievement_hero_int_4_bonus"					"經驗加成+20%"
+	//"achievement_hero_int_4_bonus_desc"			""
+
+	"achievement_hero_int_5"						"5階"
+	"achievement_hero_int_5_desc"					"任意10個智力英雄通關30次以上"
+	"achievement_hero_int_5_bonus"					"智力英雄天賦等級+1"
+	//"achievement_hero_int_5_bonus_desc"			""
+	
+	"achievement_hero_all_1"						"1階"
+	"achievement_hero_all_1_desc"					"完成力量,敏捷和智力英雄的1階段解鎖"
+	"achievement_hero_all_1_bonus"					"暴擊概率+5%，暴擊傷害+20%"
+	//"achievement_hero_all_1_bonus_desc"			""
+
+	"achievement_hero_all_2"						"2階"
+	"achievement_hero_all_2_desc"					"完成力量,敏捷和智力英雄的2階段解鎖"
+	"achievement_hero_all_2_bonus"					"經驗加成+20%"
+	//"achievement_hero_all_2_bonus_desc"			""
+
+
+	"achievement_hero_all_3"						"3階"
+	"achievement_hero_all_3_desc"					"完成力量,敏捷和智力英雄的3階段解鎖"
+	"achievement_hero_all_3_bonus"					"全域吸血+3%"
+	//"achievement_hero_all_3_bonus_desc"			""
+
+
+	"achievement_hero_all_4"						"4階"
+	"achievement_hero_all_4_desc"					"完成力量,敏捷和智力英雄的4階段解鎖"
+	"achievement_hero_all_4_bonus"					"初始給予一本2階神秘寶物書"
+	//"achievement_hero_all_4_bonus_desc"			""
+
+	"achievement_hero_all_5"						"5階"
+	"achievement_hero_all_5_desc"					"完成力量,敏捷和智力英雄的5階段解鎖"
+	"achievement_hero_all_5_bonus"					"初始給予一本3階神秘寶物書"
+	//"achievement_hero_all_5_bonus_desc"			""
+
+
+	"achievement_difficulty_1"						"通關N1"
+	//"achievement_difficulty_1_desc"					""
+	"achievement_difficulty_1_bonus"				"初始三維+30"
+	//"achievement_difficulty_1_bonus_desc"			""
+
+
+	"achievement_difficulty_2"						"通關N2"
+	//"achievement_difficulty_2_desc"					""
+	"achievement_difficulty_2_bonus"				"金錢加成+20%"
+	//"achievement_difficulty_2_bonus_des
+
+	"achievement_difficulty_3"						"通關N3"
+	//"achievement_difficulty_3_desc"					""
+	"achievement_difficulty_3_bonus"				"經驗加成+20%"
+	//"achievement_difficulty_3_bonus_des
+
+	"achievement_difficulty_4"						"通關N4"
+	//"achievement_difficulty_4_desc"					""
+	"achievement_difficulty_4_bonus"				"個人技能等級+1"
+	//"achievement_difficulty_4_bonus_des 				
+
+
+	"achievement_difficulty_5_1"						"通關N5"
+	//"achievement_difficulty_5_1_desc"					""
+	"achievement_difficulty_5_1_bonus"				"初始給與一件寶物"
+	//"achievement_difficulty_5_1_bonus_des
+
+	"achievement_difficulty_6_1"						"通關N6"
+	//"achievement_difficulty_6_1_desc"					""
+	"achievement_difficulty_6_1_bonus"				"殺怪金幣+30"
+	//"achievement_difficulty_6_1_bonus_des
+
+
+	"achievement_difficulty_7_1"						"通關N7"
+	//"achievement_difficulty_7_1_desc"					""
+	"achievement_difficulty_7_1_bonus"				"初始給與一本2級天書"
+	//"achievement_difficulty_7_1_bonus_des
+
+	"achievement_difficulty_8_1"						"通關N8"
+	//"achievement_difficulty_8_1_desc"					""
+	"achievement_difficulty_8_1_bonus"				"每10秒+殺敵點數10"
+	//"achievement_difficulty_8_1_bonus_des
+
+	"achievement_difficulty_9_1"						"通關N9"
+	//"achievement_difficulty_9_1_desc"					""
+	"achievement_difficulty_9_1_bonus"					"初始殺敵點數+500"
+	//"achievement_difficulty_9_1_bonus_des
+
+
+	"achievement_difficulty_10_1"						"通關N10"
+	//"achievement_difficulty_10_1_desc"					""
+	"achievement_difficulty_10_1_bonus"					"寶物+1"
+	//"achievement_difficulty_10_1_bonus_des
+
+
+	"achievement_difficulty_11_1"						"通關N11"
+	//"achievement_difficulty_11_1_desc"					""
+	"achievement_difficulty_11_1_bonus"					"暴擊傷害+40%"
+	//"achievement_difficulty_11_1_bonus_des
+
+
+	"achievement_difficulty_12_1"						"通關N12"
+	//"achievement_difficulty_12_1_desc"					""
+	"achievement_difficulty_12_1_bonus"					"初始給與一本3級天書"
+	//"achievement_difficulty_12_1_bonus_des
+
+	"achievement_difficulty_13_1"						"通關N13"
+	//"achievement_difficulty_13_1_desc"					""
+	"achievement_difficulty_13_1_bonus"					"寶物槽位+1"
+	//"achievement_difficulty_13_1_bonus_des
+
+	"achievement_difficulty_14_1"						"通關N14"
+	//"achievement_difficulty_14_1_desc"					""
+	"achievement_difficulty_14_1_bonus"					"初始給與一本1級神秘寶物書"
+	//"achievement_difficulty_14_1_bonus_des
+
+	"achievement_difficulty_15_1"						"通關N15"
+	//"achievement_difficulty_15_1_desc"					""
+	"achievement_difficulty_15_1_bonus"					"寶物槽位+1"
+	//"achievement_difficulty_15_1_bonus_des
+
+
+	"achievement_difficulty_5_2"						"通關N5-狂暴模式"
+	//"achievement_difficulty_5_2_desc"					""
+	"achievement_difficulty_5_2_bonus"					"攻擊速度+10"
+	//"achievement_difficulty_5_2_bonus_desc"			""
+
+
+	"achievement_difficulty_6_3"						"通關N6-奧術模式"
+	//"achievement_difficulty_6_3_desc"					""
+	"achievement_difficulty_6_3_bonus"					"冷卻縮減-2%"
+	//"achievement_difficulty_6_3_bonus_desc"			""
+
+
+	"achievement_difficulty_7_4"						"通關N7-災難模式"
+	//"achievement_difficulty_7_4_desc"					""
+	"achievement_difficulty_7_4_bonus"					"魔法回復+5"
+	//"achievement_difficulty_7_4_bonus_desc"			""
+
+
+
+
+	"achievement_difficulty_8_2"						"通關N8-狂暴模式"
+	//"achievement_difficulty_8_2_desc"					""
+	"achievement_difficulty_8_2_bonus"					"攻擊速度+10"
+	//"achievement_difficulty_8_2_bonus_desc"			""
+
+
+	
+
+	"achievement_difficulty_9_3"						"通關N9-奧術模式"
+	//"achievement_difficulty_9_3_desc"					""
+	"achievement_difficulty_9_3_bonus"					"冷卻縮減-2%"
+	//"achievement_difficulty_9_3_bonus_desc"			""
+
+
+
+
+	"achievement_difficulty_10_4"						"通關N10-災難模式"
+	//"achievement_difficulty_10_4_desc"					""
+	"achievement_difficulty_10_4_bonus"					"魔法回復+5"
+	//"achievement_difficulty_10_4_bonus_desc"			""
+
+
+	
+
+	"achievement_difficulty_11_5"						"通關N11-地獄模式"
+	//"achievement_difficulty_11_5_desc"					""
+	"achievement_difficulty_11_5_bonus"					"移動速度+10"
+	//"achievement_difficulty_11_5_bonus_desc"			""
+
+
+
+	"achievement_difficulty_12_5"						"通關N12-地獄模式"
+	//"achievement_difficulty_12_5_desc"					""
+	"achievement_difficulty_12_5_bonus"					"移動速度+10"
+	//"achievement_difficulty_12_5_bonus_desc"			""
+
+
+
+	"achievement_difficulty_13_6"						"通關N13-賞金模式"
+	//"achievement_difficulty_13_6_desc"					""
+	"achievement_difficulty_13_6_bonus"					"金錢加成+10%"
+	//"achievement_difficulty_13_6_bonus_desc"			""
+
+
+	"achievement_difficulty_14_7"						"通關N14-噩夢模式"
+	//"achievement_difficulty_14_7_desc"					""
+	"achievement_difficulty_14_7_bonus"					"最終傷害+10%"
+	//"achievement_difficulty_14_7_bonus_desc"			""
+
+
+
+	"achievement_difficulty_15_2"						"通關N15-狂暴模式"
+	//"achievement_difficulty_15_2_desc"					""
+	"achievement_difficulty_15_2_bonus"					"攻擊速度+10"
+	//"achievement_difficulty_15_2_bonus_desc"			""
+
+
+	"achievement_difficulty_15_3"						"通關N15-奧術模式"
+	//"achievement_difficulty_15_3_desc"					""
+	"achievement_difficulty_15_3_bonus"					"冷卻縮減-2%"
+	//"achievement_difficulty_15_3_bonus_desc"			""
+
+
+	"achievement_difficulty_15_4"						"通關N15-災難模式"
+	//"achievement_difficulty_15_4_desc"					""
+	"achievement_difficulty_15_4_bonus"					"魔法回復+5"
+	//"achievement_difficulty_15_4_bonus_desc"			""
+
+
+	"achievement_difficulty_15_5"						"通關N15-地獄模式"
+	//"achievement_difficulty_15_5_desc"					""
+	"achievement_difficulty_15_5_bonus"					"移動速度+10"
+	//"achievement_difficulty_15_5_bonus_desc"			""
+
+	"achievement_difficulty_15_6"						"通關N15-賞金模式"
+	//"achievement_difficulty_15_6_desc"					""
+	"achievement_difficulty_15_6_bonus"					"金錢加成+10%"
+	//"achievement_difficulty_15_6_bonus_desc"			""
+
+
+	"achievement_difficulty_15_7"						"通關N15-噩夢模式"
+	//"achievement_difficulty_15_7_desc"				""
+	"achievement_difficulty_15_7_bonus"					"最終傷害+10%"
+	//"achievement_difficulty_15_7_bonus_desc"			""
+
+
+
+
+
+
+
+
+
+
+
+	//無盡模式不同
+
+
+	"achievement_hidden_1"						"惜命"
+	"achievement_hidden_1_desc"					"你是個高手！"
+	"achievement_hidden_1_bonus"				"初始金幣+200"
+	//"achievement_hidden_1_bonus_desc"			""
+
+	"achievement_hidden_2"						"一技到底"
+	"achievement_hidden_2_desc"					"這套技能有點吊！"
+	"achievement_hidden_2_bonus"				"技能傷害+5%"
+	//"achievement_hidden_2_bonus_desc"			""
+
+
+	"achievement_hidden_3"						"屍體"
+	"achievement_hidden_3_desc"					"躺過？"
+	"achievement_hidden_3_bonus"				"每次死亡,增加1*英雄等級的全屬性"
+	//"achievement_hidden_3_bonus_desc"			""
+
+
+
+	"achievement_hidden_4"						"死神"
+	"achievement_hidden_4_desc"					"你可太慘了..."
+	"achievement_hidden_4_bonus"				"復活時間-1s"
+	//"achievement_hidden_4_bonus_desc"			""
+
+	"item_tz_3_1_title"							"金鑲玉套裝"
+	"item_tz_3_1_attribute"						"套裝效果：<br>	最大生命值+2000<br>	全屬性+100 <br>  移動速度+30<br> 攻擊吸血6%"	
+
+
+	"item_tz_3_2_title"							"枯木逢春套裝"
+	"item_tz_3_2_attribute"						"套裝效果：<br>	全屬性+80<br>	最大生命值+2500<br>  護甲+15 	<br> 被動：枯木逢春--每過5秒回復7.5*力量+5%自身生命值的生命值"
+
+	"item_tz_3_3_title"							"潮汐水靈套裝"
+	"item_tz_3_3_attribute"						"套裝效果：<br>被動：水靈光環:<br>周圍友軍的百分比傷害減免+20<br>周圍友軍的主屬性+100<br>暴擊概率+5%<br> 作用範圍：1500碼（只對英雄單位生效）"
+
+
+	"item_tz_3_4_title"							"冰霜亡靈套裝"
+	"item_tz_3_4_attribute"						"套裝效果：<br>最大生命值+1200<br/>力量敏捷+50<br/>智力+200<br/>技能傷害+20%<br/>被動:周圍單位的攻擊速度-20,移動速度-20%<br/>影響範圍:800"
+
+
+
+	"item_tz_4_1_title"							"大地脈動套裝"
+	"item_tz_4_1_attribute"						"套裝效果：<br>全屬性+220<br>最大生命值+5000<br>	護甲+25 <br> 生命回復+2%"
+
+	"item_tz_4_2_title"							"法力流失套裝"
+	"item_tz_4_2_attribute"						"套裝效果：<br>釋放技能耗藍增加+50% <br> 每秒流逝自身1%的最大魔法值  <br> 降低100%魔法回復速率<br>技能傷害提升200%"
+
+
+	"item_tz_4_3_title"							"漫天黃沙套裝"
+	"item_tz_4_3_attribute"						"套裝效果：<br>	全屬性+195<br>	最大生命值+4500<br>  護甲+10 <br>攻擊速度+60 	"
+
+
+	"item_tz_4_4_title"							"雷霆悸動套裝"
+	"item_tz_4_4_attribute"						"套裝效果：<br>力量敏捷+150<br>智力+400<br>  技能傷害+40%<br>被動：每過4S會選擇3個單位劈下3道閃電，對目標造成15*智力的魔法傷害<br/>作用範圍:900碼"
+
+
+	"item_tz_4_5_title"							"泰坦套裝"
+	"item_tz_4_5_attribute"						"套裝效果：<br>	力量+2000 <br> 最大生命值+15000 <br>護甲+40<br>魔法抗性+20%"
+
+
+	"item_tz_4_6_title"							"海王套裝"
+	"item_tz_4_6_attribute"						"套裝效果：<br>全屬性+500<br> 被動：每10秒獲得一次海神的祝福,全屬性+600,移動速度+30,攻擊速度+60,技能傷害+30%,生命回復+2%.持續5s"
+
+
+
+	"item_tz_4_7_title"							"幽魂套裝"
+	"item_tz_4_7_attribute"						"套裝效果：<br>最大生命值+8000 <br> 智力+2000 <br> 護甲+10 <br>	被動：幽魂領域--減少周圍1200碼內敵人25點魔法抗性"
+
+
+
+	"item_tz_4_8_title"							"人生套裝"
+	"item_tz_4_8_attribute"						"套裝效果：<br>被動：周圍1500碼內的友方英雄單位全屬性+450,技能傷害等級+2<br>	被動：每20次普通攻擊都會減少目標2%的最大生命值上限,最多5次"
+
+
+	"item_tz_5_1_title"							"火焰焚天套裝"
+	"item_tz_5_1_attribute"						"套裝效果：<br>最大生命值+30000<br>	   主屬性+2000<br>			暴擊概率+10%<br>技能傷害+50%<br>魔法回復+30<br>	  最終傷害+20%<br>	被動：每過5S，對周圍發出一團火焰，對周圍900碼的敵人造成 30*主屬性的魔法傷害"
+
+
+	"item_tz_5_2_title"							"毒龍套裝"
+	"item_tz_5_2_attribute"						"套裝效果：<br>生命值 +50000<br>主屬性提升30%  <br>護甲+50<br>魔抗+30<br>	被動：每分鐘損失自身2%的最大生命值 <br/>血量低於70%,主屬性提升從40%提升至50% <br/>當血量低於40%,主屬性提升從50%提升至60%"
+
+
+	"item_tz_5_3_title"							"萬世生命套裝"
+	"item_tz_5_3_attribute"						"套裝效果：<br>最大生命值+35000<br>	技能傷害+40%	<br>技能等級傷害+6	<br>暴擊概率+10%"
+
+
+	"item_tz_5_4_title"							"黑暗執行者套裝"
+	"item_tz_5_4_attribute"						"套裝效果：<br>主屬性+1500 <br> 攻擊力+4000<br>  攻擊速度+80 <br> 移動速度 +40	<br>每次攻擊有20%的概率造成800%的傷害  <br>  暴擊概率+5%"
+
+
+	"ability_mj_baseDamage" 			"基礎傷害增加{s:value}點"
+	"ability_mj_damage" 				"傷害係數增加{s:value}點"
+	"ability_mj_baseHeal" 		        "基礎治療增加{s:value}點"
+	"ability_mj_heal" 					"治療係數增加{s:value}點"
+	"ability_mj_radius" 		 		"作用範圍增加{s:value}碼"
+	"ability_mj_distance" 			    "飛行距離增加{s:value}碼"
+	"ability_mj_chance" 				"觸發概率增加{s:value}%"
+	"ability_mj_interval"				"傷害間隔降低{s:value}秒"
+	"ability_mj_duration"  			    "持續時間增加{s:value}秒"
+	"ability_mj_count" 					"打擊次數增加{s:value}次"
+	"ability_mj_max" 					"投射物個數增加{s:value}道"
+	"ability_mj_time" 					"多重觸發增加{s:value}次"
+	"ability_mj_multiple" 				"幸運一擊傷害增加{s:value}倍"
+
+	"randomquest_1"							"完成任務，獎勵<font color=\"#ffb413\">[ {s:value}點主屬性 ]</font>"
+	"randomquest_2"							"完成任務，獎勵<font color=\"#ffb413\">[ {s:value}金幣 ]</font>"
+	"randomquest_3"							"完成任務，獎勵<font color=\"#ffb413\">[ {s:value}物品 ]</font>"
+	"randomquest_4"							"完成任務，獎勵<font color=\"#ffb413\">[ {s:value} 寶物]</font>"
+	"add_money" 						"回收物品，增加{s:value}個金幣"
+	"add_sds" 							"回收物品，增加{s:value}殺敵積分"
+	"pray_money" 						"祈福獲得{s:value}個金幣"
+	"add_ll" 							"使用了能量晶石<Panel> 增加{s:value}點力量"
+	"add_mj" 							"使用了能量晶石<Panel> 增加{s:value}點敏捷"
+	"add_zl" 							"使用了能量晶石<Panel> 增加{s:value}點智力"
+	"add_qsx" 							"使用了能量晶石<Panel> 增加{s:value}點全屬性"
+	"level_not"							"等級不足"			
+	"ct_not"							"該技能暫時沒有特殊詞條"
+	"sds_not"							"殺敵積分不足，目前殺敵積分為{s:value}點"
+	"sds_not2"							"殺敵積分不足，還需要{s:value}點"
+	"ablity_not"						"沒有可升級的技能，使用失敗"
+	"money_no"							"金幣不足"
+	"money_not"							"金幣不足,使用失敗。還需要{s:value}點金幣"
+	"nlzx_not"							"沒有{s:value}級能量之心憑證,無法升級"
+	"add_tz_boss"						"使用命運石，開出<font color=\"#ffb413\">[ 套裝領主召喚卷軸 ]</font>"
+	"add_individualBoss"				"使用命運石，開出<font color=\"#ffb413\">[ 個人領主召喚卷軸 ]</font>"
+	"add_teamBoss"						"使用命運石，開出<font color=\"#ffb413\">[ 團隊領主召喚卷軸 ]</font>"
+	"add_money_box"						"使用命運石，開出<font color=\"#ffb413\">[ 金幣寶箱 ]</font>"
+	"add_ablity_mj"						"使用命運石，開出<font color=\"#ffb413\">[ {s:value}本技能秘訣 ]</font>"
+	"pray_exp"							"使用命運石，開出<font color=\"#ffb413\">[ {s:value}點經驗 ]</font>"
+	"add_zbbx"                          "使用命運石，開出<font color=\"#ffb413\">[ 裝備寶箱 ]</font>"
+	"mys_jns"							"使用命運石，開出<font color=\"#ffb413\">[ 技能天書 ]</font>"
+	"mys_jns"							"使用命運石，開出<font color=\"#ffb413\">[ 技能天書 ]</font>"
+	"mys_qsx" 							"使用命運石，開出<font color=\"#ffb413\">[ {s:value}點全屬性 ]</font>"
+	"item_qw"							"<font color=\"#20ecea\">成功召喚裝備BOSS，擊殺便可升級[ 能量之心 ]</font>"
+	"individualBoss_item_box"			"<font color=\"#35ed58\">個人BOSS已被擊殺，裝備寶箱已經掉落在英雄腳下，拾取即可開啟</font>"
+	"teamBoss_item_box"					"<font color=\"#35ed58\">團隊BOSS已被擊殺，裝備寶箱已經掉落在英雄腳下，拾取即可開啟。獎勵殺敵積分{s:value}點</font>"
+	"buy_bw" 							"第{s:value}次購買寶物,還需要BOSS點數{s:boss_point}點"
+	"ym_cs" 							"第{s:value}次召喚冤魔,還需要BOSS點數{s:boss_point}點"
+	"ym_die" 							"擊殺第{s:value}只冤魔,獲得殺敵數{s:sds}點"
+	"tz_die" 							"套裝BOSS死亡,獎勵召喚者 殺怪金幣加成+{s:value}點,全屬性+{s:qsx}點"
+	"boss_death"						"<font color=\"#35ed58\">災厄領主已被擊殺，獎勵一件寶物</font><Panel>"
+	"ability_high"						"技能已達到最高等級"
+	"ability_full"						"技能已滿，無法學習"
+	"ability_ts"						"技能已經學習過，提升一級技能等級！"
+	"ability_cg"						"技能學習成功"
+	"bw_cc"								"寶物購買達到上限！"
+	"ym_cc"								"召喚次數達到上限！"
+	"call_tzboss"						"<font color=\"#DC143C\">[ {s:hero} ] 召喚了套裝領主--{s:name}</font>"
+	"call_grboss"						"<font color=\"#FFFF00\">{s:hero}</font>召喚了個人領主-<font color=\"#DC143C\">{s:name}</font>"
+	"call_teamboss"						"<font color=\"#FFFF00\">{s:hero}</font>召喚了團隊領主-<font color=\"#DC143C\">{s:name}</font>"
+	"call_tyboss"						"<font color=\"#FFFF00\">{s:hero}</font>召喚了貪欲魔王-<font color=\"#DC143C\">{s:name}</font>"
+	"call_ymboss"						"<font color=\"#FFFF00\">{s:hero}</font>召喚了冤念之主-<font color=\"#DC143C\">{s:name}</font>"
+	"aiou_jll" 							"星靈恩賜,增加{s:value}點力量"
+	"aiou_jmj" 							"星靈恩賜,增加{s:value}點敏捷"
+	"aiou_jzl" 							"星靈恩賜,增加{s:value}點智力"
+	"aiou_gold" 						"星靈恩賜,增加{s:value}點金幣"
+	"aiou_item" 						"星靈恩賜,獲得一件裝備"
+	"aiou_bw" 							"星靈恩賜,獲得一件寶物"
+	"mrsz_xj" 							"消耗金幣,增加{s:value}點全屬性"
+	"hdfl_bw" 							"神力重鑄,獲得一件寶物"
+	"net_item" 							"幸運的獲得一件存檔裝備。可以在存檔裝備介面查看"
+	"nettable_js" 						"分解存檔裝備成功，獲得 <font color='gold'>{s:value}</font> 晶石"
+	"tscs_cg" 							"融合神器成功！！！"
+	"not_item" 							"該位置沒有神器"
+	"tscs_not" 							"融合次數達到上限！！！"
+
+	"ui_wave_random_event"	"隨機事件"
+	"events1"							"赫爾墨斯降臨,金錢加成+{s:value}%,持續120s"
+	"events2"							"馬可波羅降臨,經驗加成+{s:value}%,持續120s"
+	"events3"							"出門撿到錢,獲得{s:value}個金幣"
+	"events4"							"醍醐灌頂,獲得{s:value}點經驗"
+	"events5"							"遭遇高人傳功,獲得{s:value}點全屬性"
+	"events6"							"遇到南華老仙,獲得1本{s:value}級天書"
+	"events7"							"出門撿到寶了,獲得{s:value}本寶物"
+	"events8"							"邪惡濃度大幅度增加,進攻怪物強度增加,進攻怪物的金錢和經驗獎勵提升{s:value}%，持續120s"
+	"events9"							"邪惡濃度小幅度增加,進攻怪物血量和防禦增加,進攻怪物的金錢和經驗獎勵提升{s:value}%，持續120s"
+	"events10"							"邪惡濃度小幅度增加,進攻怪物血量和攻擊增加,進攻怪物的金錢和經驗獎勵提升{s:value}%，持續120s"
+	"jstzboss_1"						"首次擊殺初級領主Lv3，獎勵{s:value}本寶物<Panel>"
+	"jstzboss_2"						"首次擊殺中級領主Lv3，獎勵{s:value}本寶物<Panel>"
+	"jstzboss_3"						"首次擊殺高級領主Lv3，獎勵{s:value}本寶物<Panel>"
+	"jstzboss_4"						"首次擊殺頂級領主Lv3，獎勵{s:value}本寶物<Panel>"
+
+	"bc_tz_3_1_desc"					"<font color=\"#ffd861\">消耗3000金幣</font><br/><br/>召喚一個普通的初級領主,占3個生存數量,擊殺後可掉落 1 件藍色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 1<br>殺怪金幣加成+1<br>全屬性+3<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_3_2_desc"					"<font color=\"#ffd861\">消耗6000金幣</font><br/><br/>召喚一個強力的初級領主,占3個生存數量,擊殺後可掉落 2 件藍色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 1<br>殺怪金幣加成+1<br>全屬性+5<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_3_3_desc"					"<font color=\"#ffd861\">消耗1.2W金幣</font><br/><br/>召喚一個危險的初級領主,占3個生存數量,擊殺後可掉落 1 套藍色套裝<br/><br/>擊殺後召喚者BOSS點數+ 2<br>殺怪金幣加成+2<br>全屬性+10<br>首次擊殺獎勵一本寶物<br><br>召喚冷卻：{s:cooldown}s"
+
+	"bc_tz_4_1_desc"					"<font color=\"#ffd861\">消耗2W金幣</font><br/><br/>召喚一個普通的中級領主,占3個生存數量,擊殺後可掉落 1 件紫色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 2<br>殺怪金幣加成+2<br>全屬性+10<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_4_2_desc"					"<font color=\"#ffd861\">消耗3W金幣</font><br/><br/>召喚一個強力的中級領主,占3個生存數量,擊殺後可掉落 2 件紫色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 2<br>殺怪金幣加成+2<br>全屬性+15<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_4_3_desc"					"<font color=\"#ffd861\">消耗4W金幣</font><br/><br/>召喚一個危險的中級領主,占3個生存數量,擊殺後可掉落 1 套紫色套裝<br/><br/>擊殺後召喚者BOSS點數+ 3<br>首次擊殺獎勵一本寶物<br>殺怪金幣加成+3<br>全屬性+20<br><br>召喚冷卻：{s:cooldown}s"
+
+	"bc_tz_5_1_desc"					"<font color=\"#ffd861\">消耗6W金幣</font><br/><br/>召喚一個普通的高級領主,占3個生存數量,擊殺後可掉落 1 件高級紫色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 4<br>殺怪金幣加成+3<br>全屬性+20<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_5_2_desc"					"<font color=\"#ffd861\">消耗8W金幣</font><br/><br/>召喚一個強力的高級領主,占3個生存數量,擊殺後可掉落 2 件高級紫色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 5<br>殺怪金幣加成+3<br>全屬性+30<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_5_3_desc"					"<font color=\"#ffd861\">消耗10W金幣</font><br/><br/>召喚一個危險的高級領主,占3個生存數量,擊殺後可掉落 1 套高級紫色套裝<br/><br/>擊殺後召喚者BOSS點數+ 6<br>殺怪金幣加成+6<br>全屬性+40<br>首次擊殺獎勵一本寶物<br><br>召喚冷卻：{s:cooldown}s"
+
+	"bc_tz_6_1_desc"					"<font color=\"#ffd861\">消耗15W金幣</font><br/><br/>召喚一個普通的頂級領主,占3個生存數量,擊殺後可掉落 1 件橙色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 7<br>殺怪金幣加成+6<br>全屬性+50<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_6_2_desc"					"<font color=\"#ffd861\">消耗20W金幣</font><br/><br/>召喚一個強力的頂級領主,占3個生存數量,擊殺後可掉落 2 件橙色套裝散件<br/><br/>擊殺後召喚者BOSS點數+ 8<br>殺怪金幣加成+6<br>全屬性+70<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_tz_6_3_desc"					"<font color=\"#ffd861\">消耗25W金幣</font><br/><br/>召喚一個危險的頂級領主,占3個生存數量,擊殺後可掉落 1 套橙色套裝<br/><br/>擊殺後召喚者BOSS點數+ 10<br>殺怪金幣加成+12<br>全屬性+100<br>首次擊殺獎勵一本寶物<br><br>召喚冷卻：{s:cooldown}s"
+
+	"bc_gr_1_desc"					"<font color=\"#ffd861\">消耗5W金幣</font><br/><br/>召喚一個地獄級領主,占5個生存數量,爆率為<font color=\"#FFFF00\">  1 </font><br/><br/>擊殺後在<font color=\"#ffd861\"> 召喚者 </font>腳下掉落一個寶箱<br/>開啟可以獲得不定數量的隨機裝備<br/><br/>爆率越高,擊殺難度越大,但是寶箱獎勵可能更豐富<br/><br/>擊殺後召喚者BOSS點數+ 4<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_gr_2_desc"					"<font color=\"#ffd861\">消耗10W金幣</font><br/><br/>召喚一個地獄級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 3 </font><br/><br/>擊殺後召喚者BOSS點數+ 6<br><br>召喚冷卻：{s:cooldown}s"	
+	"bc_gr_3_desc"					"<font color=\"#ffd861\">消耗20W金幣</font><br/><br/>召喚一個地獄級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 5 </font><br/><br/>擊殺後召喚者BOSS點數+ 8<br><br>召喚冷卻：{s:cooldown}s"	
+	"bc_gr_4_desc"					"<font color=\"#ffd861\">消耗40W金幣</font><br/><br/>召喚一個地獄級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 10 </font><br/><br/>擊殺後召喚者BOSS點數+ 10<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_gr_5_desc"					"<font color=\"#ffd861\">消耗80W金幣</font><br/><br/>召喚一個地獄級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 20 </font><br/><br/>擊殺後召喚者BOSS點數+ 20<br><br>召喚冷卻：{s:cooldown}s"	
+	
+
+	"bc_team_1_desc"				"<font color=\"#ffd861\">消耗5W金幣</font><br/><br/>召喚一個深淵級領主,,占5個生存數量,爆率為<font color=\"#FFFF00\"> 1 </font><br/><br/>擊殺後在<font color=\"#ffd861\"> 所有人 </font>腳下掉落一個寶箱<br/>開啟可以獲得不定數量的隨機裝備<br/><br/>爆率越高,擊殺難度越大,但是寶箱獎勵可能更豐富<br/><br/>擊殺後所有人BOSS點數+ 4<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_team_2_desc"					"<font color=\"#ffd861\">消耗10W金幣</font><br/><br/>召喚一個深淵級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 3 </font><br/><br/>擊殺後所有人BOSS點數+ 6<br><br>召喚冷卻：{s:cooldown}s"	
+	"bc_team_3_desc"					"<font color=\"#ffd861\">消耗20W金幣</font><br/><br/>召喚一個深淵級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 5 </font><br/><br/>擊殺後所有人BOSS點數+ 8<br><br>召喚冷卻：{s:cooldown}s"	
+	"bc_team_4_desc"					"<font color=\"#ffd861\">消耗40W金幣</font><br/><br/>召喚一個深淵級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 10 </font><br/><br/>擊殺後所有人BOSS點數+ 10<br><br>召喚冷卻：{s:cooldown}s"
+	"bc_team_5_desc"					"<font color=\"#ffd861\">消耗80W金幣</font><br/><br/>召喚一個深淵級領主,占5個生存數量,爆率為<font color=\"#FFFF00\"> 20 </font><br/><br/>擊殺後所有人BOSS點數+ 20<br><br>召喚冷卻：{s:cooldown}s"
+
+	"bc_gr_1_name"					"地獄級領主 X1"
+	"bc_gr_2_name"					"地獄級領主 X3"
+	"bc_gr_3_name"					"地獄級領主 X5"
+	"bc_gr_4_name"					"地獄級領主 X10"
+	"bc_gr_5_name"					"地獄級領主 X20"
+
+	"bc_team_1_name"				"深淵級領主 X1"
+	"bc_team_2_name"				"深淵級領主 X3"
+	"bc_team_3_name"				"深淵級領主 X5"
+	"bc_team_4_name"				"深淵級領主 X10"
+	"bc_team_5_name"				"深淵級領主 X20"
+
+
+	"bp_reward_item_BPreward_base_1"				"遊戲初始金幣+1000"
+	"bp_reward_item_jing_plus_1"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_2"				"遊戲初始英雄智力+20"
+	"bp_reward_item_BPreward_plus_2"				"三階極品首飾裝備鑰匙"
+
+	"bp_reward_item_BPreward_base_3"				"遊戲初始英雄敏捷+25"
+	"bp_reward_item_jing_plus_3"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_4"				"遊戲初始英雄力量+30"
+	"bp_reward_item_BPreward_plus_4"				"征戰鑰匙+5"
+
+	"bp_reward_item_BPreward_base_5"				"征戰鑰匙+5"
+	"bp_reward_item_BPreward_plus_5"				"三階極品首飾裝備鑰匙"
+
+	"bp_reward_item_BPreward_base_6"				"二階極品首飾裝備鑰匙"
+	"bp_reward_item_BPreward_plus_6"				"中級專長--消耗*10"
+
+	"bp_reward_item_BPreward_base_7"				"英雄魔法回復+2"
+	"bp_reward_item_jing_plus_7"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_8"				"遊戲初始殺敵數+50"
+	"bp_reward_item_BPreward_plus_8"				"技能秘笈數量+50"
+
+	"bp_reward_item_BPreward_base_9"				"基礎專長--消耗*10"
+	"bp_reward_item_BPreward_plus_9"				"寶物數量+5"
+
+	"bp_reward_item_BPreward_base_10"				"二階極品防具裝備鑰匙"
+	"bp_reward_item_BPreward_plus_10"				"三階極品特殊裝備鑰匙"
+
+	"bp_reward_item_BPreward_base_11"				"二階極品武器裝備鑰匙"
+	"bp_reward_item_BPreward_plus_11"				"征戰鑰匙+5"
+
+	"bp_reward_item_BPreward_base_12"				"英雄技能傷害+5%"
+	"bp_reward_item_BPreward_plus_12"				"秘術藥劑+20"
+
+	"bp_reward_item_BPreward_base_13"				"英雄暴擊傷害+20%"
+	"bp_reward_item_jing_plus_13"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_14"				"英雄暴擊概率+2%"
+	"bp_reward_item_jing_plus_14"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_15"				"英雄個人技能等級+1"
+	"bp_reward_item_BPreward_plus_15"				"第一賽季plus版寵物獎勵"
+
+	"bp_reward_item_BPreward_base_16"				"征戰鑰匙+10"
+	"bp_reward_item_BPreward_plus_16"				"高級專長--消耗*10"
+
+	"bp_reward_item_BPreward_base_17"				"選英雄介面刷新英雄次數+1"
+	"bp_reward_item_BPreward_plus_17"				"征戰鑰匙+10"
+
+	"bp_reward_item_BPreward_base_18"				"英雄附加傷害+2%"
+	"bp_reward_item_BPreward_plus_18"				"守護藥劑+20"
+
+	"bp_reward_item_BPreward_base_19"				"英雄最終傷害+2%"
+	"bp_reward_item_jing_plus_19"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_20"				"征戰鑰匙+5"
+	"bp_reward_item_BPreward_plus_20"				"三階史詩防具裝備鑰匙"
+
+	"bp_reward_item_BPreward_base_21"				"英雄個人技能等級+1"
+	"bp_reward_item_jing_plus_21"					"晶石+3000"
+
+	"bp_reward_item_jing_base_22"					"晶石+2000"
+	"bp_reward_item_jing_plus_22"					"晶石+3000"
+
+	"bp_reward_item_BPreward_base_23"				"英雄金錢加成+3%"
+	"bp_reward_item_BPreward_plus_23"				"征戰鑰匙+10"
+
+	"bp_reward_item_BPreward_base_24"				"英雄經驗加成+3%"
+	"bp_reward_item_BPreward_plus_24"				"三階史詩武器裝備鑰匙"
+
+	"bp_reward_item_BPreward_base_25"				"第一賽季基礎光環獎勵"
+	"bp_reward_item_BPreward_plus_25"				"第一賽季plus光環獎勵"
+
+	"bp_reward_item_BPreward_base_26"				"高級專長--消耗*10"
+	"bp_reward_item_BPreward_plus_26"				"寶物數量*10"
+
+	"bp_reward_item_BPreward_base_27"				"征戰鑰匙+10"
+	"bp_reward_item_jing_plus_27"					"晶石+5000"
+
+	"bp_reward_item_jing_base_28"					"晶石+3000"
+	"bp_reward_item_jing_plus_28"					"晶石+5000"
+
+	"bp_reward_item_jing_base_29"					"晶石+3000"
+	"bp_reward_item_BPreward_plus_29"				"征戰鑰匙+20"
+
+	"bp_reward_item_BPreward_base_30"				"三階極品特殊裝備鑰匙"
+	"bp_reward_item_BPreward_plus_30"				"三階史詩特殊裝備鑰匙"
+
+
+	"bp_quest_day_difficulty_0"							"通關任意難度"
+	"bp_quest_day_difficulty_1"							"通關N1"
+	"bp_quest_day_difficulty_2"							"通關N2"
+	"bp_quest_day_difficulty_3"							"通關N3"
+	"bp_quest_day_difficulty_4"							"通關N4"
+	"bp_quest_day_difficulty_5"							"通關N5"
+	"bp_quest_day_difficulty_6"							"通關N6"
+	"bp_quest_day_difficulty_7"							"通關N7"
+	"bp_quest_day_difficulty_8"							"通關N8"
+
+	"bp_quest_day_hero_pass_1"							"使用力量英雄通關"
+	"bp_quest_day_hero_pass_2"							"使用敏捷英雄通關"
+	"bp_quest_day_hero_pass_3"							"使用智力英雄通關"
+
+	"bp_quest_day_hero_killboss_1"						"擊殺災厄領主伐木機"
+	"bp_quest_day_hero_killboss_2"						"擊殺災厄領主卡爾"
+	"bp_quest_day_hero_killboss_3"						"擊殺災厄領主死亡騎士"
+	"bp_quest_day_hero_killboss_4"						"擊殺災厄領主山丘巨人"
+	"bp_quest_day_hero_killboss_5"						"擊殺災厄領主鳳凰"
+	"bp_quest_day_hero_killboss_6"						"擊殺災厄領主幻影刺客"
+
+
+	"bp_quest_day_hero_killunit_1"						"擊殺5000個小怪"
+
+	"bp_quest_day_hero_getboss_1"						"獲得500Boss點數"	
+
+	"bp_quest_week_difficulty_5_2"						"通關N5狂暴模式"	
+	"bp_quest_week_difficulty_6_3"						"通關N6奧術模式"
+	"bp_quest_week_difficulty_7_4"						"通關N7災難模式"
+	"bp_quest_week_difficulty_8_2"						"通關N8狂暴模式"
+	"bp_quest_week_difficulty_9_3"						"通關N9奧術模式"
+	"bp_quest_week_difficulty_10_4"						"通關N10災難模式"
+
+	"bp_quest_week_hero_killunit_1"						"累積擊殺小怪30000只"
+
+	"bp_quest_week_difficulty_1"						"通關N1累計5次"
+	"bp_quest_week_difficulty_2"						"通關N2累計5次"
+	"bp_quest_week_difficulty_3"						"通關N3累計5次"
+	"bp_quest_week_difficulty_4"						"通關N4累計5次"
+	"bp_quest_week_difficulty_5"						"通關N5累計5次"
+	"bp_quest_week_difficulty_6"						"通關N6累計5次"
+	"bp_quest_week_difficulty_7"						"通關N7累計5次"
+	"bp_quest_week_difficulty_8"						"通關N8累計5次"
+
+	"bp_quest_week_hero_getboss_1"						"獲得3000BOSS點數"
+
+	"npc_dota_hero_hoodwink_desc"	"《修仙訣》玩家專屬"
+	"npc_dota_hero_dark_willow_desc"	"《誅仙訣》玩家專屬"
+}
+

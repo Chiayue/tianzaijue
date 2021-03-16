@@ -1,0 +1,7 @@
+"NianPlayTitle"				"这捣蛋鬼又来啦！！！"
+"NianPlay"					"年兽"
+"NianPlay_Date"					"活动时间：{s:data_start} 至 {s:data_end}"
+"NianPlayDescription"		"当队伍击杀最终BOSS之后，有概率出现捣乱的年兽。每日首次打败年兽，可以领取奖励。快来抓获这个大可爱吧！"
+"NianRewardDetail"			"红包概率获得"
+"NianErrorTip"				"敬请期待"
+"NianGoToOpenRedEnvelope"	"去开红包"

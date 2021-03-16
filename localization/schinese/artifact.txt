@@ -1,0 +1,206 @@
+"DOTA_Tooltip_ability_art_stone_of_the_valrunes" "瓦如恩之石"
+"DOTA_Tooltip_ability_art_stone_of_the_valrunes_Description" "允许上场的英雄数提升%max_building_bonus%。"
+
+"DOTA_Tooltip_ability_art_book_of_shadow" "暗影之书"
+"DOTA_Tooltip_ability_art_book_of_shadow_Description" "出售英雄恒定为该英雄购买价的%fixed_sell_card_gold_pct%%%。"
+
+// 1201从游戏中移除
+"DOTA_Tooltip_ability_art_ring_of_fealty" "效忠指环"
+"DOTA_Tooltip_ability_art_ring_of_fealty_Description" "手牌上限+%max_hand_card_count_bonus%，增加了你的小金库哦。"
+
+"DOTA_Tooltip_ability_art_aran_spear" "阿兰之矛"
+"DOTA_Tooltip_ability_art_aran_spear_Description" "英雄的物理攻击力提高%all_physical_attack_bonus_pct%%%，法术攻击力降低%all_magic_attack_bonus_pct%%%"
+
+"DOTA_Tooltip_ability_art_oak_stick" "橡木杖"
+"DOTA_Tooltip_ability_art_oak_stick_Description" "英雄的法术攻击力提高%all_magic_attack_bonus_pct%%%，物理攻击力降低%all_physical_attack_bonus_pct%%%"
+
+"DOTA_Tooltip_ability_art_heroic_shield" "英勇之盾"
+"DOTA_Tooltip_ability_art_heroic_shield_Description" "英雄受到致死伤害时，恢复%health_recover_pct%%%的生命值并对周围造成等量纯粹伤害。"
+"DOTA_Tooltip_ability_art_heroic_shield_radius" "影响范围："
+"DOTA_Tooltip_modifier_art_heroic_shield_buff" "免死金牌"
+
+// 1201没有功能
+"DOTA_Tooltip_ability_art_lucky_cat" "招财猫像"
+"DOTA_Tooltip_ability_art_lucky_cat_Description" "购买英雄卡片金币消耗减少%goldbuy_discount%%%。"
+
+//
+"DOTA_Tooltip_ability_art_ominous_boots" "不祥之靴"
+"DOTA_Tooltip_ability_art_ominous_boots_Description" "英雄移速提升%movespeed_bonus_pct%%%。根据移动距离增加攻击，最多增加%max_attack%%%。"
+"DOTA_Tooltip_ability_art_ominous_boots_Note0" "每移动%move_per%距离提升%attack_bonus_pct%%双攻。"
+"DOTA_Tooltip_modifier_art_ominous_boots_buff" 					"不祥之靴"
+"DOTA_Tooltip_modifier_art_ominous_boots_buff_Description" 		"物理和魔法攻击力提升了%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+"DOTA_Tooltip_ability_art_impatient_hourglass" "急躁沙漏"
+"DOTA_Tooltip_ability_art_impatient_hourglass_Description" "开战时，英雄获得%mana_bonus%点魔法与%bonus_mana_regen%点魔法回复。"
+
+"DOTA_Tooltip_ability_art_giant_mask" "巨人面具"
+// "DOTA_Tooltip_ability_art_giant_mask_Description" "开战时随机一个加成比例（%armor_bonus_pct_min%%%~%armor_bonus_pct_max%%%），所有英雄获得攻击力加成效果，英雄的物理/魔法防御会按加成比例换算为提高的物理/魔法攻击力。"
+"DOTA_Tooltip_ability_art_giant_mask_Description" "开战时，英雄获得基于其物理/魔法防御（%armor_bonus_pct_min%%%~%armor_bonus_pct_max%%%）的物理/魔法攻击力加成。"
+"DOTA_Tooltip_modifier_art_giant_mask_armor" 					"巨人面具"
+"DOTA_Tooltip_modifier_art_giant_mask_armor_Description" 		"提升%dMODIFIER_PROPERTY_TOOLTIP%%%防御力的攻击力：<br>物攻提升 %dMODIFIER_PROPERTY_TOOLTIP2%点，魔攻提升%dMODIFIER_PROPERTY_TOOLTIP2%点。"
+
+//预知羊皮卷 1201暂时从游戏中移除
+"DOTA_Tooltip_ability_art_prophet_sheepskin" "预知羊皮卷"
+"DOTA_Tooltip_ability_art_prophet_sheepskin_Description" "锻造装备的时候有概率暴击升%max_item_lvlup_bonus%星，但是也有概率掉落%max_item_leldown_punish%星。"
+
+//远古星盘 1201暂时从游戏中移除
+"DOTA_Tooltip_ability_art_ancient_astrolabe" "远古星盘"
+"DOTA_Tooltip_ability_art_ancient_astrolabe_Description" "当前已拥有的所有装备额外增加%item_star_bonus%星。"
+
+//有与吞卡矛盾的bug
+"DOTA_Tooltip_ability_art_fairy_magic_bean" "仙人魔豆"
+"DOTA_Tooltip_ability_art_fairy_magic_bean_Description" "开战时，随机非最高星级英雄临时提升%star_bonus%个星级直到战斗结束。"
+
+"DOTA_Tooltip_ability_art_holy_revenge" "神圣报应"
+"DOTA_Tooltip_ability_art_holy_revenge_Description" "敌人诞生时损失%enemy_reduce_health_pct%%%最大生命值上限的生命值。"
+
+"DOTA_Tooltip_ability_art_avenger" "复仇者"
+"DOTA_Tooltip_ability_art_avenger_Description" "英雄每损失%reduce_health_pct%%%的生命值获得%physical_attack_bonus_pct%%%的物理/魔法攻击力。"
+"DOTA_Tooltip_modifier_art_avenger_buff" "复仇者"
+"DOTA_Tooltip_modifier_art_avenger_buff_Description" "攻击力提升%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+"DOTA_Tooltip_ability_art_bow_of_the_vengeful_goddess" "复仇女神之弓"
+"DOTA_Tooltip_ability_art_bow_of_the_vengeful_goddess_Description" "远程英雄攻击距离提高至%attack_range%，攻击力提升%outgoing_damage_bonus_pct%%%。"
+"DOTA_Tooltip_modifier_art_bow_of_the_vengeful_goddess_buff" "复仇女神之弓"
+"DOTA_Tooltip_modifier_art_bow_of_the_vengeful_goddess_buff_Description" "该单位提升了攻击距离且提升攻击力"
+
+"DOTA_Tooltip_ability_art_heros_blade" "英雄之刃"
+"DOTA_Tooltip_ability_art_heros_blade_Description" "英雄增加%attack_speed_bonus_pct%%%攻击速度。"
+
+//1201 从游戏中移除
+"DOTA_Tooltip_ability_art_eden_panacea" "伊甸灵丹"
+"DOTA_Tooltip_ability_art_eden_panacea_Description" "指挥官每释放一次技能，会回复%health_regen%点生命值。"
+
+"DOTA_Tooltip_ability_art_book_of_prophecy" "预言之书"
+"DOTA_Tooltip_ability_art_book_of_prophecy_Description" "每次使用法术卡都会获得%gold%金币。"
+
+"DOTA_Tooltip_ability_art_ancient_amulet" "古代护身符"
+"DOTA_Tooltip_ability_art_ancient_amulet_Description" "指挥官获得2倍的魔法回复和上限。"
+
+"DOTA_Tooltip_ability_art_amethyst_staff" "紫晶之杖"
+"DOTA_Tooltip_ability_art_amethyst_staff_Description" "每回合每个英雄为指挥官回复%mana_regen_per_hero%点魔法值。"
+
+"DOTA_Tooltip_ability_art_pangu_axe" "盘古之斧"
+"DOTA_Tooltip_ability_art_pangu_axe_Description" "近战英雄拥有相位效果且攻击力提升%outgoing_damage_bonus_pct%%%。"
+"DOTA_Tooltip_modifier_art_pangu_axe_buff" "盘古之斧"
+"DOTA_Tooltip_modifier_art_pangu_axe_buff_Description" "该单位获得相位状态，攻击力提升%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+"DOTA_Tooltip_ability_art_taboo_scroll" "禁忌卷轴"
+"DOTA_Tooltip_ability_art_taboo_scroll_Description" "法术卡不再消耗魔法。"
+
+"DOTA_Tooltip_ability_art_blood_sacrifice" "血祭品"
+"DOTA_Tooltip_ability_art_blood_sacrifice_Description" "每损失1♥，每回合时额外获得100金币。"
+
+//没有存在的意义了
+"DOTA_Tooltip_ability_art_lucky_sieve" "幸运骰子"
+"DOTA_Tooltip_ability_art_lucky_sieve_Description" "使用法术卡时，有50%概率不消耗魔法。"
+
+"DOTA_Tooltip_ability_art_discount_card" "打折卡"
+"DOTA_Tooltip_ability_art_discount_card_Description" "抽卡刷新价格只需要原价的%percent%%%。"
+
+"DOTA_Tooltip_ability_art_micro_universe" "微观宇宙"
+"DOTA_Tooltip_ability_art_micro_universe_Description" "允许额外上场%max_building_bonus%名英雄，但是额外的英雄体型缩水，全属性降低%attribute_reduce_pct%%%。"
+"DOTA_Tooltip_modifier_art_micro_universe_debuff" "微观宇宙"
+"DOTA_Tooltip_modifier_art_micro_universe_debuff_Description" "该单位体型缩小，全属性降低%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+"DOTA_Tooltip_ability_art_lycoris_radiata" "彼岸花"
+"DOTA_Tooltip_ability_art_lycoris_radiata_Description" "开战时和英雄阵亡时，随机解开一名存活英雄的未解锁羁绊技能。"
+"DOTA_Tooltip_ability_art_lycoris_radiata_Lore" "彼岸花开开彼岸，奈何桥前可奈何"
+"DOTA_Tooltip_modifier_art_lycoris_radiata_buff" "彼岸花"
+"DOTA_Tooltip_modifier_art_lycoris_radiata_buff_Description" "该单位暂时解开了羁绊技能"
+
+"DOTA_Tooltip_ability_art_dark_guard" "传送门"  
+"DOTA_Tooltip_ability_art_dark_guard_Description" "战斗结束后，随机给一张N卡到手牌。"
+
+"DOTA_Tooltip_ability_art_angel_statue" "天使雕像"
+"DOTA_Tooltip_ability_art_angel_statue_Description" "当英雄阵亡时，剩余英雄将获得%duration%秒的%incoming_reduce%%%的减伤。"
+"DOTA_Tooltip_modifier_art_angel_statue_buff" "天使庇佑"
+"DOTA_Tooltip_modifier_art_angel_statue_buff_Description" "受到伤害降低%dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%"
+
+"DOTA_Tooltip_ability_art_ginseng_fruit" "人参果"
+"DOTA_Tooltip_ability_art_ginseng_fruit_Description" "每次英雄受到伤害时为其增加一层活体护甲。"
+"DOTA_Tooltip_ability_art_ginseng_fruit_armor_per_count" "每层增加防御："
+"DOTA_Tooltip_ability_art_ginseng_fruit_hp_regen_per_count" "%每层增加生命回复："
+"DOTA_Tooltip_ability_art_ginseng_fruit_mp_regen_per_count" "%每层增加魔法回复："
+"DOTA_Tooltip_ability_art_ginseng_fruit_duration" "持续时间："
+"DOTA_Tooltip_ability_art_ginseng_fruit_max_count" "最大层数："
+
+"DOTA_Tooltip_ability_art_death_seal" "死亡圣印"
+"DOTA_Tooltip_ability_art_death_seal_Description" "法术卡上限加%count%，每回合准备阶段获得%card_count%张随机法术卡。"
+
+"DOTA_Tooltip_ability_art_aristocratic_medal" "贵族勋章"
+"DOTA_Tooltip_ability_art_aristocratic_medal_Description" "税金收入提高%tax_pct%%%。"
+
+"DOTA_Tooltip_ability_art_curse_sword" "诅咒之剑"
+"DOTA_Tooltip_ability_art_curse_sword_Description" "每次阵亡%death_hero_per%个英雄，剩余英雄的攻击速度提升%attack_speed_bonus_pct%%%。"
+"DOTA_Tooltip_modifier_art_curse_sword_buff" "诅咒之剑"
+"DOTA_Tooltip_modifier_art_curse_sword_buff_Description" "攻击速度提升%dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+
+
+"DOTA_Tooltip_ability_art_destiny_hand" "命运之手"
+"DOTA_Tooltip_ability_art_destiny_hand_Description" "获得一件随机的装备，较高概率出现高品质装备。"
+
+// 冰冷权杖
+"DOTA_Tooltip_ability_art_coldest_wand" "冰冷权杖"
+"DOTA_Tooltip_ability_art_coldest_wand_Description" "英雄所有技能和物品冷却时间减少%colddown_reduce%秒。"
+
+// 时间调谐器
+"DOTA_Tooltip_ability_art_time_tuner" "时间调谐器"
+"DOTA_Tooltip_ability_art_time_tuner_description" "英雄在释放技能时，有%chance%%%概率重置随机另一名英雄的当前技能冷却。"
+"DOTA_Tooltip_modifier_art_time_tuner_buff" "时间调谐"
+"DOTA_Tooltip_modifier_art_time_tuner_buff_Description" "释放消耗魔法的技能后，%dMODIFIER_PROPERTY_TOOLTIP%%%概率重置随机另一名英雄的当前技能冷却。"
+// 指挥之心
+"DOTA_Tooltip_ability_art_command_heart" "指挥之心"
+"DOTA_Tooltip_ability_art_command_heart_Description" "每购买%buy_count%次SSR卡牌就减少当前升级指挥官所需金币的%cost_pct%%%。"
+// 上头酒杯
+"DOTA_Tooltip_ability_art_wine_glass" "上头酒杯"
+"DOTA_Tooltip_ability_art_wine_glass_description" "每点击一次招募刷新有%chance%%%概率提高英雄和指挥官%attack_bonus%点双攻，直到游戏结束。"
+// 大鬼牌
+"DOTA_Tooltip_ability_art_joker1" "大鬼牌"
+"DOTA_Tooltip_ability_art_joker1_description" "使你的SSR英雄基础攻击提高%attack_bonus_pct%%%，但N卡减少%attack_reduce_pct%%%。大小鬼同时存在，则无负面效果。"
+"DOTA_Tooltip_modifier_art_joker1_buff" "大鬼牌"
+"DOTA_Tooltip_modifier_art_joker1_buff_Description" "基础攻击力增加%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+"DOTA_Tooltip_modifier_art_joker1_debuff" "大鬼牌"
+"DOTA_Tooltip_modifier_art_joker1_debuff_Description" "基础攻击力减少%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+// 小鬼牌
+"DOTA_Tooltip_ability_art_joker2" "小鬼牌"
+"DOTA_Tooltip_ability_art_joker2_Description" "使你的N英雄基础攻击提高%attack_bonus_pct%%%，但SSR卡减少%attack_reduce_pct%%%。大小鬼同时存在，则无负面效果。"
+"DOTA_Tooltip_modifier_art_joker2_buff" "小鬼牌"
+"DOTA_Tooltip_modifier_art_joker2_buff_Description" "基础攻击力增加%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+"DOTA_Tooltip_modifier_art_joker2_debuff" "小鬼牌"
+"DOTA_Tooltip_modifier_art_joker2_debuff_Description" "基础攻击力减少%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+// 红心A
+"DOTA_Tooltip_ability_art_jokerk" "红心A"
+"DOTA_Tooltip_ability_art_jokerk_description" "使你的SR英雄攻击提高%attack_bonus_pct%%%，但R卡减少%attack_reduce_pct%%%。双A同时存在，则无负面效果。"
+"DOTA_Tooltip_modifier_art_jokerk_buff" "红心A"
+"DOTA_Tooltip_modifier_art_jokerk_buff_Description" "基础攻击力增加%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+"DOTA_Tooltip_modifier_art_jokerk_debuff" "红心A"
+"DOTA_Tooltip_modifier_art_jokerk_debuff_Description" "基础攻击力减少%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+// 黑心A
+"DOTA_Tooltip_ability_art_jokerq" "黑桃A"
+"DOTA_Tooltip_ability_art_jokerq_Description" "使你的R英雄基础攻击提高%attack_bonus_pct%%%，但SR卡减少%attack_reduce_pct%%%。双A同时存在，则无负面效果。"
+"DOTA_Tooltip_modifier_art_jokerq_buff" "黑桃A"
+"DOTA_Tooltip_modifier_art_jokerq_buff_Description" "基础攻击力增加%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+"DOTA_Tooltip_modifier_art_jokerq_debuff" "黑桃A"
+"DOTA_Tooltip_modifier_art_jokerq_debuff_Description" "基础攻击力减少%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+// 献祭之石
+"DOTA_Tooltip_ability_art_taboo_stone" "献祭之石"
+"DOTA_Tooltip_ability_art_taboo_stone_description" "战斗开始后每剩余一个人口，场上单位伤害提升%damage_bonus_pct%%%。"
+"DOTA_Tooltip_modifier_art_taboo_stone_buff" "献祭之石"
+"DOTA_Tooltip_modifier_art_taboo_stone_buff_Description" "伤害提升%dMODIFIER_PROPERTY_TOOLTIP%%%。"
+// 命运齿轮
+"DOTA_Tooltip_ability_art_fate_gear" "命运齿轮"
+"DOTA_Tooltip_ability_art_fate_gear_description" "每回合结束使你手牌中的随机%up_star_num%张%card_star%星以下的英雄卡发生变化并有%up_star_chance%%%概率升星。"
+// 孤狼
+"DOTA_Tooltip_ability_art_alone_wolf" "孤狼"
+"DOTA_Tooltip_ability_art_alone_wolf_description" "没有解锁羁绊的英雄升星有%chance%%%概率解锁技能。"
+// 变身手环
+"DOTA_Tooltip_ability_art_strong_bracelet" "变身手环"
+"DOTA_Tooltip_ability_art_strong_bracelet_description" "场上人数等于%people_num%时，战斗开始后解锁场上所有英雄的技能。"

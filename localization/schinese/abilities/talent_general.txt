@@ -1,0 +1,75 @@
+"DOTA_Tooltip_ability_talent_general_wealth" 						"财富"
+"DOTA_Tooltip_ability_talent_general_wealth_Description" 			"提升初始金币。"
+"DOTA_Tooltip_ability_talent_general_wealth_init_gold_bonus" 		"金币增加："
+
+"DOTA_Tooltip_ability_talent_general_study" 								"学习"
+"DOTA_Tooltip_ability_talent_general_study_Description" 					"提升游戏结算的档案经验。"
+"DOTA_Tooltip_ability_talent_general_study_player_levelxp_bonus_pct" 		"%档案经验增加："
+
+"DOTA_Tooltip_ability_talent_general_boss_killer" 								"首领杀手"
+"DOTA_Tooltip_ability_talent_general_boss_killer_Description" 					"击杀首领时，获得额外金币。"
+"DOTA_Tooltip_ability_talent_general_boss_killer_round_gold_bonus_pct" 			"%额外金币："
+
+"DOTA_Tooltip_ability_talent_general_lucky" 								"幸运"
+"DOTA_Tooltip_ability_talent_general_lucky_Description" 					"每 %refresh_round_count% 回合的第一次抽卡触发\"幸运抽卡\"：额外出现一张免费英雄卡。"
+
+"DOTA_Tooltip_ability_talent_general_blacksmiths" 								"锻造师"
+"DOTA_Tooltip_ability_talent_general_blacksmiths_Description" 					"每次锻造重铸装备升级品质的概率提升。"
+"DOTA_Tooltip_ability_talent_general_blacksmiths_remake_levelup_chance" 		"%概率提高："
+
+"DOTA_Tooltip_ability_talent_general_hoarder" 								"囤积者"
+"DOTA_Tooltip_ability_talent_general_hoarder_Description" 					"每有%gold_per%金币未使用，英雄便提升一定攻击力。"
+"DOTA_Tooltip_ability_talent_general_hoarder_attack_bonus_pct" 				"%攻击力提升："
+"DOTA_Tooltip_ability_talent_general_hoarder_max_stack" 							"最大层数："
+"DOTA_Tooltip_modifier_talent_general_hoarder_buff" 						"囤积者"
+"DOTA_Tooltip_modifier_talent_general_hoarder_buff_Description" 			"囤积了一定金币，获取 %dMODIFIER_PROPERTY_TOOLTIP%%% 的双攻提升。"
+
+"DOTA_Tooltip_ability_talent_general_desire_to_fight" 						"越战越勇"
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_Description" 			"每当场上有一名英雄死亡时，存活的英雄便获得攻击力提升。"
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_attack_bonus_pct" 		"%攻击力提升："
+"DOTA_Tooltip_ability_talent_general_desire_to_fight_max_stack" 			"最大层数："
+"DOTA_Tooltip_modifier_talent_general_desire_to_fight_buff" 				"越战越勇"
+"DOTA_Tooltip_modifier_talent_general_desire_to_fight_buff_Description" 	"因为其他英雄的阵亡，获取 %dMODIFIER_PROPERTY_TOOLTIP%%% 的双攻提升。"
+
+"DOTA_Tooltip_ability_talent_general_rob" 						"趁火打劫"
+"DOTA_Tooltip_ability_talent_general_rob_Description" 			"每击杀一定数量敌人，获得一定数量魂晶。"
+"DOTA_Tooltip_ability_talent_general_rob_kill_count" 			"杀敌数："
+"DOTA_Tooltip_ability_talent_general_rob_crystal" 				"获得魂晶："
+
+"DOTA_Tooltip_ability_talent_general_killing_spree" 				"杀戮狂欢"
+"DOTA_Tooltip_ability_talent_general_killing_spree_Description" 	"击杀奖励会不断增加，一但有英雄死亡便重置叠加层数。"
+"DOTA_Tooltip_ability_talent_general_killing_spree_reward_per" 			"%击杀奖励提升："
+"DOTA_Tooltip_ability_talent_general_killing_spree_max_stack" 			"最大层数："
+
+"DOTA_Tooltip_ability_talent_general_lone_wolf" 						"独狼"
+"DOTA_Tooltip_ability_talent_general_lone_wolf_Description" 			"没有任何羁绊的英雄，获得攻击力提升。"
+"DOTA_Tooltip_ability_talent_general_lone_wolf_attack_bonus_pct" 		"%攻击力提升："
+"DOTA_Tooltip_modifier_talent_general_lone_wolf_buff" 				"独狼"
+"DOTA_Tooltip_modifier_talent_general_lone_wolf_buff_Description" 	"没有任何羁绊的独狼，获取 %dMODIFIER_PROPERTY_TOOLTIP%%% 的双攻提升。"
+
+"DOTA_Tooltip_ability_talent_general_accrual" 						"利息"
+"DOTA_Tooltip_ability_talent_general_accrual_Description" 			"每回合结束时，获得未使用金币一定比例的额外金币。"
+"DOTA_Tooltip_ability_talent_general_accrual_gold_pct" 				"%利息比例："
+"DOTA_Tooltip_ability_talent_general_accrual_max_gold" 				"获得金币上限："
+
+"DOTA_Tooltip_ability_talent_general_greed" 						"贪婪"
+"DOTA_Tooltip_ability_talent_general_greed_Description" 			"延缓宝箱怪的离场时间。"
+"DOTA_Tooltip_ability_talent_general_greed_duration_bonus" 			"额外时间："
+
+"DOTA_Tooltip_ability_talent_general_gold_command" 						"指挥若定"
+"DOTA_Tooltip_ability_talent_general_gold_command_Description" 			"指挥官获得属性提升。"
+"DOTA_Tooltip_ability_talent_general_gold_command_attribute_bonus_pct" 		"%属性提升："
+"DOTA_Tooltip_modifier_talent_general_gold_command_buff" 				"指挥若定"
+"DOTA_Tooltip_modifier_talent_general_gold_command_buff_Description" 	"指挥官获得额外:<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 物理攻击<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 魔法攻击<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 物理防御<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 魔法防御<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 生命值<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%dMODIFIER_PROPERTY_TOOLTIP2%） 魔法值<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%%（%fMODIFIER_PROPERTY_TOOLTIP2%） 魔法恢复"
+
+"DOTA_Tooltip_ability_talent_general_battle_scarred" 								"身经百战"
+"DOTA_Tooltip_ability_talent_general_battle_scarred_Description" 					"获得额外档案经验。"
+"DOTA_Tooltip_ability_talent_general_battle_scarred_player_levelxp_bonus_pct" 		"%每级提升："
+
+"DOTA_Tooltip_ability_talent_general_treasure_hunter" 								"宝藏猎人"
+"DOTA_Tooltip_ability_talent_general_treasure_hunter_Description" 					"提升幸运抽卡中高品质英雄出现的概率。"
+"DOTA_Tooltip_ability_talent_general_treasure_hunter_free_draw_card_bonus_chance" 	"%每级提升："
+
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms" 								"武器大师"
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms_Description" 					"提升高品质装备出现的概率。"
+"DOTA_Tooltip_ability_talent_general_arandmaster_at_arms_good_item_bonus_chance" 		"%每级提升："

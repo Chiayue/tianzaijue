@@ -1,0 +1,8 @@
+4-hanzhen
+{
+	material materials/overviews/4-hanzhen.vmat
+	pos_x -11416
+	pos_y 13120
+	scale 22.008
+}
+

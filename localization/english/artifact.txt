@@ -1,0 +1,208 @@
+"DOTA_Tooltip_ability_art_stone_of_the_valrunes" "Valrunes Stone"
+"DOTA_Tooltip_ability_art_stone_of_the_valrunes_Description" "Grow up population for %max_building_bonus%。"
+
+"DOTA_Tooltip_ability_art_book_of_shadow" "Shadow Book"
+"DOTA_Tooltip_ability_art_book_of_shadow_Description" "Hero card selling price increase to %fixed_sell_card_gold_pct%%% of its base value"
+
+// 1201从游戏中移除
+"DOTA_Tooltip_ability_art_ring_of_fealty" "Fealty ring"
+"DOTA_Tooltip_ability_art_ring_of_fealty_Description" "Hand card slot increase %max_hand_card_count_bonus%"
+
+"DOTA_Tooltip_ability_art_aran_spear" "Aran Spear"
+"DOTA_Tooltip_ability_art_aran_spear_Description" "Heroes physical attack increase %all_physical_attack_bonus_pct%%%, but Magical damage decrease %all_magic_attack_bonus_pct%%%"
+
+"DOTA_Tooltip_ability_art_oak_stick" "Oak Stick"
+"DOTA_Tooltip_ability_art_oak_stick_Description" "Heroes magical attack increase %all_magic_attack_bonus_pct%%%, but Physical damage decrease %all_physical_attack_bonus_pct%%%"
+
+"DOTA_Tooltip_ability_art_heroic_shield" "Heroic Shield"
+"DOTA_Tooltip_ability_art_heroic_shield_Description" "When heroes take the damage led to death, recover %health_recover_pct%%% of max health pool and deal pure damage to nearby enemies"
+"DOTA_Tooltip_ability_art_heroic_shield_radius" "Effective radius："
+"DOTA_Tooltip_modifier_art_heroic_shield_buff" "Undying Metal"
+
+// 1201没有功能
+"DOTA_Tooltip_ability_art_lucky_cat" "Lucky Cat"
+"DOTA_Tooltip_ability_art_lucky_cat_Description" "Card Buying cost less %goldbuy_discount%%%。"
+
+"DOTA_Tooltip_ability_art_ominous_boots" "Ominous Boots"
+"DOTA_Tooltip_ability_art_ominous_boots_Description" "Heroes movespeed increase %movespeed_bonus_pct%%%. Increase damage base on the move distance. Max increase damage %max_attack%%%."
+"DOTA_Tooltip_ability_art_ominous_boots_Note0" "Every %move_per% distance increase %attack_bonus_pct%% damage(physical damage and magical damage)。"
+"DOTA_Tooltip_modifier_art_ominous_boots_buff" 					"Ominous Boots"
+"DOTA_Tooltip_modifier_art_ominous_boots_buff_Description" 		"Damage increase %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+"DOTA_Tooltip_ability_art_impatient_hourglass" "Impatient Hourglass"
+"DOTA_Tooltip_ability_art_impatient_hourglass_Description" "On battle begin, heroes get %mana_bonus% mana and %bonus_mana_regen% mana regen"
+
+"DOTA_Tooltip_ability_art_giant_mask" "GiantMask"
+// "DOTA_Tooltip_ability_art_giant_mask_Description" "开战时随机一个加成比例（%armor_bonus_pct_min%%%~%armor_bonus_pct_max%%%），所有英雄获得攻击力加成效果，英雄的物理/魔法防御会按加成比例换算为提高的物理/魔法攻击力。"
+"DOTA_Tooltip_ability_art_giant_mask_Description" "On Battle begin, heroes get physical / magical damage bonus base on (%armor_bonus_pct_min%%%~%armor_bonus_pct_max%%%）physical / magical armor。"
+"DOTA_Tooltip_modifier_art_giant_mask_armor" 					"GiantMask"
+"DOTA_Tooltip_modifier_art_giant_mask_armor_Description" 		"Increase armors of %dMODIFIER_PROPERTY_TOOLTIP%%% damage <br>Physical damage increase %dMODIFIER_PROPERTY_TOOLTIP2%, magical damage increase %dMODIFIER_PROPERTY_TOOLTIP2%."
+
+//预知羊皮卷 1201暂时从游戏中移除
+"DOTA_Tooltip_ability_art_prophet_sheepskin" "预知羊皮卷"
+"DOTA_Tooltip_ability_art_prophet_sheepskin_Description" "锻造装备的时候有概率暴击升%max_item_lvlup_bonus%星，但是也有概率掉落%max_item_leldown_punish%星。"
+
+//远古星盘 1201暂时从游戏中移除
+"DOTA_Tooltip_ability_art_ancient_astrolabe" "远古星盘"
+"DOTA_Tooltip_ability_art_ancient_astrolabe_Description" "当前已拥有的所有装备额外增加%item_star_bonus%星。"
+
+//有与吞卡矛盾的bug
+"DOTA_Tooltip_ability_art_fairy_magic_bean" "Magic Bean"
+"DOTA_Tooltip_ability_art_fairy_magic_bean_Description" "On battle begin,random select a building hero which is not reaching max starts have %star_bonus% bonus start until battle end"
+
+"DOTA_Tooltip_ability_art_holy_revenge" "Holy Eevenge"
+"DOTA_Tooltip_ability_art_holy_revenge_Description" "Every enemies lose %enemy_reduce_health_pct%%% of max health in the battle begin"
+
+"DOTA_Tooltip_ability_art_avenger" "Avenger"
+"DOTA_Tooltip_ability_art_avenger_Description" "Hero get %physical_attack_bonus_pct%%% physical/magical damage every %reduce_health_pct%%% of health lost"
+"DOTA_Tooltip_modifier_art_avenger_buff" "Avenger"
+"DOTA_Tooltip_modifier_art_avenger_buff_Description" "Damage increase %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+"DOTA_Tooltip_ability_art_bow_of_the_vengeful_goddess" "Vengeful Goddess Bow"
+"DOTA_Tooltip_ability_art_bow_of_the_vengeful_goddess_Description" "Ranger heroes get %attack_range% attack range bonus, as well as %outgoing_damage_bonus_pct%%% damage increase。"
+"DOTA_Tooltip_modifier_art_bow_of_the_vengeful_goddess_buff" "Vengeful Goddess Bow"
+"DOTA_Tooltip_modifier_art_bow_of_the_vengeful_goddess_buff_Description" "Units attack range and damage increase"
+
+"DOTA_Tooltip_ability_art_heros_blade" "Heros Blade"
+"DOTA_Tooltip_ability_art_heros_blade_Description" "Heroes increase %attack_speed_bonus_pct%%% attack speed"
+
+//1201 从游戏中移除
+"DOTA_Tooltip_ability_art_eden_panacea" "Eden Panacea"
+"DOTA_Tooltip_ability_art_eden_panacea_Description" "指挥官每释放一次技能，会回复%health_regen%点生命值。"
+
+"DOTA_Tooltip_ability_art_book_of_prophecy" "Book of Prophecy"
+"DOTA_Tooltip_ability_art_book_of_prophecy_Description" "Get %gold% gold every using spell card"
+
+"DOTA_Tooltip_ability_art_ancient_amulet" "Ancient Amulet"
+"DOTA_Tooltip_ability_art_ancient_amulet_Description" "Commander get double mana as well as mana regen"
+
+"DOTA_Tooltip_ability_art_amethyst_staff" "Amethyst Staff"
+"DOTA_Tooltip_ability_art_amethyst_staff_Description" "Every hero provide commander with %mana_regen_per_hero% mana each round"
+
+"DOTA_Tooltip_ability_art_pangu_axe" "Pangu Axe"
+"DOTA_Tooltip_ability_art_pangu_axe_Description" "Melee hero damage increase %outgoing_damage_bonus_pct%%% and have active phase"
+"DOTA_Tooltip_modifier_art_pangu_axe_buff" "Pangu Axe"
+"DOTA_Tooltip_modifier_art_pangu_axe_buff_Description" "Active phase and damage increase %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+"DOTA_Tooltip_ability_art_taboo_scroll" "Taboo Scroll"
+"DOTA_Tooltip_ability_art_taboo_scroll_Description" "Spell card no longer need commander mana"
+
+"DOTA_Tooltip_ability_art_blood_sacrifice" "Blood Sacrifice"
+"DOTA_Tooltip_ability_art_blood_sacrifice_Description" "Every lose ♥ provide 100 gold every round"
+
+//没有存在的意义了
+"DOTA_Tooltip_ability_art_lucky_sieve" "Lucky Dice"
+"DOTA_Tooltip_ability_art_lucky_sieve_Description" "50% chance to cost 0 mana while using spells"
+
+"DOTA_Tooltip_ability_art_discount_card" "Discount Card"
+"DOTA_Tooltip_ability_art_discount_card_Description" "Draw card price decrease to %percent%%%"
+
+"DOTA_Tooltip_ability_art_micro_universe" "Micro Universe"
+"DOTA_Tooltip_ability_art_micro_universe_Description" " %max_building_bonus% more heroes card could be use in battlefield, but they will have smaller model scale and reduce %attribute_reduce_pct%%% attribute"
+"DOTA_Tooltip_modifier_art_micro_universe_debuff" "Micro Universe"
+"DOTA_Tooltip_modifier_art_micro_universe_debuff_Description" "Unit scale get smaller, attribute reduce %dMODIFIER_PROPERTY_TOOLTIP%%%。"
+
+"DOTA_Tooltip_ability_art_lycoris_radiata" "Lycoris Radiata"
+"DOTA_Tooltip_ability_art_lycoris_radiata_Description" "On begin of battle or any heroes die, unlocked another hero's abilty that not fully unlocked"
+"DOTA_Tooltip_ability_art_lycoris_radiata_Lore" "Lycoris Radiata"
+"DOTA_Tooltip_modifier_art_lycoris_radiata_buff" "Lycoris Radiata"
+"DOTA_Tooltip_modifier_art_lycoris_radiata_buff_Description" "Temporary unlock a ability"
+
+"DOTA_Tooltip_ability_art_dark_guard" "Guard"  
+"DOTA_Tooltip_ability_art_dark_guard_Description" "On battle end, randomly Add a N card to hand"
+
+"DOTA_Tooltip_ability_art_angel_statue" "Angel Statue"
+"DOTA_Tooltip_ability_art_angel_statue_Description" "when heroes die in battle, in the next %duration% seconds, other heroes get %incoming_reduce%%% damage reduction"
+"DOTA_Tooltip_modifier_art_angel_statue_buff" "Angel Statue"
+"DOTA_Tooltip_modifier_art_angel_statue_buff_Description" "Damage Taken reduce %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%"
+
+"DOTA_Tooltip_ability_art_ginseng_fruit" "Ginseng Fruit"
+"DOTA_Tooltip_ability_art_ginseng_fruit_Description" "Every Damage will provide 1 stack armor buff to hero"
+"DOTA_Tooltip_ability_art_ginseng_fruit_armor_per_count" "Every buff add armor:"
+"DOTA_Tooltip_ability_art_ginseng_fruit_hp_regen_per_count" "%Every stack add health regen "
+"DOTA_Tooltip_ability_art_ginseng_fruit_mp_regen_per_count" "%Every stack add mana regen "
+"DOTA_Tooltip_ability_art_ginseng_fruit_duration" "Duration："
+"DOTA_Tooltip_ability_art_ginseng_fruit_max_count" "Max stack："
+
+"DOTA_Tooltip_ability_art_death_seal" "Death Seal"
+"DOTA_Tooltip_ability_art_death_seal_Description" "Spell card slot increase %count%, Add %card_count% randomly spell card each round end"
+
+"DOTA_Tooltip_ability_art_aristocratic_medal" "Aristocratic Medal"
+"DOTA_Tooltip_ability_art_aristocratic_medal_Description" "Tax income increase %tax_pct%%%。"
+
+"DOTA_Tooltip_ability_art_curse_sword" "Curse Sword"
+"DOTA_Tooltip_ability_art_curse_sword_Description" "Every Dead heroes provide the others %attack_speed_bonus_pct%%% attack speed bonus"
+"DOTA_Tooltip_modifier_art_curse_sword_buff" "Curse Sword"
+"DOTA_Tooltip_modifier_art_curse_sword_buff_Description" "Attack speed increase %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+
+
+
+"DOTA_Tooltip_ability_art_destiny_hand" "Destiny Hand"
+"DOTA_Tooltip_ability_art_destiny_hand_Description" "Randomly add a item, more easily getting a high rarity one"
+
+// 冰冷权杖
+"DOTA_Tooltip_ability_art_coldest_wand" "Coldest Wand"
+"DOTA_Tooltip_ability_art_coldest_wand_Description" "Hero abilities and item cooldown reduce 1.5 seconds"
+"DOTA_Tooltip_modifier_art_coldest_wand_buff" "Coldest Wand"
+"DOTA_Tooltip_modifier_art_coldest_wand_buff_Description" "Hero abilities and item cooldown reduce 1.5 seconds"
+
+// 时间调谐器
+"DOTA_Tooltip_ability_art_time_tuner" "Time Tuner"
+"DOTA_Tooltip_ability_art_time_tuner_description" "Hero cast a ability has %chance%%% chance refresh another heros unready ability"
+"DOTA_Tooltip_modifier_art_time_tuner_buff" "Time Tuner"
+"DOTA_Tooltip_modifier_art_time_tuner_buff_Description" "Casting a ability has %dMODIFIER_PROPERTY_TOOLTIP%%% chance refresh another heros unready abilities"
+
+// 指挥之心
+"DOTA_Tooltip_ability_art_command_heart" "CommandingHeart"
+"DOTA_Tooltip_ability_art_command_heart_Description" "Every %buy_count% SSR cards purchased reduce the current cost for upgrading the commander by %cost_pct%%%"
+// 上头酒杯
+"DOTA_Tooltip_ability_art_wine_glass" "Drunken Wine"
+"DOTA_Tooltip_ability_art_wine_glass_description" "Click recruit button everytime have %chance%%% to permanenting increase %attack_bonus% both attack damages."
+// 大鬼牌
+"DOTA_Tooltip_ability_art_joker1" "Red Joker"
+"DOTA_Tooltip_ability_art_joker1_description" "Your SSR units increases %attack_bonus_pct%%% base attack, but your N units reduce %attack_reduce_pct%%%. Reduction is not exist when both jokers exits."
+"DOTA_Tooltip_modifier_art_joker1_buff" "Red Joker"
+"DOTA_Tooltip_modifier_art_joker1_buff_Description" "Increase base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_art_joker1_debuff" "Red Joker"
+"DOTA_Tooltip_modifier_art_joker1_debuff_Description" "Reduce base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// 小鬼牌
+"DOTA_Tooltip_ability_art_joker2" "Black Joker"
+"DOTA_Tooltip_ability_art_joker2_Description" "Your N units increases %attack_bonus_pct%%% base attack, but your SSR units reduce %attack_reduce_pct%%%. Reduction is not exist when both jokers exits."
+"DOTA_Tooltip_modifier_art_joker2_buff" "Black Joker"
+"DOTA_Tooltip_modifier_art_joker2_buff_Description" "Increase base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_art_joker2_debuff" "Black Joker"
+"DOTA_Tooltip_modifier_art_joker2_debuff_Description" "Reduce base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// 红心A
+"DOTA_Tooltip_ability_art_jokerk" "ace of hearts"
+"DOTA_Tooltip_ability_art_jokerk_description" "Your SR units increases %attack_bonus_pct%%% base attack, but your R units reduce %attack_reduce_pct%%%. Reduction is not exist when both Ace exits."
+"DOTA_Tooltip_modifier_art_jokerk_buff" "ace of hearts"
+"DOTA_Tooltip_modifier_art_jokerk_buff_Description" "Increase base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_art_jokerk_debuff" "ace of hearts"
+"DOTA_Tooltip_modifier_art_jokerk_debuff_Description" "Reduce base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// 黑心A
+"DOTA_Tooltip_ability_art_jokerq" "ace of spades"
+"DOTA_Tooltip_ability_art_jokerq_Description" "Your R units increases %attack_bonus_pct%%% base attack, but your SR units reduce %attack_reduce_pct%%%. Reduction is not exist when both Ace exits."
+"DOTA_Tooltip_modifier_art_jokerq_buff" "ace of spades"
+"DOTA_Tooltip_modifier_art_jokerq_buff_Description" "increase base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+"DOTA_Tooltip_modifier_art_jokerq_debuff" "ace of spades"
+"DOTA_Tooltip_modifier_art_jokerq_debuff_Description" "reduce base attack %dMODIFIER_PROPERTY_TOOLTIP%%%"
+
+// 献祭之石
+"DOTA_Tooltip_ability_art_taboo_stone" "stone of sacrifice"
+"DOTA_Tooltip_ability_art_taboo_stone_description" "all units increase %damage_bonus_pct%%% damaeg for every leftover population when battle begin "
+"DOTA_Tooltip_modifier_art_taboo_stone_buff" "stone of sacrifice"
+"DOTA_Tooltip_modifier_art_taboo_stone_buff_Description" "Increase damage %dMODIFIER_PROPERTY_TOOLTIP%%%"
+// 命运齿轮
+"DOTA_Tooltip_ability_art_fate_gear" "Fate gear"
+"DOTA_Tooltip_ability_art_fate_gear_description" "Random %up_star_num% Cards in your hands that are  %card_star% level heroes or below may mutate every rounds ends, %up_star_chance%%% may level up"
+// 孤狼
+"DOTA_Tooltip_ability_art_alone_wolf" "lone wolf "
+"DOTA_Tooltip_ability_art_alone_wolf_description" "Units that not yet to unlock relationships have %chance%%% to unlock abilities when level up"
+// 变身手环
+"DOTA_Tooltip_ability_art_strong_bracelet" "Henshin bracelet"
+"DOTA_Tooltip_ability_art_strong_bracelet_description" "When %people_num% units on battlefield, unlock all heroes abilities when battle begin."

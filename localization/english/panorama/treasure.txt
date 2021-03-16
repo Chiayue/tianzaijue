@@ -1,0 +1,13 @@
+"TreasureBox"						"Treasure"
+"TreasureEntryLabel"				"Click"
+
+"TreasureDescription_4020001"		"A large treasure"
+"TreasureDescription_4020002"		"A middle treasure"
+"TreasureDescription_4020003"		"A small treasure"
+"TreasureDescription_4020004"		"A courier treasure"
+
+"TreasureBuyDescription"			"Purchase and open："
+"TreasureBuyDropLabel"				"{d:count} "
+"TreasureHasCountLab"				"Own："
+"TreasureOpenAllLab"				"Open {d:count} "
+"TreasureOpenRemainingCount"		"SSR need opens：{d:count}"

@@ -1,0 +1,5 @@
+"TalentLearnCheck"		"Use 1 talent to learn?"
+"TalentLearnCheck_Y"	"Learn"
+"TalentLearnCheck_N"	"Cancel"
+"TalentsLearnPoint"		"Rest talent"
+"TalentsLearnReset"		"Reset"

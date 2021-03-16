@@ -1,0 +1,152 @@
+//--------------------------------------------------------------------------------------------------
+// 怪物技能特性
+"DOTA_Tooltip_ability_enemy_sand_wind" "风沙"
+"DOTA_Tooltip_ability_enemy_sand_wind_Description" "受到伤害后有%chance%%%概率释放风沙：自身隐藏在风沙中，并降低周围敌人的移动速度，持续%slow_down_duration%秒。"
+"DOTA_Tooltip_modifier_enemy_sand_wind_buff" "风沙"
+"DOTA_Tooltip_modifier_enemy_sand_wind_buff_Description" "隐藏在风沙中，无法被攻击"
+"DOTA_Tooltip_modifier_enemy_sand_wind_debuff" "风沙"
+"DOTA_Tooltip_modifier_enemy_sand_wind_debuff_Description" "受到风沙影响，移动速度降低"
+
+"DOTA_Tooltip_ability_enemy_shield" "护盾"
+"DOTA_Tooltip_ability_enemy_shield_Description" "抵御接下来的%block_times%次攻击"
+"DOTA_Tooltip_modifier_enemy_shield_buff" "护盾"
+"DOTA_Tooltip_modifier_enemy_shield_buff_Description" "抵御%dMODIFIER_PROPERTY_TOOLTIP%次攻击"
+
+"DOTA_Tooltip_ability_enemy_knockback" "击退"
+"DOTA_Tooltip_ability_enemy_knockback_Description" "攻击时会击退敌人，一段时间内仅生效一次。"
+"DOTA_Tooltip_modifier_enemy_knockback" "击退"
+"DOTA_Tooltip_modifier_enemy_knockback_Description" "攻击时会击退敌人"
+
+"DOTA_Tooltip_ability_enemy_irritable" "急速"
+"DOTA_Tooltip_ability_enemy_irritable_Description" "每次攻击有%chance%%%的概率增加自身%attackspeed_perstack%攻击速度。"
+"DOTA_Tooltip_modifier_enemy_irritable" "急速"
+"DOTA_Tooltip_modifier_enemy_irritable_Description" "获得攻击速度提升。"
+
+"DOTA_Tooltip_ability_enemy_seismicwave" "践踏"
+"DOTA_Tooltip_ability_enemy_seismicwave_Description" "每次攻击有%chance%%%的概率践踏地面，对自身周围%range%范围内敌人造成伤害和眩晕。"
+"DOTA_Tooltip_modifier_enemy_seismicwave" "践踏"
+"DOTA_Tooltip_modifier_enemy_seismicwave_Description" "攻击时有概率践踏"
+
+"DOTA_Tooltip_ability_enemy_locktarget" "定向攻击"
+"DOTA_Tooltip_ability_enemy_locktarget_Description" "优先攻击被标记的单位。"
+
+"DOTA_Tooltip_ability_enemy_division" "分裂"
+"DOTA_Tooltip_ability_enemy_division_Description" "生命值低于%trigger_health_pct%%%时，施法%duration%秒，变成%diversion_count%只不会攻击的小怪。"
+"DOTA_Tooltip_modifier_enemy_division" "分裂"
+"DOTA_Tooltip_modifier_enemy_division_Description" "生命值较低时会分裂"
+
+"DOTA_Tooltip_ability_enemy_towerking" "塔王"
+"DOTA_Tooltip_ability_enemy_towerking_Description" "放置一个召唤塔，塔每隔一段时间会召唤出不会攻击的小怪。"
+
+"DOTA_Tooltip_ability_enemy_reborn" "重生"
+"DOTA_Tooltip_ability_enemy_reborn_Description" "受到致命伤害后变成龙蛋，龙蛋受到%unlock_times%次攻击会破碎，%duration%秒内龙蛋未被击破则会重生。"
+"DOTA_Tooltip_modifier_enemy_reborn" "重生"
+"DOTA_Tooltip_modifier_enemy_reborn_Description" "受到致命伤害时会变蛋"
+"DOTA_Tooltip_modifier_enemy_reborn_buff" "重生"
+"DOTA_Tooltip_modifier_enemy_reborn_buff_Description" "还能承受%dMODIFIER_PROPERTY_TOOLTIP%次攻击"
+
+"DOTA_Tooltip_ability_enemy_firepath" "火焰路径"
+"DOTA_Tooltip_ability_enemy_firepath_Description" "移动时会形成一条持续%duration%秒的火焰路径，对路径上的敌人造成最大生命值*%damage_factor%%%的每秒伤害。"
+"DOTA_Tooltip_modifier_enemy_firepath" "火焰路径"
+"DOTA_Tooltip_modifier_enemy_firepath_Description" "移动时形成火焰路径"
+
+"DOTA_Tooltip_ability_enemy_wrestling" "抱摔"
+"DOTA_Tooltip_ability_enemy_wrestling_Description" "将敌人扔到自身的身后。"
+
+"DOTA_Tooltip_ability_enemy_healthrecovery" "治愈"
+"DOTA_Tooltip_ability_enemy_healthrecovery_Description" "血量低于%health_triggle%%%时，触发持续%duration%秒的生命值回复，每秒回复%heal_pct%%%最大生命值。"
+"DOTA_Tooltip_modifier_enemy_healthrecovery_buff" "治愈"
+"DOTA_Tooltip_modifier_enemy_healthrecovery_buff_Description" "持续回复生命值"
+
+"DOTA_Tooltip_ability_enemy_ice" "冰封"
+"DOTA_Tooltip_ability_enemy_ice_Description" "攻击有%chance%%%的概率使敌人冰冻%ice_duration%秒。"
+"DOTA_Tooltip_modifier_enemy_ice" "冰封"
+"DOTA_Tooltip_modifier_enemy_ice_Description" "攻击有概率冰封敌人"
+
+"DOTA_Tooltip_ability_enemy_atk" "变强"
+"DOTA_Tooltip_ability_enemy_atk_Description" "攻击有%chance%%%的概率获得%attack%%%攻击力提升，至多叠加%count%层。"
+"DOTA_Tooltip_modifier_enemy_atk" "变强"
+"DOTA_Tooltip_modifier_enemy_atk_Description" "攻击时有概率增加攻击力"
+"DOTA_Tooltip_modifier_enemy_atk_buff" "变强"
+"DOTA_Tooltip_modifier_enemy_atk_buff_Description" "增加%dMODIFIER_PROPERTY_TOOLTIP%%%攻击力"
+
+"DOTA_Tooltip_ability_enemy_bubbleshiled" "扭曲光线"
+"DOTA_Tooltip_ability_enemy_bubbleshiled_Description" "来自远距离的攻击有%miss_chance%%%概率会丢失，持续%duration%秒。"
+"DOTA_Tooltip_modifier_enemy_bubbleshiled" "扭曲光线"
+"DOTA_Tooltip_modifier_enemy_bubbleshiled_Description" "有概率使敌人的远程攻击丢失"
+
+"DOTA_Tooltip_ability_enemy_lockpig" "标记"
+"DOTA_Tooltip_ability_enemy_lockpig_Description" "标记一个敌人使其受到%incoming_pct%%%额外伤害，敌人死亡时对周围造成最大生命值*%damage_factor%的范围伤害。"
+"DOTA_Tooltip_modifier_enemy_lockpig" "标记"
+"DOTA_Tooltip_modifier_enemy_lockpig_Description" "拥有标记能力"
+"DOTA_Tooltip_modifier_enemy_lockpig_lockbuff" "标记"
+"DOTA_Tooltip_modifier_enemy_lockpig_lockbuff_Description" "受到额外伤害，并且死亡时产生爆炸伤害"
+
+"DOTA_Tooltip_ability_enemy_implate" "地刺"
+"DOTA_Tooltip_ability_enemy_implate_Description" "释放地刺，对路径上的单位造成击飞和自身%damage_factor%倍攻击力伤害。"
+"DOTA_Tooltip_modifier_enemy_implate" "地刺"
+"DOTA_Tooltip_modifier_enemy_implate_Description" "每隔一段时间释放地刺"
+
+"DOTA_Tooltip_ability_enemy_rage" "狂暴"
+"DOTA_Tooltip_ability_enemy_rage_Description" "生命值低于%health_trigger_pct%%%时，增加自身攻击速度和移动速度。"
+"DOTA_Tooltip_modifier_enemy_rage" "狂暴"
+"DOTA_Tooltip_modifier_enemy_rage_Description" "生命值较低时，获得攻速和移速提升"
+"DOTA_Tooltip_modifier_enemy_rage_buff" "狂暴"
+"DOTA_Tooltip_modifier_enemy_rage_buff_Description" "获得攻速和移速提升"
+
+"DOTA_Tooltip_ability_enemy_slaughter" "杀戮"
+"DOTA_Tooltip_ability_enemy_slaughter_Description" "闪烁到一个远处敌人附近并对其进行攻击。"
+"DOTA_Tooltip_modifier_enemy_slaughter" "杀戮"
+"DOTA_Tooltip_modifier_enemy_slaughter_Description" "拥有闪烁能力"
+
+//--------------------------------------------------------------------------------------------------
+// 契约怪物技能特性
+
+"DOTA_Tooltip_ability_contract_shadow_guardian"	"召唤树人"
+"DOTA_Tooltip_ability_contract_shadow_guardian_Description"			"召唤一圈树木困住距离自己最近的单位%trap_duration%秒，随后将树木转化为%count%个堕落树人，每个树人继承自己%stats_pct%%%的属性。"
+	
+"DOTA_Tooltip_ability_contract_star_core"	"原初引力"
+"DOTA_Tooltip_ability_contract_star_core_Description"			"生成一个%radius%范围的黑洞，将所有单位以%speed%码每秒的速度牵引至黑洞中心，黑洞中的所有单位受到%magical2magical%%%魔法攻击力的魔法伤害，持续到回合结束。"
+	
+"DOTA_Tooltip_ability_contract_hermit"	"影袭"
+"DOTA_Tooltip_ability_contract_hermit_Description"	"闪烁至当前物理护甲最低的英雄的背后并造成%physical2physical%%%物理攻击力的物理伤害，并沉默和缴械目标%duration%秒。"
+	
+"DOTA_Tooltip_ability_contract_death_wing"	"死亡天灾"
+"DOTA_Tooltip_ability_contract_death_wing_Description"			"每隔%interval%秒召唤%count%个陨石，砸向%distance%码范围内最远的英雄，在%radius%范围内造成%magical2magical%%%魔法攻击力的魔法伤害。每当有%death_count%个怪物死亡后，额外召唤%bonus_count%个陨石。"
+	
+"DOTA_Tooltip_ability_contract_totems"	"强化图腾"
+"DOTA_Tooltip_ability_contract_totems_Description"			"使全场怪物进入强化状态，攻速、生命值、移动速度和护甲都获得提升。每个怪物死亡时都会使强化图腾获得额外攻击力，数值为死亡单位攻击力的%dmg_pct%%%。"
+"DOTA_Tooltip_modifier_contract_totems_buff"	"强化图腾"
+"DOTA_Tooltip_modifier_contract_totems_buff_Description"			"怪物进入强化状态"
+	
+"DOTA_Tooltip_ability_contract_judge"	"腐朽之力"
+"DOTA_Tooltip_ability_contract_judge_Description"			"每隔%interval%秒，对自身%radius%范围内的所有单位造成%health_lost_factor%%%*自身已损失生命值的魔法伤害。"
+	
+"DOTA_Tooltip_ability_contract_seal_stone"	"梦境咒缚"
+"DOTA_Tooltip_ability_contract_seal_stone_Description" "伸出地狱的魔爪拉扯%hero_count%个随机英雄，持续%abilityduration%秒，该英雄无法行动且每秒损失%hp_pct%%%的最大生命值。"
+
+"DOTA_Tooltip_ability_contract_priesthood"	"鲜血献祭"
+"DOTA_Tooltip_ability_contract_priesthood_Description"			"对%radius%范围内的敌方单位造成%magical_factor%%%攻击力的魔法伤害，该伤害由范围内单位平摊。"
+	
+"DOTA_Tooltip_ability_contract_dark_tower"	"雨露均沾"
+"DOTA_Tooltip_ability_contract_dark_tower_Description"			"始终攻击场上血量最高的英雄，每次攻击使目标额外损失%hp_pct%%%当前生命值的血量。"
+	
+"DOTA_Tooltip_ability_contract_wrestle"	"精英对决"
+"DOTA_Tooltip_ability_contract_wrestle_Description"			"开场时和场上攻击力最高的英雄一起跳到战场中心，强制相互攻击直至一方死亡，附带沉默效果。释放时眩晕其他英雄%duration%秒。"
+	
+"DOTA_Tooltip_ability_contract_neutral_angle"	"众生平等"
+"DOTA_Tooltip_ability_contract_neutral_angle_Description"			"开战%threshold%秒后，复活自身%radius%范围内最多%count%个双方单位，复活后拥有%hp_pct%%%血量，%attack_bonus%%%的额外攻击力。每成功复活一个单位，本回合提升自身%atkspd_bonus%%%攻速。"
+	
+"DOTA_Tooltip_ability_contract_monster_commander"	"同仇敌忾"
+"DOTA_Tooltip_ability_contract_monster_commander_Description"			"自身%radius%范围内每存在一个敌方单位（指玩家方单位），都会使范围内的所有怪物属性提升%bonus_stats%%%。场上每个怪物死亡时都会使巨兽领军损失%hp_lost%%%的最大生命值，并使巨兽领军的下一次攻击造成%attack_radius%码范围伤害和%duration%秒的眩晕"
+	
+
+
+
+
+
+
+
+
+
+

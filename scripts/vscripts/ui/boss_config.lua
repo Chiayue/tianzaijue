@@ -1,0 +1,165 @@
+bossHp={
+	1,
+	2,
+	5
+}
+bossArmor={
+	1,
+	1.3,
+	2
+}
+bossMk={
+	1,
+	1.15,
+	1.3
+}
+bossDamage={
+	1,
+	1.5,
+	3
+}
+sjbossHp={
+	1,
+	2,
+	4,
+	8,
+	8,
+	8,
+	8,
+}
+sjbossArmor={
+	1,
+	1.5,
+	2,
+	2.5,
+	5,
+	12,
+	30
+}
+sjbossDamage={
+	1,
+	1.5,
+	2,
+	3,
+	4,
+	4,
+	5,
+}
+
+sjbossAbilityNum={
+	1,  
+	2,
+	3,
+	4,
+	5,
+	6,
+	7,
+	8,
+	9,
+	10,
+}
+
+zbds={
+	1,
+	1,
+	2,
+	4,
+	8,
+	16,
+	32
+}
+
+zbxs={
+	1,
+	2,
+	3,
+	4,
+	5,
+	6,
+	7
+
+}
+sjbossbl= {
+	1,
+	1,
+	1,
+	3,
+	1,
+	3,
+	9
+}
+sjbosspoint={
+	4,
+	6,
+	8,
+	10,
+	20,
+	30,
+	50,
+}
+tzbosspoint={
+	[3]={
+	1,1,2
+	};
+
+	[4]={
+	2,2,3
+	};	
+
+	[5]={
+	4,5,6
+	};	
+
+	[6]={
+	7,8,10
+	};	
+
+}
+sjbossdbpz={
+	3,
+	4,
+	5,
+	5,
+	6,
+	6,
+	6,
+}
+--贪欲Boss开出神秘宝物等级权重
+tyboss_smbw={
+	1500,
+	500,
+	50,
+	5,
+	1
+}
+
+
+--BOSS的可分配的技能
+bossAbility={
+	"wenyiguanghuan";
+	"guwu";
+	"longwei";
+	"xianji";
+	"tuzhimaidong";
+	"fenzhizhufu";
+	"siwangzuzhou";
+	"changbiyuan";
+	"aoshukuangxiang";
+	"jiqizhiming";
+	"xingfengji";
+	"dadifusu";
+	"yilibudao";
+	"buqunuhou";
+	"qiangzhuangtizhi";
+	"ascension_bulwark";
+	"shuizhihongliu";
+	"leifa";
+	--"yunshi";
+	"anjiannanfang";
+	"aoshuzhuanjin";
+	"firefly";
+	"three_attack";
+	--"throw_attack";
+	"bingzhishijie";
+	
+}

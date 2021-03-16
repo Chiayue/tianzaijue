@@ -1,0 +1,993 @@
+// 物品品质
+"DOTA_Custom_Rarity_Tooltip_1"	"(N)"
+"DOTA_Custom_Rarity_Tooltip_2"	"(R)"
+"DOTA_Custom_Rarity_Tooltip_3"	"(SR)"
+"DOTA_Custom_Rarity_Tooltip_4"	"(SSR)"
+"Item_RarityLevel"	"{s:rarity_level}"
+
+//物品名字
+"DOTA_Tooltip_ability_item_crystal"						"Soul Crystal"
+"DOTA_Tooltip_ability_item_builder_egg"					"Golden Egg"
+"DOTA_Tooltip_ability_item_goldchest"					"Golden Token"
+"DOTA_Tooltip_ability_item_staff_1"						"Elder Staff"
+"DOTA_Tooltip_ability_item_physical_chainmail_1"		"Silver Scale"
+"DOTA_Tooltip_ability_item_magical_cloak_1"				"Insulated Cloak"
+"DOTA_Tooltip_ability_item_red_booster_1"				"Ruby"
+"DOTA_Tooltip_ability_item_blue_booster_1"				"Sapphire"
+"DOTA_Tooltip_ability_item_gloves_1"					"Gloves of Haste"
+"DOTA_Tooltip_ability_item_mask_1"						"Mask of Terror"
+"DOTA_Tooltip_ability_item_sealed_apotheosis_blade_1"	"Sealed Blade of Apotheosis"
+"DOTA_Tooltip_ability_item_apotheosis_blade_1"			"Blade of Apotheosis"
+"DOTA_Tooltip_ability_item_sealed_ring_of_disaster_1"	"Sealed Ring of Disaster"
+"DOTA_Tooltip_ability_item_ring_of_disaster_1"			"Ring of Disaster"
+"DOTA_Tooltip_ability_item_quickening_1"				"Jade Pendant"
+"DOTA_Tooltip_ability_item_talisman_1"					"Talisman"
+"DOTA_Tooltip_ability_item_midas_1"						"Hand of Midas"
+"DOTA_Tooltip_ability_item_aether_1"					"Aether Lens"
+"DOTA_Tooltip_ability_item_horn_1"						"Beast Horn"
+"DOTA_Tooltip_ability_item_angel_1"						"Angel Relic"
+"DOTA_Tooltip_ability_item_hyper_1"						"Hyperstone"
+"DOTA_Tooltip_ability_item_guardian_boots_1"			"Combat Boot"
+"DOTA_Tooltip_ability_item_seerstone_1"					"Seer Stone"
+"DOTA_Tooltip_ability_item_octarine_1"					"Octarine Core"
+"DOTA_Tooltip_ability_item_claw_1"						"Imp Claw"
+"DOTA_Tooltip_ability_item_stromhammer_1"				"Maelstrom"
+"DOTA_Tooltip_ability_item_vampirefangs_1"				"Vampire Fangs"
+"DOTA_Tooltip_ability_item_lesser_1"					"Crystalys"
+"DOTA_Tooltip_ability_item_king_flag_1"					"Emperor Banner"
+"DOTA_Tooltip_ability_item_blademail_1"					"Blademail"
+"DOTA_Tooltip_ability_item_necro_1"						"Necro Journal"
+"DOTA_Tooltip_ability_item_king_staff_1"				"Tyrant's Scepter"
+"DOTA_Tooltip_ability_item_obliterating_orb_1"			"Orb of Obliteration"
+"DOTA_Tooltip_ability_item_deso_1"						"Desolator"
+"DOTA_Tooltip_ability_item_helm_of_undying_1"			"Immortal Helm"
+"DOTA_Tooltip_ability_item_crimsonrobe_1"				"Crimson Robe"
+"DOTA_Tooltip_ability_item_dagen_1"						"Anchiale Wand"
+"DOTA_Tooltip_ability_item_mirror_1"					"Scattering Gem"
+"DOTA_Tooltip_ability_item_ring_of_aghanim_1"			"Ring of Aghanim"
+"DOTA_Tooltip_ability_item_bfuryaxe_1"					"Battle Fury"
+"DOTA_Tooltip_ability_item_craggycoat_1"				"Craggy Coat"
+"DOTA_Tooltip_ability_item_manta_axe_1"					"Manta Style"
+"DOTA_Tooltip_ability_item_rapier_sword_1"				"Divine Rapier"
+"DOTA_Tooltip_ability_item_panicbutton_1"				"Sacred Lamp"
+"DOTA_Tooltip_ability_item_endless_carnage_1"			"Endless Carnage"
+
+//效果字段
+"DOTA_Tooltip_ability_item_axe_1_magical_attack"						"+$magical_attack"
+"DOTA_Tooltip_ability_item_staff_1_magical_attack"						"+$magical_attack"
+"DOTA_Tooltip_ability_item_physical_chainmail_1_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_magical_cloak_1_magical_armor"				"+$magical_armor"
+"DOTA_Tooltip_ability_item_red_booster_1_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_blue_booster_1_status_mana"					"+$status_mana"
+"DOTA_Tooltip_ability_item_gloves_1_attack_speed"						"+$attack_speed"
+
+//Lore字段
+"DOTA_CustomTooltip_common_item_lore"						"←Equip by dragging the item to a hero<br></br>●Click to Forge"
+
+//变量定义
+"dota_ability_variable_physical_attack"						"Physical Damage"
+"dota_ability_variable_magical_attack"						"Magical Damage"
+"dota_ability_variable_physical_armor"						"Physical Armor"
+"dota_ability_variable_magical_armor"						"Magic Armor"
+"dota_ability_variable_physical_armor_pct"					"Extra Physical Armor"
+"dota_ability_variable_magical_armor_pct"					"Extra Magic armor"
+"dota_ability_variable_status_health"						"HP"
+"dota_ability_variable_status_mana"							"Mana"
+"dota_ability_variable_mana_regen"							"Mana Regen"
+"dota_ability_variable_health_regen"						"Health Regen"
+"dota_ability_variable_attack_speed"						"Attack Speed"
+"dota_ability_variable_attack_speed_percentage"				"Attack Speed"
+"dota_ability_variable_attack_range_of_range"				"Attack Range"
+"dota_ability_variable_movement_speed"						"Movement Speed"
+"dota_ability_variable_attack_helf"							"Lifesteal"
+"dota_ability_variable_attack_percentage"					"Bonus Damage Percent"
+"dota_ability_variable_attack_miss"							"Bonus Evasion Percent"
+"dota_ability_variable_mana_regen_outgoing"					"Mana Drain"
+"dota_ability_variable_physical_attack_pct"					"Bonus Physical DMG"
+"dota_ability_variable_magical_attack_pct"					"Bonus Magical DMG"
+"dota_ability_variable_gold_earn"							"Pocket Picker"
+"dota_ability_variable_magical_helf"						"Magic Lifesteal"
+"dota_ability_variable_magical_crit_chance"					"Magic Crit Chance"
+"dota_ability_variable_magical_crit_damage"					"Magic Crit DMG"
+"dota_ability_variable_crit_chance"							"Attack Crit Chance"
+"dota_ability_variable_crit_damage_pct"						"Attack Crit DMG"
+"dota_ability_variable_health_regen_per"						"Attack Lifesteal"
+"dota_ability_variable_creep_damage_bonus"						"DMG to Non-Elite units"
+"dota_ability_variable_elit_damage_bonus"						"DMG to Elite Units"
+
+"dota_ability_variable_summon_attack_speed_pct"				"Summoned Unit Attack Speed"
+"dota_ability_variable_healthpct_bonus"                     "Max health pool"
+"dota_ability_variable_health_regen_percentage"             "Increase Health regen"
+
+//稻草人
+ "DOTA_Tooltip_ability_item_scarecrow_1"								"Scarecrow"
+ "DOTA_Tooltip_ability_item_scarecrow_1_description"					"+%damage_pct%%% Spell Damage, -%damage_pct%%% Attack Damage\n<h1>Activation Effect</h1> Remove the attack damage penalty."
+ "DOTA_Tooltip_ability_item_scarecrow_1_Lore"							"'Ninety years ago I was a freak. Today I'm an amateur.'"
+ "DOTA_Tooltip_modifier_item_scarecrow_1"								"Aston Martin"
+ "DOTA_Tooltip_modifier_item_scarecrow_1_description"					"Can't even afford."
+
+//物品格锁
+ "DOTA_Tooltip_ability_item_lock_3"						"Locked Slot"
+ "DOTA_Tooltip_ability_item_lock_3_description"			"Will be unlocked at Level 3."
+ "DOTA_Tooltip_ability_item_lock_3_Lore"				"If you can't stand the heat, get out of the kitchen."
+ "DOTA_Tooltip_ability_item_lock_5"						"Locked Slot"
+ "DOTA_Tooltip_ability_item_lock_5_description"			"Will be unlocked at Level 5."
+ "DOTA_Tooltip_ability_item_lock_5_Lore"				"If you can't stand the heat, get out of the kitchen."
+
+
+// // // // // // // // // // // // // // // // // // // // 白装
+
+// 砍柴斧
+"DOTA_Tooltip_ability_item_axe"									  "Hatchet"
+"DOTA_Tooltip_ability_item_axe_crit_damage_pct"					  "%+$crit_damage_pct"
+"DOTA_Tooltip_ability_item_axe_crit_chance"						  "%+$crit_chance"
+"DOTA_Tooltip_ability_item_axe_physical_attack"					  "+$physical_attack"
+
+
+// 力量手环
+"DOTA_Tooltip_ability_item_strength_ring"							 "Wristband of Strength"
+"DOTA_Tooltip_ability_item_strength_ring_physical_attack"			 "+$physical_attack"
+
+// 智力法袍
+"DOTA_Tooltip_ability_item_magical_ring"							 "Robe of the Magi"
+"DOTA_Tooltip_ability_item_magical_ring_magical_attack"				 "+$magical_attack"
+"DOTA_Tooltip_ability_item_magical_ring_crit_chance"				 "%+$crit_chance"
+"DOTA_Tooltip_ability_item_magical_ring_crit_damage_pct"			 "%+$crit_damage_pct"
+
+// 力量手套
+"DOTA_Tooltip_ability_item_strength_gloves"							 "Glove of Strength"
+"DOTA_Tooltip_ability_item_strength_gloves_physical_attack_pct"		 "%+$physical_attack_pct"
+"DOTA_Tooltip_ability_item_strength_gloves_status_health"		     "+$status_health"
+"DOTA_Tooltip_ability_item_strength_gloves_health_regen"		     "+$health_regen"
+
+// 法强之戒
+"DOTA_Tooltip_ability_item_magical_gloves"							 "Ring of Magi"
+"DOTA_Tooltip_ability_item_magical_gloves_magical_attack_pct"		 "%+$magical_attack_pct"
+"DOTA_Tooltip_ability_item_magical_gloves_status_mana"		         "+$status_mana"
+"DOTA_Tooltip_ability_item_magical_gloves_mana_regen"		         "+$mana_regen"
+
+// 吸血脸
+"DOTA_Tooltip_ability_item_blood_suck"								 "Morbid Mask"
+"DOTA_Tooltip_ability_item_blood_suck_description"					 "+%blood_suck%%% Lifesteal"
+
+// 恢复戒指
+"DOTA_Tooltip_ability_item_health_ring"								 "Ring of Regen"
+"DOTA_Tooltip_ability_item_health_ring_health_regen"				 "+$health_regen"
+
+// 枫糖浆
+"DOTA_Tooltip_ability_item_gold_hand"								 "Maple Syrup"
+"DOTA_Tooltip_ability_item_gold_hand_gold_earn"						 "+$gold_earn"
+"DOTA_Tooltip_ability_item_gold_hand_description"		             "Triple-triple, veuillez replace sugar with maple syrup. Merci."
+"DOTA_Tooltip_modifier_item_gold_hand"								 "Québécois Syrupy!"
+"DOTA_Tooltip_modifier_item_gold_hand_description"				     "Received %dMODIFIER_PROPERTY_TOOLTIP% gold."
+
+// 恢复法戒
+"DOTA_Tooltip_ability_item_mana_ring"								 "Clarity"
+"DOTA_Tooltip_ability_item_mana_ring_mana_regen"					 "+$mana_regen"
+
+// 小魔瓶
+"DOTA_Tooltip_ability_item_tiny_magicbox"							 "Bottle"
+"DOTA_Tooltip_ability_item_tiny_magicbox_description"				 "Regen %mana_boost% mana at the start of each round."
+
+// 闪避符
+"DOTA_Tooltip_ability_item_evasion_talisman"						 "Talisman of Evasion"
+"DOTA_Tooltip_ability_item_evasion_talisman_evasion_pct"			 "%+$evasion"
+
+// 巫毒面具
+"DOTA_Tooltip_ability_item_voodo_mask"								 "Voodoo Mask"
+"DOTA_Tooltip_ability_item_voodo_mask_magical_helf"					 "%+$magical_helf"
+"DOTA_Tooltip_ability_item_voodo_mask_magical_attack"			     "+$magical_attack"
+
+// 破碎的酒桶
+"DOTA_Tooltip_ability_item_broken_cask"								 "Broken Barrel"
+"DOTA_Tooltip_ability_item_broken_cask_description"					 "Gives a %chance%%% chance to block %black_damage% physical damage."
+
+// 破碎的护符
+"DOTA_Tooltip_ability_item_broken_talisman"					         "Broken Charm"
+"DOTA_Tooltip_ability_item_broken_talisman_description"		         "Gives a %chance%%% chance to block %black_damage% physical damage."
+
+// 伐木斧
+"DOTA_Tooltip_ability_item_farm_axe"								 "Logging Axe"
+"DOTA_Tooltip_ability_item_farm_axe_physical_attack"			     "+$physical_attack"
+"DOTA_Tooltip_ability_item_farm_axe_magical_attack"				     "+$magical_attack"
+"DOTA_Tooltip_ability_item_farm_axe_creep_damage_bonus"				 "%+$creep_damage_bonus"
+
+// 快速手套
+"DOTA_Tooltip_ability_item_speed_hand"								 "Glove of Swiftness"
+"DOTA_Tooltip_ability_item_speed_hand_attack_speed"					 "+$attack_speed"
+
+// 附魔板甲
+"DOTA_Tooltip_ability_item_beast_skin"					             "Enchanted Platemail"
+"DOTA_Tooltip_ability_item_beast_skin_physical_armor"				 "+$physical_armor"
+"DOTA_Tooltip_ability_item_beast_skin_magical_armor"				 "+$magical_armor"
+
+// 抗魔斗篷
+"DOTA_Tooltip_ability_item_magical_beast_skin"						 "Cloak"
+"DOTA_Tooltip_ability_item_magical_beast_skin_magical_armor"		 "+$magical_armor"
+
+// 敏捷之靴
+"DOTA_Tooltip_ability_item_speedOf_shoe"							 "Slippers of Agility"
+"DOTA_Tooltip_ability_item_speedOf_shoe_movement_speed"				 "+$movement_speed"
+"DOTA_Tooltip_ability_item_speedOf_shoe_attack_speed"				 "+$attack_speed"
+
+// 断裂的生命之石
+"DOTA_Tooltip_ability_item_lifespan_stone"							 "Shattered Vitalitystone"
+"DOTA_Tooltip_ability_item_lifespan_stone_status_health"			 "+$status_health"
+
+// 力量药瓶
+"DOTA_Tooltip_ability_item_panduo_box"								 "Might Booster"
+"DOTA_Tooltip_ability_item_panduo_box_Description"					 "<h1>Boost Physical DMG</h1>When armed, +%attack_increase% Physical Damage each round."
+"DOTA_Tooltip_modifier_item_panduo_box"								 "Continuous gains Physical Damage."
+"DOTA_Tooltip_modifier_item_panduo_box_Description"					 "+%dMODIFIER_PROPERTY_TOOLTIP% Physical Damage"
+
+// 智力药瓶
+"DOTA_Tooltip_ability_item_luxifu_box"								 "Arcane Booster"
+"DOTA_Tooltip_ability_item_luxifu_box_Description"					 "<h1>Boost Magic DMG</h1>When armed, +%attack_increase% Magical Damage each round."
+"DOTA_Tooltip_modifier_item_luxifu_box"								 "Continuous gains Magical Damage."
+"DOTA_Tooltip_modifier_item_luxifu_box_Description"					 "+%dMODIFIER_PROPERTY_TOOLTIP% Magical Damage"
+
+// 魔肤药瓶
+"DOTA_Tooltip_ability_item_guduo_box"								 "armor Booster"
+"DOTA_Tooltip_ability_item_guduo_box_Description"					 "<h1>Boost Magic armor</h1>When armed, +%armor_increase% Magic armor each round."
+"DOTA_Tooltip_modifier_item_guduo_box"								 "Continuous gains Magical armor."
+"DOTA_Tooltip_modifier_item_guduo_box_Description"					 "+%dMODIFIER_PROPERTY_TOOLTIP% Magical armor"
+
+// 钢铁药瓶
+"DOTA_Tooltip_ability_item_guxi_box"								 "Armor Booster"
+"DOTA_Tooltip_ability_item_guxi_box_Description"					 "<h1>Boost Armor</h1>When armed, +%armor_increase% Armor each round."
+"DOTA_Tooltip_modifier_item_guxi_box"								 "Continuous gains Armor."
+"DOTA_Tooltip_modifier_item_guxi_box_Description"					 "+%dMODIFIER_PROPERTY_TOOLTIP% Armor"
+
+// 咯系系魔盒
+"DOTA_Tooltip_ability_item_kaxixi_box"								 "Haste Booster"
+"DOTA_Tooltip_ability_item_kaxixi_box_Description"					 "<h1>Boost Attack Speed</h1>When armed, +%attackspeed_increase% Attack Speed each round."
+"DOTA_Tooltip_modifier_item_kaxixi_box"								 "Continuous gains Attack Speed."
+"DOTA_Tooltip_modifier_item_kaxixi_box_Description"					 "+%dMODIFIER_PROPERTY_TOOLTIP% Attack Speed"
+
+// 随从旗帜
+"DOTA_Tooltip_ability_item_summon_flag"								 "Retinue Banner"
+"DOTA_Tooltip_ability_item_summon_flag_Description"					 "Increases its summoned units' both damage by %summon_atkbonus%%%."
+"DOTA_Tooltip_modifier_item_summon_flag"							 "Retinue Banner"
+"DOTA_Tooltip_modifier_item_summon_flag_Description"				 "Damage increased."
+
+// 随从权杖
+"DOTA_Tooltip_ability_item_summon_wand"								 "Retinue Scepter"
+"DOTA_Tooltip_ability_item_summon_wand_Description"					 "Increases its summoned units' attack speed by %summon_atkspedbonus%."
+"DOTA_Tooltip_modifier_item_summon_wand"							 "Retinue Scepter"
+"DOTA_Tooltip_modifier_item_summon_wand_Description"				 "Attack speed increased."
+
+// 生命之石
+"DOTA_Tooltip_ability_item_lifetime_stone"							 "Vitalitystone"
+"DOTA_Tooltip_ability_item_lifetime_stone_healthpct_bonus"			 "%+$healthpct_bonus"
+"DOTA_Tooltip_ability_item_lifetime_stone_status_health"		     "+$status_health"
+"DOTA_Tooltip_ability_item_lifetime_stone_health_regen_percentage"	 "%+$health_regen_percentage"
+"DOTA_Tooltip_modifier_item_lifetime_stone"							 "Health pool increase"
+"DOTA_Tooltip_modifier_item_lifetime_stone_Description"				 "Health pool increase"
+
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  蓝装
+
+// 制式长矛
+"DOTA_Tooltip_ability_item_zhi_spear"							 "Standard Spear"
+"DOTA_Tooltip_ability_item_zhi_spear_physical_attack"			 "+$physical_attack"
+"DOTA_Tooltip_ability_item_zhi_spear_description"				 "<h1>Luckiness</h1>Grants the melee carrier a %chance%%% chance to deal %physical_extra% bonus damage."
+
+// 制式弓箭
+"DOTA_Tooltip_ability_item_zhi_bow"								 "Standard Bow"
+"DOTA_Tooltip_ability_item_zhi_bow_physical_attack"				 "+$physical_attack"
+"DOTA_Tooltip_ability_item_zhi_bow_description"					 "<h1>Split</h1>Grants the ranged carrier a %chance%%% chance to hit an additional target."
+
+// 制式法杖
+"DOTA_Tooltip_ability_item_zhi_staff"							 "Standard Staff"
+"DOTA_Tooltip_ability_item_zhi_staff_magical_attack"			 "+$magical_attack"
+"DOTA_Tooltip_ability_item_zhi_staff_description"				 "<h1>Luckiness</h1>Grants each attack a %chance%%% chance to deal %magical_extra% bonus damage."
+
+// 制式木杖
+"DOTA_Tooltip_ability_item_zhi_wand"							 "Standard Wand"
+"DOTA_Tooltip_ability_item_zhi_wand_magical_attack"				 "+$magical_attack"
+"DOTA_Tooltip_ability_item_zhi_wand_description"				 "<h1>CD Reduction</h1>Grants each attack a %chance%%% chance to reduce cooldowns of all abilities currently on cooldown by %cooldown_reduce%%%."
+
+// 精钢盾牌
+"DOTA_Tooltip_ability_item_iron_shield"							 "Steel shield"
+"DOTA_Tooltip_ability_item_iron_shield_physical_armor"			 "+$physical_armor"
+"DOTA_Tooltip_ability_item_iron_shield_magical_armor"			 "+$magical_armor"
+"DOTA_Tooltip_ability_item_iron_shield_description"				 "<h1>Damage Reduction</h1>Reduces %deduce_damage_pct%%% incoming physical damage."
+
+// 铁法袍
+"DOTA_Tooltip_ability_item_iron_robe"							 "Chain Robe"
+"DOTA_Tooltip_ability_item_iron_robe_magical_armor"				 "+$magical_armor"
+"DOTA_Tooltip_ability_item_iron_robe_description"				 "<h1>Damage Reduction</h1>Reduces %magical_ingoing_damage%%% incoming magical damage."
+
+// 偷金手
+"DOTA_Tooltip_ability_item_goldess_hand"						 "Pocket Picker"
+"DOTA_Tooltip_ability_item_goldess_hand_attack_speed"			 "+$attack_speed"
+"DOTA_Tooltip_ability_item_goldess_hand_description"			 "<h1>Pocket Picker</h1>Grants each attack a %chance%%% chance to steal %gold_bonus% gold."
+"DOTA_Tooltip_modifier_item_goldess_hand"						 "Pocket Picker"
+"DOTA_Tooltip_modifier_item_goldess_hand_description"			 "+%dMODIFIER_PROPERTY_TOOLTIP% gold"
+
+//点金手
+"DOTA_Tooltip_ability_item_hand_of_mida_1"						 "Hand of Midas"
+"DOTA_Tooltip_ability_item_hand_of_mida_1_description"			 "<h1>Transmute</h1>Grants the carrier a %chance%%% chance to receive %gold_bonus% bonus gold and %crystal_bonus% Soul Crystal when it kills an enemy unit."
+"DOTA_Tooltip_ability_item_hand_of_mida_1_creep_damage_bonus"	    "%+$creep_damage_bonus"
+"DOTA_Tooltip_ability_item_hand_of_mida_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+
+
+// 闪电指套
+"DOTA_Tooltip_ability_item_light_fingertips"					 "Blitz Knuckles"
+"DOTA_Tooltip_ability_item_light_fingertips_attack_speed"		 "+$attack_speed"
+"DOTA_Tooltip_ability_item_light_fingertips_description"		 "<h1>Blitz Strike</h1>Grants each attack a %chance%%% chance to attack twice in quick succession."
+
+// 蓝晶石
+"DOTA_Tooltip_ability_item_bluess_stone"						 "Void Stone"
+"DOTA_Tooltip_ability_item_bluess_stone_status_mana"			 "+$status_mana"
+
+// 御风靴
+"DOTA_Tooltip_ability_item_wind_shoe"							"Boots of Breeze"
+"DOTA_Tooltip_ability_item_wind_shoe_movement_speed"			"+$movement_speed"
+"DOTA_Tooltip_ability_item_wind_shoe_description"				"<h1>Evasion</h1> Grants a %attack_miss%%% chance to evade incoming damage."
+
+// 封印之刃
+"DOTA_Tooltip_ability_item_unlock_sowrd"						"Sealed Blade of Devil"
+"DOTA_Tooltip_ability_item_unlock_sowrd_physical_attack"		"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_sowrd_description"			"<h1>Sealed</h1> </h1>Will be unsealed after killing %unlock_count% enemy units. +%unlock_physical_attack% Physical Damage</h1>"
+"DOTA_Tooltip_modifier_item_unlock_sowrd"						"Sealed evil power"
+"DOTA_Tooltip_modifier_item_unlock_sowrd_description"		   "Unit killed: %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封印之杖
+"DOTA_Tooltip_ability_item_unlock_wand"							"Sealed Wand of Devil"
+"DOTA_Tooltip_ability_item_unlock_wand_magical_attack"			"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_wand_description"				"<h1>Sealed</h1>Will be unsealed after killing %unlock_count% enemy units. +增加%unlock_magical_attack% Magical Damage"
+"DOTA_Tooltip_modifier_item_unlock_wand"						"Sealed evil power"
+"DOTA_Tooltip_modifier_item_unlock_wand_description"			"Unit killed: %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 已解封的封印之杖
+"DOTA_Tooltip_ability_item_unlock_wand_1"						"Wand of Devil (R)"
+"DOTA_Tooltip_ability_item_unlock_wand_1_description"			"<h1>Unsealed</h1> Unsealed by the enemies' blood. Increases Magical damage."
+"DOTA_Tooltip_ability_item_unlock_wand_1_magical_attack"		"+$magical_attack"
+
+
+
+// 被封印的封神之刃
+"DOTA_Tooltip_ability_item_unlock_godsowrd"						"Sealed Blade of Apotheosis"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_physical_attack"		"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_description"			"<h1>Sealed</h1> </h1>Will be unsealed after killing %unlock_count% enemy units. +%physical_damage_up%%% Physical Damage</h1>"
+"DOTA_Tooltip_modifier_item_unlock_godsowrd"					"Sealed evil power"
+"DOTA_Tooltip_modifier_item_unlock_godsowrd_description"		"Unit killed: %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封神之刃
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1"					"Blade of Apotheosis"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1_physical_attack"	"+$physical_attack"
+"DOTA_Tooltip_ability_item_unlock_godsowrd_1_description"		"<h1>Unsealed</h1> +%physical_damage_up%%% Physical Damage</h1>"
+
+// 被封印的封神之杖
+"DOTA_Tooltip_ability_item_unlock_godwand"						"Sealed Wand of Apotheosis"
+"DOTA_Tooltip_ability_item_unlock_godwand_magical_attack"		"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_godwand_description"			"<h1>Sealed</h1> </h1>Will be unsealed after killing %unlock_count% enemy units. +%magical_damage_up%%% Magical Damage</h1> "
+"DOTA_Tooltip_modifier_item_unlock_godwand"						"Sealed evil power"
+"DOTA_Tooltip_modifier_item_unlock_godwand_description"		 "Unit killed: %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 封神之杖
+"DOTA_Tooltip_ability_item_unlock_godwand_1"					"Wand of Apotheosis"
+"DOTA_Tooltip_ability_item_unlock_godwand_1_magical_attack"		"+$magical_attack"
+"DOTA_Tooltip_ability_item_unlock_godwand_1_description"		"<h1>Unsealed</h1> +%magical_damage_up%%% Magical Damage</h1> "
+
+// 被封印的星戒
+"DOTA_Tooltip_ability_item_unlock_ring"							"Sealed Ring of Styx"
+"DOTA_Tooltip_ability_item_unlock_ring_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_unlock_ring_description"				"<h1>Sealed</h1>Will be unsealed after killing %unlock_count% enemy units. +%incoming_reduce%%% damage reduction, +%status_health_after% HP"
+"DOTA_Tooltip_modifier_item_unlock_ring"						"Sealed evil power"
+"DOTA_Tooltip_modifier_item_unlock_ring_description"			"Unit killed: %dMODIFIER_PROPERTY_TOOLTIP% / %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 星戒
+"DOTA_Tooltip_ability_item_unlock_ring_1"						"Ring of Styx"
+"DOTA_Tooltip_ability_item_unlock_ring_1_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_unlock_ring_1_description"			"<h1>Sealed evil power</h1>+%incoming_reduce%%% damage reduction"
+
+// 林野长弓
+"DOTA_Tooltip_ability_item_wild_bow"							"Grove Bow"
+"DOTA_Tooltip_ability_item_wild_bow_attack_range_of_range"		"+$attack_range_of_range"
+"DOTA_Tooltip_ability_item_wild_bow_description"				"<h1>Pierce</h1> Grants each attack a %chance%%% chance to deal %attack_bonus% bonus physical damage."
+"DOTA_Tooltip_modifier_item_wild_wand"				            "Grove Bow"
+"DOTA_Tooltip_modifier_item_wild_wand_description"				"Physical damage increase %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 林野法杖
+"DOTA_Tooltip_ability_item_wild_wand"							"Grove Staff"
+"DOTA_Tooltip_ability_item_wild_wand_attack_range_of_range"		"+$attack_range_of_range"
+"DOTA_Tooltip_ability_item_wild_wand_description"				"<h1>Burst</h1> Grants each attack a %chance%%% chance to deal %magical_atbonus% bonus magical damage."
+"DOTA_Tooltip_modifier_item_wild_wand"				            "Grove Staff"
+"DOTA_Tooltip_modifier_item_wild_wand_description"				"Magical damage increase %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 幽灵披风
+"DOTA_Tooltip_ability_item_inheritate_cloth"					"Nether Cloak"
+"DOTA_Tooltip_ability_item_inheritate_cloth_Description"		"<h1>Inherit</h1> Transfer the %inheritate_attribute%%% of carriers' attribute to the closest allied unit upon death."
+"DOTA_Tooltip_modifier_item_inheritate_cloth_buff"				"Nether Cloak"
+"DOTA_Tooltip_modifier_item_inheritate_cloth_buff_description"	"Inheritate follow attribute<br>+%dMODIFIER_PROPERTY_TOOLTIP% physical damage<br>+%dMODIFIER_PROPERTY_TOOLTIP% magical damage<br>+%dMODIFIER_PROPERTY_TOOLTIP% physical armor<br>+%dMODIFIER_PROPERTY_TOOLTIP% magical armor<br>+%dMODIFIER_PROPERTY_TOOLTIP% attack speed"
+
+// 专注药瓶
+"DOTA_Tooltip_ability_item_purple_medicine"						"Concentration Pills"
+"DOTA_Tooltip_ability_item_purple_medicine_attack_speed"		"+$attack_speed"
+"DOTA_Tooltip_ability_item_purple_medicine_Description"			"<h1>Concentrate</h1> Continuous increases %attack_speed_bonus% attack speed upon each successful attack. Resets by the end of the current round."
+"DOTA_Tooltip_modifier_item_purple_medicine"		            "Concentration Pills"
+"DOTA_Tooltip_modifier_item_purple_medicine_Description"			"extra attack speed %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 劣质魔豆
+"DOTA_Tooltip_ability_item_broken_bean"							"Betty Bot's Every Flavour Beans"
+"DOTA_Tooltip_ability_item_broken_bean_Description"				"<h1>One-Time Item</h1> Increases all the attributes by %bonus_pct%%% in the current round."
+
+// 神奇铠甲
+"DOTA_Tooltip_ability_item_magic_armor"							"Armor of Wonder"
+"DOTA_Tooltip_ability_item_magic_armor_Description"				"<h1>One-Time Item</h1> Increases Physical and Magic armor by %armor_increase%%% in the current round."
+
+// 罪恶药瓶
+"DOTA_Tooltip_ability_item_evil_medicine"						"Potion of Sin"
+"DOTA_Tooltip_ability_item_evil_medicine_Description"			"<h1>One-Time Item</h1> Reduces the damage taken by %incoming_reduce%%% in the current round."
+
+// 地灵剑气(法)
+"DOTA_Tooltip_ability_item_ground_sick_sword"					"Kurikara (Magic)"
+"DOTA_Tooltip_ability_item_ground_sick_sword_Description"		"<h1>One-Time Item</h1> Increases Magic Damage by %attacktemp% in the current round."
+
+// 地灵剑气(法)
+"DOTA_Tooltip_ability_item_ground_sick_sword1"					"Kurikara (Physic)"
+"DOTA_Tooltip_ability_item_ground_sick_sword1_Description"		"<h1>One-Time Item</h1> Increases Physical Damage by %attacktemp% in the current round."
+
+//双刃剑
+"DOTA_Tooltip_ability_item_doubleside_sword_1"					"Double Edge"
+"DOTA_Tooltip_ability_item_doubleside_sword_1_attack_speed"	    "<font color='#e03e2e'>Reduces attack speed</font>"
+"DOTA_Tooltip_ability_item_doubleside_sword_1_description"		"<h1>Pierce</h1> Grants each attack a %crit_chance%%% chance to deal %crit_damage_pct%%% critical damage."
+
+//急速宝石
+ "DOTA_Tooltip_ability_item_nohesitate_stone"					            "Gem of Rapid"
+ "DOTA_Tooltip_ability_item_nohesitate_stone_Description"					"<h1>CD Reduction</h1>Reduces the cooldown time of all spells by %cooldown_reduce% seconds."
+ "DOTA_Tooltip_ability_item_nohesitate_stone_attack_speed_percentage"		"%+$attack_speed_percentage"
+
+
+
+//耐力腰带
+"DOTA_Tooltip_ability_item_endurance_belt"					"Belt of Endurance"
+"DOTA_Tooltip_ability_item_endurance_belt_description"		""
+"DOTA_Tooltip_ability_item_endurance_belt_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_endurance_belt_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_endurance_belt_magical_armor"					"+$magical_armor"
+
+//魔法师戒指
+"DOTA_Tooltip_ability_item_magician_ring"					            "Magi's Möbius Ring"
+"DOTA_Tooltip_ability_item_magician_ring_description"		            "Symbol of the strongest magi, which is longed for by the whole magic world."
+"DOTA_Tooltip_ability_item_magician_ring_magical_attack"		        "+$magical_attack"
+"DOTA_Tooltip_ability_item_magician_ring_status_mana"					"+$status_mana"
+"DOTA_Tooltip_ability_item_magician_ring_mana_regen"					"+$mana_regen"
+
+//嗜血面具
+"DOTA_Tooltip_ability_item_blood_mask"					"Bloodthirsty Veil"
+"DOTA_Tooltip_ability_item_blood_mask_description"		""
+"DOTA_Tooltip_ability_item_blood_mask_attack_speed"					"+$attack_speed"
+"DOTA_Tooltip_ability_item_blood_mask_health_regen_per"					"+$health_regen_per"
+
+//全能指环
+"DOTA_Tooltip_ability_item_perfect_ring"					    "Omni Knuckles"
+"DOTA_Tooltip_ability_item_perfect_ring_description"		""
+"DOTA_Tooltip_ability_item_perfect_ring_physical_attack"				"+$physical_attack"
+"DOTA_Tooltip_ability_item_perfect_ring_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_perfect_ring_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_perfect_ring_magical_armor"					"+$magical_armor"
+
+//英雄长剑
+"DOTA_Tooltip_ability_item_hero_sword"					"Spatha of Hercules"
+"DOTA_Tooltip_ability_item_hero_sword_physical_attack"				"+$physical_attack"
+"DOTA_Tooltip_ability_item_hero_sword_elit_damage_bonus"					"%+$elit_damage_bonus"
+
+//英雄法杖
+"DOTA_Tooltip_ability_item_hero_staff"					"Wand of Merlin"
+"DOTA_Tooltip_ability_item_hero_staff_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_hero_staff_elit_damage_bonus"					"%+$elit_damage_bonus"
+
+
+
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  紫装
+
+// 无知小帽
+"DOTA_Tooltip_ability_item_ignorance_hat"								"Witless Shako"
+"DOTA_Tooltip_ability_item_ignorance_hat_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_ignorance_hat_Description"					"<h1>Witless</h1> Gains %health_regen_everytimes% bonus health regen upon being attacked. Resets by the end of the current round."
+
+//嗜血獠牙
+ "DOTA_Tooltip_ability_item_vampire_fang_1"								"Vampire Fangs"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_attack_helf"					"%+$attack_helf"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_physical_attack"				"+$physical_attack"
+ "DOTA_Tooltip_ability_item_vampire_fang_1_Lore"						"Lost by the most lovely Vampire: Emiel Regis Rohellec Terzieff-Godefroy, who is better known simply as Regis."
+
+//振奋宝石
+ "DOTA_Tooltip_ability_item_encouraging_gem_1"							"Encourage Stone"
+ "DOTA_Tooltip_ability_item_encouraging_gem_1_description"				"<h1>Encourage</h1> Gains %attack_speed_bonus% bonus attack speed upon attacking. Stacks up to %stack_account% and lasts %time_duration% seconds."
+ "DOTA_Tooltip_ability_item_encouraging_gem_1_attack_speed"				"+$attack_speed"
+ "DOTA_Tooltip_modifier_attack_speed_bonus_buff1"						"Bonus Attack Speed"
+ "DOTA_Tooltip_modifier_attack_speed_bonus_buff1_Description" 			"Attack Speed increased by %dMODIFIER_PROPERTY_TOOLTIP2%."
+
+//专注之心
+ "DOTA_Tooltip_ability_item_heart_of_focus_1"							 "Core of Fervor"
+ "DOTA_Tooltip_ability_item_heart_of_focus_1_Description"				 "<h1>Focus</h1> With each continuous blow on the same target, gains %attack_speed_bonus% attack speed upon each attack. Stacks to 120 bonus attack speed.\n<h1>Gaze</h1> When Focus stacks reach 6, attacks on the same target will have a %chance%%% chance to stun it for %stun_time% seconds."
+ "DOTA_Tooltip_modifier_item_heart_of_focus_1"							 "Core of Fervor"
+ "DOTA_Tooltip_modifier_item_heart_of_focus_1_Description" 				 "+%dMODIFIER_PROPERTY_TOOLTIP2% attack speed on the same target"
+
+
+//闪避便鞋
+ "DOTA_Tooltip_ability_item_guard_shoe_1"								"Loafer of Evasion"
+ "DOTA_Tooltip_ability_item_guard_shoe_1_description"					"<h1>Evasion</h1> +%chance%%% evasion to all types of damage"
+ "DOTA_Tooltip_ability_item_guard_shoe_1_movement_speed"				"+$movement_speed"
+ "DOTA_Tooltip_modifier_item_guard_shoe_1"								"Loafer of Evasion"
+ "DOTA_Tooltip_modifier_item_guard_shoe_1_Description"					"movespeed increase %dMODIFIER_PROPERTY_TOOLTIP%<br>%dMODIFIER_PROPERTY_TOOLTIP2%%% chances miss all damage"
+
+//灼烧斗篷
+ "DOTA_Tooltip_ability_item_dragon_scale_1"								"Scorching Cloak"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_status_health"				"+$status_health"
+ "DOTA_Tooltip_ability_item_dragon_scale_1_description"					"<h1>Scorch</h1> Scorch the land aournd, dealing magic damage based on the carrier's Magic armor to enemies within a radius of %range% units."
+
+ //浩劫巨锤
+"DOTA_Tooltip_ability_item_craggy_coat_1"								"Mace of Havoc"
+"DOTA_Tooltip_ability_item_craggy_coat_1_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_craggy_coat_1_description"					"<h1>Havoc</h1>Gains a %chance%%% chance to knock the enemies back upon taking damage, dealing magic damage to affected units as %health_per%%% of the carrier's Max HP.\n<h1>Heavy Armor</h1>Every %armor_count% Armor will provide %health_add% Max HP additionally."
+"DOTA_Tooltip_modifier_item_craggy_coat_1"					            "Mace of Havoc"
+"DOTA_Tooltip_modifier_item_craggy_coat_1_description"					"Health increase %dMODIFIER_PROPERTY_TOOLTIP%"
+
+
+//水晶剑
+ "DOTA_Tooltip_ability_item_crystal_sword_1"							"Crystalys"
+ "DOTA_Tooltip_ability_item_crystal_sword_1_physical_attack"			"+$physical_attack"
+ "DOTA_Tooltip_ability_item_crystal_sword_1_description"				"<h1>Crit Strike</h1> Grants each attack a %crit_chance%%% chance to deal %crit_damage_pct%%% damage."
+
+//狂战斧
+ "DOTA_Tooltip_ability_item_bfury_1_1"									"Battle Fury"
+ "DOTA_Tooltip_ability_item_bfury_1_1_physical_attack"					"+$physical_attack"
+ "DOTA_Tooltip_ability_item_bfury_1_1_description"						"<h1>Cleave</h1> Melee only. Deals %cleave_damage%%% of attack damage to enemy units around the main target."
+
+//翡翠吊坠
+ "DOTA_Tooltip_ability_item_jade_pendant"								"Jade Pendant"
+ "DOTA_Tooltip_ability_item_jade_pendant_health_regen"					"+$health_regen"
+ "DOTA_Tooltip_ability_item_jade_pendant_description"					"<h1>Survivor's Endurance</h1> At the end of each round, if the carrier survives and has no less than %health_restriction%%% health remaining, gains %health_everystack% Max HP."
+ "DOTA_Tooltip_modifier_item_jade_pendant"								"Jade Pendant"
+ "DOTA_Tooltip_modifier_item_jade_pendant_description"					"+%dMODIFIER_PROPERTY_TOOLTIP% Max HP"
+
+//夺命法杖
+ "DOTA_Tooltip_ability_item_fatal_magicalwand"							"Nether Wand"
+ "DOTA_Tooltip_ability_item_fatal_magicalwand_magical_attack"			"+$magical_attack"
+ "DOTA_Tooltip_ability_item_fatal_magicalwand_description"			    "<h1>Nether Blast</h1> Cast an exploding pulse to a random enemy unit whenever the carrier casts a spell, damaging the target as %damage%%% of carrier's Magic Damage\n<h1>Nether Regen</h1> Restores %mana_recover% mana upon killing an enemy unit."
+
+// 幽灵披巾
+"DOTA_Tooltip_ability_item_ghost_shawl"									"Ghost Shawl"
+"DOTA_Tooltip_ability_item_ghost_shawl_magical_attack"			        "+$magical_attack"
+"DOTA_Tooltip_ability_item_ghost_shawl_description"						"<h1>Ghost Form</h1>Enters ghost form for %duration% seconds upon taking physical damage, gaining %mana_regen% mana regen and reducing all the cooldowns by %cooldown_reduction%%%."
+// "DOTA_Tooltip_ability_item_ghost_shawl_Lore"							"The shawl infused with the magic of dwarfs can help the magician avoid danger."
+
+// 背叛之书
+"DOTA_Tooltip_ability_item_book_of_betrayal"							"Tome of Persuasion"
+"DOTA_Tooltip_ability_item_book_of_betrayal_magical_attack"			    "+$magical_attack"
+"DOTA_Tooltip_ability_item_book_of_betrayal_description"				"<h1>Persuade</h1> Grants the carrier overwhelming persuasion skills. Attacking an enemy unit with no more than %trigger_pct%%% health will persuade it to surrender and serve for your army. The carrier can persuade up to %max_count% units and grants them bonus damage as %bonus_damage_pct%%% of his attack damage. Cannot affect Elite, Boxhound, and Boss units."
+// "DOTA_Tooltip_ability_item_book_of_betrayal_Lore"						"Better the devil you know than the devil you don't."
+"DOTA_Tooltip_modifier_item_book_of_betrayal_buff"						"Tome of Persuasion"
+"DOTA_Tooltip_modifier_item_book_of_betrayal_buff_description"		  "Surrendered."
+
+//恐惧面具
+ "DOTA_Tooltip_ability_item_mask_of_fear_1"							    "Mask of Terror"
+ "DOTA_Tooltip_ability_item_mask_of_fear_1_attack_speed_pct_bonus"	    "+$attack_speed"
+ "DOTA_Tooltip_ability_item_mask_of_fear_1_description"					"<h1>Terrorize</h1> Grants each attack a %chance%%% chance to terrorize the target unit for %time_of_fear% seconds. Cant affect Boxhound and Boss units."
+//  "DOTA_Tooltip_ability_item_mask_of_fear_1_Lore"						"U Better Fear Me."
+
+//弯月刀
+"DOTA_Tooltip_ability_item_crescent_sword_1"							"Crescent Blade"
+"DOTA_Tooltip_ability_item_crescent_sword_1_attack_speed"				"+$attack_speed"
+"DOTA_Tooltip_ability_item_crescent_sword_1_crit_chance"				"%+Crit Chance"
+"DOTA_Tooltip_ability_item_crescent_sword_1_crit_damage_pct"			"%+Crit Damage"
+"DOTA_Tooltip_ability_item_crescent_sword_1_description"				"<h1>Force of Crescent</h1> Becomes invisible and invincible to enemies for %invi_duration% seconds and knocks its target back for %push_distance% range when the carrier procs Critical damage."
+// "DOTA_Tooltip_ability_item_crescent_sword_1_Lore"						"The daylight sank deeper and deeper into the darkness, and the widowed land, whose harvest had been reaped, lay silent. - Rabindranath Tagore"
+
+//冰刀
+"DOTA_Tooltip_ability_item_ice_sword_1"								"Frost Blade"
+"DOTA_Tooltip_ability_item_ice_sword_1_magical_attack_pct"			"%+$magical_attack_pct"
+"DOTA_Tooltip_ability_item_ice_sword_1_attack_speed_percentage"		"%+$attack_speed_percentage"
+"DOTA_Tooltip_ability_item_ice_sword_1_description"					"<h1>Frost Strike</h1>Attacks lower enemy movement speed by %move_speed_punish_pct%%%, and attack speed by %attack_speed_punish_pct%%%."
+"DOTA_Tooltip_modifier_item_ice_sword_buff"							"Frost Blade"
+"DOTA_Tooltip_modifier_item_ice_sword_buff_description"				"Movement speed and attack speed slowed."
+//  "DOTA_Tooltip_ability_item_ice_sword_1_Lore"							"The killerpilze hiding under the snow."
+
+// 暗杀名单
+"DOTA_Tooltip_ability_item_list_of_assassins"							"Assassination List"
+"DOTA_Tooltip_ability_item_list_of_assassins_physical_attack"			"+$physical_attack"
+"DOTA_Tooltip_ability_item_list_of_assassins_description"		        "<h1>Assassin</h1> Throws %bonus_count% daggers to the enemy unit with the lowest health, dealing damage as %physical2physical%%% of the carrier's attack damage."
+
+//隐身斗篷
+"DOTA_Tooltip_ability_item_invisible_cloak_1"							"Glimmer Cape"
+"DOTA_Tooltip_ability_item_invisible_cloak_1_magical_attack"			"+Magical Damage"
+"DOTA_Tooltip_ability_item_invisible_cloak_1_description"				"<h1>Glimmer</h1> At the start of each round, grants invisibility and invincibility for good unless all the allied units are slaughtered."
+
+// 图坦卡蒙面具
+"DOTA_Tooltip_ability_item_tutankhamun_mask"							"Mask of Tutankhamun"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_magical_armor"				"+$magical_armor"
+"DOTA_Tooltip_ability_item_tutankhamun_mask_description"				"<h1>Curse of the Pharaohs</h1> Curse all the enemy units that ever dealt damage to the carrier. Whenever the carrier casts a spell, he deals physical damage as %physical2physical%%% of his attack damage to all the units under his curse."
+// "DOTA_Tooltip_ability_item_tutankhamun_mask_Lore"						"Whoever wakened the evil Pharaoh brought a devastating disaster to the world."
+
+//猛兽犄角
+ "DOTA_Tooltip_ability_item_beast_horns_1"						        "Beast Horn"
+ "DOTA_Tooltip_ability_item_beast_horns_1_description"			        "<h1>Desperate</h1> Goes into a frenzy when the carrier's health reaches %health_pct%%%, ignoring all the incoming physical damage for %time_duration% seconds."
+//  "DOTA_Tooltip_ability_item_beast_horns_1_Lore"					        "When the luster of the gems on the ring dimmed, Belle finally realized her love for beasts."
+ "DOTA_Tooltip_ability_item_beast_horns_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_beast_horns_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_modifier_beast_horns_magical_immune"						"Desperate"
+ "DOTA_Tooltip_modifier_beast_horns_magical_immune_Description"		    "Invincible to physical damage."
+
+//玲珑心
+"DOTA_Tooltip_ability_item_octarine_core_1"								"Octarine Core"
+"DOTA_Tooltip_ability_item_octarine_core_1_description"					"<h1>CD Reduction</h1>Reduces the cooldown time of all spells and items by %cooldown_reduction%%%."
+// "DOTA_Tooltip_ability_item_octarine_core_1_Lore"						"All good, all good."
+"DOTA_Tooltip_ability_item_octarine_core_1_mana_regen_percentage"		"%+$mana_regen"
+"DOTA_Tooltip_ability_item_octarine_core_1_status_mana"					"+$status_mana"
+
+//智慧战旗
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1"						"War Flag of Wisdom"
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1_mana_regen"			  "+$mana_regen"
+ "DOTA_Tooltip_ability_item_banner_of_warrior_1_description"			"<h1>'Calculated'</h1> When there is no allied units within a radius of %range% units, the carrier gains %magical_attack_bonus% bonus magical damage per second. Stacks up to %stack_count% layers."
+//  "DOTA_Tooltip_ability_item_banner_of_warrior_1_Lore"					"He is the best flanker on the battlefield, apart from the fact that he is hated by both allies and enemies."
+ "DOTA_Tooltip_modifier_item_banner_of_warrior_1"						"War Flag of Wisdom"
+ "DOTA_Tooltip_modifier_item_banner_of_warrior_1_Description" 			"+%dMODIFIER_PROPERTY_TOOLTIP2% Magical Damage"
+
+
+//雷霆锤
+ "DOTA_Tooltip_ability_item_thunder_hammer_1"							"Mjollnir"
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_magical_damage"			"+Magical Damage"
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_description"				"<h1>Enchant</h1> Grants each attack a %chance%%% chance to release a bolt of electricity that leaps between nearby targets, dealing magical damage as %magic_damage_extra% of attack damage."
+//  "DOTA_Tooltip_ability_item_thunder_hammer_1_Lore"						"Thor's magical hammer, made for him by the dwarves Brok and Eitri."
+ "DOTA_Tooltip_ability_item_thunder_hammer_1_magical_attack"			"+$magical_attack"
+
+// 玛雅神盾
+"DOTA_Tooltip_ability_item_maya_shield_1"								"Shield of Maya"
+"DOTA_Tooltip_ability_item_maya_shield_1_health_regen"					"+$health_regen"
+"DOTA_Tooltip_ability_item_maya_shield_1_block"					        "+Damage Block"
+"DOTA_Tooltip_ability_item_maya_shield_1_description"					"<h1>Mystery of Maya</h1>Automatically activate a Magic shield every %interval% seconds. The magic shield can absorb all the incoming damage for %duration% seconds."
+"DOTA_Tooltip_modifier_item_maya_shield_1_buff"					"Shield of Maya"
+"DOTA_Tooltip_modifier_item_maya_shield_1_buff_description"					"Avoid all damage"
+// "DOTA_Tooltip_ability_item_maya_shield_1_Lore"							"You fear me? So you should. All you who are vile. Would you like to know how you will die? The sacred time is near."
+
+//异次元之壁
+ "DOTA_Tooltip_ability_item_heterodimensionality_1"						"Barrier of Demensions"
+ "DOTA_Tooltip_ability_item_heterodimensionality_1_mana_regen"			"+$mana_regen"
+ "DOTA_Tooltip_ability_item_heterodimensionality_1_description"			"<h1>Collapse</h1>Whenever the carrier casts a spell, enemy units within %range% units radis will take magical damage as %health_reduce_pct%%% of its health.\n<h1>Dimension Traveler</h1> Whenever the carrier casts a spell, heals him by %health_recover_pct%%% of his Max HP if hes current health is lower than %health_self_pct%%%."
+ "DOTA_Tooltip_modifier_item_heterodimensionality_1"					"Dimension Traveler"
+ "DOTA_Tooltip_modifier_item_heterodimensionality_1_Description"		"Will be healed by %dMODIFIER_PROPERTY_TOOLTIP2%%% of Max HP."
+ "DOTA_Tooltip_modifier_heterodimensionality_buff"					    "Barrier of Demensions"
+ "DOTA_Tooltip_modifier_heterodimensionality_buff_Description"		    "take damage by caster magic"
+
+
+//圣灯
+"DOTA_Tooltip_ability_item_panic_button_1"								"Sacred Lamp"
+"DOTA_Tooltip_ability_item_panic_button_1_description"					"<h1>Sacred Radiance</h1> Increases the magical damage taken by nearby enemies by %incoming_per%%%."
+"DOTA_Tooltip_ability_item_panic_button_1_Lore"							"Equip by dragging the item to a hero. Click the icon to open the shop."
+"DOTA_Tooltip_ability_item_panic_button_1_physical_armor_pct"			"%+$physical_armor_pct"
+"DOTA_Tooltip_ability_item_panic_button_1_magical_armor_pct"			"%+$magical_armor_pct"
+"DOTA_Tooltip_modifier_item_panic_button_1"							 	"Sacred Radiance"
+"DOTA_Tooltip_modifier_item_panic_button_1_Description" 				"Reduces the damage taken by nearby allies by %dMODIFIER_PROPERTY_TOOLTIP%%%."
+"DOTA_Tooltip_modifier_item_panic_button_debuff"						"Sacred Radiance"
+"DOTA_Tooltip_modifier_item_panic_button_debuff_Description" 			"Damage taken is reduced by %dMODIFIER_PROPERTY_TOOLTIP%%%."
+
+
+//圣剑
+"DOTA_Tooltip_ability_item_rapier_1"									"Divine Rapier"
+"DOTA_Tooltip_ability_item_rapier_1_description"						"<h1>Divine Radiance</h1> Increases the Physical Damage taken by enemies within %range% units radius by %damage_per%%%."
+"DOTA_Tooltip_ability_item_rapier_1_Lore"								"So powerful, it cannot have a single owner."
+"DOTA_Tooltip_ability_item_rapier_1_physical_attack_pct"				"%+$physical_attack_pct"
+"DOTA_Tooltip_ability_item_rapier_1_magical_attack_pct"					"%+$magical_attack_pct"
+"DOTA_Tooltip_modifier_item_rapier_1"							 		"Divine Radiance"
+"DOTA_Tooltip_modifier_item_rapier_1_Description"					   "Increases the damage taken by nearby enemies by %dMODIFIER_PROPERTY_TOOLTIP%%%."
+"DOTA_Tooltip_modifier_item_rapier_debuff"								"Divine Radiance"
+"DOTA_Tooltip_modifier_item_rapier_debuff_Description" 					"Damage taken is increased by %dMODIFIER_PROPERTY_TOOLTIP%%%."
+
+// ----------------------------------------------------
+// ----------------------------------------------------
+//  橙色
+
+// 灭世枪
+"DOTA_Tooltip_ability_item_gante_sword"									"Gungnir"
+"DOTA_Tooltip_ability_item_gante_sword_physical_attack"				 "+$physical_attack"
+"DOTA_Tooltip_ability_item_gante_sword_description"						"<h1>Gungre</h1>While attacking, the carrier has a %chance%%% chance to enter the Gungnir's zone for %duration% seconds. Increases the carrier's physical damage by %attack_bonus_pct%%%, attack speed by %attack_speed_bonus%%%\n<h1>Power of Odin</h1>Each attack will reduce his targets' armor by %armor_reduce_pct%%% (0.5% of Boss Units)."
+"DOTA_Tooltip_modifier_item_gante_sword_buff"						    "Gungnir"
+"DOTA_Tooltip_modifier_item_gante_sword_buff_Description"				"Increase %dMODIFIER_PROPERTY_TOOLTIP%%% attack and %dMODIFIER_PROPERTY_TOOLTIP%%% speed"
+"DOTA_Tooltip_modifier_item_gante_sword_armor_reduce_buff"				"Gungnir"
+"DOTA_Tooltip_modifier_item_gante_sword_armor_reduce_buff_Description"	"Physical armor decrease %dMODIFIER_PROPERTY_TOOLTIP%"
+
+// 勇气勋章
+"DOTA_Tooltip_ability_item_courage_medallion"							"Medallion of Courage"
+"DOTA_Tooltip_ability_item_courage_medallion_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_courage_medallion_status_health"			    "+$status_health"
+"DOTA_Tooltip_ability_item_courage_medallion_description"				"<h1>Valorant</h1> Will be activated by the start of each round, boosting the carrier's movement speed by %movespeed%, Physical Damage by %attack_pct%%% and Armor by %armor_pct%%%. The power brought by courage decreases over time. Lasts %duration% seconds.\n<h1>Bloody Courage</h1> Whenever the carrier kills an enemy or witness a death of his ally, reset Valorant."
+"DOTA_Tooltip_modifier_item_courage_medallion_buff"						"Medallion of Courage"
+"DOTA_Tooltip_modifier_item_courage_medallion_buff_Description"			"increase %dMODIFIER_PROPERTY_TOOLTIP% movespeed <br>increase %dMODIFIER_PROPERTY_TOOLTIP%%% physical attack<br>increase %dMODIFIER_PROPERTY_TOOLTIP%%% physical armor"
+
+// 圣法书
+"DOTA_Tooltip_ability_item_famous_wand"									"Code of Hammurabi"
+"DOTA_Tooltip_ability_item_famous_wand_magical_attack"                  "+$magical_attack"
+"DOTA_Tooltip_ability_item_famous_wand_description"						"<h1>Unbreakable Code</h1> +%magical_outgoing%%% Magical Damage\n<h1>Spell Lifesteal</h1>+%magical_helf%%%Spell Lifesteal"
+
+// 米斯特汀
+"DOTA_Tooltip_ability_item_mystletainn"									"Mystletainn"
+"DOTA_Tooltip_ability_item_mystletainn_description"						"<h1>Mistletoe</h1>Must be soaked by blood. The carrier trades %health_absorb%%% health for %attack_per_health% Physical Damage per second. Lasts for %duration% seconds.\n<h1>Power of Þráinn</h1>After draing the carrier's health for %critical_per_attack% seconds, his next attack will deal %critical_mult% times damage."
+"DOTA_Tooltip_ability_item_mystletainn_physical_attack_pct"		    	"%+$physical_attack_pct"
+//"DOTA_Tooltip_ability_item_mystletainn_attack_helf"		    	        "%+$attack_helf"
+"DOTA_Tooltip_modifier_item_mystletainn"							    "Mystletainn"
+"DOTA_Tooltip_modifier_item_mystletainn_description"				    "Increase %dMODIFIER_PROPERTY_TOOLTIP% attack every seconds"
+"DOTA_Tooltip_modifier_item_mystletainn_buff"							"Mystletainn"
+"DOTA_Tooltip_modifier_item_mystletainn_buff_description"				"Gradually lose health but gains power."
+
+//漫射宝石
+ "DOTA_Tooltip_ability_item_divergent_gem_1"							"Gem Prism"
+ "DOTA_Tooltip_ability_item_divergent_gem_1_status_health"				"+$status_health"
+ "DOTA_Tooltip_ability_item_divergent_gem_1_description"				"<h1>Magic Immune</h1> Grants Spell Immunity, taking %physical_damage_punishment_pct%%% bonus Physical Damage\n<h1>Gem Splendor</h1> Returns %magical_rebound_pct%%% of Physical Damage taken back to enemies within %range% units radius."
+//  "DOTA_Tooltip_ability_item_divergent_gem_1_Lore"						"Even the slightest flaw in the components of the Gem Prism can result in the death of its user."
+ "DOTA_Tooltip_modifier_item_divergent_gem_1"							"Gem Splendor"
+ "DOTA_Tooltip_modifier_item_divergent_gem_1_Description" 				"Returns %dMODIFIER_PROPERTY_TOOLTIP2%%% of Physical Damage taken back to nearby %dMODIFIER_PROPERTY_TOOLTIP% enemies."
+
+//幻影斧
+ "DOTA_Tooltip_ability_item_mantas_1"									"Manta Style"
+ "DOTA_Tooltip_ability_item_mantas_1_physical_attack"                   "+$physical_attack"
+ "DOTA_Tooltip_ability_item_mantas_1_magical_attack"                    "+$magical_attack"
+ "DOTA_Tooltip_ability_item_mantas_1_description"						"<h1>Mirror Image</h1> Creates %illusion_count% images of the carrier. The images inherite %attribute_have_pct%%% of his attributes and last for %time_duration% seconds."
+ "DOTA_Tooltip_ability_item_mantas_1_Lore"							    "An axe made of reflective materials that causes confusion amongst enemy ranks."
+
+// 撒旦之邪力
+"DOTA_Tooltip_ability_item_satan_power"									"Satanic"
+"DOTA_Tooltip_ability_item_satan_power_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_satan_power_description"						"<h1>Unholy Rage</h1> Increases the carrier's damage randomely that up to %max_damage%%%. Minimum bonus damage is %min_damage%%%.\n<h1>Satan's Dominance</h1>Absorb attack from allies %absorb_pct%%%"
+"DOTA_Tooltip_modifier_item_satan_power_debuff"                         "Satanic"
+"DOTA_Tooltip_modifier_item_satan_power_debuff_description"             "Beging controled by Satanic, every lose strength will lose 1% damage"
+"DOTA_Tooltip_modifier_item_satan_power"								"Satanic"
+"DOTA_Tooltip_modifier_item_satan_power_description"					"Satanic, 1 strength provide 1% damage"
+"DOTA_Tooltip_modifier_item_satan_power_buff"							"Satanic Power"
+"DOTA_Tooltip_modifier_item_satan_power_buff_description"				"Use Satanic power suck strength from allies, every lost strength provide 1% attack which same as owners damage type"
+
+//阿努比斯的使者
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1"						"Message from Anubis"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_physical_attack"       "+$physical_attack"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_magical_attack"        "+$magical_attack"
+"DOTA_Tooltip_ability_item_messenger_of_anubis_1_description"			"<h1>Soul Usher</h1> Whenever the carrier is killed, it ushers the his soul into the afterlife. The embalmed soul will split into %illusion_count% images that each inherits %illusion_outgoing_damage%%% of his lifetime attributes."
+//  "DOTA_Tooltip_ability_item_messenger_of_anubis_1_Lore"				"Out of chaos came the light. Out of the will came life."
+
+
+//弩炮
+"DOTA_Tooltip_ability_item_ballista_1"									"Ballista"
+"DOTA_Tooltip_ability_item_ballista_1_description"						"<h1>Multishot</h1>After %attack_count% attacks, the carrier releases a wave of shots to all the enemies within %aoe_range% units radius."
+// "DOTA_Tooltip_ability_item_ballista_1_Lore"							"The higher you stand, the farther your arrows reach."
+"DOTA_Tooltip_ability_item_ballista_1_attack_speed_percentage"			"%+$attack_speed"
+"DOTA_Tooltip_ability_item_ballista_1_attack_range_of_range"			"+$attack_range_of_range"
+
+ // 幻境魔方
+"DOTA_Tooltip_ability_item_magic_cube"									"Illusion Rubik"
+"DOTA_Tooltip_ability_item_magic_cube_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_magic_cube_description"						"<h1>Illusion Rubik</h1> Whenever the carrier casts a spell, summons %cube_count% Rubiks that smashes into nearby enemies, dealing %magical2magical%%% Magical Damage and stunning for %stun_duration% seconds."
+// "DOTA_Tooltip_ability_item_magic_cube_Lore"							"大多数法师认为魔方谜题仅仅是个宝贝"
+
+ //双击法杖
+"DOTA_Tooltip_ability_item_doubleclick_wand_1"							"Cane Gun"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_attack_speed"				"+$attack_speed"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_magical_attack"			"+$magical_attack"
+"DOTA_Tooltip_ability_item_doubleclick_wand_1_description"				"<h1>Multicast</h1> Grants the carrier the ability to shot a bullet with his attacks in %chance%%% chance, dealing Magical Damage as %damage_factor%%% of his Magical Damage and stunning the target for %stun_time% seconds."
+// "DOTA_Tooltip_ability_item_doubleclick_wand_1_Lore"					"这里是导弹工厂~"
+
+// 朗基努斯之枪
+"DOTA_Tooltip_ability_item_longinus"									"Spear of Longinus"
+"DOTA_Tooltip_ability_item_longinus_magical_attack"                     "+$magical_attack"
+"DOTA_Tooltip_ability_item_longinus_description"						"<h1>Spear of Purity</h1> After %attack_count% attacks, the next attack deals bonus Pure damage as %magical2magical%%% of the carrier's Magical Damage.\n<h1>Absolute Terror Field</h1>Expands a shield that absorbs damage as %shield_health%%% of carrier's Magical Damage every %interval% seconds."
+// "DOTA_Tooltip_ability_item_longinus_Lore"							"穿透神圣不可侵犯的结界"
+
+//流行蝴蝶剑
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1"							"Gram"
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+ "DOTA_Tooltip_ability_item_metor_butterfly_sword_1_description"				"<h1>Star fall</h1> Grants each attack a %chance%%% chance cast %metor_count% metors, damage was based on %metor_damage_bonus% personal attribute "
+
+
+//时间沙漏
+ "DOTA_Tooltip_ability_item_time_hourglass_1"							"Hourglass"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_physical_armor"			"+$physical_armor"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_mana_regen"				"+$mana_regen"
+ "DOTA_Tooltip_ability_item_time_hourglass_1_description"				"<h1>Time Lapse</h1> Turns the Hourglass once a while. The carrier wraps backward to whatever position they was in %back_time% seconds earlier, regaining the HP, mana, CD status from that time.\n<h1>Time Dilation</h1> Whenever the carrier turns the Hourglass, locks the enemies within %radius% units radius around them for %duration% seconds, extending their cooldowns for %cooldown_add% seconds."
+ "DOTA_Tooltip_ability_item_time_hourglass_1_Lore"						"For those facing off against Magic Hourglass, each moment seems to stretch into eternity."
+ "DOTA_Tooltip_modifier_item_time_hourglass_1"							"Hourglass"
+ "DOTA_Tooltip_modifier_item_time_hourglass_1_description"				"Turning."
+ "DOTA_Tooltip_modifier_item_time_hourglass_buff"						"Invisible"
+ "DOTA_Tooltip_modifier_item_time_hourglass_buff_description"			"Invisible."
+
+// 忍者用具
+"DOTA_Tooltip_ability_item_ninja_tool"									"Bukijutsu"
+"DOTA_Tooltip_ability_item_ninja_tool_physical_attack"					"+$physical_attack"
+"DOTA_Tooltip_ability_item_ninja_tool_physical_armor"					"+$physical_armor"
+"DOTA_Tooltip_ability_item_ninja_tool_magical_armor"					"+$magical_armor"
+"DOTA_Tooltip_ability_item_ninja_tool_description"						"<h1>Kawarimi no Jutsu</h1> Kawarimi no Jutsu is a basic Ninjutsu technique. When in danger the carrier will quickly substitute themself with a dummy target and blicks to a random location nearby. The dummy target inherits the aggro and lasts for %duration% seconds. \n<h1>Shuriken</h1> Hurls %dagger_count% Shuriken to enemies around, each dealing Physical Damage as %physical2physical%%% of the carrier's Physical Damage."
+
+// 最终棱镜
+"DOTA_Tooltip_ability_item_last_prism"									"Eternal Prism"
+"DOTA_Tooltip_ability_item_last_prism_magical_attack"					"+$magical_attack"
+"DOTA_Tooltip_ability_item_last_prism_description"						"<h1>Focus</h1>Summons an Eternal Prism that floats in the air. The energy of spells casted by any units around will be transformed into Magical Damage as %magical_factor%%% of the carrier's Magical to a random enemy unit.\n<h1>Halo Wave</h1>After %active_count% casts of Focus, the remaining energy in the Prism are released at once, dealing %active_magical_factor%%% Magical Damage per second, and reducing affected units' %magical_armor_reduce% magic armor. Lasts for %duration% seconds."
+"DOTA_Tooltip_ability_item_last_prism_mana_regen"						"+$mana_regen"
+
+// 贤哲密契
+"DOTA_Tooltip_ability_item_sage_contract"								"Contract of Sage"
+"DOTA_Tooltip_ability_item_sage_contract_physical_armor"				"+$physical_armor"
+"DOTA_Tooltip_ability_item_sage_contract_magical_armor"					"+$magical_armor"
+"DOTA_Tooltip_ability_item_sage_contract_status_health"					"+$status_health"
+"DOTA_Tooltip_ability_item_sage_contract_health_regen"					"+$health_regen"
+"DOTA_Tooltip_ability_item_sage_contract_mana_regen"					"+$mana_regen"
+"DOTA_Tooltip_ability_item_sage_contract_description"					"<h1>Contract of Sage</h1>Signs a contract with the closest allied unit, inheriting %attribute_pct%%% of his ally's attributes and sharing the healing received.\n<h1>Soulbind</h1>Souls of the units who signed the contract are bound together, making them unkillable unless both's health reaches 0."
+
+// 赤红利刃
+"DOTA_Tooltip_ability_item_redsword"									 "Akai Blade"
+"DOTA_Tooltip_ability_item_redsword_physical_attack"					 "+$physical_attack"
+"DOTA_Tooltip_ability_item_redsword_attack_helf"						 "%+$attack_helf"
+
+
+//日月星辉剑
+"DOTA_Tooltip_ability_item_sunshine_sword_1"							"Excalibur"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_physical_attack"	        "+$physical_attack"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_attack_speed_percentage"	"%+$attack_speed_percentage"
+"DOTA_Tooltip_ability_item_sunshine_sword_1_description"				"<h1>Excalibur's Order</h1>Grants each attack a %chance%%% chance to unleash a wave of energy, dealing Physical damage as %damage_factor%%% of the carrier's attack damage. Enemies hitten by Excalibur will be disarmed for %disarm_duration% seconds."
+"DOTA_Tooltip_ability_item_sunshine_sword_1_Lore"						"SunShine"
+
+//冰霜之心
+ "DOTA_Tooltip_ability_item_frozen_heart_1"								"Algid's Magic Stone"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_description"					"\n<h1>Heart of Queen</h1>Grants the carrier a %chance%%% chance to freeze the enemies who attack him."
+ "DOTA_Tooltip_ability_item_frozen_heart_1_magical_armor"				"+$magical_armor"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_physical_armor"				"+$physical_armor"
+ "DOTA_Tooltip_ability_item_frozen_heart_1_Lore"						"A beating heart from the Snow Queen was sealed in this magic stone by a wizard named Algid."
+ "DOTA_Tooltip_modifier_item_frozen_heart_1_description"				"Freeze your enemy!"
+ "DOTA_Tooltip_modifier_item_frozen_heart_1"							"Frozen."
+
+//亡灵法书
+ "DOTA_Tooltip_ability_item_ghostest_book"								"Necronomicon"
+ "DOTA_Tooltip_ability_item_ghostest_book_description"					"\n<h1>Necromancy</h1>Restores the carrier's mana whenever he casts a spell."
+ "DOTA_Tooltip_ability_item_ghostest_book_magical_crit_chance"			"%+$magical_crit_chance"
+ "DOTA_Tooltip_ability_item_ghostest_book_magical_crit_damage"			"%+$magical_crit_damage"
+  "DOTA_Tooltip_ability_item_ghostest_book_magical_attack"			    "+$magical_attack"
+ "DOTA_Tooltip_ability_item_ghostest_book_Lore"							"This is the undead power that the living cannot ever imagine."
+
+
+//天使遗物
+ "DOTA_Tooltip_ability_item_angel_relics_1"								"Angel Relic"
+ "DOTA_Tooltip_ability_item_angel_relics_1_magical_attack"				"+$magical_attack"
+ "DOTA_Tooltip_ability_item_angel_relics_1_description"					"<h1>Afterglow</h1>Grants each attack a %chance%%% chance to punish enemies, dealing %ori_damage_pct%%% Magical Damage to the main target,  %around_damage_pct%%% damage to enemy units within a radius of %range% units and stunning them for %stun_duration% seconds."
+ "DOTA_Tooltip_ability_item_angel_relics_1_Lore"						"Was left in Lostland by a careless angel in ancient times."
+
+// 未鉴定的装备(N)
+ "DOTA_Tooltip_ability_item_unknowned_item_1"							"Unidentified Item(N)"
+ "DOTA_Tooltip_ability_item_unknowned_item_1_description"				"Redeem a random N item."
+ "DOTA_Tooltip_ability_item_unknowned_item_1_Lore"						"Too common to be treated with caution."
+// 未鉴定的装备(R)
+ "DOTA_Tooltip_ability_item_unknowned_item_2"							"Unidentified Item(R)"
+ "DOTA_Tooltip_ability_item_unknowned_item_2_description"				"Redeem a random R item."
+ "DOTA_Tooltip_ability_item_unknowned_item_2_Lore"						"This is the most popular item in the bargain market."
+// 未鉴定的装备(SR)
+ "DOTA_Tooltip_ability_item_unknowned_item_3"							"Unidentified Item(SR)"
+ "DOTA_Tooltip_ability_item_unknowned_item_3_description"				"Redeem a random SR item."
+ "DOTA_Tooltip_ability_item_unknowned_item_3_Lore"						"If it weren’t for the need for money, no one would sell this kind of treasure."
+// 未鉴定的装备(SSR)
+ "DOTA_Tooltip_ability_item_unknowned_item_4"							"Unidentified Item(SSR)"
+ "DOTA_Tooltip_ability_item_unknowned_item_4_description"				"Redeem a random SSR item."
+ "DOTA_Tooltip_ability_item_unknowned_item_4_Lore"						"The rarest treasure in Lostland, only appears in legends."
+
+//轻语吊坠
+ "DOTA_Tooltip_ability_item_light_speaker_amulet"								"Whisper Amulet"
+ "DOTA_Tooltip_ability_item_light_speaker_amulet_description"					"<h1>Whisper</h1>Delays %damage_pct%%% of damage taken. Damage delayed will be dealt on the carrier guadually during %delay% seconds."
+ "DOTA_Tooltip_modifier_item_light_speaker_amulet"								"Whisper Amulet"
+ "DOTA_Tooltip_modifier_item_light_speaker_amulet_Description"					"Taken damage delay"  
+
+//碾压权杖
+ "DOTA_Tooltip_ability_item_rolling_staff"								"Scepter of Authority"
+ "DOTA_Tooltip_ability_item_rolling_staff_attack_speed"					"+$attack_speed"
+ "DOTA_Tooltip_ability_item_rolling_staff_description"					"<h1>Authority</h1>After %count% attacks, the carrier's next attack deals %damage_pct%%% damage to enemies within a radius of %radius% units."
+
+//掘金铲子
+"DOTA_Tooltip_ability_item_gold_shovel" "Trusty Shovel"
+"DOTA_Tooltip_ability_item_gold_shovel_Description" "Grants survived hereos a %chance%%% chance to loot extra Gold/Soul Crystal."
+
+//长弓
+"DOTA_Tooltip_ability_item_long_bow" "Long Bow"
+"DOTA_Tooltip_ability_item_long_bow_Description" "【Hunter's Aiming】Deals %damage_bonus_pct%%% bonus damage to enemies outside %distance% units."
+
+//冰霜药剂
+"DOTA_Tooltip_ability_item_frost_potion" "Algid's Decoction"
+"DOTA_Tooltip_ability_item_frost_potion_Description" "Made by a Frost Wizard whose name is Algid. Whoever drank the decoction would have his skin frozen that absorbs damage as %health_shield_pct%%% health and is immune to stuns. Once the icy 【Shield】 is smashed, scattered ice flakes will freeze nearby enemies by %duration% seconds. The damage absorbing of 【Shiled】 is calculated before armor."
+
+//强攻装甲
+"DOTA_Tooltip_ability_item_assault_armor" "Assault Cuirass"
+"DOTA_Tooltip_ability_item_assault_armor_Description" "+200 Physical Armor, +200 Magic armor. 【Assault】 Deals %damage_bonus_pct%%% bonus damage to enemies within a radius of %radius% units."
+
+//残忍短剑
+"DOTA_Tooltip_ability_item_cruel_dagger" "Ruling Dagger"
+"DOTA_Tooltip_ability_item_cruel_dagger_Description" "【Armor Piercing】 Attacks with Ruling Dagger ignores %igore_armor_pct%%% of the targets' armor and armor. 【Ruling】Deals %damage_bonus_pct%%% bonus damage to targets that have more than %health_trigger%%% health."
+
+//魔爆匕首
+"DOTA_Tooltip_ability_item_manablast_dagger" "Explosion Kunai"
+"DOTA_Tooltip_ability_item_manablast_dagger_Description" "【Armor Piercing】Attacks with Explosion Kunai ignores %igore_armor_pct%%% of the targets' armor and armor. 【Explosive Poison】The wound cut by the Kunai will burst open again and deals magical damage as %mana_cost_pct%%% of the target's lost mana."
+
+//淬毒钉刺
+"DOTA_Tooltip_ability_item_poison_sting" "Poison Sting"
+"DOTA_Tooltip_ability_item_poison_sting_Description" "Grants each attack a %chance%%% chance to Poison the target. Each stack of Poison deals 30 Magical Damage per second."
+
+"DOTA_Tooltip_ability_item_insight_order" "Order of Insight"
+"DOTA_Tooltip_ability_item_insight_order_Description" "+100 Magical Damage. Grants the carrier a %chance%%% chance to recast the spell."
+
+"DOTA_Tooltip_ability_item_lightning_whip" "Thunder Whip"
+"DOTA_Tooltip_ability_item_lightning_whip_attack_speed" "+$attack_speed"
+"DOTA_Tooltip_ability_item_lightning_whip_Description" "<h1>Whip</h1>While attacking, the carrier also whips his target up to %lightning_count% strikes. Each whip strike deals %damage_pct%%% magic damage as his attack damage and temporarily paralyze the target. Paralyzed units cannot move and takes %damage_per_tick%%% magical damage as the carrier's damage per second."
+"DOTA_Tooltip_modifier_item_lightning_whip_root"                "Thunder Whip"
+"DOTA_Tooltip_modifier_item_lightning_whip_root_Description"    "Take %dMODIFIER_PROPERTY_TOOLTIP% magical damage every seconds"
+
+
+//圣洁法衣
+"DOTA_Tooltip_ability_item_holy_shroud" "Holy Shroud"
+"DOTA_Tooltip_ability_item_holy_shroud_magical_helf" "%+$magical_helf"
+"DOTA_Tooltip_ability_item_holy_shroud_magical_armor" "+$magical_armor"
+"DOTA_Tooltip_ability_item_holy_shroud_health_regen_pct" "%+$health_regen"
+"DOTA_Tooltip_ability_item_holy_shroud_Description" "<h1>blessing</h1>When health reduce %trigger_health_pct%%%，create a [%shield_pct%%% user lose hp] shield avoid damage"
+"DOTA_Tooltip_modifier_item_holy_shroud_buff"               "Holy Shroud"
+"DOTA_Tooltip_modifier_item_holy_shroud_buff_Description"   "Can absorb %dMODIFIER_PROPERTY_TOOLTIP%damage"
+
+//代达罗斯
+"DOTA_Tooltip_ability_item_daedalus"							"Daedalus"
+"DOTA_Tooltip_ability_item_daedalus_physical_attack"			"+$physical_attack"
+"DOTA_Tooltip_ability_item_daedalus_description"				"<h1>Crit</h1> every attack get %crit_chance%%% chance take %crit_damage_pct%%% extra damage"
+"DOTA_Tooltip_modifier_item_daedalus"							"Daedalus"
+"DOTA_Tooltip_modifier_item_daedalus_description"				"every attack get %dMODIFIER_PROPERTY_TOOLTIP%%% chance cause %dMODIFIER_PROPERTY_TOOLTIP%%% damage"
+
+//天使战刃
+"DOTA_Tooltip_ability_item_angle_blade"							"Angle Blade"
+"DOTA_Tooltip_ability_item_angle_blade_attack_speed"			"+$attack_speed"
+"DOTA_Tooltip_ability_item_angle_blade_attack_miss"				"%+$attack_miss"
+"DOTA_Tooltip_ability_item_angle_blade_magical_attack"		    "+$magical_attack"
+"DOTA_Tooltip_ability_item_angle_blade_description"				"<h1>Hunt</h1>provide %movespeed_pct%%% movespeed and %attack_speed_pct%%% attack speed also %cooldown_pct%%% ability cooldown when any ability is not ready."
+
+//七星灯
+"DOTA_Tooltip_ability_item_reincarnation_lamp"							"reincarnation lamp"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_health_regen"			    "+$health_regen"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_reincarnation_lamp_description"				"<h1>evocation</h1>every alies except owner will resurrect after %duration% second. And increase %health_regen_bonus% health regen untill end of the game\n<h1>Life-steal</h1>Steal all the max health heroes health regen and health restoration effect. Every %interval% seconds provide %heal_pct%%% health regen to injured allies"
+
+//远古星盘
+"DOTA_Tooltip_ability_item_ancient_astrolabe"							"Ancient chart"
+"DOTA_Tooltip_ability_item_ancient_astrolabe_status_health"				"+$status_health"
+"DOTA_Tooltip_ability_item_ancient_astrolabe_description"				"<h1>fire of purgatory</h1>Deal %health_damage_pct%%% of equiper max health to %radius% enemies every %interval% second. Purify all negative effects in %duration% second and restore %heal_pct%%% of health pool，enemies will take same effect damage。\n<h1>Purify</h1>Get incoming damage reduction effct base on lose health ratio，%min_health_pct%%% of health has %damage_reduce_max_pct%%% damage reduction"
+
+//恶魔之戒
+"DOTA_Tooltip_ability_item_demon_ring"									"D Ring"
+"DOTA_Tooltip_ability_item_demon_ring_health_regen"						"+$health_regen"
+"DOTA_Tooltip_ability_item_demon_ring_description"						"<h1>Trade</h1>Deal personal %health_cost_pct%%% of current health to refresh every abilities and recover mana every %interval% second "
+
+//领袖证明
+"DOTA_Tooltip_ability_item_leader_certificate"						    "Certificate"
+"DOTA_Tooltip_ability_item_leader_certificate_status_health"			"+$status_health"
+"DOTA_Tooltip_ability_item_leader_certificate_physical_armor"			"+$physical_armor"
+"DOTA_Tooltip_ability_item_leader_certificate_magical_armor"			"+$magical_armor"
+"DOTA_Tooltip_ability_item_leader_certificate_description"				"<h1>charming</h1>If commander survive %interval% second，commander itself and its %radius% ranged allies increase health regen,armor and attack speed<br><br>Survive%time_max% second could reach the max bonus effect until end of the game"
+"DOTA_Tooltip_modifier_item_leader_certificate_buff"				    "Charming"
+"DOTA_Tooltip_modifier_item_leader_certificate_buff_Description"		"Attack speed increase %dMODIFIER_PROPERTY_TOOLTIP%<br>Health regen increase%dMODIFIER_PROPERTY_TOOLTIP%<br>Physical armor increase%dMODIFIER_PROPERTY_TOOLTIP%<br>magical armor increase%dMODIFIER_PROPERTY_TOOLTIP%"
+"DOTA_Tooltip_modifier_item_leader_certificate"				            "Charming Certificate"
+"DOTA_Tooltip_modifier_item_leader_certificate_Description"		        "provide extra bonus base on commander charming"
+
+//火精灵权杖
+"DOTA_Tooltip_ability_item_fire_elf_scepter"						    "Fire Elf Scepter"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_physical_armor"			    "+$physical_armor"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_magical_armor"			    "+$magical_armor"
+"DOTA_Tooltip_ability_item_fire_elf_scepter_description"				"<h1>Blessing of Fire Elf</h1>Provide extra %health_regen% health regen, %incoming_reduce%%% damage reduce and %magical_strengthen%%% magical damage for per %stack% Ignite stacks in %radius% range in total"
+"DOTA_Tooltip_modifier_item_fire_elf_scepter"				            "Blessing of Fire Elf"
+"DOTA_Tooltip_modifier_item_fire_elf_scepter_Description"		        "+ %dMODIFIER_PROPERTY_TOOLTIP% health regen<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% damage reduce<br>+ %dMODIFIER_PROPERTY_TOOLTIP%%% magical damage"
+
+//烈焰之刃
+"DOTA_Tooltip_ability_item_blade_of_flame"						        "Blade of Flame"
+"DOTA_Tooltip_ability_item_blade_of_flame_magical_attack"			    "+$magical_attack"
+"DOTA_Tooltip_ability_item_blade_of_flame_attack_speed"			        "+$attack_speed"
+"DOTA_Tooltip_ability_item_blade_of_flame_magical_strengthen"			"%+ magical damage"
+"DOTA_Tooltip_ability_item_blade_of_flame_description"				    "<h1>Flame Field</h1>Add %ignite_count% ignite stacks for enemy units in %radius% range  \n<h1>Flame Revenge</h1>Deal additional Ignite Stacks * Magical Attack * %damage_per_count%%% magical damage for %attack_count% basic attacks"
+"DOTA_Tooltip_modifier_item_blade_of_flame"				                "Flame Field"
+"DOTA_Tooltip_modifier_item_blade_of_flame"		                        "Continue to ignite enemy units"

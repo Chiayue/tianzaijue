@@ -1,0 +1,14 @@
+"UnitNumber_14"			"{s:val_14}兆"
+"UnitNumber_9"			"{s:val_9}亿"
+"UnitNumber_5"			"{s:val_5}万"
+"UnitNumber_1"			"{s:val_1}"
+
+"UnitNumberC_14"			"{s:valc_14}兆"
+"UnitNumberC_9"			"{s:valc_9}亿"
+"UnitNumberC_5"			"{s:valc_5}万"
+"UnitNumberC_1"			"{s:valc_1}"
+
+"Number_Unit_10Thousand"	"万"
+"Number_Unit_100Million"	"亿"
+"Number_Unit_Trillion"	"万亿"
+"Number_Unit_10Quadrillion"	"万万亿"

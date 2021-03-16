@@ -1,0 +1,136 @@
+// 主界面
+"Handbook_Main"	"主页"
+"PlayerLevel"	"LV {s:player_level}"
+"PlayerNextLevel"	"达到{s:player_nextlevel}级解锁"
+"PlayerNoVip"	"非Vip"
+"PlayerDoubleXP"		"档案经验双倍"
+"PlayerTalent"	"玩家天赋"
+"PlayerTalentPanel_NeedUse"	"未分配天赋点"
+"PlayerItemLockInfo_Title"	"解锁进度"
+"TypeNameLabel_Spell"		"法术卡"
+"TypeNameLabel_Item"		"物品"
+"TypeNameLabel_Artifact"	"神器"
+"PlayerAdventureProgress_Title"	"冒险进度"
+"BattlePassSwithBtn_Order"	"第{s:bp_order}赛季"
+"TaskSwithLabel"			"任务"
+"TaskSwith_UpdateTime"		"刷新：{s:task_update_time}"
+"BP_RecvSucceed"			"领取成功"
+"BPReceive"					"一键领取"
+"BPBuy"						"激活高级战争通行证"
+"BPBuyActive"						"已激活高级战争通行证"
+"BPBuyXP"					"购买等级"
+"BP_BuyXPSucceed"			"购买经验成功"
+"BattlePassDoubleXP"		"战争通行证双倍经验，剩余{d:value}"
+
+
+// 组卡
+"Handbook_CardGroup"	"英雄"
+"CardGroup_Save"		"保存"
+"CardGroup_SaveError"	"保存失败"
+"CardGroup_SaveSucceed"	"保存成功"
+"CardGroup_Use"			"设置默认"
+"CardGroup_UseSucceed"	"设置成功"
+"CardGroup_ChangeNameSucceed"	"名称修改成功"
+"CardGroup_ResetBtn"	"放弃更改"
+"CardGroup_SwichView"	"显示方式"
+"CardGroup_SwichView_Hero"		"英雄"
+"CardGroup_SwichView_Relation"	"羁绊"
+"CardGroup_AddCardKindLimit"	"该卡牌种类数量达到上限"
+"CardPool_Filter"				"筛选"
+"CardPool_FilterHave"			"拥有"
+"CardPool_FilterEntry"			"输入关键字"
+"CardPool_FilterTag"			"选择羁绊"
+"CardPool_AddCardGroupBtn"			"加入卡组"
+"CardGroup_AllCardLevelUp"		"升级全部英雄"
+
+// 卡牌成长相关
+"CardGrowupLevel"				"LV:{s:level}"
+"CardGrowupXP"					"{s:xp_cur}/{s:xp_max}"
+"CardGoColleted"			    "去收集"
+"CardGrowup_NotHaveLab"			"尚未解锁该英雄的升级选项，使用该英雄战斗100回合或者打开英雄宝箱收集该英雄。"
+"CardGrowup_HeroTaskLabel"		"{d:need_round}回合后经验+1  （{d:max_level}级后不再获得）"
+"CardGrowup_LevelUp"			"升级"
+"CardGrowup_HeroXP"				"当前经验"
+"CardGrowup_CommonXP"			"通用经验"
+"CardGrowup_LevelUpGrowupTelentTitle"		"升级效果"
+"CardGrowup_LevelUpGrowupTelent"			"{s:levelup_talent}"
+"CardGrowup_Talent_GoldCard"				"金卡解锁"
+"CardGrowup_Talent_Memory" 					"铭刻解锁"
+"CardGrowup_Talent_RandomAttribute" 		"随机属性"
+"CardGrowup_Talent_RandomAttribute_MaxVal" 	"随机顶级属性"
+"CardGrowup_Talent_physical_attack" 		"+{s:val} 物理攻击"
+"CardGrowup_Talent_magical_attack" 			"+{s:val} 魔法攻击"
+"CardGrowup_Talent_physical_armor" 			"+{s:val} 物理防御"
+"CardGrowup_Talent_magical_armor" 			"+{s:val} 魔法防御"
+"CardGrowup_Talent_status_health" 			"+{s:val} 生命值"
+"CardGrowup_Talent_status_mana" 			"+{s:val} 魔法值"
+"CardGrowup_Talent_mana_regen" 				"+{s:val} 魔法恢复"
+"CardGrowup_Talent_attackt_speed" 			"+{s:val} 攻击速度"
+"CardGrowup_Talent_movement_speed" 			"+{s:val} 移动速度"
+"CardGrowup_Talent_AttributeAll" 			"+{s:val}% 全属性"
+"CardAttribute_Hp" 				"生命值："
+"CardAttribute_AtkPhy" 			"物理攻击"
+"CardAttribute_AtkMgc" 			"魔法攻击"
+"CardAttribute_ArmPhy" 			"物理防御"
+"CardAttribute_ArmMgc" 			"魔法防御"
+
+// 指挥官
+"CommanderStages"			"拥有指挥官：{d:has}/{d:all}"
+
+// 信使
+"CourierStages"				"拥有信使：{d:has}/{d:all}"
+"TitleStages"				"拥有称号：{d:has}/{d:all}"
+
+// 物品
+"Handbook_GameItem"			        "物品"
+"ItemSearch"				        "输入物品以搜索"
+"GameItemStages"			        "拥有物品：{d:has}/{d:all}"
+"ItemUnlockLevel"			        "档案等级{d:level}解锁"
+"ItemUnlockLevel_is_contrast"		"无法解锁，可在契约系统中获取"
+
+// 法术卡
+"Handbook_GameSpCard"		"法术卡"
+"SpellSearch"				"输入法术卡以搜索"
+"GameSpellStage"			"拥有法术卡：{d:has}/{d:all}"
+
+// 神器
+"Handbook_GameArtifact"		"神器"
+"ArtifactSearch"			"输入神器以搜索"
+"GameArtifactStage"			"拥有神器：{d:has}/{d:all}"
+
+// 指挥官
+"Handbook_GameCommander"	"指挥官"
+"CommanderSearch"	    "输入指挥官以搜索"
+"SelectedCmd"	        "设为指挥官"
+"Cmd_Talented"	        "天赋"
+"CmdTalent_Header"	        "天赋"
+"NotEnough_CmdTalents"	        "天赋点不足"
+"UNLOCKHERO"	        "您还未解锁"
+"LockFromGames"	        "通过游戏获取指挥官经验"
+"SelectedCommanderSuccees"	        "切换指挥官成功"
+"CantSetCommander"	        "只能在游戏准备的时候切换指挥官"
+
+// 头像框
+"Handbook_Avatar"			"头像框"
+"Avatarborder_Using"		"当前使用"
+"Avatarborder_Equip"		"装备"
+"Avatarborder_UnLock"		"解锁"
+
+// 信使
+"Handbook_Courier"			"信使"
+"CourierModelTitle"			"信使"
+"CourierSave"				"保存"
+"CourierSave_NoChange"		"默认"
+
+//收藏
+"Handbook_Museum"			"图鉴"
+
+// 结算
+"GameOver_TalentAddXp"	"天赋额外经验加成：{d:italentaddxp}"
+"GameOver_Vipaddxp"		"VIP会员经验加成：{d:ivipaddxp}"
+"GameOver_Vipaddbp"		"VIP会员通行证经验加成：{d:ivipbpxp}"
+"GameOver_Doublebp"		"双倍通行证经验加成：{d:idoublebpxp}"
+"NewLevel_Occur"		"新等级~"
+"Gameover_balance"		"收起"
+"Gameover_Over"		    "离开游戏"
+"CommanderExp_full"		"已达今日上限"

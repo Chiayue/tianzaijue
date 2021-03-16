@@ -1,0 +1,58 @@
+"KeyValue"
+{
+	"consumable_mp"
+	{
+		"UniqueID"								"1120001"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/consumable/consumable_mp"
+		"AbilityTextureName"					"star_burst"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"300"
+		"AbilityManaCost"						"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"level"							"1"
+			}
+		}
+	}
+	"consumable_hero_help"
+	{
+		"UniqueID"								"1120002"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/consumable/consumable_hero_help"
+		"AbilityTextureName"					"revive_power"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"300"
+		"AbilityManaCost"						"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"15"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"incoming_reduce"				"80"
+			}
+		}
+	}
+	"consumable_heartbreak"
+	{
+		"UniqueID"								"1120003"
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/consumable/consumable_heartbreak"
+		"AbilityTextureName"					"beat_cease"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"300"
+		"AbilityManaCost"						"0"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	}
+}

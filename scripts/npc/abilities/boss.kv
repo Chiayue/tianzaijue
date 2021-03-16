@@ -1,0 +1,1777 @@
+"KeyValue"
+{
+	"boss"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/boss"
+		"AbilityTextureName"					"axe/mantle_of_the_cinder_baron/axe_battle_hunger"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stage_health_pct"				"80 60 30"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stage_1_attack_factor"			"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stage_2_armor_factor"			"5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stage_3_attack_factor"			"10"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stage_3_cooldown_reduction"	"30"
+			}
+		}
+	}
+	"sk_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_1"
+		"AbilityTextureName"					"sandking_burrowstrike"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_SAND_KING_BURROW_IN"
+		"AbilityCastRange"						"2048"
+		"AbilityCastPoint"						"0.6"
+		"AbilityCooldown"						"15"
+		"AbilityDamage"							"100"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"burrow_width"					"100"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"burrow_duration"				"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"burrow_speed"					"3000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"burrow_anim_time"				"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"epicenter_radius"				"64"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"epicenter_damage"				"50"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"50"
+			}
+		}
+	}
+	"sk_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_2"
+		"AbilityTextureName"					"crystal_maiden_frostbite"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastPoint"						"1.9"
+		"AbilityCooldown"						"45"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"threshold"						"75"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"initial_radius"				"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius_per_second"				"200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"20"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_per_second"				"5"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"20"
+			}
+		}
+	}
+	"sk_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_3"
+		"AbilityTextureName"					"enchantress_natures_attendants"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST2_STATUE"
+		"AbilityDuration"						"15"
+		"AbilityCooldown"						"30"
+		"AbilityDamage"							"50"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"threshold"						"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"10"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"miss"							"70"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"30"
+			}
+		}
+	}
+	"sk_4"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_4"
+		"AbilityTextureName"					"dark_seer_vacuum"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_RAZE_1"
+		"AbilityCastPoint"						"2"
+		"AbilityCooldown"						"30"
+		"AbilityDamage"							"100"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"backward_chance"				"60"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"hull_radius"					"64"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"threshold"						"50"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"2000"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"128"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduce"					"70"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"8"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"50"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_count"					"4"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"1.7"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"3"
+			}
+		}
+	}
+	"sk_5"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_5"
+		"AbilityTextureName"					"warlock_upheaval"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCastPoint"						"1.98"
+		"AbilityCooldown"						"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"800"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_height"				"200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_slow"				"-100"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_slow"				"-100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"slow_duration"					"4"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"initial_delay"					"1.5"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"100"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"animation_time"				"1.98"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"1500"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_radius"					"110"
+			}
+		}
+	}
+	"sk_6"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_6"
+		"AbilityTextureName"					"warlock_upheaval"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_RUN"
+		"AbilityCooldown"						"15"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"1"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"400"
+			}
+		}
+	}
+	"sk_7"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_7"
+		"AbilityTextureName"					"warlock_upheaval"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"1.7"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+	}
+	"sk_8"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/sk_8"
+		"AbilityTextureName"					"magnataur_shockwave_alt"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"						"60"
+		"AbilityChannelTime"					"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_time"					"45"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"enemy_count"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1600"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"1000"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"125"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count"							"7"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"50"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"knockback_duration"			"0.5"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"150"
+			}
+		}
+	}
+	"kingkong_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_1"
+		"AbilityTextureName"					"tiny_toss"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"						"2000"
+		"AbilityCastPoint"						"1.1"
+		"AbilityCooldown"						"15"
+		"AbilityDamage"							"150"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"projectile_speed"				"1500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"100"
+			}
+		}
+	}
+	"kingkong_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_2"
+		"AbilityTextureName"					"lone_druid_true_form"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"8"
+		"AbilityDamage"							"50"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1200"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"start_width"					"260"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"end_width"						"600"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"100"
+			}
+		}
+	}
+	"kingkong_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_3"
+		"AbilityTextureName"					"beastmaster_call_of_the_wild"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"40"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attack_split"					"3"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"5"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal_amount_pct"				"12"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"angle"							"45"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"200"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"boss_health_pct"				"5"
+			}
+		}
+	}
+	"kingkong_4"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_4"
+		"AbilityTextureName"					"life_stealer/bloody_ripper_abilityicons/life_stealer_infest"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_DEFEAT"
+		"AbilityChannelTime"					"12"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"25"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"health_pct"					"45"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"addon1"						"12"
+			}
+		}
+	}
+	"kingkong_5"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_5"
+		"AbilityTextureName"					"lone_druid_rabid"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"80"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"start_width"					"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"knockback_duration"			"0.2"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"150"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"end_width"						"300"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"70"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"200"
+			}
+		}
+	}
+	"kingkong_6"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_6"
+		"AbilityTextureName"					"lone_druid_spirit_link"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_DEFEAT"
+		"AbilityCastPoint"						"0.5"
+		"AbilityCooldown"						"18"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"60"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1800"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"2000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"300"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"300"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_duration"			"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"250"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_height"				"200"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"100"
+			}
+		}
+	}
+	"kingkong_7"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_7"
+		"AbilityTextureName"					"tiny_toss"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_DEFEAT"
+		"AbilityCooldown"						"60"
+		"AbilityChannelTime"					"300"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"15"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"enemy_count"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"1800"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_radius"					"300"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stone_min"						"2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stone_max"						"3"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"200"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"delay"							"2"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"1"
+			}
+		}
+	}
+	"kingkong_8"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/kingkong_8"
+		"AbilityTextureName"					"lone_druid_spirit_link"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_DEFEAT"
+		"AbilityCastPoint"						"2"
+		"AbilityCooldown"						"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_time"					"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1800"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"2000"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"300"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage"						"300"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_duration"			"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_distance"			"250"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"knockback_height"				"200"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"200"
+			}
+		}
+	}
+	"omniknight_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_1"
+		"AbilityTextureName"					"wisp_tether"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastPoint"						"0.3"
+		"AbilityDuration"						"6"
+		"AbilityCooldown"						"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET|DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_deepen"				"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical2magical"				"100"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"350"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cast_range"					"2000"
+			}
+		}
+	}
+	"omniknight_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_2"
+		"AbilityTextureName"					"earth_spirit_geomagnetic_grip"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"12"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET|DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_damage"					"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_distance_factor"		"0.02"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"1500"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"front_distance"				"150"
+			}
+		}
+	}
+	"omniknight_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_3"
+		"AbilityTextureName"					"omniknight_purification"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastRange"						"2000"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT|DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"base_damage"					"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_distance_factor"		"0.1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"2500"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_radius"					"125"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"2000"
+			}
+		}
+	}
+	"omniknight_4"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_4"
+		"AbilityTextureName"					"omni_knight/ti8_immortal_head/omniknight_repel_immortal"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_REFRACTION"
+		"AbilityCastPoint"						"0.3"
+		"AbilityCooldown"						"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET|DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"active_range"					"500"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"near_range"					"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_near"					"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_far"					"150"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"40"
+			}
+		}
+	}
+	"omniknight_5"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_5"
+		"AbilityTextureName"					"skeleton_king/arcana/skeleton_king_vampiric_aura_arcana"
+		"MaxLevel"								"1"
+		"AbilityCooldown"						"10"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"70"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"boss_health_pct"				"1"
+			}
+		}
+	}
+	"omniknight_6"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_6"
+		"AbilityTextureName"					"vengefulspirit_nether_swap"
+		"MaxLevel"								"1"
+		"AbilityCastRange"						"2000"
+		"AbilityCooldown"						"25"
+		"AbilityChannelTime"					"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"80"
+			}
+		}
+	}
+	"omniknight_7"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_7"
+		"AbilityTextureName"					"phantom_lancer_doppelwalk"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastPoint"						"0.3"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"50"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"angle"							"45"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"summon_count"					"2"
+			}
+		}
+	}
+	"omniknight_8"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/omniknight_8"
+		"AbilityTextureName"					"leshrac_diabolic_edict"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCooldown"						"60"
+		"AbilityChannelTime"					"25"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"enemy_count"					"1"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"delay"							"1"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"1"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"2500"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"300"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_radius"					"350"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"boom_count_min"				"2"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"boom_count_max"				"3"
+			}
+			"10"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_physical_armor"			"2000"
+			}
+			"11"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_magical_armor"			"2000"
+			}
+		}
+	}
+	"jakiro_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_1"
+		"AbilityTextureName"					"jakiro_dual_breath"
+		"MaxLevel"								"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"slow_duration"					"8"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ignite_duration"				"8"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_slow"				"20"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_slow"				"20"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"max_stack"						"5"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"ignite_damage"					"500"
+			}
+		}
+	}
+	"jakiro_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_2"
+		"AbilityTextureName"					"ogre_magi/arcana/ogre_magi_ignite_arcana"
+		"MaxLevel"								"2"
+		"AbilityCastAnimation"					"ACT_DOTA_TELEPORT_STATUE"
+		"AbilityCastPoint"						"1.3"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"boss_health_pct"				"2"
+			}
+		}
+	}
+	"jakiro_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_3"
+		"AbilityTextureName"					"ogre_magi/arcana/ogre_magi_bloodlust_arcana"
+		"MaxLevel"								"3"
+		"AbilityChannelTime"					"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval"						"8"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical_armor"				"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"magical_armor"					"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"regen"							"500"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"50"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"toggle_armor"					"300"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"toggle_attack_pct"				"10"
+			}
+		}
+	}
+	"jakiro_4"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_4"
+		"AbilityTextureName"					"jakiro_ice_path"
+		"MaxLevel"								"4"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_2"
+		"AbilityCastPoint"						"0.9"
+		"AbilityDuration"						"4"
+		"AbilityCooldown"						"7"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1800"
+			}
+		}
+	}
+	"jakiro_5"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_5"
+		"AbilityTextureName"					"jakiro_macropyre"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastPoint"						"0.9"
+		"AbilityDuration"						"5"
+		"AbilityCooldown"						"8"
+		"AbilityDamage"							"300"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1800"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"8"
+			}
+		}
+	}
+	"jakiro_6"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_6"
+		"AbilityTextureName"					"ogre_magi/arcana/ogre_magi_ignite_arcana_alt1"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_TELEPORT_STATUE"
+		"AbilityCastPoint"						"1"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"90"
+			}
+		}
+	}
+	"jakiro_7"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_7"
+		"AbilityTextureName"					"ogre_magi/arcana/ogre_magi_unrefined_fireblast_arcana"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_TAUNT"
+		"AbilityCastPoint"						"2"
+		"AbilityCooldown"						"20"
+		"AbilityDamage"							"150"
+		"AbilityChannelTime"					"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"90"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"width"							"200"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"1200"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2magical"				"8"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"0.1"
+			}
+		}
+	}
+	"jakiro_8"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/jakiro_8"
+		"AbilityTextureName"					"jakiro_liquid_fire"
+		"MaxLevel"								"1"
+		"AbilityCastAnimation"					"ACT_DOTA_DIE"
+		"AbilityCastPoint"						"2.5"
+		"AbilityDuration"						"5"
+		"AbilityCooldown"						"999"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"20"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_physical_armor"			"100"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_magical_armor"			"100"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"heal_per_egg"					"20"
+			}
+		}
+	}
+	"nian_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_1"
+		"AbilityTextureName"					"modifier_cny2015_combat"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_starting_width"			"300"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_ending_width"			"600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_distance"				"900"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cleave_damage"					"100"
+			}
+		}
+	}
+	"nian_2"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_2"
+		"AbilityTextureName"					"modifier_cny2015_speed"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_MAGNUS_SKEWER_START"
+		"AbilityCastPoint"						"1.74"
+		"AbilityCooldown"						"8"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"distance"						"3000"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"speed"							"3500"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"200"
+			}
+		}
+	}
+	"nian_3"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_3"
+		"AbilityTextureName"					"magnataur/forgemaster_icons/magnataur_skewer"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_NIAN_GAME_END"
+		"AbilityCastPoint"						"0.6"
+		"AbilityCooldown"						"8"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"400"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stomp_radius"					"600"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"300"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"3"
+			}
+		}
+	}
+	"nian_4"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_4"
+		"AbilityTextureName"					"modifier_cny2015_support_aura"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_LEAP_STUN"
+		"AbilityCastPoint"						"0.69"
+		"AbilityCooldown"						"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"jump_duration"					"0.54"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"jump_height"					"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_radius"					"900"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_stun_duration"			"3"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_damage"					"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_reduce_pct"		"100"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_reduce_pct"			"100"
+			}
+		}
+	}
+	"nian_5"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_5"
+		"AbilityTextureName"					"centaur/immortal/centaur_hoof_stomp"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_LEAP_SWIPE"
+		"AbilityCastPoint"						"0.69"
+		"AbilityCooldown"						"20"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"jump_duration"					"0.54"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"jump_height"					"300"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_radius"					"900"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_stun_duration"			"3"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"impact_damage"					"100"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"damage_interval"				"0.35"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_factor"					"200"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed_reduce_pct"		"100"
+			}
+			"09"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movespeed_reduce_pct"			"100"
+			}
+		}
+	}
+	"nian_5_1"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_5_1"
+		"AbilityTextureName"					"centaur/immortal/centaur_hoof_stomp"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_NIAN_PIN_LOOP"
+		"AbilityCastPoint"						"0.69"
+		"AbilityCooldown"						"0"
+		"AbilityChannelTime"					"3.93"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+	}
+	"nian_6"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_6"
+		"AbilityTextureName"					"modifier_cny_beast_aegis"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_TELEPORT"
+		"AbilityCastPoint"						"1.8"
+		"AbilityCooldown"						"20"
+		"AbilityChannelTime"					"5"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_MAGICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"550"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"50"
+			}
+		}
+	}
+	"nian_7"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_7"
+		"AbilityTextureName"					"grimstroke/grimstroke_fall20_immortal_ability_icon/grimstroke_fall20_immortal_soulbind"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastAnimation"					"ACT_DOTA_CAST_ABILITY_5"
+		"AbilityCastPoint"						"2"
+		"AbilityCooldown"						"0"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"damage_reduce_pct"				"60"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"trigger_pct"					"80"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"6"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"attackspeed"					"200"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"500"
+			}
+		}
+	}
+	"nian_8"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/boss/nian_8"
+		"AbilityTextureName"					"earthshaker/sltv__earthshaker_ability_icons/earthshaker_fissure"
+		"MaxLevel"								"1"
+		"AnimationIgnoresModelScale"			"1"
+		"AbilityCastPoint"						"1.01"
+		"AbilityCooldown"						"12"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitDamageType"					"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"physical2physical"				"800"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"radius"						"900"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"interval_distance"				"900"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"count"							"3"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"interval"						"0.2"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"stun_duration"					"2"
+			}
+		}
+	}
+}

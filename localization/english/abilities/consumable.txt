@@ -1,0 +1,15 @@
+// 消耗品
+
+//星光闪耀
+"DOTA_Tooltip_ability_consumable_mp" 					"Starry Shine"
+"DOTA_Tooltip_ability_consumable_mp_Description"		"+1 star in this round for own heroes if possible"
+
+//轮回之力
+"DOTA_Tooltip_ability_consumable_hero_help" 				"Force of Samsara"
+"DOTA_Tooltip_ability_consumable_hero_help_Description"		"Bring all dead heroes to live in ALL battlefields"
+"DOTA_Tooltip_modifier_consumable_hero_help"		        "Force of Samsara"
+"DOTA_Tooltip_modifier_consumable_hero_help_Description"    "Reduce 80% damage"
+
+//心跳停止
+"DOTA_Tooltip_ability_consumable_heartbreak" 				"Palpitation"
+"DOTA_Tooltip_ability_consumable_heartbreak_Description"	"Change current health of ALL enemies in own battlefield to 1 instantly, leff effect on elites and invalid  BOSS"

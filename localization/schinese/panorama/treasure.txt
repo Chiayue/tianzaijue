@@ -1,0 +1,13 @@
+"TreasureBox"						"神奇宝箱"
+"TreasureEntryLabel"				"点击进入"
+
+"TreasureDescription_4020001"		"这是一个大宝箱"
+"TreasureDescription_4020002"		"这是一个中宝箱"
+"TreasureDescription_4020003"		"这是一个小宝箱"
+"TreasureDescription_4020004"		"这是一个信使宝箱"
+
+"TreasureBuyDescription"			"购买并打开："
+"TreasureBuyDropLabel"				"{d:count} 包"
+"TreasureHasCountLab"				"已拥有："
+"TreasureOpenAllLab"				"打开{d:count}包"
+"TreasureOpenRemainingCount"				"距离必出SSR次数：{d:count}"

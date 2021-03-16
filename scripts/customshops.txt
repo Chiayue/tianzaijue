@@ -1,0 +1,33 @@
+"dota_shops"
+{
+	"1"
+	{
+		"1"	{
+			"name" 		"item_mj_random_1"
+			"currency" 	"kill"
+		}
+		"2"	{
+			"name" 		"item_mj_random_3"
+			"currency" 	"kill"
+		}
+		"3"	{
+			"name" 		"item_buy_bw_1"
+			"currency" 	"boss"
+		}
+		"4"	{
+			"name" 		"item_buy_sds_1"
+			"currency" 	"boss"
+		}
+		"5"	"item_xhp_tyboss_1"
+	}
+	
+	"2"
+	{
+		"1"	"item_xhp_mys_3"
+		"2"	"item_xhp_mys_4"
+		"3"	"item_xhp_mys_5"
+		"4"	"item_xhp_mys_6"
+		"5"	"item_xhp_tssq_1"
+		
+	}
+}

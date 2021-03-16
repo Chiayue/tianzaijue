@@ -1,0 +1,8 @@
+tzj5
+{
+	material materials/overviews/tzj5.vmat
+	pos_x -7700
+	pos_y 4600
+	scale 12.500
+}
+

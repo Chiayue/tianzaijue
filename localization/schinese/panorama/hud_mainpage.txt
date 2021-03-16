@@ -1,0 +1,56 @@
+"MainPage_Title"	"菜单"
+"MainPage_Screen"	"筛选"
+"MainPage_Prompt"	"查看"
+
+"MainPage_SwithBtn_Heroes"  	"英雄"
+"HeroesWindow_HeroLevel_Title"	"等级"
+"HeroesWindow_HeroLevelUp_Button"	"升级卡牌"
+"HeroesWindow_HeroLevelUp_ButtonDescription"	"消耗星石提升卡牌经验值"
+"HeroesWindow_LevelView_LevelLabel"	"Lv-{d:level}"
+"HeroesWindow_LevelView_UnlockLabel_GoldCard"	"金卡解锁"
+"HeroesWindow_LevelView_UnlockLabel_Memory" 	"铭刻解锁"
+"HeroesWindow_LevelView_UnlockLabel_RandomAttribute" 	"随机属性"
+"HeroesWindow_LevelView_UnlockLabel_RandomAttribute_MaxVal" 	"随机顶级属性"
+"HeroesWindow_LevelView_UnlockLabel_physical_attack" 	"物理攻击 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_magical_attack" 	"魔法攻击 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_physical_armor" 	"物理防御 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_magical_armor" 		"魔法防御 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_status_health" 		  "生命值 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_status_mana" 		  "魔法值 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_mana_regen" 		"魔法恢复 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_attackt_speed" 		"攻击速度 +%val%"
+"HeroesWindow_LevelView_UnlockLabel_movespeed" 			"移动速度 +%val%"
+
+"MainPage_SwithBtn_Commander"  	"指挥官"
+"MainPage_SwithBtn_SpellCard"	"法术卡"
+"MainPage_SwithBtn_Items"	    "物品"
+"MainPage_SwithBtn_Artifact"	"神器"
+
+// 指挥官
+"MainPage_Commander_Search_WaitInput"			"请输入你想搜索的指挥官"
+"MainPage_Commander_Major_Interface_UnlockInfoLabel"		"解锁进度："
+"MainPage_Commander_InfoAttributes_PhyAtkName"	"物理攻击"
+"MainPage_Commander_InfoAttributes_PhyArmName"	"物理防御"
+"MainPage_Commander_InfoAttributes_PhyArmInfo"	"（{d:phy_arm_per}%伤害减少）"
+"MainPage_Commander_InfoAttributes_MagAtkName"	"魔法攻击"
+"MainPage_Commander_InfoAttributes_MagArmName"	"魔法防御"
+"MainPage_Commander_InfoAttributes_MagArmInfo"	"（{d:mag_arm_per}%伤害减少）"
+"MainPage_Commander_InfoAttributes_AtkSpdName"	"攻击速度"
+"MainPage_Commander_InfoAttributes_AtkSpdInfo"	"（{s:atk_interval}攻击间隔）"
+"MainPage_Commander_InfoAttributes_AtkRagName"	"攻击范围"
+
+// 法术牌
+"MainPage_SpellCard_Search_WaitInput"			"请输入你想搜索的法术卡"
+"MainPage_SpellCard_Major_Interface_UnlockInfoLabel"		"解锁进度："
+
+// 装备
+"MainPage_Items_Search_WaitInput"         "请输入你想搜索的物品"
+"MainPage_Items_Major_Interface_Label"         "装备"
+
+
+// 神器
+"MainPage_Artifact_Search_WaitInput"         "请输入你想搜索的神器"
+"MainPage_Artifact_Major_Interface_Label"         "神器"
+
+// 组卡
+"MainPage_SwithBtn_CardGroup"	"组卡"
