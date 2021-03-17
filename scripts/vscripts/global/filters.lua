@@ -133,8 +133,14 @@ function m:FilterDamage(filterTable)
 		if victim.cas_table.shjm then --伤害减免 ，不分伤害类型,之前的伤害减免计算方式不对
 			damage=damage/(1+victim.cas_table.shjm/100)
 		end
-		if victim.cas_table.shhm and RollPercentage(victim.cas_table.shhm) then --伤害豁免，没伤害，不分伤害类型，被攻击者
-			damage=0
+		if victim.cas_table.shhm then --伤害豁免，没伤害，不分伤害类型，被攻击者
+			local shhm = victim.cas_table.shhm
+			if shhm > 80 then
+				shhm = 80
+			end
+			if RollPercentage(shhm) then
+				damage=0
+			end
 		end
 	end
 	

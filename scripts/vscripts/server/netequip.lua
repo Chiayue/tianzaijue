@@ -400,7 +400,7 @@ function m.Enhance(PlayerID,itemServerID,score,attr,stoneName,stoneCount,success
 	params.success = success
 	
 	
-	PlayerUtil.LockAction(PlayerID,"enhance_net_equip",function()
+	local lock = PlayerUtil.LockAction(PlayerID,"enhance_net_equip",function()
 		SrvHttp.load("tzj_net_equip",params,function(data)
 			PlayerUtil.UnlockAction(PlayerID,"enhance_net_equip")
 			if data then
@@ -420,8 +420,10 @@ function m.Enhance(PlayerID,itemServerID,score,attr,stoneName,stoneCount,success
 			end
 		end)
 	end)
-	
-	
+	--避免无限等待
+	if not lock then
+		callback(false,100)
+	end
 end
 
 function m.Client_SavePosition(_,keys)

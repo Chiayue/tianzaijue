@@ -457,7 +457,7 @@ end
 --@param #number count 新增的数量，可为空。如果不为空，则认为是消耗品，此时必须大于0
 --@param #function callback 服务器响应后的回调函数，不可为空。调用时会传入两个参数：success,item。 
 -- success(boolean)代表处理是否成功，item(table:{got_time,invalid_time,stack})代表该物品的最新数据（只有处理成功的情况下才有）
-function m.AddItem(PlayerID,itemName,validDays,count,callback)
+function m.AddItem(PlayerID,itemName,validDays,count,callback,isGameFinishReward)
 	local aid = PlayerUtil.GetAccountID(PlayerID)
 	if aid and itemName and type(callback) == "function" then
 		if count and not IsPositiveNum(count) then
@@ -480,9 +480,16 @@ function m.AddItem(PlayerID,itemName,validDays,count,callback)
 		end
 		
 		PlayerUtil.LockAction(PlayerID,"store_add",function()
-			SrvHttp.load("tzj_store",params,function(srv_data)
+			if isGameFinishReward then
 				--先清空掉锁，避免后面出错了清空不掉
 				PlayerUtil.UnlockAction(PlayerID,"store_add")
+			end
+		
+			SrvHttp.load("tzj_store",params,function(srv_data)
+				if not isGameFinishReward then
+					--先清空掉锁，避免后面出错了清空不掉
+					PlayerUtil.UnlockAction(PlayerID,"store_add")
+				end
 			
 				if srv_data then
 					if srv_data[itemName] then

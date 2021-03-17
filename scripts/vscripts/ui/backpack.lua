@@ -41,6 +41,10 @@ function Backpack:publicoutputinventory(hero, publicpackIndex,slot)
 		local itemindex=publicpack[publicpackIndex]
 		local item = hero:GetItemInSlot(slot)
 		if item ~= nil  then
+			--宝物不能移动至公共仓库
+			if ItemManger.IsTreasureItem(item:GetAbilityName()) then
+				return;
+			end
 			hero:TakeItem(item)
 			publicpack[publicpackIndex]=item:GetEntityIndex()
 		else
@@ -73,6 +77,10 @@ function Backpack:publicoutput(hero, publicpackIndex,backpackslot)
 			publicpack[publicpackIndex]=-1
 		else
 			local pitem=pack[backpackslot]
+			local item = EntIndexToHScript(pitem)
+			if ItemManger.IsTreasureItem(item:GetAbilityName()) then
+				return;
+			end
 			pack[backpackslot]=publicpack[publicpackIndex]
 			publicpack[publicpackIndex]=pitem
 		end

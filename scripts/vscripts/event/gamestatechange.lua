@@ -78,7 +78,7 @@ function m:OnGameRulesStateChange()
 			return 0
 		end,1)
 	elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then --英雄选择结束
-		local totalTime = 20 		--游戏准备时间
+		local totalTime = 25 		--游戏准备时间
 		local time = totalTime
 		
 		local difficulty =   GetGameDifficulty()

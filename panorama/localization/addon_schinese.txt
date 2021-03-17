@@ -1107,6 +1107,13 @@
 	"ui_message_boss_taunt_20"	"要不去睡会吧，怪可怜的"
 	"ui_message_boss_taunt_21"	"到点了，到点了"
 	"ui_message_boss_taunt_22"	"刮得有点爽啊"
+	"ui_message_boss_taunt_23"	"蛤！"
+	"ui_message_boss_taunt_24"	"我漂洋过海来看你扑街"
+	"ui_message_boss_taunt_25"	"龟龟，溜溜球"
+	"ui_message_boss_taunt_26"	"你凭什么和我打"
+	"ui_message_boss_taunt_27"	"天道酬勤"
+	"ui_message_boss_taunt_28"	"犯病了，到点了"
+	"ui_message_boss_taunt_29"	"有人不想过，是谁，我不说"
 	
 	"ui_status_difficulty"	"难度：{s:value}"
 	"ui_status_time"	"游戏时长：{s:value}"

@@ -329,7 +329,7 @@ function m.ShowKillHeroMsg(diedHero,killerUnit)
 		if killerUnit:IsConsideredHero() and killerUnit:GetUnitLabel() ~= nil and killerUnit:GetUnitLabel() ~= "" then
 			data.boss = killerUnit:GetUnitName()
 			data.boss_hero = killerUnit:GetUnitLabel()
-			data.taunt = RandomInt(1,22)
+			data.taunt = RandomInt(1,29)
 		else
 			data.taunt = RandomInt(1,3)
 		end

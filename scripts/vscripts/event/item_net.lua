@@ -41,7 +41,7 @@ _G.Netdjjs={
 _G.NetItem_Type={
 	200,--武器
 	200,--防具
-	600,--首饰
+	500,--首饰
 	20,--特殊装备
 }
 _G.NetItem_Type2={

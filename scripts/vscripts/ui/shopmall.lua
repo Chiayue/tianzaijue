@@ -941,7 +941,7 @@ if Shopmall == nil then
             stack=0,
             catalog1="consumable",
             catalog2="enhance",
-            notSale=true,
+          --  notSale=true,
             canuse=false,    
         },
         shopmall_68 ={ ---征战钥匙
@@ -2184,6 +2184,8 @@ function Shopmall:SetHerodata(unit)
     Shopmall.herotype[unit:GetPlayerOwnerID()]=unit:GetPrimaryAttribute()
     local cwlist={}--宠物表用来随机宠物
     local chlist={}--称号表用来随机称号
+    local ghlist={}--光环表用来随机光环
+    
     for k,v in pairs(playerdata) do
         if Shopmall:IsUnique( k ) then  --不是消耗品
             self:SetReWard( unit,Shopmall.list[k]['reward'])
@@ -2198,11 +2200,15 @@ function Shopmall:SetHerodata(unit)
         if NameArray[2]=="ch" then
             table.insert(chlist,k)
         end
+        if NameArray[2]=="gh" then
+            table.insert(ghlist,k)
+        end
     end
     unit:SetContextThink(DoUniqueString("getcustomdata"), function()  --添加宠物
         if SrvPlayerCustom.HasInited()==true then
             local temp=SrvPlayerCustom.GetData(unit:GetPlayerOwnerID(),"shopmallcw")
             local temp_ch=SrvPlayerCustom.GetData(unit:GetPlayerOwnerID(),"shopmallch")
+            local temp_gh=SrvPlayerCustom.GetData(unit:GetPlayerOwnerID(),"shopmallgh")
             if temp then
                 if playerdata["shopmall_"..temp]==nil then
                     return
@@ -2229,6 +2235,19 @@ function Shopmall:SetHerodata(unit)
                 SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallch",chname)
                 self:SetCH(unit,chname)
             end
+            if temp_gh then
+                if playerdata["shopmall_"..temp_gh]==nil then
+                    return
+                end
+                self:SetGH(unit,temp_gh)
+            else
+                if TableLen(ghlist) == 0 then
+                    return
+                end
+                local ghname=Shopmall.list[ghlist[RandomInt(1, #ghlist)]]['reward']["Set_gh"]
+                SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallgh",chname)
+                self:SetGH(unit,ghname)
+            end
             return nil
         end
         return 1
@@ -2242,6 +2261,10 @@ function Shopmall:SetHerodata(unit)
         self:SetReWard( unit,self.BPreward_1[i])
     end
 end
+--[[
+function Shopmall:GetSomeData(dataname,list,callback)
+    
+end]]
 function Shopmall:SetCourier(unit,couriername)
     if unit.shopmallcourier then
         unit.shopmallcourier:ForceKill(false)
@@ -2256,6 +2279,13 @@ function Shopmall:SetCourier(unit,couriername)
     unit.shopmallcourier=courier
     FindClearSpaceForUnit(courier,vec,true)
     PetAI.Init(courier,unit)
+end
+function Shopmall:SetGH(unit,ghname)
+    if unit.gh then                 
+        unit:RemoveModifierByName("modifier_"..unit.gh)
+    end
+    unit:AddNewModifier(unit, nil, "modifier_"..ghname, {} )
+    unit.gh=v
 end
 
 function Shopmall:SetCH(unit,chname)
@@ -2491,11 +2521,8 @@ function Shopmall:SetReWard( unit,reward,shopmallitemname)---给成就奖励和�
                 SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallcw",v)
                 self:SetCourier(unit,v)
             elseif  NameArray[2]=="gh" then --光环
-                if unit.gh then                 
-                   	unit:RemoveModifierByName("modifier_"..unit.gh)
-                end
-                unit:AddNewModifier(unit, nil, "modifier_"..v, {} )
-                unit.gh=v
+                self:SetGH(unit,v)
+                SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallgh",v)
             elseif  NameArray[2]=="ch" then --称号
                 SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallch",v)
                 self:SetCH(unit,v)
@@ -2559,6 +2586,19 @@ function Shopmall:uploadQuest(times)--统一上传初始化的任务
         if success then
             print("success")
             PrintTable(arg2)
+            for k,v in pairs(arg2) do
+                local isinitfalse=false --是否初始化失败
+                for kk,vv in pairs(v) do
+                    if vv~=true then
+                        isinitfalse=true --有初始化失败的情况
+                    end
+                end
+                if isinitfalse then --有初始化失败的情况，就把天和周任务都重新初始化
+                    local temp={}
+                    temp[k]=Shopmall.unit_quest[k]
+                    Shopmall:InitQuestAgain(temp,2)---初始化失败再重新初始化该玩家的任务，尝试2次 
+                end
+            end
             return true
         else
             if times<=0 then
@@ -2567,6 +2607,35 @@ function Shopmall:uploadQuest(times)--统一上传初始化的任务
             else
                 print("InitQuest ",success,arg2)
                 Shopmall:uploadQuest(times-1)
+            end
+        end
+    
+    end)
+end
+function Shopmall:InitQuestAgain(quest,times)
+    SrvBattlePass.InitQuest(quest,function(success,arg2)
+        if success then
+            print("success")
+            PrintTable(arg2)
+            for k,v in pairs(arg2) do
+                local isinitfalse=false --是否初始化失败
+                for kk,vv in pairs(v) do
+                    if vv~=true then
+                        isinitfalse=true --有初始化失败的情况
+                    end
+                end
+                if isinitfalse then --有初始化失败的情况，就把天和周任务都重新初始化
+                    Shopmall:InitQuestAgain(quest,2)---初始化失败再重新初始化该玩家的任务，尝试1次 
+                end
+            end
+            return true
+        else
+            if times<=0 then
+                print("InitQuest ",success,arg2)
+                return false
+            else
+                print("InitQuest ",success,arg2)
+                Shopmall:InitQuestAgain(quest,times-1)
             end
         end
     

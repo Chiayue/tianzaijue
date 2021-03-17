@@ -1006,13 +1006,6 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				if RollPercent(we) then
 					local bonusItem2 = {name="shopmall_68",count=1}
 					table.insert(store_items,bonusItem2)
-					SrvStore.AddItem(playerID,"shopmall_68",nil,1,function(success,item,money)
-				        if success then
-				            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
-				        else
-				            print("shopmall_68")
-				        end
-				    end)
 				end
 			else
 				local we2 = math.floor(we/100)
@@ -1022,13 +1015,6 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				end
 				local bonusItem2 = {name="shopmall_68",count=we2}
 				table.insert(store_items,bonusItem2)
-				SrvStore.AddItem(playerID,"shopmall_68",nil,we2,function(success,item,money)
-			        if success then
-			            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
-			        else
-			            print("shopmall_68")
-			        end
-			    end)
 			end
 		end
 
@@ -1052,14 +1038,17 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 			local num = RandomInt(min,max)   --掉落强化石的数量
 			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
 			table.insert(store_items,bonusItem)
-			SrvStore.AddItem(playerID,"shopmall_sstone_"..lv,nil,num,function(success,item,money)
-		        if success then
-		            Shopmall:UpdatePlayerdata( playerID,"shopmall_sstone_"..lv,item['stack'],item['invalid_time'])
-		        else
-		            print("shopmall_sstone_"..lv)
-		        end
-		    end)
 		end
+	end
+	
+	for idx, sitem in pairs(store_items) do
+		TimerUtil.createTimerWithDelay((idx - 1) * 2 ,function()
+			SrvStore.AddItem(playerID,sitem.name,nil,sitem.count,function(success,item,money)
+		        if success then
+		            Shopmall:UpdatePlayerdata( playerID,sitem.name,item['stack'],item['invalid_time'])
+		        end
+		    end,true)
+		end)
 	end
 	return store_items
 end

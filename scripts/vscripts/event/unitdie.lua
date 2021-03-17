@@ -386,7 +386,7 @@ function m.UpdatePlayerBossPoint(PlayerID,hero,bossPoint)
 end
 
 function m.AttackBoss(killer,unit)
-	if killer == unit then
+	if killer == nil or killer == unit then
 		return;
 	end
 	CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_die",{id=unit:entindex(),die=1,dps=SurvivalBossDPS.BossDie(unit)})

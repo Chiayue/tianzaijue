@@ -185,10 +185,21 @@ end
 --	....
 --}
 function m.GetNetEquip(PlayerID,difficulty,playerWin)
-	--local 
-	--for pid,info in pairs(m.playerinfo) do
-	--	info.net_items = 
-	--end
+	local net ={}
+	for k,v in pairs(Stage.playerinfo[PlayerID].netItem) do
+		local show_list = CustomNetTables:GetTableValue( "ItemsInfoShow", string.format( "%d", v ))
+		local item = EntIndexToHScript(v)
+		local net2 ={}
+		net.src="结算奖励"
+		net.item = item:GetAbilityName()
+		net.quality = show_list.itemrare
+		net.grade  = show_list.itemlevel
+		net.attr["item_attributes"] = show_list.item_attributes
+		net.attr["item_attributes_spe"] = show_list.item_attributes_spe
+		net.score= show_list.zdl
+		table.insert(net, net2) 
+	end
+	return net
 	
 end
 
@@ -201,9 +212,11 @@ end
 --	{name="xxxxx",count=nil/123,valid=nil/123}
 --}
 function m.GetStoreItem(PlayerID,difficulty,playerWin)
-	--for pid,info in pairs(m.playerinfo) do
-	--	info.net_items = 
-	--end
+	local store ={}
+	if playerWin then
+		table.insert(store, Stage.playerinfo[PlayerID].store_items) 
+	end
+	return store
 	
 end
 

@@ -186,7 +186,7 @@ function sg(wave,p2,s )
 				level2 = 15
 			end
 			if difficulty >=36 then
-				if RollPercent(50) then
+				if RollPercent(15) then
 					unit:AddAbility("yg3"..RandomInt(1,5)):SetLevel(1)
 				end
 			end
