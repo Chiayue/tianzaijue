@@ -186,8 +186,12 @@ end
 --}
 function m.GetNetEquip(PlayerID,difficulty,playerWin)
 	local net ={}
+	local hero = PlayerUtil.GetHero(PlayerID)
+	if not hero then
+		return net
+	end
 	for k,v in pairs(Stage.playerinfo[PlayerID].netItem) do
-		local show_list = CustomNetTables:GetTableValue( "ItemsInfoShow", string.format( "%d", v ))
+		local show_list = item.show_list
 		local item = EntIndexToHScript(v)
 		local net2 ={}
 		net.src="结算奖励"
@@ -196,6 +200,7 @@ function m.GetNetEquip(PlayerID,difficulty,playerWin)
 		net.grade  = show_list.itemlevel
 		net.attr["item_attributes"] = show_list.item_attributes
 		net.attr["item_attributes_spe"] = show_list.item_attributes_spe
+		net.slot =Netbackpack:GetNotUseIndex(hero) --如果是-1 就代表没有位置
 		net.score= show_list.zdl
 		table.insert(net, net2) 
 	end

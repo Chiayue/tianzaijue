@@ -27,9 +27,6 @@ function xc( keys )
 	end	  
 	local baseDamage2 = baseDamage + caster.smbf_baseDamage
 	local damage = (ll * (i+caster.smbf_damage) + baseDamage2 ) * x * multiple
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local particle = ParticleManager:CreateParticle("particles/test/xuechao2.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 	ParticleManager:SetParticleControl(particle, 0, point) -- Origin
  	local time = 5

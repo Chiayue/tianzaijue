@@ -33,9 +33,6 @@ function hyqj( keys )
 	local mj = caster:GetAgility()
 	local baseDamage2 = baseDamage + caster.hyqj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local damage2= damage
 	
 	if caster.hyqj_time == nil then

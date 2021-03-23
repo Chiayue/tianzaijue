@@ -65,6 +65,14 @@
 	"item_net_prefix_g7_q5"	"乐 · "
 	"item_net_prefix_g7_q6"	"惊 · "
 	"item_net_prefix_g7_q7"	"恐 · "
+
+	"item_net_prefix_g8_q1"	"风 · "
+	"item_net_prefix_g8_q2"	"风 · "
+	"item_net_prefix_g8_q3"	"水 · "
+	"item_net_prefix_g8_q4"	"火 · "
+	"item_net_prefix_g8_q5"	"雷 · "
+	"item_net_prefix_g8_q6"	"地煞 · "
+	"item_net_prefix_g8_q7"	"天罡 · "
 	
 	//添加新的属性以后，要到随机装备的tooltip界面对应的js中添加对应的属性以保证顺序，否则不会显示
 	"item_attribute_format_common"	"{s:attr}<Panel class='AttrRange' /><Panel class='EnhanceValue' />"
@@ -293,6 +301,20 @@
 	"difficulty_name_40_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:380%<br>结算晶石加成:1530%<br>非正常模式掉落7阶强化石数量:20-25个<br>掉落征战钥匙概率:820%"
 	"difficulty_name_41"		"净化修罗--6阶段"
 	"difficulty_name_41_desc"	"掉落存档装备:7阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:390%<br>结算晶石加成:1580%<br>非正常模式掉落7阶强化石数量:25-40个<br>掉落征战钥匙概率:840%"
+
+
+	"difficulty_name_42"		"天灾来袭--1阶段"
+	"difficulty_name_42_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:400%<br>结算晶石加成:1630%<br>非正常模式掉落8阶强化石数量:1-5个<br>掉落征战钥匙概率:860%"
+	"difficulty_name_43"		"天灾来袭--2阶段"
+	"difficulty_name_43_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#477bff\">蓝</font>，<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:410%<br>结算晶石加成:1680%<br>非正常模式掉落8阶强化石数量:5-10个<br>掉落征战钥匙概率:880%"
+	"difficulty_name_44"		"天灾来袭--3阶段"
+	"difficulty_name_44_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:420%<br>结算晶石加成:1730%<br>非正常模式掉落8阶强化石数量:10-15个<br>掉落征战钥匙概率:900%"
+	"difficulty_name_45"		"天灾来袭--4阶段"
+	"difficulty_name_45_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font><br><br>结算历练值加成:430%<br>结算晶石加成:1780%<br>非正常模式掉落8阶强化石数量:15-20个<br>掉落征战钥匙概率:920%"
+	"difficulty_name_46"		"天灾来袭--5阶段"	
+	"difficulty_name_46_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:440%<br>结算晶石加成:1830%<br>非正常模式掉落8阶强化石数量:20-25个<br>掉落征战钥匙概率:940%"
+	"difficulty_name_47"		"天灾来袭--6阶段"
+	"difficulty_name_47_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
 
 	
 	"difficulty_mode_drop_down_tooltip"	"<font color='red'>房主</font>可点击选择当前难度的其他<font color='#FFD700'>模式</font>，不同模式会有一些特殊的设定"
@@ -931,6 +953,35 @@
 	"store_item_shopmall_43_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：首饰<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
 	"store_item_shopmall_44"		"三阶传奇特殊装备钥匙"
 	"store_item_shopmall_44_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：特殊装备<br>品阶：三阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_70"		"四阶史诗装备钥匙"
+	"store_item_shopmall_70_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：四阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_71"		"四阶传奇装备钥匙"
+	"store_item_shopmall_71_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：四阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_72"		"四阶神话装备钥匙"
+	"store_item_shopmall_72_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：四阶<br>最低品质：<font color=\"#d92b2b\">神话</font>"
+	"store_item_shopmall_73"		"五阶史诗装备钥匙"
+	"store_item_shopmall_73_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：五阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_74"		"五阶传奇装备钥匙"
+	"store_item_shopmall_74_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：五阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_75"		"五阶神话装备钥匙"
+	"store_item_shopmall_75_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：五阶<br>最低品质：<font color=\"#d92b2b\">神话</font>"
+	"store_item_shopmall_76"		"六阶史诗装备钥匙"
+	"store_item_shopmall_76_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：六阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_77"		"六阶传奇装备钥匙"
+	"store_item_shopmall_77_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：六阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_78"		"六阶神话装备钥匙"
+	"store_item_shopmall_78_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：六阶<br>最低品质：<font color=\"#d92b2b\">神话</font>"
+	"store_item_shopmall_79"		"七阶史诗装备钥匙"
+	"store_item_shopmall_79_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：七阶<br>最低品质：<font color=\"#fe6d15\">史诗</font>"
+	"store_item_shopmall_80"		"七阶传奇装备钥匙"
+	"store_item_shopmall_80_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：七阶<br>最低品质：<font color=\"#ffbc09\">传奇</font>"
+	"store_item_shopmall_81"		"七阶神话装备钥匙"
+	"store_item_shopmall_81_desc"	"使用后可开启装备宝箱获得一件存档装备<br><br>部位：随机<br>品阶：七阶<br>最低品质：<font color=\"#d92b2b\">神话</font>"
+
+
+
+
+
 	"store_item_shopmall_49"		"中级符文书Ⅱ"
 	"store_item_shopmall_49_desc"	"每局游戏开局，随机激活1个不重复的中级符文<br/><br/><font color='gold'>永久生效</font>"
 	"store_item_shopmall_50"		"中级符文书Ⅲ"
@@ -944,6 +995,8 @@
 	"store_item_shopmall_53_desc"	"全属性+10%<br/>初始三维+20<br/>幸运值+10<br/>天命值+30(击杀灾厄BOSS掉落高品质装备的概率提升30%)<br/><br/><font color='gold'>永久生效</font>"
 	"store_item_shopmall_54"		"黄金会员"
 	"store_item_shopmall_54_desc"	"全属性+20%<br/>初始三维+50<br/><br/>幸运值+15<br/>天命值+50(击杀灾厄BOSS掉落高品质装备的概率提升50%)<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_87"		"钻石会员"
+	"store_item_shopmall_87_desc"	"当前难度最高品质装备的爆率+70%(与天命值互乘)<br/><br/><font color='gold'>永久生效</font>"
 
 
 	"store_item_shopmall_55"		"超魔符文书Ⅱ"
@@ -977,7 +1030,7 @@
 	"store_item_shopmall_67_desc"	"每局游戏开局，给予一颗吞噬丹<br/><br/><font color='gold'>永久生效</font>"
 
 	"store_item_shopmall_68"		"征战钥匙"
-	"store_item_shopmall_68_desc"	"使用后可开启通用宝箱获得一件商城道具<br/><br/>一级奖池（90%）：<br/>晶石<br/>基础符文页<br/>中级符文页<br/>高级符文页<br/>二阶强化石<br/>三阶强化石<br/>四阶强化石<br/><br/>二级奖池（9%）：<br/>初级会员<br/>中级会员<br/>贤者神石<br/>中级符文书Ⅰ<br/>中级符文书Ⅱ<br/>中级符文书Ⅲ<br/>一级神秘宝物书<br/><br/>三级奖池（0.9%）：<br/>100w晶石（7.2%）<br/>吞噬卡（10.1%）<br/>白银会员（1.8%）<br/>高级符文书Ⅰ（33.3%）<br/>高级符文书Ⅱ（10.6%）<br/>高级符文书Ⅲ（3.3%）<br/>超魔符文书Ⅰ（5.4%）<br/>超魔符文书Ⅱ（1.8%）<br/>超魔符文书Ⅲ（0.6%）（非卖品）<br/>11级能量之心（20%）<br/>12级能量之心（5.4%）<br/>二级神秘宝物书（3.6%）<br/><br/>四级奖池（0.1%）：<br/>黄金会员（37.1%）<br/>特殊符文书Ⅰ（20.6%）<br/>特殊符文书Ⅱ（6.1%）<br/>特殊符文书Ⅲ（2%）（非卖品）<br/>13级能量之心（20.6%）<br/>14级能量之心（5.1%）<br/>三级神秘宝物书（8.2%）<br/><br/><font color='gold'>奖池内除[非卖品]外的道具会不定期在商城中进行出售</font>"
+	"store_item_shopmall_68_desc"	"使用后可开启通用宝箱获得一件商城道具<br/><br/>一级奖池（90%）：<br/>晶石<br/>基础符文页<br/>中级符文页<br/>高级符文页<br/>二阶强化石<br/>三阶强化石<br/>四阶强化石<br/>五阶强化石<br/>六阶强化石<br/>七阶强化石<br/><br/>二级奖池（9%）：<br/>初级会员<br/>中级会员<br/>贤者神石<br/>中级符文书Ⅰ<br/>中级符文书Ⅱ<br/>中级符文书Ⅲ<br/>一级神秘宝物书<br/><br/>三级奖池（0.9%）：<br/>100w晶石（7.2%）<br/>吞噬卡（10.1%）<br/>白银会员（1.8%）<br/>高级符文书Ⅰ（33.3%）<br/>高级符文书Ⅱ（10.6%）<br/>高级符文书Ⅲ（3.3%）<br/>超魔符文书Ⅰ（5.4%）<br/>超魔符文书Ⅱ（1.8%）<br/>超魔符文书Ⅲ（0.6%）（非卖品）<br/>11级能量之心（20%）<br/>12级能量之心（5.4%）<br/>二级神秘宝物书（3.6%）<br/><br/>四级奖池（0.1%）：<br/>黄金会员（37.1%）<br/>钻石会员（6%）<br/>特殊符文书Ⅰ（20.6%）<br/>特殊符文书Ⅱ（6.1%）<br/>特殊符文书Ⅲ（2%）（非卖品）<br/>13级能量之心（20.6%）<br/>14级能量之心（5.1%）<br/>三级神秘宝物书（8.2%）<br/><br/><font color='gold'>奖池内除[非卖品]外的道具会不定期在商城中进行出售</font>"
 
 
 
@@ -992,7 +1045,13 @@
 	"store_item_shopmall_cw_1_201"		"金色冰龙宝宝"
 	"store_item_shopmall_cw_1_201_desc"	"类别：宠物<br/>作用：出战时英雄杀怪增加金币+10,金钱加成+5%,经验加成+5%"
 	"store_item_shopmall_cw_3_11"		"末日宝宝"
-	"store_item_shopmall_cw_3_11_desc"	"类别：宠物<br/>作用：出战时英雄技能等级+2,金钱加成+12%"
+	"store_item_shopmall_cw_3_11_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+2,金钱加成+12%"
+	"store_item_shopmall_cw_4_22"		"肉山宝宝"
+	"store_item_shopmall_cw_4_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+2,当前难度最高品质装备爆率+40%(与天命值互乘)"
+	"store_item_shopmall_cw_5_22"		"金色肉山宝宝"
+	"store_item_shopmall_cw_5_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+3,当前难度最高品质装备爆率+40%(与天命值互乘)"
+	"store_item_shopmall_cw_6_22"		"暗月肉山宝宝"
+	"store_item_shopmall_cw_6_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+4,当前难度最高品质装备爆率+65%(与天命值互乘)"
 	"store_item_shopmall_gh_1_1"		"坚韧光环"
 	"store_item_shopmall_gh_1_1_desc"	"类别：光环<br/>作用：出战时英雄护甲+10"
 	"store_item_shopmall_gh_1_2"		"御魔光环"
@@ -1042,6 +1101,8 @@
 	"store_item_shopmall_sstone_6_desc"	"可用来强化6阶及以上品阶的存档装备"
 	"store_item_shopmall_sstone_7"	"7阶强化石"
 	"store_item_shopmall_sstone_7_desc"	"可用来强化7阶及以上品阶的存档装备"
+	"store_item_shopmall_sstone_8"	"8阶强化石"
+	"store_item_shopmall_sstone_8_desc"	"可用来强化8阶及以上品阶的存档装备"
 	
 	"ui_tooltip_suit_not_equip"	"<未装备>"
 
@@ -1385,7 +1446,7 @@
 
 	"modifier_bw_4_2_buff_Description"	"护甲-45点<br/><br/><font color=\"#cfbf81\">4级宝物</font>"
 
-	"modifier_bw_4_3_Description"	"全属性+8888<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
+	"modifier_bw_4_3_Description"	"全属性+10000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
 
 	"modifier_bw_4_4_Description"	"主属性提升+150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">4级宝物</font>"
 
@@ -1918,6 +1979,73 @@
 	//"achievement_difficulty_29_1_desc"					""
 	"achievement_difficulty_29_1_bonus"					"初始给与一本5级天书"
 	//"achievement_difficulty_29_1_bonus_des
+
+
+	"achievement_difficulty_30_1"						"通关N30"
+	//"achievement_difficulty_30_1_desc"					""
+	"achievement_difficulty_30_1_bonus"					"宝物栏槽位+1"
+	//"achievement_difficulty_30_1_bonus_des
+
+	"achievement_difficulty_31_1"						"通关N31"
+	//"achievement_difficulty_31_1_desc"					""
+	"achievement_difficulty_31_1_bonus"					"天命值+15"
+	//"achievement_difficulty_31_1_bonus_des
+
+	"achievement_difficulty_32_1"						"通关N32"
+	//"achievement_difficulty_32_1_desc"					""
+	"achievement_difficulty_32_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_32_1_bonus_des
+
+	"achievement_difficulty_33_1"						"通关N33"
+	//"achievement_difficulty_33_1_desc"					""
+	"achievement_difficulty_33_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_33_1_bonus_des
+
+	"achievement_difficulty_34_1"						"通关N34"
+	//"achievement_difficulty_34_1_desc"					""
+	"achievement_difficulty_34_1_bonus"					"天命值+15"
+	//"achievement_difficulty_34_1_bonus_des
+
+	"achievement_difficulty_35_1"						"通关N35"
+	//"achievement_difficulty_35_1_desc"					""
+	"achievement_difficulty_35_1_bonus"					"宝物槽位+1,初始给与一个个人BOSS号角*50"
+	//"achievement_difficulty_35_1_bonus_des
+
+
+	"achievement_difficulty_36_1"						"通关N36"
+	//"achievement_difficulty_36_1_desc"					""
+	"achievement_difficulty_36_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_36_1_bonus_des
+
+	"achievement_difficulty_37_1"						"通关N37"
+	//"achievement_difficulty_37_1_desc"					""
+	"achievement_difficulty_37_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_37_1_bonus_des
+
+	"achievement_difficulty_38_1"						"通关N38"
+	//"achievement_difficulty_38_1_desc"					""
+	"achievement_difficulty_38_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_38_1_bonus_des
+
+	"achievement_difficulty_39_1"						"通关N39"
+	//"achievement_difficulty_39_1_desc"					""
+	"achievement_difficulty_39_1_bonus"					"天命值+15"
+	//"achievement_difficulty_39_1_bonus_des
+
+	"achievement_difficulty_40_1"						"通关N40"
+	//"achievement_difficulty_40_1_desc"					""
+	"achievement_difficulty_40_1_bonus"					"宝物槽位+1"
+	//"achievement_difficulty_40_1_bonus_des
+
+	"achievement_difficulty_41_1"						"通关N41"
+	//"achievement_difficulty_41_1_desc"					""
+	"achievement_difficulty_41_1_bonus"					"宝物槽位+1,初始给与一个个人BOSS号角*100"
+	//"achievement_difficulty_41_1_bonus_des
+
+	"achievement_difficulty_47_1"						"通关N47"
+	//"achievement_difficulty_47_1_desc"					""
+	"achievement_difficulty_47_1_bonus"					"初始给与一本6级天书"
+	//"achievement_difficulty_47_1_bonus_des
 
 
 

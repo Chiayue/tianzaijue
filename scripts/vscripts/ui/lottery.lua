@@ -81,6 +81,24 @@ Lottery.list_all={
 		num=10; 
 		cf=true; 
    	},
+   	shopmall_sstone_5={ --5阶强化石
+	    level = 1; 
+		weight= 10; 
+		num=10; 
+		cf=true; 
+   	},
+   	shopmall_sstone_6={ --6阶强化石
+	    level = 1; 
+		weight= 5; 
+		num=10; 
+		cf=true; 
+   	},
+   	shopmall_sstone_7={ --7阶强化石
+	    level = 1; 
+		weight= 2; 
+		num=10; 
+		cf=true; 
+   	},
    	shopmall_5={ --初级会员
 	    level = 2; 
 		weight= 150; 
@@ -230,6 +248,12 @@ Lottery.list_all={
 		weight= 180; 
 		cf=false; 
 		jing=1500000;  
+   	},
+   	shopmall_87={ --钻石会员
+	    level = 4; 
+		weight= 50; 
+		cf=false; 
+		jing=4000000;  
    	},
 }
     

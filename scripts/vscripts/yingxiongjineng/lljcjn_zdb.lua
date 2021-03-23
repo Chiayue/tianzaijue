@@ -151,9 +151,6 @@ function zdbsh( keys )
 	if caster.cas_table.tswsh > 100 then
 		damage = damage * caster.cas_table.tswsh /100
 	end
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	ApplyDamageEx(caster,target,ability,damage)
 	--ability:ApplyDataDrivenModifier(caster, target, "modifier_lljcjn_zdb", {})
 --	ability:ApplyDataDrivenModifier(caster, caster, "modifier_lljcjn_zdb", {})

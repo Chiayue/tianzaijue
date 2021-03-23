@@ -47,11 +47,15 @@ function modifier_boss_pudge_dismember_lua:OnIntervalThink()
 		local damage = {
 			victim = self:GetParent(),
 			attacker = self:GetCaster(),
-			damage = 2*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
+			damage = self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
 			damage_type = DAMAGE_TYPE_MAGICAL,
 			ability = self:GetAbility()
 		}
-		self:GetCaster():Heal(2*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),self:GetCaster())
+		local heal = self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster())
+		if self:GetCaster().shjs then
+			heal = heal / self:GetCaster().shjs
+		end
+		self:GetCaster():Heal(heal,self:GetCaster())
 		ApplyDamage( damage )
 		EmitSoundOn( "Hero_Pudge.Dismember", self:GetParent() )
 	end

@@ -40,30 +40,27 @@ function lzfs( keys )
 	local point = target:GetAbsOrigin()
 	local baseDamage2 = baseDamage + caster.lzfs_baseDamage
 	local damage = (zsx * (i + caster.lzfs_damage) + baseDamage2 ) * x *shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
-	local damage2 = damage
 	if RollPercentage(50) then
-			damage2 = damage * (caster.lzfs_multiple + 1 )
+			damage = damage * (caster.lzfs_multiple + 1 )
 	end	
+	local time = caster.lzfs_time - 1
+	if time > 2 then
+		damage = damage * ((time-2)*0.25+1)
+		time = 2
+	end
 	
 	local units = FindAlliesInRadiusExdd(caster,point,radius) --寻找玩家的敌对单位
 	StartSoundEventFromPosition("Hero_Ursa.Earthshock",point)
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_ursa/ursa_earthshock.vpcf", PATTACH_POINT_FOLLOW, target)
 	ParticleManager:SetParticleControl(particle, 0, point) -- Origin
-	ParticleManager:SetParticleControl(particle, 1, Vector(radius,radius,radius)) -- Destination
+	ParticleManager:SetParticleControl(particle, 1, Vector(radius/2,radius/2,radius/2)) -- Destination
+	
+
 	if units ~= nil then
 		for key, unit in pairs(units) do
-			ApplyDamageEx(caster,unit,ability,damage2)
+			ApplyDamageEx(caster,unit,ability,damage)
 		end
-	end				
-
-
-	local time = caster.lzfs_time - 1
-	if time > 5 then
-		time = 5
-	end
+	end			
 	local time2  = 0
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time2 <= time then
@@ -77,16 +74,11 @@ function lzfs( keys )
 			local units = FindAlliesInRadiusExdd(caster,point,radius) --寻找玩家的敌对单位
 			local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_ursa/ursa_earthshock.vpcf", PATTACH_POINT_FOLLOW, target)
 			ParticleManager:SetParticleControl(particle, 0, point) -- Origin
-			ParticleManager:SetParticleControl(particle, 1, Vector(radius,radius,radius)) -- Destination
-			local multiple = 1
-			if RollPercentage(50) then
-				multiple = caster.lzfs_multiple +multiple
-			end	
-			local damage2 = damage * multiple
+			ParticleManager:SetParticleControl(particle, 1, Vector(radius/2,radius/2,radius/2)) -- Destination
 			
 			if units ~= nil then
 				for key, unit in pairs(units) do
-					ApplyDamageEx(caster,unit,ability,damage2)
+					ApplyDamageEx(caster,unit,ability,damage)
 				end
 			end
 		else 

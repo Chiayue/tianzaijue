@@ -119,7 +119,9 @@ function CreateDyh(keys,position,ewsh,ewxl)
 
 		mj = math.ceil(mj/50)+((x-1)*100)--暂时每50点敏捷提升一点攻击速度,每提升一级增加十点攻击速度
 		local hp = caster:GetBaseMaxHealth()* 2.2 * ewxl 
-		
+		if hp > 1000000000 then
+			hp = 1000000000
+		end
 		unit:SetPhysicalArmorBaseValue(hj)
 		local mk = hj*0.06/(1+hj*0.06)*100    	--设置BOSS的魔抗
 		unit:SetBaseMagicalResistanceValue(mk)

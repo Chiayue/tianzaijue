@@ -36,9 +36,6 @@ function lxdf( keys )
 	caster:SetHealth(xl)	
 	local baseDamage2 = baseDamage + caster.lxdf_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local damage2= damage
 	
 	if caster.lxdf_time == nil then

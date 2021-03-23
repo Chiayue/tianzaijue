@@ -8,9 +8,9 @@ function boss_one_storm_lua:OnAbilityPhaseStart()
 		EmitSoundOn( "Hero_Sven.StormBolt", self:GetCaster() )
 		local hCaster = self:GetCaster()
 		local radius = self:GetSpecialValueFor("radius") 
-		local cd = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.05
-		if cd < 0.5 then
-			cd = 0.5
+		local cd  = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.04
+		if cd < 1 then
+			cd = 1
 		end
 		ParticleMgr.CreateWarnRing(hCaster,nil,radius,cd)
 	end
@@ -72,12 +72,16 @@ end
 
 
 function boss_one_storm_lua:GetCooldown( nLevel )
-	return self.BaseClass.GetCooldown( self, nLevel )-0.2*GameRules:GetCustomGameDifficulty()
+	local cd = self.BaseClass.GetCooldown( self, nLevel )-0.2*GameRules:GetCustomGameDifficulty()
+	if cd < 6 then
+		cd = 6
+	end
+	return cd
 end
 function boss_one_storm_lua:GetCastPoint()
 	local cd  = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.04
-	if cd < 0.5 then
-		cd = 0.5
+	if cd < 1 then
+		cd = 1
 	end
 	return cd
 end

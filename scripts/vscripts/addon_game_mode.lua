@@ -316,6 +316,7 @@ function PlagueLand:OnPlayerSay( keys )
 		
 	end
 	if tokens[1] == "-cc" then
+		NetItemDrop(hero)
 		--local pack = Backpack:GetBackpack(hero)
 		--for packIndex,index in pairs(pack) do
 			
@@ -327,7 +328,7 @@ function PlagueLand:OnPlayerSay( keys )
 			--end
 		--end
 		
-		Shopmall:FinishQuestBatch("hero_killboss_4",1,1)
+		--Shopmall:FinishQuestBatch("hero_killboss_4",1,1)
 		--hero:FindModifierByName("item_0001_modifier"):ForceRefresh()
 		--local addItem = CreateItem("item_"..tokens[2], nil, nil)
 		--hero:AddItem(addItem)
@@ -338,19 +339,37 @@ function PlagueLand:OnPlayerSay( keys )
 --Shopmall:AddJing(keys.playerid,9999999)
 	
 		--Lottery:RandomLottery(keys.playerid,200)
-		--Stage.PlayerWin()
-		hero:ForceKill(true)
+		Stage.PlayerWin()
+		--hero:ForceKill(true)
 		--modifier_invulnerable
 		--SendToClient(keys.playerid,"tzj_net_equip_enhance_return",{success=false,error=2})
 		--Netbackpack:EnhanceItem( hero, 8 )
 		--for i=1,10 do
 			--Lottery:RandomLottery(keys.playerid)
 		--end
-		--local names = {"item_net_wq_ll_1_1","item_net_wq_zl_1_1","item_net_ss_ll_1_1","item_net_fj_ty_1_1","item_net_ts_ty_1_1"}
+		--local names = {"item_smbw_1"}
 		--local addItem = CreateItem(names[RandomInt(1,#names)], hero, hero)
 		--hero:AddAbility("bingzhishijie"):SetLevel(1)
 		--print(addItem:GetPurchaser():GetUnitName())
 		--CreateItemOnGround(addItem,nil,hero:GetAbsOrigin(),100)
+		--[[local arg2={[0]={day=false,week=true}}
+		for k,v in pairs(arg2) do
+			local cc=false
+			for kk,vv in pairs(v) do
+				print(vv)
+				if vv~=true then
+					cc=true
+				end
+			end
+			if cc then
+				print(3333333)
+				local temp={}
+                    temp[0]=arg2[0]
+					PrintTable(temp)
+			--Shopmall:InitQuestAgain(Shopmall.unit_quest[k],2)---初始化失败再重新初始化该玩家的任务，尝试2次 
+			end
+		end
+]]
 		--PrintTable(Sachievement:GetAchiState( hero))
 		--Sachievement:SetAchiState( hero, "hero_single")
 		--Sachievement:SetAchiState( hero,"hero_single")

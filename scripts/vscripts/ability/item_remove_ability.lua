@@ -8,6 +8,25 @@ kjn={
 	"kjn_6";
 }
 
+-- 获取一个空的技能
+local function findEmptyAbility2(caster)
+	local name = {}
+	for i=1,5 do
+		table.insert(name,"kjn_"..i)
+	end
+	for i=0,4 do			 
+		local ability = caster:GetAbilityByIndex(i)
+		if ability then
+			for k,v in pairs(name) do
+				if ability:GetAbilityName() == v then
+					table.remove(name,k)
+				end
+			end
+		end
+	end
+	return name[1]
+end
+
 function RemoveAbility(_,data)
 	local pid = data.PlayerID
 	local abilities = data.ability
@@ -17,7 +36,7 @@ function RemoveAbility(_,data)
 			for i=1,5 do			 
 				local ability = caster:GetAbilityByIndex(i-1)
 				 if ability and name == ability:GetAbilityName() then
-					local name2 = kjn[i] 		
+					local name2 = findEmptyAbility2(caster) 		
 					local jnd = caster:GetAbilityPoints()
 					local jnd2 = ability:GetLevel() -1
 				 	jnd = jnd +jnd2

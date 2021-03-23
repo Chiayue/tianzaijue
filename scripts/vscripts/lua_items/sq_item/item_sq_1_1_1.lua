@@ -31,6 +31,8 @@ function item_sq_1_1_1:Spawn()
 				self.itemtype.item_attributes.zzjt_time = 1 * level
 				self.itemtype.item_attributes.ltyj_time = 1 * level
 				self.itemtype.item_attributes.czss_time = 1 * level
+				self.itemtype.item_attributes.hxs_multiple = 1 * level
+				self.itemtype.item_attributes.tkjj_multiple = 1 * level				
 			elseif sqtype == 2 then
 				self.itemtype.item_attributes.swmc_damage = 5 * level
 				self.itemtype.item_attributes.swmc_heal = 5 * level

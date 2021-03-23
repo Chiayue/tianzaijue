@@ -57,7 +57,7 @@ function m.spawnAttackEnemy(max,interval,wave)
 		spawnedCount=spawnedCount+1
 		
 		local leaved = {}
-		
+		Stage.xgnum = Stage.xgnum + 1
 		for idx, PlayerID in pairs(Stage.playeronline) do
 			if not PlayerUtil.IsPlayerLeaveGame(PlayerID) then
 				local spawner=Entities:FindByName(nil,m.sgd[PlayerID+1])
@@ -106,6 +106,7 @@ end
 
 function sg(wave,p2,s )
 	local difficulty =   GetGameDifficulty()
+
 	local i = RandomInt(1,100)--5%的怪率刷出高级怪
 	local i2 = RandomInt(1,100)--1.5%的怪率刷出精英怪
 	local xz =math.ceil(Stage.wave*difficulty*0.1) --随着波数的增加，出现精英怪的概率也将提高
@@ -146,6 +147,9 @@ function sg(wave,p2,s )
 
 	local armor = ma.armorxs[unitname]	--设置怪物的动态护甲
 	local maxarmor = armor * ma.armor[wave]  *fybs * ma.nd_hj[difficulty]
+	if difficulty >=42 then
+		maxarmor = maxarmor / 8
+	end
 	unit:SetPhysicalArmorBaseValue(maxarmor)
 
 	local mk = maxarmor*0.06/(1+maxarmor*0.06)*100    	--设置怪物的魔抗
@@ -187,7 +191,7 @@ function sg(wave,p2,s )
 			end
 			if difficulty >=36 then
 				if RollPercent(15) then
-					unit:AddAbility("yg3"..RandomInt(1,5)):SetLevel(1)
+					unit:AddAbility("yg3"..RandomInt(1,6)):SetLevel(1)
 				end
 			end
 		end
@@ -265,7 +269,10 @@ function m.SpwanAttackBoss(bossName,wave)
 	xpcall(function()
 		local hp = ba.hpxs[bossName] 	--设置怪物的动态血量
 		local maxhp = hp * ba.hp[wave]  * ma.nd_hp[difficulty]  * ma.bossrs_hp[Stage.playernum]  * ma.nd_hp2[difficulty]
-
+		if difficulty >=42 then
+			maxhp = maxhp * ma.bossrs_hp[Stage.playernum]
+			boss:AddAbility("yg36"):SetLevel(1)
+		end 
 		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
 			boss.shjs = string.format("%.2f",maxhp / 200000000)
 			maxhp = 200000000

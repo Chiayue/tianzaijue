@@ -57,7 +57,11 @@ function item_jewelry:GetModifierHealthBonus( params )	--智力
 end
 
 function item_jewelry:GetModifierMagicalResistanceBonus( params )	--智力
-	return self.mfkx
+	local mk = math.ceil(self.mfkx)
+	if mk > 99 then
+		mk =99
+	end
+	return mk
 end
 function item_jewelry:GetModifierManaBonus( params )	--智力
 	return self.mfz

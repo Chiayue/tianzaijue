@@ -57,7 +57,9 @@ function zygb( keys )
 	end
 	local baseHeal2 = baseHeal + caster.zlsw_baseHeal
 	heal = (zl * (i+caster.zlsw_heal) + baseHeal2 ) * x
-
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	target:Heal(heal, caster)
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot_failure.vpcf", PATTACH_ABSORIGIN_FOLLOW, target)
 	ParticleManager:SetParticleControl(particle, 1, target:GetAbsOrigin()) -- Origin
@@ -84,6 +86,9 @@ function zl(keys)
 	end
 	local baseHeal2 = baseHeal + caster.zlsw_baseHeal
 	heal = (zl * (i+caster.zlsw_heal) + baseHeal2 ) * x
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	target:Heal(heal, caster)
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_skywrath_mage/skywrath_mage_concussive_shot_failure.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 	ParticleManager:SetParticleControl(particle, 1, caster:GetAbsOrigin()) -- Origin

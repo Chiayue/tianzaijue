@@ -1,0 +1,8 @@
+wyzd2
+{
+	material materials/overviews/wyzd2.vmat
+	pos_x -17000
+	pos_y 13800
+	scale 26.500
+}
+

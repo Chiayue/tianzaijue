@@ -22,9 +22,7 @@ function hytx( keys )
 	i = i + caster.hytx_damage
 	local baseDamage2 = baseDamage + caster.hytx_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
+
 	ApplyDamageEx(caster,target,ability,damage)
 
 end

@@ -109,6 +109,9 @@ function modifier_ascension_crit:OnTakeDamage( params )
 		ParticleManager:ReleaseParticleIndex( nFXIndex )
 
 		local flLifesteal = flDamage * self.fsxx / 100
+		if flLifesteal > 500000000 then
+				flLifesteal = 500000000
+		end
 		Attacker:Heal( flLifesteal, self:GetAbility() )
 	end
 	return 0
@@ -157,6 +160,9 @@ function modifier_ascension_crit:OnAttackLanded( params )
 			end
 			if self.gjxx~=0 then
 				local flLifesteal = params.original_damage * self.gjxx / 100
+				if flLifesteal > 100000000 then
+					flLifesteal = 100000000
+				end
 				self:GetParent():Heal( flLifesteal, self:GetAbility() )
 			end
 			if self.gjjshj~=0 then

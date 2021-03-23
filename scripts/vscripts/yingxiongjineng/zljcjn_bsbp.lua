@@ -37,10 +37,6 @@ function bsbp( keys )
 	local mj = caster:GetIntellect()
 	local baseDamage2 = baseDamage + caster.bsbp_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x *shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
-	local damage2= damage
 	
 	if caster.bsbp_time == nil then
 		caster.bsbp_time = 0
@@ -48,8 +44,8 @@ function bsbp( keys )
 	if caster.bsbp_multiple == nil then
 		caster.bsbp_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
-			damage2 = damage * (caster.bsbp_multiple + 1 )
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
+			damage = damage * (caster.bsbp_multiple + 1 )
 	end	
 
 	local units = FindAlliesInRadiusExdd(caster,point,radius)
@@ -59,13 +55,14 @@ function bsbp( keys )
 	TimerUtil.createTimerWithDelay(0.5, function()	--0.2S摧毁特效
    		ParticleManager:DestroyParticle(p1,true)          
    	end)
-	 for key, unit in pairs(units) do
-		ApplyDamageMf(caster,unit,ability,damage2)	
-			
-	end
 	local time = caster.bsbp_time	--触发次数
-	if time > 5 then
-		time = 5
+	if time > 2 then
+		damage = damage * ((time-2)*0.33+1)
+		time = 2
+	end
+
+ 	for key, unit in pairs(units) do
+		ApplyDamageMf(caster,unit,ability,damage)			
 	end
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time > 0 then
@@ -79,13 +76,9 @@ function bsbp( keys )
 			       ParticleManager:DestroyParticle(p1,true)          
 			 end)
 			local multiple = 1
-			if RollPercentage(20) then
-				multiple = caster.bsbp_multiple +multiple
-			end	
-			damage2 = damage * multiple
 		 	local units = FindAlliesInRadiusExdd(caster,point,radius)
 			for key, unit in pairs(units) do
-				ApplyDamageMf(caster,unit,ability,damage2)	
+				ApplyDamageMf(caster,unit,ability,damage)	
 			--	ShowOverheadMsg(unit,OVERHEAD_ALERT_BONUS_SPELL_DAMAGE,damage)	
 			end
 			time = time - 1

@@ -34,24 +34,13 @@ function boss_wood_lower_attr_lua:OnSpellStart()
                     DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, FIND_CLOSEST, false)
     
     for _,enemy in pairs(enemies) do
-    	if enemy:IsHero() then
-    		if enemy:GetPrimaryAttribute()==0 then
-    			enemy:AddNewModifier( hCaster, self, "modifier_boss_wood_lower_attr_lua_str", {duration=20} )
-    			
-    		elseif enemy:GetPrimaryAttribute()==1 then
-    			enemy:AddNewModifier( hCaster, self, "modifier_boss_wood_lower_attr_lua_agi", {duration=20} )
-    			
-    		elseif enemy:GetPrimaryAttribute()==2 then
-    			enemy:AddNewModifier( hCaster, self, "modifier_boss_wood_lower_attr_lua_int", {duration=20} )    			
-    		end
-    		
-    	end
+   
     	
         local damage = {
 			victim = enemy,
 			attacker = self:GetCaster(),
-			damage = self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster())*2,
-			damage_type = DAMAGE_TYPE_MAGICAL,
+			damage = self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster())*1,
+			damage_type = DAMAGE_TYPE_PURE,
 			ability = self,
 		}
 		ApplyDamage( damage )

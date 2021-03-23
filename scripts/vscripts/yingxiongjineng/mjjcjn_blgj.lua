@@ -37,19 +37,14 @@ function blgj( keys )
 	local mj = caster:GetAgility()
 	local baseDamage2 = baseDamage + caster.blgj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x *shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
-	local damage2= damage
-	
 	if caster.blgj_time == nil then
 		caster.blgj_time = 0
 	end
 	if caster.blgj_multiple == nil then
 		caster.blgj_multiple = 0
 	end
-	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
-			damage2 = damage * (caster.blgj_multiple + 1 )
+	if RollPercentage(50) then	--百分之二十的概率触发暴击伤害
+			damage = damage * (caster.blgj_multiple + 1 )
 	end	
 	
 	local units = FindAlliesInRadiusExdd(caster,point,radius)
@@ -59,13 +54,14 @@ function blgj( keys )
    		ParticleManager:DestroyParticle(p1,true)          
    	end)
 	StartSoundEventFromPosition("Hero_Jakiro.LiquidFire",point)--这个是双头龙液体火命中敌人的声音
-	 for key, unit in pairs(units) do
-		ApplyDamageEx(caster,unit,ability,damage2)	
-			
-	end
 	local time = caster.blgj_time	--触发次数
-	if time > 5 then
-		time = 5
+	if time > 3 then
+		damage = damage * ((time-3)*0.25+1)
+		time = 3
+	end
+	 for key, unit in pairs(units) do
+		ApplyDamageEx(caster,unit,ability,damage)	
+			
 	end
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time > 0 then
@@ -80,14 +76,9 @@ function blgj( keys )
 			 TimerUtil.createTimerWithDelay(0.5, function()	--0.2S摧毁特效
 			       ParticleManager:DestroyParticle(p1,true)          
 			 end)
-			local multiple = 1
-			if RollPercentage(20) then
-				multiple = caster.blgj_multiple +multiple
-			end	
-			damage2 = damage * multiple
 		 	local units = FindAlliesInRadiusExdd(caster,point,radius)
 			for key, unit in pairs(units) do
-				ApplyDamageEx(caster,unit,ability,damage2)	
+				ApplyDamageEx(caster,unit,ability,damage)	
 			--	ShowOverheadMsg(unit,OVERHEAD_ALERT_BONUS_SPELL_DAMAGE,damage)	
 			end
 			time = time - 1

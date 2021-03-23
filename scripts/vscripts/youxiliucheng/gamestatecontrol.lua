@@ -48,6 +48,7 @@ m.wjsx={
 	"mfct";
 	"tmz";
 	"tmz2";
+	"tmz3";
 	"yxtfdj";
 	"tswsh";
 	
@@ -91,7 +92,7 @@ function m.gameInProgress(hero,i)
 	local courier = CreateUnitByName("npc_xinshi", point, false, hero, hero, DOTA_TEAM_NOTEAM)--信使
 	courier:AddNoDraw()
 	hero._courier = courier
-	
+		
 
 	hero.sjjll = 0		--初始每升一级增加的力量
 	hero.sjjmj = 0		--初始每升一级增加的敏捷
@@ -110,9 +111,10 @@ function m.gameInProgress(hero,i)
 	hero.nljszj =0 		--初始的能量晶石增加属性
 	hero.nljszjbfb = 1  --初始的能量晶石增加属性倍数
 	hero.sds = 0       --初始英雄的杀敌数
-	hero.xyz = 65      --初始英雄的幸运值
+	hero.xyz = 70      --初始英雄的幸运值
 	hero.tmz = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.tmz2 = 0 	   --英雄的天命值，增加更高品质装备的掉落
+	hero.tmz3 = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.bbtime=0      --不爆存档的次数
 	hero.bfbtsll=0    	--百分比提升力量
 	hero.bfbtsmj=0 		--百分比提升敏捷

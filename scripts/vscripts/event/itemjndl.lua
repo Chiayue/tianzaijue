@@ -317,7 +317,7 @@ m.zljn5={
   "item_zljcjn_bsxx5";
  -- "item_zljcjn_zygb5";
  -- "item_zljcjn_lssd5";
-  "item_zljcjn_cqzj5";
+ -- "item_zljcjn_cqzj5";
   "item_zljcjn_hxs5";
   "item_zljcjn_swzz5";
   "item_zljcjn_bsbp5";
@@ -333,7 +333,7 @@ m.zljn6={
   "item_zljcjn_bsxx6";
  -- "item_zljcjn_zygb6";
  -- "item_zljcjn_lssd6";
-  "item_zljcjn_cqzj6";
+--  "item_zljcjn_cqzj6";
   "item_zljcjn_hxs6";
   "item_zljcjn_swzz6";
   "item_zljcjn_dyh6";

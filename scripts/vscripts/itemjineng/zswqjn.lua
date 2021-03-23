@@ -121,10 +121,14 @@ function xb( keys )
 	
 
 	local damage = sx * i
+	local heal = sx * 5
+	if heal > 100000000 then
+		heal = 100000000
+	end
+	caster:Heal(heal,caster)
 	for key, unit in pairs(units) do			
 		ApplyDamageEx(caster,unit,ability,damage)
 		ShowOverheadMsg(unit,OVERHEAD_ALERT_BONUS_SPELL_DAMAGE,damage)
-
 	end
 
 	
@@ -142,7 +146,7 @@ function sjzswq( keys )
 	local lv = ability:GetLevelSpecialValueFor("lv", level)
 	local gold =	ability:GetLevelSpecialValueFor("gold", level)
 	if caster:HasModifier("modifier_yxtfjn_longqishi") then
-		gold = gold / 2
+		gold = math.ceil(gold *0.3)
 	end
 	local playerID = caster:GetPlayerOwnerID()
 	local xj = PlagueLand:GetNowGold(playerID)
@@ -202,6 +206,10 @@ function CallBoss(lv,lx,caster)
 
 		--设置怪物的动态血量
 		local maxhp = wq_boss_hp[lv] * ma.nd_hp[difficulty]
+		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+			unit.shjs = string.format("%.2f",maxhp / 200000000)
+			maxhp = 200000000
+		end
 		unit:SetBaseMaxHealth(maxhp)
 	--
 		--设置怪物的动态护甲
@@ -213,7 +221,10 @@ function CallBoss(lv,lx,caster)
 		unit:SetBaseMagicalResistanceValue(mk)
 		--设置怪物的动态攻击
 		local maxattack = wq_boss_damage[lv]  * ma.nd_gj[difficulty] --所有怪攻击太高，先削弱测试
-
+		if maxattack > 100000000 then
+			unit.shzj = string.format("%.2f",maxattack / 100000000)
+			maxattack = 100000000
+		end
 		unit:SetBaseDamageMin(maxattack)
 		unit:SetBaseDamageMax(maxattack)
 

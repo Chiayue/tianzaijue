@@ -1,23 +1,23 @@
-pudge_meat_hook_lua = class({})
+pudge_meat_hook_tiny_lua = class({})
 LinkLuaModifier("modifier_pudge_meat_hook_followthrough_lua", "lua_modifiers/boss/boss_pudge/modifier_pudge_meat_hook_followthrough_lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier("modifier_pudge_meat_hook_lua", "lua_modifiers/boss/boss_pudge/modifier_pudge_meat_hook_lua", LUA_MODIFIER_MOTION_BOTH )
+LinkLuaModifier("modifier_pudge_meat_hook_tiny_lua", "lua_modifiers/boss/boss_pudge/modifier_pudge_meat_hook_tiny_lua", LUA_MODIFIER_MOTION_BOTH )
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnAbilityPhaseStart()
+function pudge_meat_hook_tiny_lua:OnAbilityPhaseStart()
 	self:GetCaster():StartGesture( ACT_DOTA_OVERRIDE_ABILITY_1 )
 	return true
 end
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnAbilityPhaseInterrupted()
+function pudge_meat_hook_tiny_lua:OnAbilityPhaseInterrupted()
 	self:GetCaster():RemoveGesture( ACT_DOTA_OVERRIDE_ABILITY_1 )
 end
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnSpellStart()
+function pudge_meat_hook_tiny_lua:OnSpellStart()
     
     self.Projectile={}
 	if self.hVictim ~= nil then
@@ -36,7 +36,11 @@ function pudge_meat_hook_lua:OnSpellStart()
         0,
         false
     )
+
     for i=1,1 do
+    	if i > 10 then
+    		return 
+    	end
 		if enemies[i]==nil then
 			return
 		end
@@ -92,9 +96,9 @@ function pudge_meat_hook_lua:OnSpellStart()
             fStartRadius = self.hook_width ,
             fEndRadius = self.hook_width ,
             Source = self:GetCaster(),
-            iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_BOTH,
+            iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
             iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
-            iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS + DOTA_UNIT_TARGET_FLAG_INVULNERABLE,
+            iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS,
         }
 
         local temp=ProjectileManager:CreateLinearProjectile( info )
@@ -115,8 +119,11 @@ end
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnProjectileHitHandle( hTarget, vLocation ,projectileHandle)
+function pudge_meat_hook_tiny_lua:OnProjectileHitHandle( hTarget, vLocation ,projectileHandle)
 	if hTarget == self:GetCaster() then
+		return false
+	end
+	if hTarget and self.Projectile[projectileHandle].hVictim == nil and hTarget:HasModifier("modifier_pudge_meat_hook_tiny_lua") then
 		return false
 	end
     if self.Projectile[projectileHandle].bRetracting == false then
@@ -129,13 +136,13 @@ function pudge_meat_hook_lua:OnProjectileHitHandle( hTarget, vLocation ,projecti
 		if hTarget ~= nil then
 			EmitSoundOn( "Hero_Pudge.AttackHookImpact", hTarget )
 
-			hTarget:AddNewModifier( self:GetCaster(), self, "modifier_pudge_meat_hook_lua", nil )
+			hTarget:AddNewModifier( self:GetCaster(), self, "modifier_pudge_meat_hook_tiny_lua", nil )
 			
 			if hTarget:GetTeamNumber() ~= self:GetCaster():GetTeamNumber() then
 				local damage = {
                     victim = hTarget,
                     attacker = self:GetCaster(),
-                    damage =2*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
+                    damage =self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
                     damage_type = DAMAGE_TYPE_PURE,		
                     ability = this
                 }
@@ -210,7 +217,7 @@ function pudge_meat_hook_lua:OnProjectileHitHandle( hTarget, vLocation ,projecti
 		if self.Projectile[projectileHandle].hVictim ~= nil then
 			local vFinalHookPos = vLocation
 			self.Projectile[projectileHandle].hVictim:InterruptMotionControllers( true )
-			self.Projectile[projectileHandle].hVictim:RemoveModifierByName( "modifier_pudge_meat_hook_lua" )
+			self.Projectile[projectileHandle].hVictim:RemoveModifierByName( "modifier_pudge_meat_hook_tiny_lua" )
 
 			local vVictimPosCheck = self.Projectile[projectileHandle].hVictim:GetOrigin() - vFinalHookPos 
 			local flPad = self:GetCaster():GetPaddedCollisionRadius() + self.Projectile[projectileHandle].hVictim:GetPaddedCollisionRadius()
@@ -231,14 +238,14 @@ end
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnProjectileThinkHandle( projectileHandle )
+function pudge_meat_hook_tiny_lua:OnProjectileThinkHandle( projectileHandle )
     
 	self.Projectile[projectileHandle].vProjectileLocation =ProjectileManager:GetLinearProjectileLocation(projectileHandle)
 end
 
 --------------------------------------------------------------------------------
 
-function pudge_meat_hook_lua:OnOwnerDied()
+function pudge_meat_hook_tiny_lua:OnOwnerDied()
 	self:GetCaster():RemoveGesture( ACT_DOTA_OVERRIDE_ABILITY_1 );
 	self:GetCaster():RemoveGesture( ACT_DOTA_CHANNEL_ABILITY_1 );
 end

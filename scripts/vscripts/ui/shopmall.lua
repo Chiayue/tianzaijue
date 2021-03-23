@@ -205,6 +205,14 @@ if Shopmall == nil then
         --    notSale=true,
             canuse=false, 
         },
+        shopmall_87={--钻石会员
+            price_jing=10000000,
+            reward={Attr_tmz3=70},
+            catalog1="certificate",
+            catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
         shopmall_8={--基础专长礼包		价格：2000仙石     时间：永久    作用：基础专长点数+3      每次开局从基础专长库里随机选取三个不重复的专长添加给英雄       
             price_magic=2000,
             reward={Set_jjzc=3},
@@ -266,14 +274,14 @@ if Shopmall == nil then
              catalog1="certificate",
              catalog2="rune",
              canuse=false,     
-         --    notSale=true,   
+        --    notSale=true,   
         },
         shopmall_55={--超魔专长礼包        
-             price_jing=0, 
+             price_jing=4000000, 
              reward={Set_cmzc=1},
              catalog1="certificate",
              catalog2="rune",     
-             notSale=true,
+         --    notSale=true,
              canuse=false,   
         },
         shopmall_56={--超魔专长礼包        
@@ -290,14 +298,14 @@ if Shopmall == nil then
             catalog1="certificate",
             catalog2="rune",
             canuse=false,
-           -- notSale=true,
+         --   notSale=true,
         },
         shopmall_57={--特殊专长礼包     
-            price_jing=5000000,
+            price_jing=20000000,
             reward={Set_tszc=1},
             catalog1="certificate",
             catalog2="rune",
-            notSale=true,
+        --    notSale=true,
             canuse=false,
         },
         shopmall_58={--特殊专长礼包     
@@ -652,6 +660,33 @@ if Shopmall == nil then
             notSale=true,
             canuse=true, 
         },
+        shopmall_cw_4_22={--
+            price_magic=10000,
+            reward={Set_courier="cw_4_22"},
+            catalog1="visual",
+            catalog2 = "pet",
+            stack=0,
+         --   notSale=true,
+            canuse=true, 
+        },
+        shopmall_cw_5_22={--
+            price_magic=30000,
+            reward={Set_courier="cw_5_22"},
+            catalog1="visual",
+            catalog2 = "pet",
+            stack=0,
+        --    notSale=true,
+            canuse=true, 
+        },
+        shopmall_cw_6_22={--
+            price_magic=80000,
+            reward={Set_courier="cw_6_22"},
+            catalog1="visual",
+            catalog2 = "pet",
+            stack=0,
+        --    notSale=true,
+            canuse=true, 
+        },
         shopmall_cw_1_101={--
             price_magic=2000,
             reward={Set_courier="cw_1_101"},
@@ -837,14 +872,14 @@ if Shopmall == nil then
             reward={  Giveitem={"item_smbw_1"},},
             catalog1="certificate",  
             canuse=false,  
-         --   notSale=true,   
+          --  notSale=true,   
         },
         shopmall_60 ={ ---2级神秘宝物书
             price_jing=1688888,
             reward={  Giveitem={"item_smbw_2"},},
             catalog1="certificate",   
             canuse=false, 
-         --   notSale=true,   
+        --    notSale=true,   
         },
         shopmall_61 ={ ---3级神秘宝物书
             price_jing=12000000,
@@ -865,21 +900,21 @@ if Shopmall == nil then
             reward={Attr_nlzx10=1},
             catalog1="certificate",
             canuse=false,    
-       --     notSale=true,   
+         --   notSale=true,   
         },
         shopmall_64 ={ ---12阶能量之心凭证
             price_jing=2222222,
             reward={Attr_nlzx11=1},
             catalog1="certificate",  
             canuse=false,  
-        --    notSale=true,   
+         --   notSale=true,   
         },
         shopmall_65 ={ ---13阶能量之心凭证
-            price_jing=200,
+            price_jing=6666666,
             reward={Attr_nlzx12=1},
             catalog1="certificate",  
             canuse=false,  
-            notSale=true,   
+          --  notSale=true,   
         },
         shopmall_66 ={ ---14阶能量之心凭证
             price_jing=200,
@@ -893,7 +928,7 @@ if Shopmall == nil then
             reward={  Giveitem={"item_xhp_tssq_2"},},
             catalog1="certificate",
             canuse=false,    
-       --     notSale=true,   
+          --  notSale=true,   
         },
         shopmall_sstone_2={--     2阶强化石
             price_jing=100,
@@ -920,6 +955,7 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_5={--     5阶强化石
+            price_magic=10,
             price_jing=800,
             reward={},
             stack=0,
@@ -928,6 +964,7 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_6={--     6阶强化石
+            price_magic=20,
             price_jing=1600,
             reward={},
             stack=0,
@@ -936,7 +973,18 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_7={--     7阶强化石
+            price_magic=30,
             price_jing=3200,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+          --  notSale=true,
+            canuse=false,    
+        },
+        shopmall_sstone_8={--     8阶强化石
+            price_magic=42,
+            price_jing=4800,
             reward={},
             stack=0,
             catalog1="consumable",
@@ -961,6 +1009,154 @@ if Shopmall == nil then
             --catalog2="vip",
             notSale=true,
             canuse=false, 
+        },
+        shopmall_82={--测试
+            price_jing=30000000,
+            reward={Attr_tmz3=50}, 
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
+        shopmall_83={--测试
+            price_jing=30000000,
+            reward={Attr_tmz3=100},
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
+        shopmall_84={--测试
+            price_jing=30000000,
+            reward={Attr_tmz3=200},
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
+        shopmall_85={--测试
+            price_jing=30000000,
+            reward={Attr_tmz3=300},
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
+        shopmall_86={--测试
+            price_jing=30000000,
+            reward={Attr_tmz3=500},
+          -- catalog1="certificate",
+            --catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
+        shopmall_70={--四阶橙色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"4_5_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_71={--四阶金色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"4_6_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_72={--四阶红色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"4_7_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_73={--五阶橙色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"5_5_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_74={--五阶金色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"5_6_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_75={--五阶红色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"5_7_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_76={--六阶橙色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"6_5_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_77={--六阶金色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"6_6_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_78={--六阶红色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"6_7_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_79={--七阶橙色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"7_5_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_80={--七阶金色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"7_6_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_81={--七阶红色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"7_7_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
         },
         --[[shopmall_29={--装备强化石(可堆叠)		(暂无，不需要弄)      价格：100晶石      时间：单局消耗      作用：强化一件装备，提升属性      说明：作用的存档装备等级和品质越高，需要消耗的强化石越多
             price_jing=4800,
@@ -2210,43 +2406,39 @@ function Shopmall:SetHerodata(unit)
             local temp_ch=SrvPlayerCustom.GetData(unit:GetPlayerOwnerID(),"shopmallch")
             local temp_gh=SrvPlayerCustom.GetData(unit:GetPlayerOwnerID(),"shopmallgh")
             if temp then
-                if playerdata["shopmall_"..temp]==nil then
-                    return
+                if playerdata["shopmall_"..temp]~=nil then
+                    self:SetCourier(unit,temp)    
                 end
-                self:SetCourier(unit,temp)
             else
-                if TableLen(cwlist) == 0 then
-                    return
+                if TableLen(cwlist) ~= 0 then
+                    local unitname=Shopmall.list[cwlist[RandomInt(1, #cwlist)]]['reward']["Set_courier"]
+                    SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallcw",unitname)
+                    self:SetCourier(unit,unitname)    
                 end
-                local unitname=Shopmall.list[cwlist[RandomInt(1, #cwlist)]]['reward']["Set_courier"]
-                SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallcw",unitname)
-                self:SetCourier(unit,unitname)
             end
             if temp_ch then
-                if playerdata["shopmall_"..temp_ch]==nil then
-                    return
+                if playerdata["shopmall_"..temp_ch]~=nil then
+                    self:SetCH(unit,temp_ch)
                 end
-                self:SetCH(unit,temp_ch)
             else
-                if TableLen(chlist) == 0 then
-                    return
+                if TableLen(chlist) ~= 0 then
+                    local chname=Shopmall.list[chlist[RandomInt(1, #chlist)]]['reward']["Set_ch"]
+                    SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallch",chname)
+                    self:SetCH(unit,chname)
                 end
-                local chname=Shopmall.list[chlist[RandomInt(1, #chlist)]]['reward']["Set_ch"]
-                SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallch",chname)
-                self:SetCH(unit,chname)
+                
             end
             if temp_gh then
-                if playerdata["shopmall_"..temp_gh]==nil then
-                    return
+                if playerdata["shopmall_"..temp_gh]~=nil then
+                    self:SetGH(unit,temp_gh)
                 end
-                self:SetGH(unit,temp_gh)
             else
-                if TableLen(ghlist) == 0 then
-                    return
+                if TableLen(ghlist) ~= 0 then
+                    local ghname=Shopmall.list[ghlist[RandomInt(1, #ghlist)]]['reward']["Set_gh"]
+                    SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallgh",ghname)
+                    self:SetGH(unit,ghname)
                 end
-                local ghname=Shopmall.list[ghlist[RandomInt(1, #ghlist)]]['reward']["Set_gh"]
-                SrvPlayerCustom.SetData(unit:GetPlayerOwnerID(),"shopmallgh",chname)
-                self:SetGH(unit,ghname)
+                
             end
             return nil
         end
@@ -2285,7 +2477,7 @@ function Shopmall:SetGH(unit,ghname)
         unit:RemoveModifierByName("modifier_"..unit.gh)
     end
     unit:AddNewModifier(unit, nil, "modifier_"..ghname, {} )
-    unit.gh=v
+    unit.gh=ghname
 end
 
 function Shopmall:SetCH(unit,chname)
@@ -2521,13 +2713,11 @@ function Shopmall:SetReWard( unit,reward,shopmallitemname)---给成就奖励和�
                 SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallcw",v)
                 self:SetCourier(unit,v)
             elseif  NameArray[2]=="gh" then --光环
-                self:SetGH(unit,v)
                 SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallgh",v)
+                self:SetGH(unit,v)
             elseif  NameArray[2]=="ch" then --称号
                 SrvPlayerCustom.SetData(unit:GetPlayerID(),"shopmallch",v)
                 self:SetCH(unit,v)
-
-                
             end
             
 		end

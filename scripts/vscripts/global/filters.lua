@@ -168,8 +168,11 @@ function m:lifeSteal(hero,damage,isMagic)
 	else
 		ratio = hero.cas_table.wlxx + hero.cas_table.qjxx
 	end
-	local healAmout = damage * ratio / 1000;
+	local healAmout = damage * ratio / 1000
 	if healAmout > 0 then
+		if healAmout > 100000000 then
+			healAmout = 100000000
+		end
 		hero:Heal(healAmout,hero);
 		local id = ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf",PATTACH_CUSTOMORIGIN_FOLLOW,hero);
 		TimerUtil.createTimerWithDelay(1,function()

@@ -17,13 +17,13 @@ end
 
 function boss_pudge_rot_lua:OnSpellStart()
 	
-		self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_boss_pudge_rot_lua", {duration=10} )
+		self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_boss_pudge_rot_lua", {duration=15} )
 		
 		if not self:GetCaster():IsChanneling() then
 			self:GetCaster():StartGesture( ACT_DOTA_CAST_ABILITY_ROT )
 		end
 		if self:GetCaster():FindModifierByName("modifier_boss_pudge_wenyiyuan_lua") then
-			self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_boss_pudge_rot_creatwenyi_lua", {duration=10} )
+			self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_boss_pudge_rot_creatwenyi_lua", {duration=15} )
 		end
 		
 	

@@ -8,5 +8,9 @@ function feast_heal( keys )
   local hp_leech_percent = ability:GetLevelSpecialValueFor("hp_leech_percent", ability:GetLevel() - 1)
   local damage = attacker:GetMaxHealth() * (hp_leech_percent / 100)
   ApplyDamageEx(attacker,target,ability,damage) 
-  attacker:Heal(damage*0.1, ability)
+  local heal = damage*0.1
+  if heal > 100000000 then
+  	heal = 100000000
+  end
+  attacker:Heal(heal, ability)
 end

@@ -233,9 +233,9 @@ function CallTzBoss(caster,pz,x,bosspoint,playerID)
 		end
 			local hp = unit:GetMaxHealth()	--设置怪物的动态血量
 			local maxhp = hp * bossHp[x]  * (0.9+wave*0.1)   * ma.nd_hp[difficulty]
-			if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-				unit.shjs = string.format("%.2f",maxhp / 500000000)
-				maxhp = 500000000
+			if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+				unit.shjs = string.format("%.2f",maxhp / 200000000)
+				maxhp = 200000000
 			end
 			unit:SetBaseMaxHealth(maxhp)
 --
@@ -248,6 +248,10 @@ function CallTzBoss(caster,pz,x,bosspoint,playerID)
 
 			local attack = unit:GetBaseDamageMin()	--设置怪物的动态攻击
 			local maxattack = attack *bossDamage[x]  *1.6* (0.9+wave*0.1)  * ma.nd_gj[difficulty]
+			if maxattack > 100000000 then
+				unit.shzj = string.format("%.2f",maxattack / 100000000)
+				maxattack = 100000000
+			end
 			unit:SetBaseDamageMin(maxattack)
 			unit:SetBaseDamageMax(maxattack)
 

@@ -40,9 +40,6 @@ function lpz( keys )
 	if caster.cas_table.tswsh > 100 then
 		damage = damage * caster.cas_table.tswsh /100
 	end
-	if damage > 500000000 then
-		damage = 500000000
-	end	
 	ApplyDamageMf(caster,target,ability,damage)
 
 

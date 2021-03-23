@@ -236,7 +236,7 @@ if Sachievement == nil then
 
 			["11_1"]={
 				bonus=11,--所需完成次数  --通关难八 	
-				reward={Attr_wlbjsh=40,}
+				reward={Attr_wlbjsh=40,Attr_mfbjsh=40}
 			},
 
 			["11_5"]={
@@ -365,7 +365,7 @@ if Sachievement == nil then
 			},
 			["23_2"]={
 				bonus=23,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["24_1"]={
@@ -374,7 +374,7 @@ if Sachievement == nil then
 			},
 			["24_3"]={
 				bonus=24,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["25_1"]={
@@ -383,7 +383,7 @@ if Sachievement == nil then
 			},
 			["25_4"]={
 				bonus=25,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["26_1"]={
@@ -392,7 +392,7 @@ if Sachievement == nil then
 			},
 			["26_5"]={
 				bonus=26,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["27_1"]={
@@ -401,7 +401,7 @@ if Sachievement == nil then
 			},
 			["27_6"]={
 				bonus=27,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["28_1"]={
@@ -410,7 +410,7 @@ if Sachievement == nil then
 			},
 			["28_7"]={
 				bonus=28,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["29_1"]={
@@ -419,7 +419,7 @@ if Sachievement == nil then
 			},
 			["29_7"]={
 				bonus=29,--所需完成次数  
-				reward={Attr_zzsh=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 			["30_1"]={
@@ -433,7 +433,7 @@ if Sachievement == nil then
 
 			["31_1"]={
 				bonus=31,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_tmz=15,}
 			},
 			["31_3"]={
 				bonus=31,--所需完成次数  
@@ -460,7 +460,7 @@ if Sachievement == nil then
 
 			["34_1"]={
 				bonus=34,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_tmz=15,}
 			},
 			["34_6"]={
 				bonus=34,--所需完成次数  
@@ -469,7 +469,7 @@ if Sachievement == nil then
 
 			["35_1"]={
 				bonus=35,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_treasure=1,Giveitem={"item_xhp_sjboss_1_6"}}
 			},
 			["35_7"]={
 				bonus=35,--所需完成次数  
@@ -505,7 +505,7 @@ if Sachievement == nil then
 
 			["39_1"]={
 				bonus=39,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_tmz=15,}
 			},
 			["39_5"]={
 				bonus=39,--所需完成次数  
@@ -523,10 +523,66 @@ if Sachievement == nil then
 
 			["41_1"]={
 				bonus=41,--所需完成次数  
-				reward={Attr_treasure=1,}
+				reward={Attr_treasure=1,Giveitem={"item_xhp_sjboss_1_7"}}
 			},
 			["41_7"]={
 				bonus=41,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+
+
+			["42_1"]={
+				bonus=42,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["42_2"]={
+				bonus=42,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["43_1"]={
+				bonus=43,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["43_3"]={
+				bonus=43,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["44_1"]={
+				bonus=44,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["44_4"]={
+				bonus=44,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["45_1"]={
+				bonus=45,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["45_5"]={
+				bonus=45,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["46_1"]={
+				bonus=4,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["46_6"]={
+				bonus=46,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["47_1"]={
+				bonus=47,--所需完成次数  
+				reward={Giveitem={"item_xhp_wzts_6"}}
+			},
+			["47_7"]={
+				bonus=47,--所需完成次数  
 				reward={Attr_zzsh=1,}
 			},
 
@@ -590,8 +646,8 @@ if Sachievement == nil then
 		[9]={Attr_sds=200},
 		[10]={Attr_msmjsds=10},
 		[11]={GiveModifity={"modifiy_maplevel_11"},},
-		[12]={Attr_wlbjsh=30},
-		[13]={Attr_wlbjgl=5},
+		[12]={Attr_wlbjsh=30,Attr_mfbjsh=30},
+		[13]={Attr_wlbjgl=5,Attr_mfbjsh=30},
 		[14]={Attr_fjsh=5},
 		[15]={Attr_zzsh=5},
 		[16]={Attr_sds=300},
@@ -621,7 +677,7 @@ function Sachievement:__call( unit )
 			end
 		end
 	end
-	self.UnitAchi[unitIndex] = data
+	self.UnitAchi[unit:GetPlayerOwnerID()] = data
 	self.UnitAchithis[unit:GetPlayerOwnerID()] = {}
 	self:initdata(unit)
 	local maplevel=SrvMapLevel.GetPlayerLevel(unit:GetPlayerID())-1
@@ -652,7 +708,7 @@ end
 function Sachievement:initdata(unit)
 	local playerid=unit:GetPlayerID()
 	local AchiNetdata=SrvAchv.GetPlayerData(playerid)
-	local Achidata=self:GetAchiState(unit)
+	local Achidata=self:GetAchiState(playerid)
 	local total=0
 	local thisdiff=0
 	--总通关次数；第二个是当前难度通关次数   
@@ -698,7 +754,7 @@ function Sachievement:initdata(unit)
 	end
 end
 function Sachievement:NetSetAchiBtypeState( unit,ftype,pid)  --设置从服务器获取的单通关
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
 	Achi[ftype][pid]["hero_count"]=#Achi[ftype][pid]["herolist"]
 	if Achi[ftype][pid]["hero_count"]>=Achi[ftype][pid]["heronum"] then  --如果英雄数量超过10个则成就解锁
 		Achi[ftype][pid]["state"]=true
@@ -707,7 +763,7 @@ function Sachievement:NetSetAchiBtypeState( unit,ftype,pid)  --设置从服务�
 	end
 end
 function Sachievement:NetSetAchiState( unit,ftype,pid,num)--设置从服务器获取的除单通关以外的
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
 	pid=(pid) 
 	if Achi[ftype][pid]==nil then
 		return
@@ -725,7 +781,10 @@ function Sachievement:SetAchiState( unit,ftype,pid,num)--设置成就
 	if SrvAchv.ignore_hero[unit:GetUnitName()]==true then
 		return
 	end
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
+	if Achi==nil then
+		return 
+	end
 	local basenum=1
 	if num then
 		basenum=num
@@ -752,7 +811,7 @@ function Sachievement:SetAchiState( unit,ftype,pid,num)--设置成就
 	return true
 end
 function Sachievement:SetBtypeState(unit,bid)--设置10个英雄总成就
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
 	local ftype=Sachievement["Hero_"..(unit:GetPrimaryAttribute()+1)]
 	if not self:IsInTable(unit:GetUnitName(),Achi[ftype][bid]["herolist"]) then  --single的bid如果刚完成，侧判断对应的力知敏bid中是否有该英雄，如果没有就加上
 		table.insert(Achi[ftype][bid]["herolist"],unit:GetUnitName())
@@ -765,10 +824,16 @@ function Sachievement:SetBtypeState(unit,bid)--设置10个英雄总成就
 
 end
 function Sachievement:SetSueState(unit,ftype,bid)--设置成就状态
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
 	Achi[ftype][bid]["state"]=true
 	
 	local id = SrvAchv.GetAchievementServerID(ftype,bid)
+	if ftype=='hero_all' then
+		local AchiNetdata=SrvAchv.GetPlayerData(unit:GetPlayerID())
+		if AchiNetdata and AchiNetdata[id] then
+			return 
+		end
+	end
 	local temptable={}
 	temptable["id"]=id
 	if ftype=="hero_single" then
@@ -778,7 +843,7 @@ function Sachievement:SetSueState(unit,ftype,bid)--设置成就状态
 	
 end
 function Sachievement:SetThreeState(unit,bid,btype,state)--设置三系成就
-	local Achi=self:GetAchiState(unit)
+	local Achi=self:GetAchiState(unit:GetPlayerID())
 	local ftype="hero_all"
 	if Achi[ftype][bid]["otherachi"][btype.."_"..bid]==0 then
 		Achi[ftype][bid]["otherachi"][btype.."_"..bid]=1
@@ -794,6 +859,8 @@ function Sachievement:SetThreeState(unit,bid,btype,state)--设置三系成就
 			self:SetSueState(unit,ftype,bid)
 		else
 			Achi[ftype][bid]["state"]=true
+			
+			--if AchiNetdata
 			self:SetSueState(unit,ftype,bid)
 			--self:SetReWard( unit,Achi[ftype][bid]["reward"])
 		end
@@ -810,8 +877,8 @@ end
 function Sachievement:GetAchiThis( playerid)
 	return self.UnitAchithis[playerid]
 end
-function Sachievement:GetAchiState( unit)
-	return self.UnitAchi[unit:GetEntityIndex()]
+function Sachievement:GetAchiState( playerid)
+	return self.UnitAchi[playerid]
 end
 function Sachievement:SetReWard( unit,reward,maplevel)---给成就奖励和地图等级
 	local level=1

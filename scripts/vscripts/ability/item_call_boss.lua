@@ -181,9 +181,9 @@ function CalljbBoss(keys)
 		--unit:SetContextNum("ywboss",pz,0)
 
 	local maxhp = 2000  *cs*cs * ma.nd_hp[difficulty]--怪物10倍血量
-	if maxhp > 500000000 then   --如果boss血量超过5亿，就给加减伤
-		unit.shjs = string.format("%.2f",maxhp / 500000000)
-		maxhp = 500000000
+	if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
+		unit.shjs = string.format("%.2f",maxhp / 200000000)
+		maxhp = 200000000
 	end
 	
 	unit:SetBaseMaxHealth(maxhp)

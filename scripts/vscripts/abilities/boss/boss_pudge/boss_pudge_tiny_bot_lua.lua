@@ -6,34 +6,24 @@ boss_pudge_tiny_bot_lua = class({})
 function boss_pudge_tiny_bot_lua:OnSpellStart()
         local hCaster = self:GetCaster()
         local range=self:GetCastRange(hCaster:GetOrigin(),hCaster)
-        self.bot_health = self:GetSpecialValueFor( "bot_health" )
         self.bot_damage = self:GetSpecialValueFor( "bot_damage" )
-        self.bot_armor = self:GetSpecialValueFor( "bot_armor" )
-        self.bot_magicarmor = self:GetSpecialValueFor( "bot_magicarmor" )
-        local enemies = FindUnitsInRadius(
-            hCaster:GetTeamNumber(),
-            hCaster:GetOrigin(),
-            nil,
-            range,
-            2,
-            1,
-            0,
-            0,
-            false
-        )
-		for i=1,#enemies do
-            local  temp=CreateUnitByName("npc_boss_pudge_tiny", hCaster:GetOrigin(), true, nil, nil, hCaster:GetTeamNumber())
+        local num  = 1+ math.ceil(Stage.playernum/2)
+        if num <1 then
+        	num = 1
+        end
+        if num > 5 then
+            num = 5
+        end
+		for i=1,num do
+            local  temp=CreateUnitByName("npc_boss_pudge_tiny", hCaster:GetOrigin()+RandomVector(RandomInt(300,500)), true, nil, nil, hCaster:GetTeamNumber())
             --temp:SetControllableByPlayer(hCaster:GetPlayerID(), true)
             
-            temp:SetBaseMaxHealth(hCaster:GetHealth()*self.bot_health)
-            temp:SetHealth(hCaster:GetHealth()*self.bot_health)
-            temp:SetMaxHealth(hCaster:GetHealth()*self.bot_health)
+            
             
             
             temp:SetBaseDamageMax(self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster())*self.bot_damage)
             temp:SetBaseDamageMin(self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster())*self.bot_damage)
-            temp:SetBaseMagicalResistanceValue(self:GetCaster():GetMagicalArmorValue()*self.bot_magicarmor)
-            temp:SetPhysicalArmorBaseValue(self:GetCaster():GetPhysicalArmorBaseValue()*self.bot_armor)
+
             local vLocation = self:GetCaster():GetOrigin()
 			local kv =
 			{
@@ -48,7 +38,7 @@ function boss_pudge_tiny_bot_lua:OnSpellStart()
 			}
 
 			temp:AddNewModifier( hCaster, self, "modifier_knockback", kv )
-			
+			temp:AddNewModifier(unit, nil, "modifier_kill", { duration = 20 })
         end
 end
 

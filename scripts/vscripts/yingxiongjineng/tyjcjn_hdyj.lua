@@ -33,9 +33,6 @@ function hdyj( keys )
 	local mj = caster:GetAverageTrueAttackDamage(caster)
 	local baseDamage2 = baseDamage + caster.hdyj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local damage2= damage
 	
 	if caster.hdyj_time == nil then
@@ -58,8 +55,8 @@ function hdyj( keys )
 		ApplyDamageEx(caster,target,ability,damage2)	
 			
 	local time = caster.hdyj_time	--触发次数
-	if time > 5 then
-		time = 5
+	if time > 7 then
+		time = 7
 	end
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time > 0 then

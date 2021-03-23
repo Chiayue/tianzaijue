@@ -30,9 +30,7 @@ function tg( keys )
 	local baseDamage2 = baseDamage + caster.tg_baseDamage
 	i = i + caster.tg_damage
 	local damage = (mj * i + baseDamage2 ) * x * multiple
-	if damage > 500000000 then
-		damage = 500000000
-	end
+
 
 	radius = radius + caster.tg_radius
 	local units = FindAlliesInRadiusEx(target,point,radius)
@@ -256,9 +254,7 @@ function swzf( keys )
 	local baseDamage2 = baseDamage + caster.swzf_baseDamage
 	i = i + caster.swzf_damage
 	local damage = (mj * i + baseDamage2 ) * x * multiple *1.4
-	if damage > 500000000 then
-		damage = 500000000
-	end
+
 	damageTime= damageTime+ caster.swzf_count
 
 	--添加不可操作状态

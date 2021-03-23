@@ -83,14 +83,8 @@ function wzts(keys)
 	end
 
 	--开始获取能得到的物品
-	local r = RandomInt(1,6)
-	local itemname
-	if r ==6 then
-		--八分之一的概率获得 技能秘诀
-		 itemname = wzts_abilityname[wzts_all[pz]][2]
-	else
-		 itemname = wzts_abilityname[wzts_all[pz]][1]
-	end
+	local itemname = wzts_abilityname[wzts_all[pz]][1]
+
 	if itemname == "jn_1" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn1
@@ -115,10 +109,7 @@ function wzts(keys)
 			local item = CreateItem(itemname2, caster, caster)
 			caster:AddItem(item)
 		end
-	end
-
-
-	if itemname == "jn_2" then
+	elseif itemname == "jn_2" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn2
 			local random = RandomInt(1,length)
@@ -145,9 +136,7 @@ function wzts(keys)
 			caster:AddItem(item)
 			return nil
 		end
-	end
-
-	if itemname == "jn_3" then
+	elseif itemname == "jn_3" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn3
 			local random = RandomInt(1,length)
@@ -174,9 +163,7 @@ function wzts(keys)
 			caster:AddItem(item)
 			return nil
 		end
-	end
-
-	if itemname == "jn_4" then
+	elseif itemname == "jn_4" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn4
 			local random = RandomInt(1,length)
@@ -203,9 +190,7 @@ function wzts(keys)
 			caster:AddItem(item)
 			return nil
 		end
-	end
-
-	if itemname == "jn_5" then
+	elseif itemname == "jn_5" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn5
 			local random = RandomInt(1,length)
@@ -232,9 +217,7 @@ function wzts(keys)
 			caster:AddItem(item)
 			return nil
 		end
-	end
-
-	if itemname == "jn_6" then
+	elseif itemname == "jn_6" then
 		if zsx ==1 then
 			local length = #Itemjndl.lljn6
 			local random = RandomInt(1,length)
@@ -262,19 +245,6 @@ function wzts(keys)
 			return nil
 		end
 	end
-
-	--暂时给与一样的技能秘诀
-
-	if itemname == "mj" then
-		for i=1,num do
-			local item = CreateItem("item_mj_random_2", caster, caster)
-			caster:AddItem(item)
-		end
-		
-	
-	end
-
-
 
 
 

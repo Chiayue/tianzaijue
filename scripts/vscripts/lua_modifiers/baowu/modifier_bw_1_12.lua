@@ -28,6 +28,8 @@ function modifier_bw_1_12:OnRefresh()
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
 		netTable["wlbjgl"] = netTable["wlbjgl"] +5
 		netTable["wlbjsh"] = netTable["wlbjsh"] + 30
+		netTable["mfbjgl"] = netTable["mfbjgl"] +5
+		netTable["mfbjsh"] = netTable["mfbjsh"] + 30
 		SetNetTableValue("UnitAttributes",unitKey,netTable)
 	end
 end
@@ -40,6 +42,8 @@ function modifier_bw_1_12:OnDestroy()
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
 		netTable["wlbjgl"] = netTable["wlbjgl"] -5
 		netTable["wlbjsh"] = netTable["wlbjsh"] - 30
+		netTable["mfbjgl"] = netTable["mfbjgl"] -5
+		netTable["mfbjsh"] = netTable["mfbjsh"] - 30
 		SetNetTableValue("UnitAttributes",unitKey,netTable)
 	end
 end

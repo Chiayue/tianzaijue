@@ -53,9 +53,6 @@ function lypj( keys )
    		ParticleManager:DestroyParticle(p1,true)          
    	end)
 	--StartSoundEventFromPosition("Hero_Jakiro.LiquidFire",point)--这个是双头龙液体火命中敌人的声音
-	if damage2 > 500000000 then
-		damage2 = 500000000
-	end
 		ApplyDamageMf(caster,target,ability,damage2)	
 			
 	local time = caster.lypj_time	--触发次数
@@ -79,9 +76,6 @@ function lypj( keys )
 			end	
 
 			damage2 = damage * multiple
-			if damage2 > 500000000 then
-				damage2 = 500000000
-			end
 			ApplyDamageMf(caster,target,ability,damage2)	
 		
 			time = time - 1

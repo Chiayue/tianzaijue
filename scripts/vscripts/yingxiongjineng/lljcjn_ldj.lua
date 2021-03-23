@@ -34,9 +34,9 @@ function ldj(keys)
 	local projectileName = "particles/econ/items/nyx_assassin/nyx_assassin_ti6/nyx_assassin_impale_ti6.vpcf"
 	-- Ability variables
 	
-	local powershot_max_range = ability:GetLevelSpecialValueFor( "shock_distance", keys.ability:GetLevel() -1 )
-	local movespeed = ability:GetLevelSpecialValueFor( "shock_speed", keys.ability:GetLevel() -1)
-	local powershot_radius = ability:GetLevelSpecialValueFor( "shock_width",keys.ability:GetLevel() - 1)
+	local powershot_max_range = ability:GetLevelSpecialValueFor( "shock_distance", ability:GetLevel() -1 )
+	local movespeed = ability:GetLevelSpecialValueFor( "shock_speed", ability:GetLevel() -1)
+	local powershot_radius = ability:GetLevelSpecialValueFor( "shock_width",ability:GetLevel() - 1)
 	local fv = GetForwardVector(caster:GetAbsOrigin(),point)
 
 
@@ -53,17 +53,16 @@ function ldj(keys)
 	if caster.ldj_max == nil then
 		caster.ldj_max = 0
 	end
-	local max =  1+caster.ldj_max
-	if max > 7 then		--最多七道剑气
-		max = 7
-	end
+
 	powershot_max_range = powershot_max_range + caster.ldj_distance
 
 	powershot_radius = powershot_radius + caster.ldj_radius
 
+	local max = caster.ldj_max + 1
 	local time = caster.ldj_time + 1
-	if time > 5 then
-		time = 5
+	if time*max > 12 then
+		 time = 3
+		 max = 4
 	end
 	local time2  = 1
 	TimerUtil.createTimer(function ()
@@ -155,10 +154,11 @@ function ldjsh( keys )
 	i = i + caster.ldj_damage
 	local baseDamage2 = baseDamage + caster.ldj_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * multiple  * shbs
-	if damage > 500000000 then
-		damage = 500000000
+	local max = caster.ldj_max + 1
+	local time = caster.ldj_time + 1
+	if time*max > 12 then
+		 damage = ((time*max -12) *0.08+1) * damage
 	end
-		
 	ApplyDamageEx(caster,target,ability,damage)
 
 end

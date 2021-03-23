@@ -42,6 +42,9 @@ function modifier_bw_5_9:OnAbilityExecuted( params )
 
 	local caster = self:GetParent()
 	local heal = caster:GetMaxHealth() *0.2
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	caster:Heal(heal,caster)
 	
 	

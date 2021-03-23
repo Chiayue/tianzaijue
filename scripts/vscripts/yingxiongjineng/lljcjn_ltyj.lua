@@ -31,30 +31,27 @@ function ltyj( keys )
 	i = i + caster.ltyj_damage
 	local baseDamage2 = baseDamage + caster.ltyj_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x * shbs
-	local damage2 = damage 
 	if RollPercentage(20) then
-		damage2 = damage * (caster.ltyj_multiple+1)
+		damage = damage * (caster.ltyj_multiple+1)
 	end	
-	if damage2 > 1000000000 then
-		damage2 = 1000000000
-	end
+
 
 	local units = FindAlliesInRadiusExdd(caster,point,radius) --寻找玩家的敌对单位	
 	local particle = ParticleManager:CreateParticle("particles/hero/brewmaster_thunder_clap.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 	ParticleManager:SetParticleControl(particle, 0, caster:GetAbsOrigin()) -- Origin
 	ParticleManager:SetParticleControl(particle, 1, Vector(radius,0,0)) -- Origin
 	ParticleManager:SetParticleControl(particle, 2, Vector(radius/20,0,0)) -- Origin
-	if units ~= nil then
-	for key, unit in pairs(units) do
-		ApplyDamageEx(caster,unit,ability,damage2)
-		ability:ApplyDataDrivenModifier(caster, unit, "modifier_thunder_clap", {})
-		end
-	end	
-	
 	local time = caster.ltyj_time - 1
 	if time > 7 then
 		time = 7
 	end
+	if units ~= nil then
+	for key, unit in pairs(units) do
+		ApplyDamageEx(caster,unit,ability,damage)
+		ability:ApplyDataDrivenModifier(caster, unit, "modifier_thunder_clap", {})
+		end
+	end	
+	
 	local time2  = 0
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time2 <= time then
@@ -73,16 +70,9 @@ function ltyj( keys )
 			ParticleManager:SetParticleControl(particle, 1, Vector(radius,0,0)) -- Origin
 			ParticleManager:SetParticleControl(particle, 2, Vector(radius/20,0,0)) -- Origin
 			local multiple = 1
-			if RollPercentage(20) then
-				multiple = caster.ltyj_multiple +multiple
-			end	
-			local damage2 = damage * multiple
-			if damage2 > 1000000000 then
-				damage2 = 1000000000
-			end
 			if units ~= nil then
 			for key, unit in pairs(units) do
-				ApplyDamageEx(caster,unit,ability,damage2)
+				ApplyDamageEx(caster,unit,ability,damage)
 				ability:ApplyDataDrivenModifier(caster, unit, "modifier_thunder_clap", {})
 				end
 			end	

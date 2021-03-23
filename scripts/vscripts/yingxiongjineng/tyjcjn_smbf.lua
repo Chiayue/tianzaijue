@@ -25,9 +25,6 @@ function smbf( keys )
 	end	  
 	local baseDamage2 = baseDamage + caster.smbf_baseDamage
 	local damage = (ll * (i+caster.smbf_damage) + baseDamage2 ) * x * multiple
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	caster:SetHealth(ll)
 	local fxIndex2 = ParticleManager:CreateParticle("particles/test/smbf2.vpcf", PATTACH_OVERHEAD_FOLLOW, caster )
 	ParticleManager:SetParticleControl( fxIndex2, 0, point )

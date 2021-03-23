@@ -17,6 +17,7 @@ function modifier_item_net_aaaa:DeclareFunctions()
 --		MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE,
 		MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
 		MODIFIER_PROPERTY_ATTACK_RANGE_BONUS,
+		MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
 		
 	}
 	return funcs
@@ -39,11 +40,25 @@ function modifier_item_net_aaaa:GetModifierSpellAmplify_Percentage( params )	--�
 	return math.ceil(self.attributes.jnsh)
 end
 function modifier_item_net_aaaa:GetModifierPercentageCooldown( params )
-	return math.ceil(self.attributes.lqsj)
+	local sb = math.ceil(self.attributes.lqsj)
+	if sb > 50 then
+	   sb = math.floor(math.sqrt(sb -50) +50)
+	   if sb > 75 then
+	   	  sb = math.floor(math.sqrt(math.sqrt(sb -75))+75)
+	   end
+	end
+	return sb
 end
 
 function modifier_item_net_aaaa:GetModifierEvasion_Constant( params )	--智力
-	return math.ceil(self.attributes.sb)
+	local sb = math.ceil(self.attributes.sb)
+	if sb > 60 then
+	   sb = math.sqrt(sb -60) +60
+	   if sb > 90 then
+	   	  sb = math.sqrt(math.sqrt(sb -90))+90
+	   end
+	end
+	return sb
 end
 function modifier_item_net_aaaa:GetModifierHealthRegenPercentage( params )	--智力
 	return math.ceil(self.attributes.smzhfbfb)
@@ -54,10 +69,20 @@ end
 function modifier_item_net_aaaa:GetModifierConstantHealthRegen( params )	--智力
 	return math.ceil(self.attributes.smhf)
 end
-
+function modifier_item_net_aaaa:GetModifierMoveSpeedBonus_Constant( params )	--智力
+	return math.ceil(self.attributes.ydsd)
+end
 
 function modifier_item_net_aaaa:GetModifierMagicalResistanceBonus( params )	--智力
-	return math.ceil(self.attributes.mfkx)
+	local sb = math.ceil(self.attributes.mfkx)
+	if sb > 90 then
+	   sb = math.sqrt(sb -90) +90
+	   if sb > 95 then
+	   	  sb = math.sqrt(math.sqrt(sb -95))+95
+	   end
+	end
+	--print("mfkx",sb)
+	return sb
 end
 function modifier_item_net_aaaa:GetModifierManaBonus( params )	--智力
 	return math.ceil(self.attributes.mfz)

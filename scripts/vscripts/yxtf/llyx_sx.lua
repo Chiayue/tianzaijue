@@ -23,7 +23,7 @@ function llyx_sx:DeclareFunctions()
 end
 --------------------------------------------------------------------------------
 function llyx_sx:GetModifierStatusResistanceStacking( params )
-	return 40
+	return 50
 end
 
 function llyx_sx:GetAttributes()

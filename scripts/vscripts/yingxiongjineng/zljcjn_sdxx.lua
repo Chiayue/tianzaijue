@@ -32,9 +32,6 @@ function bsxx( keys )
 	local baseDamage2 = baseDamage + caster.bsxx_baseDamage
 	i = i + caster.bsxx_damage
 	local damage = (zl * i + baseDamage2 ) * x  * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	radius = radius + caster.bsxx_radius
 
 	local time = caster.bsxx_time  

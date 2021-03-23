@@ -21,15 +21,17 @@ function tkjj( keys )
 	local baseDamage2 = baseDamage + caster.tkjj_baseDamage
 	i = i +caster.tkjj_damage
 	local multiple = 1
-	if RollPercentage(20) then
+	if RollPercentage(50) then
 		multiple = caster.tkjj_multiple +multiple
 	end	
 	local damage = (zl * i + baseDamage2 ) * x * multiple * shbs
 	if caster.cas_table.tswsh > 100 then
 		damage = damage * caster.cas_table.tswsh /100
 	end
-	if damage > 500000000 then
-		damage = 500000000
+	local time = caster.tkjj_time + 1	--触发次数
+	
+	if time > 5 then
+		 damage = ((time -5) *0.2+1) * damage
 	end
 	ApplyDamageMf(caster,target,ability,damage)
 
@@ -68,7 +70,7 @@ function fctkjj(keys)
 						Source = caster,
 						Ability = ability,	
 						EffectName = "particles/units/heroes/hero_queenofpain/queen_scream_of_pain.vpcf",
-					    iMoveSpeed = 900,
+					    iMoveSpeed = 1000,
 						vSourceLoc= caster:GetAbsOrigin(),                -- Optional (HOW)
 						bDrawsOnMinimap = false,                          -- Optional
 					     bDodgeable = true,                                -- Optional

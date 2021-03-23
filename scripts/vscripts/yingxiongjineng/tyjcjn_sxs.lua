@@ -24,9 +24,6 @@ function sxs( keys )
 	end	  
 	local baseDamage2 = baseDamage + caster.smbf_baseDamage
 	local damage = (ll * (i+caster.smbf_damage) + baseDamage2 ) * x * multiple
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local fxIndex3 = ParticleManager:CreateParticle("particles/test/sxsbx.vpcf", PATTACH_CUSTOMORIGIN, target )
 	ParticleManager:SetParticleControl( fxIndex3, 0, point )
 	ApplyDamageMf(caster,target,ability,damage)	

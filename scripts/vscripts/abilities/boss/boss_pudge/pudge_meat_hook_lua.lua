@@ -37,6 +37,9 @@ function pudge_meat_hook_lua:OnSpellStart()
         false
     )
     for i=1,#enemies do
+    	if i > 10 then
+    		return 
+    	end
         self.hook_damage = self:GetSpecialValueFor( "hook_damage" )  
         self.hook_speed = self:GetSpecialValueFor( "hook_speed" )
         self.hook_width = self:GetSpecialValueFor( "hook_width" )
@@ -89,7 +92,7 @@ function pudge_meat_hook_lua:OnSpellStart()
             fStartRadius = self.hook_width ,
             fEndRadius = self.hook_width ,
             Source = self:GetCaster(),
-            iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_BOTH,
+            iUnitTargetTeam = DOTA_UNIT_TARGET_TEAM_ENEMY,
             iUnitTargetType = DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC,
             iUnitTargetFlags = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES + DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS,
         }
@@ -116,6 +119,9 @@ function pudge_meat_hook_lua:OnProjectileHitHandle( hTarget, vLocation ,projecti
 	if hTarget == self:GetCaster() then
 		return false
 	end
+	if hTarget and hTarget:HasModifier("modifier_pudge_meat_hook_tiny_lua") then  --如果已经被小屠夫勾了就不再被勾
+		return false
+	end
     if self.Projectile[projectileHandle].bRetracting == false then
 		if hTarget ~= nil and ( not ( hTarget:IsCreep() or hTarget:IsConsideredHero() ) ) then
 			Msg( "Target was invalid")
@@ -132,7 +138,7 @@ function pudge_meat_hook_lua:OnProjectileHitHandle( hTarget, vLocation ,projecti
 				local damage = {
                     victim = hTarget,
                     attacker = self:GetCaster(),
-                    damage =2*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
+                    damage =self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
                     damage_type = DAMAGE_TYPE_PURE,		
                     ability = this
                 }

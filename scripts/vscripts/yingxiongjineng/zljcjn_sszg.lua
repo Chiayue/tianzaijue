@@ -25,6 +25,9 @@ function sszg( keys )
 	end	  
 	local baseHeal2 = baseHeal + caster.sszg_baseHeal
 	local heal = (ll * (i+caster.sszg_heal) + baseHeal2 ) * x * multiple
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	target:Heal(heal, caster)
 	
 	ShowOverheadMsg(target,OVERHEAD_ALERT_BONUS_SPELL_DAMAGE,heal)

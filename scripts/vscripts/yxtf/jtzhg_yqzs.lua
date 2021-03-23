@@ -8,8 +8,11 @@ function yqzs( keys )
 	local x = 1 + level / 10
 	
 	local ll = caster:GetStrength()
-	damage = ll * i * x
-	heal = ll * ii
+	local damage = ll * i * x
+	local heal = ll * ii
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	local particle = ParticleManager:CreateParticle("particles/units/heroes/hero_faceless_void/faceless_void_time_lock_bash.vpcf", PATTACH_CUSTOMORIGIN, nil)
 	ParticleManager:SetParticleControl(particle, 0, target:GetAbsOrigin() )
 	ParticleManager:SetParticleControl(particle, 1, target:GetAbsOrigin() )

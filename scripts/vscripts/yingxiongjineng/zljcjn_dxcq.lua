@@ -51,22 +51,17 @@ function dxcq(keys)
 	if caster.dxcq_max == nil then
 		caster.dxcq_max = 0
 	end
-	local max = 1+ caster.dxcq_max
-	if max > 5 then		--最多5道剑气
-		max = 5
-	end
+	
 
 	powershot_max_range = powershot_max_range + caster.dxcq_distance
 
 	powershot_radius = powershot_radius + caster.dxcq_radius
 
+	local max = caster.dxcq_max + 1
 	local time = caster.dxcq_time + 1
-	if time > 5 then
-		time = 5
-	end
-	
-	if time * max > 10 then
-		projectileName = "particles/econ/items/death_prophet333.vpcf"
+	if time*max > 12 then
+		 time = 3
+		 max = 4
 	end
 	
 	TimerUtil.createTimer(function ()
@@ -143,8 +138,10 @@ function dxcqsh( keys )
 	if caster.cas_table.tswsh > 100 then
 		damage = damage * caster.cas_table.tswsh /100
 	end
-	if damage > 500000000 then
-		damage = 500000000
+	local max = caster.dxcq_max + 1
+	local time = caster.dxcq_time + 1
+	if time*max > 12 then
+		 damage = ((time*max -12) *0.08+1) * damage
 	end
 	ApplyDamageMf(caster,target,ability,damage)
 

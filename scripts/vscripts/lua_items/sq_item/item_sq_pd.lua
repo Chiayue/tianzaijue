@@ -63,6 +63,8 @@ function item_sq_pd:OnRefresh( kv )
 	self.zzjt_time= 0
 	self.ltyj_time= 0
 	self.czss_time= 0
+	self.hxs_multiple = 0
+	self.tkjj_multiple = 0
 --2
 	self.swmc_damage= 0
 	self.swmc_heal= 0
@@ -165,6 +167,12 @@ function item_sq_pd:OnRefresh( kv )
 		end
 		if itempro.item_attributes.czss_time then
 			self.czss_time=itempro.item_attributes.czss_time
+		end
+		if itempro.item_attributes.hxs_multiple then
+			self.hxs_multiple=itempro.item_attributes.hxs_multiple
+		end
+		if itempro.item_attributes.tkjj_multiple then
+			self.tkjj_multiple=itempro.item_attributes.tkjj_multiple
 		end
 
 		--神器2
@@ -310,6 +318,8 @@ function item_sq_pd:OnRefresh( kv )
 		attributes2["zzjt_time"] = self.zzjt_time
 		attributes2["ltyj_time"] = self.ltyj_time
 		attributes2["czss_time"] = self.czss_time
+		attributes2["hxs_multiple"] = self.hxs_multiple
+		attributes2["tkjj_multiple"] = self.tkjj_multiple
 
 		attributes2["swmc_damage"] = self.swmc_damage
 		attributes2["swmc_heal"] = self.swmc_heal
@@ -419,7 +429,14 @@ function item_sq_pd:OnRefresh( kv )
 		end
 		if itempro.item_attributes.czss_time then
 			self.czss_time=itempro.item_attributes.czss_time
-		end
+		end 
+		if itempro.item_attributes.hxs_multiple then
+			self.hxs_multiple=itempro.item_attributes.hxs_multiple
+		end 
+		if itempro.item_attributes.tkjj_multiple then
+			self.tkjj_multiple=itempro.item_attributes.tkjj_multiple
+		end 
+
 
 		--神器2
 		if itempro.item_attributes.swmc_damage then
@@ -590,7 +607,9 @@ function item_sq_pd:OnDestroy( )
 
 		attributes2["zzjt_time"] = self.zzjt_time and -self.zzjt_time or nil
 		attributes2["ltyj_time"] = self.ltyj_time and -self.ltyj_time or nil
-		attributes2["czss_time"] = self.czss_time and -self.czss_time or nil
+		attributes2["czss_time"] = self.czss_time and -self.czss_time or nil 
+		attributes2["hxs_multiple"] = self.hxs_multiple and -self.hxs_multiple or nil
+		attributes2["tkjj_multiple"] = self.tkjj_multiple and -self.tkjj_multiple or nil
 
 		attributes2["swmc_damage"] = self.swmc_damage and -self.swmc_damage or nil
 		attributes2["swmc_heal"] = self.swmc_heal and -self.swmc_heal or nil

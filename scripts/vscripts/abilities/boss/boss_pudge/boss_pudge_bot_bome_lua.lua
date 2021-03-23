@@ -10,10 +10,10 @@ function boss_pudge_bot_bome_lua:OnSpellStart()
         self.bot_health = self:GetSpecialValueFor( "bot_health" )
         self.bot_time = self:GetSpecialValueFor( "bot_time" )
         
-        local enemies = 2+2*PlayerResource:GetPlayerCount()
+         local num  = 2+ 2*Stage.playernum
          
-		for i=1,enemies do
-            local  temp=CreateUnitByName("npc_boss_pudge_bot", hCaster:GetOrigin()+RandomVector(100), true, nil, nil, 3)
+		for i=1,num do
+            local  temp=CreateUnitByName("npc_boss_pudge_bot", hCaster:GetOrigin()+RandomVector(RandomInt(100,1200)), true, nil, nil, 3)
             --temp:SetControllableByPlayer(hCaster:GetPlayerID(), true)
             temp:SetBaseMaxHealth(hCaster:GetHealth()*self.bot_health)
             temp:SetHealth(hCaster:GetHealth()*self.bot_health)

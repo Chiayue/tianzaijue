@@ -79,9 +79,12 @@ function m:OnGameRulesStateChange()
 		end,1)
 	elseif nNewState == DOTA_GAMERULES_STATE_GAME_IN_PROGRESS then --英雄选择结束
 		local totalTime = 25 		--游戏准备时间
+		local difficulty =   GetGameDifficulty()
+		if difficulty >=36 then
+			totalTime = totalTime +10
+		end
 		local time = totalTime
 		
-		local difficulty =   GetGameDifficulty()
 		Stage.jygchance = Stage.jyg[difficulty] 
 		Stage.gjgchance = Stage.gjg[difficulty] 
 		Stage.max_boss_count = Stage.max_boss[difficulty]
@@ -89,7 +92,11 @@ function m:OnGameRulesStateChange()
 		
 		local ms = GetGameDifficultyModel()  --难度模式
 		Stage.Yxms(ms)
-		
+		if difficulty >= 42 then
+			Stage.intervalWave = Stage.intervalWave - 2
+			Stage.time= Stage.time-25
+			Stage.num = Stage.num - 45
+		end
 		m.SyncConfig(); 
 		bgm.PlayNormal(false,1)
 		

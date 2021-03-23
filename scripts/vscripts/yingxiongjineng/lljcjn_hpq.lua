@@ -33,9 +33,6 @@ function hpq( keys )
 	local ll = caster:GetStrength()
 	local baseDamage2 = baseDamage + caster.hpq_baseDamage
 	local damage = (ll * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
 	local damage2= damage
 	
 	if caster.hpq_time == nil then
@@ -72,8 +69,8 @@ function hpq( keys )
 
 
 	local time = caster.hpq_time --触发次数
-	if time > 5 then
-		time = 5
+	if time > 7 then
+		time = 7
 	end
 	TimerUtil.createTimerWithDelay(0.5,function ()
 		if time > 0 then

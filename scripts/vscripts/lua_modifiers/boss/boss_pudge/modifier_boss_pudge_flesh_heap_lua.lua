@@ -6,7 +6,6 @@ function modifier_boss_pudge_flesh_heap_lua:OnCreated( kv )
 	self.damage = self:GetAbility():GetSpecialValueFor( "damage" )
 	self.health = self:GetAbility():GetSpecialValueFor( "health" )
 	if IsServer() then
-		print(33333333)
 		self:SetStackCount( self:GetAbility():GetFleshHeapKills() )
 		--self:GetParent():CalculateStatBonus(true)
 	end
@@ -46,6 +45,10 @@ function modifier_boss_pudge_flesh_heap_lua:OnDeath( params )
 		if hVictim == nil or hKiller == nil then
 			return
 		end
+
+		if hVictim == hKiller then
+			return
+		end
 	
 		if hVictim:GetTeamNumber() ~= self:GetCaster():GetTeamNumber() and self:GetCaster():IsAlive() then
 			self:GetAbility().flesh_heap_range = self:GetAbility():GetSpecialValueFor( "flesh_heap_range" )
@@ -55,8 +58,11 @@ function modifier_boss_pudge_flesh_heap_lua:OnDeath( params )
 				if self:GetAbility().nKills == nil then
 					self:GetAbility().nKills = 0
 				end
-	
-				self:GetAbility().nKills = self:GetAbility().nKills + 1
+				local i = self:GetAbility().nKills + 1
+				if i > 40 then
+					i=40
+				end
+				self:GetAbility().nKills = i
 	
 				
 				self:SetStackCount( self:GetAbility().nKills )
@@ -71,19 +77,19 @@ function modifier_boss_pudge_flesh_heap_lua:OnDeath( params )
 end
 
 function modifier_boss_pudge_flesh_heap_lua:GetModifierExtraHealthPercentage( params )
-	if IsServer() then
-		local cs = self:GetStackCount()* self.health
-		if cs > 300 then
-			cs = 300
-		end
-		return cs
-	end
+
+		
+		return self:GetStackCount()* self.health
+
+
 end
 
 --------------------------------------------------------------------------------
 
 function modifier_boss_pudge_flesh_heap_lua:GetModifierDamageOutgoing_Percentage( params )
-	return self:GetStackCount() * self.damage
+
+		return self:GetStackCount()* self.damage
+
 end
 
 --------------------------------------------------------------------------------

@@ -9,10 +9,10 @@ function boss_shakeground_lua:OnAbilityPhaseStart()
 		EmitSoundOn( "Hero_Brewmaster.PrimalSplit.Spawn", self:GetCaster() )
 		local hCaster = self:GetCaster()
 		local difficulty = GameRules:GetCustomGameDifficulty() 
-		local radius = self:GetSpecialValueFor("radius")  + difficulty * 33
-		local cd = self.BaseClass.GetCastPoint( self )-difficulty*0.04
-		if cd < 0.5 then
-			cd = 0.5
+		local radius = self:GetSpecialValueFor("radius")  + difficulty * 25
+		local cd  = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.1
+		if cd < 1 then
+			cd = 1
 		end
 		
 		ParticleMgr.CreateWarnRing(hCaster,nil,radius,cd)
@@ -25,7 +25,7 @@ function boss_shakeground_lua:OnSpellStart()
 	local hCaster = self:GetCaster()
 	EmitSoundOn( "Hero_Brewmaster.ThunderClap", self:GetCaster() )
 	local difficulty = GameRules:GetCustomGameDifficulty() 
-	local radius = self:GetSpecialValueFor("radius")+ difficulty * 33
+	local radius = self:GetSpecialValueFor("radius")+ difficulty * 25
 	local nFXIndex = ParticleManager:CreateParticle( "particles/econ/items/brewmaster/brewmaster_offhand_elixir/brewmaster_thunder_clap_elixir.vpcf", PATTACH_CUSTOMORIGIN, nil )
 		ParticleManager:SetParticleControlEnt( nFXIndex, 0, hCaster, PATTACH_POINT_FOLLOW, "", hCaster:GetOrigin(), true )
 		ParticleManager:SetParticleControl( nFXIndex, 1, Vector(radius,1,1)  )
@@ -57,12 +57,16 @@ end
 
 
 function boss_shakeground_lua:GetCooldown( nLevel )
-	return self.BaseClass.GetCooldown( self, nLevel )-0.2*GameRules:GetCustomGameDifficulty()
+	local cd = self.BaseClass.GetCooldown( self, nLevel )-0.2*GameRules:GetCustomGameDifficulty()
+	if cd < 6 then
+		cd = 6
+	end
+	return cd
 end
 function boss_shakeground_lua:GetCastPoint()
 	local cd  = self.BaseClass.GetCastPoint( self )-GameRules:GetCustomGameDifficulty()*0.1
-	if cd < 0.5 then
-		cd = 0.5
+	if cd < 1 then
+		cd = 1
 	end
 	return cd
 end

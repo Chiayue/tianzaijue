@@ -51,9 +51,7 @@ function sjyj( keys )
 		multiple = caster.sjyj_multiple + multiple
 	end	 
 	local damage = (mj * i + baseDamage2 ) * x * multiple
-	if damage > 500000000 then
-		damage = 500000000
-	end
+
 	ApplyDamageEx(caster,target,ability,damage)
 	
 	local cooldown = ability:GetCooldown(ability:GetLevel()-1)

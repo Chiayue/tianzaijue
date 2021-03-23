@@ -2,6 +2,8 @@ local m = {}
 --每两拨进攻怪之间的间隔
 m.playernum = 0
 m.intervalWave = 8
+--总共刷了多少只怪
+m.xgnum = 0
 --每波的时间
 m.time = 65
 m.reducetime = 0
@@ -73,6 +75,13 @@ m.countdown = {
 	196,
 	194,--41
 
+	192,
+	190,
+	188,
+	186,
+	184,
+	182,
+
 
 
 }
@@ -128,6 +137,13 @@ m.max_boss = {
 	6,
 	6,
 	6,--41
+
+	6,
+	6,
+	6,
+	6,
+	6,
+	6,
 
 }
 --出现第几个BOSS了
@@ -211,7 +227,14 @@ m.jyg={
 	52,
 	54,
 	56,
-	58
+	58,
+
+	60,--42
+	62,
+	64,
+	66,
+	68,
+	70,
 
 
 
@@ -262,6 +285,13 @@ m.gjg={
 	68,
 
 	70,
+	70,
+	70,
+	70,
+	70,
+	70,
+
+	70,--42
 	70,
 	70,
 	70,
@@ -465,6 +495,13 @@ m.qhsdl={
 	[39]={15,20},
 	[40]={20,25},
 	[41]={25,40},
+
+	[42]={1,5}, 	
+	[43]={5,10},
+	[44]={10,15},
+	[45]={15,20},
+	[46]={20,25},
+	[47]={25,40},
 }
 
 m.ysdl={
@@ -515,6 +552,13 @@ m.ysdl={
 	800,
 	820,
 	840,
+
+	860,--42
+	880,
+	900,
+	920,
+	940,
+	960,
 }
 
 
@@ -579,7 +623,7 @@ function m.StartAttack()
 	
 	if m.wave <= 30 then
 		local wave = m.wave 
-		local num = m.num+(m.wave*3) --每多一波，怪物数量+6
+		local num = m.num+(m.wave*2) --每多一波，怪物数量+6
 		local interval = m.time / num
 		shuaguai.spawnAttackEnemy(num,interval,m.wave)	--(第几波，多少只，刷怪点，刷怪间隔)		
 		
@@ -923,6 +967,9 @@ end
 --游戏结束时结算地图经验
 function m.finishedexp(playerID, playerWin )
 	local difficulty =   GetGameDifficulty()
+	if PlayerUtil.IsPlayerLeaveGame(playerID) then
+		return nil
+	end
 	local time = math.floor(GetGameTimeWithoutPause()/60)
 	local jy = time * (0.9+difficulty/10) 
 	--没有计算 月卡的加成  月卡和季卡加成30%,永久卡增加50%
@@ -947,6 +994,9 @@ end
 --游戏结束时结算杀怪获得晶石
 function m.finishedjing(playerID, playerWin )
 	local difficulty =   GetGameDifficulty()
+	if PlayerUtil.IsPlayerLeaveGame(playerID) then
+		return nil
+	end
 	local xg = PlayerResource:GetKills(playerID)
 	local boss = Stage.bossdienum --boss死亡数量
 	local js = math.ceil((xg * 0.1 + boss*60)*ba.ndjsjc[difficulty])
@@ -960,10 +1010,10 @@ end
 --游戏结束时统一给存档装备和强化
 --只有特殊模式才会掉落强化石
 function m.finishedjNetItem(playerID)
+	local difficulty =   GetGameDifficulty()
 	if PlayerUtil.IsPlayerLeaveGame(playerID) then
 		return nil
 	end
-
 	local hero = PlayerUtil.GetHero(playerID)
 	local net_equip = nil
 	if hero then
@@ -982,23 +1032,24 @@ end
 --游戏结束时统一给存档装备和强化
 --只有特殊模式才会掉落强化石
 function m.finishedStoreItem(playerID,playerWin,mvpnum)
+	local difficulty = GetGameDifficulty()
 	if PlayerUtil.IsPlayerLeaveGame(playerID) then
 		return nil
 	end
-
-
+	if PlayerResource:GetKills(playerID) < Stage.xgnum*0.25 then
+		return nil
+	end
 	local hero = PlayerUtil.GetHero(playerID)
 	local mode = GetGameDifficultyModel()
-	local difficulty = GetGameDifficulty()
 
 	local store_items = {}
 	if hero then
 		local bljc = 1  --mvp爆率加成
 		if #m.playeronline >= 2 and playerID == mvpnum then  
-			bljc = 1 + (#m.playeronline-1) *0.25 
+			bljc = 1 + (#m.playeronline-1) *0.4
 		end
-		if bljc > 1.75 then
-			bljc = 1.75
+		if bljc > 2.2 then
+			bljc = 2.2
 		end
 		local we = math.ceil(m.ysdl[difficulty] * bljc)
 		if we and playerWin then 
@@ -1006,6 +1057,13 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				if RollPercent(we) then
 					local bonusItem2 = {name="shopmall_68",count=1}
 					table.insert(store_items,bonusItem2)
+					SrvStore.AddItem(playerID,"shopmall_68",nil,1,function(success,item,money)
+				        if success then
+				            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
+				        else
+				            print("shopmall_68")
+				        end
+				    end,true)
 				end
 			else
 				local we2 = math.floor(we/100)
@@ -1015,6 +1073,13 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				end
 				local bonusItem2 = {name="shopmall_68",count=we2}
 				table.insert(store_items,bonusItem2)
+				SrvStore.AddItem(playerID,"shopmall_68",nil,we2,function(success,item,money)
+			        if success then
+			            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
+			        else
+			            print("shopmall_68")
+			        end
+			    end,true)
 			end
 		end
 
@@ -1038,17 +1103,14 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 			local num = RandomInt(min,max)   --掉落强化石的数量
 			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
 			table.insert(store_items,bonusItem)
-		end
-	end
-	
-	for idx, sitem in pairs(store_items) do
-		TimerUtil.createTimerWithDelay((idx - 1) * 2 ,function()
-			SrvStore.AddItem(playerID,sitem.name,nil,sitem.count,function(success,item,money)
+			SrvStore.AddItem(playerID,"shopmall_sstone_"..lv,nil,num,function(success,item,money)
 		        if success then
-		            Shopmall:UpdatePlayerdata( playerID,sitem.name,item['stack'],item['invalid_time'])
+		            Shopmall:UpdatePlayerdata( playerID,"shopmall_sstone_"..lv,item['stack'],item['invalid_time'])
+		        else
+		            print("shopmall_sstone_"..lv)
 		        end
 		    end,true)
-		end)
+		end
 	end
 	return store_items
 end

@@ -33,6 +33,9 @@ function qn_sszg( keys )
 	local x = 1 + level / 10
 	local point = caster:GetAbsOrigin()
 	heal = caster:GetStrength()*heal *x
+	if heal > 100000000 then
+		heal = 100000000
+	end
 	local units = FindAlliesInRadiusEx(caster,point,radius)
 	local particleName = "particles/units/heroes/hero_omniknight/omniknight_purification.vpcf"
 	if units ~= nil then

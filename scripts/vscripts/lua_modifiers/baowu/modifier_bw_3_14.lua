@@ -42,6 +42,9 @@ function modifier_bw_3_14:OnTakeDamage( params )
 		local hAttacker = params.attacker
 		if hAttacker == self:GetParent() then
 			local heal = ( params.damage * 0.1)
+			if heal > 100000000 then
+				heal = 100000000
+			end
 			--print( 'modifier_blessing_life_steal healing for ' .. heal )
 			self:GetParent():Heal( heal, nil )
 			ParticleManager:ReleaseParticleIndex( ParticleManager:CreateParticle( "particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent() ) )

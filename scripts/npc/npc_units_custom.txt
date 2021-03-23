@@ -1086,7 +1086,7 @@
 	"zlg_12"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"zlg_112"
+		"Ability1"	"zlg_12"
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""
@@ -4036,7 +4036,7 @@
 		// Ability 2.
 		"Ability2"	"cwwd3"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"yg36"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -4165,7 +4165,7 @@
 		// Ability 2.
 		"Ability2"	"cwwd3"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"yg36"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -4294,7 +4294,7 @@
 		// Ability 2.
 		"Ability2"	"cwwd3"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"yg36"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -4423,7 +4423,7 @@
 		// Ability 2.
 		"Ability2"	"cwwd3"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"yg36"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -11664,6 +11664,328 @@
 		"Skin"	"0"
 	}
 
+	"cw_5_21"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"courier_shopmall_cw_5_21"
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/courier/baby_winter_wyvern/baby_winter_wyvern_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"1"
+	}
+
+	"cw_5_22"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"courier_shopmall_cw_5_22"
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/courier/baby_rosh/babyroshan_alt_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"1"
+	}
+
+	"cw_4_22"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"courier_shopmall_cw_5_22"
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/courier/baby_rosh/babyroshan_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"1"
+	}
+
+	"cw_6_22"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	"courier_shopmall_cw_6_22"
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/courier/baby_rosh/babyroshan_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"1"
+	}
+
+	"cw_5_23"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/courier/minipudge/minipudge_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"0"
+	}
+
+	"cw_5_24"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/items/courier/boooofus_courier/boooofus_courier_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"0"
+	}
+
+	"cw_5_25"
+	{
+		"BaseClass"	"npc_dota_creature"
+		"Ability1"	""
+		"Ability2"	"cwwd2"
+		"Ability3"	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability7"	""
+		"Ability8"	""
+		"Ability9"	""
+		"Ability10"	""
+		"Ability11"	""
+		"Ability12"	""
+		"Ability13"	""
+		"Ability14"	""
+		"Ability15"	""
+		"Ability16"	""
+		"Ability17"	""
+		"Ability18"	""
+		"Ability19"	""
+		"Ability20"	""
+		"Ability21"	""
+		"Ability22"	""
+		"Ability23"	""
+		"Ability24"	""
+		"Model"	"models/items/courier/jin_yin_white_fox/jin_yin_white_fox_flying.vmdl"
+		"AttackCapabilities"	"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"	"0"
+		"AttackDamageMax"	"0"
+		"AttackRate"	"1"
+		"AttackRange"	"200"
+		"ProjectileModel"	"particles/econ/items/witch_doctor/witch_doctor_ribbitar/witch_doctor_ribbitar_ward_attack.vpcf"
+		"ProjectileSpeed"	"1000"
+		"StatusHealth"	"1000000"
+		"CombatClassAttack"	"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"	"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"MovementSpeed"	"1000"
+		"MagicalResistance"	"50"
+		"ArmorPhysical"	"0"
+		"BoundsHullName"	"1"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_FLY"
+		"Skin"	"0"
+	}
+
 	"npc_boss_undying_tombstone"
 	{
 		// General
@@ -11947,11 +12269,11 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	"pudge_meat_hook_lua"
+		"Ability1"	"pudge_meat_hook_tiny_lua"
 		// Ability 2.
 		"Ability2"	"boss_pudge_rot_lua"
 		// Ability 3.
-		"Ability3"	""
+		"Ability3"	"cwwd3"
 		// Ability 4.
 		"Ability4"	""
 		// Ability 5.
@@ -12016,7 +12338,7 @@
 		// Movement
 		// ----------------------------------------------------------------
 		// Type of locomotion - ground, air
-		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_NONE"
 		// Speed
 		"MovementSpeed"	"425"
 		// Turning rate.
@@ -12074,7 +12396,7 @@
 		// Class of entity of link to .
 		"BaseClass"	"npc_dota_creature"
 		// Model.
-		"Model"	"models/items/courier/tinkbot/tinkbot.vmdl"
+		"Model"	"models/courier/minipudge/minipudge.vmdl"
 		// Name of sound set.
 		"SoundSet"	"Creep_Bad_Melee_Mega"
 		"ModelScale"	"1"
@@ -12082,7 +12404,7 @@
 		// Abilities
 		// ----------------------------------------------------------------
 		// Ability 1.
-		"Ability1"	""
+		"Ability1"	"cwwd3"
 		// Ability 2.
 		"Ability2"	""
 		// Ability 3.
@@ -12217,7 +12539,7 @@
 		"Model"	"models/heroes/pudge/pudge.vmdl"
 		// Name of sound set.
 		"SoundSet"	"Hero_PhantomAssassin"
-		"ModelScale"	"1"
+		"ModelScale"	"1.5"
 		"Level"	"1"
 		// Abilities
 		// ----------------------------------------------------------------
@@ -12285,7 +12607,7 @@
 		// Type of locomotion - ground, air
 		"MovementCapabilities"	"DOTA_UNIT_CAP_MOVE_GROUND"
 		// Speed
-		"MovementSpeed"	"425"
+		"MovementSpeed"	"455"
 		// Turning rate.
 		"MovementTurnRate"	"1"
 		// Status
@@ -12313,11 +12635,15 @@
 			{
 				"Wearable1"
 				{
-					"ItemDef"	"12248"
+					"ItemDef"	"13788"
 				}
 				"Wearable2"
 				{
-					"ItemDef"	"12247"
+					"ItemDef"	"9231"
+				}
+				"Wearable3"
+				{
+					"ItemDef"	"6007"
 				}
 			}
 		}
@@ -12339,7 +12665,7 @@
 		"Ability23"	""
 		"Ability24"	""
 		"ProjectileSpeed"	"800"
-		"ConsideredHero"	"0"
+		"ConsideredHero"	"1"
 		"MinimapIcon"	"minimap_candybucket"
 		"MinimapIconSize"	"500"
 		"Ability8"	""
@@ -12355,7 +12681,7 @@
 		"Model"	"models/heroes/undying/undying.vmdl"
 		// Name of sound set.
 		"SoundSet"	"Hero_PhantomAssassin"
-		"ModelScale"	"1"
+		"ModelScale"	"2.5"
 		"Level"	"1"
 		// Abilities
 		// ----------------------------------------------------------------

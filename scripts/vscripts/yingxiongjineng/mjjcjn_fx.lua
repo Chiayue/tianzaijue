@@ -61,16 +61,17 @@ function fx(keys)
 	if caster.fx_max == nil then
 		caster.fx_max = 0
 	end
-	local max = 1+ caster.fx_max
-	if max > 7 then		--最多七道剑气
-		max = 7
-	end
 
 	powershot_max_range = powershot_max_range + caster.fx_distance
 
 	powershot_radius = powershot_radius + caster.fx_radius
 
+	local max = caster.fx_max + 1
 	local time = caster.fx_time + 1
+	if time*max > 12 then
+		 time = 3
+		 max = 4
+	end
 	local time2  = 1
 	TimerUtil.createTimer(function ()
 		if time2 <= time then
@@ -149,8 +150,11 @@ function fxsh( keys )
 	if caster.cas_table.tswsh > 100 then
 		damage = damage * caster.cas_table.tswsh /100
 	end
-	if damage > 500000000 then
-		damage = 500000000
+
+	local max = caster.fx_max + 1
+	local time = caster.fx_time + 1
+	if time*max > 12 then
+		 damage = ((time*max -12) *0.1+1) * damage
 	end
 	ApplyDamageEx(caster,target,ability,damage)
 

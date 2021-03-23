@@ -531,6 +531,7 @@ LinkLuaModifier( "modifier_bw_all_101", "lua_modifiers/baowu/modifier_bw_all_101
 LinkLuaModifier( "modifier_countdown", "lua_modifiers/creature/modifier_countdown", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "zlyx_as", "yxtf/zlyx_as", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "llyx_sx", "yxtf/llyx_sx", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "llyx_sx2", "yxtf/llyx_sx2", LUA_MODIFIER_MOTION_NONE )
 
 LinkLuaModifier( "yxtfjn_hn", "yxtf/yxtfjn_hn", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "yxtfjn_zs", "yxtf/yxtfjn_zs", LUA_MODIFIER_MOTION_NONE )
@@ -545,6 +546,9 @@ LinkLuaModifier( "modifier_cw_2_1", "lua_modifiers/chongwu/modifier_cw_2_1", LUA
 LinkLuaModifier( "modifier_cw_2_2", "lua_modifiers/chongwu/modifier_cw_2_2", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_cw_2_3", "lua_modifiers/chongwu/modifier_cw_2_3", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_cw_3_11", "lua_modifiers/chongwu/modifier_cw_3_11", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_cw_4_22", "lua_modifiers/chongwu/modifier_cw_4_22", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_cw_5_22", "lua_modifiers/chongwu/modifier_cw_5_22", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_cw_6_22", "lua_modifiers/chongwu/modifier_cw_6_22", LUA_MODIFIER_MOTION_NONE )
 
 LinkLuaModifier( "modifier_cw_1_101", "lua_modifiers/chongwu/modifier_cw_1_101", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_cw_1_201", "lua_modifiers/chongwu/modifier_cw_1_201", LUA_MODIFIER_MOTION_NONE )

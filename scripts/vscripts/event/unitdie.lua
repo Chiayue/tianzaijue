@@ -161,7 +161,7 @@ function m.RecordKills(killer,diedUnit)
 					local gold2 = 0
 					local jy2 = 0
 					
-					local ratioOwner = 0.8
+					local ratioOwner = 0.95
 					local ratioKiller = 1 - ratioOwner
 					
 					if caster.cas_table.jqjc and gold > 0  then
@@ -404,20 +404,12 @@ function m.AttackBoss(killer,unit)
 			NotifyUtil.ShowSysMsg(i,"#boss_death",nil,"item_bw_1")
 			--每个BOSS有30%的概率掉落存档装备，每次不爆+10 的爆率
 				local xyz = hero.cas_table.xyz
-				if Stage.playernum == 1 then
-					xyz = xyz + 15
-				end
 				if xyz>100 then
 					xyz =100
 				end
 				if RollPercent(xyz) then
 					NetItemDrop(hero)
-					--NotifyUtil.ShowSysMsg(i,"#net_item")  -- 现在是游戏结算统一给，就不用发消息了
-					hero.cas_table.xyz = hero.cas_table.xyz - hero.bbtime * 10
-					hero.bbtime =  0
-				else
-					hero.cas_table.xyz = hero.cas_table.xyz + 10  --如果不爆装备，则下一次爆率+5%，爆了就清空之前累加的
-					hero.bbtime =  hero.bbtime + 1
+					--NotifyUtil.ShowSysMsg(i,"#net_item")  -- 现在是游戏结算统一给，就不用发消息了				
 				end
 			
 		end

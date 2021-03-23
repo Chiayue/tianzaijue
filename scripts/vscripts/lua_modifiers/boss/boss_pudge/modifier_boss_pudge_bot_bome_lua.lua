@@ -16,15 +16,11 @@ function modifier_boss_pudge_bot_bome_lua:OnDeath( params )	--
             ParticleManager:SetParticleControl( nFXIndex, 0,self:GetParent():GetOrigin() )
             ParticleManager:ReleaseParticleIndex(nFXIndex)
             EmitSoundOnLocationWithCaster( self:GetParent():GetOrigin(), "Hero_Techies.Suicide.Arcana", self:GetParent() )
-			local enemies = FindUnitsInRadius(self:GetParent():GetTeamNumber(), self:GetParent():GetOrigin(), nil, 1000,
-					DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_HERO+DOTA_UNIT_TARGET_BASIC,
+			local enemies = FindUnitsInRadius(self:GetParent():GetTeamNumber(), self:GetParent():GetOrigin(), nil, 600,
+					DOTA_UNIT_TARGET_TEAM_FRIENDLY, DOTA_UNIT_TARGET_HERO+DOTA_UNIT_TARGET_BASIC+DOTA_UNIT_TARGET_CREEP,
 					DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES, FIND_CLOSEST, false)
-			for _,enemy in pairs(enemies) do
-				if enemy~=self:GetCaster() then
-					enemy:Heal(enemy:GetMaxHealth(), enemy)
-					enemy:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_boss_pudge_bot_bome_lua_effect", {})
-				end
-				
+			for _,enemy in pairs(enemies) do		
+				enemy:Heal(enemy:GetMaxHealth()*0.3, enemy)				
 			end
             
         end

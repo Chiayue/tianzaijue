@@ -63,7 +63,6 @@ function Addjb(keys)
 		local jqjc = caster.cas_table.jqjc + 100
 		local wave= Stage.wave
 		local gold = math.ceil(gold * jqjc / 100 * (wave*0.2 + 1))
-		
 		PopupNum:PopupGoldGain(caster,gold)
 		PlayerUtil.ModifyGold(caster,gold)
 	end

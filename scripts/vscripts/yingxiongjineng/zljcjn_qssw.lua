@@ -57,6 +57,9 @@ function CreateQssw(keys)
 			caster.qssw_multiple = 0
 		end
 		local hp = caster:GetBaseMaxHealth()*0.4 * ewsh
+		if hp > 1000000000 then
+			hp = 1000000000
+		end
 		local hj = caster:GetPhysicalArmorValue(false)*x/2
 		if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
 				damage2 = damage * (caster.qssw_multiple + 1 )

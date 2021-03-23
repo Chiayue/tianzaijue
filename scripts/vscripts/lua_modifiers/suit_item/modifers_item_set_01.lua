@@ -39,7 +39,9 @@ function modifers_item_set_01:OnAttackLanded( params )
 		
 		if params.attacker == self:GetParent() then			
 			local damage = params.damage * 0.06
-
+			if damage > 100000000 then
+				damage = 100000000
+			end
   			self:GetParent():Heal(damage, nil)
 		end
 	end

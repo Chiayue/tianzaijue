@@ -27,9 +27,7 @@ function sjylzj( keys )
 	local baseDamage2 = baseDamage + caster.sjylzj_baseDamage
 	i = i + caster.sjylzj_damage
 	local damage = (mj * i + baseDamage2 ) * x * 1.6
-	if damage > 500000000 then
-		damage = 500000000
-	end
+
 	attackTimes = attackTimes + caster.sjylzj_count
 	local attackInterval = 0.1 --雷电打击间隔
 	local modifier = "modifier_mjjcjn_sjylzj" --施法期间的buff，主要用来限制角色的运动，提供回血等。

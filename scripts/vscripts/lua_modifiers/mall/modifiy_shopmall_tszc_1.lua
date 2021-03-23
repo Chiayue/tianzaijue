@@ -43,7 +43,7 @@ function modifiy_shopmall_tszc_1:OnAbilityExecuted( params )
 	local abilityname = string.sub(ability:GetAbilityName(),1,6)
 	if abilityname == "yxtfjn" then return end
 	if caster:GetPrimaryAttribute() ~= 2 then
-    	if RollPercent(70) then
+    	if RollPercent(25) then
 			return nil
 		end
     end

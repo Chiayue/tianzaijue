@@ -101,7 +101,7 @@ function modifier_boss_pudge_rot_lua:OnIntervalThink()
 			local damage = {
 				victim = self:GetParent(),
 				attacker = self:GetCaster(),
-				damage = 0.1*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
+				damage = 0.2*self:GetCaster():GetAverageTrueAttackDamage(self:GetCaster()),
 				damage_type = DAMAGE_TYPE_MAGICAL,
 				ability = self:GetAbility()
 			}

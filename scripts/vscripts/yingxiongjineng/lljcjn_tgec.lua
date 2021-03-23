@@ -18,7 +18,9 @@ function tgec( keys )
 	end
 	local baseHeal2 = baseHeal + caster.tgec_baseHeal
 	heal = (ll * (i+caster.tgec_heal) + baseHeal2 ) * x
-
+	if heal > 100000000 then
+		heal = 100000000
+	end
 
 		
 		target:Heal(heal, caster)

@@ -80,10 +80,20 @@ function m.OnHeroInGame(hero,PlayerID)
 	--2代表敏捷英雄
 	--3代表智力英雄
 	if EntityHelper.IsStrengthHero(hero) then
-		AddLuaModifier(hero,hero,"llyx_sx",{})
+		if GetGameDifficulty() >35 then
+			AddLuaModifier(hero,hero,"llyx_sx2",{})
+		else
+			AddLuaModifier(hero,hero,"llyx_sx",{})
+		end
 		hero.zsx=1
-
 	elseif EntityHelper.IsAgilityHero(hero) then
+		if hero:GetAttackCapability() == 1 then
+			if GetGameDifficulty() >35 then
+				AddLuaModifier(hero,hero,"llyx_sx2",{})
+			else
+				AddLuaModifier(hero,hero,"llyx_sx",{})
+			end
+		end
 		hero.zsx=2
 	else
 		AddLuaModifier(hero,hero,"zlyx_as",{})

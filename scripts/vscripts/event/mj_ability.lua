@@ -342,7 +342,7 @@ m.jnct={
 	hyfb={
 		"baseDamage";
 		"damage";
-		"duration";
+	--	"duration";
 		"multiple";
 	}
 	,
@@ -492,7 +492,6 @@ m.jnct={
 	dxcq={
 		"baseDamage";
 		"damage";
-	--	"radius";
 		"distance";
 		"chance";
 	--	"max";	
@@ -527,7 +526,7 @@ m.jnctsx={
 	heal={10},
 	radius={5},
 	distance={50},
-	chance={1},
+	chance={0.5},
 	interval={0.1},
 	duration={1},
 	count={3},

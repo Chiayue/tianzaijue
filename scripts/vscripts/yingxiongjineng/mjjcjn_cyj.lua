@@ -93,9 +93,7 @@ function cyjsh( keys )
 	local baseDamage2 = baseDamage + caster.cyj_baseDamage
 	i = i + caster.cyj_damage
 	local damage = (mj * i + baseDamage2 ) * x
-	if damage > 500000000 then
-		damage = 500000000
-	end	
+
 	ApplyDamageEx(caster,target,ability,damage)
 
 

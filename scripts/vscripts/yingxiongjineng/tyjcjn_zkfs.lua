@@ -38,10 +38,7 @@ function zkfs( keys )
 	local mj = caster:GetAverageTrueAttackDamage(caster)
 	local baseDamage2 = baseDamage + caster.zkfs_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
-	if damage > 500000000 then
-		damage = 500000000
-	end
-	local damage2= damage
+
 	if caster.zkfs_time == nil then
 		caster.zkfs_time = 0
 	end
@@ -49,7 +46,7 @@ function zkfs( keys )
 		caster.zkfs_multiple = 0
 	end
 	if RollPercentage(20) then	--百分之二十的概率触发暴击伤害
-			damage2 = damage * (caster.zkfs_multiple + 1 )
+			damage = damage * (caster.zkfs_multiple + 1 )
 	end	
 
 	local units = FindAlliesInRadiusExdd(caster,point,radius)
@@ -59,13 +56,14 @@ function zkfs( keys )
    		ParticleManager:DestroyParticle(p1,true)          
    	end)
 	StartSoundEventFromPosition("Hero_Abaddon.AphoticShield.Destroy",point)
-	 for key, unit in pairs(units) do
-		ApplyDamageEx(caster,unit,ability,damage2)	
-			
-	end
 	local time = caster.zkfs_time	--触发次数
-	if time > 5 then
-		time = 5
+	if time > 2 then
+		damage = damage * ((time-2)*0.33+1)
+		time = 2
+	end
+	for key, unit in pairs(units) do
+		ApplyDamageEx(caster,unit,ability,damage)	
+			
 	end
 	TimerUtil.createTimerWithDelay(0.6,function ()
 		if time > 0 then
@@ -80,14 +78,9 @@ function zkfs( keys )
 			 TimerUtil.createTimerWithDelay(0.5, function()	--0.2S摧毁特效
 			       ParticleManager:DestroyParticle(p1,true)          
 			 end)
-			local multiple = 1
-			if RollPercentage(20) then
-				multiple = caster.zkfs_multiple +multiple
-			end	
-			damage2 = damage * multiple
 		 	local units = FindAlliesInRadiusExdd(caster,point,radius)
 			for key, unit in pairs(units) do
-				ApplyDamageEx(caster,unit,ability,damage2)	
+				ApplyDamageEx(caster,unit,ability,damage)	
 			end
 			time = time - 1
 

@@ -106,6 +106,9 @@ function wdz(keys)
 		max = 30
 	end	
 	local interval = duration / max
+	if interval < 0.15 then
+		interval =0.15
+	end
 	local num = 0
 	local count = 0
 	radius = radius + caster.wdz_radius

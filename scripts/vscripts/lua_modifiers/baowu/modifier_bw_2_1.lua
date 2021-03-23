@@ -62,7 +62,7 @@ function modifier_bw_2_1:OnTakeDamage( params )
 					victim = Attacker,
 					attacker = target,
 					damage = flDamage*0.2,
-					damage_type = params.damage_type,
+					damage_type = DAMAGE_TYPE_MAGICAL,
 					ability = nil,
 				}
 				ApplyDamage( damageInfo )

@@ -10,7 +10,7 @@ function Spawn( entityKeyValues )
 
 	--thisEntity:AddNewModifier( nil, nil, "modifier_invulnerable", { duration = -1 } )
 
-	OneAbility = thisEntity:FindAbilityByName( "pudge_meat_hook_lua" )--肉勾
+	OneAbility = thisEntity:FindAbilityByName( "pudge_meat_hook_tiny_lua" )--肉勾
 	
 	ThreeAbility = thisEntity:FindAbilityByName( "boss_pudge_rot_lua" )--腐烂
 	

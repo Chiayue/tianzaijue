@@ -5197,5 +5197,15 @@
 		"yg36"	"一隻來自北方的狼"
 		"DOTA_Tooltip_ability_yg31"	"巨石投擲"
 		"DOTA_Tooltip_ability_yg30_3"	"巨石投擲"
+		"DOTA_Tooltip_ability_courier_shopmall_cw_5_21"	"金色冰龍寶寶"
+		"DOTA_Tooltip_ability_courier_shopmall_cw_5_22"	"金色冰龍寶寶"
+		"cw_5_21"	"末日寶寶"
+		"cw_5_22"	"末日寶寶"
+		"cw_5_23"	"末日寶寶"
+		"cw_5_24"	"末日寶寶"
+		"cw_5_25"	"末日寶寶"
+		"DOTA_Tooltip_ability_courier_shopmall_cw_6_22"	"金色冰龍寶寶"
+		"cw_4_22"	"末日寶寶"
+		"cw_6_22"	"末日寶寶"
 	}
 }

@@ -47,7 +47,11 @@ function item_clothes:GetModifierHealthBonus( params )	--智力
 end
 
 function item_clothes:GetModifierMagicalResistanceBonus( params )	--智力
-	return self.mfkx
+	local mk = math.ceil(self.mfkx)
+	if mk > 99 then
+		mk =99
+	end
+	return mk
 end
 function item_clothes:GetModifierManaBonus( params )	--智力
 	return self.mfz
@@ -55,9 +59,6 @@ end
 
 function item_clothes:GetModifierConstantManaRegen( params )	--智力
 	return self.mfhf
-end
-function item_clothes:GetModifierIncomingDamage_Percentage( params )	--智力
-	return -self.shjm
 end
 
 --------------------------------------------------------------------------------
