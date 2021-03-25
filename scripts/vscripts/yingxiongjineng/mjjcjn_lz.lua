@@ -106,8 +106,8 @@ function wdz(keys)
 		max = 30
 	end	
 	local interval = duration / max
-	if interval < 0.15 then
-		interval =0.15
+	if interval < 0.18 then
+		interval =0.18
 	end
 	local num = 0
 	local count = 0

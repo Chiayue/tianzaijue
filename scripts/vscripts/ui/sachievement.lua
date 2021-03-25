@@ -654,7 +654,12 @@ if Sachievement == nil then
 		[17]={Attr_jqjc=20},
 		[18]={Attr_jyjc=20},
 		[19]={Attr_grjndj=1},
-		[20]={},
+		[20]={Attr_jntsall=1},
+		[21]={Attr_tmz=20},
+		[22]={Attr_zzsh=20},
+		[23]={Attr_jnmjts=0.2},
+		[24]={Giveitem={"item_smbw_3"}},
+
 
 			
 	}

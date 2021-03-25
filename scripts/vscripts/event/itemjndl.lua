@@ -220,7 +220,7 @@ m.mjjn3={
   "item_mjjcjn_jqz6";
   "item_mjjcjn_sjyj6";
  -- "item_mjjcjn_sz6";
-  "item_mjjcjn_hytx6";
+ -- "item_mjjcjn_hytx6";
   "item_mjjcjn_fx6";
   "item_mjjcjn_blgj6";
   "item_tyjcjn_lxdf6";

@@ -26,7 +26,7 @@ function modifier_cw_5_22:OnRefresh()
 			self:GetParent().cas_table = {}
 		end
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
-		netTable["tmz3"] = netTable["tmz3"] + 40
+		netTable["tmz3"] = netTable["tmz3"] + 55
 		netTable["grjndj"] = netTable["grjndj"] + 3
 		SetNetTableValue("UnitAttributes",unitKey,netTable)
 	end
@@ -38,7 +38,7 @@ function modifier_cw_5_22:OnDestroy()
 			self:GetParent().cas_table = {}
 		end
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
-		netTable["tmz3"] = netTable["tmz3"] - 40
+		netTable["tmz3"] = netTable["tmz3"] - 55
 		netTable["grjndj"] = netTable["grjndj"] - 3
 		SetNetTableValue("UnitAttributes",unitKey,netTable)
 	end

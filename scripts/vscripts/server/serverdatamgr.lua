@@ -47,9 +47,7 @@ function m.GameFinished(playerWin,onlinePlayers,error)
 		local status,error = pcall(function()
 			params = PlayerUtil.GetAllAccount(true)
 			params.mode = 1;
-			
-			SrvNetEquip.SyncItemPosition();
-			
+
 			local difficulty = GetGameDifficulty()
 			params.nd = difficulty
 		
@@ -122,6 +120,73 @@ function m.GameFinished(playerWin,onlinePlayers,error)
 		SrvHttp.load("tzj_gf",{mode=1,error=error})
 	end
 	
+	--m.RewardItem(playerWin,onlinePlayers)
+end
+
+function m.RewardItem(playerWin,onlinePlayers)
+	if not TableNotEmpty(onlinePlayers) then
+		return;
+	end
+
+	local params = nil
+	local status,error = pcall(function()
+		params = PlayerUtil.GetAllAccount(true)
+		params.mode = 2;
+
+		local allData = {}
+		for _, PlayerID in pairs(onlinePlayers) do
+			local aid = PlayerUtil.GetAccountID(PlayerID)
+			if aid then
+				local data = {}
+				allData[aid] = data
+				
+				local postion = SrvNetEquip.SyncItemPosition(PlayerID)
+				if postion then
+					data.position = postion;
+				end
+
+				local netEquips = m.GetNetEquip(PlayerID)
+				if netEquips then
+					data.equip = netEquips
+				end
+
+				local storeItems = m.GetStoreItem(PlayerID, playerWin)
+				if storeItems then
+					data.item = storeItems
+				end
+			end
+		end
+		params.data = JSON.encode(allData)
+	end)
+	
+	if not params then
+		params = {mode=2}
+		params.error = "获取玩家id失败"
+	end
+	
+	if not status then
+		if params.error then
+			params.error2 = params.error
+		end
+		params.error = error
+	end
+	
+	SrvHttp.load("tzj_gf",params,function (srv_data)
+		if srv_data then
+			local faild = {}
+			for _, PlayerID in pairs(onlinePlayers) do
+				local aid = PlayerUtil.GetAccountID(PlayerID)
+				if aid then
+					local result = srv_data[aid]
+					if result and result.success then
+						
+					else
+						table.insert(faild, PlayerID)
+					end
+				end
+			end
+		end
+	end)
 end
 
 ---获得某个玩家的通关经验数据，用于向服务器存储。返回空，则不同步。
@@ -184,24 +249,25 @@ end
 --	{src="结算",item="xxxxx",quality=1,grade=1,attr={...},slot=1,score=123},
 --	....
 --}
-function m.GetNetEquip(PlayerID,difficulty,playerWin)
+function m.GetNetEquip(PlayerID)
 	local net ={}
 	local hero = PlayerUtil.GetHero(PlayerID)
 	if not hero then
 		return net
 	end
 	for k,v in pairs(Stage.playerinfo[PlayerID].netItem) do
-		local show_list = item.show_list
 		local item = EntIndexToHScript(v)
+		Netbackpack:AddItemImmediate( hero, item,-1,SrvNetEquip.source_result)
+		local show_list = item.show_list
 		local net2 ={}
-		net.src="结算奖励"
-		net.item = item:GetAbilityName()
-		net.quality = show_list.itemrare
-		net.grade  = show_list.itemlevel
-		net.attr["item_attributes"] = show_list.item_attributes
-		net.attr["item_attributes_spe"] = show_list.item_attributes_spe
-		net.slot =Netbackpack:GetNotUseIndex(hero) --如果是-1 就代表没有位置
-		net.score= show_list.zdl
+		net2.src="结算奖励"
+		net2.item = item:GetAbilityName()
+		net2.quality = show_list.itemrare
+		net2.grade  = show_list.itemlevel
+		net2.attr["item_attributes"] = show_list.item_attributes
+		net2.attr["item_attributes_spe"] = show_list.item_attributes_spe
+		net2.slot =item.slot--如果是-1 就代表没有位置
+		net2.score= show_list.zdl
 		table.insert(net, net2) 
 	end
 	return net
@@ -216,7 +282,7 @@ end
 --	{name="xxxxx",count=nil/123,valid=nil/123},
 --	{name="xxxxx",count=nil/123,valid=nil/123}
 --}
-function m.GetStoreItem(PlayerID,difficulty,playerWin)
+function m.GetStoreItem(PlayerID,playerWin)
 	local store ={}
 	if playerWin then
 		table.insert(store, Stage.playerinfo[PlayerID].store_items) 

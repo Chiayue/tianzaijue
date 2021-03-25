@@ -9,6 +9,7 @@ if Netbackpack == nil then
 	-- 存储单位的物品数据
 	Netbackpack.m_UnitItems = {}
 	Netbackpack.UnitKeyItems = {} --暂存开箱装备
+	Netbackpack.UnitResultItems = {} --暂存结算装备
 	Netbackpack.m_Unitposition = {}
 	setmetatable(Netbackpack,Netbackpack)
 end
@@ -99,6 +100,23 @@ function Netbackpack:SaveNetEquipFromItem( unit, packIndex,item,source,again )
 			end
 			
 		end)
+	elseif source==SrvNetEquip.source_result then
+		local pack = self:GetNetbackpack(unit)
+		pack[packIndex] = item:GetEntityIndex()
+		
+		if Netbackpack.UnitResultItems[unit:GetPlayerID()]==nil then
+			Netbackpack.UnitResultItems[unit:GetPlayerID()]={}
+		end
+		local temptable={}
+		temptable['type']=2
+		temptable['slot']=packIndex
+		temptable['entityindex']=item:GetEntityIndex()
+		temptable['item']=item:GetAbilityName()
+		temptable['grade']=item.lv
+		temptable['quality']=item.pz
+		temptable['score']=math.ceil(item.zdl)
+		temptable['attr']=JSON.encode(temp)
+		table.insert(Netbackpack.UnitResultItems[unit:GetPlayerID()],temptable)
 	else
 		
 		local pack = self:GetNetbackpack(unit)
@@ -119,22 +137,29 @@ function Netbackpack:SaveNetEquipFromItem( unit, packIndex,item,source,again )
 		table.insert(Netbackpack.UnitKeyItems[unit:GetPlayerID()],temptable)
 	end
 end
---source来源
---[[function Netbackpack:SaveNetEquip( unit, packIndex,source )
-	local itemindex=self:GetItemIndex( unit, packIndex )
-	if itemindex==-1 then
-		return false
+---只针对存档背包的结算奖励装备
+---state==true上传成功
+---state==false上传失败装备丢地上
+function Netbackpack:RefreshResultItem( PlayerID ,state)
+	local hero = PlayerUtil.GetHero(PlayerID)
+	if state==true then
+		Netbackpack.UnitResultItems[PlayerID]=nil  --把暂存数据清空
+        Netbackpack:UpdateItem( hero, 1 )--刷新背包
 	else
-		local item=EntIndexToHScript(itemindex)
-		local tempdata=CustomNetTables:GetTableValue( "ItemsInfoShow", string.format( "%d", item:GetEntityIndex() ))
-		local temp={}
-		temp['item_attributes']=tempdata['item_attributes']
-		temp['item_attributes_spe']=tempdata['item_attributes_spe']
-		SrvNetEquip.AddEquip(unit:GetPlayerID(),packIndex,item:GetAbilityName(),item.lv,item.pz,item.zdl,temp,source,function(success)
-			return success
-		end)
+		local temp = Netbackpack.UnitKeyItems[PlayerID]
+		local pack = Netbackpack:GetNetbackpack(hero)
+		for k,equip in pairs(temp) do 
+			if pack then
+				local temp1 = pack[equip.slot]
+				local item1=EntIndexToHScript(temp1)
+				CreateItemOnGround(item1,nil,hero:GetAbsOrigin(),100)---上传失败，丢地上
+				pack[equip.slot] = -1
+			end
+		end
+		Netbackpack.UnitResultItems[PlayerID]=nil  --把暂存数据清空
+		Netbackpack:UpdateItem( hero, 1 )
 	end
-end]]
+end
 function Netbackpack:UpdateItem( unit, packIndex )
 	if packIndex>0 and packIndex<7 then --1到6格更新modifier
 		self:refreshmodifier(unit)

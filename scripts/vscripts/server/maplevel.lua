@@ -9,7 +9,7 @@ m.Reason_Battle_Pass = 2
 ---key = 玩家id，value = {exp=123, lvl=123,now=123,max=123}
 local playerData = {}
 
-local maxLevel = 20
+local maxLevel = 25
 
 local levelExp = {}
 
@@ -104,7 +104,7 @@ local function init()
 		elseif lvl < 21 then
 			exp = exp + 200 * lvl - 1000
 		elseif lvl < 31 then
-			exp = exp + 300 * lvl - 3000
+			exp = exp + 2000 * lvl - 3000
 		end
 		
 		levelExp[lvl] = exp

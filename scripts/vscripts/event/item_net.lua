@@ -398,7 +398,7 @@ function CreateRandomItem2(itemname,unit)
 			rare[i] = ba["netbl"..NetLevel[NetTime]][i]
 		end			--table.insert(rare,ba["netbl"..NetLevel[NetTime]][i])
 		if unit.cas_table.tmz3 > 0 and i == maxitemrare then
-			rare[i] = math.ceil(rare[i] * (unit.cas_table.tmz3/100+1))
+			rare[i] = math.ceil(rare[i] * ((unit.cas_table.tmz3+unit.cas_table.tmz4)/100+1))
 		end
 	end
 	local pz =  Weightsgetvalue_one(rare)

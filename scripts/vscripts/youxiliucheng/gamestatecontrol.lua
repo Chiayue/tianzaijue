@@ -49,8 +49,10 @@ m.wjsx={
 	"tmz";
 	"tmz2";
 	"tmz3";
+	"tmz4";
 	"yxtfdj";
 	"tswsh";
+	"jntsall";
 	
 }
 
@@ -115,6 +117,7 @@ function m.gameInProgress(hero,i)
 	hero.tmz = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.tmz2 = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.tmz3 = 0 	   --英雄的天命值，增加更高品质装备的掉落
+	hero.tmz4 = 0 	   --英雄的天命值，增加更高品质装备的掉落
 	hero.bbtime=0      --不爆存档的次数
 	hero.bfbtsll=0    	--百分比提升力量
 	hero.bfbtsmj=0 		--百分比提升敏捷
@@ -122,6 +125,7 @@ function m.gameInProgress(hero,i)
 	hero.bfbtsqsx=0 	--百分比提升全属性	
 	hero.tybosstime=1   
 	hero.dcsfcs = 0
+	hero.jntsall=0 --技能全提升
 	hero.tswsh = 100  --投射物伤害
 	hero.zhwslbs=1  --召唤物数量倍数
 	PlayerUtil.setAttrByPlayer(i,"jnsds",0)	--技能书掉落点数（掉落技能书-1，点数为0的时候不会掉落技能书，每个回合开始+1）

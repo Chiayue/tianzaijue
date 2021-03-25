@@ -270,7 +270,7 @@ function m.SpwanAttackBoss(bossName,wave)
 		local hp = ba.hpxs[bossName] 	--设置怪物的动态血量
 		local maxhp = hp * ba.hp[wave]  * ma.nd_hp[difficulty]  * ma.bossrs_hp[Stage.playernum]  * ma.nd_hp2[difficulty]
 		if difficulty >=42 then
-			maxhp = maxhp * ma.bossrs_hp[Stage.playernum]
+			maxhp = maxhp * ma.bossrs_hp3[Stage.playernum]
 			boss:AddAbility("yg36"):SetLevel(1)
 		end 
 		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤

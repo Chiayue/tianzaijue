@@ -207,10 +207,10 @@ if Shopmall == nil then
         },
         shopmall_87={--钻石会员
             price_jing=10000000,
-            reward={Attr_tmz3=70},
+            reward={Attr_bfbtsqsx=20,Attr_tmz3=80,Attr_jnmjts=0.1},
             catalog1="certificate",
             catalog2="vip",
-            notSale=true,
+        --    notSale=true,
             canuse=false, 
         },
         shopmall_8={--基础专长礼包		价格：2000仙石     时间：永久    作用：基础专长点数+3      每次开局从基础专长库里随机选取三个不重复的专长添加给英雄       
@@ -849,6 +849,33 @@ if Shopmall == nil then
 --            notSale=true,
             canuse=true, 
         },
+        shopmall_ch_4_22={--
+            price_jing=99999999,
+            reward={Set_ch="ch_4_22"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_ch_5_22={--
+            price_jing=99999999,
+            reward={Set_ch="ch_5_22"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_ch_6_22={--
+            price_jing=99999999,
+            reward={Set_ch="ch_6_22"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
         shopmall_ch_1_101={--
             price_magic=2000,
             reward={Set_ch="ch_1_101"},
@@ -1004,7 +1031,7 @@ if Shopmall == nil then
         },
         shopmall_69={--测试
             price_jing=30000000,
-            reward={Attr_tmz2=1000},
+            reward={Attr_tmz2=100},
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
@@ -1012,7 +1039,7 @@ if Shopmall == nil then
         },
         shopmall_82={--测试
             price_jing=30000000,
-            reward={Attr_tmz3=50}, 
+            reward={Attr_tmz4=50}, 
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
@@ -1020,7 +1047,7 @@ if Shopmall == nil then
         },
         shopmall_83={--测试
             price_jing=30000000,
-            reward={Attr_tmz3=100},
+            reward={Attr_tmz4=100},
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
@@ -1028,7 +1055,7 @@ if Shopmall == nil then
         },
         shopmall_84={--测试
             price_jing=30000000,
-            reward={Attr_tmz3=200},
+            reward={Attr_tmz4=200},
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
@@ -1036,7 +1063,7 @@ if Shopmall == nil then
         },
         shopmall_85={--测试
             price_jing=30000000,
-            reward={Attr_tmz3=300},
+            reward={Attr_tmz4=300},
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
@@ -1044,11 +1071,38 @@ if Shopmall == nil then
         },
         shopmall_86={--测试
             price_jing=30000000,
-            reward={Attr_tmz3=500},
+            reward={Attr_tmz4=500},
           -- catalog1="certificate",
             --catalog2="vip",
             notSale=true,
             canuse=false, 
+        },
+        shopmall_88 ={ ---2级征战钥匙
+            price_magic=999999,
+            reward={},
+            catalog1="chest",
+            catalog2="normal_1", 
+            stack=0,
+            notSale=true,
+            canuse=false,    
+        },
+        shopmall_89 ={ ---3级征战钥匙
+            price_magic=999999,
+            reward={},
+            catalog1="chest",
+            catalog2="normal_1", 
+            stack=0,
+            notSale=true,
+            canuse=false,    
+        },
+        shopmall_90 ={ ---4级征战钥匙
+            price_magic=999999,
+            reward={},
+            catalog1="chest",
+            catalog2="normal_1", 
+            stack=0,
+            notSale=true,
+            canuse=false,    
         },
         shopmall_70={--四阶橙色通用装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
             price_jing=5000000,
@@ -3398,6 +3452,18 @@ function Shopmall:tzj_chest_open(data)
         SendToClient(data.PlayerID,"tzj_chest_open_result",{info="#keybox_fail2",ui=data.ui})
         return 
     end
+    if data.itemName~="shopmall_88" and Netbackpack:GetNotUseNum( hero )<data.count then--判断背包数量
+        SendToClient(data.PlayerID,"tzj_chest_open_result",{info="#keybox_fail2",ui=data.ui})
+        return 
+    end
+    if data.itemName~="shopmall_89" and Netbackpack:GetNotUseNum( hero )<data.count then--判断背包数量
+        SendToClient(data.PlayerID,"tzj_chest_open_result",{info="#keybox_fail2",ui=data.ui})
+        return 
+    end
+    if data.itemName~="shopmall_90" and Netbackpack:GetNotUseNum( hero )<data.count then--判断背包数量
+        SendToClient(data.PlayerID,"tzj_chest_open_result",{info="#keybox_fail2",ui=data.ui})
+        return 
+    end
     for i=1,tonumber(data.count) do
         Shopmall:SetReWard( hero,Shopmall.list[data.itemName]['reward'])
     end
@@ -3427,7 +3493,52 @@ function Shopmall:tzj_chest_open(data)
         local LotteryResult={}
         if data.itemName=="shopmall_68" then    --通用宝箱
             reward={}
-            LotteryResult=Lottery:RandomLottery(data.PlayerID,count)
+            LotteryResult=Lottery:RandomLottery(data.PlayerID,count,1)
+            for k,v in pairs(LotteryResult) do
+                local tempitem={}
+                tempitem.name=v.item
+                tempitem.count=v.count
+                tempitem.type=1
+                if v.jing~=0 then
+                    tempitem.jing=v.jing
+                end
+                table.insert(reward,tempitem)
+                
+            end
+        end
+        if data.itemName=="shopmall_88" then    --二级通用宝箱
+            reward={}
+            LotteryResult=Lottery:RandomLottery(data.PlayerID,count,2)
+            for k,v in pairs(LotteryResult) do
+                local tempitem={}
+                tempitem.name=v.item
+                tempitem.count=v.count
+                tempitem.type=1
+                if v.jing~=0 then
+                    tempitem.jing=v.jing
+                end
+                table.insert(reward,tempitem)
+                
+            end
+        end
+        if data.itemName=="shopmall_89" then    --三级通用宝箱
+            reward={}
+            LotteryResult=Lottery:RandomLottery(data.PlayerID,count,3)
+            for k,v in pairs(LotteryResult) do
+                local tempitem={}
+                tempitem.name=v.item
+                tempitem.count=v.count
+                tempitem.type=1
+                if v.jing~=0 then
+                    tempitem.jing=v.jing
+                end
+                table.insert(reward,tempitem)
+                
+            end
+        end
+        if data.itemName=="shopmall_90" then    --四级通用宝箱
+            reward={}
+            LotteryResult=Lottery:RandomLottery(data.PlayerID,count,4)
             for k,v in pairs(LotteryResult) do
                 local tempitem={}
                 tempitem.name=v.item
@@ -3492,21 +3603,22 @@ function Shopmall:tzj_chest_open(data)
                 
                 --}
                 local max_quality=0
-                if data.itemName~="shopmall_68" then
-                    if #reward==1 then
-                        tempparams.item=reward[1]['entityindex']
-                        max_quality = reward[1].quality
-                    else
-                        tempparams.item={}
-                        for k,v in pairs(reward) do 
-                            table.insert(tempparams.item,v.entityindex)
-                            if v.quality>max_quality then
-                                max_quality=v.quality
+                if data.itemName~="shopmall_68" and data.itemName~="shopmall_88"  then
+                    if data.itemName~="shopmall_89" and data.itemName~="shopmall_90"  then
+                        if #reward==1 then
+                            tempparams.item=reward[1]['entityindex']
+                            max_quality = reward[1].quality
+                        else
+                            tempparams.item={}
+                            for k,v in pairs(reward) do 
+                                table.insert(tempparams.item,v.entityindex)
+                                if v.quality>max_quality then
+                                    max_quality=v.quality
+                                end
                             end
                         end
+                        tempparams.max_quality=max_quality
                     end
-                    tempparams.max_quality=max_quality
-                
                 end
                 
             else

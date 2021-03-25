@@ -836,7 +836,7 @@ function m.AttackBossTimer(boss)
 	local totalTime = 180
 	local restTime = totalTime
 	TimerUtil.createTimer(function() 
-		CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_countdowntime",{countdowntime=restTime,time=totalTime})	
+		CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_countdowntime",{id=boss:entindex(),countdowntime=restTime,time=totalTime})	
 		
 		--累计数量导致游戏失败了，此时要杀死boss
 		if m.gameFinished then

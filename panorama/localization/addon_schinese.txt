@@ -87,7 +87,6 @@
 	"item_attribute_attack_damage_plus"	"普通攻击触发额外伤害：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_gjqtsxsh"	"攻击附带群体主属性伤害：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_jnsh"	"技能增强：<font color=\"#ffffff\">+{s:value}%</font>"
-	"item_attribute_qsx"	"全属性：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_gjxx"	"攻击吸血：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fsxx"	"法术吸血：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_wlxx"	"物理吸血：<font color=\"#ffffff\">+{s:value}%</font>"
@@ -110,9 +109,6 @@
 	"item_attribute_zhwsh"	"召唤物强度：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_gjjl"	"攻击距离：<font color=\"#ffffff\">+{s:value}</font>"
 
-
-
-	"item_attribute_lqsj"	"冷却缩减：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fjsh"	"附加伤害：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_zzsh"	"最终伤害：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_tswsh"	"投射物伤害：<font color=\"#ffffff\">+{s:value}%</font>"
@@ -410,13 +406,13 @@
 	"advanced_property_mfct"	"魔法穿透："
 	"advanced_property_mfct_desc"	"无视目标对应的百分比魔法抗性(最高无视80%)"
 
-	"advanced_property_strength_levelup"	"升级加力量"
+	"advanced_property_strength_levelup"	"升级加力量："
 	"advanced_property_strength_levelup_desc"	"英雄等级每提升1级,增加对应数值的力量"
 
-	"advanced_property_agility_levelup"	"升级加敏捷"
+	"advanced_property_agility_levelup"	"升级加敏捷："
 	"advanced_property_agility_levelup_desc"	"英雄等级每提升1级,增加对应数值的敏捷"
 
-	"advanced_property_intellect_levelup"	"升级加智力"
+	"advanced_property_intellect_levelup"	"升级加智力："
 	"advanced_property_intellect_levelup_desc"	"英雄等级每提升1级,增加对应数值的智力"
 	
 	"advanced_property_qsx_bonus_percentage"	"百分比提升全属性："
@@ -458,6 +454,9 @@
 	
 	"advanced_property_tmz"			"天命值"
 	"advanced_property_tmz_desc"	"天命值越高，击杀灾厄领主获得的存档装备品质越好"
+	
+	"advanced_property_tmzz"		"高品爆率"
+	"advanced_property_tmzz_desc"	"每一点提升1%当前难度最高品质装备的出现权重(与天命值互乘)"
 	
 	"ui_btn_confirm"	"确定"
 	"ui_btn_cancel"		"取消"
@@ -996,7 +995,7 @@
 	"store_item_shopmall_54"		"黄金会员"
 	"store_item_shopmall_54_desc"	"全属性+20%<br/>初始三维+50<br/><br/>幸运值+15<br/>天命值+50(击杀灾厄BOSS掉落高品质装备的概率提升50%)<br/><br/><font color='gold'>永久生效</font>"
 	"store_item_shopmall_87"		"钻石会员"
-	"store_item_shopmall_87_desc"	"当前难度最高品质装备的爆率+70%(与天命值互乘)<br/><br/><font color='gold'>永久生效</font>"
+	"store_item_shopmall_87_desc"	"全属性+20%<br/>技能提升数值+10%<br/>当前难度最高品质装备的爆率+80%(与天命值互乘)<br/><br/><font color='gold'>永久生效</font>"
 
 
 	"store_item_shopmall_55"		"超魔符文书Ⅱ"
@@ -1032,6 +1031,13 @@
 	"store_item_shopmall_68"		"征战钥匙"
 	"store_item_shopmall_68_desc"	"使用后可开启通用宝箱获得一件商城道具<br/><br/>一级奖池（90%）：<br/>晶石<br/>基础符文页<br/>中级符文页<br/>高级符文页<br/>二阶强化石<br/>三阶强化石<br/>四阶强化石<br/>五阶强化石<br/>六阶强化石<br/>七阶强化石<br/><br/>二级奖池（9%）：<br/>初级会员<br/>中级会员<br/>贤者神石<br/>中级符文书Ⅰ<br/>中级符文书Ⅱ<br/>中级符文书Ⅲ<br/>一级神秘宝物书<br/><br/>三级奖池（0.9%）：<br/>100w晶石（7.2%）<br/>吞噬卡（10.1%）<br/>白银会员（1.8%）<br/>高级符文书Ⅰ（33.3%）<br/>高级符文书Ⅱ（10.6%）<br/>高级符文书Ⅲ（3.3%）<br/>超魔符文书Ⅰ（5.4%）<br/>超魔符文书Ⅱ（1.8%）<br/>超魔符文书Ⅲ（0.6%）（非卖品）<br/>11级能量之心（20%）<br/>12级能量之心（5.4%）<br/>二级神秘宝物书（3.6%）<br/><br/>四级奖池（0.1%）：<br/>黄金会员（37.1%）<br/>钻石会员（6%）<br/>特殊符文书Ⅰ（20.6%）<br/>特殊符文书Ⅱ（6.1%）<br/>特殊符文书Ⅲ（2%）（非卖品）<br/>13级能量之心（20.6%）<br/>14级能量之心（5.1%）<br/>三级神秘宝物书（8.2%）<br/><br/><font color='gold'>奖池内除[非卖品]外的道具会不定期在商城中进行出售</font>"
 
+	"store_item_shopmall_88"		"2级征战钥匙"
+	"store_item_shopmall_88_desc"	"使用后随机获得一件2级奖池的道具"
+	"store_item_shopmall_89"		"3级征战钥匙"
+	"store_item_shopmall_89_desc"	"使用后随机获得一件3级奖池的道具"
+	"store_item_shopmall_90"		"4级征战钥匙"
+	"store_item_shopmall_90_desc"	"使用后随机获得一件4级奖池的道具"
+
 
 
 	"store_item_shopmall_cw_1_1"		"晴儿宝宝"
@@ -1049,9 +1055,9 @@
 	"store_item_shopmall_cw_4_22"		"肉山宝宝"
 	"store_item_shopmall_cw_4_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+2,当前难度最高品质装备爆率+40%(与天命值互乘)"
 	"store_item_shopmall_cw_5_22"		"金色肉山宝宝"
-	"store_item_shopmall_cw_5_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+3,当前难度最高品质装备爆率+40%(与天命值互乘)"
+	"store_item_shopmall_cw_5_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+3,当前难度最高品质装备爆率+55%(与天命值互乘)"
 	"store_item_shopmall_cw_6_22"		"暗月肉山宝宝"
-	"store_item_shopmall_cw_6_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+4,当前难度最高品质装备爆率+65%(与天命值互乘)"
+	"store_item_shopmall_cw_6_22_desc"	"类别：宠物<br/>作用：出战时英雄个人技能等级+4,当前难度最高品质装备爆率+80%(与天命值互乘)"
 	"store_item_shopmall_gh_1_1"		"坚韧光环"
 	"store_item_shopmall_gh_1_1_desc"	"类别：光环<br/>作用：出战时英雄护甲+10"
 	"store_item_shopmall_gh_1_2"		"御魔光环"
@@ -1088,6 +1094,13 @@
 	"store_item_shopmall_ch_3_14_desc"	"类别：称号<br/>作用：天命值+8,幸运值+5<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
 	"store_item_shopmall_ch_4_14"		"萌新"
 	"store_item_shopmall_ch_4_14_desc"	"类别：称号<br/>作用：天命值+13,幸运值+8<br/>每点天命值增加1%的高品质爆率<br><br><font color='gold'>只有使用中的称号会生效</font>"
+
+	"store_item_shopmall_ch_4_22"		"斗鱼速通达人"
+	"store_item_shopmall_ch_4_22_desc"	"类别：称号<br/>作用：天命值+20<br>幸运值+10<br>全属性+10%<br>高品爆率+25<br>技能数值提升+5%<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_5_22"		"斗鱼速通高手"
+	"store_item_shopmall_ch_5_22_desc"	"类别：称号<br/>作用：天命值+30<br>幸运值+10<br>全属性+15%<br>高品爆率+35<br>技能数值提升+10%<br><br><font color='gold'>只有使用中的称号会生效</font>"
+	"store_item_shopmall_ch_6_22"		"斗鱼最速传说"
+	"store_item_shopmall_ch_6_22_desc"	"类别：称号<br/>作用：天命值+50<br>幸运值+10<br>全属性+20%<br>高品爆率+50<br>技能数值提升+15%<br><br><font color='gold'>只有使用中的称号会生效</font>"
 	
 	"store_item_shopmall_sstone_2"	"2阶强化石"
 	"store_item_shopmall_sstone_2_desc"	"可用来强化2阶及以上品阶的存档装备"
@@ -1125,6 +1138,11 @@
 	"map_level_bonus_18"					"金钱收益+20%"
 	"map_level_bonus_19"					"经验收益+20%"
 	"map_level_bonus_20"					"个人技能等级+1"
+	"map_level_bonus_21"					"技能提升全提升(每次提升对同名技能不会生效第二次)"
+	"map_level_bonus_22"					"天命值+20"
+	"map_level_bonus_23"					"最终伤害+20%"
+	"map_level_bonus_24"					"技能提升数值+20%"
+	"map_level_bonus_25"					"初始给予1本3级宝物书"
 
 	
 	

@@ -262,16 +262,20 @@ Lottery.list_all={
  function Lottery:InitLottery(playerid)
     Lottery.PlayerLottery[playerid]={}
  end
- function Lottery:RandomLottery(playerid,num)
+ function Lottery:RandomLottery(playerid,num,level)
     local resulttable={}
     local ddddddd={}
     for i=1,num do
-        
-        local Lotterywater=Weightsgetvalue_one(Lottery.water)--随机奖池
+    	local Lotterywater = 1
+        if level == 1 then
+       		Lotterywater=Weightsgetvalue_one(Lottery.water)--随机奖池
+       	else
+       		Lotterywater= level
+       	end
         local temp={}
         for k, v in pairs(Lottery.list_all) do  
 
-            if v.level== Lotterywater then
+            if v.level== Lotterywater  then
                 temp[k]=v.weight
             end
         end

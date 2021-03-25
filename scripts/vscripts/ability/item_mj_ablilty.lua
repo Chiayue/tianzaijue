@@ -3063,7 +3063,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.zkfs_damage == nil then
 							caster.zkfs_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*0.22))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*0.22))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.zkfs_damage = caster.zkfs_damage + z
 						netTable["zkfs_damage"] = caster.zkfs_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3131,7 +3131,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.hdyj_damage == nil then
 							caster.hdyj_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z*0.5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*0.5))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.hdyj_damage = caster.hdyj_damage + z
 						netTable["hdyj_damage"] = caster.hdyj_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3529,7 +3529,6 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						end
 						z = string.format("%.2f",RandomFloat(0.1,z))
 						caster.dxcq_chance = caster.dxcq_chance + z
-						print("caster.dxcq_chance",caster.dxcq_chance)
 						netTable["dxcq_chance"] = caster.dxcq_chance
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)	
 						NotifyUtil.BottomGroup(playerID,{"DOTA_Tooltip_ability_"..originAbility,{"ability_mj_chance",{value=tostring(z)}}},3,"#ADFF2F")
@@ -3638,6 +3637,7 @@ function AddRandomMj(keys)
 		caster.cas_table.sds =caster.cas_table.sds -jg
 		local jnk ={}
 		local x = 0
+		local ycf = false
 		for i=0,4 do
 			if caster:GetAbilityByIndex(i) then
 			local name = caster:GetAbilityByIndex(i):GetAbilityName()
@@ -3645,19 +3645,40 @@ function AddRandomMj(keys)
 				local name5 = string.sub(name,8,-2)
 				if name2 ~= "kjn" and  name2 ~= "yxt" then
 					if Mj.jnct[name5] ~= nil then
-						if name2 ~= "abi" then
+						if x > 0 then	
+							for ii=1,#jnk do
+								if string.sub(jnk[ii],1,-2) == string.sub(name,1,-2) then
+									ycf = true
+								end
+							end	
+							if ycf == false then
+								x =x +1
+								jnk[x]=name
+							else
+								ycf = false
+							end
+
+						else					
 							x =x +1
 							jnk[x]=name
-						end
+						end				
 					end
 				end
 			end
 		end
 		if jnk[1]~=nil then
-			local rd = RandomInt(1,#jnk)
-			local name3 = jnk[rd]
-			local name4 =  string.sub(name3,8,-2)
-			RandomCiTiao(name4,playerID,caster,name3)
+			if caster.cas_table.jntsall > 0 then
+				for i=1,#jnk do
+					local name3 = jnk[i]
+					local name4 =  string.sub(name3,8,-2)
+					RandomCiTiao(name4,playerID,caster,name3)
+				end
+			else
+				local rd = RandomInt(1,#jnk)
+				local name3 = jnk[rd]
+				local name4 =  string.sub(name3,8,-2)
+				RandomCiTiao(name4,playerID,caster,name3)
+			end
 		else
 			caster.cas_table.sds = caster.cas_table.sds + jg
 			NotifyUtil.ShowError(playerID,"#ablity_not")
@@ -3700,6 +3721,7 @@ function AddRandomMj4(keys)
 			caster.cas_table.sds =caster.cas_table.sds -jg
 			local jnk ={}
 			local x = 0
+			local ycf = false
 			for i=0,4 do
 				if caster:GetAbilityByIndex(i) then
 				local name = caster:GetAbilityByIndex(i):GetAbilityName()
@@ -3707,19 +3729,39 @@ function AddRandomMj4(keys)
 					local name5 = string.sub(name,8,-2)
 					if name2 ~= "kjn" and  name2 ~= "yxt" then
 						if Mj.jnct[name5] ~= nil then
-							if name2 ~= "abi" then
+							if x > 0 then	
+								for ii=1,#jnk do
+									if string.sub(jnk[ii],1,-2) == string.sub(name,1,-2) then
+										ycf = true
+									end
+								end	
+								if ycf == false then
+									x =x +1
+									jnk[x]=name
+								else
+									ycf = false
+								end
+							else					
 								x =x +1
 								jnk[x]=name
-							end
+							end			
 						end
 					end
 				end
 			end
 			if jnk[1]~=nil then
-				local rd = RandomInt(1,#jnk)
-				local name3 = jnk[rd]
-				local name4 =  string.sub(name3,8,-2)
-				RandomCiTiao(name4,playerID,caster,name3)
+				if caster.cas_table.jntsall > 0 then
+					for i=1,#jnk do
+						local name3 = jnk[i]
+						local name4 =  string.sub(name3,8,-2)
+						RandomCiTiao(name4,playerID,caster,name3)
+					end
+				else
+					local rd = RandomInt(1,#jnk)
+					local name3 = jnk[rd]
+					local name4 =  string.sub(name3,8,-2)
+					RandomCiTiao(name4,playerID,caster,name3)
+				end
 			else
 				caster.cas_table.sds = caster.cas_table.sds + jg
 				NotifyUtil.ShowError(playerID,"#ablity_not")
@@ -3754,6 +3796,7 @@ function AddRandomMj2(keys)
 	
 		local jnk ={}
 		local x = 0
+		local ycf = false
 		for i=0,4 do
 			if caster:GetAbilityByIndex(i) then
 			local name = caster:GetAbilityByIndex(i):GetAbilityName()
@@ -3761,19 +3804,39 @@ function AddRandomMj2(keys)
 				local name5 = string.sub(name,8,-2)
 				if name2 ~= "kjn" and  name2 ~= "yxt" then
 					if Mj.jnct[name5] ~= nil then
-						if name2 ~= "abi" then
+						if x > 0 then	
+							for ii=1,#jnk do
+								if string.sub(jnk[ii],1,-2) == string.sub(name,1,-2) then
+									ycf = true
+								end
+							end	
+							if ycf == false then
+								x =x +1
+								jnk[x]=name
+							else
+								ycf = false
+							end
+						else					
 							x =x +1
 							jnk[x]=name
-						end
+						end			
 					end
 				end
 			end
 		end
 		if jnk[1]~=nil then
-			local rd = RandomInt(1,#jnk)
-			local name3 = jnk[rd]
-			local name4 =  string.sub(name3,8,-2)
-			RandomCiTiao(name4,playerID,caster,name3)
+			if caster.cas_table.jntsall > 0 then
+				for i=1,#jnk do
+					local name3 = jnk[i]
+					local name4 =  string.sub(name3,8,-2)
+					RandomCiTiao(name4,playerID,caster,name3)
+				end
+			else
+				local rd = RandomInt(1,#jnk)
+				local name3 = jnk[rd]
+				local name4 =  string.sub(name3,8,-2)
+				RandomCiTiao(name4,playerID,caster,name3)
+			end
 			if charges > 1 then
 				ability:SetCurrentCharges(charges - 1)
 			else
@@ -3801,23 +3864,44 @@ function AddRandomMj3(keys)
 	
 		local jnk ={}
 		local x = 0
+		local ycf = false
 		for i=0,4 do
 			if caster:GetAbilityByIndex(i) then
 			local name = caster:GetAbilityByIndex(i):GetAbilityName()
 				local name2 = string.sub(name,1,3)
 				if name2 ~= "kjn" and  name2 ~= "yxt" then
-					if name2 ~= "abi" then
+					if x > 0 then	
+						for ii=1,#jnk do
+							if string.sub(jnk[ii],1,-2) == string.sub(name,1,-2) then
+								ycf = true
+							end
+						end	
+						if ycf == false then
+							x =x +1
+							jnk[x]=name
+						else
+							ycf = false
+						end
+					else					
 						x =x +1
 						jnk[x]=name
-					end
+					end	
 				end
 			end
 		end
 		if jnk[1]~=nil then
-			local rd = RandomInt(1,#jnk)
-			local name3 = jnk[rd]
-			local name4 =  string.sub(name3,8,-2)
-			RandomCiTiao(name4,playerID,caster,name3)
+			if caster.cas_table.jntsall > 0 then
+				for i=1,#jnk do
+					local name3 = jnk[i]
+					local name4 =  string.sub(name3,8,-2)
+					RandomCiTiao(name4,playerID,caster,name3)
+				end
+			else
+				local rd = RandomInt(1,#jnk)
+				local name3 = jnk[rd]
+				local name4 =  string.sub(name3,8,-2)
+				RandomCiTiao(name4,playerID,caster,name3)
+			end
 		end
 	
 end

@@ -567,6 +567,9 @@ LinkLuaModifier( "modifier_ch_4_13", "lua_modifiers/chenghao/modifier_ch_4_13", 
 LinkLuaModifier( "modifier_ch_2_14", "lua_modifiers/chenghao/modifier_ch_2_14", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ch_3_14", "lua_modifiers/chenghao/modifier_ch_3_14", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ch_4_14", "lua_modifiers/chenghao/modifier_ch_4_14", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ch_4_22", "lua_modifiers/chenghao/modifier_ch_4_22", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ch_5_22", "lua_modifiers/chenghao/modifier_ch_5_22", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_ch_6_22", "lua_modifiers/chenghao/modifier_ch_6_22", LUA_MODIFIER_MOTION_NONE )
 
 LinkLuaModifier( "modifier_ch_1_101", "lua_modifiers/chenghao/modifier_ch_1_101", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_ch_1_201", "lua_modifiers/chenghao/modifier_ch_1_201", LUA_MODIFIER_MOTION_NONE )

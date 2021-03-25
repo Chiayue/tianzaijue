@@ -1,7 +1,8 @@
 local m = {}
 ---玩家数据是否初始化完毕
 m.PlayerDataInited = false;
-
+---存档装备来源：结算奖励装备
+m.source_result = 3
 ---存档装备来源：打怪掉落
 m.source_drop = 1
 ---存档装备来源：开箱子
@@ -275,33 +276,14 @@ function m.UpdateEquipPosition(PlayerID,serverID,slot)
 end
 
 ---同步装备位置至服务器，用在游戏结束的时候
-function m.SyncItemPosition()
-	local sendData = {}
-	local aids = nil
-	for PlayerID, data in pairs(playerData) do
-		local aid = PlayerUtil.GetAccountID(PlayerID);
-		if aids then
-			aids = aids..","..aid
-		else
-			aids = aid
-		end
-		--同步所有装备的数据
+function m.SyncItemPosition(PlayerID)
+	local data = playerData[PlayerID]
+	if data then
 		local changedItems = {}
 		for id, value in pairs(data) do
 			changedItems[id] = value.slot;
 		end
-		sendData[aid] = changedItems
-	end
-	
-	if aids then
-		local params = CreateRequestParams(aids,3)
-		params.data = JSON.encode(sendData)
-		--现在的逻辑不能放在游戏中定时发送，因为更新完位置以后，没有再同步缓存中的initSlot，这个时候如果是服务端更新成功，应该把initSlot改成当前的slot才对
-		SrvHttp.load("tzj_net_equip",params,function(srvData)
-			if not srvData or srvData.result == nil then
-				m.SyncItemPosition()
-			end
-		end)
+		return changedItems;
 	end
 end
 
