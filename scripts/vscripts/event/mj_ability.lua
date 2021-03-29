@@ -462,7 +462,7 @@ m.jnct={
 	smbf={
 		"baseDamage";
 		"damage";
-		"radius";
+		"time";
 		"multiple";
 	},	
 

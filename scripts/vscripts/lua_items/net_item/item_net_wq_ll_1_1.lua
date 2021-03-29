@@ -1,7 +1,6 @@
 item_net_wq_ll_1_1 = class({})
 function item_net_wq_ll_1_1:Spawn()
 	if IsServer() then
-	xpcall(function()
 		local buff_list={}
 		local show_list={}
 		local item_zdl ={}
@@ -92,36 +91,25 @@ function item_net_wq_ll_1_1:Spawn()
 			
 		end
 		
-			for k,v in pairs(item_zdl) do	--先用 加法的公式来看看装备的战斗力
-				zdl = (item_zdl[k] * NetZdl[k])  +zdl 
-			end
-			
-			zdl = math.ceil(zdl)
-			
-			CustomNetTables:SetTableValue( "ItemsInfo", string.format( "%d", self:GetEntityIndex() ), buff_list)
-			self.itemtype=buff_list
-			self.pz = itemrare
-			self.lv = itemlevel
-			self.zdl = zdl
-			local js =  Netpzjs[itemrare] * 10 * Netdjjs[itemlevel]
-			self.js =  js
-			show_list.itemlevel=itemlevel--存储物品等级
-			show_list.itemrare=itemrare--存储物品等级
-			show_list.js=js--分解装备应该获得的晶石
-			show_list.zdl = zdl
-			CustomNetTables:SetTableValue( "ItemsInfoShow", string.format( "%d", self:GetEntityIndex() ), show_list)
-	end,function(msg)
-		if IsInToolsMode() then
-			print(msg..'\n'..debug.traceback()..'\n')
+		for k,v in pairs(item_zdl) do	--先用 加法的公式来看看装备的战斗力
+			zdl = (item_zdl[k] * NetZdl[k])  +zdl 
 		end
-	
-	end)
-	
-
-
-	    
 		
-
+		zdl = math.ceil(zdl)
+		
+		CustomNetTables:SetTableValue( "ItemsInfo", string.format( "%d", self:GetEntityIndex() ), buff_list)
+		self.itemtype=buff_list
+		self.pz = itemrare
+		self.lv = itemlevel
+		self.zdl = zdl
+		local js =  Netpzjs[itemrare] * 10 * Netdjjs[itemlevel]
+		self.js =  js
+		show_list.itemlevel=itemlevel--存储物品等级
+		show_list.itemrare=itemrare--存储物品等级
+		show_list.js=js--分解装备应该获得的晶石
+		show_list.zdl = zdl
+		self.show_list = show_list
+		CustomNetTables:SetTableValue( "ItemsInfoShow", string.format( "%d", self:GetEntityIndex() ), show_list)
 	end
 end
 function item_net_wq_ll_1_1:Weightsgetvalue_one(wtable)

@@ -10483,7 +10483,7 @@
 	"ndms_7"
 	{
 		"BaseClass"	"npc_dota_creature"
-		"Ability1"	"ndms_7"
+		"Ability1"	""
 		"Ability2"	""
 		"Ability3"	""
 		"Ability4"	""

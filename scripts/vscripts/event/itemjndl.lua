@@ -23,7 +23,7 @@ m.lljn1={
   "item_tyjcjn_zkfs1";
   "item_tyjcjn_lxdf1";
   "item_tyjcjn_smbf1";
-  "item_tyjcjn_xc1";
+--  "item_tyjcjn_xc1";
   "item_tyjcjn_sxs1";
 }
 
@@ -39,6 +39,8 @@ m.lljn2={
   "item_tyjcjn_zkfs2";
   "item_tyjcjn_lxdf2";
   "item_lljcjn_czss2";
+  "item_tyjcjn_smbf2";
+  "item_tyjcjn_sxs2";
 --  "item_lljcjn_sxpw2";
 --"item_mjjcjn_tsgj1";
 --  "item_mjjcjn_hygj1";
@@ -56,8 +58,10 @@ m.lljn3={
   "item_tyjcjn_zkfs3";
   "item_tyjcjn_lxdf3";
   "item_lljcjn_czss3";
+  "item_tyjcjn_smbf3";
 --  "item_lljcjn_sxpw3";
   "item_zljcjn_dyh3";
+  "item_tyjcjn_sxs3";
 }
 
 m.lljn4={
@@ -71,6 +75,8 @@ m.lljn4={
   "item_tyjcjn_hdyj4";
   "item_tyjcjn_zkfs4";
   "item_tyjcjn_lxdf4";
+  "item_tyjcjn_smbf4";
+  "item_tyjcjn_sxs4";
 --  "item_lljcjn_czss4";
 --  "item_lljcjn_sxpw4";
 }
@@ -86,6 +92,8 @@ m.lljn5={
   "item_tyjcjn_hdyj5";
   "item_tyjcjn_zkfs5";
   "item_tyjcjn_lxdf5";
+  "item_tyjcjn_smbf5";
+  "item_tyjcjn_sxs5";
 --  "item_lljcjn_czss5";
 --  "item_lljcjn_sxpw5";
 }
@@ -101,9 +109,11 @@ m.lljn6={
   "item_tyjcjn_hdyj6";
   "item_tyjcjn_zkfs6";
   "item_tyjcjn_lxdf6";
+  "item_tyjcjn_smbf6";
+  "item_tyjcjn_sxs6";
 --  "item_lljcjn_czss6";
 --  "item_lljcjn_sxpw6";
-  "item_zljcjn_dyh6";
+ -- "item_zljcjn_dyh6";
 }
 
 
@@ -132,7 +142,7 @@ m.mjjn1={
   "item_mjjcjn_tsgj1";
   "item_mjjcjn_hygj1";
   "item_tyjcjn_smbf1";
-  "item_tyjcjn_xc1";
+ -- "item_tyjcjn_xc1";
   "item_tyjcjn_sxs1";
   "item_tyjcjn_lxdf1";
   "item_tyjcjn_hdyj1";
@@ -176,9 +186,10 @@ m.mjjn3={
   "item_tyjcjn_hdyj3";
   "item_tyjcjn_zkfs3";
   "item_mjjcjn_hyqj3";
+  "item_tyjcjn_sxs3";
 --  "item_mjjcjn_wdz3";
  -- "item_mjjcjn_lz3";
-  "item_zljcjn_dyh3";
+  --"item_zljcjn_dyh3";
 }
 
  m.mjjn4={
@@ -195,6 +206,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj4";
   "item_tyjcjn_zkfs4";
   "item_mjjcjn_hyqj4";
+  "item_tyjcjn_sxs4";
 
 }
 
@@ -212,6 +224,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj5";
   "item_tyjcjn_zkfs5";
   "item_mjjcjn_hyqj5";
+  "item_tyjcjn_sxs5";
 
 }
 
@@ -227,9 +240,10 @@ m.mjjn3={
   "item_tyjcjn_hdyj6";
   "item_tyjcjn_zkfs6";
   "item_mjjcjn_hyqj6";
+  "item_tyjcjn_sxs6";
 --  "item_mjjcjn_wdz6";
  -- "item_mjjcjn_lz6";
- "item_zljcjn_dyh6";
+-- "item_zljcjn_dyh6";
 }
 
 m.zljn1={
@@ -256,7 +270,7 @@ m.zljn1={
   "item_zljcjn_dyh1";
   "item_zljcjn_qssw1";
   "item_tyjcjn_smbf1";
-  "item_tyjcjn_xc1";
+--  "item_tyjcjn_xc1";
 
 }
 

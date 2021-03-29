@@ -586,6 +586,61 @@ if Sachievement == nil then
 				reward={Attr_zzsh=1,}
 			},
 
+			["48_1"]={
+				bonus=48,--所需完成次数  
+				reward={}
+			},
+			["48_7"]={
+				bonus=48,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+			["49_1"]={
+				bonus=49,--所需完成次数  
+				reward={}
+			},
+			["49_7"]={
+				bonus=49,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["50_1"]={
+				bonus=50,--所需完成次数  
+				reward={}
+			},
+			["50_7"]={
+				bonus=50,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["51_1"]={
+				bonus=51,--所需完成次数  
+				reward={}
+			},
+			["51_7"]={
+				bonus=51,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["52_1"]={
+				bonus=52,--所需完成次数  
+				reward={}
+			},
+			["52_7"]={
+				bonus=52,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["53_1"]={
+				bonus=53,--所需完成次数  
+				reward={}
+			},
+			["53_7"]={
+				bonus=53,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+
+
 
 		},
 		hidden={

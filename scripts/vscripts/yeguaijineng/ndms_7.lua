@@ -18,6 +18,9 @@ ndms_gh7={
 function ndms_7( keys )	
 	local caster = keys.caster
 	local ability = keys.ability
+	local ability = keys.ability
+	local level = ability:GetLevel() - 1
+	local interval = ability:GetLevelSpecialValueFor("interval", level)
 	for i=0,3 do
 		local hero = PlayerUtil.GetHero(i)
 		if hero then
@@ -26,10 +29,12 @@ function ndms_7( keys )
 				local modifier = hero:FindModifierByName(modifiername)
 				if modifier then
 					local cs = modifier:GetStackCount() + 1 
+					if cs == 1 then
+						cs = 2
+					end
 					modifier:SetStackCount(cs)
 				else
-					local modifier = ability:ApplyDataDrivenModifier(caster,hero,modifiername,{})
-					modifier:SetStackCount(1)
+					ability:ApplyDataDrivenModifier(hero,hero,modifiername,{})
 				end
 			end
 		end

@@ -328,12 +328,16 @@ function m.UpdateItemScore(PlayerID,items,callback)
 	
 end
 
----其他模块增加玩存档装备后，要更新缓存，否则最后保存位置可能出错
+---其他模块增加完存档装备后，要更新缓存，否则最后保存位置可能出错
+--@param #number PlayerID
+--@param #table reward 存档装备数组
 function m.UpdateEquipCache(PlayerID,reward)
 	if PlayerID and reward then
 		local data = GetPlayerData(PlayerID)
-		for _, value in pairs(reward) do
-			data[value.id] = FormatServerData(value)
+		if data then
+			for _, value in pairs(reward) do
+				data[value.id] = FormatServerData(value)
+			end
 		end
 	end
 end

@@ -272,6 +272,9 @@ function m.SpwanAttackBoss(bossName,wave)
 		if difficulty >=42 then
 			maxhp = maxhp * ma.bossrs_hp3[Stage.playernum]
 			boss:AddAbility("yg36"):SetLevel(1)
+			if difficulty >=47 then
+				maxhp = maxhp * (1+Stage.herodie/100)
+			end
 		end 
 		if maxhp > 200000000 then   --如果boss血量超过5亿，就给加减伤
 			boss.shjs = string.format("%.2f",maxhp / 200000000)
@@ -328,34 +331,6 @@ function m.SpwanAttackBoss(bossName,wave)
 end
 
 
-
-
-
----野外刷怪起始。
---@param #string spawnEntityName 刷怪点名称
---@param #string unitName 怪物名称
---@param #number interval 刷怪间隔
---@param #number minNum 最小单位数量，当少于这个数量的时候开始刷怪
---@param #number maxNum 最大单位数量，当超过这个数量的时候，停止刷怪
---@param #number radius 刷怪范围
---@param #boolean faceRandom 是否随机面向。一般boss类的不随机，普通单位随机
---@param #number stage 章节限制。从该章节开始不再刷怪，已经刷新的也都会被移除掉。
---@param #number respwanCheckRadius 刷新怪物的时候的检查范围，默认通过刷怪实体点的缓存怪物去检查数量。有些特殊地域需要屯怪，比如练功房，这个时候需要单独设置一个检查范围
-function m.SpawnCreature(spawnEntityName,unitName,interval,minNum,maxNum,radius,faceRandom,stage,respwanCheckRadius)
-	local ent_spawn =Entities:FindByName(nil,spawnEntityName)--通过名字寻找刷怪点实体
-	if ent_spawn == nil then
-		return;
-	end
-	TimerUtil.createTimer(function()
-		if (stage and GetStage() >= stage) then --超过对应章节，则移除所有怪物
-			m.RemoveUnits(ent_spawn)
-			return nil;
-		end
-		m.SpawnUnits(unitName,ent_spawn,radius,minNum,maxNum,faceRandom,respwanCheckRadius)
-		return interval
-	end)
-
-end
 
 ---游戏结束，移除所有玩家的敌方单位
 function m.DeletePlayerUnits()

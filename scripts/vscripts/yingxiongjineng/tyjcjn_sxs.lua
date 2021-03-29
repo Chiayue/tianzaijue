@@ -7,29 +7,31 @@ function sxs( keys )
 	local i = ability:GetLevelSpecialValueFor("i", level)	
 	local baseDamage =ability:GetLevelSpecialValueFor("baseDamage", level)	
 	local x = 1 + (level+caster.cas_table.grjndj) / 10
+	local shbs = ability:GetLevelSpecialValueFor("shbs", level)
 	local point = target:GetAbsOrigin()
-	local ll = caster:GetHealth() * i 
-	if caster.smbf_baseDamage == nil then
-		caster.smbf_baseDamage = 0
+	if caster.sxs_baseDamage == nil then
+		caster.sxs_baseDamage = 0
 	end
-	if caster.smbf_damage == nil then
-		caster.smbf_damage = 0
+	if caster.sxs_damage == nil then
+		caster.sxs_damage = 0
 	end
-	if caster.smbf_multiple == nil then
-		caster.smbf_multiple = 0
+	local ll = caster:GetHealth() * (i+caster.sxs_damage)
+	if caster.sxs_multiple == nil then
+		caster.sxs_multiple = 0
 	end
 	local multiple = 1
-	if RollPercentage(20) then
-		multiple = caster.smbf_multiple + multiple
+	if RollPercentage(50) then
+		multiple = caster.sxs_multiple + multiple
 	end	  
-	local baseDamage2 = baseDamage + caster.smbf_baseDamage
-	local damage = (ll * (i+caster.smbf_damage) + baseDamage2 ) * x * multiple
+	local baseDamage2 = baseDamage + caster.sxs_baseDamage
+	local damage = (ll +  baseDamage2 ) * x * multiple * shbs
+	if caster:GetPrimaryAttribute() == 0 then
+		damage = damage *1.5
+	end
 	local fxIndex3 = ParticleManager:CreateParticle("particles/test/sxsbx.vpcf", PATTACH_CUSTOMORIGIN, target )
 	ParticleManager:SetParticleControl( fxIndex3, 0, point )
 	ApplyDamageMf(caster,target,ability,damage)	
 	
-	
-
 end
 
 

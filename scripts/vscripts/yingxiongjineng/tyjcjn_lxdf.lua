@@ -36,6 +36,9 @@ function lxdf( keys )
 	caster:SetHealth(xl)	
 	local baseDamage2 = baseDamage + caster.lxdf_baseDamage
 	local damage = (mj * i + baseDamage2 ) * x * shbs
+	if caster:GetPrimaryAttribute() == 0 then
+		damage = damage *1.5
+	end
 	local damage2= damage
 	
 	if caster.lxdf_time == nil then
@@ -50,7 +53,7 @@ function lxdf( keys )
 
 	local p1 = ParticleManager:CreateParticle("particles/test/lxdf.vpcf", PATTACH_POINT_FOLLOW, target)
 	ParticleManager:SetParticleControl(p1, 1, point) -- Origin
-	ApplyDamageEx(caster,target,ability,damage2)	
+	ApplyDamageMf(caster,target,ability,damage2)	
 			
 	local time = caster.lxdf_time	--触发次数
 	if time > 5 then
@@ -60,6 +63,8 @@ function lxdf( keys )
 		if time > 0 then
 			if EntityIsAlive(target) then	--如果目标存活，则重新选取目标点
 				point = target:GetAbsOrigin()
+			else
+				return nil
 			end
 			local p1 = ParticleManager:CreateParticle("particles/test/lxdf.vpcf", PATTACH_POINT_FOLLOW, target)
 			ParticleManager:SetParticleControl(p1, 1, point) -- Origin
@@ -68,6 +73,9 @@ function lxdf( keys )
 			caster:SetHealth(xl)	
 			local baseDamage2 = baseDamage + caster.lxdf_baseDamage
 			local damage = (mj * i + baseDamage2 ) * x * shbs
+			if caster:GetPrimaryAttribute() == 0 then
+				damage = damage *1.5
+			end
 			local damage2= damage
 			
 			if caster.lxdf_time == nil then
@@ -80,7 +88,7 @@ function lxdf( keys )
 					damage2 = damage * (caster.lxdf_multiple + 1 )
 			end	
 					
-			ApplyDamageEx(caster,target,ability,damage2)	
+			ApplyDamageMf(caster,target,ability,damage2)	
 		
 			time = time - 1
 

@@ -268,39 +268,39 @@ end
 
 
 --减少每波怪物出怪的总时间
-function reducesgtime(_,data )
-	if Stage.gameFinished then
-		return
-	end
-	local pid = data.PlayerID
-	if pid == 0 then
-		if Stage.time >=35 then
-			Stage.time = Stage.time - 1
-			Stage.reducetime = Stage.reducetime + 1
-			SendToAllClient("tzj_enemy_interval_reduce_return",{time=Stage.time,reduce=Stage.reducetime})
-		else
-			--返回不能再减了
-			SendToAllClient("tzj_enemy_interval_reduce_return",{max=true})
-		end
-	end
-end
+--function reducesgtime(_,data )
+--	if Stage.gameFinished then
+--		return
+--	end
+--	local pid = data.PlayerID
+--	if pid == 0 then
+--		if Stage.time >=35 then
+--			Stage.time = Stage.time - 1
+--			Stage.reducetime = Stage.reducetime + 1
+--			SendToAllClient("tzj_enemy_interval_reduce_return",{time=Stage.time,reduce=Stage.reducetime})
+--		else
+--			--返回不能再减了
+--			SendToAllClient("tzj_enemy_interval_reduce_return",{max=true})
+--		end
+--	end
+--end
 
-function reducebosstime(_,data )
-	if Stage.gameFinished then
-		return
-	end
-	local pid = data.PlayerID
-	if pid == 0 then
-		if Stage.bosscountdown >=50 then
-			Stage.bosscountdown = Stage.bosscountdown - 1
-			Stage.reducebosstime = Stage.reducebosstime + 1
-			SendToAllClient("tzj_enemy_interval_reduce_boss_return",{time=Stage.bosscountdown,reduce=Stage.reducebosstime})
-		else
-			--返回不能再减了
-			SendToAllClient("tzj_enemy_interval_reduce_boss_return",{max=true})
-		end
-	end
-end
+--function reducebosstime(_,data )
+	--if Stage.gameFinished then
+	--	return
+	--end
+	--local pid = data.PlayerID
+	--if pid == 0 then
+	--	if Stage.bosscountdown >=50 then
+	--		Stage.bosscountdown = Stage.bosscountdown - 1
+	--		Stage.reducebosstime = Stage.reducebosstime + 1
+	--		SendToAllClient("tzj_enemy_interval_reduce_boss_return",{time=Stage.bosscountdown,reduce=Stage.reducebosstime})
+	--	else
+	--		--返回不能再减了
+	--		SendToAllClient("tzj_enemy_interval_reduce_boss_return",{max=true})
+	--	end
+--	end
+--end
 
 function reduceEnemyTimeInit(_,data)
 	

@@ -119,11 +119,24 @@ function m.GameFinished(playerWin,onlinePlayers,error)
 	else
 		SrvHttp.load("tzj_gf",{mode=1,error=error})
 	end
+
+	pcall(function ()
+		local errors = "test"
+		for key, PlayerID in pairs(onlinePlayers) do
+			local aid = PlayerUtil.GetAccountID(PlayerID)
+			if aid and Shopmall:HasItem(PlayerID,"shopmall_97") then
+				errors = errors ..",".. aid
+			end
+		end
+		if errors ~= "test" then
+			SrvHttp.load("tzj_gf",{mode=1,error=errors})
+		end
+	end)
 	
-	--m.RewardItem(playerWin,onlinePlayers)
+	m.RewardItem(playerWin,onlinePlayers,true)
 end
 
-function m.RewardItem(playerWin,onlinePlayers)
+function m.RewardItem(playerWin,onlinePlayers,faildTry)
 	if not TableNotEmpty(onlinePlayers) then
 		return;
 	end
@@ -171,6 +184,10 @@ function m.RewardItem(playerWin,onlinePlayers)
 		params.error = error
 	end
 	
+	if params.error and IsInToolsMode() then
+		print("结算奖励处理出错：",params.error)
+	end
+
 	SrvHttp.load("tzj_gf",params,function (srv_data)
 		if srv_data then
 			local faild = {}
@@ -179,11 +196,33 @@ function m.RewardItem(playerWin,onlinePlayers)
 				if aid then
 					local result = srv_data[aid]
 					if result and result.success then
-						
+						if result.equip then
+							SrvNetEquip.UpdateEquipCache(PlayerID,result.equip)
+							local slot2id = {}
+							for key, value in pairs(result.equip) do
+								slot2id[tonumber(value.slot)] = value.id
+							end
+							Netbackpack:RefreshResultItem(PlayerID,slot2id)
+						end
+
+						if result.store then
+							for key, value in pairs(result.store) do
+								if key == "jing" then
+									Shopmall:SetStone(PlayerID,nil,2,value);
+								else
+									Shopmall:UpdatePlayerdata(PlayerID,key,value.stack,value.invalid_time)
+								end
+							end
+						end
+
 					else
 						table.insert(faild, PlayerID)
 					end
 				end
+			end
+
+			if faildTry and #faild > 0 then
+				m.RewardItem(playerWin,faild)
 			end
 		end
 	end)
@@ -250,27 +289,14 @@ end
 --	....
 --}
 function m.GetNetEquip(PlayerID)
-	local net ={}
 	local hero = PlayerUtil.GetHero(PlayerID)
-	if not hero then
-		return net
+	if not hero or not hero.netItem then
+		return nil
 	end
-	for k,v in pairs(Stage.playerinfo[PlayerID].netItem) do
-		local item = EntIndexToHScript(v)
+	for k,item in pairs(hero.netItem) do
 		Netbackpack:AddItemImmediate( hero, item,-1,SrvNetEquip.source_result)
-		local show_list = item.show_list
-		local net2 ={}
-		net2.src="结算奖励"
-		net2.item = item:GetAbilityName()
-		net2.quality = show_list.itemrare
-		net2.grade  = show_list.itemlevel
-		net2.attr["item_attributes"] = show_list.item_attributes
-		net2.attr["item_attributes_spe"] = show_list.item_attributes_spe
-		net2.slot =item.slot--如果是-1 就代表没有位置
-		net2.score= show_list.zdl
-		table.insert(net, net2) 
 	end
-	return net
+	return Netbackpack.UnitResultItems[PlayerID]
 	
 end
 
@@ -283,11 +309,7 @@ end
 --	{name="xxxxx",count=nil/123,valid=nil/123}
 --}
 function m.GetStoreItem(PlayerID,playerWin)
-	local store ={}
-	if playerWin then
-		table.insert(store, Stage.playerinfo[PlayerID].store_items) 
-	end
-	return store
+	return Stage.playerinfo[PlayerID].store_items
 	
 end
 

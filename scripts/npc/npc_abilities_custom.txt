@@ -3180,7 +3180,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"interval"	"20"
+				"interval"	"20 17 14 11 10 9 8 7 6"
 			}
 			"05"
 			{
@@ -34138,7 +34138,7 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"BaseClass"	"ability_datadriven"
 		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
-		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
 		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
@@ -34147,7 +34147,7 @@
 		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
 		"MaxLevel"	"10"
 		"LevelsBetweenUpgrades"	"5"
-		"AbilityCastPoint"	"0.3"
+		"AbilityCastPoint"	"0"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"7.5"
@@ -34164,7 +34164,7 @@
 			"particle"	"particles/test/smbf2.vpcf"
 			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
 			"particle"	"particles/test/smbf.vpcf"
-			"particle"	"particles/econ/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
 		}
 		"OnSpellStart"
 		{
@@ -34197,6 +34197,411 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"shbs"	"1"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"10"
+			}
+		}
+	}
+
+	"tyjcjn_smbf2"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"7.5"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/smbf2.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+			"particle"	"particles/test/smbf.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_smbf.lua"
+				"Function"	"smbf"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"400"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"30"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.2"
+			}
+		}
+	}
+
+	"tyjcjn_smbf3"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"7.5"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/smbf2.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+			"particle"	"particles/test/smbf.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_smbf.lua"
+				"Function"	"smbf"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"5.2"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"600"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"50"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.4"
+			}
+		}
+	}
+
+	"tyjcjn_smbf4"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"7.5"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/smbf2.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+			"particle"	"particles/test/smbf.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_smbf.lua"
+				"Function"	"smbf"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"6.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"900"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"65"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.6"
+			}
+		}
+	}
+
+	"tyjcjn_smbf5"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"7.5"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/smbf2.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+			"particle"	"particles/test/smbf.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_smbf.lua"
+				"Function"	"smbf"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"8"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"2000"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"80"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.8"
+			}
+		}
+	}
+
+	"tyjcjn_smbf6"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"7.5"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/smbf2.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_life_stealer.vsndevts"
+			"particle"	"particles/test/smbf.vpcf"
+			"particle"	"particles/test/smbf3.vpcfecon/items/lifestealer/ls_ti10_immortal/ls_ti10_immortal_infest.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_smbf.lua"
+				"Function"	"smbf"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"12"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"4000"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"800"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"bfb"	"50"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"100"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"2"
 			}
 		}
 	}
@@ -34338,6 +34743,17 @@
 				"Target"	"CASTER"
 				"EffectName"	"hero_bloodseeker.rupture"
 			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
 		}
 		"Modifiers"
 		{
@@ -34380,6 +34796,14 @@
 				"Duration"	"%duration"
 				"IsHidden"	"1"
 			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+			}
 		}
 		// Special
 		// -------------------------------------------------------------------------------------------------------------
@@ -34388,7 +34812,7 @@
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"i"	"0.4"
+				"i"	"0.04"
 			}
 			"02"
 			{
@@ -34414,6 +34838,877 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"ydsd"	"15"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"100"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1"
+			}
+		}
+	}
+
+	"tyjcjn_sxs3"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"20"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/sxsbx.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+			"particle"	"particles/test/sxsrage.vpcf"
+			"particle"	"particles/test/sxs22.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs3"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs3_2"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"hero_bloodseeker.rupture"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tyjcjn_sxs3"
+			{
+				"IsBuff"	"0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs2"
+					}
+				}
+				"EffectName"	"particles/test/sxsrage.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Duration"	"%duration"
+				"ThinkInterval"	"0.5"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs"
+					}
+				}
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%gjsd"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%ydsd"
+				}
+			}
+			"modifier_tyjcjn_sxs3_2"
+			{
+				"EffectName"	"particles/test/sxs22.vpcf"
+				"EffectAttachType"	"follow_rootbone"
+				"Duration"	"%duration"
+				"IsHidden"	"1"
+			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"0.07"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"bfb"	"12.5"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjsd"	"60"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ydsd"	"25"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"300"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.4"
+			}
+		}
+	}
+
+	"tyjcjn_sxs2"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"20"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/sxsbx.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+			"particle"	"particles/test/sxsrage.vpcf"
+			"particle"	"particles/test/sxs22.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs2"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs2_2"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"hero_bloodseeker.rupture"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tyjcjn_sxs2"
+			{
+				"IsBuff"	"0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs2"
+					}
+				}
+				"EffectName"	"particles/test/sxsrage.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Duration"	"%duration"
+				"ThinkInterval"	"0.5"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs"
+					}
+				}
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%gjsd"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%ydsd"
+				}
+			}
+			"modifier_tyjcjn_sxs2_2"
+			{
+				"EffectName"	"particles/test/sxs22.vpcf"
+				"EffectAttachType"	"follow_rootbone"
+				"Duration"	"%duration"
+				"IsHidden"	"1"
+			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+				"IsBuff"	"0"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"0.05"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"bfb"	"10"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjsd"	"40"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ydsd"	"20"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"200"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.2"
+			}
+		}
+	}
+
+	"tyjcjn_sxs4"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"20"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/sxsbx.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+			"particle"	"particles/test/sxsrage.vpcf"
+			"particle"	"particles/test/sxs22.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs4"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs4_2"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"hero_bloodseeker.rupture"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tyjcjn_sxs4"
+			{
+				"IsBuff"	"0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs2"
+					}
+				}
+				"EffectName"	"particles/test/sxsrage.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Duration"	"%duration"
+				"ThinkInterval"	"0.5"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs"
+					}
+				}
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%gjsd"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%ydsd"
+				}
+			}
+			"modifier_tyjcjn_sxs4_2"
+			{
+				"EffectName"	"particles/test/sxs22.vpcf"
+				"EffectAttachType"	"follow_rootbone"
+				"Duration"	"%duration"
+				"IsHidden"	"1"
+			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"0.1"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"bfb"	"15"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjsd"	"80"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ydsd"	"30"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"400"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.6"
+			}
+		}
+	}
+
+	"tyjcjn_sxs5"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"20"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/sxsbx.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+			"particle"	"particles/test/sxsrage.vpcf"
+			"particle"	"particles/test/sxs22.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs5"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs5_2"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"hero_bloodseeker.rupture"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tyjcjn_sxs5"
+			{
+				"IsBuff"	"0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs2"
+					}
+				}
+				"EffectName"	"particles/test/sxsrage.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Duration"	"%duration"
+				"ThinkInterval"	"0.5"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs"
+					}
+				}
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%gjsd"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%ydsd"
+				}
+			}
+			"modifier_tyjcjn_sxs5_2"
+			{
+				"EffectName"	"particles/test/sxs22.vpcf"
+				"EffectAttachType"	"follow_rootbone"
+				"Duration"	"%duration"
+				"IsHidden"	"1"
+			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"0.13"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"bfb"	"20"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjsd"	"100"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ydsd"	"40"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"500"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"1.8"
+			}
+		}
+	}
+
+	"tyjcjn_sxs6"
+	{
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"BaseClass"	"ability_datadriven"
+		"AbilityTextureName"	"greevil_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetType"	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_ALL"
+		"AbilityUnitTargetTeam"	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitDamageType"	"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"	"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"	"2"
+		"AbilityType"	"DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"	"10"
+		"LevelsBetweenUpgrades"	"5"
+		"AbilityCastPoint"	"0"
+		// Time
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"20"
+		// Cost
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"	"100"
+		// Casting
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"	"800"
+		// Precache
+		// -------------------------------------------------------------------------------------------------------------
+		"precache"
+		{
+			"particle"	"particles/test/sxsbx.vpcf"
+			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts"
+			"particle"	"particles/test/sxsrage.vpcf"
+			"particle"	"particles/test/sxs22.vpcf"
+		}
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs6"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs6_2"
+			}
+			"FireSound"
+			{
+				"Target"	"CASTER"
+				"EffectName"	"hero_bloodseeker.rupture"
+			}
+			"ApplyModifier"
+			{
+				"Target"
+				{
+					"Types"	"DOTA_UNIT_TARGET_HERO"
+					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Center"	"CASTER"
+				}
+				"ModifierName"	"modifier_tyjcjn_sxs1_3"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tyjcjn_sxs6"
+			{
+				"IsBuff"	"0"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"Target"	"CASTER"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs2"
+					}
+				}
+				"EffectName"	"particles/test/sxsrage.vpcf"
+				"EffectAttachType"	"attach_origin"
+				"Duration"	"%duration"
+				"ThinkInterval"	"0.5"
+				"OnAttackLanded"
+				{
+					"RunScript"
+					{
+						"Target"	"TARGET"
+						"ScriptFile"	"scripts/vscripts/yingxiongjineng/tyjcjn_sxs.lua"
+						"Function"	"sxs"
+					}
+				}
+				"IsHidden"	"0"
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%gjsd"
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%ydsd"
+				}
+			}
+			"modifier_tyjcjn_sxs6_2"
+			{
+				"EffectName"	"particles/test/sxs22.vpcf"
+				"EffectAttachType"	"follow_rootbone"
+				"Duration"	"%duration"
+				"IsHidden"	"1"
+			}
+			"modifier_tyjcjn_sxs1_3"
+			{
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"	"%gjjl"
+				}
+				"Duration"	"%duration"
+			}
+		}
+		// Special
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"0.2"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"baseDamage"	"100"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"bfb"	"25"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"duration"	"15"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjsd"	"150"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"ydsd"	"50"
+			}
+			"07"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"gjjl"	"600"
+			}
+			"08"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"shbs"	"2"
 			}
 		}
 	}

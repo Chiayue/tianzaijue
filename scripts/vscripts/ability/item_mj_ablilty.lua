@@ -837,7 +837,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.fx_distance == nil then
 							caster.fx_distance = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(10,z)/2
 						caster.fx_distance = caster.fx_distance + z
 						netTable["fx_distance"] = caster.fx_distance
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)	
@@ -1434,7 +1434,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.dxcq_distance == nil then
 							caster.dxcq_distance = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(10,z)/2
 						caster.dxcq_distance = caster.dxcq_distance + z
 						netTable["dxcq_distance"] = caster.dxcq_distance
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)	
@@ -1491,7 +1491,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.lpz_damage == nil then
 							caster.lpz_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.2,z*2.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.2,z*2.6))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.lpz_damage = caster.lpz_damage + z
 						netTable["lpz_damage"] = caster.lpz_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)		
@@ -2787,7 +2787,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.ldj_distance == nil then
 							caster.ldj_distance = 0
 						end
-						z = RandomInt(10,z)
+						z = RandomInt(10,z)/2
 						caster.ldj_distance = caster.ldj_distance + z
 						netTable["ldj_distance"] = caster.ldj_distance
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)	
@@ -3225,7 +3225,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.smbf_baseDamage == nil then
 							caster.smbf_baseDamage = 0
 						end
-						z = math.ceil(RandomInt(z/2,z) * (0.5+(Stage.wave*0.5))*6)
+						z = math.ceil(RandomInt(z/2,z) * (0.5+(Stage.wave*0.5))*10)
 						caster.smbf_baseDamage = caster.smbf_baseDamage + z
 						netTable["smbf_baseDamage"] = caster.smbf_baseDamage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
@@ -3235,22 +3235,22 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.smbf_damage == nil then
 							caster.smbf_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.2,z*1.4))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.15,z*0.7))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.smbf_damage = caster.smbf_damage + z
 						netTable["smbf_damage"] = caster.smbf_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
 						NotifyUtil.BottomGroup(playerID,{"DOTA_Tooltip_ability_"..originAbility,{"ability_mj_damage",{value=tostring(z)}}},3,"#ADFF2F")
 						return nil
-					elseif randomValue == "radius" then
-						if caster.smbf_radius == nil then
-							caster.smbf_radius = 0
+					elseif randomValue == "time" then
+						if caster.smbf_time == nil then
+							caster.smbf_time = 0
 						end
-						z = RandomInt(10,z)
-						caster.smbf_radius = caster.smbf_radius + z
-						netTable["smbf_radius"] = caster.smbf_radius
-			 			SetNetTableValue("UnitAttributes",unitKey,netTable)
-						NotifyUtil.BottomGroup(playerID,{"DOTA_Tooltip_ability_"..originAbility,{"ability_mj_radius",{value=tostring(z)}}},3,"#ADFF2F")
-						return nil
+						z = 0.5
+						caster.smbf_time = caster.smbf_time + z
+						netTable["smbf_time"] = caster.smbf_time
+			 			SetNetTableValue("UnitAttributes",unitKey,netTable)	
+					   NotifyUtil.BottomGroup(playerID,{"DOTA_Tooltip_ability_"..originAbility,{"ability_mj_time",{value=tostring(z)}}},3,"#ADFF2F")
+					    return nil	
 					elseif randomValue == "multiple" then
 						if caster.smbf_multiple == nil then
 							caster.smbf_multiple = 0
@@ -3338,7 +3338,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.sxs_damage == nil then
 							caster.sxs_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.1,z)/30)		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.04,z*0.45))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.sxs_damage = caster.sxs_damage + z
 						netTable["sxs_damage"] = caster.sxs_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)

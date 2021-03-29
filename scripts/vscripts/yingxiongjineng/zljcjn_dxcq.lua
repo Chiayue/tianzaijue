@@ -31,7 +31,7 @@ function dxcq(keys)
 	end
 
 	local point = target:GetAbsOrigin()
-	local projectileName = "particles/econ/items/death_prophet222.vpcf"
+	local projectileName = "particles/econ/items/death_prophet333.vpcf"
 	local powershot_max_range = ability:GetLevelSpecialValueFor( "shock_distance", level )
 	local movespeed = ability:GetLevelSpecialValueFor( "shock_speed", level)
 	--movespeed = RandomInt(1000,movespeed) --随机设置特效的飞行速度

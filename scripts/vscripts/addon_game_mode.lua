@@ -337,7 +337,10 @@ function PlagueLand:OnPlayerSay( keys )
 --		tzj_net_equip_enhance( "event",{item=7,PlayerID=0} )
 --CustomGameEventManager:Send_ServerToPlayer(hero:GetPlayerOwner(),"tzj_net_equip_enhance_return",{open=11111111}) 
 --Shopmall:AddJing(keys.playerid,9999999)
-	
+		for i=1,2 do
+			NetItemDrop(hero)
+		end
+		
 		--Lottery:RandomLottery(keys.playerid,200)
 		Stage.PlayerWin()
 		--hero:ForceKill(true)

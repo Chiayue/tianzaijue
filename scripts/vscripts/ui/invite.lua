@@ -197,7 +197,7 @@ function Invite:tzj_invite_count_reward(data)
     for k, v in pairs(tempdata[tostring(data.stage)]['reward']) do
         reward[k]={}
         reward[k]['count']=v
-        if Shopmall:IsUnique( itemname ) then
+        if Shopmall:IsUnique( k ) then
             reward[k]['count']=nil
         end
         if k=="plus" then

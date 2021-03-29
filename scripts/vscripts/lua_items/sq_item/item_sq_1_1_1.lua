@@ -71,6 +71,8 @@ function item_sq_1_1_1:Spawn()
 				self.itemtype.item_attributes.swsw_max = 0.5 * level
 				self.itemtype.item_attributes.dyh_max = 0.5 * level
 				self.itemtype.item_attributes.qssw_max = 1 * level
+				self.itemtype.item_attributes.smbf_multiple = 1 * level
+				self.itemtype.item_attributes.sxs_multiple = 1 * level
 			elseif sqtype == 10 then
 				self.itemtype.item_attributes.lxdf_multiple = 1 * level
 				self.itemtype.item_attributes.hdyj_multiple = 1 * level

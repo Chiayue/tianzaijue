@@ -108,14 +108,14 @@ function Netbackpack:SaveNetEquipFromItem( unit, packIndex,item,source,again )
 			Netbackpack.UnitResultItems[unit:GetPlayerID()]={}
 		end
 		local temptable={}
-		temptable['type']=2
-		temptable['slot']=packIndex
-		temptable['entityindex']=item:GetEntityIndex()
-		temptable['item']=item:GetAbilityName()
-		temptable['grade']=item.lv
-		temptable['quality']=item.pz
-		temptable['score']=math.ceil(item.zdl)
-		temptable['attr']=JSON.encode(temp)
+		temptable.slot=packIndex
+		temptable.entityindex=item:GetEntityIndex()
+		temptable.item=item:GetAbilityName()
+		temptable.grade=item.lv
+		temptable.quality=item.pz
+		temptable.score=math.ceil(item.zdl)
+		temptable.attr=temp
+		temptable.src="结算奖励"
 		table.insert(Netbackpack.UnitResultItems[unit:GetPlayerID()],temptable)
 	else
 		
@@ -138,17 +138,12 @@ function Netbackpack:SaveNetEquipFromItem( unit, packIndex,item,source,again )
 	end
 end
 ---只针对存档背包的结算奖励装备
----state==true上传成功
----state==false上传失败装备丢地上
-function Netbackpack:RefreshResultItem( PlayerID ,state)
+function Netbackpack:RefreshResultItem( PlayerID ,slot2id)
 	local hero = PlayerUtil.GetHero(PlayerID)
-	if state==true then
-		Netbackpack.UnitResultItems[PlayerID]=nil  --把暂存数据清空
-        Netbackpack:UpdateItem( hero, 1 )--刷新背包
-	else
-		local temp = Netbackpack.UnitKeyItems[PlayerID]
-		local pack = Netbackpack:GetNetbackpack(hero)
-		for k,equip in pairs(temp) do 
+	local pack = Netbackpack:GetNetbackpack(hero)
+	if TableLen(slot2id) == 0 then  --如果存储失败，装备掉在地上，成功就更新serverID
+		
+		for k,equip in pairs(Netbackpack.UnitResultItems[PlayerID]) do 
 			if pack then
 				local temp1 = pack[equip.slot]
 				local item1=EntIndexToHScript(temp1)
@@ -156,9 +151,18 @@ function Netbackpack:RefreshResultItem( PlayerID ,state)
 				pack[equip.slot] = -1
 			end
 		end
-		Netbackpack.UnitResultItems[PlayerID]=nil  --把暂存数据清空
-		Netbackpack:UpdateItem( hero, 1 )
+	else
+		for k,v in pairs(slot2id) do
+			if pack then
+				if pack[k]~=-1 then
+					local item = EntIndexToHScript(pack[k])
+					item.serverID = v---更新服务器id到对应的装备
+				end
+			end
+		end
 	end
+	Netbackpack:UpdateItem( hero, 1 )
+	Netbackpack.UnitResultItems[PlayerID]=nil --清空结算装备信息
 end
 function Netbackpack:UpdateItem( unit, packIndex )
 	if packIndex>0 and packIndex<7 then --1到6格更新modifier
@@ -199,7 +203,7 @@ function Netbackpack:GetItemsNum( unit )
 		return num
 	end
 
-	return NetbackpackkConfig.MaxItem
+	return NetbackpackConfig.MaxItem
 end
 
 -- 判断单位是否有背包

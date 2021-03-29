@@ -12,21 +12,24 @@ function xc( keys )
 	local ll = caster:GetHealth() *bfb / 100
 	local xl = caster:GetHealth() - caster:GetHealth() *bfb / 100
 	caster:SetHealth(xl)
-	if caster.smbf_baseDamage == nil then
-		caster.smbf_baseDamage = 0
+	if caster.xc_baseDamage == nil then
+		caster.xc_baseDamage = 0
 	end
-	if caster.smbf_damage == nil then
-		caster.smbf_damage = 0
+	if caster.xc_damage == nil then
+		caster.xc_damage = 0
 	end
-	if caster.smbf_multiple == nil then
-		caster.smbf_multiple = 0
+	if caster.xc_multiple == nil then
+		caster.xc_multiple = 0
 	end
 	local multiple = 1
 	if RollPercentage(20) then
-		multiple = caster.smbf_multiple + multiple
+		multiple = caster.xc_multiple + multiple
 	end	  
-	local baseDamage2 = baseDamage + caster.smbf_baseDamage
-	local damage = (ll * (i+caster.smbf_damage) + baseDamage2 ) * x * multiple
+	local baseDamage2 = baseDamage + caster.xc_baseDamage
+	local damage = (ll * (i+caster.xc_damage) + baseDamage2 ) * x * multiple
+	if caster:GetPrimaryAttribute() == 0 then
+		damage = damage *1.5
+	end
 	local particle = ParticleManager:CreateParticle("particles/test/xuechao2.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
 	ParticleManager:SetParticleControl(particle, 0, point) -- Origin
  	local time = 5

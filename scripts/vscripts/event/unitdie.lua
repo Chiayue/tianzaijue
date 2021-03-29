@@ -309,13 +309,13 @@ function m.SuitBoss(unit,lab)
 			local item = CreateItem("item_bw_1", hero, hero)
 			hero:AddItem(item)
 			if lab ==3 then
-				NotifyUtil.ShowSysMsg(PlayerID,"jstzboss_1",nil,"item_bw_1",{value=1})
+				NotifyUtil.ShowSysMsg(playerID,"jstzboss_1",nil,"item_bw_1",{value=1})
 			elseif	lab ==4 then
-				NotifyUtil.ShowSysMsg(PlayerID,"jstzboss_2",nil,"item_bw_1",{value=1})
+				NotifyUtil.ShowSysMsg(playerID,"jstzboss_2",nil,"item_bw_1",{value=1})
 			elseif	lab ==5 then
-				NotifyUtil.ShowSysMsg(PlayerID,"jstzboss_3",nil,"item_bw_1",{value=1})
+				NotifyUtil.ShowSysMsg(playerID,"jstzboss_3",nil,"item_bw_1",{value=1})
 			elseif	lab ==6 then
-				NotifyUtil.ShowSysMsg(PlayerID,"jstzboss_4",nil,"item_bw_1",{value=1})
+				NotifyUtil.ShowSysMsg(playerID,"jstzboss_4",nil,"item_bw_1",{value=1})
 			end
 		end
 
@@ -389,7 +389,7 @@ function m.AttackBoss(killer,unit)
 	if killer == nil or killer == unit then
 		return;
 	end
-	CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_die",{id=unit:entindex(),die=1,dps=SurvivalBossDPS.BossDie(unit)})
+	CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_die",{id=unit:entindex(),name=unit:GetUnitName(),die=1,dps=SurvivalBossDPS.BossDie(unit)})
 	Stage.bossdienum = Stage.bossdienum + 1
 	--记录boss的死亡时间
 	for i=3,0,-1 do
@@ -585,6 +585,9 @@ end
 --@param #table diedHero 复活后的英雄
 --@param #Vector point 复活地点
 function m.doRespawn(diedHero,point)
+	if Stage.playernum >= 2 then
+		Stage.herodie = Stage.herodie + 1
+	end
 	diedHero:RespawnHero(false, false) --复活
 	diedHero:SetHealth(diedHero:GetMaxHealth() * 1)
 	diedHero:SetMana(diedHero:GetMaxMana() * 1)

@@ -13,6 +13,9 @@ m.num=80
 m.wave = 0
 --当前死了几个生存boss了
 m.bossdienum = 0
+
+--所有人死了多少次了
+m.herodie = 0
 --每个玩家的当前场上存在的怪物数量 存活数
 m.chs = {
 	chs1 = 0;
@@ -80,7 +83,14 @@ m.countdown = {
 	188,
 	186,
 	184,
-	182,
+	182,--47
+
+	180,
+	178,
+	176,
+	174,
+	172,
+	170,
 
 
 
@@ -137,6 +147,13 @@ m.max_boss = {
 	6,
 	6,
 	6,--41
+
+	6,
+	6,
+	6,
+	6,
+	6,
+	6,--47
 
 	6,
 	6,
@@ -236,6 +253,13 @@ m.jyg={
 	68,
 	70,
 
+	60,--48
+	62,
+	64,
+	66,
+	68,
+	70,
+
 
 
 
@@ -292,6 +316,13 @@ m.gjg={
 	70,
 
 	70,--42
+	70,
+	70,
+	70,
+	70,
+	70,
+
+	70,--48
 	70,
 	70,
 	70,
@@ -502,6 +533,13 @@ m.qhsdl={
 	[45]={15,20},
 	[46]={20,25},
 	[47]={25,40},
+
+	[48]={25,40},
+	[49]={25,40},
+	[50]={25,40},
+	[51]={25,40},
+	[52]={25,40},
+	[53]={25,40},
 }
 
 m.ysdl={
@@ -558,6 +596,13 @@ m.ysdl={
 	900,
 	920,
 	940,
+	960,
+
+	960,--48
+	960,
+	960,
+	960,
+	960,
 	960,
 }
 
@@ -808,7 +853,7 @@ function m.SpawnAttackBoss()
 					if m.bossnum == m.max_boss_count then
 						boss._IsFinalBoss = true;
 					end
-					CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_spawn",{id=boss:entindex(),isFinal=boss._IsFinalBoss,num=m.bossnum})	
+					CustomGameEventManager:Send_ServerToAllClients("tzj_topbar_update_boss_spawn",{id=boss:entindex(),name=boss:GetUnitName(),isFinal=boss._IsFinalBoss,num=m.bossnum})	
 					m.AttackBossTimer(boss)
 					
 					bgm.PlaySurvivalBoss(boss._IsFinalBoss,m.bossnum)
@@ -916,6 +961,12 @@ function m.Yxms(ms)
 	if ms == 7 then 
 		local p = Entities:FindByName(nil,"fyd1"):GetAbsOrigin()
 		local unit = CreateUnitByName("ndms_7", p, false, nil, nil, TEAM_ENEMY)
+		local difficulty = GetGameDifficulty()
+		local level = math.ceil(difficulty/10)
+		if level > 8 then
+			level = 8
+		end
+		unit:AddAbility("ndms_7"):SetLevel(level)
 		return nil
 	end
 
@@ -1020,7 +1071,7 @@ function m.finishedjNetItem(playerID)
 		if hero.netItem and #hero.netItem > 0 then
 			net_equip = {}
 			for key, item in pairs(hero.netItem) do
-				hero:AddItem(item)
+				--hero:AddItem(item)
 				table.insert(net_equip,item:entindex())
 			end
 		end
@@ -1057,13 +1108,6 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				if RollPercent(we) then
 					local bonusItem2 = {name="shopmall_68",count=1}
 					table.insert(store_items,bonusItem2)
-					SrvStore.AddItem(playerID,"shopmall_68",nil,1,function(success,item,money)
-				        if success then
-				            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
-				        else
-				            print("shopmall_68")
-				        end
-				    end,true)
 				end
 			else
 				local we2 = math.floor(we/100)
@@ -1073,13 +1117,6 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				end
 				local bonusItem2 = {name="shopmall_68",count=we2}
 				table.insert(store_items,bonusItem2)
-				SrvStore.AddItem(playerID,"shopmall_68",nil,we2,function(success,item,money)
-			        if success then
-			            Shopmall:UpdatePlayerdata( playerID,"shopmall_68",item['stack'],item['invalid_time'])
-			        else
-			            print("shopmall_68")
-			        end
-			    end,true)
 			end
 		end
 
@@ -1097,19 +1134,14 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				lv = 6
 			elseif difficulty >=36 and difficulty <=41 then
 				lv = 7
+			elseif difficulty >=42 and difficulty <=47 then
+				lv = 8
 			end
 			local min = m.qhsdl[difficulty][1]
 			local max = m.qhsdl[difficulty][2]
 			local num = RandomInt(min,max)   --掉落强化石的数量
 			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
 			table.insert(store_items,bonusItem)
-			SrvStore.AddItem(playerID,"shopmall_sstone_"..lv,nil,num,function(success,item,money)
-		        if success then
-		            Shopmall:UpdatePlayerdata( playerID,"shopmall_sstone_"..lv,item['stack'],item['invalid_time'])
-		        else
-		            print("shopmall_sstone_"..lv)
-		        end
-		    end,true)
 		end
 	end
 	return store_items

@@ -207,54 +207,54 @@
 
 	//-----------------------------------------UI  V2 begin----------------------------------------------
 	"difficulty_name_1"	"Human Trial-Stage 1"
-	"difficulty_name_1_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#5fc866\">Green</font>, <font color=\"#477bff\">Blue</ font>,<font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 0% <br>Spark stone bonus: 0%<br>Chance of dropping a battle key: 10%"
+	"difficulty_name_1_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#5fc866\">Green</font>, <font color=\"#477bff\">Blue</font>,<font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 0% <br>Spark stone bonus: 0%<br>Chance of dropping a battle key: 10%"
 	"difficulty_name_2"	"Human Trial-Stage 2"
-	"difficulty_name_2_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 10% <br>Spark stone bonus: 10%<br>Chance of dropping a battle key: 20%"
+	"difficulty_name_2_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 10% <br>Spark stone bonus: 10%<br>Chance of dropping a battle key: 20%"
 	"difficulty_name_3"	"Human Trial-Stage 3"
-	"difficulty_name_3_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>, <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font>, <font color=\"#d92b2b\">Red< /font><br><br>Resolving experience value bonus: 20%<br>Spark stone bonus: 20%<br>Chance of dropping a battle key: 30%"
+	"difficulty_name_3_desc"	"Drop archive equipment: Tier 1<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font>, <font color=\"#d92b2b\">Red< /font><br><br>Resolving experience value bonus: 20%<br>Spark stone bonus: 20%<br>Chance of dropping a battle key: 30%"
 
 	"difficulty_name_4"	"Abyss Training-Stage 1"
-	"difficulty_name_4_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#5fc866\">Green</font>, <font color=\"#477bff\">Blue</ font>,<font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 30% <br>Spark stone bonus: 40%<br>Chance of dropping a battle key: 35%"
+	"difficulty_name_4_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#5fc866\">Green</font>, <font color=\"#477bff\">Blue</font>,<font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 30% <br>Spark stone bonus: 40%<br>Chance of dropping a battle key: 35%"
 	"difficulty_name_5"	"Abyss Training-Stage 2"
-	"difficulty_name_5_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 40% <br>Spark stone bonus: 60%<br>The number of Tier 2 strengthening stones dropped in abnormal mode: 1-10<br>Chance of dropping a battle key: 40%"
+	"difficulty_name_5_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 40% <br>Spark stone bonus: 60%<br>The number of Tier 2 strengthening stones dropped in abnormal mode: 1-10<br>Chance of dropping a battle key: 40%"
 	"difficulty_name_6"	"Abyss Training-Stage 3"
-	"difficulty_name_6_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>, <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font>, <font color=\"#d92b2b\">Red< /font><br><br>Resolving experience value bonus: 50%<br>Spark stone bonus: 80%<br>The number of Tier 2 strengthening stones dropped in abnormal mode: 5-15<br>Drop Chance of losing the battle key: 45%"
+	"difficulty_name_6_desc"	"Drop archive equipment: Tier 2<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font>, <font color=\"#d92b2b\">Red< /font><br><br>Resolving experience value bonus: 50%<br>Spark stone bonus: 80%<br>The number of Tier 2 strengthening stones dropped in abnormal mode: 5-15<br>Drop Chance of losing the battle key: 45%"
 	"difficulty_name_7"	"Abyss Training-Stage 4"
-	"difficulty_name_7_desc"	"Drop archive Equipment: Tier 2<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 60% <br>Spark stone bonus: 100%<br>Number of Tier 2 strengthening stones dropped in abnormal mode: 10-20<br>Chance of dropping a battle key: 50%"
+	"difficulty_name_7_desc"	"Drop archive Equipment: Tier 2<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 60% <br>Spark stone bonus: 100%<br>Number of Tier 2 strengthening stones dropped in abnormal mode: 10-20<br>Chance of dropping a battle key: 50%"
 
 
 	"difficulty_name_8"	"Purgatory Rushing-Stage 1"
-	"difficulty_name_8_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font><br><br>Resolving experience value bonus: 70%<br>Spark stone bonus: 130%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 1-4<br>Drop Chance of Battle Key: 60%"
+	"difficulty_name_8_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font><br><br>Resolving experience value bonus: 70%<br>Spark stone bonus: 130%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 1-4<br>Drop Chance of Battle Key: 60%"
 	"difficulty_name_9"	"Purgatory-Rushing-Stage 2"
-	"difficulty_name_9_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>，<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 80%<br>Spark stone bonus: 160%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 4-8<br>Chance of dropping a battle key: 70%"
+	"difficulty_name_9_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>，<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 80%<br>Spark stone bonus: 160%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 4-8<br>Chance of dropping a battle key: 70%"
 	"difficulty_name_10"	"Purgatory Rushing-Stage 3"
-	"difficulty_name_10_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 90% <br>Spark stone bonus: 190%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 8-12<br>Chance of dropping a battle key: 80%"
+	"difficulty_name_10_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 90% <br>Spark stone bonus: 190%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 8-12<br>Chance of dropping a battle key: 80%"
 	"difficulty_name_11"	"Purgatory Rushing-Stage 4"
-	"difficulty_name_11_desc"	"Drop Archive Equipment: Tier 3<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 100%<br>Spark stone bonus: 220%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 12-16<br>Chance of dropping a battle key: 90%"
+	"difficulty_name_11_desc"	"Drop Archive Equipment: Tier 3<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 100%<br>Spark stone bonus: 220%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 12-16<br>Chance of dropping a battle key: 90%"
 	"difficulty_name_12"	"Purgatory Rushing-Stage 5"
-	"difficulty_name_12_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 110%<br>Spark stone bonus: 250%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 16-20<br>Chance of dropping a battle key: 100%"
+	"difficulty_name_12_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 110%<br>Spark stone bonus: 250%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 16-20<br>Chance of dropping a battle key: 100%"
 	"difficulty_name_13"	"Purgatory Rushing-Stage 6"
-	"difficulty_name_13_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 120% <br>Spark stone bonus: 280%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 20-25<br>Chance of dropping a battle key: 110%"
+	"difficulty_name_13_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 120% <br>Spark stone bonus: 280%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 20-25<br>Chance of dropping a battle key: 110%"
 	"difficulty_name_14"	"Purgatory Rushing-Stage 7"
-	"difficulty_name_14_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</br> font>，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience bonus: 130%<br>Spark stone bonus: 310%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 25-35<br>Chance of dropping a battle key: 130%"
+	"difficulty_name_14_desc"	"Drop archive equipment: Tier 3<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font></br> ，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience bonus: 130%<br>Spark stone bonus: 310%<br>The number of Tier 3 strengthening stones dropped in abnormal mode: 25-35<br>Chance of dropping a battle key: 130%"
 
 
 	"difficulty_name_15"	"Reincarnation Hell-Stage 1"
-	"difficulty_name_15_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">purple</ font><br><br>Resolving experience value bonus: 140%<br>Spark stone bonus: 350%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 1-3<br>Drop Chance of Battle Key: 150%"
+	"difficulty_name_15_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">purple</font><br><br>Resolving experience value bonus: 140%<br>Spark stone bonus: 350%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 1-3<br>Drop Chance of Battle Key: 150%"
 	"difficulty_name_16"	"Reincarnation Hell-Stage 2"
-	"difficulty_name_16_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>，<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 150%<br>Spark stone bonus: 390%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 3-6<br>Chance of dropping a battle key: 170%"
+	"difficulty_name_16_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>，<font color=\"#fe6d15\">Orange</font><br><br>Settlement experience value bonus: 150%<br>Spark stone bonus: 390%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 3-6<br>Chance of dropping a battle key: 170%"
 	"difficulty_name_17"	"Reincarnation Hell-Stage 3"
-	"difficulty_name_17_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</ font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 160% <br>Spark stone bonus: 430%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 6-9<br>Chance of dropping a battle key: 190%"
+	"difficulty_name_17_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font>, <font color=\"#a91ac8\">Purple</font>,<font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 160% <br>Spark stone bonus: 430%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 6-9<br>Chance of dropping a battle key: 190%"
 	"difficulty_name_18"	"Reincarnation Hell-Stage 4"
-	"difficulty_name_18_desc"	"Drop Archive Equipment: Tier 4<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 170%<br>Spark stone bonus: 470%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 9-13<br>Chance of dropping a battle key: 210%"
+	"difficulty_name_18_desc"	"Drop Archive Equipment: Tier 4<br>Archive Equipment Quality Range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 170%<br>Spark stone bonus: 470%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 9-13<br>Chance of dropping a battle key: 210%"
 	"difficulty_name_19"	"Reincarnation Hell-Stage 5"
-	"difficulty_name_19_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 180%<br>Spark stone bonus: 510%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 13-17<br>Chance of dropping a battle key: 230%"
+	"difficulty_name_19_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 180%<br>Spark stone bonus: 510%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 13-17<br>Chance of dropping a battle key: 230%"
 	"difficulty_name_20"	"Reincarnation Hell-Stage 6"
-	"difficulty_name_20_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 190% <br>Spark stone bonus: 550%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 17-22<br>Chance of dropping a battle key: 250%"
+	"difficulty_name_20_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 190% <br>Spark stone bonus: 550%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 17-22<br>Chance of dropping a battle key: 250%"
 	"difficulty_name_21"	"Reincarnation Hell-Stage 7"
-	"difficulty_name_21_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</ font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 200% <br>Spark stone bonus: 590%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 22-28<br>Chance of dropping a battle key: 270%"
+	"difficulty_name_21_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font>, <font color=\"#fe6d15\">Orange</font>,<font color=\"#ffbc09\">Gold</font>,<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 200% <br>Spark stone bonus: 590%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 22-28<br>Chance of dropping a battle key: 270%"
 	"difficulty_name_22"	"Reincarnation Hell-Stage 8"
-	"difficulty_name_22_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</br> font>，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 210%<br>Spark stone bonus: 630%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 28-40<br>Chance of dropping a battle key: 300%"
+	"difficulty_name_22_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font></br> ，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 210%<br>Spark stone bonus: 630%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 28-40<br>Chance of dropping a battle key: 300%"
 
 
 	"difficulty_name_23"	"Shura Secret Realm-Stage 1"
@@ -327,7 +327,7 @@
 	"difficulty_mode_desc_3"	"Monster skill cool down-30%"
 	"difficulty_mode_4"	"Disaster Mode"
 	"difficulty_mode_short_4"	"Disaster"
-	"difficulty_mode_desc_4"	"chance of high-level monsters +100%, chance of elite monsters +50%"
+	"difficulty_mode_desc_4"	"Chance of high-level monsters +100%, chance of elite monsters +50%"
 	"difficulty_mode_5"	"Hell Mode"
 	"difficulty_mode_short_5"	"Hell"
 	"difficulty_mode_desc_5"	"Monster movement speed +30%, attack speed +40, attack power +40%"
@@ -356,16 +356,16 @@
 	"advanced_property_spell_damage"	"Skill Amplification:"
 	"advanced_property_cooldown"	"Cooldown reduction:"
 	"advanced_property_wlbjgl"	"Physical crit chance:"
-	"advanced_property_wlbjgl_desc"	"Chance of performing a physical critical hit on attack/physical skills(Max:100%)"
+	"advanced_property_wlbjgl_desc"	"Chance to deal a critical hit on attack/physical skills(Max:100%)"
 
 	"advanced_property_wlbjsh"	"Physical crit damage:"
-	"advanced_property_wlbjsh_desc"	"Increased physical damage when critical hits"
+	"advanced_property_wlbjsh_desc"	"Increased physical damage upon critical hits"
 
 	"advanced_property_mfbjgl"	"Magic crit chance:"
-	"advanced_property_mfbjgl_desc"	"Chance of performing a magical critical hit on magic skills(Max:100%)"
+	"advanced_property_mfbjgl_desc"	"Chance to deal a magical critical hit on magic skills(Max:100%)"
 
 	"advanced_property_mfbjsh"	"Magic critical strike damage:"
-	"advanced_property_mfbjsh_desc"	"Increased magical damage when critical hits"
+	"advanced_property_mfbjsh_desc"	"Increased magical damage upon critical hits"
 
 
 	"advanced_property_extra_damage"	"Additional damage:"
@@ -525,8 +525,8 @@
 
 	"ui_attribute_button_tooltip_active_fixed"	"Click the button to make the interface permanent"
 
-	"ui_attribute_content_tab_title_advanced"	"Advanced attributes"
-	"ui_attribute_content_tab_title_ability"	"Skills enhancement"
+	"ui_attribute_content_tab_title_advanced"	"Advanced Attributes"
+	"ui_attribute_content_tab_title_ability"	"Skills Enhancement"
 
 	"ui_attribute_ability_button_enhance"	"Enhance once"
 	"ui_attribute_ability_button_enhance_desc"	"Consume <font color='yellow'>{s:price} kill points</font> to randomly increase an attribute of a certain skill"
@@ -748,7 +748,7 @@
 	"ui_game_data_mine_recharge_pay_option_wechat"	"Wechat"
 	"ui_game_data_mine_recharge_checkout"	"Payment"
 	"ui_recharge_magic_stone"	"Magic Stone"
-	"ui_recharge_count_tip"	"A total of {d:count} celestial stones"
+	"ui_recharge_count_tip"	"Must be in multiplies of 100"
 	"ui_recharge_option_paypal_tooltip"	"When using PayPal to pay, in addition to the total amount calculated above, an additional amount of handling fee is required, please be aware"
 	"ui_recharge_paypal_open_browser"	"Open browser for payment"
 	"ui_recharge_paypal_pay_confirm"	"I have paid"
@@ -831,10 +831,10 @@
 	"store_catalog_secondary_plus"	"PLUS"
 	"store_catalog_secondary_pass"	"Pass"
 	"store_catalog_secondary_vip"	"Member"
-	"store_catalog_secondary_drug"	"Pharmaceuticals"
+	"store_catalog_secondary_drug"	"Potions"
 	"store_catalog_secondary_rune"	"Rune"
 	"store_catalog_secondary_pet"	"Pet"
-	"store_catalog_secondary_title"	"title"
+	"store_catalog_secondary_title"	"Title"
 	"store_catalog_secondary_aura"	"Aura"
 	"store_catalog_secondary_equip_2"	"Tier 2 equipment"
 	"store_catalog_secondary_equip_3"	"Tier 3 equipment"
@@ -1236,7 +1236,7 @@
 
 	"ui_minimap_action_key"	"Key, click to open the [treasure hunt] interface"
 	"ui_minimap_action_ability"	"Secret Skills"
-	"ui_minimap_action_drug"	"Drug"
+	"ui_minimap_action_drug"	"Potion"
 	"ui_minimap_action_rune"	"Rune Page"
 	"ui_minimap_action_treasure"	"Treasure"
 	"ui_minimap_action_tooltip_own"	"<font color='white'>Hold: {d:count}</font>"
@@ -1261,8 +1261,8 @@
 
 	"ui_config_camera"	"Camera height"
 	"ui_config_camera_tooltip"	"The higher the lens, the wider the field of view, but it may cause lag, please set as appropriate"
-	"ui_config_boss_taunt"	"Turn off boss taunt overlay message"
-	"ui_config_boss_taunt_tooltip"	"Upon selection, the taunt overlay message will no longer be displayed"
+	"ui_config_boss_taunt"	"Turn off boss taunt overlay banner message"
+	"ui_config_boss_taunt_tooltip"	"Upon selection, the taunt overlay banner message will no longer be displayed"
 	"ui_config_bgm"	"Turn off background music"
 
 	"ui_rank_tab_artifact"	"Artifact List"
@@ -1288,7 +1288,7 @@
 	"ui_rune_list_title_2"	"Intermediate"
 	"ui_rune_list_title_3"	"Advanced"
 	"ui_rune_list_title_4"	"Super"
-	"ui_rune_list_title_5"	"Unusual"
+	"ui_rune_list_title_5"	"Special"
 
 	"ui_rune_use_button"	"Rune Page（{s:count}）"
 	"ui_rune_use_button_tooltip"	"Shown in brackets is the amount consumed after clicking"
@@ -1298,7 +1298,7 @@
 
 	//-----------------------------------------UI V2 end----------------------------------------------
 
-	"modifier_bw_1_1_Description"	"Armor +20 points<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font >"
+	"modifier_bw_1_1_Description"	"Armor +20 points<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
 
 	"modifier_bw_1_2_Description"	"HP regeneration +200, HP regeneration +3%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">1 Class Treasure</font>"
 
@@ -1312,7 +1312,7 @@
 
 	"modifier_bw_1_7_Description"	"All attributes+ 300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font> "
 
-	"modifier_bw_1_8_Description"	"Gold per second+ 200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font >"
+	"modifier_bw_1_8_Description"	"Gold per second+ 200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
 
 	"modifier_bw_1_9_Description"	"Give 30k gold at one time<br/>Each wave increases the amount of gold obtained by 25%<br/><br/><br/><br/><br/><font color=\" #cfbf81\">Level 1 Treasure</font>"
 
@@ -1324,27 +1324,27 @@
 
 	"modifier_bw_1_13_Description"	"Mana +150<br/>Mana regeneration +15<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure </font>"
 
-	"modifier_bw_1_14_Description"	"Intelligence +400<br/>Recovers 125 mana points for surrounding 1000 yards of friendly units every 10s<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 1 Treasure</font>"
+	"modifier_bw_1_14_Description"	"Intelligence +400<br/>Recovers 125 mana points for surrounding 1000 yards of friendly units every 10s<br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
 
-	"modifier_bw_2_1_Description"	"Armor +30 points<br/>Reflect 20% of damage received<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
+	"modifier_bw_2_1_Description"	"Armor +30 points<br/>Reflect 20% of damage received<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_2_Description"	"HP regeneration +5%<br/>Magic resistance +20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
+	"modifier_bw_2_2_Description"	"HP regeneration +5%<br/>Magic resistance +20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_3_Description"	"Attack power +2000<br/>Each attack has a 20% chance of causing 500% damage<br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_4_Description"	"Intelligence +600<br/>Skill enhancement +30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure </font>"
+	"modifier_bw_2_4_Description"	"Intelligence +600<br/>Skill enhancement +30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_5_Description"	"Agility +600<br/>Attack speed +50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure< /font>"
+	"modifier_bw_2_5_Description"	"Agility +600<br/>Attack speed +50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_6_Description"	"Strength +600<br/>Magic resistance +20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_7_Description"	"1200-yard halo<br/>+15 armor<br/>+2000 HP regeneration<br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
 
-	"modifier_bw_2_7_buff_Description"	"+15 armor<br/>+2000 HP regeneration<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure </font>"
+	"modifier_bw_2_7_buff_Description"	"+15 armor<br/>+2000 HP regeneration<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_8_Description"	"1200 yard range halo<br/>+30 Attack speed<br/>+5% movement speed<br/><br/><br/><br/><font color=\"#cfbf81 \">Level 2 Treasure</font>"
 
-	"modifier_bw_2_8_buff_Description"	"+30 Attack speed<br/>+5% Movement speed<br/><br/><br/><br/><br/><font color=\"#cfbf81\">2 Class Treasure</font>"
+	"modifier_bw_2_8_buff_Description"	"+30 Attack speed<br/>+5% Movement speed<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_9_Description"	"+60 Movement speed<br/>+300 All attributes<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure </font>"
 
@@ -1364,15 +1364,15 @@
 
 	"modifier_bw_2_16_Description"	"+1500 times attribute<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font> "
 
-	"modifier_bw_2_17_Description"	"Armor +50<br/>Attack Speed-50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure </font>"
+	"modifier_bw_2_17_Description"	"Armor +50<br/>Attack Speed-50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_18_Description"	"Max HP +100%<br/>Max Mana -80%<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
+	"modifier_bw_2_18_Description"	"Max HP +100%<br/>Max Mana -80%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_19_Description"	"HP regeneration +2000<br/>Cooldown reduction -10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_20_Description"	"Health +10000<br/>Mana +200<br/>Mana regeneration +10<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 2 Treasure</font>"
 
-	"modifier_bw_2_21_Description"	"Intelligence +900<br/>Mana regeneration +15<br/>Movement speed +40<br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
+	"modifier_bw_2_21_Description"	"Intelligence +900<br/>Mana regeneration +15<br/>Movement speed +40<br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_22_Description"	"Mana +300<br/>Cast range +300<br/>Mana regeneratio n+12<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 2 Treasure</font>"
 
@@ -1382,11 +1382,11 @@
 
 	"modifier_bw_2_25_Description"	"Monster killing increased +80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font >"
 
-	"modifier_bw_2_26_Description"	"Gold bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</br/> font>"
+	"modifier_bw_2_26_Description"	"Gold bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure></font>"
 
-	"modifier_bw_2_27_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</ font>"
+	"modifier_bw_2_27_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_3_1_Description"	"Attack power +7000<br/>Attack range +200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure< /font>"
+	"modifier_bw_3_1_Description"	"Attack power +7000<br/>Attack range +200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 	"modifier_bw_3_2_Description"	"Attack power +80%<br/>Attack speed +50<br/>Attack lifesteal +5%<br/><br/><br/><br/><font color=\"#cfbf81 \">Level 3 Treasure</font>"
 
@@ -1394,15 +1394,15 @@
 
 	"modifier_bw_3_4_Description"	"Attack speed +50<br/>Each attack comes with 5* agility physical damage<br/><br/><br/><br/><br/><font color=\"#cfbf81 \">Level 3 Treasure</font>"
 
-	"modifier_bw_3_5_Description"	"Skill enhancement +80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font >"
+	"modifier_bw_3_5_Description"	"Skill enhancement +80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 	"modifier_bw_3_6_Description"	"Cooldown reduction -17%<br/>Mana regeneration +5<br/><br/><br/><br/><br/><font color=\"#cfbf81\">level 3 Treasure</font>"
 
-	"modifier_bw_3_7_Description"	"A strong dispel is applied when the wearer's health is lower than 20%<br/>and 50% of the carrier's health is restored.<br/>cd:10S<br/><br/><br/> <font color=\"#cfbf81\">Level 3 Treasure</font>"
+	"modifier_bw_3_7_Description"	"A strong dispel is applied when the wearer's health is lower than 20%<br/>and 50% of the carrier's health is restored.<br/>cd:10S<br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
-	"modifier_bw_3_8_Description"	"Attacking has a 5% chance to create an unselectable, unattainable illusion<br/>has its own passive skill effect, causing 50% damage<br/>last 10S<br/> CD: 20S< br/>There is at most one illusion<br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
+	"modifier_bw_3_8_Description"	"Attacking has a 5% chance to create an unselectable, unattainable illusion<br/>has its own passive skill effect, causing 50% damage<br/>last 10S<br/> CD: 20S<br/>There is at most one illusion<br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
-	"modifier_bw_3_9_Description"	"There is a 2% chance of attacking.<br/>Knock back enemies within 600 yards around you.<br/>Inflict a 50% slowdown for 3S and cause<br/>30* strength physical damage <br/><font color=\"#ffffff\">(Won't repel BOSS)</font><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font><br/><br/><font color=\"#cfbf81\">3rd level Treasure</font><br/><br/><font color=\"#cfbf81\"> font>"
+	"modifier_bw_3_9_Description"	"There is a 2% chance of attacking.<br/>Knock back enemies within 600 yards around you.<br/>Inflict a 50% slowdown for 3S and cause<br/>30* strength physical damage <br/><font color=\"#ffffff\">(Won't repel BOSS)</font><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 	"modifier_bw_3_10_Description"	"Attack power +10000<br/>Attack reduces the target’s armor by 20 points<br/>Lasts 7 seconds.<br/><br/><br/><br/><font color=\"# cfbf81\">Level 3 Treasure</font>"
 
@@ -1430,11 +1430,11 @@
 
 	"modifier_bw_3_20_Description"	"Intelligence+2000<br/>Every 1.5s releases a high-damage Mana burst<br/>impact, causing Magic damage of intelligence*30 to enemy units<br/><br/><br/> <font color=\"#cfbf81\">Level 3 Treasure</font>"
 
-	"modifier_bw_3_21_Description"	"Monster killing increased +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font >"
+	"modifier_bw_3_21_Description"	"Monster killing increased +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
-	"modifier_bw_3_22_Description"	"Gold bonus +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</br/> font>"
+	"modifier_bw_3_22_Description"	"Gold bonus +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</br/></font>"
 
-	"modifier_bw_3_23_Description"	"Experience bonus +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</ font>"
+	"modifier_bw_3_23_Description"	"Experience bonus +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 
 
@@ -1446,7 +1446,7 @@
 
 	"modifier_bw_4_3_Description"	"All attributes+8888<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font> "
 
-	"modifier_bw_4_4_Description"	"Main attribute increase +150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</br/> font>"
+	"modifier_bw_4_4_Description"	"Main attribute increase +150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</br/></font>"
 
 	"modifier_bw_4_5_Description"	"Attack distance +500<br/>Each attack will knock back the enemy 50 distance<br/>and cause pure damage of current attack power x0.1.<br/><font color=\"#ffffff\">(Does not repel the BOSS)</font><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
@@ -1454,7 +1454,7 @@
 
 	"modifier_bw_4_7_Description"	"Attack speed +300<br/>Gold bonus +100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
-	"modifier_bw_4_8_Description"	"Intelligence+7777<br/>Skill damage+100%<br/>Mana regeneration+60<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 4 Treasure</font>"
+	"modifier_bw_4_8_Description"	"Intelligence+7777<br/>Skill damage+100%<br/>Mana regeneration+60<br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
 
 
@@ -1479,16 +1479,16 @@
 
 	"modifier_bw_5_10_Description"	"Attack power +99999<br/>Own armor -150 points<br/>Passive: 1% chance of hitting an attack reduces the target’s current HP by 5%<br/><br/><br/ ><font color=\"#cfbf81\">Level 5 Treasure</font>"
 
-	"modifier_bw_5_11_Description"	"Base attack power +666%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 5 Treasure</ font>"
+	"modifier_bw_5_11_Description"	"Base attack power +666%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 5 Treasure</font>"
 
 
-	"modifier_bw_all_1_Description"	"Attack speed +200<br/>Armor -40 points<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
+	"modifier_bw_all_1_Description"	"Attack speed +200<br/>Armor -40 points<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_2_Description"	"<font color='white'>'Remove all the Treasures of oneself, and the Treasures obtained in the future will also be removed by default'</font><br><br>Each Treasure is removed, its own attributes <br/>Improved by 1.2 times<br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_2_Description"	"<font color='white'>'Remove all the Treasures of oneself, and the Treasures obtained in the future will also be removed by default'</font><br><br>Each Treasure is removed, its own attributes <br/>Improved by 1.2 times<br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_3_Description"	"Cannot use skills<br/>Every 50S increases 10% of all attributes<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_4_Description"	"Increase 5% all attributes every 60s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_4_Description"	"Increase 5% all attributes every 60s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</br/></font>"
 
 	"modifier_bw_all_5_Description"	"Current base strength +60%<br/>Other attributes-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1502,23 +1502,23 @@
 
 	"modifier_bw_all_10_Description"	"Increase your base armor by 50%<br/>decrease your base all attributes by 20%<br/><br/><br/><br/><font color=\"#cfbf81\"> Mysterious Treasure</font>"
 
-	"modifier_bw_all_11_Description"	"Randomly reduce attack, armor, strength, agility, intelligence, and maximum health.<br/>10-30% and then randomly increase one of the random attributes, increasing (20-50%)<br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_11_Description"	"Randomly reduce attack, armor, strength, agility, intelligence, and maximum health.<br/>10-30% and then randomly increase one of the random attributes, increasing (20-50%)<br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_12_Description"	"After you are killed by a unit<br/>after the next resurrection, the damage to the target will be increased by 50%<br/>(until the target dies)<br/><br/><br/>< font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_12_Description"	"After you are killed by a unit<br/>after the next resurrection, the damage to the target will be increased by 50%<br/>(until the target dies)<br/><br/><br/>< font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_13_Description"	"Ranged heroes deal 20% additional damage to close units<br/><font color=\"#fff\">(Only effective for ranged agility units, beyond 300 yards)</font><br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_13_Description"	"Ranged heroes deal 20% additional damage to close units<br/><font color=\"#fff\">(Only effective for ranged agility units, beyond 300 yards)</font><br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_14_Description"	"Ranged heroes deal an additional 30% damage to close units<br/><font color=\"#fff\">(Only effective for ranged agility units, beyond 900 yards)</font><br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_14_Description"	"Ranged heroes deal an additional 30% damage to close units<br/><font color=\"#fff\">(Only effective for ranged agility units, beyond 900 yards)</font><br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_15_Description"	"Body size increased by 1.5 times<br/>Health +100%<br/>Attack power +200%<br/>Attack speed -80<br/>Movement speed -30%<br/><br /><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_15_Description"	"Body size increased by 1.5 times<br/>Health +100%<br/>Attack power +200%<br/>Attack speed -80<br/>Movement speed -30%<br/><br /><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_16_Description"	"HP regeneration +6%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_16_Description"	"HP regeneration +6%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_17_Description"	"Mana value+200<br/>Mana regeneration+20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures<br/> /font>"
+	"modifier_bw_all_17_Description"	"Mana value+200<br/>Mana regeneration+20<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> /font>"
 
-	"modifier_bw_all_18_Description"	"Health +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_18_Description"	"Health +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_19_Description"	"Strength increase +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_19_Description"	"Strength increase +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
 	"modifier_bw_all_20_Description"	"Agility increase +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
@@ -1526,17 +1526,17 @@
 
 	"modifier_bw_all_22_Description"	"Attack +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_23_Description"	"Armor +30 points<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_23_Description"	"Armor +30 points<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
 	"modifier_bw_all_24_Description"	"Attack speed +40<br/>Movement speed +10%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
 
-	"modifier_bw_all_25_Description"	"The damage of the skill is increased by 40%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_25_Description"	"The damage of the skill is increased by 40%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_26_Description"	"Attack range +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_27_Description"	"Only effective for ranged heroes, +1 for each level of attack target, (extra attacks do not come with attack effects)<br/><br/><br/><br/><br/><font color= \"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_28_Description"	"First damage to the target<br/>Final damage increased by 100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_28_Description"	"First damage to the target<br/>Final damage increased by 100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
 	"modifier_bw_all_29_Description"	"For units with a HP higher than 70%<br/>Final damage +30%<br/><br/><br/><br/><br/><font color=\"#cfbf81 \">Mysterious Treasure</font>"
 
@@ -1550,138 +1550,138 @@
 
 	"modifier_bw_all_34_Description"	"Damage taken reduced by 30%<br/>movement speed reduced by 15%<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Mysterious Treasure</font>"
 
-	"modifier_bw_all_35_Description"	"Mana cost -10%<br/> (<font color=\"#ffffff\">Only one will work with the dim brooch</font>)<br/><br/><br/>< br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_35_Description"	"Mana cost -10%<br/> (<font color=\"#ffffff\">Only one will work with the dim brooch</font>)<br/><br/><br/>< br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_39_Description"	"Gold bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_39_Description"	"Gold bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_40_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_40_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_41_Description"	"Number of hellfires+1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_41_Description"	"Number of hellfires+1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_42_Description"	"Number of snake guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_42_Description"	"Number of snake guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_43_Description"	"The number of death guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_43_Description"	"The number of death guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_44_Description"	"Attack the gold that hits the enemy to increase your level<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure< /font>"
+	"modifier_bw_all_44_Description"	"Attack the gold that hits the enemy to increase your level<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_45_Description"	"Every time you kill a monster, you will increase the current level/6 all attributes<br/>death and resurrection time +7s<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_45_Description"	"Every time you kill a monster, you will increase the current level/6 all attributes<br/>death and resurrection time +7s<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_46_Description"	"Increase the square of the current level every 60s * gold of the current wave number<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mystery Treasure</font>"
 
 	"modifier_bw_all_47_Description"	"Every time the Lord of Calamity appears, the base attributes are permanently increased by 30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Mysterious Treasure</font>"
 
-	"modifier_bw_all_48_Description"	"Death has a 30% chance of resurrecting in place<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
+	"modifier_bw_all_48_Description"	"Death has a 30% chance of resurrecting in place<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_49_Description"	"Every death will increase all attributes of the current level*3<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_49_Description"	"Every death will increase all attributes of the current level*3<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_50_Description"	"Death and resurrection time-6s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_50_Description"	"Death and resurrection time-6s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_51_Description"	"Gold bonus +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_51_Description"	"Gold bonus +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_52_Description"	"Experience bonus +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_52_Description"	"Experience bonus +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_53_Description"	"Gold bonus +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_53_Description"	"Gold bonus +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_54_Description"	"Experience bonus +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_54_Description"	"Experience bonus +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_55_Description"	"Use skill promotion value +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_55_Description"	"Use skill promotion value +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_56_Description"	"Use skill promotion value +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_56_Description"	"Use skill promotion value +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_57_Description"	"You can get 1 Treasure every 120s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
+	"modifier_bw_all_57_Description"	"You can get 1 Treasure every 120s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_58_Description"	"Get 2 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_58_Description"	"Get 2 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_59_Description"	"Get 3 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_59_Description"	"Get 3 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_60_Description"	"Get 5 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_60_Description"	"Get 5 Treasures immediately<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_61_Description"	"20% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_61_Description"	"20% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_62_Description"	"40% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_62_Description"	"40% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_63_Description"	"60% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_63_Description"	"60% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_64_Description"	"80% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasures</font>"
+	"modifier_bw_all_64_Description"	"80% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_65_Description"	"Use skill promotion value +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_65_Description"	"Use skill promotion value +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_66_Description"	"Kill monster gold +150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_66_Description"	"Kill monster gold +150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_67_Description"	"Kill monster gold +300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font >"
+	"modifier_bw_all_67_Description"	"Kill monster gold +300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_68_Description"	"Summoned units strength +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_68_Description"	"Summoned units strength +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_69_Description"	"Summoned units strength +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_69_Description"	"Summoned units strength +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_70_Description"	"Summoned units strength +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font >"
+	"modifier_bw_all_70_Description"	"Summoned units strength +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_71_Description"	"Every 75s will give a current level/30 skill book<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81 \">Mysterious Treasure</font>"
 
-	"modifier_bw_all_72_Description"	"Every 90s will be given 1 random item of quality purple, level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_72_Description"	"Every 90s will be given 1 random item of quality purple, level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_73_Description"	"Every 90s will be given 1 piece of random equipment with orange quality and level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_73_Description"	"Every 90s will be given 1 piece of random equipment with orange quality and level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_74_Description"	"Every 90s will be given 1 random equipment of quality gold, level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_74_Description"	"Every 90s will be given 1 random equipment of quality gold, level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_75_Description"	"Every 90s will be given 1 random equipment with quality red and level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_75_Description"	"Every 90s will be given 1 random equipment with quality red and level (hero level/30)+1<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_76_Description"	"Monster strength +50%<br/> Monsters gold drop, experience +50%<br/><br/><br/><br/><br/><font color=\" #cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_76_Description"	"Monster strength +50%<br/> Monsters gold drop, experience +50%<br/><br/><br/><br/><br/><font color=\" #cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_77_Description"	"Monster strength +100%<br/> Monsters gold drop, experience +100%<br/><br/><br/><br/><br/><font color=\" #cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_77_Description"	"Monster strength +100%<br/> Monsters gold drop, experience +100%<br/><br/><br/><br/><br/><font color=\" #cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_78_Description"	"Damage reduction factor +100<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_79_Description"	"Kill points +2000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_79_Description"	"Kill points +2000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_80_Description"	"Kill points +6000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_80_Description"	"Kill points +6000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_81_Description"	"Kill points +20000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_81_Description"	"Kill points +20000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_82_Description"	"Kill points +60000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font> "
+	"modifier_bw_all_82_Description"	"Kill points +60000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_83_Description"	"Kill points per 10 seconds +20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_83_Description"	"Kill points per 10 seconds +20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_84_Description"	"Kill points per 10 seconds +40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_84_Description"	"Kill points per 10 seconds +40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_85_Description"	"Kill points per 10 seconds +80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_85_Description"	"Kill points per 10 seconds +80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
-	"modifier_bw_all_86_Description"	"Kill points per 10 seconds +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</br/> font>"
+	"modifier_bw_all_86_Description"	"Kill points per 10 seconds +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
 
 	"modifier_bw_all_87_Description"	"Talent skill level +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_88_Description"	"Every 3S will send out a stream of fire to random enemy units around<br/>inflicting current level/2+10 main attribute Magic damage to enemies passing by<br/><br/>< br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_88_Description"	"Every 3S will send out a stream of fire to random enemy units around<br/>inflicting current level/2+10 main attribute Magic damage to enemies passing by<br/><br/>< br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_89_Description"	"Every 15s, 800 yards of enemy units around it will be frozen<br/>Magic damage to the current level*2*intelligence<br/freeze for 1.5s (freeze for boss units for 0.5s)<br/>< br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_89_Description"	"Every 15s, 800 yards of enemy units around it will be frozen<br/>Magic damage to the current level*2*intelligence<br/freeze for 1.5s (freeze for boss units for 0.5s)<br/>< br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_90_Description"	"Flashing surrounding units every 3 seconds<br/>inflicts physical damage of attack power*hero level/2<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_90_Description"	"Flashing surrounding units every 3 seconds<br/>inflicts physical damage of attack power*hero level/2<br/><br/><br/><br/><br/><font color =\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_91_Description"	"Reduces the regeneration effect of enemy units within 1200 yards by 50%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mystery Treasure</font>"
 
 	"modifier_bw_all_92_Description"	"Recovers 5% of the maximum health and 5% of the mana of friendly units within 1200 yards per second<br/><br/><br/><br/><br/><font color= \"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_93_Description"	"At end of the jump will cause 5* power physical damage to units within 300 yards of the target area<br/>and stun the target for 0.8S (the stun is not effective for boss units)<br/><br/><br/> <font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_93_Description"	"At end of the jump will cause 5* power physical damage to units within 300 yards of the target area<br/>and stun the target for 0.8S (the stun is not effective for boss units)<br/><br/><br/> <font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_94_Description"	"At the end of the jump, you will increase your attack speed by 50 points and your base attack power by 50%.<br/>Last 3s, no stacking<br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_94_Description"	"At the end of the jump, you will increase your attack speed by 50 points and your base attack power by 50%.<br/>Last 3s, no stacking<br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_95_Description"	"At the end of the jump, there is a 50% chance to refresh the jump cd <br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_96_Description"	"Enter a violent state every 20s<br/>Increase 100+current level*2 attack speed and equivalent percentage of base attack power<br/>and reduce 10+current level armor<br/>continue 12s<br/><br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_96_Description"	"Enter a violent state every 20s<br/>Increase 100+current level*2 attack speed and equivalent percentage of base attack power<br/>and reduce 10+current level armor<br/>continue 12s<br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_97_Description"	"Each death has a chance of 9 + current level/10 to get a Treasure book<br/><br/><br/><br/><br/><font color=\"#cfbf81 \">Mysterious Treasure</font>"
 
 	"modifier_bw_all_98_Description"	"The attack hits 33% of the enemy’s maximum health for physical damage<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_99_Description"	"Each attack reduces the target's current hero level/10 armor for 10s<br/>stackable, and each armor reduction is calculated independently<br/><br/><br/><br/> <font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_99_Description"	"Each attack reduces the target's current hero level/10 armor for 10s<br/>stackable, and each armor reduction is calculated independently<br/><br/><br/><br/> <font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_100_Description"	"Each attack randomly launches 1 aggregate cannon on surrounding enemy units.<br/>The damage is intelligence*30 Magic damage<br/><br/><br/><br/><br/> <br/><font color=\"#cfbf81\">Mysterious Treasures</font>"
+	"modifier_bw_all_100_Description"	"Each attack randomly launches 1 aggregate cannon on surrounding enemy units.<br/>The damage is intelligence*30 Magic damage<br/><br/><br/><br/><br/> <br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_101_Description"	"Each time you cast 20% of the current mana into skill damage<br/>Last 20S, not superimposable<br/><br/><br/><br/><font color=\"#cfbf81 \">Mysterious Treasure</font>"
 
 
-	"achievement_hero_single_1"	"Clear the level 1 time"
+	"achievement_hero_single_1"	"Complete the level 1 time"
 	"achievement_hero_single_1_desc"	"Use this hero to clear the level 1 time"
-	"achievement_hero_single_1_bonus"	"When using this hero, each time you upgrade the main stat +3"
+	"achievement_hero_single_1_bonus"	"When using this hero, main attribute + 3 each time you level up"
 	//"achievement_hero_single_1_bonus_desc"		""
 
 	"achievement_hero_single_2"	"Complete the level 3 times"
@@ -1696,7 +1696,7 @@
 
 	"achievement_hero_single_4"	"Complete the level 20 times"
 	"achievement_hero_single_4_desc"	"Use this hero to complete 20 levels"
-	"achievement_hero_single_4_bonus"	"When using this hero, every time you upgrade the main stat +10"
+	"achievement_hero_single_4_bonus"	"When using this hero, main attribute + 10 each time you level up"
 	//"achievement_hero_single_4_bonus_desc"		""
 
 	"achievement_hero_single_5"	"Complete the level 30 times"
@@ -1707,7 +1707,7 @@
 
 	"achievement_hero_str_1"	"Tier 1"
 	"achievement_hero_str_1_desc"	"Any 10 strength heroes clear the level more than once"
-	"achievement_hero_str_1_bonus"	"Strength +3 per upgrade"
+	"achievement_hero_str_1_bonus"	"Strength +3 per level"
 	//"achievement_hero_str_1_bonus_desc"			""
 
 	"achievement_hero_str_2"	"Tier 2"
@@ -1735,7 +1735,7 @@
 
 	"achievement_hero_agi_1"	"Tier 1"
 	"achievement_hero_agi_1_desc"	"Any 10 agility heroes clear the level more than once"
-	"achievement_hero_agi_1_bonus"	"Agility +3 per upgrade"
+	"achievement_hero_agi_1_bonus"	"Agility +3 per level"
 	//"achievement_hero_agi_1_bonus_desc"			""
 
 	"achievement_hero_agi_2"	"Tier 2"
@@ -1763,7 +1763,7 @@
 
 	"achievement_hero_int_1"	"Tier 1"
 	"achievement_hero_int_1_desc"	"Any 10 intelligence heroes clear the level more than once"
-	"achievement_hero_int_1_bonus"	"Intelligence +3 each time you upgrade"
+	"achievement_hero_int_1_bonus"	"Intelligence +3 per level"
 	//"achievement_hero_int_1_bonus_desc"			""
 
 	"achievement_hero_int_2"	"Tier 2"
@@ -1807,12 +1807,12 @@
 
 	"achievement_hero_all_4"	"Tier 4"
 	"achievement_hero_all_4_desc"	"Complete the 4-stage unlock of strength, agility and intelligence heroes"
-	"achievement_hero_all_4_bonus"	"Initially given a Level 2 mysterious treasure book"
+	"achievement_hero_all_4_bonus"	"Initially provide a Level 2 mysterious treasure book"
 	//"achievement_hero_all_4_bonus_desc"			""
 
 	"achievement_hero_all_5"	"Tier 5"
 	"achievement_hero_all_5_desc"	"Complete the 5-stage unlock of strength, agility and intelligence heroes"
-	"achievement_hero_all_5_bonus"	"Initially given a Level 3 mysterious treasure book"
+	"achievement_hero_all_5_bonus"	"Initially provide a Level 3 mysterious treasure book"
 	//"achievement_hero_all_5_bonus_desc"			""
 
 
@@ -2286,7 +2286,7 @@
 	"ablity_not"	"There are no upgradeable skills, failed to use"
 	"money_no"	"Insufficient gold"
 	"money_not"	"Insufficient gold, failed to use. Still need {s:value} gold"
-	"nlzx_not"	"There is no {s:value} level energy heart certificate, cannot be upgraded"
+	"nlzx_not"	"There is no level {s:value} energy heart certificate, cannot be upgraded"
 	"add_tz_boss"	"Using the Destiny Stone, draw out <font color=\"#ffb413\">[Set Lord Summoning Scroll]</font>"
 	"add_individualBoss"	"Use the Destiny Stone to open the <font color=\"#ffb413\">[Personal Lord Summoning Scroll]</font>"
 	"add_teamBoss"	"Use the Destiny Stone to open the <font color=\"#ffb413\">[Team Lord Summoning Scroll]</font>"
@@ -2324,7 +2324,7 @@
 	"mrsz_xj"	"Consume gold, add {s:value} points to all attributes"
 	"hdfl_bw"	"Divine power recast, get a treasure"
 	"net_item"	"Lucky to get an archived equipment. You can check it on the archived equipment interface"
-	"nettable_js"	"Successfully disassembled and archived equipment and obtained <font color='gold'>{s:value}</font> spark stone"
+	"nettable_js"	"Successfully disintegrated archived equipment and obtained <font color='gold'>{s:value}</font> spark stone"
 	"tscs_cg"	"Successful fusion of artifacts!!!"
 	"not_item"	"There is no artifact at this location"
 	"tscs_not"	"The number of fusions reached the limit!!!"
@@ -2505,8 +2505,8 @@
 
 	"bp_quest_week_difficulty_5_2"	"Clear N5 Furious Mode"
 	"bp_quest_week_difficulty_6_3"	"Clear N6 Arcane Mode"
-	"bp_quest_week_difficulty_7_4"	"Clear N7 Disastermode"
-	"bp_quest_week_difficulty_8_2"	"Clear N8 Furious mode"
+	"bp_quest_week_difficulty_7_4"	"Clear N7 Disaster Mode"
+	"bp_quest_week_difficulty_8_2"	"Clear N8 Furious Mode"
 	"bp_quest_week_difficulty_9_3"	"Clear N9 Arcane Mode"
 	"bp_quest_week_difficulty_10_4"	"Clear N10 Disaster Mode"
 

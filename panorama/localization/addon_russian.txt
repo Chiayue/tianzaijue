@@ -87,7 +87,7 @@
 	"item_attribute_gjqtsxsh"	"Атака идет с первичным атрибутивным уроном: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_jnsh"	"Повышение навыка: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_qsx"	"Все атрибуты: <font color=\"#ffffff\">+{s:value}</font>"
-	"item_attribute_gjxx"	"атака кровососущих: <font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_gjxx"	"атака вампиризм: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fsxx"	"Заклинание кражи жизни: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_wlxx"	"Физический вампиризм: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_gjjshj"	"Атаки понижают броню: <font color=\"#ffffff\">+{s:value}%</font>"
@@ -994,7 +994,7 @@
 	"store_item_shopmall_54"	"Золотой участник"
 	"store_item_shopmall_54_desc"	"Все атрибуты + 20%<br/>Начальные атрибуты +50<br/><br/>счастливое значение +15<br/>значение судьбы +50 (вероятность убийства злого босса выпадать качественно экипировка увеличивается на 50%)<font color='gold'> Постоянный эффект</font> "
 	"store_item_shopmall_87"	"Бриллиантовое членство"
-	"store_item_shopmall_87_desc"	"Скоростьсамого качественного оборудования текущей сложности + 70%.(Умножение с судьбой)<br/><br/><font color='gold'>Постоянный</font>"
+	"store_item_shopmall_87_desc"	"Шанс выпадения  качественного оборудования текущей сложности + 70%.(Умножение с судьбой)<br/><br/><font color='gold'>Постоянный</font>"
 
 
 	"store_item_shopmall_55"	"Книга супер-магических талисманов"
@@ -1045,11 +1045,11 @@
 	"store_item_shopmall_cw_3_11"	"Маленький Дум"
 	"store_item_shopmall_cw_3_11_desc"	"Категория: Питомец<br/>Функция: уровень мастерства героя +2 во время битвы, денежный бонус + 12%"
 	"store_item_shopmall_cw_4_22"	"Бэби рошан"
-	"store_item_shopmall_cw_4_22_desc"	"Категория: Питомец<br/>Роль: уровень личного мастерства героя +2,Скоростьсамого качественного оборудования текущей сложности +40%(Умножение с судьбой)"
+	"store_item_shopmall_cw_4_22_desc"	"Категория: Питомец<br/>Роль: уровень скилов у героя  +2,Шанс выпадения  качественного оборудования текущей сложности +40%(Умножение с судьбой)"
 	"store_item_shopmall_cw_5_22"	"Золотой Бэби Рошан"
-	"store_item_shopmall_cw_5_22_desc"	"Категория: Питомец<br/>Роль: персональный уровень мастерства героя +3,Скоростьсамого качественного оборудования текущей сложности +40%(Умножение с судьбой)"
+	"store_item_shopmall_cw_5_22_desc"	"Категория: Питомец<br/>Роль: персональный уровень мастерства героя +3,Шанс выпадения  качественного оборудования текущей сложности +40%(Умножение с судьбой)"
 	"store_item_shopmall_cw_6_22"	"Малыш Рошан Новолуния"
-	"store_item_shopmall_cw_6_22_desc"	"Категория: Питомец<br/>Роль: уровень личного мастерства героя +4 ,Скоростьсамого качественного оборудования текущей сложности +65%(Умножение с судьбой)"
+	"store_item_shopmall_cw_6_22_desc"	"Категория: Питомец<br/>Роль: уровень скилов у героя  +4 ,Шанс выпадения  качественного оборудования текущей сложности +65%(Умножение с судьбой)"
 	"store_item_shopmall_gh_1_1"	"Аура стойкости"
 	"store_item_shopmall_gh_1_1_desc"	"Категория: Halo<br/>Функция: Геройская броня +10 в бою"
 	"store_item_shopmall_gh_1_2"	"Magic Aura"
@@ -2189,7 +2189,7 @@
 	//"achievement_hidden_4_bonus_desc"			""
 
 	"item_tz_3_1_title"	"нефритовый костюм с инкрустацией золотом"
-	"item_tz_3_1_attribute"	"Эффект набора:<br>Максимальное значение здоровья +2000<br>Все атрибуты +100<br>Скорость передвижения +30<br>Атака кровососом 6%"
+	"item_tz_3_1_attribute"	"Эффект набора:<br>Максимальное значение здоровья +2000<br>Все атрибуты +100<br>Скорость передвижения +30<br>Вампиризм 6%"
 
 
 	"item_tz_3_2_title"	"Каждую весну Увядшее дерево "
@@ -2428,7 +2428,7 @@
 	"bp_reward_item_BPreward_base_14"	"Вероятность критического удара героя + 2%"
 	"bp_reward_item_jing_plus_14"	"Spar + 3000"
 
-	"bp_reward_item_BPreward_base_15"	"Уровень личного мастерства героя +1"
+	"bp_reward_item_BPreward_base_15"	"уровень скилов у героя  +1"
 	"bp_reward_item_BPreward_plus_15"	"Первый сезон плюс награда за питомца версии"
 
 	"bp_reward_item_BPreward_base_16"	"Ключ войны +10"
@@ -2446,7 +2446,7 @@
 	"bp_reward_item_BPreward_base_20"	"Ключ войны +5"
 	"bp_reward_item_BPreward_plus_20"	"Ключ от снаряжения для эпической брони 3-го уровня"
 
-	"bp_reward_item_BPreward_base_21"	"Уровень личного мастерства героя +1"
+	"bp_reward_item_BPreward_base_21"	"уровень скилов у героя  +1"
 	"bp_reward_item_jing_plus_21"	"Spar + 3000"
 
 	"bp_reward_item_jing_base_22"	"Spar + 2000"

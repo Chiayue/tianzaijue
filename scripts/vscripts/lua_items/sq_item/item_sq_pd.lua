@@ -282,6 +282,12 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.dyh_max then
 			self.dyh_max=itempro.item_attributes.dyh_max
 		end
+		if itempro.item_attributes.smbf_multiple then
+			self.smbf_multiple=itempro.item_attributes.smbf_multiple
+		end
+		if itempro.item_attributes.sxs_multiple then
+			self.sxs_multiple=itempro.item_attributes.sxs_multiple
+		end
 
 		--神器10
 		if itempro.item_attributes.lxdf_multiple then
@@ -360,6 +366,8 @@ function item_sq_pd:OnRefresh( kv )
 		attributes2["dyh_max"] = self.dyh_max
 		attributes2["qssw_max"] = self.qssw_max
 		attributes2["swsw_max"] = self.swsw_max
+		attributes2["smbf_multiple"] = self.smbf_multiple
+		attributes2["sxs_multiple"] = self.sxs_multiple
 
 		attributes2["lxdf_multiple"] = self.lxdf_multiple
 		attributes2["hdyj_multiple"] = self.hdyj_multiple
@@ -546,8 +554,14 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.dyh_max then
 			self.dyh_max=itempro.item_attributes.dyh_max
 		end
+		if itempro.item_attributes.smbf_multiple then
+			self.smbf_multiple=itempro.item_attributes.smbf_multiple
+		end
+		if itempro.item_attributes.sxs_multiple then
+			self.sxs_multiple=itempro.item_attributes.sxs_multiple
+		end
 
-		--神器8
+		--神器10
 		if itempro.item_attributes.lxdf_multiple then
 			self.lxdf_multiple=itempro.item_attributes.lxdf_multiple
 		end
@@ -650,6 +664,8 @@ function item_sq_pd:OnDestroy( )
 		attributes2["dyh_max"] = self.dyh_max and -self.dyh_max or nil
 		attributes2["swsw_max"] = self.swsw_max and -self.swsw_max or nil
 		attributes2["qssw_max"] = self.qssw_max and -self.qssw_max or nil
+		attributes2["smbf_multiple"] = self.smbf_multiple and -self.smbf_multiple or nil
+		attributes2["sxs_multiple"] = self.sxs_multiple and -self.sxs_multiple or nil
 
 		attributes2["lxdf_multiple"] = self.lxdf_multiple and -self.lxdf_multiple or nil
 		attributes2["hdyj_multiple"] = self.hdyj_multiple and -self.hdyj_multiple or nil

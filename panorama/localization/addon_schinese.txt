@@ -311,6 +311,18 @@
 	"difficulty_name_46_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#a91ac8\">紫</font>，<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:440%<br>结算晶石加成:1830%<br>非正常模式掉落8阶强化石数量:20-25个<br>掉落征战钥匙概率:940%"
 	"difficulty_name_47"		"天灾来袭--6阶段"
 	"difficulty_name_47_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_48"		"天灾来袭--7阶段"
+	"difficulty_name_48_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+50%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_49"		"天灾来袭--8阶段"
+	"difficulty_name_49_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+100%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_50"		"天灾来袭--9阶段"
+	"difficulty_name_50_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+150%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_51"		"天灾来袭--10阶段"
+	"difficulty_name_51_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+200%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_52"		"天灾来袭--11阶段"
+	"difficulty_name_52_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+250%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
+	"difficulty_name_53"		"天灾来袭--12阶段"
+	"difficulty_name_53_desc"	"掉落存档装备:8阶<br>存档装备品质区间:<font color=\"#fe6d15\">橙</font>，<font color=\"#ffbc09\">金</font>，<font color=\"#d92b2b\">红</font><br><font color=\"#d92b2b\">神话装备出现的概率+300%</font><br><br>结算历练值加成:450%<br>结算晶石加成:1880%<br>非正常模式掉落8阶强化石数量:25-40个<br>掉落征战钥匙概率:960%"
 
 	
 	"difficulty_mode_drop_down_tooltip"	"<font color='red'>房主</font>可点击选择当前难度的其他<font color='#FFD700'>模式</font>，不同模式会有一些特殊的设定"
