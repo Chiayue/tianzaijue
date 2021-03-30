@@ -3338,7 +3338,7 @@ local function ctsx(abilityName,n,playerID,caster,name)
 						if caster.sxs_damage == nil then
 							caster.sxs_damage = 0
 						end
-						z = string.format("%.2f",RandomFloat(0.04,z*0.45))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
+						z = string.format("%.2f",RandomFloat(0.01,z*0.25))		--这个系数也应该弄一个权重占比分布，还是以后再弄吧
 						caster.sxs_damage = caster.sxs_damage + z
 						netTable["sxs_damage"] = caster.sxs_damage
 			 			SetNetTableValue("UnitAttributes",unitKey,netTable)

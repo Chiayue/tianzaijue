@@ -102,6 +102,7 @@
 	"item_attribute_sjjll"	"升级加力量：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_sjjmj"	"升级加敏捷：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_sjjzl"	"升级加智力：<font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjqsx"	"升级加全属性：<font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_wlshts"	"物理伤害提升：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_mfshts"	"魔法伤害提升：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_wlct"	"护甲穿透：<font color=\"#ffffff\">+{s:value}%</font>"
@@ -426,6 +427,9 @@
 
 	"advanced_property_intellect_levelup"	"升级加智力："
 	"advanced_property_intellect_levelup_desc"	"英雄等级每提升1级,增加对应数值的智力"
+
+	"advanced_property_qsx_levelup"	"升级加全属性："
+	"advanced_property_qsx_levelup_desc"	"英雄等级每提升1级,增加对应数值的全属性"
 	
 	"advanced_property_qsx_bonus_percentage"	"百分比提升全属性："
 	"advanced_property_qsx_bonus_percentage_desc"	"提供英雄基础全属性一定百分比的加成，以绿字形式显示"

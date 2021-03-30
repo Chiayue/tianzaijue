@@ -186,7 +186,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj3";
   "item_tyjcjn_zkfs3";
   "item_mjjcjn_hyqj3";
-  "item_tyjcjn_sxs3";
+--  "item_tyjcjn_sxs3";
 --  "item_mjjcjn_wdz3";
  -- "item_mjjcjn_lz3";
   --"item_zljcjn_dyh3";
@@ -206,7 +206,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj4";
   "item_tyjcjn_zkfs4";
   "item_mjjcjn_hyqj4";
-  "item_tyjcjn_sxs4";
+ -- "item_tyjcjn_sxs4";
 
 }
 
@@ -224,7 +224,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj5";
   "item_tyjcjn_zkfs5";
   "item_mjjcjn_hyqj5";
-  "item_tyjcjn_sxs5";
+ -- "item_tyjcjn_sxs5";
 
 }
 
@@ -240,7 +240,7 @@ m.mjjn3={
   "item_tyjcjn_hdyj6";
   "item_tyjcjn_zkfs6";
   "item_mjjcjn_hyqj6";
-  "item_tyjcjn_sxs6";
+--  "item_tyjcjn_sxs6";
 --  "item_mjjcjn_wdz6";
  -- "item_mjjcjn_lz6";
 -- "item_zljcjn_dyh6";

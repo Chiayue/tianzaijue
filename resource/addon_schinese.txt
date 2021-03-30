@@ -5449,5 +5449,8 @@
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs5_Description"	"品质：<font color=\"#fe6d15\">天级</font>\n技能类型：主动\n开启后进入嗜血状态，增加移动速度和攻击速度，持续掉血，并且每次攻击对敌人造成和生命值相关的魔法伤害,并增加近战500点攻击距离"
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs6"	"<font color=\"#ffbc09\">嗜血术</font>"
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs6_Description"	"品质：<font color=\"#ffbc09\">仙级</font>\n技能类型：主动\n开启后进入嗜血状态，增加移动速度和攻击速度，持续掉血，并且每次攻击对敌人造成和生命值相关的魔法伤害,并增加近战600点攻击距离"
+		"DOTA_Tooltip_ability_yxtfjn_kjmw_gjsd"	"攻击速度+"
+		"DOTA_Tooltip_ability_yxtfjn_kjmw_ydsd"	"移动速度+"
+		"DOTA_Tooltip_ability_yxtfjn_tf_chance"	"%触发概率"
 	}
 }

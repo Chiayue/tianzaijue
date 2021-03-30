@@ -90,9 +90,9 @@ end
 ---增加 攻击力，全属性这些
 function m.addptsx(hero)
 	--每次升级增加基础属性
-	local sjjll = hero.cas_table.sjjll
-	local sjjmj = hero.cas_table.sjjmj
-	local sjjzl = hero.cas_table.sjjzl
+	local sjjll = hero.cas_table.sjjll + hero.cas_table.sjjqsx
+	local sjjmj = hero.cas_table.sjjmj + hero.cas_table.sjjqsx
+	local sjjzl = hero.cas_table.sjjzl + hero.cas_table.sjjqsx
 	if sjjll ~= 0 and sjjll then
 		local ll = hero:GetBaseStrength() + sjjll
 		hero:SetBaseStrength(ll)
