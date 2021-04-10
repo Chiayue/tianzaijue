@@ -2,7 +2,7 @@
 {
 	"npc_dota_hero_omniknight" 			"1"	//全能骑士
 	"npc_dota_hero_sven" 				"1"	// 斯温
-	"npc_dota_hero_elder_titan" 		"1"	//上古巨神
+//	"npc_dota_hero_elder_titan" 		"1"	//上古巨神
 	"npc_dota_hero_bristleback" 		"1"	//钢背兽
 	"npc_dota_hero_night_stalker" 		"1"	//夜魔
 	"npc_dota_hero_abaddon" 			"1"	//亚巴顿

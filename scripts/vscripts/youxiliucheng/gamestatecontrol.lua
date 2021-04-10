@@ -53,6 +53,7 @@ m.wjsx={
 	"yxtfdj";
 	"tswsh";
 	"jntsall";
+	"qhsdlbs";--强化石掉落倍数
 	
 }
 
@@ -97,7 +98,7 @@ function m.gameInProgress(hero,i)
 		
 
 	hero.sjjll = 0		--初始每升一级增加的力量
-	hero.sjjmj = 0		--初始每升一级增加的敏捷
+	hero.sjjmj = 0	    --初始每升一级增加的敏捷
 	hero.sjjzl = 0		--初始每升一级增加的智力
 
 
@@ -135,8 +136,8 @@ function m.gameInProgress(hero,i)
 	hero.msmjq=0   --每十秒增加钱
 	hero.msmjsds=0   --每十秒增加杀敌数
 	hero.wlbjgl = 0		--玩家的物理暴击概率
-	hero.wlbjsh = 50	--玩家的魔法暴击伤害
-	hero.mfbjgl = 0		--玩家的物理暴击概率
+	hero.wlbjsh = 50	--玩家的物理暴击伤害
+	hero.mfbjgl = 0		--玩家的魔法暴击概率
 	hero.mfbjsh = 50	--玩家的魔法暴击伤害
 	hero.wlshts = 0		--玩家的物理伤害提升
 	hero.mfshts = 0		--玩家的魔法伤害提升
@@ -156,6 +157,8 @@ function m.gameInProgress(hero,i)
 	hero.stonetime = 0 --命运石的使用次数
 	hero.treasure = 0 --宝物的额外槽位
 	hero.tscs = 0 --吞噬神器的次数
+	hero.qhsdlbs=1 --强化石掉落倍数
+	hero.qhsdlsl=1 --强化石掉落数量
 	hero.mys={}
 	hero.nlzx10 = 0   --升级能量之心的凭证，不等于0就能升级
 	hero.nlzx11 = 0

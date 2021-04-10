@@ -91,6 +91,7 @@
 "item_attribute_sjjll""Thăng cấp tăng Sức mạnh: <font color='#ffffff'>+{s:value}</font>"
 "item_attribute_sjjmj""Thăng cấp thêm nhanh nhẹn: <font color='#ffffff'>+{s:value}</font>"
 "item_attribute_sjjzl""Thăng cấp thêm trí lực: <font color='#ffffff'>+{s:value}</font>"
+"item_attribute_sjjqsx""Thăng cấp thêm toàn thuộc tính: <font color='#ffffff'>+{s:value}</font>"
 "item_attribute_wlshts""Vật lý tổn thương tăng lên: <font color='#ffffff'>+{s:value}%</font>"
 "item_attribute_mfshts""Ma pháp tổn thương tăng lên: <font color='#ffffff'>+{s:value}%</font>"
 "item_attribute_wlct""Hộ giáp xuyên thấu: <font color='#ffffff'>+{s:value}%</font>"
@@ -290,6 +291,18 @@
 "difficulty_name_46_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:440%<br> Kết toán tinh thạch tăng thêm:1830%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:940%"
 "difficulty_name_47""Thiên tai đột kích --6 Giai đoạn"
 "difficulty_name_47_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_48""Thiên tai đột kích --7 Giai đoạn"
+"difficulty_name_48_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +50%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_49""Thiên tai đột kích --8 Giai đoạn"
+"difficulty_name_49_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +100%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_50""Thiên tai đột kích --9 Giai đoạn"
+"difficulty_name_50_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +150%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_51""Thiên tai đột kích --10 Giai đoạn"
+"difficulty_name_51_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +200%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_52""Thiên tai đột kích --11 Giai đoạn"
+"difficulty_name_52_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +250%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_53""Thiên tai đột kích --12 Giai đoạn"
+"difficulty_name_53_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +300%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 
 "difficulty_mode_drop_down_tooltip""<font color='red'> Chủ phòng </font> Nhưng điểm kích lựa chọn làm trước độ khó cái khác <font color='#FFD700'> Hình thức </font>, khác biệt hình thức sẽ có một chút đặc thù thiết lập"
 "difficulty_mode_1" "Bình thường hình thức"
@@ -385,6 +398,9 @@
 
 "advanced_property_intellect_levelup""Thăng cấp thêm trí lực: "
 "advanced_property_intellect_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số trí lực"
+
+"advanced_property_qsx_levelup""Thăng cấp thêm toàn thuộc tính: "
+"advanced_property_qsx_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số toàn thuộc tính"
 "advanced_property_qsx_bonus_percentage""Tỉ lệ phần trăm tăng lên toàn thuộc tính: "
 "advanced_property_qsx_bonus_percentage_desc""Cung cấp anh hùng cơ sở toàn thuộc tính nhất định tỉ lệ phần trăm tăng thêm, lấy màu xanh lá hình thức biểu hiện"
 "advanced_property_wlshts""Vật lý tổn thương tăng lên: "
@@ -940,6 +956,10 @@
 "store_item_shopmall_cw_1_101_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng giết quái gia tăng kim tệ +10, tiền tài tăng thêm +5%"
 "store_item_shopmall_cw_1_201""Kim sắc Băng Long Bảo Bảo"
 "store_item_shopmall_cw_1_201_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng giết quái gia tăng kim tệ +10, tiền tài tăng thêm +5%, kinh nghiệm tăng thêm +5%"
+"store_item_shopmall_cw_1_102""Hỏa Liệt Điểu"
+"store_item_shopmall_cw_1_102_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng giết quái gia tăng kim tệ +15, tiền tài tăng thêm +10%"
+"store_item_shopmall_cw_1_202""Hỏa Liệt Điểu"
+"store_item_shopmall_cw_1_202_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng giết quái gia tăng kim tệ +15, tiền tài tăng thêm +10%, kinh nghiệm tăng thêm +10%"
 "store_item_shopmall_cw_3_11""Tận thế Bảo Bảo"
 "store_item_shopmall_cw_3_11_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +2, tiền tài tăng thêm +12%"
 "store_item_shopmall_cw_4_22""Núi thịt Bảo Bảo"
@@ -960,6 +980,10 @@
 "store_item_shopmall_gh_1_101_desc""Thuộc loại: Quang hoàn <br/> Tác dụng: Xuất chiến lúc anh hùng hộ giáp +10, ma pháp kháng tính +10"
 "store_item_shopmall_gh_1_201""Kim sắc sinh mệnh quang hoàn"
 "store_item_shopmall_gh_1_201_desc""Thuộc loại: Quang hoàn <br/> Tác dụng: Xuất chiến lúc anh hùng sinh mệnh hồi phục +1%, ma pháp hồi phục +3"
+"store_item_shopmall_gh_1_102""Thứ hai trận đấu mùa giải cơ sở quang hoàn"
+"store_item_shopmall_gh_1_102_desc""Thuộc loại: Quang hoàn <br/> Tác dụng: Xuất chiến lúc vật lý xuyên thấu +3%, ma pháp xuyên thấu +3%"
+"store_item_shopmall_gh_1_202""Thứ hai trận đấu mùa giải plus Quang hoàn"
+"store_item_shopmall_gh_1_202_desc""Thuộc loại: Quang hoàn <br/> Tác dụng: Xuất chiến lúc vật lý xuyên thấu +5%, ma pháp xuyên thấu +5%"
 "store_item_shopmall_ch_1_1""Vô danh"
 "store_item_shopmall_ch_1_1_desc""Thuộc loại: Xưng hào <br/> Tác dụng: Xuất chiến lúc anh hùng anh hùng toàn thuộc tính +30<br><br><font color='gold'> Chỉ có sử dụng bên trong xưng hào sẽ xảy ra hiệu </font>"
 "store_item_shopmall_ch_1_2""Vô danh"
@@ -1468,13 +1492,13 @@
 
 "modifier_bw_all_60_Description""Lập tức thu hoạch được 5 Cái bảo vật <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_61_Description""Mua sách kỹ năng tại cửa hàng giảm giá thành 80%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_61_Description""Mua sách kỹ năng tại cửa hàng giảm giá 20%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_62_Description""Mua sách kỹ năng tại cửa hàng giảm giá thành 60%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_62_Description""Mua sách kỹ năng tại cửa hàng giảm giá 40%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_63_Description""Mua sách kỹ năng tại cửa hàng giảm giá thành 40%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_63_Description""Mua sách kỹ năng tại cửa hàng giảm giá 60%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_64_Description""Mua sách kỹ năng tại cửa hàng giảm giá thành 20%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_64_Description""Mua sách kỹ năng tại cửa hàng giảm giá 80%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_65_Description""Sử dụng kỹ năng tăng lên trị số +100%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -2256,95 +2280,95 @@
 "bc_team_5_name""Thâm Uyên cấp lãnh chúa X20"
 
 
-"bp_reward_item_BPreward_base_1""Trò chơi ban đầu kim tệ +1000"
-"bp_reward_item_jing_plus_1""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_1""Tuyển anh hùng giao diện đổi mới anh hùng số lần +1"
+"bp_reward_item_jing_plus_1""Tam giai màu cam đồ trang sức trang bị chìa khoá"
 
-"bp_reward_item_BPreward_base_2""Trò chơi ban đầu anh hùng trí lực +20"
-"bp_reward_item_BPreward_plus_2""Tam giai cực phẩm đồ trang sức trang bị chìa khoá"
+"bp_reward_item_BPreward_base_2""Anh hùng Sức mạnh +5%"
+"bp_reward_item_BPreward_plus_2""Tam giai màu cam đồ phòng ngự trang bị chìa khoá"
 
-"bp_reward_item_BPreward_base_3""Trò chơi ban đầu anh hùng nhanh nhẹn +25"
-"bp_reward_item_jing_plus_3""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_3""Anh hùng nhanh nhẹn +5%"
+"bp_reward_item_jing_plus_3""Tam giai màu cam đặc thù trang bị chìa khoá"
 
-"bp_reward_item_BPreward_base_4""Trò chơi ban đầu anh hùng Sức mạnh +30"
-"bp_reward_item_BPreward_plus_4""Chinh chiến chìa khoá +5"
+"bp_reward_item_BPreward_base_4""Anh hùng trí lực +5%"
+"bp_reward_item_BPreward_plus_4""May mắn giá trị +10"
 
-"bp_reward_item_BPreward_base_5""Chinh chiến chìa khoá +5"
-"bp_reward_item_BPreward_plus_5""Tam giai cực phẩm đồ trang sức trang bị chìa khoá"
+"bp_reward_item_BPreward_base_5""Anh hùng toàn thuộc tính +5%"
+"bp_reward_item_BPreward_plus_5""Ban đầu thu hoạch được một cái sơ cấp sở trường"
 
-"bp_reward_item_BPreward_base_6""Nhị giai cực phẩm đồ trang sức trang bị chìa khoá"
-"bp_reward_item_BPreward_plus_6""Trung cấp sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_base_6""Chinh chiến chìa khoá +10"
+"bp_reward_item_BPreward_plus_6""Siêu ma sở trường -- Tiêu hao *10"
 
-"bp_reward_item_BPreward_base_7""Anh hùng ma pháp hồi phục +2"
-"bp_reward_item_jing_plus_7""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_7""Chinh chiến chìa khoá +10"
+"bp_reward_item_BPreward_plus_7""Ban đầu thu hoạch được một cái trung cấp sở trường"
 
-"bp_reward_item_BPreward_base_8""Trò chơi ban đầu giết địch số +50"
-"bp_reward_item_BPreward_plus_8""Kỹ năng bí kíp số lượng +50"
+"bp_reward_item_BPreward_base_8""Trò chơi ban đầu giết địch điểm tích lũy +100"
+"bp_reward_item_BPreward_plus_8""Bảo vật rãnh chữ số lượng +1"
 
-"bp_reward_item_BPreward_base_9""Cơ sở sở trường -- Tiêu hao *10"
-"bp_reward_item_BPreward_plus_9""Bảo vật số lượng +5"
+"bp_reward_item_BPreward_base_9""Mỗi 10S Giết địch điểm tích lũy +5"
+"bp_reward_item_BPreward_plus_9""Chinh chiến chìa khoá +15"
 
-"bp_reward_item_BPreward_base_10""Nhị giai cực phẩm đồ phòng ngự trang bị chìa khoá"
-"bp_reward_item_BPreward_plus_10""Tam giai cực phẩm đặc thù trang bị chìa khoá"
+"bp_reward_item_BPreward_base_10""Vật lý xuyên thấu +2%"
+"bp_reward_item_jing_plus_10""Tinh thạch +50000"
 
-"bp_reward_item_BPreward_base_11""Nhị giai vũ khí cực phẩm trang bị chìa khoá"
-"bp_reward_item_BPreward_plus_11""Chinh chiến chìa khoá +5"
+"bp_reward_item_BPreward_base_11""Ma pháp xuyên thấu +2%"
+"bp_reward_item_BPreward_plus_11""Chinh chiến chìa khoá +15"
 
-"bp_reward_item_BPreward_base_12""Anh hùng kỹ năng tổn thương +5%"
-"bp_reward_item_BPreward_plus_12""Bí thuật dược tề +20"
+"bp_reward_item_BPreward_base_12""Kỹ năng tổn thương +5%"
+"bp_reward_item_BPreward_plus_12""Siêu ma sở trường -- Tiêu hao *20"
 
-"bp_reward_item_BPreward_base_13""Anh hùng bạo kích tổn thương +20%"
-"bp_reward_item_jing_plus_13""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_13""Bạo kích tổn thương +20%"
+"bp_reward_item_BPreward_plus_13""Thiên mệnh giá trị +10"
 
-"bp_reward_item_BPreward_base_14""Anh hùng bạo kích xác suất +2%"
-"bp_reward_item_jing_plus_14""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_14""Bạo kích xác suất +2%"
+"bp_reward_item_jing_plus_14""Tinh thạch +50000"
 
-"bp_reward_item_BPreward_base_15""Anh hùng người kỹ năng đẳng cấp +1"
-"bp_reward_item_BPreward_plus_15""Đệ nhất trận đấu mùa giải plus Bản sủng vật ban thưởng"
+"bp_reward_item_BPreward_base_15""Người kỹ năng đẳng cấp +1"
+"bp_reward_item_BPreward_plus_15""Thứ hai trận đấu mùa giải plus Bản sủng vật ban thưởng"
 
 "bp_reward_item_BPreward_base_16""Chinh chiến chìa khoá +10"
-"bp_reward_item_BPreward_plus_16""Cao cấp sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_plus_16""Ban đầu thu hoạch được một cái cao cấp sở trường"
 
 "bp_reward_item_BPreward_base_17""Tuyển anh hùng giao diện đổi mới anh hùng số lần +1"
-"bp_reward_item_BPreward_plus_17""Chinh chiến chìa khoá +10"
+"bp_reward_item_BPreward_plus_17""Chinh chiến chìa khoá +15"
 
-"bp_reward_item_BPreward_base_18""Anh hùng kèm theo tổn thương +2%"
-"bp_reward_item_BPreward_plus_18""Thủ hộ dược tề +20"
+"bp_reward_item_BPreward_base_18""Kèm theo tổn thương +2%"
+"bp_reward_item_BPreward_plus_18""Chinh chiến chìa khoá +15"
 
-"bp_reward_item_BPreward_base_19""Anh hùng cuối cùng tổn thương +2%"
-"bp_reward_item_jing_plus_19""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_19""Cuối cùng tổn thương +2%"
+"bp_reward_item_BPreward_plus_19""Chinh chiến chìa khoá +15"
 
-"bp_reward_item_BPreward_base_20""Chinh chiến chìa khoá +5"
-"bp_reward_item_BPreward_plus_20""Tam giai sử thi đồ phòng ngự trang bị chìa khoá"
+"bp_reward_item_BPreward_base_20""Chinh chiến chìa khoá +20"
+"bp_reward_item_BPreward_plus_20""Ban đầu thu hoạch được một cái siêu ma sở trường"
 
 "bp_reward_item_BPreward_base_21""Anh hùng người kỹ năng đẳng cấp +1"
-"bp_reward_item_jing_plus_21""Tinh thạch +3000"
+"bp_reward_item_BPreward_plus_21""Đặc thù sở trường -- Tiêu hao *10"
 
-"bp_reward_item_jing_base_22""Tinh thạch +2000"
-"bp_reward_item_jing_plus_22""Tinh thạch +3000"
+"bp_reward_item_BPreward_base_22""Thiên mệnh giá trị +10"
+"bp_reward_item_BPreward_plus_22""Cao phẩm tỉ lệ rơi đồ +10"
 
-"bp_reward_item_BPreward_base_23""Anh hùng tiền tài tăng thêm +3%"
-"bp_reward_item_BPreward_plus_23""Chinh chiến chìa khoá +10"
+"bp_reward_item_BPreward_base_23""Tiền tài tăng thêm +5%"
+"bp_reward_item_BPreward_plus_23""Chinh chiến chìa khoá +20"
 
-"bp_reward_item_BPreward_base_24""Anh hùng kinh nghiệm tăng thêm +3%"
-"bp_reward_item_BPreward_plus_24""Tam giai sử thi vũ khí trang bị chìa khoá"
+"bp_reward_item_BPreward_base_24""Kinh nghiệm tăng thêm +5%"
+"bp_reward_item_BPreward_plus_24""Chinh chiến chìa khoá +20"
 
-"bp_reward_item_BPreward_base_25""Đệ nhất trận đấu mùa giải cơ sở quang hoàn ban thưởng"
-"bp_reward_item_BPreward_plus_25""Đệ nhất trận đấu mùa giải plus Quang hoàn ban thưởng"
+"bp_reward_item_BPreward_base_25""Thứ hai trận đấu mùa giải cơ sở quang hoàn ban thưởng"
+"bp_reward_item_BPreward_plus_25""Thứ hai trận đấu mùa giải plus Quang hoàn ban thưởng"
 
-"bp_reward_item_BPreward_base_26""Cao cấp sở trường -- Tiêu hao *10"
-"bp_reward_item_BPreward_plus_26""Bảo vật số lượng *10"
+"bp_reward_item_BPreward_base_26""Siêu ma sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_plus_26""5 Giai cường hóa thạch +300"
 
 "bp_reward_item_BPreward_base_27""Chinh chiến chìa khoá +10"
-"bp_reward_item_jing_plus_27""Tinh thạch +5000"
+"bp_reward_item_BPreward_plus_27""6 Giai cường hóa thạch +200"
 
-"bp_reward_item_jing_base_28""Tinh thạch +3000"
-"bp_reward_item_jing_plus_28""Tinh thạch +5000"
+"bp_reward_item_BPreward_base_28""Chinh chiến chìa khoá +15"
+"bp_reward_item_BPreward_plus_28""7 Giai cường hóa thạch +150"
 
-"bp_reward_item_jing_base_29""Tinh thạch +3000"
-"bp_reward_item_BPreward_plus_29""Chinh chiến chìa khoá +20"
+"bp_reward_item_BPreward_base_29""Chinh chiến chìa khoá +20"
+"bp_reward_item_BPreward_plus_29""8 Giai cường hóa thạch +100"
 
-"bp_reward_item_BPreward_base_30""Tam giai cực phẩm đặc thù trang bị chìa khoá"
-"bp_reward_item_BPreward_plus_30""Tam giai sử thi đặc thù trang bị chìa khoá"
+"bp_reward_item_BPreward_base_30""Cường hóa thạch rơi xuống số lượng +10%"
+"bp_reward_item_BPreward_plus_30""Cường hóa thạch rơi xuống số lượng +10%"
 
 
 "bp_quest_day_difficulty_0""Thông quan tùy ý độ khó"

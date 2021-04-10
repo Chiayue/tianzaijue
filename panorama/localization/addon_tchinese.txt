@@ -424,7 +424,7 @@
 	"ui_attribute_net_equips_destroy_confirm"	"此操作將永久銷毀裝備，返還 <font color='gold'>{d:reward_jing}</font> 晶石，是否確定？"
 	
 	"ui_net_equip_enhance"	"強化"
-	"ui_net_equip_enhance_tooltip" "將裝備拖至此介面後即可使用“強化石”對存檔裝備進行強化，提升裝備屬性<br><br>不同品階、不同品質的裝備，可強化次數不同：<br>1階裝備：不可強化<br>2階裝備：<font color=\"#5fc866\">優良=2</font>，<font color=\"#477bff\">稀有=2</font>，<font color=\"#a91ac8\">極品=3</font>，<font color=\"#fe6d15\">史詩=3</font>，<font color=\"#ffbc09\">傳奇=4</font>，<font color=\"#d92b2b\">神話=5</font><br>3階裝備：<font color=\"#5fc866\">優良=3</font>，<font color=\"#477bff\">稀有=3</font>，<font color=\"#a91ac8\">極品=4</font>，<font color=\"#fe6d15\">史詩=4</font>，<font color=\"#ffbc09\">傳奇=5</font>，<font color=\"#d92b2b\">神話=6</font><br>4階裝備：<font color=\"#5fc866\">優良=4</font>，<font color=\"#477bff\">稀有=4</font>，<font color=\"#a91ac8\">極品=5</font>，<font color=\"#fe6d15\">史詩=5</font>，<font color=\"#ffbc09\">傳奇=6</font>，<font color=\"#d92b2b\">神話=7</font><br><br>強化石在<font color='gold'>難5及以上難度的非正常模式中會掉落</font>，也可通過通行證、商城等途徑獲得<br><br>強化石有品階，只能使用和裝備品階一致的強化石進行強化。<br>低品階的強化石可以4:1的比例抵扣高1階的強化石"
+	"ui_net_equip_enhance_tooltip" "將裝備拖至此介面後即可使用“強化石”對存檔裝備進行強化，提升裝備屬性<br><br>不同品階、不同品質的裝備，可強化次數不同：<br>1階：不可強化<br>{s:detail}<br><br>強化石在<font color='gold'>難5及以上難度的非正常模式中會掉落</font>，也可通過通行證、商城等途徑獲得<br><br>強化石有品階，只能使用和裝備品階一致的強化石進行強化。<br>低品階的強化石可以4:1的比例抵扣高1階的強化石"
 	"ui_net_equip_enhance_change_value_tooltip"	"裝備屬性提升比例"
 	"ui_net_equip_enhance_material_tooltip"	"強化材料<br>需要使用和裝備品階一致的強化石作為材料。強化時，如果對應品階的強化石數量不足，會嘗試使用低階強化進行抵扣。"
 	"ui_net_equip_enhance_material_tooltip_grade"	"{s:grade}階強化石"

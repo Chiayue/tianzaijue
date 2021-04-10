@@ -2,6 +2,9 @@ local m = {}
 
 local serverTime = nil
 
+local gameTime = nil
+
+
 local safeCall = function(func)
 	local status,msg = pcall(func)
 	if not status then
@@ -42,6 +45,11 @@ end
 
 
 function m.GameFinished(playerWin,onlinePlayers,error)
+	if not gameTime then
+		gameTime = GetDateTime()
+	end
+
+
 	if not error then
 		local params = nil
 		local status,error = pcall(function()
@@ -114,10 +122,10 @@ function m.GameFinished(playerWin,onlinePlayers,error)
 			end
 			params.error = error
 		end
-		
+		params.gameTime = gameTime
 		SrvHttp.load("tzj_gf",params)
 	else
-		SrvHttp.load("tzj_gf",{mode=1,error=error})
+		SrvHttp.load("tzj_gf",{mode=1,error=error,gameTime = gameTime})
 	end
 
 	pcall(function ()
@@ -133,7 +141,7 @@ function m.GameFinished(playerWin,onlinePlayers,error)
 		end
 	end)
 	
-	m.RewardItem(playerWin,onlinePlayers,true)
+	m.RewardItem(playerWin,onlinePlayers,5)
 end
 
 function m.RewardItem(playerWin,onlinePlayers,faildTry)
@@ -151,25 +159,30 @@ function m.RewardItem(playerWin,onlinePlayers,faildTry)
 			local aid = PlayerUtil.GetAccountID(PlayerID)
 			if aid then
 				local data = {}
-				allData[aid] = data
 				
 				local postion = SrvNetEquip.SyncItemPosition(PlayerID)
-				if postion then
+				if TableNotEmpty(postion) then
 					data.position = postion;
 				end
 
 				local netEquips = m.GetNetEquip(PlayerID)
-				if netEquips then
+				if TableNotEmpty(netEquips) then
 					data.equip = netEquips
 				end
 
 				local storeItems = m.GetStoreItem(PlayerID, playerWin)
-				if storeItems then
+				if TableNotEmpty(storeItems) then
 					data.item = storeItems
+				end
+
+				if TableNotEmpty(data) then
+					allData[aid] = data
 				end
 			end
 		end
-		params.data = JSON.encode(allData)
+		if TableNotEmpty(allData) then
+			params.data = JSON.encode(allData)
+		end
 	end)
 	
 	if not params then
@@ -188,6 +201,11 @@ function m.RewardItem(playerWin,onlinePlayers,faildTry)
 		print("结算奖励处理出错：",params.error)
 	end
 
+	if not params.data and not params.error then
+		return;
+	end
+
+	params.gameTime = gameTime
 	SrvHttp.load("tzj_gf",params,function (srv_data)
 		if srv_data then
 			local faild = {}
@@ -221,9 +239,11 @@ function m.RewardItem(playerWin,onlinePlayers,faildTry)
 				end
 			end
 
-			if faildTry and #faild > 0 then
-				m.RewardItem(playerWin,faild)
+			if faildTry > 0 and #faild > 0 then
+				m.RewardItem(playerWin,faild,faildTry - 1)
 			end
+		else --服务器响应失败就一直尝试
+			m.RewardItem(playerWin,onlinePlayers,5)
 		end
 	end)
 end
@@ -309,8 +329,10 @@ end
 --	{name="xxxxx",count=nil/123,valid=nil/123}
 --}
 function m.GetStoreItem(PlayerID,playerWin)
-	return Stage.playerinfo[PlayerID].store_items
-	
+	local playerInfo = Stage.playerinfo[PlayerID]
+	if playerInfo then
+		return playerInfo.store_items
+	end
 end
 
 return m;

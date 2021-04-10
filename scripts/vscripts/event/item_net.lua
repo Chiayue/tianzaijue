@@ -392,8 +392,8 @@ function CreateRandomItem2(itemname,unit)
 	local maxitemrare = ba.difficultyconfig[difficulty][2]
 
 	local hsjc = 1.3 -- 2021.3.28，最高品质的爆率提升30%
-	if difficulty >= 48 then
-		hsjc = hsjc + (difficulty-47) * 0.5
+	if difficulty >= 42 then
+		hsjc = hsjc + ba.gndhsjc[difficulty]
 	end
 	for i=minitemrare,maxitemrare do
 		if unit.cas_table.tmz > 0 and i > minitemrare then
@@ -401,7 +401,7 @@ function CreateRandomItem2(itemname,unit)
 		else
 			rare[i] = ba["netbl"..NetLevel[NetTime]][i]
 		end			--table.insert(rare,ba["netbl"..NetLevel[NetTime]][i])
-		if unit.cas_table.tmz3 > 0 and i == maxitemrare then
+		if i == maxitemrare then
 			rare[i] = math.ceil(rare[i] * hsjc * ((unit.cas_table.tmz3+unit.cas_table.tmz4)/100+1))
 		end
 	end
@@ -410,13 +410,6 @@ function CreateRandomItem2(itemname,unit)
  	if itemrare > 7 then
  		itemrare = 7
  	end
- 	if unit.cas_table.tmz2 then
- 		if unit.cas_table.tmz2 >100 and RollPercentage(33) then
-	 		unit.cas_table.tmz2 = 0
-	 		itemrare = 7
-	 	end
- 	end
-
 	NetPz[NetTime] = itemrare
 	local self = CreateItem(itemname, unit, unit )
 	

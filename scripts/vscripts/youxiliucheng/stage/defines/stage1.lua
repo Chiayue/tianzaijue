@@ -1134,12 +1134,12 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				lv = 6
 			elseif difficulty >=36 and difficulty <=41 then
 				lv = 7
-			elseif difficulty >=42 and difficulty <=47 then
+			elseif difficulty >=42 and difficulty <=53 then
 				lv = 8
 			end
 			local min = m.qhsdl[difficulty][1]
 			local max = m.qhsdl[difficulty][2]
-			local num = RandomInt(min,max)   --掉落强化石的数量
+			local num = math.ceil(RandomInt(min,max)*hero.cas_table.qhsdlbs)   --掉落强化石的数量
 			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
 			table.insert(store_items,bonusItem)
 		end

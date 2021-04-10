@@ -53,7 +53,7 @@ function ShowSelectTreasureUI(iPlayerID,lv)
 --	bw[1] = "modifier_bw_5_10"
 --	bw[2] = "modifier_bw_5_11"
 --	bw[3] = "modifier_bw_4_5"
-	
+	hero.bw_result=bw
 	CustomNetTables:SetTableValue( "tzj_storage", "tre_select_"..iPlayerID, bw)
 
 end
@@ -71,7 +71,18 @@ function UI_SelectTreasure(event,data,pz)
 	end
 	hero.SelectTreasure = nil
 	local name = data.ab_name;
-	
+	local israndombw=false  --是不是随机出来的宝物
+	if hero.bw_result then
+		for i=1,#hero.bw_result do
+			if hero.bw_result[i] == data.ab_name then
+				israndombw=true
+			end
+		end
+	end
+	if israndombw==false then
+		CustomNetTables:SetTableValue( "tzj_storage", "tre_select_"..data.PlayerID, nil )
+		return
+	end
 	--由于死亡状态下，无法添加modifier，所以如果英雄死亡了只暂存数据，复活后立刻执行
 	if not hero:IsAlive() then
 		if hero.deathtreasures then
@@ -195,7 +206,24 @@ function playerbuyitem(event,data)
 	if player == nil then return end
 	local hero = player:GetAssignedHero()
 	if not EntityIsAlive(hero) then return end
-	
+	local shoplist=CustomNetTables:GetTableValue( "custom_shop", "shop")
+	local  hasitem=false--判断商店里有没有这个物品
+	for _, v in pairs(shoplist) do
+		
+		for kk, vv in pairs(v) do
+			if vv.name==data.item_name then
+				hasitem=true
+			end
+			if vv==data.item_name then
+				hasitem=true
+			end
+			
+		end
+		
+	end
+	if hasitem==false then
+		return 
+	end
 	if hero.shop_buy_item_time and hero.shop_buy_item_time > GameRules:GetGameTime() then
 		return;
 	else
@@ -554,6 +582,8 @@ LinkLuaModifier( "modifier_cw_1_101", "lua_modifiers/chongwu/modifier_cw_1_101",
 LinkLuaModifier( "modifier_cw_1_201", "lua_modifiers/chongwu/modifier_cw_1_201", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_cw_2_101", "lua_modifiers/chongwu/modifier_cw_2_101", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_cw_2_201", "lua_modifiers/chongwu/modifier_cw_2_201", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_cw_2_102", "lua_modifiers/chongwu/modifier_cw_2_102", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_cw_2_202", "lua_modifiers/chongwu/modifier_cw_2_202", LUA_MODIFIER_MOTION_NONE )
 
 
 
@@ -586,6 +616,8 @@ LinkLuaModifier( "modifier_gh_2_4", "lua_modifiers/guanghuan/modifier_gh_2_4", L
 
 LinkLuaModifier( "modifier_gh_1_101", "lua_modifiers/guanghuan/modifier_gh_1_101", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_gh_1_201", "lua_modifiers/guanghuan/modifier_gh_1_201", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_gh_1_102", "lua_modifiers/guanghuan/modifier_gh_1_102", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_gh_1_202", "lua_modifiers/guanghuan/modifier_gh_1_202", LUA_MODIFIER_MOTION_NONE )
 
 
 

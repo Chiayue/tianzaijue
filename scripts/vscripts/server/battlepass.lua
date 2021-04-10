@@ -116,6 +116,21 @@ function m.ReceiveReward(PlayerID,rewards,callback)
 			callback(false)
 			return;
 		end
+
+		--不是商品，也不是晶石奖励的，就不增加商城记录了。不做额外的类型判断了，如果配置参数确实有问题，再解决吧。
+		for key, typeData in pairs(rewards) do
+			for level, reward in pairs(typeData) do
+				--非商品
+				if not Shopmall.list[reward.name] then
+					--非晶石奖励
+					local idx = string.find(reward.name,"jing",1,true)
+					if idx ~= 1 then
+						reward.noStore = true
+					end
+				end
+			end
+		end
+
 		
 		PlayerUtil.LockAction(PlayerID,"bp_rr",function()
 			local params = {};

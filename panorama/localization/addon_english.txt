@@ -102,6 +102,7 @@
 	"item_attribute_sjjll"	"Additional strength per level: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_sjjmj"	"Additional agility per level: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_sjjzl"	"Additional intelligence per level: <font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_sjjqsx"	"Additional all attribute per level: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_wlshts"	"Physical damage increase: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_mfshts"	"Magic damage increase: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_wlct"	"Armor penetration: <font color=\"#ffffff\">+{s:value}%</font>"
@@ -109,9 +110,6 @@
 	"item_attribute_zhwsh"	"Summoned unit strength: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_gjjl"	"Attack range: <font color=\"#ffffff\">+{s:value}</font>"
 
-
-
-	"item_attribute_lqsj"	"Cooldown reduction：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fjsh"	"Additional damage: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_zzsh"	"Final damage output: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_tswsh"	"Projectile damage：<font color=\"#ffffff\">+{s:value}%</font>"
@@ -143,6 +141,7 @@
 	"item_attribute_sgzjsmz"	"Killing monsters has a 5% chance to increase HP: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_smzhfbfb"	"HP restoration: <font color=\"#ffffff\">+{s:value}% /s</font>"
 	"item_attribute_gjhfxl"	"Attack to restore HP: <font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_lqsj"	"Cooldown reduction：<font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_gjjgjd"	"Attack interval reduced: <font color=\"#ffffff\">+{s:value}</font>"
 
 	"item_attribute_bfbtsll"	"Strength: <font color=\"#ffffff\">+{s:value}%</font>"
@@ -257,10 +256,11 @@
 	"difficulty_name_22_desc"	"Drop archive equipment: Tier 4<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>, <font color=\"#ffbc09\">Gold</font></br> ，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 210%<br>Spark stone bonus: 630%<br>The number of Tier 4 strengthening stones dropped in abnormal mode: 28-40<br>Chance of dropping a battle key: 300%"
 
 
+
 	"difficulty_name_23"	"Shura Secret Realm-Stage 1"
-	"difficulty_name_23_desc"	"Drop archive equipment: Tier 5<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 210%<br>Spark stone bonus: 680%<br>The number of Tier 5 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 430%"
+	"difficulty_name_23_desc"	"Drop archive equipment: Tier 5<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 210%<br>Spark stone bonus: 680%<br>The number of Tier 5 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 430%"
 	"difficulty_name_24"	"Shura Secret Realm-Stage 2"
-	"difficulty_name_24_desc"	"Drop archive equipment: Tier 5<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 220%<br>Spark stone bonus: 730%<br>The number of Tier 5 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 460%"
+	"difficulty_name_24_desc"	"Drop archive equipment: Tier 5<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 220%<br>Spark stone bonus: 730%<br>The number of Tier 5 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 460%"
 	"difficulty_name_25"	"Shura Secret Realm-Stage 3"
 	"difficulty_name_25_desc"	"Drop archive equipment: Tier 5<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 230%<br>Spark stone bonus: 780%<br>The number of Tier 5 strengthening stones dropped in abnormal mode:10-15<br>Chance of dropping a battle key: 490%"
 	"difficulty_name_26"	"Shura Secret Realm-Stage 4"
@@ -274,9 +274,9 @@
 
 
 	"difficulty_name_30"	"Shura Forbidden Land-Stage 1"
-	"difficulty_name_30_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 280%<br>Spark stone bonus: 1030%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 420%"
+	"difficulty_name_30_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 280%<br>Spark stone bonus: 1030%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 420%"
 	"difficulty_name_31"	"Shura Forbidden Land-Stage 2"
-	"difficulty_name_31_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 290%<br>Spark stone bonus: 1080%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 640%"
+	"difficulty_name_31_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 290%<br>Spark stone bonus: 1080%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 640%"
 	"difficulty_name_32"	"Shura Forbidden Land-Stage 3"
 	"difficulty_name_32_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 300%<br>Spark stone bonus: 1130%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:10-15<br>Chance of dropping a battle key: 660%"
 	"difficulty_name_33"	"Shura Forbidden Land-Stage 4"
@@ -287,9 +287,9 @@
 	"difficulty_name_35_desc"	"Drop archive equipment: Tier 6<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 330%<br>Spark stone bonus: 1280%<br>The number of Tier 6 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 720%"
 
 	"difficulty_name_36"	"Shura's Purification-Stage 1"
-	"difficulty_name_36_desc"	"Drop archive equipment: Tier 7<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 340%<br>Spark stone bonus: 1330%<br>The number of Tier 7 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 740%"
+	"difficulty_name_36_desc"	"Drop archive equipment: Tier 7<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 340%<br>Spark stone bonus: 1330%<br>The number of Tier 7 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 740%"
 	"difficulty_name_37"	"Shura's Purification-Stage 2"
-	"difficulty_name_37_desc"	"Drop archive equipment: Tier 7<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 350%<br>Spark stone bonus: 1380%<br>The number of Tier 7 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 760%"
+	"difficulty_name_37_desc"	"Drop archive equipment: Tier 7<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 350%<br>Spark stone bonus: 1380%<br>The number of Tier 7 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 760%"
 	"difficulty_name_38"	"Shura's Purification-Stage 3"
 	"difficulty_name_38_desc"	"Drop archive equipment: Tier 7<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 360%<br>Spark stone bonus: 1430%<br>The number of Tier 7 strengthening stones dropped in abnormal mode:10-15<br>Chance of dropping a battle key: 780%"
 	"difficulty_name_39"	"Shura's Purification-Stage 4"
@@ -301,9 +301,9 @@
 
 
 	"difficulty_name_42"	"Oncoming Natural Disaster-Stage 1"
-	"difficulty_name_42_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 400%<br>Spark stone bonus: 1630%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 860%"
+	"difficulty_name_42_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 400%<br>Spark stone bonus: 1630%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:1-5<br>Chance of dropping a battle key: 860%"
 	"difficulty_name_43"	"Oncoming Natural Disaster-Stage 2"
-	"difficulty_name_43_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#477bff\">Blue</ font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 410%<br>Spark stone bonus: 1680%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 880%"
+	"difficulty_name_43_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#477bff\">Blue</font> ，<font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 410%<br>Spark stone bonus: 1680%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:5-10<br>Chance of dropping a battle key: 880%"
 	"difficulty_name_44"	"Oncoming Natural Disaster-Stage 3"
 	"difficulty_name_44_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font><br><br>Settlement experience value bonus: 420%<br>Spark stone bonus: 1730%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:10-15<br>Chance of dropping a battle key: 900%"
 	"difficulty_name_45"	"Oncoming Natural Disaster-Stage 4"
@@ -312,10 +312,21 @@
 	"difficulty_name_46_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#a91ac8\">Purple</font> ，<font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 440%<br>Spark stone bonus: 1830%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:20-25<br>Chance of dropping a battle key: 940%"
 	"difficulty_name_47"	"Oncoming Natural Disaster-Stage 6"
 	"difficulty_name_47_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_48"	"Oncoming Natural Disaster-Stage 7"
+	"difficulty_name_48_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +50%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_49"	"Oncoming Natural Disaster-Stage 8"
+	"difficulty_name_49_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +100%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_50"	"Oncoming Natural Disaster-Stage 9"
+	"difficulty_name_50_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +150%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_51"	"Oncoming Natural Disaster-Stage 10"
+	"difficulty_name_51_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +200%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_52"	"Oncoming Natural Disaster-Stage 11"
+	"difficulty_name_52_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +250%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
+	"difficulty_name_53"	"Oncoming Natural Disaster-Stage 12"
+	"difficulty_name_53_desc"	"Drop archive equipment: Tier 8<br>Archive equipment quality range: <font color=\"#fe6d15\">Orange</font>，<font color=\"#ffbc09\">Gold</font>，<font color=\"#d92b2b\">Red</font><br><font color=\"#d92b2b\">Chance of obtaining Mythical Equipment +300%</font><br><br>Settlement experience value bonus: 450%<br>Spark stone bonus: 1880%<br>The number of Tier 8 strengthening stones dropped in abnormal mode:25-40<br>Chance of dropping a battle key: 960%"
 	
 	
 	"difficulty_mode_drop_down_tooltip"	"<font color='red'>Host</font> can click to select other <font color='#FFD700'>modes</font> of the current difficulty, different modes will have some special settings"
-
 
 	"difficulty_mode_1"	"Normal Mode"
 	"difficulty_mode_short_1"	"Normal"
@@ -408,15 +419,18 @@
 	"advanced_property_mfct"	"Magic penetration:"
 	"advanced_property_mfct_desc"	"Chance to ignore target's magic resistance (Up to 80%)"
 
-	"advanced_property_strength_levelup"	"Additional strength per level"
-	"advanced_property_strength_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of strength in increase"
+	"advanced_property_strength_levelup"	"Additional strength per level:"
+	"advanced_property_strength_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of strength is increased"
 
-	"advanced_property_agility_levelup"	"Additional agility per level"
-	"advanced_property_agility_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of agility in increase"
+	"advanced_property_agility_levelup"	"Additional agility per level:"
+	"advanced_property_agility_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of agility is increased"
 
-	"advanced_property_intellect_levelup"	"Additional intelligence per level"
-	"advanced_property_intellect_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of intelligence in increase"
+	"advanced_property_intellect_levelup"	"Additional intelligence per level:"
+	"advanced_property_intellect_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of intelligence is increased"
 
+	"advanced_property_qsx_levelup"	"Additional all attributes per level:"
+	"advanced_property_qsx_levelup_desc"	"Everytime the hero level increases by 1, the corresponding value of all attributes is increased"
+	
 	"advanced_property_qsx_bonus_percentage"	"Percentage boost for all attributes:"
 	"advanced_property_qsx_bonus_percentage_desc"	"Provides a certain percentage of attributes based on hero all base attributes (Displayed in green)"
 
@@ -454,9 +468,12 @@
 	"advanced_property_lucky"	"Lucky value:"
 	"advanced_property_lucky_desc"	"Every point of lucky value increases the chance of Lord of Calamity dropping an archived equipment (No additional effect when exceeds 100)"
 
-	"advanced_property_tmz"	"Destiny points"
+	"advanced_property_tmz"	"Destiny points:"
 	"advanced_property_tmz_desc"	"The higher the destiny points, the better the quality of the archived equipment obtained by killing the Lord of Calamity"
 
+	"advanced_property_tmzz"		"Rarity factor:"
+	"advanced_property_tmzz_desc"	"Every points increase by 1% chance of obtaining the highest tier of archived equipment(Multiplied by Destiny points)"
+	
 	"ui_btn_confirm"	"Confirm"
 	"ui_btn_cancel"	"Cancel"
 	"ui_btn_cancel_auto"	"Cancel ({s:time})"
@@ -570,7 +587,7 @@
 	"ui_attribute_net_equips_destroy_confirm"	"This operation will permanently destroy the equipment and return the <font color='gold'>{d:reward_jing}</font> Spark stone, are you sure?"
 
 	"ui_net_equip_enhance"	"Enhance"
-	"ui_net_equip_enhance_tooltip"	"After dragging the equipment to this interface, you can use the 'Strengthening stones' to enhance the archived equipment and improve the equipment attributes.<br><br>Equipment of different grades and different qualities can be enhanced in different times: <br>Tier 1 equipment: Can’t enhance<br>Tier 2 equipment: <font color=\"#5fc866\">Uncommon=2</font>，<font color=\"#477bff\">Rare=2</font>，<font color=\"#a91ac8\">Excellent=3</font>，<font color=\"#fe6d15\">Epic=3</font>，<font color=\"#ffbc09\">Legendary=4</font>，<font color=\"#d92b2b\">Mythical=5</font><br>Tier 3 equipment: <font color=\"#5fc866\">Uncommon=3</font>，<font color=\"#477bff\">Rare=3</font>，<font color=\"#a91ac8\">Excellent=4</font>，<font color=\"#fe6d15\">Epic=4</font>，<font color=\"#ffbc09\">Legendary=5</font>，<font color=\"#d92b2b\">Mythical=6</font><br>Tier 4 equipment: <font color=\"#5fc866\">Uncommon=4</font>，<font color=\"#477bff\">Rare=4</font>，<font color=\"#a91ac8\">Excellent=5</font>，<font color=\"#fe6d15\">Epic=5</font>，<font color=\"#ffbc09\">Legendary=6</font>，<font color=\"#d92b2b\">Mythical=7</font><br><br>The strengthening stones can be obtained from <font color='gold'>non-normal stages in Abyss Training-Stage 2 onwards</font>，It can also be obtained through premium passes, malls, etc.<br><br>Strengthening stones have tiers, and can only be strengthened by strengthening stones of the same tier as the equipment.<br>Lower Tier strengthening stones can be used for the next tier at a ratio of 4:1"
+	"ui_net_equip_enhance_tooltip"	"After dragging the equipment to this interface, you can use the 'Strengthening stones' to enhance the archived equipment and improve the equipment attributes.<br><br>Equipment of different grades and different qualities can be enhanced in different times: <br>Tier 1: Can’t enhance<br>{s:detail}<br><br>The strengthening stones can be obtained from <font color='gold'>non-normal stages in Abyss Training-Stage 2 onwards</font>，It can also be obtained through premium passes, malls, etc.<br><br>Strengthening stones have tiers, and can only be strengthened by strengthening stones of the same tier as the equipment.<br>Lower Tier strengthening stones can be used for the next tier at a ratio of 4:1"
 	"ui_net_equip_enhance_change_value_tooltip"	"Equipment attribute improvement ratio"
 	"ui_net_equip_enhance_material_tooltip"	"Enhancement materials<br>You need to use strengthening stones of the same grade as the equipment. When strengthening, if the number of reinforcement stones of the corresponding tier is insufficient, it will try to use lower tier strengthening stone instead."
 	"ui_net_equip_enhance_material_tooltip_grade"	"Tier {s:grade} strengthening stone"
@@ -654,7 +671,7 @@
 	"ui_boss_dps_damage_per_sec"	"Damage per second"
 	"ui_boss_dps_damage_total"	"Total Damage"
 
-	"ui_random_item_tooltip_grade"	"{s:value} Level"
+	"ui_random_item_tooltip_grade"	"Tier {s:value}"
 	"ui_random_item_tooltip_net_equip"	"Archive Equipment"
 	"ui_random_item_tooltip_equip_score"	"Combat Power: {d:value}"
 	"ui_random_item_tooltip_advanced_attributes_header"	"Advanced Attributes"
@@ -849,23 +866,23 @@
 	"store_item_tooltip_buy_plus_permanent_success"	"Purchase is successful, PLUS is permanently effective"
 
 	"store_item_plus_desc_mine"	"Gold bonus +20%<br/>Experience bonus +20%<br/>The random number of heroes +1<br/>Experience value gain +30%<br/>Reward 1 level for each start. x1"
-	"store_item_plus_permanent_desc_mine"	"Gold bonus +20%<br/>Experience bonus +20%<br/>The random number of heroes +1<br/>Experience value gain +50%<br/>Reward 1 level for every start. x1"
+	"store_item_plus_permanent_desc_mine"	"Gold bonus +20%<br/>Experience bonus +20%<br/>The random number of heroes +1<br/>Experience value gain +50%<br/>Provides 1 Elementary Skill Book at the start of the game"
 
 	"store_item_shopmall_1"	"Premium Pass"
 	"store_item_shopmall_1_desc"	"Activate the following effects after purchase:<br/>·Unlock [Scourge Road] Advanced Pass Reward<br/>·Get 500 Pass Experience immediately"
 	"store_item_shopmall_2"	"PLUS Monthly Card"
-	"store_item_shopmall_2_desc"	"PLUS effect:<br/>gold bonus +20%<br/>experience bonus +20%<br/>hero random times +1<br/>experience value gain +30%<br/> Each start rewards Level 1 Heaven Book x1<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>31 days</font>"
+	"store_item_shopmall_2_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +30%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>31 days</font>"
 
 	"store_item_shopmall_45"	"PLUS Season Pass"
-	"store_item_shopmall_45_desc"	"PLUS effect:<br/>gold bonus +20%<br/>experience bonus +20%<br/>hero random times +1<br/>experience value gain +30%<br/> Each start rewards Level 1 Heaven Book x1<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>93 days</font>"
+	"store_item_shopmall_45_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +30%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>93 days</font>"
 
 	"store_item_shopmall_46"	"PLUS permanent card"
-	"store_item_shopmall_46_desc"	"PLUS effect:<br/>gold bonus +20%<br/>experience bonus +20%<br/>hero random times +1<br/>experience value gain +50%<br/> Each start rewards Level 1 Book of Heaven x1<br><br>After purchase, <font color='yellow'>PLUS will take effect forever</font><br> and you will get a limited pet immediately: <font color='yellow'> Doom Baby</font> (Hero skill level +2 when playing, gold bonus +12%)"
+	"store_item_shopmall_46_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +50%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, <font color='yellow'>PLUS will take effect forever</font><br> and you will get a limited pet immediately: <font color='yellow'>Doom Baby</font> (Hero skill level +2, Gold bonus +12%)"
 
 	"store_item_shopmall_3"	"Book of Wisdom"
-	"store_item_shopmall_3_desc"	"Every game starts, a skill secret will be awarded<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_3_desc"	"Provides 1 Elementary Skill Book at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_4"	"Sage God Stone"
-	"store_item_shopmall_4_desc"	"Gold bonus +30%<br/>Experience bonus +30%<br/><br/>After purchase, the next round will take effect"
+	"store_item_shopmall_4_desc"	"Gold bonus +30%<br/>Experience bonus +30%<br/><br/>Takes effect on next round after acquistion"
 	"store_item_shopmall_5"	"Junior Membership"
 	"store_item_shopmall_5_desc"	"All initial attributes +10<br/>Initial gold +2000<br/>Initial kill points +50"
 	"store_item_shopmall_6"	"Intermediate Membership"
@@ -874,29 +891,29 @@
 	"store_item_shopmall_7_desc"	"All attributes +10%<br/>All initial attributes +20<br/>Damage reduction factor +20<br/>Final damage +5%<br/>Gold bonus +12%<br/>Experience Bonus +12%<br/>Number of kill points per 10 seconds +10<br/>Additional treasure slot +3<br/><br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_8"	"Basic Rune Document"
-	"store_item_shopmall_8_desc"	"Every game starts, randomly activate 3 unique basic runes<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_8_desc"	"Activates 3 random unique Basic rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_9"	"Intermediate Rune Document I"
-	"store_item_shopmall_9_desc"	"Every game starts, randomly activate 1 unique intermediate rune<br/><br/><font color='gold'>Permanently effective</font>"
+	"store_item_shopmall_9_desc"	"Activates 1 random unique Intermediate rune at the start of the game<br/><br/><font color='gold'>Permanently effective</font>"
 	"store_item_shopmall_10"	"Advanced Rune Document I"
-	"store_item_shopmall_10_desc"	"Every game starts, randomly activate 1 unique advanced rune<br/><br/><font color='gold'>Permanent effect</font>"
-	"store_item_shopmall_11"	"Super Magic Talisman Document I"
-	"store_item_shopmall_11_desc"	"Every game starts, randomly activate 1 unique super magic rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_10_desc"	"Activates 1 random unique Advanced rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_11"	"Super Magic Rune Document I"
+	"store_item_shopmall_11_desc"	"Activates 1 random unique Super Magic rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_12"	"Special Rune Document I"
-	"store_item_shopmall_12_desc"	"Every game starts, randomly activate 1 special talent<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_12_desc"	"Activates 1 random unique Special rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_13"	"Skills Tips"
 	"store_item_shopmall_13_desc"	"Obtain a skill secret book after use<br/><br/>Use up to 5 times per round, valid for a single round"
 	"store_item_shopmall_14"	"Treasure"
 	"store_item_shopmall_14_desc"	"Obtain a treasure after use<br/><br/>Use at most once per round, valid for a single round"
 	"store_item_shopmall_15"	"Basic Rune Page"
-	"store_item_shopmall_15_desc"	"Randomly activate 1 basic rune after use<br/><br/>Use up to 3 times per round, valid for a single round"
+	"store_item_shopmall_15_desc"	"Randomly activate 1 Basic rune after use<br/><br/>Use up to 3 times per round, valid for a single round"
 	"store_item_shopmall_16"	"Intermediate Rune Page"
 	"store_item_shopmall_16_desc"	"Randomly activate 1 Intermediate Rune after use<br/><br/>Use up to 2 times per round, valid for a single round"
 	"store_item_shopmall_17"	"Advanced Rune Page"
-	"store_item_shopmall_17_desc"	"Randomly activate 1 advanced rune after use<br/><br/>Use at most once per round, valid for a single round"
+	"store_item_shopmall_17_desc"	"Randomly activate 1 Advanced rune after use<br/><br/>Use at most once per round, valid for a single round"
 	"store_item_shopmall_47"	"Super Magic Rune Page"
-	"store_item_shopmall_47_desc"	"After using it, randomly activate 1 super magic rune<br/><br/><br/>It can be used up to once per round, and it is valid for a single round."
+	"store_item_shopmall_47_desc"	"Randomly activate 1 Super Magic rune after use<br/><br/><br/>It can be used up to once per round, and it is valid for a single round."
 	"store_item_shopmall_48"	"Special Rune Page"
-	"store_item_shopmall_48_desc"	"Randomly activate 1 special rune after use<br/><br/><br/>Use at most once per round, valid for a single round"
+	"store_item_shopmall_48_desc"	"Randomly activate 1 Special rune after use<br/><br/><br/>Use at most once per round, valid for a single round"
 	"store_item_shopmall_18"	"Battle Cry Potion"
 	"store_item_shopmall_18_desc"	"Friendly heroes within 9999 yards after use:<br/>Base Attack: +50%<br/>Duration: 30s<br/>Cooldown: 1200s"
 	"store_item_shopmall_19"	"Raging Potion"
@@ -981,95 +998,110 @@
 
 
 	"store_item_shopmall_49"	"Intermediate Rune Book Ⅱ"
-	"store_item_shopmall_49_desc"	"Every game starts, randomly activate 1 unique intermediate rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_49_desc"	"Activates 1 random unique Intermediate rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_50"	"Intermediate Rune Book Ⅲ"
-	"store_item_shopmall_50_desc"	"Every game starts, randomly activate 1 unique intermediate rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_50_desc"	"Activates 1 random unique Intermediate rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_51"	"Advanced Rune Book Ⅱ"
-	"store_item_shopmall_51_desc"	"Every game starts, randomly activate 1 unique advanced rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_51_desc"	"Activates 1 random unique Advanced rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_52"	"Advanced Rune Book Ⅲ"
-	"store_item_shopmall_52_desc"	"Every game starts, randomly activate 1 unique advanced rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_52_desc"	"Activates 1 random unique Advanced rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_53"	"Silver Membership"
 	"store_item_shopmall_53_desc"	"All attributes +10%<br/>All initial attributes +20<br/>Lucky value +10<br/>Destiny points +30 (the chance of killing the evil bosses to drop high-quality equipment is increased by 30%) <br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_54"	"Gold Membership"
 	"store_item_shopmall_54_desc"	"All attributes +20%<br/>All initial attributes +50<br/><br/>Lucky value +15<br/>Destiny points +50 (the chance of killing the evil boss to drop high-quality equipment 50% increase)<font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_87"	"Diamond Membership"
-	"store_item_shopmall_87_desc"	"Chance of obtaining the highest tier of archived equipment +70%(can be multiplied with Destiny points)<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_87_desc"	"All attributes +20%<br>Use skill promotion value +50%<br>Chance of obtaining the highest tier of archived equipment +80%(can be multiplied with Destiny points)<br/><br/><font color='gold'>Permanent effect</font>"
 
 
-	"store_item_shopmall_55"	"Super Magic Talisman Book Ⅱ"
-	"store_item_shopmall_55_desc"	"Every game starts, randomly activate 1 unique super magic rune<br/><br/><font color='gold'>Permanent effect</font>"
-	"store_item_shopmall_56"	"Super Magic Talisman Book Ⅲ"
-	"store_item_shopmall_56_desc"	"Every game starts, randomly activate 1 unique super magic rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_55"	"Super Magic Rune Book Ⅱ"
+	"store_item_shopmall_55_desc"	"Activates 1 random unique Super Magic rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_56"	"Super Magic Rune Book Ⅲ"
+	"store_item_shopmall_56_desc"	"Activates 1 random unique Super Magic rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_57"	"Special Rune Document Ⅱ"
-	"store_item_shopmall_57_desc"	"Every game starts, randomly activate 1 unique special rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_57_desc"	"Activates 1 random unique Special rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_58"	"Special Rune Document Ⅲ"
-	"store_item_shopmall_58_desc"	"Every game starts, randomly activate 1 unique special rune<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_58_desc"	"Activates 1 random unique Special rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_59"	"Level 1 Mysterious Treasure Book"
 	"store_item_shopmall_59_desc"	"At the beginning of each game, a Level 1 mysterious treasure book is given<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_60"	"Level 2 Mysterious Treasure Book"
-	"store_item_shopmall_60_desc"	"At the beginning of each game, a Level 2 mystery treasure book is given<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_60_desc"	"At the beginning of each game, a Level 2 mysterious treasure book is given<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_61"	"Level 3 Mysterious Treasure Book"
 	"store_item_shopmall_61_desc"	"At the beginning of each game, a Level 3 mysterious treasure book is given<br/><br/><font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_62"	"Level 4 Mysterious Treasure Book"
 	"store_item_shopmall_62_desc"	"At the beginning of each game, a Level 4 mysterious treasure book is given<br/><br/><font color='gold'>Permanent effect</font>"
 
-	"store_item_shopmall_63"	"Level 11 Energy Heart Certificate"
-	"store_item_shopmall_63_desc"	"You can upgrade the 10th order energy heart to the 11th order energy heart<br/><br/><font color='gold'>Permanent effect</font>"
-	"store_item_shopmall_64"	"Level 12 Energy Heart Certificate"
-	"store_item_shopmall_64_desc"	"You can upgrade the 11th-order energy heart to the 12th-order energy heart<br/><br/><font color='gold'>Permanent effect</font>"
-	"store_item_shopmall_65"	"Order 13 Energy Heart Certificate"
-	"store_item_shopmall_65_desc"	"You can upgrade the 12th-order energy heart to the 13th-order energy heart<br/><br/><font color='gold'>Permanent effect</font>"
-	"store_item_shopmall_66"	"Order 14 Energy Heart Certificate"
-	"store_item_shopmall_66_desc"	"You can upgrade the 13th order energy heart to the 14th order energy heart<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_63"	"Level 11 Heart of Energy Certificate"
+	"store_item_shopmall_63_desc"	"You can now upgrade the Heart of Energy to Level 11.<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_64"	"Level 12 Heart of Energy Certificate"
+	"store_item_shopmall_64_desc"	"You can now upgrade the Heart of Energy to Level 12.<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_65"	"Level 13 Heart of Energy Certificate"
+	"store_item_shopmall_65_desc"	"You can now upgrade the Heart of Energy to Level 13.<br/><br/><font color='gold'>Permanent effect</font>"
+	"store_item_shopmall_66"	"Level 14 Heart of Energy Certificate"
+	"store_item_shopmall_66_desc"	"You can now upgrade the Heart of Energy to Level 14.<br/><br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_67"	"Devour Card"
 	"store_item_shopmall_67_desc"	"Each game starts, a devour pill is given<br/><br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_68"	"Conquest Key"
-	"store_item_shopmall_68_desc"	"Upon opening, you can open a general treasure chest to get a shop item<br/><br/>Common （90%）：<br/>Spark Stone<br/>Basic Rune Page<br/>Intermediate Rune Page<br/>Advance Rune Page<br/>Tier 2 Strengthened Stone<br/>Tier 3 Strengthened Stone<br/>Tier 4 Strengthened Stone<br/>Tier 5 Strengthened Stone<br/>Tier 6 Strengthened Stone<br/>Tier 7 Strengthened Stone<br/><br/>Uncommon （9%）：<br/>Junior Membership<br/>Intermediate Membership<br/>Sage God Stone<br/>Intermediate Rune Book Ⅰ<br/>Intermediate Rune Book Ⅱ<br/>Intermediate Rune Book Ⅲ<br/>Level 1 Mysterious Treasure Book<br/><br/>Rare （0.9%）：<br/>1mil Spark Stone（7.2%）<br/>Devour Card（10.1%）<br/>Silver Membership（1.8%）<br/>Advanced Rune Book Ⅰ（33.3%）<br/>Advanced Rune Book Ⅱ（10.6%）<br/>Advanced Rune Book Ⅲ（3.3%）<br/>Super Magic Talisman Book Ⅰ（5.4%）<br/>Super Magic Talisman Book Ⅱ（1.8%）<br/>Super Magic Talisman Book Ⅲ（0.6%）（Not available in Mall）<br/>Level 11 Energy Heart Certificate（20%）<br/>Level 12 Energy Heart Certificate（5.4%）<br/>Level 2 Mysterious Treasure Book（3.6%）<br/><br/>Ultra Rare （0.1%）：<br/>Gold Membership（37.1%）<br/>Diamond Membership（6%）<br/>Special Rune Document Ⅰ（20.6%）<br/>Special Rune Document Ⅱ（6.1%）<br/>Special Rune Document Ⅲ（2%）（Not available in Mall）<br/>Level 13 Energy Heart Certificate（20.6%）<br/>Level 14 Energy Heart Certificate（5.1%）<br/>Level 3 Mysterious Treasure Book（8.2%）<br/><br/><font color='gold'>Items in the prize pool except [Not available in Mall] will be sold in the mall from time to time"
+	"store_item_shopmall_68_desc"	"Upon opening, you can open a general treasure chest to get a shop item<br/><br/>Common （90%）：<br/>Spark Stone<br/>Basic Rune Page<br/>Intermediate Rune Page<br/>Advance Rune Page<br/>Tier 2 Strengthened Stone<br/>Tier 3 Strengthened Stone<br/>Tier 4 Strengthened Stone<br/>Tier 5 Strengthened Stone<br/>Tier 6 Strengthened Stone<br/>Tier 7 Strengthened Stone<br/><br/>Uncommon （9%）：<br/>Junior Membership<br/>Intermediate Membership<br/>Sage God Stone<br/>Intermediate Rune Book Ⅰ<br/>Intermediate Rune Book Ⅱ<br/>Intermediate Rune Book Ⅲ<br/>Level 1 Mysterious Treasure Book<br/><br/>Rare （0.9%）：<br/>1mil Spark Stone（7.2%）<br/>Devour Card（10.1%）<br/>Silver Membership（1.8%）<br/>Advanced Rune Book Ⅰ（33.3%）<br/>Advanced Rune Book Ⅱ（10.6%）<br/>Advanced Rune Book Ⅲ（3.3%）<br/>Super Magic Talisman Book Ⅰ（5.4%）<br/>Super Magic Talisman Book Ⅱ（1.8%）<br/>Super Magic Talisman Book Ⅲ（0.6%）（Not available in Mall）<br/>Level 11 Heart of Energy Certificate（20%）<br/>Level 12 Heart of Energy Certificate（5.4%）<br/>Level 2 Mysterious Treasure Book（3.6%）<br/><br/>Ultra Rare （0.1%）：<br/>Gold Membership（37.1%）<br/>Diamond Membership（6%）<br/>Special Rune Document Ⅰ（20.6%）<br/>Special Rune Document Ⅱ（6.1%）<br/>Special Rune Document Ⅲ（2%）（Not available in Mall）<br/>Level 13 Heart of Energy Certificate（20.6%）<br/>Level 14 Heart of Energy Certificate（5.1%）<br/>Level 3 Mysterious Treasure Book（8.2%）<br/><br/><font color='gold'>Items in the prize pool except [Not available in Mall] will be sold in the mall from time to time"
 
-
+	"store_item_shopmall_88"		"Tier 2 Conquest Key"
+	"store_item_shopmall_88_desc"	"Open Tier 2 treasure chest to received Uncommon rewards"
+	"store_item_shopmall_89"		"Tier 3 Conquest Key"
+	"store_item_shopmall_89_desc"	"Open Tier 3 treasure chest to received Rare rewards"
+	"store_item_shopmall_90"		"Tier 4 Conquest Key"
+	"store_item_shopmall_90_desc"	"Open Tier 4 treasure chest to received Ultra Rare rewards"
+	
+	
 
 	"store_item_shopmall_cw_1_1"	"Qinger Baby"
-	"store_item_shopmall_cw_1_1_desc"	"Category: Pet<br/>Function: Hero kills monster gold +10"
+	"store_item_shopmall_cw_1_1_desc"	"Category: Pet<br/>Function: Monster kill gold +10"
 	"store_item_shopmall_cw_1_2"	"Golden Turtle"
-	"store_item_shopmall_cw_1_2_desc"	"Category: Pet<br/>Function: Hero gold bonus +5%"
+	"store_item_shopmall_cw_1_2_desc"	"Category: Pet<br/>Function: Gold bonus +5%"
 	"store_item_shopmall_cw_1_3"	"Bilin"
-	"store_item_shopmall_cw_1_3_desc"	"Category: Pet<br/>Function: Hero experience bonus +5%"
+	"store_item_shopmall_cw_1_3_desc"	"Category: Pet<br/>Function: Experience bonus +5%"
 	"store_item_shopmall_cw_1_101"	"Ice Dragon Baby"
-	"store_item_shopmall_cw_1_101_desc"	"Category: Pet<br/>Function: Hero kills monster gold +10, Gold bonus +5%"
+	"store_item_shopmall_cw_1_101_desc"	"Category: Pet<br/>Function: Monster kill gold +10, Gold bonus +5%"
 	"store_item_shopmall_cw_1_201"	"Golden Ice Dragon Baby"
-	"store_item_shopmall_cw_1_201_desc"	"Category: Pet<br/>Function: Increase gold by +10, gold bonus +5%, experience bonus +5% when heroes kill monsters in battle"
+	"store_item_shopmall_cw_1_201_desc"	"Category: Pet<br/>Function: Monster kill gold +10, Gold bonus +5%, Experience bonus +5%"
+	"store_item_shopmall_cw_1_102"		"Flame Birdling"
+	"store_item_shopmall_cw_1_102_desc"	"Category: Pet<br/>Function: Monster kill gold +15, Gold bonus +10%"
+	"store_item_shopmall_cw_1_202"		"Flame Birdling"
+	"store_item_shopmall_cw_1_202_desc"	"Category: Pet<br/>Function: Monster kill gold +15, Gold bonus +10%, Experience bonus +10%"
 	"store_item_shopmall_cw_3_11"	"Doom Baby"
-	"store_item_shopmall_cw_3_11_desc"	"Category: Pet<br/>Function: Hero skill level +2, gold bonus +12%"
+	"store_item_shopmall_cw_3_11_desc"	"Category: Pet<br/>Function: Hero skill level +2, Gold bonus +12%"
 	"store_item_shopmall_cw_4_22"	"Baby Roshan"
 	"store_item_shopmall_cw_4_22_desc"	"Category: Pet<br/>Function: Hero skill level +2, Chance of obtaining the highest tier of archived equipment +40%(can be multiplied with Destiny points)"
 	"store_item_shopmall_cw_5_22"	"Golden Baby Roshan"
-	"store_item_shopmall_cw_5_22_desc"	"Category: Pet<br/>Function: Hero skill level +3, Chance of obtaining the highest tier of archived equipment +40%(can be multiplied with Destiny points)"
+	"store_item_shopmall_cw_5_22_desc"	"Category: Pet<br/>Function: Hero skill level +3, Chance of obtaining the highest tier of archived equipment +55%(can be multiplied with Destiny points)"
 	"store_item_shopmall_cw_6_22"	"Darkmoon Baby Roshan"
-	"store_item_shopmall_cw_6_22_desc"	"Category: Pet<br/>Function: Hero skill level +4, Chance of obtaining the highest tier of archived equipment +65%(can be multiplied with Destiny points)"
+	"store_item_shopmall_cw_6_22_desc"	"Category: Pet<br/>Function: Hero skill level +4, Chance of obtaining the highest tier of archived equipment +80%(can be multiplied with Destiny points)"
 	"store_item_shopmall_gh_1_1"	"Aura of Toughness"
-	"store_item_shopmall_gh_1_1_desc"	"Category: Halo<br/>Function: Hero armor +10 in battle"
+	"store_item_shopmall_gh_1_1_desc"	"Category: Aura<br/>Function: Armor +10"
 	"store_item_shopmall_gh_1_2"	"Magic Aura"
-	"store_item_shopmall_gh_1_2_desc"	"Category: Aura<br/>Function: Hero magic resistance +10 when playing in battle"
-	"store_item_shopmall_gh_1_3"	"Restore Halo"
-	"store_item_shopmall_gh_1_3_desc"	"Category: Halo<br/>Function: Hero's HP regeneration +1% during battle"
-	"store_item_shopmall_gh_1_4"	"Meditation Halo"
-	"store_item_shopmall_gh_1_4_desc"	"Category: Halo<br/>Function: Hero mana regeneration +3 during battle"
+	"store_item_shopmall_gh_1_2_desc"	"Category: Aura<br/>Function: Magic resistance +10"
+	"store_item_shopmall_gh_1_3"	"Restoration Aura"
+	"store_item_shopmall_gh_1_3_desc"	"Category: Aura<br/>Function: HP regeneration +1%"
+	"store_item_shopmall_gh_1_4"	"Meditation Aura"
+	"store_item_shopmall_gh_1_4_desc"	"Category: Aura<br/>Function: Mana regeneration +3"
 	"store_item_shopmall_gh_1_101"	"Aura of Life"
-	"store_item_shopmall_gh_1_101_desc"	"Type: Halo<br/>Function: Hero armor +10, magic resistance +10 when playing."
+	"store_item_shopmall_gh_1_101_desc"	"Type: Aura<br/>Function: Armor +10, Magic resistance +10"
 	"store_item_shopmall_gh_1_201"	"Golden Life Aura"
-	"store_item_shopmall_gh_1_201_desc"	"Category: Halo<br/>Function: Hero's health regeneration +1%, magic regeneration +3 during battle."
+	"store_item_shopmall_gh_1_201_desc"	"Category: Aura<br/>Function: HP regeneration +1%, Mana regeneration +3"
+	"store_item_shopmall_gh_1_102"		"Season 2 Aura"
+	"store_item_shopmall_gh_1_102_desc"	"Category: Aura<br/>Function: Armor Penetration +3%, Magic Penetration +3%"
+	"store_item_shopmall_gh_1_202"		"Season 2 PLUS Aura"
+	"store_item_shopmall_gh_1_202_desc"	"Category: Aura<br/>Function: Armor Penetration +5%, Magic Penetration +5%"
 	"store_item_shopmall_ch_1_1"	"Anonymous"
-	"store_item_shopmall_ch_1_1_desc"	"Category: Title<br/>Function: All attributes of heroes in battle +30"
+	"store_item_shopmall_ch_1_1_desc"	"Category: Title<br/>Function: All attributes of heroes +30"
 	"store_item_shopmall_ch_1_2"	"Anonymous"
-	"store_item_shopmall_ch_1_2_desc"	"Category: Title<br/>Function: All primary attributes of heroes in battle +2%"
+	"store_item_shopmall_ch_1_2_desc"	"Category: Title<br/>Function: All primary attributes of heroes +2%"
 	"store_item_shopmall_ch_1_3"	"Anonymous"
-	"store_item_shopmall_ch_1_3_desc"	"Category: Title<br/>Function: Hero hero main attribute +50 when playing."
+	"store_item_shopmall_ch_1_3_desc"	"Category: Title<br/>Function: Hero hero main attribute +50"
 	"store_item_shopmall_ch_1_4"	"Anonymous"
-	"store_item_shopmall_ch_1_4_desc"	"Category: Title<br/>Function: Hero's base primary attribute +4% when playing."
+	"store_item_shopmall_ch_1_4_desc"	"Category: Title<br/>Function: Hero's base primary attribute +4%"
 	"store_item_shopmall_ch_2_13"	"Restaurant player-White"
 	"store_item_shopmall_ch_2_13_desc"	"Category: Title<br/>Function: Lucky value +10<br/>Every point of lucky value increases the chance of Lord of Calamity dropping an archived equipment (No additional effect when exceeds 100)"
 	"store_item_shopmall_ch_3_13"	"Restaurant Player-Orange"
@@ -1080,12 +1112,19 @@
 	"store_item_shopmall_ch_1_101_desc"	"Category: Title<br/>Function: Heroes’ personal skill level +1"
 	"store_item_shopmall_ch_1_201"	"Anonymous"
 	"store_item_shopmall_ch_1_201_desc"	"Category: Title<br/>Function: Heroes’ personal skill level +1.5"
-	"store_item_shopmall_ch_2_14"	"Gangster"
+	"store_item_shopmall_ch_2_14"	"Adept"
 	"store_item_shopmall_ch_2_14_desc"	"Category: Title<br/>Function: Destiny points +5, Lucky value +3<br/>Every points of destiny points represents 1% of better the quality of the archived equipment obtained by killing the Lord of Calamity<br><br><font color='gold'>Only the title in use will take effect</font>"
-	"store_item_shopmall_ch_3_14"	"Jerk"
+	"store_item_shopmall_ch_3_14"	"Noob"
 	"store_item_shopmall_ch_3_14_desc"	"Category: Title<br/>Function: Destiny points +8, Lucky value +5<br/>Every points of destiny points represents 1% of better the quality of the archived equipment obtained by killing the Lord of Calamity<br><br><font color='gold'>Only the title in use will take effect</font>"
-	"store_item_shopmall_ch_4_14"	"Meng Xin"
+	"store_item_shopmall_ch_4_14"	"Rookie"
 	"store_item_shopmall_ch_4_14_desc"	"Category: Title<br/>Function: Destiny points +13, Lucky value +8<br/>Every points of destiny points represents 1% of better the quality of the archived equipment obtained by killing the Lord of Calamity<br><br><font color='gold'>Only the title in use will take effect</font>"
+	
+	"store_item_shopmall_ch_4_22"		"Dou Yu Speed Talent"
+	"store_item_shopmall_ch_4_22_desc"	"Category: Title<br>Function: Destiny points +20<br>Lucky value +10<br/>All attributes +10%<br>Rarity Factor +25<br>Use skill promotion value +5%<br><br><font color='gold'>Only the title in use will take effect</font>"
+	"store_item_shopmall_ch_5_22"		"Dou Yu Speed Master"
+	"store_item_shopmall_ch_5_22_desc"	"Category: Title<br>Function: Destiny points +30<br>Lucky value +10<br/>All attributes +15%<br>Rarity Factor +35<br>Use skill promotion value +10%<br><br><font color='gold'>Only the title in use will take effect</font>"
+	"store_item_shopmall_ch_6_22"		"Dou Yu Speed Legend"
+	"store_item_shopmall_ch_6_22_desc"	"Category: Title<br>Function: Destiny points +50<br>Lucky value +10<br/>All attributes +20%<br>Rarity Factor +50<br>Use skill promotion value +15%<br><br><font color='gold'>Only the title in use will take effect</font>"
 
 	"store_item_shopmall_sstone_2"	"Tier 2 Strengthening Stone"
 	"store_item_shopmall_sstone_2_desc"	"Can be used to strengthen the archive equipment of Tier 2 and above"
@@ -1123,6 +1162,11 @@
 	"map_level_bonus_18"	"Gold gain +20%"
 	"map_level_bonus_19"	"Experience gain +20%"
 	"map_level_bonus_20"	"Personal skill level +1"
+	"map_level_bonus_21"	"Upgrades all skill upgrades (Each upgrade will not work again with the skills of the same name)"
+	"map_level_bonus_22"	"Destiny points +20"
+	"map_level_bonus_23"	"Final damage +20%"
+	"map_level_bonus_24"	"Skill promotion value +20%"
+	"map_level_bonus_25"	"Level 3 treasure will be provided at the start of the game"
 
 
 
@@ -1326,7 +1370,7 @@
 
 	"modifier_bw_1_14_Description"	"Intelligence +400<br/>Recovers 125 mana points for surrounding 1000 yards of friendly units every 10s<br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
 
-	"modifier_bw_2_1_Description"	"Armor +30 points<br/>Reflect 20% of damage received<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
+	"modifier_bw_2_1_Description"	"Armor +30<br/>Reflect 20% of damage received<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_2_Description"	"HP regeneration +5%<br/>Magic resistance +20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
@@ -1338,11 +1382,11 @@
 
 	"modifier_bw_2_6_Description"	"Strength +600<br/>Magic resistance +20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_7_Description"	"1200-yard halo<br/>+15 armor<br/>+2000 HP regeneration<br/><br/><br/><br/><font color=\"#cfbf81\"> Level 2 Treasure</font>"
+	"modifier_bw_2_7_Description"	"Aura radius: 1200<br/>+15 Armor<br/>+2000 HP regeneration<br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_7_buff_Description"	"+15 armor<br/>+2000 HP regeneration<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_8_Description"	"1200 yard range halo<br/>+30 Attack speed<br/>+5% movement speed<br/><br/><br/><br/><font color=\"#cfbf81 \">Level 2 Treasure</font>"
+	"modifier_bw_2_8_Description"	"Aura radius: 1200<br/>+30 Attack speed<br/>+5% movement speed<br/><br/><br/><br/><font color=\"#cfbf81 \">Level 2 Treasure</font>"
 
 	"modifier_bw_2_8_buff_Description"	"+30 Attack speed<br/>+5% Movement speed<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
@@ -1374,9 +1418,9 @@
 
 	"modifier_bw_2_21_Description"	"Intelligence +900<br/>Mana regeneration +15<br/>Movement speed +40<br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_22_Description"	"Mana +300<br/>Cast range +300<br/>Mana regeneratio n+12<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 2 Treasure</font>"
+	"modifier_bw_2_22_Description"	"Mana +300<br/>Cast range +300<br/>Mana regeneration+12<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 2 Treasure</font>"
 
-	"modifier_bw_2_23_Description"	"Mana cost -10%<br/>Movement speed +30<br/>(<font color=\"#ffffff\">Only one will take effect with Arcane Energy Saving</font>)<br/> <br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
+	"modifier_bw_2_23_Description"	"Mana cost -10%<br/>Movement speed +30<br/>(<font color=\"#ffffff\">Effect does not stack with Arcane Energy</font>)<br/> <br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_24_Description"	"All attributes +250<br/>HP regeneration +5%<br/>Mana regeneration+2%<br/><br/><br/><br/><font color=\"#cfbf81 \">Level 2 Treasure</font>"
 
@@ -1418,7 +1462,7 @@
 
 	"modifier_bw_3_15_Description"	"Strength +3000<br/>HP +50000<br/>Health regeneration +5%<br/><br/><br/><br/><font color=\"#cfbf81\" >Level 3 Treasure</font>"
 
-	"modifier_bw_3_16_Description"	"Area of ​​1500 yards<br/>Friendly Attack Power +30%<br/>Friendly Armor +20<br/>Friendly Attack Speed ​​+50<br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
+	"modifier_bw_3_16_Description"	"Aura radius: 1500<br/>Friendly Attack Power +30%<br/>Friendly Armor +20<br/>Friendly Attack Speed +50<br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 	"modifier_bw_3_16_buff_Description"	"Attack power+30%<br/>Armor+20<br/>Attack speed+50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
@@ -1444,7 +1488,7 @@
 
 	"modifier_bw_4_2_buff_Description"	"Armor-45 points<br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
-	"modifier_bw_4_3_Description"	"All attributes+8888<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font> "
+	"modifier_bw_4_3_Description"	"All attributes+10000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font> "
 
 	"modifier_bw_4_4_Description"	"Main attribute increase +150%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</br/></font>"
 
@@ -1468,7 +1512,7 @@
 
 	"modifier_bw_5_5_Description"	"Attack power +46666, Attack speed +100<br/>Agility+20000<br/>Passive:<br/>Attack has a 1% chance to increase your base agility by 150% and a 33% chance with the power of the stars , Causing an additional 88* agility physical damage to the target<br/><font color=\"#cfbf81\">Level 5 Treasure</font>"
 
-	"modifier_bw_5_6_Description"	"Friendly base attack power within 1200 yards +100%<br/>attack speed +100, movement speed +20% regeneration effect +25%<br/>skill damage +100%<br/>attack distance +200 <br/><br/><font color=\"#cfbf81\">Level 5 Treasure</font>"
+	"modifier_bw_5_6_Description"	"Friendly base attack power within 1200 +100%<br/>Attack speed +100, Movement speed +20%, Regeneration effect +25%<br/>Skill damage +100%<br/>Attack distance +200 <br/><br/><font color=\"#cfbf81\">Level 5 Treasure</font>"
 
 	"modifier_bw_5_7_Description"	"Attack power +77777<br/>Attack speed +122<br/>12% chance of 50 times crit<br/>Passive: Reduce the target's regeneration effect by 30%<br/><br/>< br/><font color=\"#cfbf81\">Level 5 Treasure</font>"
 
@@ -1504,7 +1548,7 @@
 
 	"modifier_bw_all_11_Description"	"Randomly reduce attack, armor, strength, agility, intelligence, and maximum health.<br/>10-30% and then randomly increase one of the random attributes, increasing (20-50%)<br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_12_Description"	"After you are killed by a unit<br/>after the next resurrection, the damage to the target will be increased by 50%<br/>(until the target dies)<br/><br/><br/>< font color=\"#cfbf81\">Mysterious Treasure</font>"
+	"modifier_bw_all_12_Description"	"After you are killed by a unit<br/>after the next resurrection, the damage to the target will be increased by 50%<br/>(until the target dies)<br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_13_Description"	"Ranged heroes deal 20% additional damage to close units<br/><font color=\"#fff\">(Only effective for ranged agility units, beyond 300 yards)</font><br/> <br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1546,21 +1590,21 @@
 
 	"modifier_bw_all_32_Description"	"The attack becomes a projectile, (through the target) the distance is double the attack distance in units, and the flying speed is twice the previous. A hit will trigger a passive effect (invalid for melee combat)<br/><font color= \"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_33_Description"	"Melee attack becomes a 350 yard range attack<br/>Attack speed is halved<br/>A hit will trigger a passive effect<br/><br/><br/><br/><font color= \"#cfbf81\">Mysterious Treasure</font>"
+	"modifier_bw_all_33_Description"	"Melee attack becomes a 350 range attack<br/>Attack speed is halved<br/>A hit will trigger a passive effect<br/><br/><br/><br/><font color= \"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_34_Description"	"Damage taken reduced by 30%<br/>movement speed reduced by 15%<br/><br/><br/><br/><br/><font color=\"#cfbf81\"> Mysterious Treasure</font>"
 
-	"modifier_bw_all_35_Description"	"Mana cost -10%<br/> (<font color=\"#ffffff\">Only one will work with the dim brooch</font>)<br/><br/><br/>< br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
+	"modifier_bw_all_35_Description"	"Mana cost -10%<br/>(<font color=\"#ffffff\">Effect does not stack with Faded Broach</font>)<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_39_Description"	"Gold bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
 	"modifier_bw_all_40_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_41_Description"	"Number of hellfires+1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
+	"modifier_bw_all_41_Description"	"Number of Hellfire Goelms +1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_42_Description"	"Number of snake guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
+	"modifier_bw_all_42_Description"	"Number of Mass Serpent Wards +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_43_Description"	"The number of death guards+1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
+	"modifier_bw_all_43_Description"	"Number of Death Wards +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
 	"modifier_bw_all_44_Description"	"Attack the gold that hits the enemy to increase your level<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1584,9 +1628,9 @@
 
 	"modifier_bw_all_54_Description"	"Experience bonus +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_55_Description"	"Use skill promotion value +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_55_Description"	"Use skill promotion value +50%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
-	"modifier_bw_all_56_Description"	"Use skill promotion value +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_56_Description"	"Use skill promotion value +100%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
 	"modifier_bw_all_57_Description"	"You can get 1 Treasure every 120s<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1604,7 +1648,7 @@
 
 	"modifier_bw_all_64_Description"	"80% Discount of kill points when purchasing skill upgrades from store<br/>Does not stack with other cards<br/><br/><br/><br/><font color=\"#cfbf81\" >Mysterious Treasure</font>"
 
-	"modifier_bw_all_65_Description"	"Use skill promotion value +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_65_Description"	"Use skill promotion value +200%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
 	"modifier_bw_all_66_Description"	"Kill monster gold +150<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1640,13 +1684,13 @@
 
 	"modifier_bw_all_82_Description"	"Kill points +60000<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
-	"modifier_bw_all_83_Description"	"Kill points per 10 seconds +20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_83_Description"	"Kill points per 10 seconds +20<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
-	"modifier_bw_all_84_Description"	"Kill points per 10 seconds +40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_84_Description"	"Kill points per 10 seconds +40<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
-	"modifier_bw_all_85_Description"	"Kill points per 10 seconds +80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_85_Description"	"Kill points per 10 seconds +80<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
-	"modifier_bw_all_86_Description"	"Kill points per 10 seconds +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/> font>"
+	"modifier_bw_all_86_Description"	"Kill points per 10 seconds +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
 	"modifier_bw_all_87_Description"	"Talent skill level +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
@@ -1686,7 +1730,7 @@
 
 	"achievement_hero_single_2"	"Complete the level 3 times"
 	"achievement_hero_single_2_desc"	"Use this hero to complete the level 3 times"
-	"achievement_hero_single_2_bonus"	"Major attribute +30 when using this hero"
+	"achievement_hero_single_2_bonus"	"Main attribute +30 when using this hero"
 	//"achievement_hero_single_2_bonus_desc"		""
 
 	"achievement_hero_single_3"	"Complete the level 10 times"
@@ -1818,7 +1862,7 @@
 
 	"achievement_difficulty_1"	"Clear N1"
 	//"achievement_difficulty_1_desc"					""
-	"achievement_difficulty_1_bonus"	"All initial attributes +30"
+	"achievement_difficulty_1_bonus"	"All attributes +30 at the start of the game"
 	//"achievement_difficulty_1_bonus_desc"			""
 
 
@@ -1899,12 +1943,12 @@
 
 	"achievement_difficulty_16_1"	"Clear N16"
 	//"achievement_difficulty_16_1_desc"					""
-	"achievement_difficulty_16_1_bonus"	"Hero skill level+1 at the start of the game"
+	"achievement_difficulty_16_1_bonus"	"Hero talent level +1 at the start of the game"
 	//"achievement_difficulty_16_1_bonus_des
 
 	"achievement_difficulty_17_1"	"Clear N17"
 	//"achievement_difficulty_17_1_desc"					""
-	"achievement_difficulty_17_1_bonus"	"Hero max skill level+1"
+	"achievement_difficulty_17_1_bonus"	"Hero talent max level +1"
 	//"achievement_difficulty_17_1_bonus_des
 
 
@@ -2179,7 +2223,7 @@
 
 	"achievement_hidden_3"	"Corpse"
 	"achievement_hidden_3_desc"	"Lying down?"
-	"achievement_hidden_3_bonus"	"Every time you die, increase the total attributes of 1*hero level"
+	"achievement_hidden_3_bonus"	"Every time you die, increase the all attributes by 1 * Hero Level"
 	//"achievement_hidden_3_bonus_desc"			""
 
 
@@ -2190,68 +2234,68 @@
 	//"achievement_hidden_4_bonus_desc"			""
 
 	"item_tz_3_1_title"	"Gold Inlaid Jade Set"
-	"item_tz_3_1_attribute"	"Set effect: <br> Maximum health value +2000<br> All attributes +100 <br> Movement speed +30<br> Physical Lifesteal 6%"
+	"item_tz_3_1_attribute"	"Set effect: <br>Maximum health value +2000<br>All attributes +100<br>Movement speed +30<br>Physical Lifesteal +6%"
 
 
 	"item_tz_3_2_title"	"Deadwood Spring Set"
-	"item_tz_3_2_attribute"	"Set effect: <br> All attributes +80<br> Maximum health +2500<br> Armor +15 <br> Passive: Withered Wood Every Spring--Regenerate 7.5*strength +5% HP every 5 seconds"
+	"item_tz_3_2_attribute"	"Set effect: <br>All attributes +80<br> Maximum health +2500<br> Armor +15<br> Passive: Regenerate 7.5 * Strength + 5% HP every 5 seconds"
 
 	"item_tz_3_3_title"	"Tidal Water Spirit Set"
-	"item_tz_3_3_attribute"	"Set effect:<br>Passive: Water Spirit Aura:<br>Percent damage reduction of surrounding allies +20<br>Main attribute of surrounding allies +100<br>Critical strike chance +5%<br> Range of action : 1500 yards (only effective for hero units)"
+	"item_tz_3_3_attribute"	"Set effect:<br>Passive: Water Spirit Aura:<br>Percent damage reduction of surrounding allies +20<br>Main attribute of surrounding allies +100<br>Critical strike chance +5%<br>Range of action : 1500 yards (only effective for hero units)"
 
 
 	"item_tz_3_4_title"	"Frost Undead Set"
-	"item_tz_3_4_attribute"	"Set effect: <br>Max HP +1200<br/>Strength and Agility +50<br/>Intellect +200<br/>Skill Damage +20%<br/>Passive: Attack speed of surrounding units -20, moving speed -20%<br/>Affect range: 800"
+	"item_tz_3_4_attribute"	"Set effect: <br>Max HP +1200<br/>Strength and Agility +50<br/>Intellect +200<br/>Skill Damage +20%<br/>Passive: Attack speed of surrounding units -20, Movement speed -20%<br/>Affect range: 800"
 
 
 
 	"item_tz_4_1_title"	"Earth Pulse Set"
-	"item_tz_4_1_attribute"	"Set effect: <br>All attributes +220<br>Max HP +5000<br> Armor +25 <br> Health regeneration +2%"
+	"item_tz_4_1_attribute"	"Set effect: <br>All attributes +220<br>Max HP +5000<br>Armor +25 <br>Health regeneration +2%"
 
 	"item_tz_4_2_title"	"Mana Drain Set"
-	"item_tz_4_2_attribute"	"Set effect: <br>Increases mana cost when releasing skills by +50%. <br> Drains 1% of one's maximum mana per second. <br> Reduces mana regeneration rate by 100%.<br>Increases skill damage by 200%."
+	"item_tz_4_2_attribute"	"Set effect: <br>Increases mana cost when casting skills by +50%.<br>Drains 1% of heroes's maximum mana per second.<br>Reduces mana regeneration rate by 100%.<br>Increases skill damage by 200%."
 
 
 	"item_tz_4_3_title"	"Sky Yellow Sand Set"
-	"item_tz_4_3_attribute"	"Set effect: <br> All attributes +195<br> Maximum health +4500<br> Armor +10 <br>Attack speed +60"
+	"item_tz_4_3_attribute"	"Set effect: <br>All attributes +195<br>Maximum health +4500<br>Armor +10<br>Attack speed +60"
 
 
 	"item_tz_4_4_title"	"Thunderstorm Set"
-	"item_tz_4_4_attribute"	"Set effect: <br>Strength and Agility +150<br>Intelligence +400<br> Skill damage +40%<br>Passive: Every 4S will select 3 units to strike 3 lightning bolts, which will deal with the target 15*Magic Damage of Intelligence<br/>Area of ​​Effect: 900 yards"
+	"item_tz_4_4_attribute"	"Set effect: <br>Strength and Agility +150<br>Intelligence +400<br>Skill damage +40%<br>Passive: Every 4S will select 3 units to strike 3 lightning bolts, which will deal with the target 15 * Intelligence of magic damage<br/>Area of Effect: 900 yards"
 
 
 	"item_tz_4_5_title"	"Titan Set"
-	"item_tz_4_5_attribute"	"Set effect: <br> Strength +2000 <br> Maximum HP +15000 <br>Armor +40<br>Magic resistance +20%"
+	"item_tz_4_5_attribute"	"Set effect: <br>Strength +2000<br>Maximum HP +15000<br>Armor +40<br>Magic resistance +20%"
 
 
 	"item_tz_4_6_title"	"Aquaman Set"
-	"item_tz_4_6_attribute"	"Set effect: <br>All attributes +500<br> Passive: Get the blessing of Poseidon every 10 seconds, all attributes +600, movement speed +30, attack speed +60, skill damage +30%, HP regeneration +2%. Lasts 5s"
+	"item_tz_4_6_attribute"	"Set effect: <br>All attributes +500<br>Passive: Get the blessing of Poseidon every 10 seconds, All attributes +600, Movement speed +30, Attack speed +60, Skill damage +30%, HP regeneration +2%. Lasts 5s"
 
 
 
 	"item_tz_4_7_title"	"Ghost Set"
-	"item_tz_4_7_attribute"	"Set effect: <br>Maximum HP +8000 <br> Intelligence +2000 <br> Armor +10 <br> Passive: Ghost realm-Reduces the enemy's magic resistance within 1200 yards by 25 points"
+	"item_tz_4_7_attribute"	"Set effect: <br>Maximum HP +8000<br>Intelligence +2000<br>Armor +10<br>Passive: Ghost realm-Reduces the enemy's magic resistance within 1200 yards by 25 points"
 
 
 
 	"item_tz_4_8_title"	"Life Set"
-	"item_tz_4_8_attribute"	"Set effect: <br>Passive: All attributes of friendly hero units within 1500 yards +450, skill damage level +2<br> Passive: Every 20 normal attacks will reduce the target's maximum HP by 2% , up to 5 times"
+	"item_tz_4_8_attribute"	"Set effect: <br>Passive: All attributes of friendly hero units within 1500 yards +450, Skill damage level +2<br>Passive: Every 20 normal attacks will reduce the target's maximum HP by 2% , up to 5 times"
 
 
 	"item_tz_5_1_title"	"Burning Flame Set"
-	"item_tz_5_1_attribute"	"Set effect: <br>Maximum HP +30000<br> Primary attribute +2000<br> Critical strike chance +10%<br>Skill damage +50%<br>Mana regeneration +30<br> Final Damage +20%<br> Passive: After every 5S, a ball of flame will be emitted to the surrounding area, causing 30* main attribute magic damage to the surrounding enemies for 900 yards."
+	"item_tz_5_1_attribute"	"Set effect: <br>Maximum HP +30000<br>Primary attribute +2000<br>Critical strike chance +10%<br>Skill damage +50%<br>Mana regeneration +30<br>Final Damage +20%<br>Passive: After every 5S, a ball of flame will be emitted to the surrounding area, causing 30* main attribute magic damage to the surrounding enemies for 900 yards."
 
 
 	"item_tz_5_2_title"	"Poison Dragon Set"
-	"item_tz_5_2_attribute"	"Set effect: <br>Health +50000<br>Main attribute increased by 30% <br>Armor +50<br>Magic resistance +30<br> Passive: Drains 2% of your maximum HP per minute <br/>When the HP is less than 70%, the main attribute increase is increased from 40% to 50%. <br/>When the HP is less than 40%, the main attribute increase is increased from 50% to 60%"
+	"item_tz_5_2_attribute"	"Set effect: <br>Health +50000<br>Main attribute increased by 30%<br>Armor +50<br>Magic resistance +30<br>Passive: Drains 2% of your maximum HP per minute<br/>When the HP is less than 70%, the main attribute increase is increased from 40% to 50%.<br/>When the HP is less than 40%, the main attribute increase is increased from 50% to 60%"
 
 
 	"item_tz_5_3_title"	"Eternal Life Set"
-	"item_tz_5_3_attribute"	"Set effect: <br>Max HP +35000<br> Skill damage +40% <br>Skill level damage +6 <br>Critical strike chance +10%"
+	"item_tz_5_3_attribute"	"Set effect: <br>Max HP +35000<br>Skill damage +40%<br>Skill level damage +6<br>Critical strike chance +10%"
 
 
 	"item_tz_5_4_title"	"Dark Enforcer Set"
-	"item_tz_5_4_attribute"	"Set effect: <br>Main attribute +1500 <br> Attack power +4000<br> Attack speed +80 <br> Movement speed +40 <br>Each attack has a 20% chance of causing 800% damage Damage<br> Critical Strike Chance +5%"
+	"item_tz_5_4_attribute"	"Set effect: <br>Main attribute +1500<br>Attack power +4000<br>Attack speed +80<br>Movement speed +40<br>Each attack has a 20% chance to deal 800% damage<br>Critical Strike Chance +5%"
 
 
 	"ability_mj_baseDamage"	"Base damage increased by {s:value} points"
@@ -2361,14 +2405,14 @@
 	"bc_tz_6_2_desc"	"<font color=\"#ffd861\">Consume 200k gold</font><br/><br/>Summon a powerful Top lord, equates to 3 monster lives, and drop 2 pieces of Orange set parts when slain<br/><br/>Summoner’s BOSS points + 8 after killing<br>Gold bonus for killing monsters +6<br>All attributes +70<br><br>Summon cooldown: {s :cooldown}s"
 	"bc_tz_6_3_desc"	"<font color=\"#ffd861\">Consume 250k gold</font><br/><br/>Summon a dangerous Top lord, equates to 3 monster lives, and drop 1 set of Orange sets when slain<br/><br/>Summoner’s BOSS points + 10 after killing<br>Gold bonus for killing monsters +12<br>All attributes +100<br>The first kill rewards a treasure<br> <br>Summon Cooldown: {s:cooldown}s"
 
-	"bc_gr_1_desc"	"<font color=\"#ffd861\">Consume 50k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 1 </font><br/><br/>After being killed, a treasure chest will be dropped from the foot of the <font color=\"#ffd861\"> Summoner</font><br/>open An indefinite number of random equipment can be obtained<br/><br/>The higher the burst rate, the more difficult it is to kill, but the treasure chest reward may be richer.<br/><br/>Summoner’s BOSS points after killing + 4< br><br>Summon Cooldown: {s:cooldown}s"
+	"bc_gr_1_desc"	"<font color=\"#ffd861\">Consume 50k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 1 </font><br/><br/>After being killed, a treasure chest will be dropped beside the <font color=\"#ffd861\"> Summoner</font><br/>Upon opening, an indefinite number of random equipment can be obtained<br/><br/>The higher the burst rate, the more difficult it is to kill, but the treasure chest reward may be richer.<br/><br/>Summoner’s BOSS points after killing + 4< br><br>Summon Cooldown: {s:cooldown}s"
 	"bc_gr_2_desc"	"<font color=\"#ffd861\">Consume 100k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 3 </font><br/><br/>Summoner’s BOSS points after killing + 6<br><br>Summon cooldown: {s:cooldown}s"
 	"bc_gr_3_desc"	"<font color=\"#ffd861\">Consume 200k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 5 </font><br/><br/>Summoner’s BOSS points after killing + 8<br><br>Summon cooldown: {s:cooldown}s"
 	"bc_gr_4_desc"	"<font color=\"#ffd861\">Consume 400k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 10 </font><br/><br/>Summoner’s BOSS points after killing + 10<br><br>Summon cooldown: {s:cooldown}s"
 	"bc_gr_5_desc"	"<font color=\"#ffd861\">Consume 800k gold</font><br/><br/>Summon a Hell lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 20 </font><br/><br/>Summoner’s BOSS points after killing + 20<br><br>Summon cooldown: {s:cooldown}s"
 
 
-	"bc_team_1_desc"	"<font color=\"#ffd861\">Consume 50k gold</font><br/><br/>Summon an Abyss lord, equates to 5 monster lives, burst rate is <font color= \"#FFFF00\"> 1 </font><br/><br/>After killing, a treasure chest is dropped at the feet of <font color=\"#ffd861\"> everyone</font><br/> Open to get an indefinite number of random equipment<br/><br/>The higher the burst rate, the more difficult it is to kill, but the treasure chest rewards may be richer.<br/><br/>After killing everyone's BOSS points + 4 <br><br>Summon Cooldown: {s:cooldown}s"
+	"bc_team_1_desc"	"<font color=\"#ffd861\">Consume 50k gold</font><br/><br/>Summon an Abyss lord, equates to 5 monster lives, burst rate is <font color= \"#FFFF00\"> 1 </font><br/><br/>After killing, a treasure chest is dropped beside <font color=\"#ffd861\">Everyone</font><br/>Upon opening, an indefinite number of random equipment can be obtained<br/><br/>The higher the burst rate, the more difficult it is to kill, but the treasure chest rewards may be richer.<br/><br/>After killing everyone's BOSS points + 4 <br><br>Summon Cooldown: {s:cooldown}s"
 	"bc_team_2_desc"	"<font color=\"#ffd861\">Consume 100k gold</font><br/><br/>Summon an Abyss lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 3 </font><br/><br/>BOSS points + 6 for everyone after killing<br><br>Summon cooldown: {s:cooldown}s"
 	"bc_team_3_desc"	"<font color=\"#ffd861\">Consume 200k gold</font><br/><br/>Summon an Abyss lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 5 </font><br/><br/>BOSS points + 8 for everyone after killing<br><br>Summon cooldown: {s:cooldown}s"
 	"bc_team_4_desc"	"<font color=\"#ffd861\">Consume 400k gold</font><br/><br/>Summon an Abyss lord, equates to 5 monster lives, burst rate is <font color=\"#FFFF00\"> 10 </font><br/><br/>BOSS points + 10 for everyone after killing<br><br>Summon cooldown: {s:cooldown}s"
@@ -2387,95 +2431,95 @@
 	"bc_team_5_name"	"Abyss Lord X20"
 
 
-	"bp_reward_item_BPreward_base_1"	"Initial gold of the game +1000"
-	"bp_reward_item_jing_plus_1"	"Spark Stone +3000"
+	"bp_reward_item_BPreward_base_1"	"Hero selection refresh count +1"
+	"bp_reward_item_jing_plus_1"		"Tier 3 Epic Accessories Equipment Key"
 
-	"bp_reward_item_BPreward_base_2"	"Initial hero intelligence of the game +20"
-	"bp_reward_item_BPreward_plus_2"	"Tier 3 Premium Jewelry Equipment Key"
+	"bp_reward_item_BPreward_base_2"	"Hero Strength + 5%"
+	"bp_reward_item_BPreward_plus_2"	"Tier 3 Epic Armor Equipment key"
 
-	"bp_reward_item_BPreward_base_3"	"Initial hero agility +25"
-	"bp_reward_item_jing_plus_3"	"Spark Stone +3000"
+	"bp_reward_item_BPreward_base_3"	"Hero Agility + 5%"
+	"bp_reward_item_jing_plus_3"		"Tier 3 Epic Special Accessories Equipment Key"
 
-	"bp_reward_item_BPreward_base_4"	"Initial hero strength +30"
-	"bp_reward_item_BPreward_plus_4"	"War Key +5"
+	"bp_reward_item_BPreward_base_4"	"Hero Intelligence + 5%"
+	"bp_reward_item_BPreward_plus_4"	"Lucky value +10"
 
-	"bp_reward_item_BPreward_base_5"	"War Key +5"
-	"bp_reward_item_BPreward_plus_5"	"Tier 3 Premium Jewelry Equipment Key"
+	"bp_reward_item_BPreward_base_5"	"Hero All attributes +5%"
+	"bp_reward_item_BPreward_plus_5"	"Activates 1 random unique Basic rune at the start of the game"
 
-	"bp_reward_item_BPreward_base_6"	"Second-order premium jewelry equipment key"
-	"bp_reward_item_BPreward_plus_6"	"Intermediate Specialty--Consumption *10"
+	"bp_reward_item_BPreward_base_6"	"Conquest Key +10"
+	"bp_reward_item_BPreward_plus_6"	"Super Magic Rune Page *10"
 
-	"bp_reward_item_BPreward_base_7"	"Hero Mana regeneration +2"
-	"bp_reward_item_jing_plus_7"	"Spark Stone +3000"
+	"bp_reward_item_BPreward_base_7"	"Conquest Key +10"
+	"bp_reward_item_jing_plus_7"		"Activates 1 random unique Intermediate rune at the start of the game"
 
-	"bp_reward_item_BPreward_base_8"	"Initial kills in the game +50"
-	"bp_reward_item_BPreward_plus_8"	"The number of skill tips +50"
+	"bp_reward_item_BPreward_base_8"	"Initial kills points +100"
+	"bp_reward_item_BPreward_plus_8"	"Treasure slot +1"
 
-	"bp_reward_item_BPreward_base_9"	"Basic Specialty--Consumption*10"
-	"bp_reward_item_BPreward_plus_9"	"The number of treasures +5"
+	"bp_reward_item_BPreward_base_9"	"Kill points +5 every 10s"
+	"bp_reward_item_BPreward_plus_9"	"Conquest key +15"
 
-	"bp_reward_item_BPreward_base_10"	"Second-tier best armor equipment key"
-	"bp_reward_item_BPreward_plus_10"	"Tier 3 Supreme Special Equipment Key"
+	"bp_reward_item_BPreward_base_10"	"Armor Penetration +2%"
+	"bp_reward_item_BPreward_plus_10"	"Spark stone +50000"
 
-	"bp_reward_item_BPreward_base_11"	"Second-tier Supreme Weapon and Equipment Key"
-	"bp_reward_item_BPreward_plus_11"	"War Key +5"
+	"bp_reward_item_BPreward_base_11"	"Magic Penetration +2%"
+	"bp_reward_item_BPreward_plus_11"	"Conquest key +15"
 
-	"bp_reward_item_BPreward_base_12"	"Hero skill damage +5%"
-	"bp_reward_item_BPreward_plus_12"	"Secret Magic Potion +20"
+	"bp_reward_item_BPreward_base_12"	"Skill damage +5%"
+	"bp_reward_item_BPreward_plus_12"	"Super Magic Rune Page *20"
 
 	"bp_reward_item_BPreward_base_13"	"Hero critical strike damage +20%"
-	"bp_reward_item_jing_plus_13"	"Spark Stone +3000"
+	"bp_reward_item_jing_plus_13"		"Destiny Points +10"
 
 	"bp_reward_item_BPreward_base_14"	"Hero critical strike chance +2%"
-	"bp_reward_item_jing_plus_14"	"Spark Stone +3000"
+	"bp_reward_item_jing_plus_14"		"Spark Stone +50000"
 
 	"bp_reward_item_BPreward_base_15"	"Hero personal skill level +1"
-	"bp_reward_item_BPreward_plus_15"	"The first season plus version pet reward"
+	"bp_reward_item_BPreward_plus_15"	"Season 2 PLUS Pet Reward"
 
-	"bp_reward_item_BPreward_base_16"	"War Key +10"
-	"bp_reward_item_BPreward_plus_16"	"Advanced Specialty--Consumption*10"
+	"bp_reward_item_BPreward_base_16"	"Conquest Key +10"
+	"bp_reward_item_BPreward_plus_16"	"Activates 1 random unique Advanced rune at the start of the game"
 
-	"bp_reward_item_BPreward_base_17"	"The number of heroes refreshed in the hero selection interface +1"
-	"bp_reward_item_BPreward_plus_17"	"War Key +10"
+	"bp_reward_item_BPreward_base_17"	"Hero selection refresh count +1"
+	"bp_reward_item_BPreward_plus_17"	"Conquest Key +15"
 
 	"bp_reward_item_BPreward_base_18"	"Hero additional damage +2%"
-	"bp_reward_item_BPreward_plus_18"	"Guardian Potion +20"
+	"bp_reward_item_BPreward_plus_18"	"Conquest Key +15"
 
 	"bp_reward_item_BPreward_base_19"	"Hero final damage +2%"
-	"bp_reward_item_jing_plus_19"	"Spark Stone +3000"
+	"bp_reward_item_jing_plus_19"		"Conquest Key +15"
 
-	"bp_reward_item_BPreward_base_20"	"War Key +5"
-	"bp_reward_item_BPreward_plus_20"	"Tier 3 Epic Armor Equipment Key"
+	"bp_reward_item_BPreward_base_20"	"Conquest Key +20"
+	"bp_reward_item_BPreward_plus_20"	"Activates 1 random unique Super magic rune at the start of the game"
 
 	"bp_reward_item_BPreward_base_21"	"Hero personal skill level +1"
-	"bp_reward_item_jing_plus_21"	"Spark Stone +3000"
+	"bp_reward_item_jing_plus_21"		"Special Rune Page *10"
 
-	"bp_reward_item_jing_base_22"	"Spark Stone +2000"
-	"bp_reward_item_jing_plus_22"	"Spark Stone +3000"
+	"bp_reward_item_jing_base_22"		"Destiny Points +10"
+	"bp_reward_item_jing_plus_22"		"Rarity Factor +10"
 
-	"bp_reward_item_BPreward_base_23"	"Hero Gold Bonus +3%"
-	"bp_reward_item_BPreward_plus_23"	"War Key +10"
+	"bp_reward_item_BPreward_base_23"	"Gold Bonus +3%"
+	"bp_reward_item_BPreward_plus_23"	"Conquest Key +20"
 
-	"bp_reward_item_BPreward_base_24"	"Hero experience bonus +3%"
-	"bp_reward_item_BPreward_plus_24"	"Tier 3 Epic Weapon and Equipment Key"
+	"bp_reward_item_BPreward_base_24"	"Experience bonus +3%"
+	"bp_reward_item_BPreward_plus_24"	"Conquest Key +20"
 
-	"bp_reward_item_BPreward_base_25"	"First Season Base Aura Reward"
-	"bp_reward_item_BPreward_plus_25"	"The first season plus halo reward"
+	"bp_reward_item_BPreward_base_25"	"Season 1 Aura Reward"
+	"bp_reward_item_BPreward_plus_25"	"Season 2 PLUS Aura Reward"
 
-	"bp_reward_item_BPreward_base_26"	"Advanced Specialty--Consumption*10"
-	"bp_reward_item_BPreward_plus_26"	"Number of treasures*10"
+	"bp_reward_item_BPreward_base_26"	"Super Magic Rune Page *10"
+	"bp_reward_item_BPreward_plus_26"	"Tier 5 Strengthening Stone +300"
 
-	"bp_reward_item_BPreward_base_27"	"War Key +10"
-	"bp_reward_item_jing_plus_27"	"Spark Stone +5000"
+	"bp_reward_item_BPreward_base_27"	"Conquest Key +10"
+	"bp_reward_item_jing_plus_27"		"Tier 6 Strengthening Stone +200"
 
-	"bp_reward_item_jing_base_28"	"Spark Stone +3000"
-	"bp_reward_item_jing_plus_28"	"Spark Stone +5000"
+	"bp_reward_item_jing_base_28"		"Conquest Key +15"
+	"bp_reward_item_jing_plus_28"		"Tier 7 Strengthening Stone +150"
 
-	"bp_reward_item_jing_base_29"	"Spark Stone +3000"
-	"bp_reward_item_BPreward_plus_29"	"War Key +20"
+	"bp_reward_item_jing_base_29"		"Conquest Key +20"
+	"bp_reward_item_BPreward_plus_29"	"Tier 8 Strengthening Stone +100"
 
-	"bp_reward_item_BPreward_base_30"	"Tier 3 Top Grade Special Equipment Key"
-	"bp_reward_item_BPreward_plus_30"	"Tier 3 Epic Special Equipment Key"
+	"bp_reward_item_BPreward_base_30"	"Strengthening Stone drop quantity +10%"
+	"bp_reward_item_BPreward_plus_30"	"Strengthening Stone drop quantity +10%"
 
 
 	"bp_quest_day_difficulty_0"	"Clear the level on any difficulty"
@@ -2491,9 +2535,9 @@
 	"bp_quest_day_hero_pass_2"	"Use Agility heroes to complete the level"
 	"bp_quest_day_hero_pass_3"	"Use Intelligence heroes to complete the level"
 
-	"bp_quest_day_hero_killboss_1"	"Kill the Lord of Calamity: Timberjack"
-	"bp_quest_day_hero_killboss_2"	"Kill the Lord of Calamity: Carl"
-	"bp_quest_day_hero_killboss_3"	"Kill the Lord of Calamity: Death Knight"
+	"bp_quest_day_hero_killboss_1"	"Kill the Lord of Calamity: Evil Timbersaw"
+	"bp_quest_day_hero_killboss_2"	"Kill the Lord of Calamity: Elemental Mage"
+	"bp_quest_day_hero_killboss_3"	"Kill the Lord of Calamity: Undead Knight"
 	"bp_quest_day_hero_killboss_4"	"Kill the Lord of Calamity: Hill Giant"
 	"bp_quest_day_hero_killboss_5"	"Kill the Lord of Calamity: Lord Phoenix"
 	"bp_quest_day_hero_killboss_6"	"Kill the Lord of Calamity: Phantom Assassin"
@@ -2516,8 +2560,8 @@
 	"bp_quest_week_difficulty_12_5"	"Clear N12 Hell Mode"
 	"bp_quest_week_difficulty_13_6"	"Clear N13 Bounty Mode"
 	"bp_quest_week_difficulty_14_7"	"Clear N14 Nightmare Mode"
-	"bp_quest_week_difficulty_7"	"Complete N7 levels 5 times in total"
-	"bp_quest_week_difficulty_8"	"Complete N8 levels 5 times in total"
+	"bp_quest_week_difficulty_7"	"Complete N7 levels 3 times in total"
+	"bp_quest_week_difficulty_8"	"Complete N8 levels 3 times in total"
 	"bp_quest_week_difficulty_9"	"Clear N9 levels 3 times in total"
 	"bp_quest_week_difficulty_10"	"Clear N10 levels 3 times in total"
 

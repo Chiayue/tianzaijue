@@ -5307,5 +5307,6 @@
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs5_Description"	"品質：<font color=\"#fff\">白品</font>\n技能類型：主動\n開啟後進入嗜血狀態，增加移動速度和攻擊速度，持續掉血，並且每次攻擊對敵人造成和生命值相關的魔法傷害"
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs6"	"嗜血術"
 		"DOTA_Tooltip_ability_item_tyjcjn_sxs6_Description"	"品質：<font color=\"#fff\">白品</font>\n技能類型：主動\n開啟後進入嗜血狀態，增加移動速度和攻擊速度，持續掉血，並且每次攻擊對敵人造成和生命值相關的魔法傷害"
+		"cw_1_202"	"末日寶寶"
 	}
 }

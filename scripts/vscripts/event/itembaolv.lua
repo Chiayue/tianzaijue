@@ -247,7 +247,7 @@ _G.Itemlevel={
 --装备种类权重
 _G.Item_Type={
 	200,--武器
-	200,--衣服
+	100,--衣服
 	600,--首饰
 	10,--辅助装备
 	10,--收益装备
@@ -255,7 +255,7 @@ _G.Item_Type={
 }
 _G.Item_Type_All={
 	200,--武器
-	200,--衣服
+	100,--衣服
 	600,--首饰
 	10,--辅助装备
 	10,--收益装备
@@ -1016,8 +1016,8 @@ function itemgive(playerID,pz,dropitemnum)
 	
 	local itemlevel  = math.ceil(hero:GetLevel()/30) +1
 
-	if itemlevel>6 then
-		itemlevel = 6
+	if itemlevel>7 then
+		itemlevel = 7
 	end
 	local dbpz =  pz  --获得单位的掉宝品质
 	

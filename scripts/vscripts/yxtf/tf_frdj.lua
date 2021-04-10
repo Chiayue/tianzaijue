@@ -6,7 +6,8 @@ function frdj( keys )
 	local i = keys.ability:GetLevelSpecialValueFor("i", keys.ability:GetLevel() - 1)	
 	local level = ability:GetLevel() - 1
 	local lv = caster:GetLevel()
-	lv = (i + lv/5) *(1+level/5)
+	local difficulty =  0.9 + GetGameDifficulty() /10
+	lv = (i + lv/5) *(1+level/5) * difficulty
 	local ll = caster:GetBaseStrength() + lv
 --	caster:ModifyStrength(i)
 	caster:SetBaseStrength(ll)

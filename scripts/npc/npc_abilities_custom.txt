@@ -34765,7 +34765,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -34937,7 +34937,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -35109,7 +35109,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -35282,7 +35282,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -35454,7 +35454,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -35626,7 +35626,7 @@
 				{
 					"Types"	"DOTA_UNIT_TARGET_HERO"
 					"Teams"	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-					"Flags"	"DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
+					"Flags"	"DOTA_UNIT_TARGET_FLAG_INVULNERABLE | DOTA_UNIT_TARGET_FLAG_MELEE_ONLY"
 					"Center"	"CASTER"
 				}
 				"ModifierName"	"modifier_tyjcjn_sxs1_3"
@@ -39918,7 +39918,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"gjsd"	"60 90 120 150 180 210 50"
+				"gjsd"	"60 90 120 150 180 210 250"
 			}
 			// Extra
 			"04"
@@ -40129,7 +40129,7 @@
 			"04"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"i"	"0.1 0.2 0.3 0.4 0.5 0.6 0.8"
+				"i"	"0.1 0.2 0.4 0.8 1.6 3.2 6.4"
 			}
 		}
 		"AbilityDuration"	"0.1"
@@ -40218,16 +40218,10 @@
 		"precache"
 		{
 			"particle"	"particles/status_fx/status_effect_shaman_shackle.vpcf"
-			"soundfile"	"soundevents/game_sounds_heroes/game_sounds_shadowshaman.vsndevts"
 			"particle"	"particles/units/heroes/hero_shadowshaman/shadowshaman_shackle.vpcf"
 		}
 		"OnSpellStart"
 		{
-			"FireSound"
-			{
-				"EffectName"	"Hero_ShadowShaman.Shackles.Cast"
-				"Target"	"CASTER"
-			}
 			"ApplyModifier"
 			{
 				"ModifierName"	"modifier_shackles"
@@ -40241,11 +40235,6 @@
 			{
 				"ModifierName"	"modifier_shackles"
 				"Target"	"TARGET"
-			}
-			"RunScript"
-			{
-				"ScriptFile"	"heroes/hero_shadow_shaman/shackles.lua"
-				"Function"	"StopSound"
 			}
 		}
 		"Modifiers"
@@ -40263,11 +40252,6 @@
 				"ThinkInterval"	"%tick_interval"
 				"OnCreated"
 				{
-					"FireSound"
-					{
-						"EffectName"	"Hero_ShadowShaman.Shackles"
-						"Target"	"TARGET"
-					}
 					"AttachEffect"
 					{
 						"EffectName"	"particles/units/heroes/hero_shadowshaman/shadowshaman_shackle.vpcf"

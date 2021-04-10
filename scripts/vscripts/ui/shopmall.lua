@@ -221,6 +221,14 @@ if Shopmall == nil then
             notSale=true,
             canuse=false, 
         },
+        shopmall_98={--第一赛季通行证属性
+            price_jing=1000,
+            reward={Givegold=1000,Set_zl=20,Set_mj=25,Set_ll=30,Attr_sds=50,Attr_wlbjsh=20,Attr_mfbjsh=20,Attr_wlbjgl=2,Attr_mfbjgl=2,Attr_grjndj=2,Attr_fjsh=2,Attr_zzsh=2,Attr_jqjc=3,Attr_jyjc=3},
+            catalog1="certificate",
+            catalog2="vip",
+            notSale=true,
+            canuse=false, 
+        },
         shopmall_91={--V10000
             price_magic=100000,
             reward={Attr_zzsh=20,Attr_tmz4=100,Attr_jnmjts=0.2},
@@ -627,7 +635,6 @@ if Shopmall == nil then
             catalog2="equip_3",
             notSale=true,
             canuse=true, 
-            canuse=true, 
         },
         shopmall_39={--三阶橙色首饰装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
             price_jing=100000,
@@ -761,6 +768,24 @@ if Shopmall == nil then
             notSale=true,
             canuse=true, 
         },
+        shopmall_cw_1_102={--
+            price_magic=2000,
+            reward={Set_courier="cw_1_102"},
+            catalog1="visual",
+            catalog2 = "pet",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_cw_1_202={--
+            price_magic=2000,
+            reward={Set_courier="cw_1_202"},
+            catalog1="visual",
+            catalog2 = "pet",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
         shopmall_gh_1_1={--光环
             price_magic=2000,
             reward={Set_gh="gh_1_1"},
@@ -809,6 +834,24 @@ if Shopmall == nil then
         shopmall_gh_1_201={--
             price_magic=2000,
             reward={Set_gh="gh_1_201"},
+            catalog1="visual",
+            catalog2 = "aura",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_gh_1_102={--
+            price_magic=99999,
+            reward={Set_gh="gh_1_102"},
+            catalog1="visual",
+            catalog2 = "aura",
+            stack=0,
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_gh_1_202={--
+            price_magic=999999,
+            reward={Set_gh="gh_1_202"},
             catalog1="visual",
             catalog2 = "aura",
             stack=0,
@@ -1421,12 +1464,12 @@ if Shopmall == nil then
             [1] = {--等级
                 [1] = { --普通版奖励
                     name = "BPreward_base_1", --奖励名称，奖励图片和描述要用到
-                    state = 1,
-                    noStore = true ,--奖励领取状态：数字0表示不需要领取，到等级了自动激活（比如属性类），数字1表示需要领取但是尚未领取，字符串（形如"2021-12-12 12:12:12"）代表领取时间
+                    state = 0,--奖励领取状态：数字0表示不需要领取，到等级了自动激活（比如属性类），数字1表示需要领取但是尚未领取，字符串（形如"2021-12-12 12:12:12"）代表领取时间
+                    noStore = true, --这个奖励不是商城道具奖励？设置为true代表不是商城道具奖励，不需要往商城道具记录里添加
                 	count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_1",
+                    name = "shopmall_39",
                     state = 1,
                     count = 1
                 }
@@ -1434,12 +1477,12 @@ if Shopmall == nil then
             [2] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_2", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_35",
+                    name = "shopmall_38",
                     state = 1,
                     count = 1 
                 }
@@ -1447,12 +1490,12 @@ if Shopmall == nil then
             [3] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_3", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_3",
+                    name = "shopmall_40",
                     state = 1,
                     count = 1
                 }
@@ -1460,111 +1503,118 @@ if Shopmall == nil then
             [4] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_4", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true ,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_68",
-                    state = 1,
-                    count = 5
+                    name = "BPreward_plus_4",
+                    state = 0,
+                    noStore = true ,
+                    count = 1
                 }
             },
             [5] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
-                    state = 1,
-                    count = 5
+                    name = "BPreward_base_5", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
+                    count = 1
                },
                 [2] = { --进阶版奖励
-                    name = "shopmall_35",
-                    state = 1,
+                    name = "BPreward_plus_5",
+                    state = 0,
+                    noStore = true ,
                     count = 1
                 }
             },
             [6] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_31", --奖励名称，奖励图片和描述要用到
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 1
+                    count = 10
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_16",
+                    name = "shopmall_47",
                     state = 1,
                     count = 10
                 }
             },
             [7] = {
                 [1] = { --普通版奖励
-                    name = "BPreward_base_7", --奖励名称，奖励图片和描述要用到
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    noStore = true,
-                    count = 1
+                    count = 10
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_7",
-                    state = 1,
+                    name = "BPreward_plus_7",
+                    state = 0,
+                    noStore = true,
                     count = 1
                 }
             },
             [8] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_8", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true ,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_13",
-                    state = 1,
-                    count = 50
+                    name = "BPreward_plus_8",
+                    state = 0,
+                    noStore = true,
+                    count = 1
                 }
             },
             [9] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_15", --奖励名称，奖励图片和描述要用到
-                    state = 1,
-                    count = 10
+                    name = "BPreward_base_9", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
+                    count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_14",
+                    name = "shopmall_68",
                     state = 1,
-                    count = 5
+                    count = 15
                 }
             },
             [10] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_30", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    name = "BPreward_base_10", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_26",
+                    name = "jing_plus_10",
                     state = 1,
                     count = 1
                 }
             },
             [11] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_29", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    name = "BPreward_base_11", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 5
+                    count = 15
                 }
             },
             [12] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_12", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_20",
+                    name = "shopmall_47",
                     state = 1,
                     count = 20
                 }
@@ -1572,20 +1622,21 @@ if Shopmall == nil then
             [13] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_13", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_13",
-                    state = 1,
+                    name = "BPreward_plus_13",
+                    state = 0,
+                    noStore = true,
                     count = 1
                 }
             },
             [14] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_14", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
@@ -1598,12 +1649,12 @@ if Shopmall == nil then
             [15] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_15", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_cw_1_201",
+                    name = "shopmall_cw_1_202",
                     state = 1,
                     count = 1
                 }
@@ -1615,135 +1666,139 @@ if Shopmall == nil then
                     count = 10
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_17",
-                    state = 1,
-                    count = 10
+                    name = "BPreward_plus_16",
+                    state = 0,
+                    noStore = true,
+                    count = 1
                 }
             },
             [17] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_17", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 10
+                    count = 15
                 }
             },
             [18] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_18", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_22",
+                    name = "shopmall_68",
                     state = 1,
-                    count = 20
+                    count = 15
                 }
             },
             [19] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_19", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_19",
+                    name = "shopmall_68",
                     state = 1,
-                    count = 1
+                    count = 15
                 }
             },
             [20] = {
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 5
+                    count = 20
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_38",
-                    state = 1,
+                    name = "BPreward_plus_20",
+                    state = 0,
+                    noStore = true,
                     count = 1
                 }
             },
             [21] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_21", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_21",
+                    name = "shopmall_48",
                     state = 1,
-                    count = 1
+                    count = 10
                 }
             },
             [22] = {
                 [1] = { --普通版奖励
-                    name = "jing_base_22", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    name = "BPreward_base_22", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_22",
-                    state = 1,
+                    name = "BPreward_plus_22",
+                    state = 0,
+                    noStore = true,
                     count = 1
                 }
             },
             [23] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_23", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 10
+                    count = 20
                 }
             },
             [24] = {
                 [1] = { --普通版奖励
                     name = "BPreward_base_24", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    state = 0,
                     noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_37",
+                    name = "shopmall_68",
                     state = 1,
-                    count = 1
+                    count = 20
                 }
             },
             [25] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_gh_1_101", --奖励名称，奖励图片和描述要用到
+                    name = "shopmall_gh_1_102", --奖励名称，奖励图片和描述要用到
                     state = 1,
                     count = 1
                           },
                 [2] = { --进阶版奖励
-                    name = "shopmall_gh_1_201",
+                    name = "shopmall_gh_1_202",
                     state = 1,
                     count = 1           
                 }
             },
             [26] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_17", --奖励名称，奖励图片和描述要用到
-                    state = 1,
-                    count = 1
-                },
-                [2] = { --进阶版奖励
-                    name = "shopmall_14",
+                    name = "shopmall_48", --奖励名称，奖励图片和描述要用到
                     state = 1,
                     count = 10
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_sstone_5",
+                    state = 1,
+                    count = 300
                 }
             },
             [27] = {
@@ -1753,44 +1808,46 @@ if Shopmall == nil then
                     count = 10
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_27",
+                    name = "shopmall_sstone_6",
                     state = 1,
-                    count = 1
+                    count = 200
                 }
             },
             [28] = {
                 [1] = { --普通版奖励
-                    name = "jing_base_28", --奖励名称，奖励图片和描述要用到
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 1
+                    count = 15
                 },
                 [2] = { --进阶版奖励
-                    name = "jing_plus_28",
+                    name = "shopmall_sstone_7",
                     state = 1,
-                    count = 1
+                    count = 150
                 }
             },
             [29] = {
                 [1] = { --普通版奖励
-                    name = "jing_base_29", --奖励名称，奖励图片和描述要用到
-                    state = 1,
-                    count = 1
-                },
-                [2] = { --进阶版奖励
-                    name = "shopmall_68",
+                    name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
                     count = 20
+                },
+                [2] = { --进阶版奖励
+                    name = "shopmall_sstone_8",
+                    state = 1,
+                    count = 100
                 }
             },
             [30] = {
                 [1] = { --普通版奖励
-                    name = "shopmall_36", --奖励名称，奖励图片和描述要用到
-                    state = 1,
+                    name = "BPreward_base_30", --奖励名称，奖励图片和描述要用到
+                    state = 0,
+                    noStore = true,
                     count = 1
                 },
                 [2] = { --进阶版奖励
-                    name = "shopmall_40",
-                    state = 1,
+                    name = "BPreward_plus_30",
+                    state = 0,
+                    noStore = true,
                     count = 1
                 }
             },
@@ -1846,12 +1903,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
             [36] = {
@@ -1906,12 +1963,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
             [41] = {
@@ -1966,12 +2023,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
             [46] = {
@@ -2026,12 +2083,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
             [51] = {
@@ -2086,12 +2143,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
             [56] = {
@@ -2146,12 +2203,12 @@ if Shopmall == nil then
                 [1] = { --普通版奖励
                     name = "shopmall_68", --奖励名称，奖励图片和描述要用到
                     state = 1,
-                    count = 2
+                    count = 10
                 },
                 [2] = { --进阶版奖励
                     name = "shopmall_68",
                     state = 1,
-                    count = 2
+                    count = 10
                 }
             },
 
@@ -2159,128 +2216,128 @@ if Shopmall == nil then
         }
     }
     Shopmall.BPreward_1={
-        [1]={Givegold=1000},--1.金币+1000 
-        [2]={Set_zl=20},--2.智力+20						 
-        [3]={Set_mj=25},--3.敏捷+25  						
-        [4]={Set_ll=30},--4.力量+30
-        [5]={Giveshopmall=5},--5.征战钥匙+5
-        [6]={Giveshopmall=1},--6.6.二阶紫色首饰装备宝箱 
-        [7]={GiveModifity={"modifiy_shopmall_bp_7"}},--7.魔法回复+2 					
-        [8]={Attr_sds=50},--8.杀敌数+50 					
-        [9]={Giveshopmall=10},--9.基础专长--消耗+10
-        [10]={Giveshopmall=1},--10.二阶紫色防具装备宝箱 	 
-        [11]={Giveshopmall=1,},--11.二阶紫色武器装备宝箱   		
+        [1]={Set_refresh=1},--1.英雄刷新
+        [2]={Attr_bfbtsll=5},--2.百分比提升5%的力量						 
+        [3]={Attr_bfbtsmj=5},--3.百分比提升5%的敏捷						
+        [4]={Attr_bfbtszl=5},--4.百分比提升5%的智力
+        [5]={Attr_bfbtsqsx=5},--5.百分比提升5%的全属性
+        [6]={Giveshopmall=10},--6.征战钥匙+10
+        [7]={Giveshopmall=10},--7.征战钥匙+10				
+        [8]={Attr_sds=100},--8.杀敌数+100 					
+        [9]={Attr_msmjsds=5},--9.每10S杀敌数+5
+        [10]={Attr_wlct=2},--10.物理穿透+2 	 
+        [11]={Attr_mfct=2,},--11.魔法穿透+2 		
         [12]={GiveModifity={"modifiy_shopmall_bp_12"}},--12.技能伤害+5% 		   		  
-        [13]={Attr_wlbjsh=20,},--13.暴击伤害+20% 			 	
-        [14]={Attr_wlbjgl=2,},--14.暴击概率+2% 					
+        [13]={Attr_wlbjsh=20,Attr_mfbjsh=20},--13.暴击伤害+20% 			 	
+        [14]={Attr_wlbjgl=2,Attr_mfbjgl=2},--14.暴击概率+2% 					
         [15]={Attr_grjndj=1},--15.个人技能等级+1
         [16]={Giveshopmall=10},--16.征战钥匙+10
         [17]={Set_refresh=1},--17.选英雄界面刷新英雄次数+1 永久（如果有了则 晶石+2000，不会和月卡重复，且永久生效，下一个月也还是会出现这个奖励）
         [18]={Attr_fjsh=2},--18.附加伤害+2% 					
         [19]={Attr_zzsh=2},--19.最终伤害+2% 					 
-        [20]={Giveshopmall=5},--20.征战钥匙+5
+        [20]={Giveshopmall=20},--20.征战钥匙+20
         [21]={Attr_grjndj=1,},--21.个人技能等级+1 				
-        [22]={Giveshopmall=2000},--22.晶石+2000 
-        [23]={Attr_jqjc=3},--23.金钱加成+3% 					 
-        [24]={Attr_jyjc=3},--24.经验加成+3% 					
-        [25]={Giveshopmall=1},--25.第一赛季基础光环
-        [26]={Giveshopmall=10},--26.高级专长--消耗+10 	
+        [22]={Attr_tmz=10},--22.天命值+10
+        [23]={Attr_jqjc=5},--23.金钱加成+5% 					 
+        [24]={Attr_jyjc=5},--24.经验加成+5% 					
+        [25]={Giveshopmall=1},--25.第二赛季基础光环
+        [26]={Giveshopmall=10},--26.超魔专长--消耗+10 	
         [27]={Giveshopmall=10},--27.征战钥匙+10
-        [28]={Giveshopmall=3000},--28.晶石+3000
-        [29]={Giveshopmall=3000},--29.晶石+3000
-        [30]={Giveshopmall=1},--30.三阶紫色特殊装备宝箱
+        [28]={Giveshopmall=15},--28.征战钥匙+15
+        [29]={Giveshopmall=20},--29.征战钥匙+20
+        [30]={Attr_qhsdlbs=0.1}, --30.掉落强化石+10%
         [31]={Giveshopmall=2},
         [32]={Giveshopmall=2},
         [33]={Giveshopmall=2},
         [34]={Giveshopmall=2},
-        [35]={Giveshopmall=2},
+        [35]={Giveshopmall=10},
         [36]={Giveshopmall=2},
         [37]={Giveshopmall=2},
         [38]={Giveshopmall=2},
         [39]={Giveshopmall=2},
-        [40]={Giveshopmall=2},
+        [40]={Giveshopmall=10},
         [41]={Giveshopmall=2},
         [42]={Giveshopmall=2},
         [43]={Giveshopmall=2},
         [44]={Giveshopmall=2},
-        [45]={Giveshopmall=2},
+        [45]={Giveshopmall=10},
         [46]={Giveshopmall=2},
         [47]={Giveshopmall=2},
         [48]={Giveshopmall=2},
         [49]={Giveshopmall=2},
-        [50]={Giveshopmall=2},
+        [50]={Giveshopmall=10},
         [51]={Giveshopmall=2},
         [52]={Giveshopmall=2},
         [53]={Giveshopmall=2},
         [54]={Giveshopmall=2},
-        [55]={Giveshopmall=2},
+        [55]={Giveshopmall=10},
         [56]={Giveshopmall=2},
         [57]={Giveshopmall=2},
         [58]={Giveshopmall=2},
         [59]={Giveshopmall=2},
-        [60]={Giveshopmall=2},
+        [60]={Giveshopmall=10},
     }
     Shopmall.BPreward_2={
-        [1]={Giveshopmall=3000},--晶石+3000
-        [2]={Giveshopmall=1},--2.三阶紫色防具装备宝箱
-        [3]={Giveshopmall=3000},--晶石+3000
-        [4]={Giveshopmall=5},--征战钥匙+5
-        [5]={Giveshopmall=1},--5.三阶紫色武器装备宝箱
-        [6]={Giveshopmall=10},--6.中级专长--消耗+10 
-        [7]={Giveshopmall=3000},--7.晶石+3000
-        [8]={Giveshopmall=50},--8.技能秘笈数量+50
-        [9]={Giveshopmall=5},--9.宝物数量+5
-        [10]={Giveshopmall=1},--10.10.三阶紫色特殊装备宝箱
-        [11]={Giveshopmall=5},--11.征战钥匙+5
-        [12]={Giveshopmall=20},--12.秘术药剂+20
-        [13]={Giveshopmall=3000},--晶石+3000
-        [14]={Giveshopmall=3000},--14.晶石+3000
+        [1]={Giveshopmall=1},--三阶橙色首饰装备宝箱 shopmall_39
+        [2]={Giveshopmall=1},--2.    三阶橙色防具装备宝箱
+        [3]={Giveshopmall=1},--三阶橙色特殊装备宝箱shopmall_40
+        [4]={Attr_xyz=10},--幸运值+10
+        [5]={Set_jjzc=1},--5.初始额外获得一个初级专长
+        [6]={Giveshopmall=10},--6.超魔专长消耗数量+10
+        [7]={Set_zjzc=1},--7.初始额外使用一个中级专长
+        [8]={Attr_treasure=1},--8.宝物槽位数量+1
+        [9]={Giveshopmall=15},--9.征战钥匙+15
+        [10]={Giveshopmall=50000},--10.晶石+50000
+        [11]={Giveshopmall=15},--11.征战钥匙+15
+        [12]={Giveshopmall=20},--12.超魔专长消耗数量+20
+        [13]={Attr_tmz=10},--天命值+10
+        [14]={Giveshopmall=50000},--14.晶石+50000
         [15]={Giveshopmall=1},--15.第一赛季进阶宠物奖励
-        [16]={Giveshopmall=10},--16.高级专长--消耗+10
-        [17]={Giveshopmall=10},--17.征战钥匙+10
-        [18]={Giveshopmall=20},--18.守护药剂+20
-        [19]={Giveshopmall=3000},--19.晶石+3000
-        [20]={Giveshopmall=1},--20.20.三阶橙色防具装备宝箱
-        [21]={Giveshopmall=3000},--        23.晶石+3000
-        [22]={Giveshopmall=3000},--        23.晶石+3000
-        [23]={Giveshopmall=10},--        23.征战钥匙+10
-        [24]={Giveshopmall=1},--24.三阶橙色武器装备宝箱
+        [16]={Set_gjzc=1},--16.初始额外使用一个高级专长
+        [17]={Giveshopmall=15},--17.征战钥匙+15
+        [18]={Giveshopmall=15},--18.征战钥匙+15
+        [19]={Giveshopmall=15},--19.征战钥匙+15
+        [20]={Set_cmzc=1},--20.初始额外使用一个超魔专长
+        [21]={Giveshopmall=10},-- 特殊专长消耗数量+10
+        [22]={Attr_tmz3=10},--        23.高品爆率+10
+        [23]={Giveshopmall=20},--        23.征战钥匙+20
+        [24]={Giveshopmall=20},--24.征战钥匙+20
         [25]={Giveshopmall=1},--光环
-        [26]={Giveshopmall=10},--26.宝物数量+10
-        [27]={Giveshopmall=5000},--29.晶石+5000
-        [28]={Giveshopmall=5000},--28.晶石+5000
-        [29]={Giveshopmall=20},--29.征战钥匙+20
-        [30]={Giveshopmall=1},--30.三阶橙色特殊装备宝箱
-        [31]={Giveshopmall=2},
+        [26]={Giveshopmall=300},--26..5级强化石+300
+        [27]={Giveshopmall=200},--29.6级强化石+200
+        [28]={Giveshopmall=150},--28.7级强化石+150
+        [29]={Giveshopmall=100},--29.8级强化石+100
+        [30]={Attr_qhsdlbs=0.1},--30.结算时掉落强化石+10%
+        [31]={Giveshopmall=2},-----
         [32]={Giveshopmall=2},
         [33]={Giveshopmall=2},
         [34]={Giveshopmall=2},
-        [35]={Giveshopmall=2},
+        [35]={Giveshopmall=10},
         [36]={Giveshopmall=2},
         [37]={Giveshopmall=2},
         [38]={Giveshopmall=2},
         [39]={Giveshopmall=2},
-        [40]={Giveshopmall=2},
+        [40]={Giveshopmall=10},
         [41]={Giveshopmall=2},
         [42]={Giveshopmall=2},
         [43]={Giveshopmall=2},
         [44]={Giveshopmall=2},
-        [45]={Giveshopmall=2},
+        [45]={Giveshopmall=10},
         [46]={Giveshopmall=2},
         [47]={Giveshopmall=2},
         [48]={Giveshopmall=2},
         [49]={Giveshopmall=2},
-        [50]={Giveshopmall=2},
+        [50]={Giveshopmall=10},
         [51]={Giveshopmall=2},
         [52]={Giveshopmall=2},
         [53]={Giveshopmall=2},
         [54]={Giveshopmall=2},
-        [55]={Giveshopmall=2},
+        [55]={Giveshopmall=10},
         [56]={Giveshopmall=2},
         [57]={Giveshopmall=2},
         [58]={Giveshopmall=2},
         [59]={Giveshopmall=2},
-        [60]={Giveshopmall=2},
+        [60]={Giveshopmall=10},
     }
     Shopmall.quest_day_exp=30
     Shopmall.quest_week_exp=100
@@ -2561,6 +2618,9 @@ function Shopmall:SetHerodata(unit)
     ---给通行证普通奖励
     for i=1,temp.exp.level do
         self:SetReWard( unit,self.BPreward_1[i])
+        if  Shopmall:HasItem(unit:GetPlayerOwnerID(),"shopmall_1")==true then   --有无通行证判断
+           self:SetReWard( unit,self.BPreward_2[i])
+        end
     end
 end
 --[[
@@ -2658,7 +2718,6 @@ function Shopmall:SetReWard( unit,reward,shopmallitemname)---给成就奖励和�
     --if player == nil then return end
     --local unit = player:GetAssignedHero()
     if unit==nil then
-        print("1111111111=="..playerid)
         return
     end
 	for k,v in pairs(reward) do
@@ -2967,7 +3026,11 @@ end
 function Shopmall:GetPlayerRefreshTimes(playerid)
     local times=0
     local temp=self:GetPlayerBP(playerid)
-    if temp.bonus[17][1]['state']~=0 and temp.bonus[17][1]['state']~=1 then
+
+    if temp.exp.level>=1 then
+        times=times+1
+    end 
+    if temp.exp.level>=17 then
         times=times+1
     end 
     local itemdata=self:GetMallState(playerid)
@@ -3042,15 +3105,20 @@ function Shopmall:SetPlayerBP(playerid,data,isLast)
     if isLast then
         Shopmall:uploadQuest(5)
     end
+    
     if data.reward then
+        
         for k, v in pairs(data.reward['basic']) do
-            temp.bonus[tonumber(k)][1]['state']=v.time
+            if temp.bonus[tonumber(k)][1]['state']==1 then
+                temp.bonus[tonumber(k)][1]['state']=v.time
+            end
         end
         for k, v in pairs(data.reward.advanced) do
-            temp.bonus[tonumber(k)][2]['state']=v.time
+            if temp.bonus[tonumber(k)][2]['state']==1 then
+                temp.bonus[tonumber(k)][2]['state']=v.time
+            end
         end
     end
-    
     for k, v in pairs(temp.quest) do  ---添加经验用来前端显示，主要是上传服务器不能带经验
         for kk, vv in pairs(v) do
             for aa, bb in pairs(Shopmall['quest_'..k]) do
@@ -3317,8 +3385,9 @@ function Shopmall:tzj_battlepass_request_get_reward(data)
                 if arg2 then
                     Shopmall:SetStone(data.PlayerID,"3",2,arg2) --刷新晶石数量
                 end
-                Shopmall:UpdatePlayerdata( data.PlayerID,playerdata.bonus[data.level][data.bptype]['name'],count,arg3[ftype][tostring(data.level)])  --刷新商城物品
-                --PrintTable(arg3)
+                local oldnum=Shopmall:GetItemNum(data.PlayerID,playerdata.bonus[data.level][data.bptype]['name'])
+                
+                Shopmall:UpdatePlayerdata( data.PlayerID,playerdata.bonus[data.level][data.bptype]['name'],count+oldnum,arg3[ftype][tostring(data.level)])  --刷新商城物品
                 SendToClient(data.PlayerID,"tzj_battlepass_update_reward",{bptype=data.bptype,level = data.level, success = true,time=arg3[ftype][tostring(data.level)]})
                 return true
             else
