@@ -58,6 +58,8 @@ function item_sq_pd:OnRefresh( kv )
 	self.grjndj=0
 	self.wlbjsh= 0
 	self.wlbjgl= 0
+	self.mfbjsh= 0
+	self.mfbjgl= 0
 	self.lqsj= 0
 --1
 	self.zzjt_time= 0
@@ -149,12 +151,19 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.wlbjsh then
 			self.wlbjsh=itempro.item_attributes.wlbjsh
 		end
+		if itempro.item_attributes.mfbjsh then
+			self.mfbjsh=itempro.item_attributes.mfbjsh
+		end
 		if itempro.item_attributes.shjm then
 			self.shjm=itempro.item_attributes.shjm
 		end
 		if itempro.item_attributes.wlbjgl then
 			self.wlbjgl=itempro.item_attributes.wlbjgl
 		end
+		if itempro.item_attributes.mfbjgl then
+			self.mfbjgl=itempro.item_attributes.mfbjgl
+		end
+
 		if itempro.item_attributes.grjndj then
 			self.grjndj=itempro.item_attributes.grjndj
 		end
@@ -314,6 +323,8 @@ function item_sq_pd:OnRefresh( kv )
 		attributes["lqsj"] = self.lqsj
 		attributes["wlbjgl"] = self.wlbjgl
 		attributes["wlbjsh"] = self.wlbjsh
+		attributes["mfbjgl"] = self.mfbjgl
+		attributes["mfbjsh"] = self.mfbjsh
 		attributes["shjm"] = self.shjm
 		attributes["grjndj"] = self.grjndj
 		
@@ -419,11 +430,17 @@ function item_sq_pd:OnRefresh( kv )
 		if itempro.item_attributes.wlbjsh then
 			self.wlbjsh=itempro.item_attributes.wlbjsh
 		end
+		if itempro.item_attributes.mfbjsh then
+			self.mfbjsh=itempro.item_attributes.mfbjsh
+		end
 		if itempro.item_attributes.shjm then
 			self.shjm=itempro.item_attributes.shjm
 		end
 		if itempro.item_attributes.wlbjgl then
 			self.wlbjgl=itempro.item_attributes.wlbjgl
+		end
+		if itempro.item_attributes.mfbjgl then
+			self.mfbjgl=itempro.item_attributes.mfbjgl
 		end
 		if itempro.item_attributes.grjndj then
 			self.grjndj=itempro.item_attributes.grjndj
@@ -612,6 +629,8 @@ function item_sq_pd:OnDestroy( )
 		attributes["lqsj"] = self.lqsj and -self.lqsj or nil
 		attributes["wlbjgl"] = self.wlbjgl and -self.wlbjgl or nil
 		attributes["wlbjsh"] = self.wlbjsh and -self.wlbjsh or nil
+		attributes["mfbjgl"] = self.mfbjgl and -self.mfbjgl or nil
+		attributes["mfbjsh"] = self.mfbjsh and -self.mfbjsh or nil
 		attributes["shjm"] = self.shjm and -self.shjm or nil
 		attributes["grjndj"] = self.grjndj and -self.grjndj or nil
 		

@@ -200,7 +200,6 @@ function item_net_wq_ll_1_1:ReFreshData()
 			end
 			
 			zdl = math.ceil(zdl)
-			
 			self.itemtype=buff_list
 			CustomNetTables:SetTableValue( "ItemsInfo", string.format( "%d", self:GetEntityIndex() ), buff_list)
 			self.zdl = zdl
@@ -355,6 +354,138 @@ function item_net_wq_ll_1_1:EnhanceData(isfocus)----强化装备消耗石头，�
 				end)
 				
 			end
+		
+	end
+end
+--error 0:未知错误1满级了2=该装备在服务器上不存在，3=洗练石数量不足，4=装备数据更新失败
+function item_net_wq_ll_1_1:ReFineData()----洗练
+	if IsServer() then
+			self.refinestone=1--需要的石头 
+			local stonename="shopmall_sstone_2"--需要的石头 
+			if self.tempdata==nil then
+				local tempdata=CustomNetTables:GetTableValue( "ItemsInfoShow", string.format( "%d", self:GetEntityIndex() ))
+				self.tempdata={}
+				self.tempdata['item_attributes']=tempdata['item_attributes']
+				self.tempdata['item_attributes_spe']=tempdata['item_attributes_spe']
+				self.tempdata['rf']=tempdata['rf']
+				
+			end
+			if self.tempdata.rf==nil then
+				self.refinestone=1
+			else
+				if self.tempdata.rf<=10 then  --是否强化满了
+					self.refinestone=self.tempdata.rf+1
+				else
+					SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_ui_refine_return",{success=false,item=self:GetEntityIndex(),error=1})
+					return 1
+				end
+			end
+			local stonenum=Shopmall:GetItemNum(self:GetPurchaser():GetPlayerOwnerID(),stonename)
+			if stonenum<self.refinestone then
+				SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_ui_refine_return",{success=false,item=self:GetEntityIndex(),error=3})
+				return 3
+			end
+			local issuc=true
+			self.tempdata.rf=tonumber(self.tempdata.rf)
+			local tempdata=CustomNetTables:GetTableValue( "ItemsInfoShow", string.format( "%d", self:GetEntityIndex() ))
+			local temp=tempdata
+			if issuc==true then
+				temp['rf']=self.tempdata.rf+1 --强化成功存入新的数据
+			end
+			self.baseattr=Sachievement:DeepCopy(temp)    --暂存洗练前的属性，用来恢复用
+			local namearray= string.split(self:GetName(), "_")
+			local selftype="weapon"
+			if namearray[3]== "wq" then
+				selftype="weapon"
+			end
+			if namearray[3]== "fj" then
+				selftype="clothes"
+			end
+			if namearray[3]== "ss" then
+				selftype="jewelry"
+			end
+			if namearray[3]== "ts" then
+				selftype="assistitem"
+			end
+			
+			for k,v in pairs(temp.item_attributes) do
+				if type(v) == "table" then
+					for kk,vv in pairs(v) do --获取总数值
+						local cc=(NetItem_Rare["rare_"..self.pz]["pro_value"][2])*(NetRare_Pro_Value[selftype][k][self.lv][2])
+						local tempmax=cc-vv
+						local tempmin=(cc-vv)/10
+						local result=RandomFloat(tempmin,tempmax)	
+						--print("===",tempmin,tempmax,result)
+						temp.item_attributes[k][kk]=string.format("%.2f",vv+result)
+					end
+				elseif type(v) == "number" then
+					local cc=(NetItem_Rare["rare_"..self.pz]["pro_value"][2])*(NetRare_Pro_Value[selftype][k][self.lv][2])
+					local tempmax=cc-v
+					local tempmin=tempmax/10
+					local result=RandomFloat(tempmin,tempmax)
+					--print("===",tempmin,tempmax,result)
+					temp.item_attributes[v] = string.format("%.2f",v+result)
+				end
+			end
+			
+			for k,v in pairs(temp.item_attributes_spe) do
+				if type(v) == "table" then
+					for kk,vv in pairs(v) do --获取总数值
+						local cc=(NetItem_Rare["rare_"..self.pz]["pro_value"][2])*(NetRare_Pro_Value[selftype][k][self.lv][2])
+						local tempmax=cc-vv
+						local tempmin=tempmax/10
+						local result=RandomFloat(tempmin,tempmax)
+						--print("===",tempmin,tempmax,result)
+						temp.item_attributes_spe[k][kk]=string.format("%.2f",vv+result)	
+					end
+				elseif type(v) == "number" then
+					local cc=(NetItem_Rare["rare_"..self.pz]["pro_value"][2])*(NetRare_Pro_Value[selftype][k][self.lv][2])
+					local tempmax=cc-v
+					local tempmin=tempmax/10
+					local result=RandomFloat(tempmin,tempmax)
+					--print("===",tempmin,tempmax,result)
+					temp.item_attributes_spe[v] = string.format("%.2f",v+result)
+				end
+			end
+			
+			self.tempdata=Sachievement:DeepCopy(temp)
+			self:ReFreshData()
+			---装备强化
+			--@param #number PlayerID 玩家ID
+			--@param #string itemServerID 装备服务器ID
+			--@param #number score 装备新的战斗力
+			--@param #table attr 装备强化以后新的属性数据
+			--@param #string stoneName 强化石名称
+			--@param #number stoneCount 消耗的强化石数量
+			--@param #function callback 回调函数，调用参数：success,arg2,arg3
+			--success=true时，arg2、arg3均为nil
+			--success=false时，arg2代表失败原因：-1=服务器未响应，100=本地调用传入的参数异常，0=未知错误，1=服务器返回的参数异常，2=该装备在服务器上不存在，3=减少强化石数量失败（如果是数量不足，则arg3就代表实际拥有的强化石数量），4=装备数据更新失败
+			SrvNetEquip.Enhance(self:GetPurchaser():GetPlayerOwnerID(),self.serverID,self.zdl,temp,stonename,self.refinestone,issuc,function(success,arg2,arg3)
+				if success then
+					print("rf_true")
+					Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),stonename,(stonenum-self.refinestone),nil)
+					if issuc==true then
+						self.tempdata.rf=self.tempdata.rf+1
+						SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_ui_refine_return",{success=true,item=self:GetEntityIndex(),attr=temp,score=self.zdl})
+					
+					end
+					return 5
+				else
+					if self.baseattr then  --如果失败，则数值不变
+						self.tempdata=self.baseattr  
+						self:ReFreshData()
+					end
+					if arg2==3 then
+						Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),stonename,arg3,nil)
+					end
+					SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_ui_refine_return",{success=false,error=arg2,item=self:GetEntityIndex()})
+					print("rf_false",arg2,arg3)
+					return 6
+				end
+			
+			end)
+				
+			
 		
 	end
 end

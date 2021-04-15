@@ -40214,7 +40214,7 @@
 		"AbilityCastRange"	"1000"
 		// Time
 		// -------------------------------------------------------------------------------------------------------------
-		"AbilityChannelTime"	"4"
+		"AbilityChannelTime"	"1"
 		"precache"
 		{
 			"particle"	"particles/status_fx/status_effect_shaman_shackle.vpcf"

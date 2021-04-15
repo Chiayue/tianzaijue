@@ -289,7 +289,7 @@ if Sachievement == nil then
 			},
 			["16_2"]={
 				bonus=16,--所需完成次数 
-				reward={Attr_gjsd=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 			
 
@@ -300,7 +300,7 @@ if Sachievement == nil then
 			
 			["17_3"]={
 				bonus=17,--所需完成次数 
-				reward={Attr_lqsj=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 			
 
@@ -311,7 +311,7 @@ if Sachievement == nil then
 			
 			["18_3"]={
 				bonus=18,--所需完成次数 
-				reward={Attr_lqsj=1,}
+				reward={Attr_zzsh=0.5,}
 			},
 			
 
@@ -322,7 +322,7 @@ if Sachievement == nil then
 			
 			["19_4"]={
 				bonus=19,--所需完成次数  
-				reward={Attr_mfhf=5,}
+				reward={Attr_zzsh=0.5,}
 			},
 
 
@@ -939,6 +939,35 @@ function Sachievement:GetAchiThis( playerid)
 end
 function Sachievement:GetAchiState( playerid)
 	return self.UnitAchi[playerid]
+end
+--获取通关最高难度
+function Sachievement:GetMaxdifferent(playerid)
+	local AchiNetdata=SrvAchv.GetPlayerData(playerid)
+	local diffinfo=GetNetTableValue("config","difficulty_modes")
+	local max=0   --已经通关的最高难度
+	local maxtype=0 --已经通关的最高难度的最高模式
+	local maxdiff=7 --最高难度
+	for k,v in pairs(diffinfo) do
+		if tonumber(k)>maxdiff then 
+			maxdiff=tonumber(k)
+		end
+	end
+	if AchiNetdata==nil  then
+		return max,maxtype,maxdiff
+	end
+	for k,v in pairs(AchiNetdata) do
+		local namearray= string.split(k, "_")
+		if namearray[1]=="difficulty" then
+			if tonumber(namearray[2])>=max then
+				max=tonumber(namearray[2])
+			end
+			if namearray[3] then
+				maxtype=namearray[3]
+			end
+		end
+	end
+
+	return max,maxtype,maxdiff
 end
 function Sachievement:SetReWard( unit,reward,maplevel)---给成就奖励和地图等级
 	local level=1

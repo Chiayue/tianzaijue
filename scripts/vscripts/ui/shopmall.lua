@@ -95,6 +95,7 @@ LinkLuaModifier( "modifiy_shopmall_tszc_9","lua_modifiers/mall/modifiy_shopmall_
 LinkLuaModifier( "modifiy_shopmall_tszc_10","lua_modifiers/mall/modifiy_shopmall_tszc_10", LUA_MODIFIER_MOTION_NONE )
 if Shopmall == nil then
     Shopmall = {}
+    require("ui.shopquest")
     Shopmall.Playermall = {}
     Shopmall.unitzc = {}
     Shopmall.unit_battlepass = {}
@@ -1116,6 +1117,24 @@ if Shopmall == nil then
             catalog1="consumable",
             catalog2="enhance",
           --  notSale=true,
+            canuse=false,    
+        },
+        shopmall_xlstone_1={--     1阶洗练石
+            price_magic=1000,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+            notSale=true,
+            canuse=false,    
+        },
+        shopmall_czstone_1={--     1阶重铸石
+            price_magic=10000,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+            notSale=true,
             canuse=false,    
         },
         shopmall_68 ={ ---征战钥匙
@@ -2339,153 +2358,112 @@ if Shopmall == nil then
         [59]={Giveshopmall=2},
         [60]={Giveshopmall=10},
     }
-    Shopmall.quest_day_exp=30
-    Shopmall.quest_week_exp=100
+    --Shopmall.quest_day_exp=30
+    --Shopmall.quest_week_exp=100
     Shopmall.quest_day={
-            [1]={name="difficulty_0",
-                 times=1,
-                 exp=50
-                },--通关一次任意难度
-            [2]={name="difficulty_1",
-                 times=1,
-                 exp=50
-           },--通关N1
-            [3]={name="difficulty_2",
-                times=1,
-                exp=55
-           },--通关N2
-            [4]={name="difficulty_3",
-                times=1,
-                exp=60
-           },--通关N3
-            [5]={name="difficulty_4",
-                times=1,
-                exp=65
-           },--通关N4
-            [6]={name="difficulty_5",
-                times=1,
-                exp=70
-           },--通关N5
-            [7]={name="hero_pass_1",
-                times=1,
+            [1]={name="hero_pass_1",
+                times=2,
                 exp=50
            },--使用力量英雄通关任意难度
-            [8]={name="hero_pass_2",
-                times=1,
+            [2]={name="hero_pass_2",
+                times=2,
                 exp=50
            },--使用敏捷英雄通关任意难度
-            [9]={name="hero_pass_3",
-                times=1,
+            [3]={name="hero_pass_3",
+                times=2,
                 exp=50
            },--使用智力英雄通关任意难度
-            [10]={name="hero_killboss_1",
-                times=1,
+            [4]={name="hero_killboss_1",
+                times=3,
                 exp=50
            },--击杀BOSS伐木机
-            [11]={name="hero_killboss_2",
-                times=1,
+            [5]={name="hero_killboss_2",
+                times=3,
                 exp=50
            },--击杀BOSS卡尔
-            [12]={name="hero_killboss_3",
-                times=1,
+            [6]={name="hero_killboss_3",
+                times=3,
                 exp=50
            },--击杀BOSS死亡骑士
-            [13]={name="hero_killboss_4",
-                times=1,
+            [7]={name="hero_killboss_4",
+                times=3,
                 exp=50
            },--击杀BOSS山丘巨人
-            [14]={name="hero_killboss_5",
-                times=1,
+            [8]={name="hero_killboss_5",
+                times=3,
                 exp=50
            },--击杀BOSS凤凰
-            [15]={name="hero_killboss_6",
-                times=1,
+            [9]={name="hero_killboss_6",
+                times=3,
                 exp=50
            },--击杀BOSS幻影刺客
-            [16]={name="hero_killunit_1",
+            [10]={name="hero_killunit_1",
                 times=5000,
                 exp=60
            },--击杀5000个小怪
-            [17]={name="hero_getboss_1",
-                times=500,
-                exp=60
-           },--获得500点BOSS点数
-           [18]={name="difficulty_6",
-                times=1,
+            [11]={name="hero_getboss_1",
+                times=1000,
                 exp=70
-           },--通关N5
-           [19]={name="difficulty_7",
-                times=1,
-                exp=75
-           },--通关N5
-
+           },--获得500点BOSS点数
+          --  [1]={name="difficulty_1",
+          --       times=1,
+          --       exp=50
+         --  },--通关N1
         }
         Shopmall.quest_week={
-            [1]={name="difficulty_5_2",
-                times=1,
-                exp=250
-           },--通关N5狂暴模式
-            [2]={name="difficulty_6_3",
-                times=1,
-                exp=250
-           },--通关N5奥术模式
-            [3]={name="difficulty_7_4",
-                times=1,
-                exp=250
-           },--通关N5灾难模式
-            [4]={name="difficulty_8_2",
-                times=1,
-                exp=250
-           },--通过N5地狱模式
-            [5]={name="difficulty_9_3",
-                times=1,
-                exp=250
-           },--通关N5赏金模式
-            [6]={name="difficulty_10_4",
-                times=1,
-                exp=250
-           },--通关N5噩梦模式
-            [7]={name="hero_killunit_1",
-                times=30000,
+            
+            [1]={name="hero_killunit_1",
+                times=50000,
                 exp=300
-           },--累积击杀小怪30000只
-           
-            [8]={name="difficulty_11_5",
-                times=1,
+           },--累积击杀小怪30000只 
+           [2]={name="hero_getboss_1",
+                times=10000,
+                exp=400
+           },--获得500点BOSS点数
+           [3]={name="hero_killboss_1",
+                times=20,
                 exp=300
-           },--累积通关N1 1次
-            [9]={name="difficulty_12_5",
-                times=1,
+           },--击杀BOSS伐木机
+            [4]={name="hero_killboss_2",
+                times=20,
                 exp=300
-           },--累积通关N2 1次
-            [10]={name="difficulty_13_6",
-                times=1,
+           },--击杀BOSS卡尔
+            [5]={name="hero_killboss_3",
+                times=20,
                 exp=300
-           },--累积通关N3 1次
-            [11]={name="difficulty_14_7",
-                times=1,
+           },--击杀BOSS死亡骑士
+            [6]={name="hero_killboss_4",
+                times=20,
                 exp=300
-           },--累积通关N4 1次
-            [12]={name="difficulty_7",
-                times=3,
-                exp=250
-           },--累积通关N5 3次
-            [13]={name="difficulty_8",
-                times=3,
-                exp=275
-           },--累积通关N5 3次
-           [14]={name="difficulty_9",
-                times=3,
+           },--击杀BOSS山丘巨人
+            [7]={name="hero_killboss_5",
+                times=20,
                 exp=300
-           },--累积通关N5 3次
-           [15]={name="difficulty_10",
-                times=3,
+           },--击杀BOSS凤凰
+            [8]={name="hero_killboss_6",
+                times=20,
                 exp=300
-           },--累积通关N5 3次
-           [13]={name="hero_getboss_1",
-                times=3000,
+           },--击杀BOSS幻影刺客
+           [9]={name="hero_pass_1",
+                times=8,
                 exp=300
-           }--获得500点BOSS点数
+           },--使用力量英雄通关任意难度
+            [10]={name="hero_pass_2",
+                times=8,
+                exp=300
+           },--使用敏捷英雄通关任意难度
+            [11]={name="hero_pass_3",
+                times=8,
+                exp=300
+            },
+         --   [1]={name="difficulty_5_2",
+          --      times=1,
+         --       exp=250
+         --  },--通关N5狂暴模式
+        -- [3]={name="difficulty_10",
+          --      times=3,
+         --       exp=300
+         --  },--累积通关N5 3次
         }
 
 end
@@ -2928,13 +2906,14 @@ function Shopmall:InitQuest(playerid,ftype)
     print("initquest",playerid,ftype)
     local quest = {}
     if ftype==1 then
-        quest["day"]=Shopmall:SetQuest("day")
+        quest["day"]=Shopmall:SetQuest("day",playerid)
     elseif ftype==2 then
-        quest["week"]=Shopmall:SetQuest("week")
+        quest["week"]=Shopmall:SetQuest("week",playerid)
     else
-        quest["day"]=Shopmall:SetQuest("day")
-        quest["week"]=Shopmall:SetQuest("week")
+        quest["day"]=Shopmall:SetQuest("day",playerid)
+        quest["week"]=Shopmall:SetQuest("week",playerid)
     end
+    
     Shopmall.unit_quest[playerid] = quest
 end
 function Shopmall:uploadQuest(times)--统一上传初始化的任务
@@ -2984,7 +2963,7 @@ function Shopmall:InitQuestAgain(quest,times)
                     end
                 end
                 if isinitfalse then --有初始化失败的情况，就把天和周任务都重新初始化
-                    Shopmall:InitQuestAgain(quest,2)---初始化失败再重新初始化该玩家的任务，尝试1次 
+                    --Shopmall:InitQuestAgain(quest,2)---初始化失败再重新初始化该玩家的任务，尝试1次   去掉了，不然成无限提交了
                 end
             end
             return true
@@ -3000,10 +2979,12 @@ function Shopmall:InitQuestAgain(quest,times)
     
     end)
 end
-function Shopmall:SetQuest(ftype)
+function Shopmall:SetQuest(ftype,playerid)
     local quest={}
     local typename=""
     local info={}
+    local diffinfo=GetNetTableValue("config","difficulty_modes")
+    local maxpass,maxtype,maxdiff=Sachievement:GetMaxdifferent(playerid)
     
     if ftype=="day" then
         typename="quest_day"
@@ -3014,12 +2995,61 @@ function Shopmall:SetQuest(ftype)
         table.insert(info,i)
     end
     info=RandomNoRepeat(info,3)---随机不重复
-    --info={11,12,13}
+    local diffnum=0
+    
     for i=1,#info do
         local num=info[i]
         local name=Shopmall[typename][num]['name']
-        quest[name]={}
-        quest[name]['state']="0/"..Shopmall[typename][num]['times']
+        if string.split(name, "_")[1]=="difficulty" then
+            diffnum=diffnum+1
+        end
+    end
+    
+    local minnewdiff=1
+    local maxnewdiff=7
+    local maxdiff = 47
+    if (maxpass+2)<=maxdiff then
+        minnewdiff=maxpass
+        maxnewdiff=maxpass+2
+    else
+        minnewdiff= maxdiff-2
+        maxnewdiff=maxdiff
+    end
+    local newdifftable={}
+    for i=minnewdiff,maxnewdiff do
+        table.insert(newdifftable,i)
+    end
+    local newdiffinfo=RandomNoRepeat(newdifftable,diffnum)---随机不重复 ---随机通关难度的表
+    --info={11,12,13}
+    local tempnum=1
+    for i=1,#info do
+        local num=info[i]
+        local name=Shopmall[typename][num]['name']
+        if string.split(name, "_")[1]=="difficulty" then
+            if ftype=="day" then
+                name=Shopmall.quest_day_exp[newdiffinfo[tempnum]]['name'] 
+                quest[name]={}
+                quest[name]['state']="0/"..Shopmall.quest_day_exp[newdiffinfo[tempnum]]['times'] --统一为通关一次
+                
+            else
+                if newdiffinfo[tempnum]>=5 and RollPercent(50) then   --周任务有一定概率随机到特殊任务
+                    name=Shopmall.quest_week_2_exp[newdiffinfo[tempnum]]['name'] 
+                    quest[name]={}
+                    quest[name]['state']="0/"..Shopmall.quest_week_2_exp[newdiffinfo[tempnum]]['times'] --统一为通关五次
+                    
+                else
+                    name=Shopmall.quest_week_1_exp[newdiffinfo[tempnum]]['name'] 
+                    quest[name]={}
+                    quest[name]['state']="0/"..Shopmall.quest_week_1_exp[newdiffinfo[tempnum]]['times'] --统一为通关五次
+                end
+            end
+            tempnum=tempnum+1
+        else
+            quest[name]={}
+            quest[name]['state']="0/"..Shopmall[typename][num]['times']
+        end
+
+        
     end
     return quest
 end
@@ -3060,79 +3090,119 @@ end
 
 function Shopmall:SetPlayerBP(playerid,data,isLast)
     
-   --[[for k, v in pairs(data.quest.week) do
-        if k=="hero_getboss_1" then
-            data.quest.week['hero_getboss_1']=nil
-            data.quest.week['hero_killunit_1']={state="0/30000"}
-        end
-    end]]
-    --PrintTable(data)
-    local basedata=Sachievement:DeepCopy(Shopmall.battlepass)
-    local tmp1,tmp2=math.modf( data.exp / 100 )
-    basedata.exp.now=math.ceil(tmp2*100)--当前经验
-    basedata.exp.level=tmp1--当前等级
-    basedata.exp.max=100--(basedata.exp.level+1)*100 --下一级需要的经验
-    Shopmall.unit_battlepass[playerid]=basedata
-    local cc=2
-    if data.quest==nil then
-        cc=14
-    else
-        basedata.quest=data.quest --不为nil的时候，或者有任务的时候
-        if data.quest.day==nil then
-            cc=cc+4
-        end
-        if data.quest.week==nil then
-            cc=cc+8
-        end
-    end
-    if self.unit_quest[playerid]==nil then --初始化的任务
-        if cc==6 then --day
-            self:InitQuest(playerid,1)
-        elseif cc==10 then --week
-            self:InitQuest(playerid,2)
-        elseif cc==14 then --day and  week
-            self:InitQuest(playerid,3)
-        end
-    end
-    local temp=self:GetPlayerBP(playerid)  --添加初始化的任务
-    if cc==6 then --day
-        temp.quest.day=self.unit_quest[playerid].day
-    elseif cc==10 then --week
-        temp.quest.week=self.unit_quest[playerid].week
-    elseif cc==14 then --day and  week
-        temp.quest=self.unit_quest[playerid]
-    end
-    if isLast then
-        Shopmall:uploadQuest(5)
-    end
-    
-    if data.reward then
+    --[[for k, v in pairs(data.quest.week) do
+         if k=="hero_getboss_1" then
+             data.quest.week['hero_getboss_1']=nil
+             data.quest.week['hero_killunit_1']={state="0/30000"}
+         end
+     end]]
+     --PrintTable(data)
+     local basedata=Sachievement:DeepCopy(Shopmall.battlepass)
+     local tmp1,tmp2=math.modf( data.exp / 100 )
+     basedata.exp.now=math.ceil(tmp2*100)--当前经验
+     basedata.exp.level=tmp1--当前等级
+     basedata.exp.max=100--(basedata.exp.level+1)*100 --下一级需要的经验
+     Shopmall.unit_battlepass[playerid]=basedata
+     local cc=2
+     local force=false
+     if data.quest==nil then
+         cc=14
+     else
+         basedata.quest=data.quest --不为nil的时候，或者有任务的时候
+         if data.quest.day==nil then
+             cc=cc+4
+         else
+            local temp=false
+            for k, v in pairs(data.quest.day) do
+                if string.split(k, "_")[1]=="difficulty" then
+                    temp=true
+                    force=true
+                end
+            end
+            if temp==true then
+                cc=cc+4
+            end
+         end
+         if data.quest.week==nil then
+             cc=cc+8
+         else
+            local temp=false
+            for k, v in pairs(data.quest.week) do
+                if string.split(k, "_")[1]=="difficulty" then
+                    temp=true
+                    force=true
+                end
+            end
+            if temp==true then
+                cc=cc+8
+            end
+         end
+     end
+     if self.unit_quest[playerid]==nil then --初始化的任务
+         if cc==6 then --day
+             self:InitQuest(playerid,1)
+         elseif cc==10 then --week
+             self:InitQuest(playerid,2)
+         elseif cc==14 then --day and  week
+             self:InitQuest(playerid,3)
+         end
+     end
+     local temp=self:GetPlayerBP(playerid)  --添加初始化的任务
+     if cc==6 then --day
+         temp.quest.day=self.unit_quest[playerid].day
+     elseif cc==10 then --week
+         temp.quest.week=self.unit_quest[playerid].week
+     elseif cc==14 then --day and  week
+         temp.quest=self.unit_quest[playerid]
+     end
+     if force then
+        self.unit_quest[playerid]["force"]=true
+     end
+     if isLast then
         
-        for k, v in pairs(data.reward['basic']) do
-            if temp.bonus[tonumber(k)][1]['state']==1 then
-                temp.bonus[tonumber(k)][1]['state']=v.time
-            end
-        end
-        for k, v in pairs(data.reward.advanced) do
-            if temp.bonus[tonumber(k)][2]['state']==1 then
-                temp.bonus[tonumber(k)][2]['state']=v.time
-            end
-        end
-    end
-    for k, v in pairs(temp.quest) do  ---添加经验用来前端显示，主要是上传服务器不能带经验
-        for kk, vv in pairs(v) do
-            for aa, bb in pairs(Shopmall['quest_'..k]) do
-                if kk==bb.name then
-                    temp.quest[k][kk]['exp']=bb.exp
-                end
-                if temp.quest[k][kk]['srv_rewarded'] then
-                    temp.quest[k][kk]['finish_time']=temp.quest[k][kk]['srv_rewarded']
-                end
-            end
-        end
-    end
-    --PrintTable(temp)
-end
+        Shopmall:uploadQuest(5)
+     end
+     
+     if data.reward then
+         
+         for k, v in pairs(data.reward['basic']) do
+             if temp.bonus[tonumber(k)][1]['state']==1 then
+                 temp.bonus[tonumber(k)][1]['state']=v.time
+             end
+         end
+         for k, v in pairs(data.reward.advanced) do
+             if temp.bonus[tonumber(k)][2]['state']==1 then
+                 temp.bonus[tonumber(k)][2]['state']=v.time
+             end
+         end
+     end
+     for k, v in pairs(temp.quest) do  ---添加经验用来前端显示，主要是上传服务器不能带经验
+         for kk, vv in pairs(v) do
+             for aa, bb in pairs(Shopmall['quest_'..k]) do
+                 if kk==bb.name then
+                     temp.quest[k][kk]['exp']=bb.exp
+                 end
+                 if temp.quest[k][kk]['srv_rewarded'] then
+                     temp.quest[k][kk]['finish_time']=temp.quest[k][kk]['srv_rewarded']
+                 end
+             end
+             if string.split(kk, "_")[1]=="difficulty" then
+                 
+                 if k=="day" then
+                     temp.quest[k][kk]['exp']=Shopmall.quest_day_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                 else
+                    if string.split(kk, "_")[3] then   --如果是特殊模式
+                        temp.quest[k][kk]['exp']=Shopmall.quest_week_2_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                    else
+                        temp.quest[k][kk]['exp']=Shopmall.quest_week_1_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                    end
+                     
+                 end
+             end
+         end
+     end
+     --PrintTable(temp.quest)
+ end
 --通行证请求数据
 function Shopmall:GetPlayerBP(playerid)
     return Shopmall.unit_battlepass[playerid]
@@ -3145,9 +3215,11 @@ function Shopmall:UpdateBPExp(playerid,expnum)
     if expnum then
         data.exp.now=tonumber(expnum)
     end
-    local tmp1,tmp2 = math.modf(data['exp']['now']/ 100 )
+    local tmp1,tmp2 = math.modf(data.exp.now/ 100 )
     data.exp.now=math.ceil(tmp2*100)
-    data.exp.level=tmp1
+    if tmp1>data.exp.level then
+        data.exp.level=tmp1
+    end
     data.exp.max=100--(data.exp.level+1)*100 --下一级需要的经验
     SendToClient(playerid,"tzj_battlepass_update_exp",{now = data.exp.now,max=data.exp.max,level = data.exp.level})
 end
@@ -3169,7 +3241,7 @@ function Shopmall:FinishQuest(playerid,questName,num)
                     if success then
                         self:UpdateBPExp(playerid,arg2['exp'])
                         data.quest[v][questName]['finish_time']=arg2[v][questName]
-                        SendToClient(playerid,"tzj_battlepass_update_quest", {name = questName ,state = data.quest[v][questName]['state'], time=arg2[v][questName]})
+                        SendToClient(playerid,"tzj_battlepass_update_quest", {name = questName ,quest_type=v,state = data.quest[v][questName]['state'], time=arg2[v][questName]})
                         return true
                     else
                         --print("finishQuest ",success,arg2)
@@ -3178,7 +3250,7 @@ function Shopmall:FinishQuest(playerid,questName,num)
                 
                 end)
             end
-            SendToClient(playerid,"tzj_battlepass_update_quest", {name = questName ,state =data.quest[v][questName]['state']})
+            SendToClient(playerid,"tzj_battlepass_update_quest", {name = questName ,quest_type=v,state =data.quest[v][questName]['state']})
         end 
     end
 end
@@ -3234,7 +3306,7 @@ function Shopmall:FinishQuestBatch(questName,num,ftype)
                             data.quest[v][questName]['finish_time']="now"
                             alldata[PlayerID][v][questName]=data.quest[v][questName]
                         end
-                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
+                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,quest_type=v ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
                     end
                 elseif questName=="hero_pass_2" then
                     if Shopmall:Getherotype( PlayerID )==1 then
@@ -3243,7 +3315,7 @@ function Shopmall:FinishQuestBatch(questName,num,ftype)
                             data.quest[v][questName]['finish_time']="now"
                             alldata[PlayerID][v][questName]=data.quest[v][questName]
                         end
-                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
+                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,quest_type=v ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
                     end
                 elseif questName=="hero_pass_3" then
                     if Shopmall:Getherotype( PlayerID )==2 then
@@ -3252,7 +3324,7 @@ function Shopmall:FinishQuestBatch(questName,num,ftype)
                             data.quest[v][questName]['finish_time']="now"
                             alldata[PlayerID][v][questName]=data.quest[v][questName]
                         end
-                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态 
+                        SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,quest_type=v ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态 
                     end
                 else
                     data.quest[v][questName]['state']=nowcount.."/"..maxcount
@@ -3260,7 +3332,7 @@ function Shopmall:FinishQuestBatch(questName,num,ftype)
                         data.quest[v][questName]['finish_time']="now"
                         alldata[PlayerID][v][questName]=data.quest[v][questName]
                     end
-                    SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
+                    SendToClient(PlayerID,"tzj_battlepass_update_quest", {name = questName ,quest_type=v ,state =data.quest[v][questName]['state'],}) --完没完成都先更新前端显示数量状态
                 end
                 
             end
@@ -3284,7 +3356,7 @@ function Shopmall:FinishQuestBatch(questName,num,ftype)
                             for kk,vv in pairs(v[bb]) do
                                 local data=self:GetPlayerBP(playerid)
                                 data.quest[bb][questName]['finish_time']=vv
-                                SendToClient(playerid,"tzj_battlepass_update_quest", {name = kk ,state = data.quest[bb][questName]['state'], time=vv})
+                                SendToClient(playerid,"tzj_battlepass_update_quest", {name = kk ,quest_type=v,state = data.quest[bb][questName]['state'], time=vv})
                             end
                         end
                     end

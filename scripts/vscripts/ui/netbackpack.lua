@@ -1080,6 +1080,48 @@ function tzj_net_equip_enhance( event,data )
 		return 
 	end
 end
+
+--error 0:未知错误1满级了2345：刷新速度太快
+function tzj_ui_refine( event,data )
+	
+	if GameRules:GetGameModeEntity().refine==nil  then
+		GameRules:GetGameModeEntity().refine={}
+	end
+	if GameRules:GetGameModeEntity().refine[data.PlayerID]==nil  then
+		GameRules:GetGameModeEntity().refine[data.PlayerID]=0
+	end
+	
+	
+	if data.force==nil then
+		if GameRules:GetGameModeEntity().refine[data.PlayerID]>Time() then
+			SendToClient(data.PlayerID,"tzj_ui_refine_return",{success=false,error=5})
+			return 
+		end
+	end
+	GameRules:GetGameModeEntity().refine[data.PlayerID]=Time()+1
+	if type(data.item) == "number" then
+		local item=EntIndexToHScript(data.item)
+		local player = PlayerResource:GetPlayer(data.PlayerID)
+		if player == nil then 
+			SendToClient(data.PlayerID,"tzj_ui_refine_return",{success=false,error=0,item=item:GetEntityIndex()})
+			return 
+		end
+		local hero = player:GetAssignedHero()
+		if hero == nil then
+			SendToClient(data.PlayerID,"tzj_ui_refine_return",{success=false,error=0,item=item:GetEntityIndex()})
+		 	return 
+		end
+		
+		--if data.force then
+			item:ReFineData()
+		--else
+			--item:EnhanceData(false)
+		--end
+	else
+		SendToClient(data.PlayerID,"tzj_ui_refine_return",{success=false,error=0})
+		return 
+	end
+end
 -- 背包物品对换位置
 CustomGameEventManager:RegisterListener("ui_event_netbackpack_swap_pos",UI_NetbackpackSwapPosition)
 --销毁装备
@@ -1092,3 +1134,4 @@ CustomGameEventManager:RegisterListener("ui_event_netbackpack_double_equip",UI_N
 -- 双击取下物品
 CustomGameEventManager:RegisterListener("ui_event_netbackpack_double_unequip",UI_Netbackpack_double_unequip)
 CustomGameEventManager:RegisterListener("tzj_net_equip_enhance",tzj_net_equip_enhance)
+CustomGameEventManager:RegisterListener("tzj_ui_refine",tzj_ui_refine)

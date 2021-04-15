@@ -253,56 +253,56 @@
 
 
 "difficulty_name_30""Tu La cấm địa --1 Giai đoạn"
-"difficulty_name_30_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:280%<br> Kết toán tinh thạch tăng thêm:1030%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:420%"
+"difficulty_name_30_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -30%</font><br> Kết toán điểm rèn luyện tăng thêm:280%<br> Kết toán tinh thạch tăng thêm:1030%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:420%"
 "difficulty_name_31""Tu La cấm địa --2 Giai đoạn"
-"difficulty_name_31_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:290%<br> Kết toán tinh thạch tăng thêm:1080%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:640%"
+"difficulty_name_31_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -20%</font><br> Kết toán điểm rèn luyện tăng thêm:290%<br> Kết toán tinh thạch tăng thêm:1080%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:640%"
 "difficulty_name_32""Tu La cấm địa --3 Giai đoạn"
-"difficulty_name_32_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:300%<br> Kết toán tinh thạch tăng thêm:1130%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:660%"
+"difficulty_name_32_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -10%</font><br> Kết toán điểm rèn luyện tăng thêm:300%<br> Kết toán tinh thạch tăng thêm:1130%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:660%"
 "difficulty_name_33""Tu La cấm địa --4 Giai đoạn"
-"difficulty_name_33_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:310%<br> Kết toán tinh thạch tăng thêm:1180%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:680%"
+"difficulty_name_33_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +0%</font><br> Kết toán điểm rèn luyện tăng thêm:310%<br> Kết toán tinh thạch tăng thêm:1180%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:680%"
 "difficulty_name_34""Tu La cấm địa --5 Giai đoạn"
-"difficulty_name_34_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:320%<br> Kết toán tinh thạch tăng thêm:1230%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:700%"
+"difficulty_name_34_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +10%</font><br> Kết toán điểm rèn luyện tăng thêm:320%<br> Kết toán tinh thạch tăng thêm:1230%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:700%"
 "difficulty_name_35""Tu La cấm địa --6 Giai đoạn"
-"difficulty_name_35_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:330%<br> Kết toán tinh thạch tăng thêm:1280%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:720%"
+"difficulty_name_35_desc""Rơi xuống lưu trữ trang bị:6 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +20%</font><br> Kết toán điểm rèn luyện tăng thêm:330%<br> Kết toán tinh thạch tăng thêm:1280%<br> Không phải bình thường hình thức rơi xuống 6 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:720%"
 
 "difficulty_name_36""Tịnh hóa Tu La --1 Giai đoạn"
-"difficulty_name_36_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:340%<br> Kết toán tinh thạch tăng thêm:1330%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:740%"
+"difficulty_name_36_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -30%</font><br> Kết toán điểm rèn luyện tăng thêm:340%<br> Kết toán tinh thạch tăng thêm:1330%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:740%"
 "difficulty_name_37""Tịnh hóa Tu La --2 Giai đoạn"
-"difficulty_name_37_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:350%<br> Kết toán tinh thạch tăng thêm:1380%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:760%"
+"difficulty_name_37_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -20%</font><br> Kết toán điểm rèn luyện tăng thêm:350%<br> Kết toán tinh thạch tăng thêm:1380%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:760%"
 "difficulty_name_38""Tịnh hóa Tu La --3 Giai đoạn"
-"difficulty_name_38_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:360%<br> Kết toán tinh thạch tăng thêm:1430%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:780%"
+"difficulty_name_38_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -10%</font><br> Kết toán điểm rèn luyện tăng thêm:360%<br> Kết toán tinh thạch tăng thêm:1430%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:780%"
 "difficulty_name_39""Tịnh hóa Tu La --4 Giai đoạn"
-"difficulty_name_39_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:370%<br> Kết toán tinh thạch tăng thêm:1480%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:800%"
+"difficulty_name_39_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +0%</font><br> Kết toán điểm rèn luyện tăng thêm:370%<br> Kết toán tinh thạch tăng thêm:1480%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:800%"
 "difficulty_name_40""Tịnh hóa Tu La --5 Giai đoạn"
-"difficulty_name_40_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:380%<br> Kết toán tinh thạch tăng thêm:1530%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:820%"
+"difficulty_name_40_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +10%</font><br> Kết toán điểm rèn luyện tăng thêm:380%<br> Kết toán tinh thạch tăng thêm:1530%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:820%"
 "difficulty_name_41""Tịnh hóa Tu La --6 Giai đoạn"
-"difficulty_name_41_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:390%<br> Kết toán tinh thạch tăng thêm:1580%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:840%"
+"difficulty_name_41_desc""Rơi xuống lưu trữ trang bị:7 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +20%</font><br> Kết toán điểm rèn luyện tăng thêm:390%<br> Kết toán tinh thạch tăng thêm:1580%<br> Không phải bình thường hình thức rơi xuống 7 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:840%"
 
 
 "difficulty_name_42""Thiên tai đột kích --1 Giai đoạn"
-"difficulty_name_42_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:400%<br> Kết toán tinh thạch tăng thêm:1630%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:860%"
+"difficulty_name_42_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -50%</font><br> Kết toán điểm rèn luyện tăng thêm:400%<br> Kết toán tinh thạch tăng thêm:1630%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:1-5 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:860%"
 "difficulty_name_43""Thiên tai đột kích --2 Giai đoạn"
-"difficulty_name_43_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#477bff'> Lam </font>, <font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:410%<br> Kết toán tinh thạch tăng thêm:1680%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:880%"
+"difficulty_name_43_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất -25%</font><br> Kết toán điểm rèn luyện tăng thêm:410%<br> Kết toán tinh thạch tăng thêm:1680%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:5-10 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:880%"
 "difficulty_name_44""Thiên tai đột kích --3 Giai đoạn"
-"difficulty_name_44_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:420%<br> Kết toán tinh thạch tăng thêm:1730%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:900%"
+"difficulty_name_44_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +0%</font><br> Kết toán điểm rèn luyện tăng thêm:420%<br> Kết toán tinh thạch tăng thêm:1730%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:10-15 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:900%"
 "difficulty_name_45""Thiên tai đột kích --4 Giai đoạn"
-"difficulty_name_45_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font><br><br> Kết toán điểm rèn luyện tăng thêm:430%<br> Kết toán tinh thạch tăng thêm:1780%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:920%"
+"difficulty_name_45_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +25%</font><br> Kết toán điểm rèn luyện tăng thêm:430%<br> Kết toán tinh thạch tăng thêm:1780%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:15-20 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:920%"
 "difficulty_name_46""Thiên tai đột kích --5 Giai đoạn"
-"difficulty_name_46_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#a91ac8'> Tử </font>, <font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:440%<br> Kết toán tinh thạch tăng thêm:1830%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:940%"
+"difficulty_name_46_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +50%</font><br> Kết toán điểm rèn luyện tăng thêm:440%<br> Kết toán tinh thạch tăng thêm:1830%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:20-25 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:940%"
 "difficulty_name_47""Thiên tai đột kích --6 Giai đoạn"
-"difficulty_name_47_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_47_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +80%</font><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_48""Thiên tai đột kích --7 Giai đoạn"
-"difficulty_name_48_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +50%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_48_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +130%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_49""Thiên tai đột kích --8 Giai đoạn"
-"difficulty_name_49_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +100%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_49_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +180%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_50""Thiên tai đột kích --9 Giai đoạn"
-"difficulty_name_50_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +150%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_50_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +230%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_51""Thiên tai đột kích --10 Giai đoạn"
-"difficulty_name_51_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +200%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_51_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +280%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_52""Thiên tai đột kích --11 Giai đoạn"
-"difficulty_name_52_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +250%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_52_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +330%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 "difficulty_name_53""Thiên tai đột kích --12 Giai đoạn"
-"difficulty_name_53_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +300%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
+"difficulty_name_53_desc""Rơi xuống lưu trữ trang bị:8 Giai <br> Lưu trữ trang bị phẩm chất khu ở giữa:<font color='#fe6d15'> Cam </font>, <font color='#ffbc09'> Kim </font>, <font color='#d92b2b'> Đỏ </font><br><font color='#d92b2b'> Thần thoại trang bị xuất hiện xác suất +380%</font><br><br> Kết toán điểm rèn luyện tăng thêm:450%<br> Kết toán tinh thạch tăng thêm:1880%<br> Không phải bình thường hình thức rơi xuống 8 Giai cường hóa thạch số lượng:25-40 Cái <br> Rơi xuống chinh chiến chìa khoá xác suất:960%"
 
 "difficulty_mode_drop_down_tooltip""<font color='red'> Chủ phòng </font> Nhưng điểm kích lựa chọn làm trước độ khó cái khác <font color='#FFD700'> Hình thức </font>, khác biệt hình thức sẽ có một chút đặc thù thiết lập"
 "difficulty_mode_1" "Bình thường hình thức"
@@ -524,9 +524,10 @@
 "ui_net_equip_action_enhance""Cường hóa"
 "ui_net_equip_action_enhance_tooltip""[ Cường hóa ]<br> Điểm kích mở ra [ Trang bị cường hóa ] Giao diện, có thể sử dụng Cường hóa thạch đối trang bị tiến hành cường hóa, cường hóa có thể tăng lên trang bị tất cả thuộc tính."
 "ui_net_equip_action_save_pos_tooltip""[ Bảo tồn vị trí ]<br> Điểm kích sau có thể đem trước mắt trang bị vị trí bảo tồn đến Server <br> Thời gian cooldown: 30s"
+"ui_net_equip_action_refine_tooltip""[ Tẩy luyện ]<br> Điểm kích mở ra [ Trang bị tẩy luyện ] Giao diện. Thông qua tẩy luyện, có thể tăng lên trang bị thuộc tính giá trị"
 "ui_attribute_net_equips_destroy_confirm""Thao tác này đem vĩnh cửu tiêu hủy trang bị, trả về <font color='gold'>{d:reward_jing}</font> Tinh thạch, phải chăng xác định?"
 "ui_net_equip_enhance""Cường hóa"
-"ui_net_equip_enhance_tooltip" "Đem trang bị kéo đến tận đây giao diện sau liền có thể sử dụng cường hóa thạch đối lưu trữ trang bị tiến hành cường hóa, tăng lên trang bị thuộc tính <br><br> Khác biệt phẩm giai, khác biệt phẩm chất trang bị, nhưng cường hóa số lần khác biệt: <br>1 Giai trang bị: Không thể cường hóa <br>2 Giai trang bị: <font color='#5fc866'> Ưu lương =2</font>, <font color='#477bff'> Hi hữu =2</font>, <font color='#a91ac8'> Cực phẩm =3</font>, <font color='#fe6d15'> Sử thi =3</font>, <font color='#ffbc09'> Truyền kỳ =4</font>, <font color='#d92b2b'> Thần thoại =5</font><br>3 Giai trang bị: <font color='#5fc866'> Ưu lương =3</font>, <font color='#477bff'> Hi hữu =3</font>, <font color='#a91ac8'> Cực phẩm =4</font>, <font color='#fe6d15'> Sử thi =4</font>, <font color='#ffbc09'> Truyền kỳ =5</font>, <font color='#d92b2b'> Thần thoại =6</font><br>4 Giai trang bị: <font color='#5fc866'> Ưu lương =4</font>, <font color='#477bff'> Hi hữu =4</font>, <font color='#a91ac8'> Cực phẩm =5</font>, <font color='#fe6d15'> Sử thi =5</font>, <font color='#ffbc09'> Truyền kỳ =6</font>, <font color='#d92b2b'> Thần thoại =7</font><br><br> Cường hóa thạch tại <font color='gold'> Khó 5 Trở lên độ khó không phải bình thường hình thức bên trong sẽ rơi xuống </font>, cũng có thể thông qua giấy thông hành, thương thành chờ đường tắt thu hoạch được <br><br> Cường hóa thạch có phẩm giai, chỉ có thể sử dụng cùng trang bị phẩm giai nhất trí cường hóa thạch tiến hành cường hóa.<br> Phẩm cấp thấp cường hóa thạch có thể 4:1 Tỉ lệ chống đỡ chụp cao 1 Giai cường hóa thạch"
+"ui_net_equip_enhance_tooltip" "Đem trang bị kéo đến tận đây giao diện sau liền có thể sử dụng cường hóa thạch đối lưu trữ trang bị tiến hành cường hóa, tăng lên trang bị thuộc tính <br><br> Khác biệt phẩm giai, khác biệt phẩm chất trang bị, nhưng cường hóa số lần khác biệt: <br>1 Giai: Không thể cường hóa <br>{s:detail}<br><br> Cường hóa thạch tại <font color='gold'> Khó 5 Trở lên độ khó không phải bình thường hình thức bên trong sẽ rơi xuống </font>, cũng có thể thông qua giấy thông hành, thương thành chờ đường tắt thu hoạch được <br><br> Cường hóa thạch có phẩm giai, chỉ có thể sử dụng cùng trang bị phẩm giai nhất trí cường hóa thạch tiến hành cường hóa.<br> Phẩm cấp thấp cường hóa thạch có thể 4:1 Tỉ lệ chống đỡ chụp cao 1 Giai cường hóa thạch"
 "ui_net_equip_enhance_change_value_tooltip""Trang bị thuộc tính tăng lên tỉ lệ"
 "ui_net_equip_enhance_material_tooltip""Cường hóa vật liệu <br>※ Cần sử dụng cùng trang bị phẩm giai nhất trí cường hóa thạch làm vật liệu <br>※ Cường hóa lúc, nếu như đối ứng phẩm giai cường hóa thạch số lượng không đủ, sẽ nếm thử sử dụng đê giai cường hóa tiến hành chống đỡ chụp."
 "ui_net_equip_enhance_material_tooltip_grade""{s:grade} Giai cường hóa thạch"
@@ -696,7 +697,7 @@
 "ui_warehouse_item_use_tooltip""<font color='#ffe16f'> Trái khóa song kích hoặc phải khóa điểm kích có thể tiến hành sử dụng </font>"
 "ui_warehouse_item_action_use""Sử dụng"
 "ui_warehouse_item_use_faild""Sử dụng <font color='#ffe16f'>{s:name}</font> Thất bại, xin sau thử lại"
-"ui_battlepass_description""<font color='gold'> Tường thuật tóm lược </font><br> Thiên tai con đường là một cái giai đoạn tính hoạt động, lấy một cái tự nhiên nguyệt làm một cái trận đấu mùa giải.<br/><br/> Mỗi cái trận đấu mùa giải bên trong, nắm giữ giấy thông hành người chơi thông qua tăng lên giấy thông hành đẳng cấp có thể lấy được lấy phong phú ban thưởng.<br/><br/><font color='gold'> Giấy thông hành đẳng cấp </font><br> Giấy thông hành đẳng cấp chủ yếu thông qua hoàn thành [ Giấy thông hành nhiệm vụ ] Đến đề thăng. Nhiệm vụ bao quát mỗi ngày nhiệm vụ ( Mỗi sáng sớm 8:00 Đổi mới ) Cùng mỗi tuần nhiệm vụ ( Thứ hai buổi sáng 8:00 Đổi mới ).<br> Hoàn thành nhiệm vụ sau, tại trò chơi kết toán lúc cấp cho giấy thông hành kinh nghiệm ban thưởng.<br> Mới trận đấu mùa giải giấy thông hành đẳng cấp đem bị thiết lập lại.<br/><br/><font color='gold'> Cao cấp giấy thông hành </font><br> Người chơi ngầm thừa nhận nắm giữ cơ sở giấy thông hành, như có cần, nhưng tại thương thành mua [ Cao cấp giấy thông hành ].<br> Kích hoạt cao cấp giấy thông hành sau, đem thu hoạch được gấp đôi ban thưởng, hưởng thụ gấp đôi vui vẻ!<br><font color='#00FF00'> Cao cấp giấy thông hành thời hạn có hiệu lực làm một cái trận đấu mùa giải </font>"
+"ui_battlepass_description""<font color='gold'> Tường thuật tóm lược </font><br> Thiên tai con đường là một cái giai đoạn tính hoạt động, lấy một cái tự nhiên nguyệt làm một cái trận đấu mùa giải.<br/><br/> Mỗi cái trận đấu mùa giải bên trong, nắm giữ giấy thông hành người chơi thông qua tăng lên giấy thông hành đẳng cấp có thể lấy được lấy phong phú ban thưởng.<br/><br/><font color='gold'> Giấy thông hành đẳng cấp </font><br> Giấy thông hành đẳng cấp chủ yếu thông qua hoàn thành [ Giấy thông hành nhiệm vụ ] Đến đề thăng. Nhiệm vụ bao quát mỗi ngày nhiệm vụ ( Mỗi sáng sớm 8:00 Đổi mới ) Cùng mỗi tuần nhiệm vụ ( Thứ hai buổi sáng 8:00 Đổi mới ).<br> Hoàn thành nhiệm vụ sau, tại trò chơi kết toán lúc cấp cho giấy thông hành kinh nghiệm ban thưởng.<br> Mới trận đấu mùa giải giấy thông hành đẳng cấp đem bị thiết lập lại.<br/><br/><font color='gold'> Cao cấp giấy thông hành </font><br> Người chơi ngầm thừa nhận nắm giữ cơ sở giấy thông hành, như có cần, nhưng tại thương thành mua [ Cao cấp giấy thông hành ].<br> Kích hoạt cao cấp giấy thông hành sau, đem thu hoạch được gấp đôi ban thưởng, hưởng thụ gấp đôi vui vẻ!<br><br><font color='#00FF00'> Cao cấp giấy thông hành thời hạn có hiệu lực làm một cái trận đấu mùa giải </font><br><br><font color='gold'> Giấy thông hành ban thưởng nói rõ: <br>[<font color='red'> Đạo cụ loại ban thưởng </font>] Nhưng nhận lấy đến người nhà kho ( Mới trận đấu mùa giải mở ra sau, mùa giải trước chưa nhận lấy đạo cụ đem tự động nhận lấy )<br>[<font color='red'> Kích hoạt loại ban thưởng </font>] Như không đặc thù nói rõ thì vẻn vẹn bản trận đấu mùa giải có hiệu lực </font>"
 "ui_bp_basic_title""Cơ sở giấy thông hành <br><br> Thông qua hoàn thành nhiệm vụ tăng lên giấy thông hành đẳng cấp, liền có thể nhận lấy phong phú ban thưởng"
 "ui_bp_advanced_title""Cao cấp giấy thông hành <br><br> Cần tại thương thành mua [ Cao cấp giấy thông hành ] Kích hoạt sau, mới có thể nhận lấy những phần thưởng này"
 "ui_bp_level_tooltip""Giấy thông hành đẳng cấp <br><br> Hoàn thành phía bên phải nhiệm vụ thu hoạch giấy thông hành kinh nghiệm đến đề thăng đẳng cấp"
@@ -754,14 +755,14 @@
 "store_catalog_secondary_enhance""Cường hóa"
 "store_catalog_secondary_normal_1""Thông dụng"
 "store_item_own_mark""Tiến về xem xét"
-"store_item_own_mark_tooltip""Đã vĩnh cửu nắm giữ"
+"store_item_own_mark_tooltip""Đã có được"
 "store_item_tooltip_bp_cant_buy_last""Trận đấu mùa giải kết thúc một ngày trước, không thể mua giấy thông hành"
 "store_item_tooltip_buy_plus_success""Mua thành công <br/><br/>PLUS Thời hạn có hiệu lực kéo dài {s:day} Trời, đến {s:invalid}"
 "store_item_tooltip_buy_plus_permanent_success""Mua thành công, PLUS Vĩnh cửu có hiệu lực"
 "store_item_plus_desc_mine""Tiền tài tăng thêm +20%<br/> Kinh nghiệm tăng thêm +20%<br/> Anh hùng ngẫu nhiên số lần +1<br/> Điểm rèn luyện thu hoạch +30%<br/> Mỗi lần bắt đầu ban thưởng 1 Cấp thiên thư x1"
 "store_item_plus_permanent_desc_mine""Tiền tài tăng thêm +20%<br/> Kinh nghiệm tăng thêm +20%<br/> Anh hùng ngẫu nhiên số lần +1<br/> Điểm rèn luyện thu hoạch +50%<br/> Mỗi lần bắt đầu ban thưởng 1 Cấp thiên thư x1"
 "store_item_shopmall_1""Cao cấp giấy thông hành"
-"store_item_shopmall_1_desc""Mua sau kích hoạt trở xuống hiệu quả: <br/>· Giải tỏa [ Thiên tai con đường ] Cao cấp giấy thông hành ban thưởng <br/>· Lập tức thu hoạch được 500 Giấy thông hành kinh nghiệm"
+"store_item_shopmall_1_desc""Mua sau kích hoạt trở xuống hiệu quả: <br/>· Giải tỏa [ Thiên tai con đường ] Cao cấp giấy thông hành ban thưởng <br/>· Lập tức thu hoạch được 500 Giấy thông hành kinh nghiệm <br><br><font color='#00FF00'> Cao cấp giấy thông hành thời hạn có hiệu lực chỉ có một cái trận đấu mùa giải, xin chú ý trận đấu mùa giải còn thừa thời gian <br> Nhưng tiến về góc trái trên cùng [ Hồ sơ cá nhân -- Thiên tai con đường ] Module xem xét trận đấu mùa giải kết thúc thời gian </font><br><br><font color='gold'> Giấy thông hành ban thưởng nói rõ: <br>[<font color='red'> Đạo cụ loại ban thưởng </font>] Nhưng nhận lấy đến người nhà kho ( Mới trận đấu mùa giải mở ra sau, mùa giải trước chưa nhận lấy đạo cụ đem tự động nhận lấy )<br>[<font color='red'> Kích hoạt loại ban thưởng </font>] Như không đặc thù nói rõ thì vẻn vẹn bản trận đấu mùa giải có hiệu lực </font>"
 "store_item_shopmall_2""PLUS Nguyệt thẻ"
 "store_item_shopmall_2_desc""PLUS Hiệu quả: <br/> Tiền tài tăng thêm +20%<br/> Kinh nghiệm tăng thêm +20%<br/> Anh hùng ngẫu nhiên số lần +1<br/> Điểm rèn luyện thu hoạch +30%<br/> Mỗi lần bắt đầu ban thưởng 1 Cấp thiên thư x1<br><br> Mua sau, PLUS Thời hạn có hiệu lực kéo dài <font color='gold'>31 Trời </font>"
 "store_item_shopmall_45""PLUS Quý thẻ"
@@ -902,7 +903,8 @@
 "store_item_shopmall_54_desc""Toàn thuộc tính +20%<br/> toàn thuộc tính: +50<br/><br/> May mắn giá trị +15<br/> Thiên mệnh giá trị +50( Đánh giết tai ách BOSS Rơi xuống phẩm chất cao trang bị xác suất tăng lên 50%)<br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
 "store_item_shopmall_87""Kim cương hội viên"
 "store_item_shopmall_87_desc""Toàn thuộc tính +20%<br/> Kỹ năng tăng lên trị số +10%<br/> Trước mắt độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +80%( Cùng thiên mệnh giá trị lẫn nhau thừa )<br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
-
+"store_item_shopmall_98""Đệ nhất trận đấu mùa giải giấy thông hành thuộc tính"
+"store_item_shopmall_98_desc""Ban đầu kim tệ +1000<br/> Trí lực +20, nhanh nhẹn +25, Sức mạnh +30<br/> Ban đầu giết địch số +50<br/> Bạo kích xác suất +2%, bạo kích tổn thương +20%<br/> Người kỹ năng đẳng cấp +2<br/> Kèm theo tổn thương +2%<br/> Cuối cùng tổn thương +2%<br/> Tiền tài tăng thêm +3%<br/> Kinh nghiệm tăng thêm +3%<br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
 
 "store_item_shopmall_55""Siêu ma phù văn thư Ⅱ"
 "store_item_shopmall_55_desc""Mỗi cục trò chơi bắt đầu, ngẫu nhiên kích hoạt 1 Cái không tái diễn siêu ma phù văn <br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
@@ -2014,47 +2016,209 @@
 
 "achievement_difficulty_15_2""Thông quan N15- Cuồng bạo hình thức"
 //"achievement_difficulty_15_2_desc"""
-"achievement_difficulty_15_2_bonus""Tốc độ công kích +10"
+"achievement_difficulty_15_2_bonus""Vật lý xuyên thấu +2"
 //"achievement_difficulty_15_2_bonus_desc"""
 
 
-"achievement_difficulty_15_3""Thông quan N15- Áo thuật hình thức"
-//"achievement_difficulty_15_3_desc"""
-"achievement_difficulty_15_3_bonus""Làm lạnh giảm bớt -2%"
-//"achievement_difficulty_15_3_bonus_desc"""
+"achievement_difficulty_16_2""Thông quan N16-- Cuồng bạo hình thức"
+//"achievement_difficulty_16_2_desc"""
+"achievement_difficulty_16_2_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_16_2_bonus_des
+"achievement_difficulty_17_3""Thông quan N17-- Áo thuật hình thức"
+//"achievement_difficulty_17_3_desc"""
+"achievement_difficulty_17_3_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_17_3_bonus_des
 
 
-"achievement_difficulty_15_4""Thông quan N15- Tai nạn hình thức"
-//"achievement_difficulty_15_4_desc"""
-"achievement_difficulty_15_4_bonus""Ma pháp hồi phục +5"
-//"achievement_difficulty_15_4_bonus_desc"""
+"achievement_difficulty_18_3""Thông quan N18-- Áo thuật hình thức"
+//"achievement_difficulty_18_3_desc"""
+"achievement_difficulty_18_3_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_18_3_bonus_des
+
+"achievement_difficulty_19_4""Thông quan N19-- Áo thuật hình thức"
+//"achievement_difficulty_19_4_desc"""
+"achievement_difficulty_19_4_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_19_4_bonus_des
+
+"achievement_difficulty_20_5""Thông quan N20-- Địa Ngục hình thức"
+//"achievement_difficulty_20_5_desc"""
+"achievement_difficulty_20_5_bonus""Tốc độ di chuyển +10"
+//"achievement_difficulty_20_5_bonus_des
+
+"achievement_difficulty_21_6""Thông quan N21-- Đặc thù hình thức"
+//"achievement_difficulty_21_6_desc"""
+"achievement_difficulty_21_6_bonus""Tiền tài tăng thêm +10%"
+//"achievement_difficulty_21_6_bonus_des
+
+"achievement_difficulty_22_7""Thông quan N22-- Đặc thù hình thức"
+//"achievement_difficulty_22_7_desc"""
+"achievement_difficulty_22_7_bonus""Cuối cùng tổn thương +10%"
+//"achievement_difficulty_22_7_bonus_des
 
 
-"achievement_difficulty_15_5""Thông quan N15- Địa Ngục hình thức"
-//"achievement_difficulty_15_5_desc"""
-"achievement_difficulty_15_5_bonus""Tốc độ di chuyển +10"
-//"achievement_difficulty_15_5_bonus_desc"""
+"achievement_difficulty_23_2""Thông quan N23-- Đặc thù hình thức"
+//"achievement_difficulty_23_2_desc"""
+"achievement_difficulty_23_2_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_23_2_bonus_des
 
-"achievement_difficulty_15_6""Thông quan N15- Tiền thưởng hình thức"
-//"achievement_difficulty_15_6_desc"""
-"achievement_difficulty_15_6_bonus""Tiền tài tăng thêm +10%"
-//"achievement_difficulty_15_6_bonus_desc"""
+"achievement_difficulty_24_3""Thông quan N24-- Đặc thù hình thức"
+//"achievement_difficulty_24_3_desc"""
+"achievement_difficulty_24_3_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_24_3_bonus_des
+
+"achievement_difficulty_25_4""Thông quan N25-- Đặc thù hình thức"
+//"achievement_difficulty_25_4_desc"""
+"achievement_difficulty_25_4_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_25_4_bonus_des
+
+"achievement_difficulty_26_5""Thông quan N26-- Đặc thù hình thức"
+//"achievement_difficulty_26_5_desc"""
+"achievement_difficulty_26_5_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_26_5_bonus_des
+
+"achievement_difficulty_27_6""Thông quan N27-- Đặc thù hình thức"
+//"achievement_difficulty_27_6_desc"""
+"achievement_difficulty_27_6_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_27_6_bonus_des
+
+"achievement_difficulty_28_7""Thông quan N28-- Đặc thù hình thức"
+//"achievement_difficulty_28_7_desc"""
+"achievement_difficulty_28_7_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_28_7_bonus_des
+
+"achievement_difficulty_29_7""Thông quan N29-- Đặc thù hình thức"
+//"achievement_difficulty_29_7_desc"""
+"achievement_difficulty_29_7_bonus""Cuối cùng tổn thương +0.5%"
+//"achievement_difficulty_29_7_bonus_des
 
 
-"achievement_difficulty_15_7""Thông quan N15- Ác mộng hình thức"
-//"achievement_difficulty_15_7_desc"""
-"achievement_difficulty_15_7_bonus""Cuối cùng tổn thương +10%"
-//"achievement_difficulty_15_7_bonus_desc"""
+
+"achievement_difficulty_30_2""Thông quan N30-- Đặc thù hình thức"
+//"achievement_difficulty_30_2_desc"""
+"achievement_difficulty_30_2_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_30_2_bonus_des
+
+"achievement_difficulty_31_3""Thông quan N31-- Đặc thù hình thức"
+//"achievement_difficulty_31_3_desc"""
+"achievement_difficulty_31_3_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_31_3_bonus_des
+
+"achievement_difficulty_32_4""Thông quan N32-- Đặc thù hình thức"
+//"achievement_difficulty_32_4_desc"""
+"achievement_difficulty_32_4_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_32_4_bonus_des
+
+"achievement_difficulty_33_5""Thông quan N33-- Đặc thù hình thức"
+//"achievement_difficulty_33_5_desc"""
+"achievement_difficulty_33_5_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_33_5_bonus_des
+
+"achievement_difficulty_34_6""Thông quan N34-- Đặc thù hình thức"
+//"achievement_difficulty_34_6_desc"""
+"achievement_difficulty_34_6_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_34_6_bonus_des
+
+"achievement_difficulty_35_7""Thông quan N35-- Đặc thù hình thức"
+//"achievement_difficulty_35_7_desc"""
+"achievement_difficulty_35_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_35_7_bonus_des
+
+"achievement_difficulty_36_2""Thông quan N36-- Đặc thù hình thức"
+//"achievement_difficulty_36_2_desc"""
+"achievement_difficulty_36_2_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_36_2_bonus_des
+
+"achievement_difficulty_37_3""Thông quan N37-- Đặc thù hình thức"
+//"achievement_difficulty_37_3_desc"""
+"achievement_difficulty_37_3_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_37_3_bonus_des
+
+"achievement_difficulty_38_4""Thông quan N38-- Đặc thù hình thức"
+//"achievement_difficulty_38_4_desc"""
+"achievement_difficulty_38_4_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_38_4_bonus_des
+
+"achievement_difficulty_39_5""Thông quan N39-- Đặc thù hình thức"
+//"achievement_difficulty_39_5_desc"""
+"achievement_difficulty_39_5_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_39_5_bonus_des
+
+"achievement_difficulty_40_6""Thông quan N40-- Đặc thù hình thức"
+//"achievement_difficulty_40_6_desc"""
+"achievement_difficulty_40_6_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_40_6_bonus_des
+
+"achievement_difficulty_41_7""Thông quan N441-- Đặc thù hình thức"
+//"achievement_difficulty_41_7_desc"""
+"achievement_difficulty_41_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_41_7_bonus_des
 
 
+"achievement_difficulty_42_2""Thông quan N42-- Đặc thù hình thức"
+//"achievement_difficulty_42_2_desc"""
+"achievement_difficulty_42_2_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_42_2_bonus_des
+
+"achievement_difficulty_43_3""Thông quan N43-- Đặc thù hình thức"
+//"achievement_difficulty_43_3_desc"""
+"achievement_difficulty_43_3_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_43_3_bonus_des
+
+"achievement_difficulty_44_4""Thông quan N44-- Đặc thù hình thức"
+//"achievement_difficulty_44_4_desc"""
+"achievement_difficulty_44_4_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_44_4_bonus_des
+
+"achievement_difficulty_45_5""Thông quan N45-- Đặc thù hình thức"
+//"achievement_difficulty_45_5_desc"""
+"achievement_difficulty_45_5_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_45_5_bonus_des
+
+"achievement_difficulty_46_6""Thông quan N46-- Đặc thù hình thức"
+//"achievement_difficulty_46_6_desc"""
+"achievement_difficulty_46_6_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_46_6_bonus_des
+
+"achievement_difficulty_47_7""Thông quan N47-- Đặc thù hình thức"
+//"achievement_difficulty_47_7_desc"""
+"achievement_difficulty_47_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_47_7_bonus_des
+
+"achievement_difficulty_48_7""Thông quan N47-- Đặc thù hình thức"
+//"achievement_difficulty_48_7_desc"""
+"achievement_difficulty_48_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_48_7_bonus_des
 
 
+"achievement_difficulty_48_7""Thông quan N48-- Đặc thù hình thức"
+//"achievement_difficulty_48_7_desc"""
+"achievement_difficulty_48_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_48_7_bonus_des
 
+"achievement_difficulty_49_7""Thông quan N49-- Đặc thù hình thức"
+//"achievement_difficulty_49_7_desc"""
+"achievement_difficulty_49_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_49_7_bonus_des
 
+"achievement_difficulty_50_7""Thông quan N50-- Đặc thù hình thức"
+//"achievement_difficulty_50_7_desc"""
+"achievement_difficulty_50_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_50_7_bonus_des
 
+"achievement_difficulty_51_7""Thông quan N51-- Đặc thù hình thức"
+//"achievement_difficulty_51_7_desc"""
+"achievement_difficulty_51_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_51_7_bonus_des
 
+"achievement_difficulty_52_7""Thông quan N52-- Đặc thù hình thức"
+//"achievement_difficulty_52_7_desc"""
+"achievement_difficulty_52_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_52_7_bonus_des
 
-
+"achievement_difficulty_53_7""Thông quan N53-- Đặc thù hình thức"
+//"achievement_difficulty_53_7_desc"""
+"achievement_difficulty_53_7_bonus""Cuối cùng tổn thương +1%"
+//"achievement_difficulty_53_7_bonus_des
 
 // Vô tận hình thức khác biệt
 
@@ -2293,13 +2457,13 @@
 "bp_reward_item_BPreward_plus_4""May mắn giá trị +10"
 
 "bp_reward_item_BPreward_base_5""Anh hùng toàn thuộc tính +5%"
-"bp_reward_item_BPreward_plus_5""Ban đầu thu hoạch được một cái sơ cấp sở trường"
+"bp_reward_item_BPreward_plus_5""Ban đầu thu hoạch được một cái sơ cấp phù văn"
 
 "bp_reward_item_BPreward_base_6""Chinh chiến chìa khoá +10"
-"bp_reward_item_BPreward_plus_6""Siêu ma sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_plus_6""Siêu ma phù văn -- Tiêu hao *10"
 
 "bp_reward_item_BPreward_base_7""Chinh chiến chìa khoá +10"
-"bp_reward_item_BPreward_plus_7""Ban đầu thu hoạch được một cái trung cấp sở trường"
+"bp_reward_item_BPreward_plus_7""Ban đầu thu hoạch được một cái trung cấp phù văn"
 
 "bp_reward_item_BPreward_base_8""Trò chơi ban đầu giết địch điểm tích lũy +100"
 "bp_reward_item_BPreward_plus_8""Bảo vật rãnh chữ số lượng +1"
@@ -2314,7 +2478,7 @@
 "bp_reward_item_BPreward_plus_11""Chinh chiến chìa khoá +15"
 
 "bp_reward_item_BPreward_base_12""Kỹ năng tổn thương +5%"
-"bp_reward_item_BPreward_plus_12""Siêu ma sở trường -- Tiêu hao *20"
+"bp_reward_item_BPreward_plus_12""Siêu ma phù văn -- Tiêu hao *20"
 
 "bp_reward_item_BPreward_base_13""Bạo kích tổn thương +20%"
 "bp_reward_item_BPreward_plus_13""Thiên mệnh giá trị +10"
@@ -2326,7 +2490,7 @@
 "bp_reward_item_BPreward_plus_15""Thứ hai trận đấu mùa giải plus Bản sủng vật ban thưởng"
 
 "bp_reward_item_BPreward_base_16""Chinh chiến chìa khoá +10"
-"bp_reward_item_BPreward_plus_16""Ban đầu thu hoạch được một cái cao cấp sở trường"
+"bp_reward_item_BPreward_plus_16""Ban đầu thu hoạch được một cái cao cấp phù văn"
 
 "bp_reward_item_BPreward_base_17""Tuyển anh hùng giao diện đổi mới anh hùng số lần +1"
 "bp_reward_item_BPreward_plus_17""Chinh chiến chìa khoá +15"
@@ -2338,10 +2502,10 @@
 "bp_reward_item_BPreward_plus_19""Chinh chiến chìa khoá +15"
 
 "bp_reward_item_BPreward_base_20""Chinh chiến chìa khoá +20"
-"bp_reward_item_BPreward_plus_20""Ban đầu thu hoạch được một cái siêu ma sở trường"
+"bp_reward_item_BPreward_plus_20""Ban đầu thu hoạch được một cái siêu ma phù văn"
 
 "bp_reward_item_BPreward_base_21""Anh hùng người kỹ năng đẳng cấp +1"
-"bp_reward_item_BPreward_plus_21""Đặc thù sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_plus_21""Đặc thù phù văn -- Tiêu hao *10"
 
 "bp_reward_item_BPreward_base_22""Thiên mệnh giá trị +10"
 "bp_reward_item_BPreward_plus_22""Cao phẩm tỉ lệ rơi đồ +10"
@@ -2355,7 +2519,7 @@
 "bp_reward_item_BPreward_base_25""Thứ hai trận đấu mùa giải cơ sở quang hoàn ban thưởng"
 "bp_reward_item_BPreward_plus_25""Thứ hai trận đấu mùa giải plus Quang hoàn ban thưởng"
 
-"bp_reward_item_BPreward_base_26""Siêu ma sở trường -- Tiêu hao *10"
+"bp_reward_item_BPreward_base_26""Siêu ma phù văn -- Tiêu hao *10"
 "bp_reward_item_BPreward_plus_26""5 Giai cường hóa thạch +300"
 
 "bp_reward_item_BPreward_base_27""Chinh chiến chìa khoá +10"
@@ -2369,16 +2533,9 @@
 
 "bp_reward_item_BPreward_base_30""Cường hóa thạch rơi xuống số lượng +10%"
 "bp_reward_item_BPreward_plus_30""Cường hóa thạch rơi xuống số lượng +10%"
-
-
-"bp_quest_day_difficulty_0""Thông quan tùy ý độ khó"
-"bp_quest_day_difficulty_1""Thông quan N1"
-"bp_quest_day_difficulty_2""Thông quan N2"
-"bp_quest_day_difficulty_3""Thông quan N3"
-"bp_quest_day_difficulty_4""Thông quan N4"
-"bp_quest_day_difficulty_5""Thông quan N5"
-"bp_quest_day_difficulty_6""Thông quan N6"
-"bp_quest_day_difficulty_7""Thông quan N7"
+"bp_quest_difficulty""Thông quan N{s:value}"
+"bp_quest_difficulty_mode""Thông quan N{s:value}{s:mode}"
+"bp_quest_difficulty_any""Thông quan tùy ý độ khó"
 
 "bp_quest_day_hero_pass_1""Sử dụng Sức mạnh anh hùng thông quan"
 "bp_quest_day_hero_pass_2""Sử dụng nhanh nhẹn anh hùng thông quan"
@@ -2391,28 +2548,11 @@
 "bp_quest_day_hero_killboss_5""Đánh giết tai ách lãnh chúa Phượng Hoàng"
 "bp_quest_day_hero_killboss_6""Đánh giết tai ách lãnh chúa huyễn ảnh thích khách"
 
-
 "bp_quest_day_hero_killunit_1""Đánh giết 5000 Cái tiểu quái"
 
 "bp_quest_day_hero_getboss_1""Thu hoạch được 500Boss Điểm số"
 
-"bp_quest_week_difficulty_5_2""Thông quan N5 Cuồng bạo hình thức"
-"bp_quest_week_difficulty_6_3""Thông quan N6 Áo thuật hình thức"
-"bp_quest_week_difficulty_7_4""Thông quan N7 Tai nạn hình thức"
-"bp_quest_week_difficulty_8_2""Thông quan N8 Cuồng bạo hình thức"
-"bp_quest_week_difficulty_9_3""Thông quan N9 Áo thuật hình thức"
-"bp_quest_week_difficulty_10_4""Thông quan N10 Tai nạn hình thức"
-
 "bp_quest_week_hero_killunit_1""Tích lũy đánh giết tiểu quái 30000 Chỉ"
-
-"bp_quest_week_difficulty_11_5""Thông quan N11 Địa Ngục hình thức"
-"bp_quest_week_difficulty_12_5""Thông quan N12 Địa Ngục hình thức"
-"bp_quest_week_difficulty_13_6""Thông quan N13 Tiền thưởng hình thức"
-"bp_quest_week_difficulty_14_7""Thông quan N14 Ác mộng hình thức"
-"bp_quest_week_difficulty_7""Thông quan N7 Tính gộp lại 3 Lần"
-"bp_quest_week_difficulty_8""Thông quan N8 Tính gộp lại 3 Lần"
-"bp_quest_week_difficulty_9""Thông quan N9 Tính gộp lại 3 Lần"
-"bp_quest_week_difficulty_10""Thông quan N10 Tính gộp lại 3 Lần"
 
 "bp_quest_week_hero_getboss_1""Thu hoạch được 3000BOSS Điểm số"
 

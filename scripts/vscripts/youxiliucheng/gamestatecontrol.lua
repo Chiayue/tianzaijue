@@ -216,6 +216,13 @@ function m.gameInProgress(hero,i)
 	
 
 	hero:GetAbilityByIndex(0):SetLevel(1)
+	for ii=0,5 do
+		if hero:GetAbilityByIndex(ii) then
+			if hero:GetAbilityByIndex(ii):GetAbilityName() == "special_bonus_attributes" then
+				hero:RemoveAbility(hero:GetAbilityByIndex(ii):GetAbilityName())
+			end
+		end
+	end
 
 	--添加闪烁技能  或许改成UI
 	hero:AddAbility("ability_hero_2"):SetLevel(1)

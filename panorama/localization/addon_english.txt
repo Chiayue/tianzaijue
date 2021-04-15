@@ -86,7 +86,7 @@
 	"item_attribute_attack_speed"	"Attack speed: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_attack_damage_plus"	"Normal attacks trigger additional damage: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_gjqtsxsh"	"The attack comes with group primary attribute damage: <font color=\"#ffffff\">+{s:value}</font>"
-	"item_attribute_jnsh"	"Skill enhancement: <font color=\"#ffffff\">+{s:value}%</font>"
+	"item_attribute_jnsh"	"Spell Amplification: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_gjxx"	"HP restored while attacking: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_fsxx"	"Spell Lifesteal: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_wlxx"	"Physical Lifesteal: <font color=\"#ffffff\">+{s:value}%</font>"
@@ -153,8 +153,8 @@
 	"item_attribute_jyjc"	"Experience gain: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_msmjq"	"Gold every ten seconds: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_sgzjjb"	"Kill monsters to increase gold: <font color=\"#ffffff\">+{s:value}</font>"
-	"item_attribute_grjndj"	"Hero skill level: <font color=\"#ffffff\">+{s:value}</font>"
-	"item_attribute_ggjndj"	"Common skill level: <font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_grjndj"	"Skill level: <font color=\"#ffffff\">+{s:value}</font>"
+	"item_attribute_ggjndj"	"Skill level in team: <font color=\"#ffffff\">+{s:value}</font>"
 	"item_attribute_damage_bfb"	"Attack power: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_bfbtssm"	"Health: <font color=\"#ffffff\">+{s:value}%</font>"
 	"item_attribute_ydsd"	"Movement speed: <font color=\"#ffffff\">+{s:value}</font>"
@@ -530,8 +530,8 @@
 
 	"ui_setup_now_difficulty"	"Current Difficulty：{s:value}"
 
-	"ui_treasure_selection_title"	"Please select the treasure you need"
-	"ui_treasure_selection_close_toggle"	"Cancel confirmation window pop-up"
+	"ui_treasure_selection_title"	"Select your treasure"
+	"ui_treasure_selection_close_toggle"	"Cancel confirmation prompt"
 	"ui_treasure_selection_close_toggle_tooltip"	"Checked, close with cancel confirmation window<br>Unchecked, close without cancel confirmation window"
 	"ui_treasure_selection_close_confirm"	"Are you sure you want to close? You will not get any treasure upon leaving"
 
@@ -566,7 +566,7 @@
 	"ui_attribute_move_ability_title_desc"	"Click the arrow below the skill icon or drag the skill icon directly to change the position"
 
 	"ui_attribute_net_equips_title"	"Archive Equipment"
-	"ui_attribute_net_equips_title_desc"	"Archived equipment exists permanently and takes effect in every game.<br/><br/>Archive equipment is mainly obtained through the in-game killing of the Lord of Calamity (the higher the difficulty, the better the equipment), the equipment key to open the treasure chest, the path of natural disasters, etc.<br/><br/>The attributes of the archived equipment obtained each time are random. Look at the face, and it’s not a dream to wear a god-like set!"
+	"ui_attribute_net_equips_title_desc"	"Archived equipment exists permanently and takes effect in every game.<br/><br/>Archive equipment is mainly obtained through the in-game killing of the Lord of Calamity (the higher the difficulty, the better the equipment), the equipment key from opening equipment treasure chest, the path of natural disasters, etc.<br/><br/>The attributes of the archived equipment obtained each time are random. Look at the face, and it’s not a dream to wear a god-like set!"
 
 	"ui_net_equip_total_score"	"Total combat power:"
 	"ui_net_equip_tips"	"※The equipment position will be recorded when the game is settled.<br>※If the equipment is not displayed, you can try to click on the hero."
@@ -583,6 +583,8 @@
 	"ui_net_equip_action_enhance"	"Enhance"
 	"ui_net_equip_action_enhance_tooltip"	"[Enhancement]<br>Click to open the [Equipment enhancement] interface, you can use the 'Strengthening stone' to enhance the equipment, and enhance all the attributes of the equipment."
 	"ui_net_equip_action_save_pos_tooltip"	"[Save Loadout]<br>Click to save the current equipment loadout to the server<br>Cooldown：30s"
+	"ui_net_equip_action_refine_tooltip"	"[Refine]<br>Click to open the [Refine Equipment] interface。Through refining, you can improve equipment attribute values"
+
 
 	"ui_attribute_net_equips_destroy_confirm"	"This operation will permanently destroy the equipment and return the <font color='gold'>{d:reward_jing}</font> Spark stone, are you sure?"
 
@@ -791,7 +793,9 @@
 
 	"ui_warehouse_item_use_faild"	"Failed to use <font color='#ffe16f'>{s:name}</font>, please try again later"
 
-	"ui_battlepass_description"	"<font color='gold'>Overview</font><br>The Natural Disaster Road is a phased activity, generally a natural month is a season.<br/><br/>Each season Inside, players with passes can get rich rewards by upgrading the pass level.<br/><br/><font color='gold'>Pass level</font><br>Pass level is mainly achieved by completing [Pass Task] To improve. Tasks include daily tasks (refresh at 8:00 every morning) and weekly tasks (refresh at 8:00 on Monday morning).<br>After completing the tasks, pass experience rewards will be issued when the game is settled.<br>New The season pass level will be reset.<br/><br/><font color='gold'>Premium Pass</font><br>Players hold the basic pass by default. If necessary, you can purchase it in the mall [Premium Pass].<br>After activating the premium pass, you will get double rewards and enjoy double happiness!<br><font color='#00FF00'>The premium pass is valid for one season</font>"
+	"ui_battlepass_description"	"<font color='gold'>Overview</font><br>The Natural Disaster Road is a phased activity. Naturally a month is a season.<br/><br/>In each season, players with passes can get rich rewards by upgrading the pass level.<br/><br/><font color='gold'>Pass level</font><br>Pass level is mainly achieved by completing [Pass Task] To improve. Tasks include daily tasks (refresh at 8:00 every morning) and weekly tasks (refresh at 8:00 on Monday morning).<br>After completing the tasks, pass experience rewards will be issued when the game is settled.<br>Season pass will reset upon a new season.<br/><br/><font color='gold'>Premium Pass</font><br>All players hold the basic pass by default. If necessary, you can purchase it in the mall [Premium Pass].<br>After activating the premium pass, you will get double rewards and get to enjoy double the happiness!<br><font color='#00FF00'>The premium pass is only valid for one season</font><br><br><font color='gold'>Reward description of the pass:<br>[<font color='red'>Item Rewards</font>] will be sent to Personal Warehouse (After the start of the new season, the items not received in the previous season will be automatically sent over)<br>[<font color='red'>Activation Rewards</font>] unless otherwise specified, it will only take effect this season</font>"
+
+
 	"ui_bp_basic_title"	"Basic Pass<br><br>By completing tasks to increase the level of the pass, you can receive generous rewards"
 	"ui_bp_advanced_title"	"Advanced Pass<br><br>You need to purchase [Advanced Pass] in the mall before you can receive these rewards"
 
@@ -858,8 +862,8 @@
 	"store_catalog_secondary_enhance"	"Enhance"
 	"store_catalog_secondary_normal_1"	"General"
 
-	"store_item_own_mark"	"Owned"
-	"store_item_own_mark_tooltip"	"Unique item, cannot be obtained repeatedly"
+	"store_item_own_mark"	"Checking in progress"
+	"store_item_own_mark_tooltip"	"Already Owned"
 	"store_item_tooltip_bp_cant_buy_last"	"Passes cannot be purchased one day before the end of the season"
 
 	"store_item_tooltip_buy_plus_success"	"Successful purchase<br/><br/>The PLUS validity period is extended by {s:day} days to {s:invalid}"
@@ -869,7 +873,7 @@
 	"store_item_plus_permanent_desc_mine"	"Gold bonus +20%<br/>Experience bonus +20%<br/>The random number of heroes +1<br/>Experience value gain +50%<br/>Provides 1 Elementary Skill Book at the start of the game"
 
 	"store_item_shopmall_1"	"Premium Pass"
-	"store_item_shopmall_1_desc"	"Activate the following effects after purchase:<br/>·Unlock [Scourge Road] Advanced Pass Reward<br/>·Get 500 Pass Experience immediately"
+	"store_item_shopmall_1_desc"	"Activate the following effects after purchase:<br/>·Unlock [Scourge Road] Advanced Pass Reward<br/>·Get 500 Pass Experience immediately<br><br><font color='#00FF00'>The premium pass is only valid for one season, do take note of the remaining time of the season!<br>You refer to the upper left corner button [Personal File--Road to Natural Disasters] to check the end of the season</font><br><br><font color='gold'>Reward description of the pass:<br>[<font color='red'>Item Rewards</font>] will be sent to Personal Warehouse (After the start of the new season, the items not received in the previous season will be automatically sent over)<br>[<font color='red'>Activation Rewards</font>] unless otherwise specified, it will only take effect this season</font>"
 	"store_item_shopmall_2"	"PLUS Monthly Card"
 	"store_item_shopmall_2_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +30%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>31 days</font>"
 
@@ -877,7 +881,7 @@
 	"store_item_shopmall_45_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +30%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, the PLUS validity period will be extended <font color='gold'>93 days</font>"
 
 	"store_item_shopmall_46"	"PLUS permanent card"
-	"store_item_shopmall_46_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +50%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, <font color='yellow'>PLUS will take effect forever</font><br> and you will get a limited pet immediately: <font color='yellow'>Doom Baby</font> (Hero skill level +2, Gold bonus +12%)"
+	"store_item_shopmall_46_desc"	"PLUS effect:<br/>Gold bonus +20%<br/>Experience bonus +20%<br/>Hero selection count +1<br/>Game experience bonus +50%<br/>Provides 1 Elementary Skill Book at the start of the game<br><br>After purchase, <font color='yellow'>PLUS will take effect forever</font><br> and you will get a limited pet immediately: <font color='yellow'>Doom Baby</font> (Skill level +2, Gold bonus +12%)"
 
 	"store_item_shopmall_3"	"Book of Wisdom"
 	"store_item_shopmall_3_desc"	"Provides 1 Elementary Skill Book at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
@@ -1012,7 +1016,8 @@
 	"store_item_shopmall_54_desc"	"All attributes +20%<br/>All initial attributes +50<br/><br/>Lucky value +15<br/>Destiny points +50 (the chance of killing the evil boss to drop high-quality equipment 50% increase)<font color='gold'>Permanent effect</font>"
 	"store_item_shopmall_87"	"Diamond Membership"
 	"store_item_shopmall_87_desc"	"All attributes +20%<br>Use skill promotion value +50%<br>Chance of obtaining the highest tier of archived equipment +80%(can be multiplied with Destiny points)<br/><br/><font color='gold'>Permanent effect</font>"
-
+	"store_item_shopmall_98"		"Season 1 Completion Bonus"
+	"store_item_shopmall_98_desc"	"Initial gold +1000<br/>Intelligence +20, Agility+25, Strength +30<br/>Initial kill points +50<br/>Critical chance +2%，Critical Damage +20%<br/>Skill level +2<br/>Additional damage +2%<br/>Final damage +2%<br/>Gold Bonus +3%<br/>Experience Bonus +3%<br/><font color='gold'>Permanent effect</font>"
 
 	"store_item_shopmall_55"	"Super Magic Rune Book Ⅱ"
 	"store_item_shopmall_55_desc"	"Activates 1 random unique Super Magic rune at the start of the game<br/><br/><font color='gold'>Permanent effect</font>"
@@ -1071,13 +1076,13 @@
 	"store_item_shopmall_cw_1_202"		"Flame Birdling"
 	"store_item_shopmall_cw_1_202_desc"	"Category: Pet<br/>Function: Monster kill gold +15, Gold bonus +10%, Experience bonus +10%"
 	"store_item_shopmall_cw_3_11"	"Doom Baby"
-	"store_item_shopmall_cw_3_11_desc"	"Category: Pet<br/>Function: Hero skill level +2, Gold bonus +12%"
+	"store_item_shopmall_cw_3_11_desc"	"Category: Pet<br/>Function: Skill level +2, Gold bonus +12%"
 	"store_item_shopmall_cw_4_22"	"Baby Roshan"
-	"store_item_shopmall_cw_4_22_desc"	"Category: Pet<br/>Function: Hero skill level +2, Chance of obtaining the highest tier of archived equipment +40%(can be multiplied with Destiny points)"
+	"store_item_shopmall_cw_4_22_desc"	"Category: Pet<br/>Function: Skill level +2, Chance of obtaining the highest tier of archived equipment +40%(can be multiplied with Destiny points)"
 	"store_item_shopmall_cw_5_22"	"Golden Baby Roshan"
-	"store_item_shopmall_cw_5_22_desc"	"Category: Pet<br/>Function: Hero skill level +3, Chance of obtaining the highest tier of archived equipment +55%(can be multiplied with Destiny points)"
+	"store_item_shopmall_cw_5_22_desc"	"Category: Pet<br/>Function: Skill level +3, Chance of obtaining the highest tier of archived equipment +55%(can be multiplied with Destiny points)"
 	"store_item_shopmall_cw_6_22"	"Darkmoon Baby Roshan"
-	"store_item_shopmall_cw_6_22_desc"	"Category: Pet<br/>Function: Hero skill level +4, Chance of obtaining the highest tier of archived equipment +80%(can be multiplied with Destiny points)"
+	"store_item_shopmall_cw_6_22_desc"	"Category: Pet<br/>Function: Skill level +4, Chance of obtaining the highest tier of archived equipment +80%(can be multiplied with Destiny points)"
 	"store_item_shopmall_gh_1_1"	"Aura of Toughness"
 	"store_item_shopmall_gh_1_1_desc"	"Category: Aura<br/>Function: Armor +10"
 	"store_item_shopmall_gh_1_2"	"Magic Aura"
@@ -1109,9 +1114,9 @@
 	"store_item_shopmall_ch_4_13"	"Restaurant Player-Gold"
 	"store_item_shopmall_ch_4_13_desc"	"Category: Title<br/>Function: Lucky value +20<br/>Every point of lucky value increases the chance of Lord of Calamity dropping an archived equipment (No additional effect when exceeds 100)"
 	"store_item_shopmall_ch_1_101"	"Anonymous"
-	"store_item_shopmall_ch_1_101_desc"	"Category: Title<br/>Function: Heroes’ personal skill level +1"
+	"store_item_shopmall_ch_1_101_desc"	"Category: Title<br/>Function: Skill level +1"
 	"store_item_shopmall_ch_1_201"	"Anonymous"
-	"store_item_shopmall_ch_1_201_desc"	"Category: Title<br/>Function: Heroes’ personal skill level +1.5"
+	"store_item_shopmall_ch_1_201_desc"	"Category: Title<br/>Function: Skill level  +1.5"
 	"store_item_shopmall_ch_2_14"	"Adept"
 	"store_item_shopmall_ch_2_14_desc"	"Category: Title<br/>Function: Destiny points +5, Lucky value +3<br/>Every points of destiny points represents 1% of better the quality of the archived equipment obtained by killing the Lord of Calamity<br><br><font color='gold'>Only the title in use will take effect</font>"
 	"store_item_shopmall_ch_3_14"	"Noob"
@@ -1149,7 +1154,7 @@
 	"map_level_bonus_5"	"Gold for killing monsters +20"
 	"map_level_bonus_6"	"Gold gain +10%"
 	"map_level_bonus_7"	"Experience gain +10%"
-	"map_level_bonus_8"	"Personal skill level +1"
+	"map_level_bonus_8"	"Skill level +1"
 	"map_level_bonus_9"	"Upgrade all attributes +5"
 	"map_level_bonus_10"	"Initial kills +200"
 	"map_level_bonus_11"	"The number of enemies killed every 10 seconds +10"
@@ -1161,7 +1166,7 @@
 	"map_level_bonus_17"	"Initial kills +300"
 	"map_level_bonus_18"	"Gold gain +20%"
 	"map_level_bonus_19"	"Experience gain +20%"
-	"map_level_bonus_20"	"Personal skill level +1"
+	"map_level_bonus_20"	"Skill level +1"
 	"map_level_bonus_21"	"Upgrades all skill upgrades (Each upgrade will not work again with the skills of the same name)"
 	"map_level_bonus_22"	"Destiny points +20"
 	"map_level_bonus_23"	"Final damage +20%"
@@ -1352,7 +1357,7 @@
 
 	"modifier_bw_1_5_Description"	"Agility +200, Attack speed +30<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure </font>"
 
-	"modifier_bw_1_6_Description"	"Intelligence +200, Skill enhancement +20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
+	"modifier_bw_1_6_Description"	"Intelligence +200, Spell Amplification +20%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font>"
 
 	"modifier_bw_1_7_Description"	"All attributes+ 300<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 1 Treasure</font> "
 
@@ -1376,7 +1381,7 @@
 
 	"modifier_bw_2_3_Description"	"Attack power +2000<br/>Each attack has a 20% chance of causing 500% damage<br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
-	"modifier_bw_2_4_Description"	"Intelligence +600<br/>Skill enhancement +30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
+	"modifier_bw_2_4_Description"	"Intelligence +600<br/>Spell Amplification +30%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
 	"modifier_bw_2_5_Description"	"Agility +600<br/>Attack speed +50<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 2 Treasure</font>"
 
@@ -1438,7 +1443,7 @@
 
 	"modifier_bw_3_4_Description"	"Attack speed +50<br/>Each attack comes with 5* agility physical damage<br/><br/><br/><br/><br/><font color=\"#cfbf81 \">Level 3 Treasure</font>"
 
-	"modifier_bw_3_5_Description"	"Skill enhancement +80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
+	"modifier_bw_3_5_Description"	"Spell Amplification +80%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 3 Treasure</font>"
 
 	"modifier_bw_3_6_Description"	"Cooldown reduction -17%<br/>Mana regeneration +5<br/><br/><br/><br/><br/><font color=\"#cfbf81\">level 3 Treasure</font>"
 
@@ -1494,7 +1499,7 @@
 
 	"modifier_bw_4_5_Description"	"Attack distance +500<br/>Each attack will knock back the enemy 50 distance<br/>and cause pure damage of current attack power x0.1.<br/><font color=\"#ffffff\">(Does not repel the BOSS)</font><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
-	"modifier_bw_4_6_Description"	"Attack speed +99, movement speed +50<br/>All attributes +6666<br/>Magic resistance +50%<br/>Status resistance +30%<br/>Skills enhancement +99% <br/>Attack power +99%<br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
+	"modifier_bw_4_6_Description"	"Attack speed +99, movement speed +50<br/>All attributes +6666<br/>Magic resistance +50%<br/>Status resistance +30%<br/>Spell Amplification +99% <br/>Attack power +99%<br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
 	"modifier_bw_4_7_Description"	"Attack speed +300<br/>Gold bonus +100%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Level 4 Treasure</font>"
 
@@ -1540,7 +1545,7 @@
 
 	"modifier_bw_all_7_Description"	"Current base intelligence +60%<br/>Other attributes-20%<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_8_Description"	"Skills enhancement +100%<br/>Attack speed -200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
+	"modifier_bw_all_8_Description"	"Spell Amplification +100%<br/>Attack Speed -200<br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure </font>"
 
 	"modifier_bw_all_9_Description"	"Transfer one's own base defense *30 to the main attribute<br/>clear the base armor<br/><br/><br/><br/><font color=\"#cfbf81\">Mystery Treasure</font>"
 
@@ -1600,7 +1605,7 @@
 
 	"modifier_bw_all_40_Description"	"Experience bonus +30%<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
-	"modifier_bw_all_41_Description"	"Number of Hellfire Goelms +1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
+	"modifier_bw_all_41_Description"	"Number of Hellfire Golems +1<br/><br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
 	"modifier_bw_all_42_Description"	"Number of Mass Serpent Wards +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1692,7 +1697,7 @@
 
 	"modifier_bw_all_86_Description"	"Kill points per 10 seconds +200<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure<br/></font>"
 
-	"modifier_bw_all_87_Description"	"Talent skill level +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
+	"modifier_bw_all_87_Description"	"Hero Talent Level +1<br/><br/><br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font> "
 
 	"modifier_bw_all_88_Description"	"Every 3S will send out a stream of fire to random enemy units around<br/>inflicting current level/2+10 main attribute Magic damage to enemies passing by<br/><br/>< br/><br/><br/><br/><font color=\"#cfbf81\">Mysterious Treasure</font>"
 
@@ -1878,7 +1883,7 @@
 
 	"achievement_difficulty_4"	"Clear N4"
 	//"achievement_difficulty_4_desc"					""
-	"achievement_difficulty_4_bonus"	"Personal skill level +1"
+	"achievement_difficulty_4_bonus"	"Skill level +1"
 	//"achievement_difficulty_4_bonus_des 				
 
 
@@ -2350,7 +2355,7 @@
 	"boss_death"	"<font color=\"#35ed58\">The Lord of Calamity has been killed, reward a treasure</font><Panel>"
 	"ability_high"	"The skill has reached the highest level"
 	"ability_full"	"Skills slots are full, unable to learn"
-	"ability_ts"	"Skills have been learned, raise the skill level by one level!"
+	"ability_ts"	"Skill was already learnt, raise the skill level by 1!"
 	"ability_cg"	"Skill learning success"
 	"bw_cc"	"Treasure purchase limit reached!"
 	"ym_cc"	"The number of summoned units has reached the upper limit!"
@@ -2473,7 +2478,7 @@
 	"bp_reward_item_BPreward_base_14"	"Hero critical strike chance +2%"
 	"bp_reward_item_jing_plus_14"		"Spark Stone +50000"
 
-	"bp_reward_item_BPreward_base_15"	"Hero personal skill level +1"
+	"bp_reward_item_BPreward_base_15"	"Skill level +1"
 	"bp_reward_item_BPreward_plus_15"	"Season 2 PLUS Pet Reward"
 
 	"bp_reward_item_BPreward_base_16"	"Conquest Key +10"
@@ -2521,15 +2526,9 @@
 	"bp_reward_item_BPreward_base_30"	"Strengthening Stone drop quantity +10%"
 	"bp_reward_item_BPreward_plus_30"	"Strengthening Stone drop quantity +10%"
 
-
-	"bp_quest_day_difficulty_0"	"Clear the level on any difficulty"
-	"bp_quest_day_difficulty_1"	"Clear N1"
-	"bp_quest_day_difficulty_2"	"Clear N2"
-	"bp_quest_day_difficulty_3"	"Clear N3"
-	"bp_quest_day_difficulty_4"	"Clear N4"
-	"bp_quest_day_difficulty_5"	"Clear N5"
-	"bp_quest_day_difficulty_6"	"Clear N6"
-	"bp_quest_day_difficulty_7"	"Clear N7"
+	"bp_quest_difficulty"	"Clear N{s:value}"
+	"bp_quest_difficulty_mode"	"Clear N{s:value}{s:mode}"
+	"bp_quest_difficulty_any"	"Clear any difficulty"
 
 	"bp_quest_day_hero_pass_1"	"Use Strength hero to complete the level"
 	"bp_quest_day_hero_pass_2"	"Use Agility heroes to complete the level"
@@ -2542,28 +2541,11 @@
 	"bp_quest_day_hero_killboss_5"	"Kill the Lord of Calamity: Lord Phoenix"
 	"bp_quest_day_hero_killboss_6"	"Kill the Lord of Calamity: Phantom Assassin"
 
-
 	"bp_quest_day_hero_killunit_1"	"Kill 5000 monster"
 
 	"bp_quest_day_hero_getboss_1"	"Get 500 Boss points"
 
-	"bp_quest_week_difficulty_5_2"	"Clear N5 Furious Mode"
-	"bp_quest_week_difficulty_6_3"	"Clear N6 Arcane Mode"
-	"bp_quest_week_difficulty_7_4"	"Clear N7 Disaster Mode"
-	"bp_quest_week_difficulty_8_2"	"Clear N8 Furious Mode"
-	"bp_quest_week_difficulty_9_3"	"Clear N9 Arcane Mode"
-	"bp_quest_week_difficulty_10_4"	"Clear N10 Disaster Mode"
-
 	"bp_quest_week_hero_killunit_1"	"A total of 30,000 monster have been killed"
-
-	"bp_quest_week_difficulty_11_5"	"Clear N11 Hell Mode"
-	"bp_quest_week_difficulty_12_5"	"Clear N12 Hell Mode"
-	"bp_quest_week_difficulty_13_6"	"Clear N13 Bounty Mode"
-	"bp_quest_week_difficulty_14_7"	"Clear N14 Nightmare Mode"
-	"bp_quest_week_difficulty_7"	"Complete N7 levels 3 times in total"
-	"bp_quest_week_difficulty_8"	"Complete N8 levels 3 times in total"
-	"bp_quest_week_difficulty_9"	"Clear N9 levels 3 times in total"
-	"bp_quest_week_difficulty_10"	"Clear N10 levels 3 times in total"
 
 	"bp_quest_week_hero_getboss_1"	"Get 3000 BOSS points"
 

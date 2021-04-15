@@ -33990,6 +33990,7 @@
 			{
 				"ModifierName"	"modifier_invisible"
 				"Target"	"CASTER"
+				"Duration"	"5"
 			}
 			"FireSound"
 			{
@@ -34000,11 +34001,13 @@
 			{
 				"ModifierName"	"modifier_sand_storm_debuff_datadriven"
 				"Target"	"CASTER"
+				"Duration"	"5"
 			}
 			"ApplyModifier"
 			{
 				"ModifierName"	"modifier_sand_storm_vfx_datadriven"
 				"Target"	"CASTER"
+				"Duration"	"5"
 			}
 		}
 		"OnChannelFinish"
@@ -36207,7 +36210,7 @@
 					"MODIFIER_PROPERTY_STATS_INTELLECT_BONUS"	"%bonus_intellect"
 					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"	"%bonus_armor"
 					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"	"%bonus_movement_speed"
-					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"15"
+					"MODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE"	"23"
 				}
 				"IsHidden"	"1"
 			}
@@ -38068,6 +38071,240 @@
 		"ItemRequirements"	{}
 	}
 
+	"item_net_wq_ll_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/破空巨片战斧"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_ll_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2730"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_ll_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/绛珠影精战斧"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_ll_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2731"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_ll_9_3"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/战龙秘铁阔剑"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_ll_9_3"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2732"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_mj_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/孤风暗仙剑"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_mj_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2733"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_mj_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/烛龙蛊焰剑"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_mj_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2734"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_mj_9_3"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/烈阳妖地剑"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_mj_9_3"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2735"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_zl_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/一念锋阴法杖"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_zl_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2736"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_zl_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/翔龙暗爪法杖"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_zl_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2737"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_zl_9_3"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/青鸾鬼地法杖"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_zl_9_3"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2738"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
 	"item_net_wq_ll_8_2"
 	{
 		"BaseClass"	"item_lua"
@@ -39524,6 +39761,162 @@
 		"ItemRequirements"	{}
 	}
 
+	"item_net_fj_ty_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/天雷绣泉腰带"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2739"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_fj_ty_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/水镜广木战靴"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2740"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_fj_ty_9_3"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/轰天软琉头盔"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_3"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2741"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_fj_ty_9_4"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/天虎暗睛护肩"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_4"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2742"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_fj_ty_9_5"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/星天神叶战靴"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_5"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2743"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_fj_ty_9_6"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/毒蝎宝牙头盔"
+		"ScriptFile"	"lua_items/net_item/item_net_fj_ty_9_6"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2744"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
 	"item_net_fj_ty_8_2"
 	{
 		"BaseClass"	"item_lua"
@@ -40278,6 +40671,162 @@
 		"ItemRequirements"	{}
 	}
 
+	"item_net_ss_ll_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/赤火玄鳞戒指"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_ll_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2745"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_ll_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/混元暗皮戒指"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_ll_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2746"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_mj_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/无情歧缕护手"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_mj_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2747"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_mj_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/紫阳重星护手"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_mj_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2748"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_zl_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/九宫新韫挂坠"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_zl_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2749"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_zl_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/百炼鬼鬼挂坠"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_zl_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2750"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
 	"item_net_ss_ll_8_2"
 	{
 		"BaseClass"	"item_lua"
@@ -40420,6 +40969,32 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"0.0"
 		"ID"	"2716"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ss_ty_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/紫霞蛊焰挂坠"
+		"ScriptFile"	"lua_items/net_item/item_net_ss_ty_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2751"
 		"ItemQuality"	"consumable"
 		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
 		// Item Info
@@ -40836,6 +41411,84 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"0.0"
 		"ID"	"2717"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ts_ty_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/知御鬼木纹章"
+		"ScriptFile"	"lua_items/net_item/item_net_ts_ty_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2752"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ts_ty_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/缘觉鬼血纹章"
+		"ScriptFile"	"lua_items/net_item/item_net_ts_ty_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2753"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_ts_ty_9_3"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/血焰旧炎纹章"
+		"ScriptFile"	"lua_items/net_item/item_net_ts_ty_9_3"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2754"
 		"ItemQuality"	"consumable"
 		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
 		// Item Info

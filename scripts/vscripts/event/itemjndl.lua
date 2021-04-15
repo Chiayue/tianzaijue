@@ -144,7 +144,7 @@ m.mjjn1={
   "item_tyjcjn_smbf1";
  -- "item_tyjcjn_xc1";
   "item_tyjcjn_sxs1";
-  "item_tyjcjn_lxdf1";
+--  "item_tyjcjn_lxdf1";
   "item_tyjcjn_hdyj1";
   "item_tyjcjn_zkfs1";
   "item_mjjcjn_hyqj1";
@@ -164,7 +164,7 @@ m.mjjn2={
   "item_mjjcjn_stxw2";
 --  "item_mjjcjn_wdz2";
  -- "item_mjjcjn_lz2";
-  "item_tyjcjn_lxdf2";
+--  "item_tyjcjn_lxdf2";
   "item_tyjcjn_hdyj2";
   "item_tyjcjn_zkfs2";
   "item_mjjcjn_hyqj2";
@@ -182,7 +182,7 @@ m.mjjn3={
   "item_mjjcjn_sjyj3";
   "item_mjjcjn_fx3";
   "item_mjjcjn_blgj3";
-  "item_tyjcjn_lxdf3";
+ -- "item_tyjcjn_lxdf3";
   "item_tyjcjn_hdyj3";
   "item_tyjcjn_zkfs3";
   "item_mjjcjn_hyqj3";
@@ -202,7 +202,7 @@ m.mjjn3={
   "item_mjjcjn_blgj4";
 --  "item_mjjcjn_wdz4";
  -- "item_mjjcjn_lz4";
- "item_tyjcjn_lxdf4";
+ --"item_tyjcjn_lxdf4";
   "item_tyjcjn_hdyj4";
   "item_tyjcjn_zkfs4";
   "item_mjjcjn_hyqj4";
@@ -220,7 +220,7 @@ m.mjjn3={
   "item_mjjcjn_blgj5";
 --  "item_mjjcjn_wdz5";
  -- "item_mjjcjn_lz5";
- "item_tyjcjn_lxdf5";
+-- "item_tyjcjn_lxdf5";
   "item_tyjcjn_hdyj5";
   "item_tyjcjn_zkfs5";
   "item_mjjcjn_hyqj5";
@@ -236,7 +236,7 @@ m.mjjn3={
  -- "item_mjjcjn_hytx6";
   "item_mjjcjn_fx6";
   "item_mjjcjn_blgj6";
-  "item_tyjcjn_lxdf6";
+--  "item_tyjcjn_lxdf6";
   "item_tyjcjn_hdyj6";
   "item_tyjcjn_zkfs6";
   "item_mjjcjn_hyqj6";

@@ -583,6 +583,7 @@
 	"ui_net_equip_action_enhance"	"强化"
 	"ui_net_equip_action_enhance_tooltip"	"[强化]<br>点击打开 [装备强化] 界面，可以使用 “强化石”对装备进行强化，强化可提升装备的所有属性。"
 	"ui_net_equip_action_save_pos_tooltip"	"[保存位置]<br>点击后可将当前装备位置保存至服务器<br>冷却时间：30s"
+	"ui_net_equip_action_refine_tooltip"	"[洗练]<br>点击打开[装备洗练]界面。通过洗练，可以提升装备属性值"
 	
 	"ui_attribute_net_equips_destroy_confirm"	"此操作将永久销毁装备，返还 <font color='gold'>{d:reward_jing}</font> 晶石，是否确定？"
 	
@@ -2165,47 +2166,210 @@
 
 	"achievement_difficulty_15_2"						"通关N15-狂暴模式"
 	//"achievement_difficulty_15_2_desc"					""
-	"achievement_difficulty_15_2_bonus"					"攻击速度+10"
+	"achievement_difficulty_15_2_bonus"					"物理穿透+2"
 	//"achievement_difficulty_15_2_bonus_desc"			""
 
 
-	"achievement_difficulty_15_3"						"通关N15-奥术模式"
-	//"achievement_difficulty_15_3_desc"					""
-	"achievement_difficulty_15_3_bonus"					"冷却缩减-2%"
-	//"achievement_difficulty_15_3_bonus_desc"			""
+	"achievement_difficulty_16_2"						"通关N16--狂暴模式"
+	//"achievement_difficulty_16_2_desc"					""
+	"achievement_difficulty_16_2_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_16_2_bonus_des
+	
+	"achievement_difficulty_17_3"						"通关N17--奥术模式"
+	//"achievement_difficulty_17_3_desc"					""
+	"achievement_difficulty_17_3_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_17_3_bonus_des
 
 
-	"achievement_difficulty_15_4"						"通关N15-灾难模式"
-	//"achievement_difficulty_15_4_desc"					""
-	"achievement_difficulty_15_4_bonus"					"魔法回复+5"
-	//"achievement_difficulty_15_4_bonus_desc"			""
+	"achievement_difficulty_18_3"						"通关N18--奥术模式"
+	//"achievement_difficulty_18_3_desc"					""
+	"achievement_difficulty_18_3_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_18_3_bonus_des
+
+	"achievement_difficulty_19_4"						"通关N19--奥术模式"
+	//"achievement_difficulty_19_4_desc"					""
+	"achievement_difficulty_19_4_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_19_4_bonus_des
+
+	"achievement_difficulty_20_5"						"通关N20--地狱模式"
+	//"achievement_difficulty_20_5_desc"					""
+	"achievement_difficulty_20_5_bonus"					"移动速度+10"
+	//"achievement_difficulty_20_5_bonus_des
+
+	"achievement_difficulty_21_6"						"通关N21--特殊模式"
+	//"achievement_difficulty_21_6_desc"					""
+	"achievement_difficulty_21_6_bonus"					"金钱加成+10%"
+	//"achievement_difficulty_21_6_bonus_des
+
+	"achievement_difficulty_22_7"						"通关N22--特殊模式"
+	//"achievement_difficulty_22_7_desc"					""
+	"achievement_difficulty_22_7_bonus"					"最终伤害+10%"
+	//"achievement_difficulty_22_7_bonus_des
 
 
-	"achievement_difficulty_15_5"						"通关N15-地狱模式"
-	//"achievement_difficulty_15_5_desc"					""
-	"achievement_difficulty_15_5_bonus"					"移动速度+10"
-	//"achievement_difficulty_15_5_bonus_desc"			""
+	"achievement_difficulty_23_2"						"通关N23--特殊模式"
+	//"achievement_difficulty_23_2_desc"					""
+	"achievement_difficulty_23_2_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_23_2_bonus_des
 
-	"achievement_difficulty_15_6"						"通关N15-赏金模式"
-	//"achievement_difficulty_15_6_desc"					""
-	"achievement_difficulty_15_6_bonus"					"金钱加成+10%"
-	//"achievement_difficulty_15_6_bonus_desc"			""
+	"achievement_difficulty_24_3"						"通关N24--特殊模式"
+	//"achievement_difficulty_24_3_desc"					""
+	"achievement_difficulty_24_3_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_24_3_bonus_des
+
+	"achievement_difficulty_25_4"						"通关N25--特殊模式"
+	//"achievement_difficulty_25_4_desc"					""
+	"achievement_difficulty_25_4_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_25_4_bonus_des
+
+	"achievement_difficulty_26_5"						"通关N26--特殊模式"
+	//"achievement_difficulty_26_5_desc"					""
+	"achievement_difficulty_26_5_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_26_5_bonus_des
+
+	"achievement_difficulty_27_6"						"通关N27--特殊模式"
+	//"achievement_difficulty_27_6_desc"					""
+	"achievement_difficulty_27_6_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_27_6_bonus_des
+
+	"achievement_difficulty_28_7"						"通关N28--特殊模式"
+	//"achievement_difficulty_28_7_desc"					""
+	"achievement_difficulty_28_7_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_28_7_bonus_des
+
+	"achievement_difficulty_29_7"						"通关N29--特殊模式"
+	//"achievement_difficulty_29_7_desc"					""
+	"achievement_difficulty_29_7_bonus"					"最终伤害+0.5%"
+	//"achievement_difficulty_29_7_bonus_des
 
 
-	"achievement_difficulty_15_7"						"通关N15-噩梦模式"
-	//"achievement_difficulty_15_7_desc"				""
-	"achievement_difficulty_15_7_bonus"					"最终伤害+10%"
-	//"achievement_difficulty_15_7_bonus_desc"			""
+
+	"achievement_difficulty_30_2"						"通关N30--特殊模式"
+	//"achievement_difficulty_30_2_desc"					""
+	"achievement_difficulty_30_2_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_30_2_bonus_des
+
+	"achievement_difficulty_31_3"						"通关N31--特殊模式"
+	//"achievement_difficulty_31_3_desc"					""
+	"achievement_difficulty_31_3_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_31_3_bonus_des
+
+	"achievement_difficulty_32_4"						"通关N32--特殊模式"
+	//"achievement_difficulty_32_4_desc"					""
+	"achievement_difficulty_32_4_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_32_4_bonus_des
+
+	"achievement_difficulty_33_5"						"通关N33--特殊模式"
+	//"achievement_difficulty_33_5_desc"					""
+	"achievement_difficulty_33_5_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_33_5_bonus_des
+
+	"achievement_difficulty_34_6"						"通关N34--特殊模式"
+	//"achievement_difficulty_34_6_desc"					""
+	"achievement_difficulty_34_6_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_34_6_bonus_des
+
+	"achievement_difficulty_35_7"						"通关N35--特殊模式"
+	//"achievement_difficulty_35_7_desc"					""
+	"achievement_difficulty_35_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_35_7_bonus_des
+
+	"achievement_difficulty_36_2"						"通关N36--特殊模式"
+	//"achievement_difficulty_36_2_desc"					""
+	"achievement_difficulty_36_2_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_36_2_bonus_des
+
+	"achievement_difficulty_37_3"						"通关N37--特殊模式"
+	//"achievement_difficulty_37_3_desc"					""
+	"achievement_difficulty_37_3_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_37_3_bonus_des
+
+	"achievement_difficulty_38_4"						"通关N38--特殊模式"
+	//"achievement_difficulty_38_4_desc"					""
+	"achievement_difficulty_38_4_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_38_4_bonus_des
+
+	"achievement_difficulty_39_5"						"通关N39--特殊模式"
+	//"achievement_difficulty_39_5_desc"					""
+	"achievement_difficulty_39_5_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_39_5_bonus_des
+
+	"achievement_difficulty_40_6"						"通关N40--特殊模式"
+	//"achievement_difficulty_40_6_desc"					""
+	"achievement_difficulty_40_6_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_40_6_bonus_des
+
+	"achievement_difficulty_41_7"						"通关N41--特殊模式"
+	//"achievement_difficulty_41_7_desc"					""
+	"achievement_difficulty_41_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_41_7_bonus_des
 
 
+	"achievement_difficulty_42_2"						"通关N42--特殊模式"
+	//"achievement_difficulty_42_2_desc"					""
+	"achievement_difficulty_42_2_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_42_2_bonus_des
+
+	"achievement_difficulty_43_3"						"通关N43--特殊模式"
+	//"achievement_difficulty_43_3_desc"					""
+	"achievement_difficulty_43_3_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_43_3_bonus_des
+
+	"achievement_difficulty_44_4"						"通关N44--特殊模式"
+	//"achievement_difficulty_44_4_desc"					""
+	"achievement_difficulty_44_4_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_44_4_bonus_des
+
+	"achievement_difficulty_45_5"						"通关N45--特殊模式"
+	//"achievement_difficulty_45_5_desc"					""
+	"achievement_difficulty_45_5_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_45_5_bonus_des
+
+	"achievement_difficulty_46_6"						"通关N46--特殊模式"
+	//"achievement_difficulty_46_6_desc"					""
+	"achievement_difficulty_46_6_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_46_6_bonus_des
+
+	"achievement_difficulty_47_7"						"通关N47--特殊模式"
+	//"achievement_difficulty_47_7_desc"					""
+	"achievement_difficulty_47_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_47_7_bonus_des
+
+	"achievement_difficulty_48_7"						"通关N47--特殊模式"
+	//"achievement_difficulty_48_7_desc"					""
+	"achievement_difficulty_48_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_48_7_bonus_des
 
 
+	"achievement_difficulty_48_7"						"通关N48--特殊模式"
+	//"achievement_difficulty_48_7_desc"					""
+	"achievement_difficulty_48_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_48_7_bonus_des
 
+	"achievement_difficulty_49_7"						"通关N49--特殊模式"
+	//"achievement_difficulty_49_7_desc"					""
+	"achievement_difficulty_49_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_49_7_bonus_des
 
+	"achievement_difficulty_50_7"						"通关N50--特殊模式"
+	//"achievement_difficulty_50_7_desc"					""
+	"achievement_difficulty_50_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_50_7_bonus_des
 
+	"achievement_difficulty_51_7"						"通关N51--特殊模式"
+	//"achievement_difficulty_51_7_desc"					""
+	"achievement_difficulty_51_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_51_7_bonus_des
 
+	"achievement_difficulty_52_7"						"通关N52--特殊模式"
+	//"achievement_difficulty_52_7_desc"					""
+	"achievement_difficulty_52_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_52_7_bonus_des
 
-
+	"achievement_difficulty_53_7"						"通关N53--特殊模式"
+	//"achievement_difficulty_53_7_desc"					""
+	"achievement_difficulty_53_7_bonus"					"最终伤害+1%"
+	//"achievement_difficulty_53_7_bonus_des
 
 	//无尽模式不同
 
@@ -2521,16 +2685,10 @@
 
 	"bp_reward_item_BPreward_base_30"				"强化石掉落数量+10%"
 	"bp_reward_item_BPreward_plus_30"				"强化石掉落数量+10%"
-
-
-	"bp_quest_day_difficulty_0"							"通关任意难度"
-	"bp_quest_day_difficulty_1"							"通关N1"
-	"bp_quest_day_difficulty_2"							"通关N2"
-	"bp_quest_day_difficulty_3"							"通关N3"
-	"bp_quest_day_difficulty_4"							"通关N4"
-	"bp_quest_day_difficulty_5"							"通关N5"
-	"bp_quest_day_difficulty_6"							"通关N6"
-	"bp_quest_day_difficulty_7"							"通关N7"
+	
+	"bp_quest_difficulty"	"通关N{s:value}"
+	"bp_quest_difficulty_mode"	"通关N{s:value}{s:mode}"
+	"bp_quest_difficulty_any"	"通关任意难度"
 
 	"bp_quest_day_hero_pass_1"							"使用力量英雄通关"
 	"bp_quest_day_hero_pass_2"							"使用敏捷英雄通关"
@@ -2543,30 +2701,23 @@
 	"bp_quest_day_hero_killboss_5"						"击杀灾厄领主凤凰"
 	"bp_quest_day_hero_killboss_6"						"击杀灾厄领主幻影刺客"
 
-
 	"bp_quest_day_hero_killunit_1"						"击杀5000个小怪"
 
-	"bp_quest_day_hero_getboss_1"						"获得500Boss点数"	
+	"bp_quest_day_hero_getboss_1"						"获得1000Boss点数"	
 
-	"bp_quest_week_difficulty_5_2"						"通关N5狂暴模式"	
-	"bp_quest_week_difficulty_6_3"						"通关N6奥术模式"
-	"bp_quest_week_difficulty_7_4"						"通关N7灾难模式"
-	"bp_quest_week_difficulty_8_2"						"通关N8狂暴模式"
-	"bp_quest_week_difficulty_9_3"						"通关N9奥术模式"
-	"bp_quest_week_difficulty_10_4"						"通关N10灾难模式"
+	"bp_quest_week_hero_pass_1"							"使用力量英雄通关"
+	"bp_quest_week_hero_pass_2"							"使用敏捷英雄通关"
+	"bp_quest_week_hero_pass_3"							"使用智力英雄通关"
 
-	"bp_quest_week_hero_killunit_1"						"累积击杀小怪30000只"
 
-	"bp_quest_week_difficulty_11_5"						"通关N11地狱模式"
-	"bp_quest_week_difficulty_12_5"						"通关N12地狱模式"
-	"bp_quest_week_difficulty_13_6"						"通关N13赏金模式"
-	"bp_quest_week_difficulty_14_7"						"通关N14噩梦模式"
-	"bp_quest_week_difficulty_7"						"通关N7累计3次"
-	"bp_quest_week_difficulty_8"						"通关N8累计3次"
-	"bp_quest_week_difficulty_9"						"通关N9累计3次"
-	"bp_quest_week_difficulty_10"						"通关N10累计3次"
-
-	"bp_quest_week_hero_getboss_1"						"获得3000BOSS点数"
+	"bp_quest_week_hero_killunit_1"						"累积击杀小怪50000只"
+	"bp_quest_week_hero_killboss_1"						"击杀灾厄领主伐木机"
+	"bp_quest_week_hero_killboss_2"						"击杀灾厄领主卡尔"
+	"bp_quest_week_hero_killboss_3"						"击杀灾厄领主死亡骑士"
+	"bp_quest_week_hero_killboss_4"						"击杀灾厄领主山丘巨人"
+	"bp_quest_week_hero_killboss_5"						"击杀灾厄领主凤凰"
+	"bp_quest_week_hero_killboss_6"						"击杀灾厄领主幻影刺客"
+	"bp_quest_week_hero_getboss_1"						"获得10000BOSS点数"
 
 	"npc_dota_hero_hoodwink_desc"	"《修仙诀》玩家专属"
 	"npc_dota_hero_dark_willow_desc"	"《诛仙诀》玩家专属"
