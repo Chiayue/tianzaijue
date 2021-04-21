@@ -569,7 +569,7 @@ if Sachievement == nil then
 			},
 
 			["46_1"]={
-				bonus=4,--所需完成次数  
+				bonus=46,--所需完成次数  
 				reward={Attr_treasure=1,}
 			},
 			["46_6"]={
@@ -639,6 +639,63 @@ if Sachievement == nil then
 				reward={Attr_zzsh=1,}
 			},
 
+
+
+
+
+			["54_1"]={
+				bonus=54,--所需完成次数  
+				reward={Attr_qhsdlsl=1,} --特殊模式强化石掉落数量+1
+			},
+			["54_2"]={
+				bonus=54,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["55_1"]={
+				bonus=55,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["55_3"]={
+				bonus=55,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["56_1"]={
+				bonus=56,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["56_4"]={
+				bonus=56,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["57_1"]={
+				bonus=57,--所需完成次数  
+				reward={Attr_treasure=1,}
+			},
+			["57_5"]={
+				bonus=57,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["58_1"]={
+				bonus=58,--所需完成次数  
+				reward={Giveitem={"item_smbw_2"}}
+			},
+			["58_6"]={
+				bonus=58,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
+
+			["59_1"]={
+				bonus=59,--所需完成次数  
+				reward={Giveitem={"item_xhp_wzts_7"}}
+			},
+			["59_7"]={
+				bonus=59,--所需完成次数  
+				reward={Attr_zzsh=1,}
+			},
 
 
 
@@ -714,7 +771,11 @@ if Sachievement == nil then
 		[22]={Attr_zzsh=20},
 		[23]={Attr_jnmjts=0.2},
 		[24]={Giveitem={"item_smbw_3"}},
-
+		[25]={Attr_qhsdlbs=0.2},
+		[26]={Attr_xlbs=0.15},
+		[27]={Attr_mlbs=0.15},
+		[28]={Attr_slbs=0.15},
+		[29]={Giveitem={"item_xhp_wzts_7"}},
 
 			
 	}

@@ -280,7 +280,6 @@ function m.SpwanAttackBoss(bossName,wave)
 			boss.shjs = string.format("%.2f",maxhp / 200000000)
 			maxhp = 200000000
 		end
-
 		boss:SetBaseMaxHealth(maxhp)
 
 		if difficulty >= 7 and wave >=2 then

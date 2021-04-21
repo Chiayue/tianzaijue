@@ -3266,6 +3266,42 @@
 		}
 	}
 
+	"item_lljcjn_ltyj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/brewmaster_thunder_clap"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2755"
+		"ItemCastOnPickup"	"0"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"15"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"73"
+			}
+		}
+	}
+
 	"item_scjn6"
 	{
 		"BaseClass"	"item_datadriven"
@@ -7221,6 +7257,46 @@
 		}
 	}
 
+	"item_lljcjn_zdb7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/magnataur_shockwave"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2756"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"10"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"6"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"2"
+			}
+		}
+	}
+
 	"item_lljcjn_lzfs1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -7521,6 +7597,56 @@
 		}
 	}
 
+	"item_lljcjn_lzfs7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/black_dragon_splash_attack"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2769"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"6.3"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"300"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"3"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"3"
+			}
+		}
+	}
+
 	"item_lljcjn_ymcz1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -7762,6 +7888,46 @@
 		"AbilityTextureName"	"item_ability_scrolls/axe_counter_helix"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"1705"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"5.4"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"20"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"4"
+			}
+		}
+	}
+
+	"item_lljcjn_fjlx7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/axe_counter_helix"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2757"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -8654,6 +8820,46 @@
 		}
 	}
 
+	"item_mjjcjn_jqz7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/tornado_tempest"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2758"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"7.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"1"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"6"
+			}
+		}
+	}
+
 	"item_mjjcjn_jqz2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -8925,6 +9131,51 @@
 		"AbilityTextureName"	"item_ability_scrolls/death_prophet_carrion_swarm"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"ID"	"1880"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"3"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"1"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"79"
+			}
+		}
+	}
+
+	"item_zljcjn_dxcq7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/death_prophet_carrion_swarm"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2778"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -9279,6 +9530,51 @@
 		}
 	}
 
+	"item_lljcjn_ldj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/nyx_assassin_impale"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2775"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"1"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"1"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"59"
+			}
+		}
+	}
+
 	"item_tyjcjn_hdyj1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -9435,6 +9731,36 @@
 		"AbilityTextureName"	"item_ability_scrolls/chaos_knight_chaos_strike"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"ID"	"1835"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"74"
+			}
+		}
+	}
+
+	"item_tyjcjn_hdyj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/chaos_knight_chaos_strike"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2770"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -9639,6 +9965,36 @@
 		}
 	}
 
+	"item_tyjcjn_zkfs7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/dark_seer_vacuum"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2771"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"75"
+			}
+		}
+	}
+
 	"item_tyjcjn_xc1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -9795,6 +10151,36 @@
 		"AbilityTextureName"	"item_custom/life_stealer_infest_ti10_png"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"ID"	"2723"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"76"
+			}
+		}
+	}
+
+	"item_tyjcjn_smbf7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_custom/life_stealer_infest_ti10_png"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2780"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -10029,6 +10415,36 @@
 		}
 	}
 
+	"item_tyjcjn_lxdf7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/centaur_double_edge"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2772"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"78"
+			}
+		}
+	}
+
 	"item_mjjcjn_fx2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -10215,6 +10631,51 @@
 		"AbilityTextureName"	"item_ability_scrolls/magnataur_shockwave_alt"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"ID"	"1688"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"9"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"1"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"7"
+			}
+		}
+	}
+
+	"item_mjjcjn_fx7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/magnataur_shockwave_alt"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"ID"	"2759"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -10666,6 +11127,52 @@
 		}
 	}
 
+	"item_zljcjn_lypj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/batrider_flamebreak"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"	"-"
+		"ID"	"2776"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"2"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"3"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"80"
+			}
+		}
+	}
+
 	"item_zljcjn_bsbp2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -10877,6 +11384,57 @@
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityCooldown"	"-"
 		"ID"	"1868"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"2"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"3"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"81"
+			}
+		}
+	}
+
+	"item_zljcjn_bsbp7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/ancient_apparition_ice_blast"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityCooldown"	"-"
+		"ID"	"2777"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -11221,6 +11779,56 @@
 		}
 	}
 
+	"item_mjjcjn_hyqj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/spirit_breaker_greater_bash"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2774"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"3.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"3"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"60"
+			}
+		}
+	}
+
 	"item_lljcjn_hpq1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -11521,6 +12129,56 @@
 		}
 	}
 
+	"item_lljcjn_hpq7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/tusk_walrus_punch"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2773"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"3.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"3"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"61"
+			}
+		}
+	}
+
 	"item_mjjcjn_blgj2"
 	{
 		"BaseClass"	"item_datadriven"
@@ -11771,6 +12429,56 @@
 		}
 	}
 
+	"item_mjjcjn_blgj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/clinkz_searing_arrows"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2760"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"6"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"chance"	"33"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"400"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"7"
+			}
+			"05"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"8"
+			}
+		}
+	}
+
 	"item_mjjcjn_sz1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -11882,6 +12590,41 @@
 		"AbilityTextureName"	"item_ability_scrolls/juggernaut_blade_fury"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"1710"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"10"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"10"
+			}
+		}
+	}
+
+	"item_mjjcjn_jrfb7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/juggernaut_blade_fury"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2761"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -13670,6 +14413,46 @@
 		}
 	}
 
+	"item_zljcjn_hxs7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/luna_lucent_beam_alt2"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2762"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"10"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"6"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"22"
+			}
+		}
+	}
+
 	"item_zljcjn_hxs4"
 	{
 		"BaseClass"	"item_datadriven"
@@ -14115,6 +14898,51 @@
 		}
 	}
 
+	"item_zljcjn_bsxx7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/crystal_maiden_crystal_nova"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2763"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"25"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"movespeed_slow"	"20"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"attackspeed_slow"	"20"
+			}
+			"04"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"24"
+			}
+		}
+	}
+
 	"item_zljcjn_sdhj1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -14361,6 +15189,41 @@
 		"AbilityTextureName"	"item_ability_scrolls/lion_finger_of_death"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"1532"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"35"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"25"
+			}
+		}
+	}
+
+	"item_zljcjn_swzz7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/lion_finger_of_death"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2779"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -14665,6 +15528,46 @@
 		}
 	}
 
+	"item_zljcjn_lpz7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/lina_dragon_slave"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2764"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"12"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"max"	"1"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"26"
+			}
+		}
+	}
+
 	"item_zljcjn_gjz1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -14875,6 +15778,41 @@
 		}
 	}
 
+	"item_zljcjn_gjz7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/lina_light_strike_array"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2765"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"i"	"12.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"27"
+			}
+		}
+	}
+
 	"item_zljcjn_tkjj1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -15056,6 +15994,41 @@
 		"AbilityTextureName"	"item_ability_scrolls/queenofpain_scream_of_pain"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"1742"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"21"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"28"
+			}
+		}
+	}
+
+	"item_zljcjn_tkjj7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/queenofpain_scream_of_pain"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2766"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -15325,6 +16298,46 @@
 		}
 	}
 
+	"item_tyjcjn_jxgh7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/necrolyte_heartstopper_aura"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2767"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_FLOAT"
+				"i"	"4.5"
+			}
+			"02"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"radius"	"600"
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"29"
+			}
+		}
+	}
+
 	"item_zljcjn_swmc1"
 	{
 		"BaseClass"	"item_datadriven"
@@ -15481,6 +16494,36 @@
 		"AbilityTextureName"	"item_ability_scrolls/necrolyte_death_pulse"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"1737"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"30"
+			}
+		}
+	}
+
+	"item_zljcjn_swmc7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/necrolyte_death_pulse"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2768"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"
@@ -15716,6 +16759,36 @@
 		"AbilityTextureName"	"item_ability_scrolls/ogre_magi_bloodlust"
 		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"ID"	"2729"
+		"Model"	"models/jntb/ltyj.vmdl"
+		"ItemCost"	"200"
+		"ItemDroppable"	"1"
+		"ItemSellable"	"1"
+		"ItemShareability"	"ITEM_FULLY_SHAREABLE"
+		"ItemRequirements"	{}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/item_ability_scrolls.lua"
+				"Function"	"AddAbility"
+			}
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"model_skin"	"32"
+			}
+		}
+	}
+
+	"item_tyjcjn_sxs7"
+	{
+		"BaseClass"	"item_datadriven"
+		"AbilityTextureName"	"item_ability_scrolls/ogre_magi_bloodlust"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"ID"	"2781"
 		"Model"	"models/jntb/ltyj.vmdl"
 		"ItemCost"	"200"
 		"ItemDroppable"	"1"

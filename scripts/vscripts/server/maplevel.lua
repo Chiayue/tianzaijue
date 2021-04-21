@@ -9,7 +9,7 @@ m.Reason_Battle_Pass = 2
 ---key = 玩家id，value = {exp=123, lvl=123,now=123,max=123}
 local playerData = {}
 
-local maxLevel = 25
+local maxLevel = 30
 
 local levelExp = {}
 

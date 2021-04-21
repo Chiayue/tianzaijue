@@ -54,6 +54,10 @@ m.wjsx={
 	"tswsh";
 	"jntsall";
 	"qhsdlbs";--强化石掉落倍数
+	"qhsdlsl";--强化石掉落数量
+	"xlbs";
+	"mlbs";
+	"slbs";
 	
 }
 
@@ -149,6 +153,10 @@ function m.gameInProgress(hero,i)
 	hero.jnsh = 0	--玩家的初始技能伤害
 	hero.fjsh = 0	--玩家的初始附加伤害
 	hero.zzsh = 0	--玩家的初始最终伤害
+	hero.xlbs = 1	--玩家的初始仙力倍数
+	hero.mlbs = 1	--玩家的初始魔力倍数
+	hero.slbs = 1	--玩家的初始神力倍数
+
 	hero.zhwsh = 0--玩家的初始召唤物伤害
 	hero.jbboss =1	--玩家的召唤
 	hero.bosspoint = 0	--玩家的BOSS点数
@@ -158,7 +166,7 @@ function m.gameInProgress(hero,i)
 	hero.treasure = 0 --宝物的额外槽位
 	hero.tscs = 0 --吞噬神器的次数
 	hero.qhsdlbs=1 --强化石掉落倍数
-	hero.qhsdlsl=1 --强化石掉落数量
+	hero.qhsdlsl=0 --强化石掉落数量
 	hero.mys={}
 	hero.nlzx10 = 0   --升级能量之心的凭证，不等于0就能升级
 	hero.nlzx11 = 0

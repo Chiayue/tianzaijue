@@ -93,6 +93,13 @@ m.countdown = {
 	182,
 
 
+	180,--54
+	180,
+	180,
+	180,
+	180,
+	180,
+
 
 }
 --最多刷新几个boss
@@ -161,6 +168,13 @@ m.max_boss = {
 	6,
 	6,
 	6,
+
+	6,--54
+	6,
+	6,
+	6,
+	6,
+	6,--
 
 }
 --出现第几个BOSS了
@@ -260,6 +274,12 @@ m.jyg={
 	68,
 	70,
 
+	70,--54
+	70,
+	70,
+	70,
+	70,
+	70,
 
 
 
@@ -323,6 +343,13 @@ m.gjg={
 	70,
 
 	70,--48
+	70,
+	70,
+	70,
+	70,
+	70,
+
+	70,--54
 	70,
 	70,
 	70,
@@ -540,6 +567,14 @@ m.qhsdl={
 	[51]={25,40},
 	[52]={25,40},
 	[53]={25,40},
+
+
+	[54]={1,5}, 	
+	[55]={5,10},
+	[56]={10,15},
+	[57]={15,20},
+	[58]={20,25},
+	[59]={25,40},
 }
 
 m.ysdl={
@@ -604,6 +639,13 @@ m.ysdl={
 	960,
 	960,
 	960,
+
+	980,--42
+	1000,
+	1020,
+	1040,
+	1060,
+	1080,
 }
 
 
@@ -1136,10 +1178,12 @@ function m.finishedStoreItem(playerID,playerWin,mvpnum)
 				lv = 7
 			elseif difficulty >=42 and difficulty <=53 then
 				lv = 8
+			elseif difficulty >=54 and difficulty <=59 then
+				lv = 9
 			end
 			local min = m.qhsdl[difficulty][1]
 			local max = m.qhsdl[difficulty][2]
-			local num = math.ceil(RandomInt(min,max)*hero.cas_table.qhsdlbs)   --掉落强化石的数量
+			local num = math.ceil((RandomInt(min,max)+hero.cas_table.qhsdlsl)*hero.cas_table.qhsdlbs)   --掉落强化石的数量
 			local bonusItem = {name="shopmall_sstone_"..lv,count=num}
 			table.insert(store_items,bonusItem)
 		end

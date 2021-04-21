@@ -949,6 +949,33 @@ if Shopmall == nil then
 --            notSale=true,
             canuse=true, 
         },
+        shopmall_ch_5_14={--
+            price_magic=10000,
+            reward={Set_ch="ch_5_14"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+--            notSale=true,
+            canuse=true, 
+        },
+        shopmall_ch_6_14={--
+            price_magic=30000,
+            reward={Set_ch="ch_6_14"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+--            notSale=true,
+            canuse=true, 
+        },
+        shopmall_ch_7_14={--
+            price_magic=80000,
+            reward={Set_ch="ch_7_14"},
+            catalog1="visual",
+            catalog2 = "title",
+            stack=0,
+--            notSale=true,
+            canuse=true, 
+        },
         shopmall_ch_4_22={--
             price_jing=99999999,
             reward={Set_ch="ch_4_22"},
@@ -1110,8 +1137,18 @@ if Shopmall == nil then
             canuse=false,    
         },
         shopmall_sstone_8={--     8阶强化石
-            price_magic=42,
+            price_magic=32,
             price_jing=4800,
+            reward={},
+            stack=0,
+            catalog1="consumable",
+            catalog2="enhance",
+          --  notSale=true,
+            canuse=false,    
+        },
+        shopmall_sstone_9={--     9阶强化石
+            price_magic=34,
+            price_jing=7200,
             reward={},
             stack=0,
             catalog1="consumable",
@@ -1324,6 +1361,33 @@ if Shopmall == nil then
         shopmall_81={--七阶红色特殊装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
             price_jing=5000000,
             reward={Set_item={"7_7_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_99={--八阶橙色随机装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"8_5_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_100={--八阶金色随机装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"8_6_5"}},
+            stack=0,
+            catalog1="chest",
+            catalog2="equip_3",
+            notSale=true,
+            canuse=true, 
+        },
+        shopmall_101={--八阶红色随机装备宝箱(可堆叠)            价格：2000晶石      时间：单局消耗      作用：在商城背包里面随机给予一件 紫色或以上品质的存档装备
+            price_jing=5000000,
+            reward={Set_item={"8_7_5"}},
             stack=0,
             catalog1="chest",
             catalog2="equip_3",
@@ -3177,29 +3241,31 @@ function Shopmall:SetPlayerBP(playerid,data,isLast)
          end
      end
      for k, v in pairs(temp.quest) do  ---添加经验用来前端显示，主要是上传服务器不能带经验
-         for kk, vv in pairs(v) do
-             for aa, bb in pairs(Shopmall['quest_'..k]) do
-                 if kk==bb.name then
-                     temp.quest[k][kk]['exp']=bb.exp
-                 end
-                 if temp.quest[k][kk]['srv_rewarded'] then
-                     temp.quest[k][kk]['finish_time']=temp.quest[k][kk]['srv_rewarded']
-                 end
-             end
-             if string.split(kk, "_")[1]=="difficulty" then
-                 
-                 if k=="day" then
-                     temp.quest[k][kk]['exp']=Shopmall.quest_day_exp[tonumber(string.split(kk, "_")[2])]['exp']
-                 else
-                    if string.split(kk, "_")[3] then   --如果是特殊模式
-                        temp.quest[k][kk]['exp']=Shopmall.quest_week_2_exp[tonumber(string.split(kk, "_")[2])]['exp']
-                    else
-                        temp.quest[k][kk]['exp']=Shopmall.quest_week_1_exp[tonumber(string.split(kk, "_")[2])]['exp']
+        if type(v) == 'table' then 
+            for kk, vv in pairs(v) do
+                for aa, bb in pairs(Shopmall['quest_'..k]) do
+                    if kk==bb.name then
+                        temp.quest[k][kk]['exp']=bb.exp
                     end
-                     
-                 end
-             end
-         end
+                    if temp.quest[k][kk]['srv_rewarded'] then
+                        temp.quest[k][kk]['finish_time']=temp.quest[k][kk]['srv_rewarded']
+                    end
+                end
+                if string.split(kk, "_")[1]=="difficulty" then
+                    
+                    if k=="day" then
+                        temp.quest[k][kk]['exp']=Shopmall.quest_day_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                    else
+                        if string.split(kk, "_")[3] then   --如果是特殊模式
+                            temp.quest[k][kk]['exp']=Shopmall.quest_week_2_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                        else
+                            temp.quest[k][kk]['exp']=Shopmall.quest_week_1_exp[tonumber(string.split(kk, "_")[2])]['exp']
+                        end
+                        
+                    end
+                end
+            end
+        end
      end
      --PrintTable(temp.quest)
  end

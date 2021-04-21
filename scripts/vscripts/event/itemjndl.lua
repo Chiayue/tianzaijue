@@ -115,7 +115,23 @@ m.lljn6={
 --  "item_lljcjn_sxpw6";
  -- "item_zljcjn_dyh6";
 }
-
+m.lljn7={
+  "item_lljcjn_ltyj7";
+--  "item_lljcjn_zzjt6";
+  "item_lljcjn_zdb7";
+  "item_lljcjn_lzfs7";
+  "item_lljcjn_fjlx7";
+  "item_lljcjn_hpq7";
+  "item_lljcjn_ldj7";
+  "item_tyjcjn_hdyj7";
+  "item_tyjcjn_zkfs7";
+  "item_tyjcjn_lxdf7";
+  "item_tyjcjn_smbf7";
+  "item_tyjcjn_sxs7";
+--  "item_lljcjn_czss6";
+--  "item_lljcjn_sxpw6";
+ -- "item_zljcjn_dyh6";
+}
 
 
 m.mjjn1={
@@ -246,6 +262,24 @@ m.mjjn3={
 -- "item_zljcjn_dyh6";
 }
 
+
+ m.mjjn7={
+  "item_mjjcjn_jrfb7";
+  "item_mjjcjn_jqz7";
+ -- "item_mjjcjn_sjyj7";
+ -- "item_mjjcjn_sz6";
+ -- "item_mjjcjn_hytx6";
+  "item_mjjcjn_fx7";
+  "item_mjjcjn_blgj7";
+--  "item_tyjcjn_lxdf6";
+  "item_tyjcjn_hdyj7";
+  "item_tyjcjn_zkfs7";
+  "item_mjjcjn_hyqj7";
+--  "item_tyjcjn_sxs6";
+--  "item_mjjcjn_wdz6";
+ -- "item_mjjcjn_lz6";
+-- "item_zljcjn_dyh6";
+}
 m.zljn1={
   "item_zljcjn_gjz1";
   "item_zljcjn_swmc1";
@@ -354,6 +388,23 @@ m.zljn6={
   "item_zljcjn_bsbp6";
   "item_zljcjn_lypj6";
   "item_zljcjn_dxcq6";
+}
+
+m.zljn7={
+  "item_zljcjn_gjz7";
+  --"item_zljcjn_swmc7";
+  "item_zljcjn_tkjj7";
+  "item_zljcjn_lpz7";
+  "item_zljcjn_bsxx7";
+ -- "item_zljcjn_zygb6";
+ -- "item_zljcjn_lssd6";
+--  "item_zljcjn_cqzj6";
+  "item_zljcjn_hxs7";
+  "item_zljcjn_swzz7";
+--  "item_zljcjn_dyh7";
+  "item_zljcjn_bsbp7";
+  "item_zljcjn_lypj7";
+  "item_zljcjn_dxcq7";
 }
 
 

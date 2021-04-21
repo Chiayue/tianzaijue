@@ -54,7 +54,12 @@ wzts_abilityname={
 		"mj"
 	};
 
-
+	wzts_7={
+	   --技能一
+		"jn_7";
+		--秘诀一
+		"mj"
+	};
 
 
 
@@ -240,6 +245,34 @@ function wzts(keys)
 			local length = #Itemjndl.zljn6
 			local random = RandomInt(1,length)
 			local itemname2 = Itemjndl.zljn6[random]
+			local item = CreateItem(itemname2, caster, caster)
+			caster:AddItem(item)
+			return nil
+		end
+
+	elseif itemname == "jn_7" then
+		if zsx ==1 then
+			local length = #Itemjndl.lljn7
+			local random = RandomInt(1,length)
+			local itemname2 = Itemjndl.lljn7[random]
+			local item = CreateItem(itemname2, caster, caster)
+			caster:AddItem(item)
+			return nil
+		end
+
+		if zsx ==2 then
+			local length = #Itemjndl.mjjn7
+			local random = RandomInt(1,length)
+			local itemname2 = Itemjndl.mjjn7[random]
+			local item = CreateItem(itemname2, caster, caster)
+			caster:AddItem(item)
+			return nil
+		end
+
+		if zsx ==3 then
+			local length = #Itemjndl.zljn7
+			local random = RandomInt(1,length)
+			local itemname2 = Itemjndl.zljn7[random]
 			local item = CreateItem(itemname2, caster, caster)
 			caster:AddItem(item)
 			return nil
