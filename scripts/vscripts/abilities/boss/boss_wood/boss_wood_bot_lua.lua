@@ -19,7 +19,7 @@ end
 function boss_wood_bot_lua:GetCooldown( nLevel )
 	if IsServer() then
 		if self:GetCaster():HasModifier("modifier_boss_phoenix_stone_lua_bloodfier") then
-			return self.BaseClass.GetCooldown( self, nLevel )/2	
+			return self.BaseClass.GetCooldown( self, nLevel ) / 1.5	
 		end
 	end
 	return self.BaseClass.GetCooldown( self, nLevel )

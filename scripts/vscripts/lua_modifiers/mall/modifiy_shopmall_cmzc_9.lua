@@ -16,7 +16,7 @@ function modifiy_shopmall_cmzc_9:OnCreated( kv )
 	if IsServer(  ) then
 		local temp={}
 		--召唤物数量*2
-		temp["zhwslbs"] = 1
+		temp["xlbs"] = 0.15
 		AttributesSet(self:GetParent(),temp)
 	end
 end

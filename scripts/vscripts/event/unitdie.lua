@@ -130,7 +130,7 @@ function m.RecordKills(killer,diedUnit)
 				if pid ~= playerID or GetGameDifficulty() < 29 then
 					local sds = 1 --如果单位有杀敌数，则加上赋予的
 					if diedUnit.getsds then
-						sds= diedUnit.getsds
+						sds= (diedUnit.getsds + caster.cas_table.itemsdssl) * caster.cas_table.itemsdsbs
 					end
 					local unitKey = tostring(EntityHelper.getEntityIndex(hero))
 					local netTable = hero.cas_table
@@ -150,7 +150,7 @@ function m.RecordKills(killer,diedUnit)
 				else
 					local sds = 1 --如果单位有杀敌数，则加上赋予的
 					if diedUnit.getsds then
-						sds= diedUnit.getsds
+						sds= (diedUnit.getsds + caster.cas_table.itemsdssl) * caster.cas_table.itemsdsbs
 					end
 					local unitKey = tostring(EntityHelper.getEntityIndex(caster))
 					local netTable = caster.cas_table

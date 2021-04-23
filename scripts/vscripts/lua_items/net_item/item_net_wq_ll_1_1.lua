@@ -640,7 +640,7 @@ function item_net_wq_ll_1_1:ReCastData(save)----重铸
 					print("rf_true")
 					Shopmall:UpdatePlayerdata( self:GetPurchaser():GetPlayerOwnerID(),stonename,(stonenum-self.recaststone),nil)
 					if issuc==true then
-						self.tempdata.rf=self.tempdata.rf+1
+						self.tempdata.recast=self.tempdata.recast+1
 						SendToClient(self:GetPurchaser():GetPlayerOwnerID(),"tzj_ui_recast_return",{success=true,item=self:GetEntityIndex(),old_attr=self.baseattr,attr=temp,score=self.zdl})
 					end
 					return 5

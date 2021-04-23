@@ -6,6 +6,34 @@ LinkLuaModifier("modifier_pudge_meat_hook_lua", "lua_modifiers/boss/boss_pudge/m
 
 function pudge_meat_hook_lua:OnAbilityPhaseStart()
 	self:GetCaster():StartGesture( ACT_DOTA_OVERRIDE_ABILITY_1 )
+	if IsServer() then
+		local hCaster = self:GetCaster()
+	--local range=self:GetCastRange(hCaster:GetOrigin(),hCaster)
+		local enemies = FindUnitsInRadius(
+			hCaster:GetTeamNumber(),
+			hCaster:GetOrigin(),
+			nil,
+			2000,
+			2,
+			DOTA_UNIT_TARGET_HERO+DOTA_UNIT_TARGET_BASIC,
+			0,
+			0,
+			false
+		)
+		for i=1,#enemies do
+			local nFXIndex = ParticleManager:CreateParticle( "particles/basic_boss/ab_line/range_finder_cone.vpcf", PATTACH_CUSTOMORIGIN, nil )
+			ParticleManager:SetParticleControlEnt( nFXIndex, 0, hCaster, PATTACH_POINT_FOLLOW, "", hCaster:GetOrigin(), true )
+			ParticleManager:SetParticleControl( nFXIndex, 1, hCaster:GetOrigin() )
+			ParticleManager:SetParticleControl( nFXIndex, 2, enemies[i]:GetOrigin() )
+			ParticleManager:SetParticleControl( nFXIndex, 3, Vector(55,55,0) )
+			ParticleManager:SetParticleControl( nFXIndex, 4, Vector(158,3,3) )
+			TimerUtil.createTimerWithDelay(1,
+			function()
+				ParticleManager:DestroyParticle(nFXIndex,true)
+
+			end)
+		end
+	end
 	return true
 end
 
@@ -62,9 +90,10 @@ function pudge_meat_hook_lua:OnSpellStart()
         local vDirection = enemies[i]:GetOrigin() - self.vStartPosition
         vDirection.z = 0.0
 
+		
         local vDirection = ( vDirection:Normalized() ) * self.hook_distance
         local vTargetPosition = self.vStartPosition + vDirection
-
+		
         local flFollowthroughDuration = ( self.hook_distance / self.hook_speed * self.hook_followthrough_constant )
         self:GetCaster():AddNewModifier( self:GetCaster(), self, "modifier_pudge_meat_hook_followthrough_lua", { duration = flFollowthroughDuration } )
 

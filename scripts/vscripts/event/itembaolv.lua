@@ -1215,7 +1215,7 @@ _G.BaoWu2={
 		weight=6000,		
 	},
 	modifier_bw_2_18={	--无知小帽
-		maxnum=1,		
+		maxnum=0,		
 		level=2,		
 		weight=1000,		
 	},
@@ -1559,7 +1559,7 @@ _G.BaoWu2={
 		weight=100,		
 	},
 	modifier_bw_all_15={	--巨人化
-		maxnum=1,		
+		maxnum=0,		
 		level=0,		
 		weight=100,		
 	},
@@ -1576,7 +1576,7 @@ _G.BaoWu2={
 		rare = 1,
 	},
 	modifier_bw_all_18={	--提升体质
-		maxnum=10,		
+		maxnum=0,		
 		level=0,		
 		weight=200,		
 		rare = 1,

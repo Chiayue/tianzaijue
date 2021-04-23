@@ -59,8 +59,8 @@ function modifier_hero_state_pro:OnIntervalThink()
 			modifierAgi = modifierAgi + math.ceil(agi*self.bfbtsqsx/100)
 			modifierInt = modifierInt + math.ceil(int*self.bfbtsqsx/100)
 		end
-		if str + modifierStr > 10000000 then  --力量超过1000万，血量超过21E会出现BUG
-			modifierStr = 10000000 - str
+		if str + modifierStr > 50000000 then  --力量超过5000万，血量超过21E会出现BUG
+			modifierStr = 50000000 - str
 		end
 		self.modifier_str:SetStackCount(modifierStr)
 		self.modifier_agi:SetStackCount(modifierAgi)

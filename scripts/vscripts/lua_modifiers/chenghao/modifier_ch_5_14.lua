@@ -28,6 +28,7 @@ function modifier_ch_5_14:OnRefresh()
 		end
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
 		netTable["xyz"] = netTable["xyz"] + 10
+		netTable["tmz"] = netTable["tmz"] + 6
 		netTable["fjsh"] = netTable["fjsh"] + 10
 		netTable["jnmjts"] = netTable["jnmjts"] + 0.05
 		netTable["qhsdlsl"] = netTable["qhsdlsl"] + 1
@@ -46,6 +47,7 @@ function modifier_ch_5_14:OnDestroy()
 		end
 		local netTable = self:GetParent().cas_table --服务端存储，避免使用getNetTable方法
 		netTable["xyz"] = netTable["xyz"] - 10
+		netTable["tmz"] = netTable["tmz"] - 6
 		netTable["fjsh"] = netTable["fjsh"] - 10
 		netTable["jnmjts"] = netTable["jnmjts"] - 0.05
 		netTable["qhsdlsl"] = netTable["qhsdlsl"] - 1

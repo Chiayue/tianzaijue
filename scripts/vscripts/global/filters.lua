@@ -44,13 +44,13 @@ function m:FilterDamage(filterTable)
 		if attacker.cas_table.zzsh >0 then --最终伤害，不分伤害类型  攻击者
 			damage=damage*(1+attacker.cas_table.zzsh/100)
 		end
-		if attacker.cas_table.xlbs >0 then --仙力倍数
+		if attacker.cas_table.xlbs >1 then --仙力倍数
 			damage=damage*attacker.cas_table.xlbs
 		end
-		if attacker.cas_table.mlbs >0 then --魔力倍数
+		if attacker.cas_table.mlbs >1 then --魔力倍数
 			damage=damage*attacker.cas_table.mlbs
 		end
-		if attacker.cas_table.slbs >0 then --神力倍数
+		if attacker.cas_table.slbs >1 then --神力倍数
 			damage=damage*attacker.cas_table.slbs
 		end
 

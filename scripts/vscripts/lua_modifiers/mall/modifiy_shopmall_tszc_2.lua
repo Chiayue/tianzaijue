@@ -6,7 +6,7 @@ modifiy_shopmall_tszc_2 = class({})
 --------------------------------------------------------------------------------
 
 function modifiy_shopmall_tszc_2:GetTexture()
-	return "rune/shopmall_tszc_2"
+	return "rune/shopmall_cmzc_17"
 end
 --------------------------------------------------------------------------------
 function modifiy_shopmall_tszc_2:IsHidden()
@@ -14,23 +14,16 @@ function modifiy_shopmall_tszc_2:IsHidden()
 end
 function modifiy_shopmall_tszc_2:OnCreated( kv )
 	if IsServer(  ) then
-		
+		local temp={}
+		--召唤物数量*2
+		temp["slbs"] = 0.5
+		AttributesSet(self:GetParent(),temp)
 	end
 end
 
 
 
-function modifiy_shopmall_tszc_2:DeclareFunctions()
-	local funcs = 
-	{
-		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
-	}
-	return funcs
-end
 
-function modifiy_shopmall_tszc_2:GetModifierBaseAttackTimeConstant( params )
-	return  0.5
-end
 function modifiy_shopmall_tszc_2:GetAttributes()
 	return MODIFIER_ATTRIBUTE_PERMANENT 
 end

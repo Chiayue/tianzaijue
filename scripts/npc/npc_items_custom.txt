@@ -39170,6 +39170,32 @@
 		"ItemRequirements"	{}
 	}
 
+	"item_net_wq_ty_9_1"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/破空巨片战斧"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_ty_9_1"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2782"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
 	"item_net_wq_ll_9_2"
 	{
 		"BaseClass"	"item_lua"
@@ -39260,6 +39286,32 @@
 		// -------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"	"0.0"
 		"ID"	"2734"
+		"ItemQuality"	"consumable"
+		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
+		// Item Info
+		// -------------------------------------------------------------------------------------------------------------
+		"ItemCost"	"1000"
+		"ItemSellable"	"0"
+		"ItemShareability"	"ITEM_NOT_SHAREABLE"
+		"ItemPurchasable"	"1"
+		"ItemPermanent"	"0"
+		"ItemStackable"	"0"
+		"ItemShopTags"	"consumable"
+		"ItemRequirements"	{}
+	}
+
+	"item_net_wq_ty_9_2"
+	{
+		"BaseClass"	"item_lua"
+		"AbilityTextureName"	"item_sjzb/cdzb/烛龙蛊焰剑"
+		"ScriptFile"	"lua_items/net_item/item_net_wq_ty_9_2"
+		// General
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		// Stats
+		// -------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"	"0.0"
+		"ID"	"2783"
 		"ItemQuality"	"consumable"
 		"Model"	"models/props_gameplay/neutral_box_model.vmdl"
 		// Item Info

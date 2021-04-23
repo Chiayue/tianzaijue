@@ -24,7 +24,16 @@ function modifier_item_net_aaaa:DeclareFunctions()
 end
 
 function modifier_item_net_aaaa:GetModifierExtraHealthPercentage( params )	--智力
-	return math.ceil(self.attributes.bfbtssm)
+	--if IsServer() then
+	--	local maxHealth = self:GetCaster():GetMaxHealth()
+	--	print("maxHealth",maxHealth)
+	--end
+	local smts = math.ceil(self.attributes.bfbtssm)
+	local smjc = (smts+100) /100 
+	if self:GetCaster():GetMaxHealth() * smjc > 700000000 then
+		smts = math.floor(smts * ( 700000000/self:GetCaster():GetMaxHealth()/ smjc))
+	end
+	return smts
 end
 
 

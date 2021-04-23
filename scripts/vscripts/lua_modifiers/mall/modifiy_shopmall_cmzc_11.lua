@@ -18,6 +18,8 @@ function modifiy_shopmall_cmzc_11:OnCreated( kv )
 		--召唤物数量*2
 		temp["wlbjgl"] = 20
 		temp["wlbjsh"] = 100
+		temp["mfbjgl"] = 20
+		temp["mfbjsh"] = 100
 		AttributesSet(self:GetParent(),temp)
 	end
 end

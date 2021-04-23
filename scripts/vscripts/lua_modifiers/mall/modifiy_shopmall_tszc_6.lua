@@ -28,7 +28,11 @@ end
 function modifiy_shopmall_tszc_6:OnDeath( params )
 	if IsServer() then
 		if self:GetParent() ~= params.unit and params.attacker:GetPlayerOwnerID() == self:GetParent():GetPlayerOwnerID() then
-			local wave = math.ceil(Stage.wave/6)
+			local jc = 1
+			if GetGameDifficulty() >= 36 then
+				jc = 1 + (GetGameDifficulty() - 35) * 0.1
+			end 
+			local wave = math.ceil(Stage.wave/5*jc)
 			local hero = self:GetParent()
 			local baseStr = hero:GetBaseStrength()  + wave
 			local baseAgi = hero:GetBaseAgility()	+ wave

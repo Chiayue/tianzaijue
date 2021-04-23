@@ -14,7 +14,7 @@ function modifiy_shopmall_tszc_10:IsHidden()
 end
 function modifiy_shopmall_tszc_10:OnCreated( kv )
 	if IsServer() then
-		self:StartIntervalThink(120 )
+		self:StartIntervalThink(60 )
 	end
 end
 

@@ -58,7 +58,14 @@ m.wjsx={
 	"xlbs";
 	"mlbs";
 	"slbs";
-	
+	"killsdssl";--小怪给予杀敌数的数量
+	"killsdsbs"; --小怪给予杀敌数的倍数
+
+	"itemsdssl";--回收装备给与杀敌数的数量
+	"itemsdsbs";--回收装备给与杀敌数的倍数
+	"sqjc";
+	"lljc";
+
 }
 
 
@@ -139,6 +146,14 @@ function m.gameInProgress(hero,i)
 	hero.sgzjjb=0 	--玩家的初始杀怪+金币
 	hero.msmjq=0   --每十秒增加钱
 	hero.msmjsds=0   --每十秒增加杀敌数
+	hero.killsdssl = 0 --小怪给予杀敌数的数量
+	hero.killsdsbs = 1 --小怪给予杀敌数的倍数
+
+	hero.itemsdssl = 0 --回收装备给与杀敌数的数量
+	hero.itemsdsbs = 1 --回收装备给与杀敌数的倍数
+	hero.sqjc = 1 -- 吞噬神器属性加成
+	hero.lljc = 1 -- 游戏结束历练值加成
+
 	hero.wlbjgl = 0		--玩家的物理暴击概率
 	hero.wlbjsh = 50	--玩家的物理暴击伤害
 	hero.mfbjgl = 0		--玩家的魔法暴击概率

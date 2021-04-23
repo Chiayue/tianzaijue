@@ -38,7 +38,12 @@ function modifier_bw_all_2:OnCreated( kv )
 				num=18
 			end
 			self:GetParent():SetBaseIntellect(self:GetParent():GetBaseIntellect()*math.pow(1.2,num))
-			self:GetParent():SetBaseStrength(self:GetParent():GetBaseStrength()*math.pow(1.2,num))
+			for i=1,num do
+				if  self:GetParent():GetBaseStrength() < 20000000 then
+					self:GetParent():SetBaseStrength(self:GetParent():GetBaseStrength()*math.pow(1.2,1))
+				end
+			end
+			
 			self:GetParent():SetBaseAgility(self:GetParent():GetBaseAgility()*math.pow(1.2,num))
 			self:SetStackCount(num)
 		end
@@ -52,7 +57,9 @@ function modifier_bw_all_2:OnRefresh()
 	if IsServer() then
 		self:SetStackCount(self:GetStackCount()+1)
 		self:GetParent():SetBaseIntellect(self:GetParent():GetBaseIntellect()*math.pow(1.2,1))
-		self:GetParent():SetBaseStrength(self:GetParent():GetBaseStrength()*math.pow(1.2,1))
+		if  self:GetParent():GetBaseStrength() < 20000000 then
+			self:GetParent():SetBaseStrength(self:GetParent():GetBaseStrength()*math.pow(1.2,1))
+		end
 		self:GetParent():SetBaseAgility(self:GetParent():GetBaseAgility()*math.pow(1.2,1))
 		
 		self:GetParent():CalculateStatBonus(true) --刷新属性，避免卡属性

@@ -16,7 +16,7 @@ function modifiy_shopmall_cmzc_13:OnCreated( kv )
 	if IsServer(  ) then
 		local temp={}
 		--召唤物强度+100
-		temp["zhwsh"] = 100
+		temp["mlbs"] = 0.15
 		AttributesSet(self:GetParent(),temp)
 	end
 end

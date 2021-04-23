@@ -129,7 +129,7 @@
 "item_attribute_sgzjsmz" "Giết quái có 5% Xác suất gia tăng HP: <font color='#ffffff'>+{s:value}</font>"
 "item_attribute_smzhfbfb" "Sinh mệnh khôi phục: <font color='#ffffff'>+{s:value}% /s</font>"
 "item_attribute_gjhfxl" "Công kích hồi phục tự thân HP: <font color='#ffffff'>+{s:value}</font>"
-"item_attribute_lqsj" "Làm lạnh giảm bớt: <font color='#ffffff'>+{s:value}%</font>"
+"item_attribute_lqsj" "Giảm CD: <font color='#ffffff'>+{s:value}%</font>"
 "item_attribute_gjjgjd" "Công kích khoảng cách giảm xuống: <font color='#ffffff'>+{s:value}</font>"
 
 "item_attribute_bfbtsll" "Sức mạnh: <font color='#ffffff'>+{s:value}%</font>"
@@ -309,7 +309,7 @@
 "difficulty_mode_short_1" "Bình thường"
 "difficulty_mode_2" "Cuồng bạo hình thức"
 "difficulty_mode_short_2" "Cuồng bạo"
-"difficulty_mode_desc_2" "Quái vật chỉ số tăng +100%, quái vật cơ sở kinh nghiệm cùng cơ sở tiền tài +100%"
+"difficulty_mode_desc_2" "Quái vật cường độ +100%, quái vật cơ sở kinh nghiệm cùng cơ sở tiền tài +100%"
 "difficulty_mode_3" "Áo thuật hình thức"
 "difficulty_mode_short_3" "Áo thuật"
 "difficulty_mode_desc_3" "Quái vật kỹ năng cd-30%"
@@ -339,103 +339,103 @@
 "ability_property_time""Nhiều lần phát động"
 "ability_property_multiple""Tổn thương bội số"
 "advanced_property_spell_damage""Kỹ năng tổn thương: "
-"advanced_property_cooldown""Làm lạnh giảm bớt: "
-"advanced_property_wlbjgl""Vật lý bạo kích xác suất: "
-"advanced_property_wlbjgl_desc""Tạo thành vật lý tổn thương thường có xác suất bạo kích ( Tối cao vì 100)"
+"advanced_property_cooldown""Giảm CD: "
+"advanced_property_wlbjgl""Tỉ lệ bạo vật lý: "
+"advanced_property_wlbjgl_desc""Tạo thành tổn thương vật lý có tỉ lệ bạo kích, tối đa 100đ"
 
 "advanced_property_wlbjsh""Vật lý bạo kích tổn thương: "
-"advanced_property_wlbjsh_desc""Bạo kích lúc tạo thành vật lý tổn thương tăng lên"
+"advanced_property_wlbjsh_desc""Lúc bạo kích tăng sát thương vật lý tương ứng"
 
-"advanced_property_mfbjgl""Ma pháp bạo kích xác suất: "
-"advanced_property_mfbjgl_desc""Tạo thành ma pháp tổn thương thường có xác suất bạo kích ( Tối cao vì 100)"
+"advanced_property_mfbjgl""Tỉ lệ bạo ma pháp: "
+"advanced_property_mfbjgl_desc""Tạo thành tổn thương ma pháp có tỉ lệ bạo kích, tối đa 100đ"
 
 "advanced_property_mfbjsh""Ma pháp bạo kích tổn thương: "
-"advanced_property_mfbjsh_desc""Bạo kích lúc tạo thành ma pháp tổn thương tăng lên"
+"advanced_property_mfbjsh_desc""Lúc bạo kích tăng sát thương ma pháp tương ứng"
 
 
 "advanced_property_extra_damage""Kèm theo tổn thương: "
-"advanced_property_extra_damage_desc""Tạo thành tất cả tổn thương đều sẽ nhận ngoài định mức thừa tính ( Không nhận vật lý ma pháp tổn thương tăng thêm )"
+"advanced_property_extra_damage_desc""Tạo thành tất cả tổn thương sẽ nhận thêm sát thương ( không tính opt vật lý và ma pháp tổn thương tăng thêm)"
 
 "advanced_property_final_damage""Cuối cùng tổn thương: "
-"advanced_property_final_damage_desc""Tạo thành tất cả tổn thương tại cuối cùng lại nhận thừa tính"
+"advanced_property_final_damage_desc""Tất cả tổn thương tại cuối cùng tăng lên tương ứng(opt ngon nhất và ưu tiên nhất cho dmg nhé ae)"
 "advanced_property_damage_reduce""Giảm tổn thương: "
-"advanced_property_damage_reduce_desc""Giảm xuống nhận tổn thương, trị số càng cao bị thương tổn càng ít, nhưng là sẽ không xuống tới 0 Tổn thương"
+"advanced_property_damage_reduce_desc""Giảm tổn thương phải nhận, chỉ số càng cao giảm càng nhiều nhưng sẽ không giảm về 0"
 
-"advanced_property_physical_damage_lifesteal""Vật lý hút máu: "
-"advanced_property_physical_damage_lifesteal_desc""Tạo thành vật lý tổn thương ( Vô luận kỹ năng vẫn là đòn công kích bình thường ) Sẽ trị liệu mình"
+"advanced_property_physical_damage_lifesteal""Hút máu vật lý: "
+"advanced_property_physical_damage_lifesteal_desc""Tạo thành tổn thương vật lý sẽ hồi máu cho mình(bao gồm cả đánh thường và kỹ năng)"
 
-"advanced_property_damage_immune""Miễn tổn thương xác suất: "
-"advanced_property_damage_immune_desc""Có xác suất có thể miễn dịch lần này tổn thương ( Tối cao miễn tổn thương xác suất là 80)"
+"advanced_property_damage_immune""Xác xuất miễn tổn thương: "
+"advanced_property_damage_immune_desc""Có xác xuất miễn nhận tổn thương, tối đa 80đ"
 
-"advanced_property_magic_damage_lifesteal""Pháp thuật hút máu: "
-"advanced_property_magic_damage_lifesteal_desc""Tạo thành ma pháp tổn thương sẽ trị liệu mình"
+"advanced_property_magic_damage_lifesteal""Hút máu ma pháp: "
+"advanced_property_magic_damage_lifesteal_desc""Tạo thành ma pháp tổn thương sẽ hồi máu cho mình"
 
-"advanced_property_heal_amplify""Trị liệu tăng lên: "
-"advanced_property_heal_amplify_desc""Tăng lên trị liệu tỉ lệ phần trăm"
+"advanced_property_heal_amplify""Trị liệu : "
+"advanced_property_heal_amplify_desc""Tăng cường hiệu quả trị liệu"
 
 "advanced_property_damage_lifesteal""Tổn thương hút máu: "
-"advanced_property_damage_lifesteal_desc""Tạo thành tất cả tổn thương đều sẽ trị liệu mình"
-"advanced_property_strength_bonus_percentage""Tỉ lệ phần trăm tăng lên Sức mạnh: "
-"advanced_property_strength_bonus_percentage_desc""Cung cấp anh hùng cơ sở Sức mạnh nhất định tỉ lệ phần trăm tăng thêm, lấy màu xanh lá hình thức biểu hiện"
+"advanced_property_damage_lifesteal_desc""Tạo thành tất cả tổn thương đều sẽ hồi máu"
+"advanced_property_strength_bonus_percentage""Tỉ lệ Sức mạnh: "
+"advanced_property_strength_bonus_percentage_desc""Tăng phần trăm cơ sở sức mạnh, biểu hiện qua chỉ số màu xanh lá"
 
-"advanced_property_agility_bonus_percentage""Tỉ lệ phần trăm tăng lên nhanh nhẹn: "
-"advanced_property_agility_bonus_percentage_desc""Cung cấp anh hùng cơ sở nhanh nhẹn nhất định tỉ lệ phần trăm tăng thêm, lấy màu xanh lá hình thức biểu hiện"
+"advanced_property_agility_bonus_percentage""Tỉ lệ nhanh nhẹn: "
+"advanced_property_agility_bonus_percentage_desc""Tăng phần trăm cơ sở nhanh nhẹn, biểu hiện qua chỉ số màu xanh lá"
 
-"advanced_property_intellect_bonus_percentage""Tỉ lệ phần trăm tăng lên trí lực: "
-"advanced_property_intellect_bonus_percentage_desc""Cung cấp anh hùng cơ sở trí lực nhất định tỉ lệ phần trăm tăng thêm, lấy màu xanh lá hình thức biểu hiện"
+"advanced_property_intellect_bonus_percentage""Tỉ lệ trí lực: "
+"advanced_property_intellect_bonus_percentage_desc""Tăng phần trăm cơ sở trí lực, biểu hiện qua chỉ số màu xanh lá"
 
 "advanced_property_wlct""Vật lý xuyên thấu: "
-"advanced_property_wlct_desc""Không nhìn mục tiêu đối ứng tỉ lệ phần trăm hộ giáp ( Tối cao không nhìn 80%)"
+"advanced_property_wlct_desc""Bỏ qua tỉ lệ phần trăm giáp của mục tiêu, tối đa 80%"
 
 "advanced_property_mfct""Ma pháp xuyên thấu: "
-"advanced_property_mfct_desc""Không nhìn mục tiêu đối ứng tỉ lệ phần trăm ma pháp kháng tính ( Tối cao không nhìn 80%)"
+"advanced_property_mfct_desc""Bỏ qua tỉ lệ phần trăm ma kháng của mục tiêu, tối đa 80%"
 
 "advanced_property_strength_levelup""Thăng cấp tăng Sức mạnh: "
-"advanced_property_strength_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số Sức mạnh"
+"advanced_property_strength_levelup_desc""Anh hùng mỗi lên lên cấp gia tăng tương ứng số điểm Sức mạnh"
 
-"advanced_property_agility_levelup""Thăng cấp thêm nhanh nhẹn: "
-"advanced_property_agility_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số nhanh nhẹn"
+"advanced_property_agility_levelup""Thăng cấp tăng nhanh nhẹn: "
+"advanced_property_agility_levelup_desc""Anh hùng mỗi lên lên cấp gia tăng tương ứng số điểm nhanh nhẹn"
 
-"advanced_property_intellect_levelup""Thăng cấp thêm trí lực: "
-"advanced_property_intellect_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số trí lực"
+"advanced_property_intellect_levelup""Thăng cấp tăng trí lực: "
+"advanced_property_intellect_levelup_desc""Anh hùng mỗi lên lên cấp gia tăng tương ứng số điểm trí lực"
 
-"advanced_property_qsx_levelup""Thăng cấp thêm toàn thuộc tính: "
-"advanced_property_qsx_levelup_desc""Anh hùng đẳng cấp mỗi tăng lên 1 Cấp, gia tăng đối ứng trị số toàn thuộc tính"
-"advanced_property_qsx_bonus_percentage""Tỉ lệ phần trăm tăng lên toàn thuộc tính: "
-"advanced_property_qsx_bonus_percentage_desc""Cung cấp anh hùng cơ sở toàn thuộc tính nhất định tỉ lệ phần trăm tăng thêm, lấy màu xanh lá hình thức biểu hiện"
+"advanced_property_qsx_levelup""Thăng cấp tăng toàn thuộc tính: "
+"advanced_property_qsx_levelup_desc""Anh hùng mỗi lên lên cấp gia tăng tương ứng số điểm toàn thuộc tính"
+"advanced_property_qsx_bonus_percentage""Tỉ lệ toàn thuộc tính: "
+"advanced_property_qsx_bonus_percentage_desc""Tăng phần trăm cơ sở toàn thuộc tính, biểu hiện qua chỉ số màu xanh lá"
 "advanced_property_wlshts""Vật lý tổn thương tăng lên: "
-"advanced_property_wlshts_desc""Mỗi 1 Điểm số giá trị tăng lên đối ứng vật lý tổn thương, cùng cái khác trị số thừa tính"
+"advanced_property_wlshts_desc""Mỗi điểm tăng lên 1 phần trăm vật lý tổn thương, cùng các giá trị khác tính theo hệ số nhân"
 
 "advanced_property_mfshts""Ma pháp tổn thương tăng lên: "
-"advanced_property_mfshts_desc""Mỗi 1 Điểm số giá trị tăng lên đối ứng ma pháp tổn thương, cùng cái khác trị số thừa tính"
+"advanced_property_mfshts_desc""Mỗi điểm tăng lên 1 phần trăm ma pháp tổn thương, cùng các giá trị khác tính theo hệ số nhân"
 
 "advanced_property_zhwsh""Đệ tử chỉ số tăng: "
-"advanced_property_zhwsh_desc""Gia tăng triệu hoán vật phòng ngự HP cùng công kích ( Trước mắt triệu hoán vật không kế thừa cái khác thuộc tính )"
+"advanced_property_zhwsh_desc""Gia tăng đệ tử chỉ số hp, công kích, giáp"
 
 
-"advanced_property_gold_bonus_by_kill""Giết quái kim tệ tăng thêm: "
-"advanced_property_gold_bonus_by_kill_desc""Mỗi giết chết một đơn vị sẽ thu hoạch được ngoài định mức kim tệ ( Nhận tỉ lệ phần trăm tiền tài tăng thêm )"
+"advanced_property_gold_bonus_by_kill""Tăng vàng khi giết quái: "
+"advanced_property_gold_bonus_by_kill_desc""Giết quái nhận thêm vàng(Tính cả phần trăm tiền tài tăng lên)"
 
 "advanced_property_exp_bonus_by_kill""Giết quái kinh nghiệm tăng thêm: "
 "advanced_property_exp_bonus_by_kill_desc""Mỗi giết chết một đơn vị sẽ thu hoạch được ngoài định mức kinh nghiệm ( Nhận tỉ lệ phần trăm kinh nghiệm tăng thêm )"
 
 "advanced_property_gold_bonus_by_time""Mỗi mười giây thêm kim tệ: "
-"advanced_property_gold_bonus_by_time_desc""Mỗi qua 10 Giây sẽ gia tăng đối ứng kim tệ ( Nhận tỉ lệ phần trăm tiền tài tăng thêm )"
+"advanced_property_gold_bonus_by_time_desc""Mỗi qua 10 Giây sẽ gia tăng tương ứng kim tệ ( Nhận tỉ lệ phần trăm tiền tài tăng thêm )"
 
 "advanced_property_ability_level_bonus""Kỹ năng đẳng cấp tăng thêm: "
-"advanced_property_ability_level_bonus_desc""Mỗi 1 Điểm kỹ năng đẳng cấp gia tăng tự thân kỹ năng 10% Cơ sở tổn thương ( Anh hùng thiên phú không ở trong đó )"
+"advanced_property_ability_level_bonus_desc""Mỗi điểm đẳng cấp kỹ năng tăng 10% cơ sơ tổn thương, không bao gồm thiên phú"
 
 "advanced_property_gold_bonus_percentage""Kim tệ ích lợi tăng lên: "
-"advanced_property_gold_bonus_percentage_desc""Gia tăng thu hoạch được tỉ lệ phần trăm tiền tài ích lợi"
+"advanced_property_gold_bonus_percentage_desc""Tăng phần trăm kim tệ thu được"
 
 "advanced_property_exp_bonus_percentage""Kinh nghiệm ích lợi tăng lên: "
 "advanced_property_exp_bonus_percentage_desc""Gia tăng thu hoạch được tỉ lệ phần trăm kinh nghiệm ích lợi"
-"advanced_property_lucky""May mắn giá trị: "
-"advanced_property_lucky_desc""Mỗi 1 Điểm may mắn giá trị gia tăng 1 Điểm kích giết tai ách lãnh chúa lưu trữ trang bị tỉ lệ rơi đồ ( Vượt qua 100 Điểm không có ngoài định mức hiệu quả )"
-"advanced_property_tmz""Thiên mệnh giá trị"
-"advanced_property_tmz_desc""Thiên mệnh giá trị càng cao, đánh giết tai ách lãnh chúa thu hoạch được lưu trữ trang bị phẩm chất càng tốt"
+"advanced_property_lucky""May mắn: "
+"advanced_property_lucky_desc""Mỗi 1 điểm may mắn gia tăng tỉ lệ rớt đồ khi giết boss chính, tối đa 100đ"
+"advanced_property_tmz""Thiên mệnh:"
+"advanced_property_tmz_desc""Thiên mệnh càng cao, nhân phẩm càng tốt, giết boss chính tỉ lệ rớt đồ ngon càng cao"
 "advanced_property_tmzz""Cao phẩm tỉ lệ rơi đồ"
-"advanced_property_tmzz_desc""Mỗi một điểm tăng lên 1% Trước mắt độ khó cao nhất phẩm chất trang bị xuất hiện quyền trọng ( Cùng thiên mệnh giá trị lẫn nhau thừa )"
+"advanced_property_tmzz_desc""Mỗi một điểm tăng 1% tỉ lệ rớt đồ đỏ cho cấp đồ cao nhất của độ độ khó hiện tại(n36>41 tăng đồ 7, 41+ tăng đồ 8), cùng giá trị thiên mệnh tính theo hệ số nhân"
 "ui_btn_confirm""Xác định"
 "ui_btn_cancel""Hủy bỏ"
 "ui_btn_cancel_auto""Hủy bỏ ({s:time})"
@@ -479,8 +479,8 @@
 "ui_setup_hero_primary_tooltip_str""Sức mạnh anh hùng <br><br> Sức mạnh anh hùng có được cường kiện thể phách, nhận mặt trái hiệu quả tiếp tục thời gian sẽ rút ngắn"
 "ui_setup_hero_primary_tooltip_agi""Nhanh nhẹn anh hùng"
 "ui_setup_hero_primary_tooltip_int""Trí lực anh hùng <br><br> Trí lực anh hùng đối pháp thuật rất có nghiên cứu, tại phóng thích kỹ năng thời điểm có tỉ lệ phát động nhiều lần thi pháp"
-"ui_setup_refresh_hero_tooltip""Ngẫu nhiên có thể chọn anh hùng, sẽ không ngẫu nhiên đến ngẫu nhiên qua anh hùng <br/><br/> Thông qua PLUS, giấy thông hành chờ đường tắt có thể đạt được đổi mới số lần <br/><br/> Trước mắt có thể quét mới <font color='yellow'>{s:count}</font> Lần"
-"ui_setup_now_difficulty""Trước mắt độ khó: {s:value}"
+"ui_setup_refresh_hero_tooltip""Ngẫu nhiên có thể chọn anh hùng, sẽ không ngẫu nhiên đến ngẫu nhiên qua anh hùng <br/><br/> Thông qua PLUS, giấy thông hành chờ đường tắt có thể đạt được đổi mới số lần <br/><br/> Hiện tại có thể quét mới <font color='yellow'>{s:count}</font> Lần"
+"ui_setup_now_difficulty""Hiện tại độ khó: {s:value}"
 "ui_treasure_selection_title""Mời lựa chọn cần bảo vật"
 "ui_treasure_selection_close_toggle""Quan bế xác nhận"
 "ui_treasure_selection_close_toggle_tooltip""Chọn trúng, đóng cửa sổ sẽ tiến hành xác nhận <br> Hủy bỏ, đóng cửa sổ không cần xác nhận"
@@ -523,7 +523,7 @@
 "ui_net_equip_action_child_cancel""Hủy bỏ"
 "ui_net_equip_action_enhance""Cường hóa"
 "ui_net_equip_action_enhance_tooltip""[ Cường hóa ]<br> Điểm kích mở ra [ Trang bị cường hóa ] Giao diện, có thể sử dụng Cường hóa thạch đối trang bị tiến hành cường hóa, cường hóa có thể tăng lên trang bị tất cả thuộc tính."
-"ui_net_equip_action_save_pos_tooltip""[ Bảo tồn vị trí ]<br> Điểm kích sau có thể đem trước mắt trang bị vị trí bảo tồn đến Server <br> Thời gian cooldown: 30s"
+"ui_net_equip_action_save_pos_tooltip""[ Bảo tồn vị trí ]<br> Điểm kích sau có thể đem Hiện tại trang bị vị trí bảo tồn đến Server <br> Thời gian cooldown: 30s"
 "ui_net_equip_action_refine_tooltip""[ Tẩy luyện ]<br> Điểm kích mở ra [ Trang bị tẩy luyện ] Giao diện. Thông qua tẩy luyện, có thể tăng lên trang bị thuộc tính giá trị"
 "ui_attribute_net_equips_destroy_confirm""Thao tác này đem vĩnh cửu tiêu hủy trang bị, trả về <font color='gold'>{d:reward_jing}</font> Tinh thạch, phải chăng xác định?"
 "ui_net_equip_enhance""Cường hóa"
@@ -540,7 +540,7 @@
 "ui_net_equip_enhance_result_3_detail""Cường hóa thạch tại <font color='gold'> Khó 5 Trở lên độ khó không phải bình thường hình thức bên trong sẽ rơi xuống </font>, cũng có thể thông qua giấy thông hành, thương thành chờ đường tắt thu hoạch được"
 "ui_net_equip_enhance_result_4""Cường hóa thất bại"
 "ui_net_equip_enhance_invalid_grade_1""1 Giai trang bị không thể cường hóa"
-"ui_net_equip_enhance_bonus_now""Trước mắt đẳng cấp"
+"ui_net_equip_enhance_bonus_now""Hiện tại đẳng cấp"
 "ui_net_equip_enhance_bonus_next""Tiếp theo đẳng cấp"
 "ui_net_equip_enhance_button_enhance""Cường hóa"
 "ui_net_equip_enhance_chance""Xác suất thành công {s:chance}"
@@ -556,14 +556,14 @@
 "ui_mission_tooltip_step""Nhiệm vụ độ hoàn thành, khác biệt độ hoàn thành sẽ ảnh hưởng cuối cùng nhiệm vụ ban thưởng"
 "ui_mission_tooltip_timer""Đếm ngược kết thúc sau, sẽ căn cứ nhiệm vụ độ hoàn thành cấp cho ban thưởng"
 "ui_mission_tooltip_reward""Nhiệm vụ kết thúc sau, tự động tại kim tệ, thuộc tính, vật phẩm ba loại ban thưởng bên trong ngẫu nhiên một loại cấp cho, cũng có tỉ lệ ngoài định mức thu hoạch được lựa chọn bảo vật cơ hội ( Mỗi cục trò chơi lần thứ nhất hoàn thành nhiệm vụ lúc tất nhiên sẽ thu hoạch được một lần cơ hội lựa chọn )"
-"ui_mission_tooltip_reward_gold""Thu hoạch được ngẫu nhiên số lượng kim tệ ban thưởng, kim tệ số lượng cùng trước mắt sóng lần cùng trước mắt nắm giữ kim tệ số lượng chính tương quan"
-"ui_mission_tooltip_reward_attribute""Thu hoạch được ngẫu nhiên số lượng chủ thuộc tính tăng thêm, tăng thêm trị số cùng trước mắt sóng lần, trước mắt chủ thuộc tính giá trị cùng nhiệm vụ độ hoàn thành chính tương quan"
+"ui_mission_tooltip_reward_gold""Thu hoạch được ngẫu nhiên số lượng kim tệ ban thưởng, kim tệ số lượng cùng Hiện tại sóng lần cùng Hiện tại nắm giữ kim tệ số lượng chính tương quan"
+"ui_mission_tooltip_reward_attribute""Thu hoạch được ngẫu nhiên số lượng chủ thuộc tính tăng thêm, tăng thêm trị số cùng Hiện tại sóng lần, Hiện tại chủ thuộc tính giá trị cùng nhiệm vụ độ hoàn thành chính tương quan"
 "ui_mission_tooltip_reward_item""Thu hoạch được một kiện trang bị, trang bị cấp bậc cùng anh hùng cấp bậc chính tương quan, giữ gốc trang bị phẩm chất cùng nhiệm vụ độ hoàn thành có quan hệ: <br>D= Ưu lương <br>C= Tinh xảo <br>B= Cực phẩm <br>A= Truyền thuyết <br>S= Sử thi"
 "ui_mission_tooltip_reward_extra""Có tỉ lệ thu hoạch được bảo vật, tỉ lệ cùng số lượng cùng nhiệm vụ độ hoàn thành có quan hệ: <br>D=30%, 1 Cái <br>C=50%, 1 Cái <br>B=70%, 1 Cái <br>A=100%, 1 Cái <br>S=100%, 2 Cái"
 "ui_mission_tooltip_mini""Nhiệm vụ trước mặt độ hoàn thành: {s:step}<br><br><font color='#757575'>* Điểm kích biểu hiện nhiệm vụ tường tình </font>"
 "ui_mission_refresh_tip""Khoảng cách nhiệm vụ đổi mới còn có: {s:time} s"
 "ui_mission_refresh_tooltip_tile""Ngẫu nhiên nhiệm vụ đổi mới bên trong"
-"ui_mission_refresh_no_mission""Trước mắt vô cùng vụ"
+"ui_mission_refresh_no_mission""Hiện tại vô cùng vụ"
 "ui_mission_result_label""Lần này nhiệm vụ ban thưởng"
 "ui_mission_result_reward_gold""Kim tệ gia tăng: {s:value}"
 "ui_mission_result_reward_attribute""Chủ thuộc tính gia tăng: {s:value}"
@@ -724,7 +724,7 @@
 "ui_game_data_store_buy_own_item_tip""Đã có được, không thể lặp lại mua"
 "ui_game_data_store_buy_count_tooltip""Xin điền vào số lượng"
 "ui_game_data_store_buy_result_tooltip_success""Ngươi thu được <font color='#ffe16f'>{s:name}</font>"
-"ui_game_data_store_buy_result_tooltip_success_stack""Thu hoạch được <font color='#ffe16f'>{s:count}</font> Cái <font color='#ffe16f'>{s:name}</font>, trước mắt nắm giữ <font color='#ffe16f'>{s:total}</font> Cái"
+"ui_game_data_store_buy_result_tooltip_success_stack""Thu hoạch được <font color='#ffe16f'>{s:count}</font> Cái <font color='#ffe16f'>{s:name}</font>, Hiện tại nắm giữ <font color='#ffe16f'>{s:total}</font> Cái"
 "ui_game_data_store_buy_result_tooltip_faild""Mua thất bại, xin sau thử lại"
 "store_catalog_content_search_holder""Xin điền vào vật phẩm tên tiến hành tra tìm"
 "ui_store_buy_balance_not_enough""Số dư còn lại không đủ"
@@ -812,7 +812,7 @@
 "store_item_shopmall_20""Bí thuật dược tề"
 "store_item_shopmall_20_desc""Sử dụng sau 9999 Mã phạm vi bên trong phe bạn anh hùng: <br/> Kỹ năng tổn thương: +20%<br/> Tiếp tục thời gian: 30s<br/> Thời gian cooldown: 1200s"
 "store_item_shopmall_21""Tiềm năng dược tề"
-"store_item_shopmall_21_desc""Sử dụng sau 9999 Mã phạm vi bên trong phe bạn anh hùng: <br/> Làm lạnh giảm bớt: -20%<br/> Tiếp tục thời gian: 30s<br/> Thời gian cooldown: 1200s"
+"store_item_shopmall_21_desc""Sử dụng sau 9999 Mã phạm vi bên trong phe bạn anh hùng: <br/> Giảm CD: -20%<br/> Tiếp tục thời gian: 30s<br/> Thời gian cooldown: 1200s"
 "store_item_shopmall_22""Thủ hộ dược tề"
 "store_item_shopmall_22_desc""Sử dụng sau 9999 Mã phạm vi bên trong phe bạn anh hùng: <br/> Giảm tổn thương hệ số: +30<br/> Tiếp tục thời gian: 30s<br/> Thời gian cooldown: 1200s"
 "store_item_shopmall_23""Nhị giai cực phẩm trang bị chìa khoá"
@@ -902,7 +902,7 @@
 "store_item_shopmall_54""Hoàng kim hội viên"
 "store_item_shopmall_54_desc""Toàn thuộc tính +20%<br/> toàn thuộc tính: +50<br/><br/> May mắn giá trị +15<br/> Thiên mệnh giá trị +50( Đánh giết tai ách BOSS Rơi xuống phẩm chất cao trang bị xác suất tăng lên 50%)<br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
 "store_item_shopmall_87""Kim cương hội viên"
-"store_item_shopmall_87_desc""Toàn thuộc tính +20%<br/> Kỹ năng tăng lên trị số +10%<br/> Trước mắt độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +80%( Cùng thiên mệnh giá trị lẫn nhau thừa )<br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
+"store_item_shopmall_87_desc""Toàn thuộc tính +20%<br/> Kỹ năng tăng lên trị số +10%<br/> Hiện tại độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +80%( Cùng thiên mệnh giá trị lẫn nhau thừa )<br/><br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
 "store_item_shopmall_98""Đệ nhất trận đấu mùa giải giấy thông hành thuộc tính"
 "store_item_shopmall_98_desc""Ban đầu kim tệ +1000<br/> Trí lực +20, nhanh nhẹn +25, Sức mạnh +30<br/> Ban đầu giết địch số +50<br/> Bạo kích xác suất +2%, bạo kích tổn thương +20%<br/> Người kỹ năng đẳng cấp +2<br/> Kèm theo tổn thương +2%<br/> Cuối cùng tổn thương +2%<br/> Tiền tài tăng thêm +3%<br/> Kinh nghiệm tăng thêm +3%<br/><font color='gold'> Vĩnh cửu có hiệu lực </font>"
 
@@ -965,11 +965,11 @@
 "store_item_shopmall_cw_3_11""Tận thế Bảo Bảo"
 "store_item_shopmall_cw_3_11_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +2, tiền tài tăng thêm +12%"
 "store_item_shopmall_cw_4_22""Núi thịt Bảo Bảo"
-"store_item_shopmall_cw_4_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +2, trước mắt độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +40%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
+"store_item_shopmall_cw_4_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +2, Hiện tại độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +40%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
 "store_item_shopmall_cw_5_22""Kim sắc núi thịt Bảo Bảo"
-"store_item_shopmall_cw_5_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +3, trước mắt độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +55%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
+"store_item_shopmall_cw_5_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +3, Hiện tại độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +55%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
 "store_item_shopmall_cw_6_22""Ám nguyệt núi thịt Bảo Bảo"
-"store_item_shopmall_cw_6_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +4, trước mắt độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +80%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
+"store_item_shopmall_cw_6_22_desc""Thuộc loại: Sủng vật <br/> Tác dụng: Xuất chiến lúc anh hùng người kỹ năng đẳng cấp +4, Hiện tại độ khó cao nhất phẩm chất trang bị tỉ lệ rơi đồ +80%( Cùng thiên mệnh giá trị lẫn nhau thừa )"
 "store_item_shopmall_gh_1_1""Cứng cỏi quang hoàn"
 "store_item_shopmall_gh_1_1_desc""Thuộc loại: Quang hoàn <br/> Tác dụng: Xuất chiến lúc anh hùng hộ giáp +10"
 "store_item_shopmall_gh_1_2""Ngự ma quang vòng"
@@ -1163,11 +1163,11 @@
 "ui_waiting_overtime""Thao tác quá thời gian, xin sau thử lại <br><br><span class='BottomTip'> Điểm kích tùy ý vị trí quan bế giới này mặt </span>"
 "ui_chest_result_return_game""Trở về trò chơi"
 "ui_chest_result_continue""Tiếp tục mở bảo rương"
-"ui_chest_open_tip""Điểm kích bảo rương liền có thể sử dụng trước mắt lựa chọn chìa khoá mở ra"
+"ui_chest_open_tip""Điểm kích bảo rương liền có thể sử dụng Hiện tại lựa chọn chìa khoá mở ra"
 "ui_chest_open_all""Mở ra toàn bộ ({s:count})"
 "ui_chest_close""Điểm kích nơi đây quan bế giao diện"
 "ui_chest_keys_title""Trái khóa lựa chọn chìa khoá"
-"ui_chest_keys_using""※ Trước mắt sử dụng chìa khoá, click đúp chuột nhất định vị đến nên chìa khoá"
+"ui_chest_keys_using""※ Hiện tại sử dụng chìa khoá, click đúp chuột nhất định vị đến nên chìa khoá"
 "ui_chest_hint_no_keys""Không có chìa khoá, phải chăng tiến đến mua?"
 "ui_chest_hint_no_keys2""Không có chìa khoá"
 "ui_chest_type_equip""Trang bị bảo rương <br><br> Mở ra sau khi có thể đạt được lưu trữ trang bị"
@@ -1252,7 +1252,7 @@
 
 "modifier_bw_2_9_Description""+60 Tốc độ di chuyển <br/>+300 Toàn thuộc tính <br/><br/><br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
-"modifier_bw_2_10_Description""+1200 Sức mạnh <br/>+2000 Lực công kích <br/>+15 Điểm hộ giáp <br/> Mỗi giây tổn thất 4% Trước mắt HP <br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
+"modifier_bw_2_10_Description""+1200 Sức mạnh <br/>+2000 Lực công kích <br/>+15 Điểm hộ giáp <br/> Mỗi giây tổn thất 4% Hiện tại HP <br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
 "modifier_bw_2_11_Description""+30000 HP <br/>+2000 Sinh mệnh hồi phục <br/>50% Đón đỡ 1000 Điểm cận chiến công kích hoặc là 500 Điểm công kích từ xa tổn thương <br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
@@ -1272,7 +1272,7 @@
 
 "modifier_bw_2_18_Description""Lớn nhất HP +100%<br/> MP -80%<br/><br/><br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
-"modifier_bw_2_19_Description""Sinh mệnh hồi phục +2000<br/> Làm lạnh giảm bớt -10%<br/><br/><br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
+"modifier_bw_2_19_Description""Sinh mệnh hồi phục +2000<br/> Giảm CD -10%<br/><br/><br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
 "modifier_bw_2_20_Description""HP +10000<br/> MP +200<br/> Ma pháp khôi phục +10<br/><br/><br/><br/><font color='#cfbf81'>2 Cấp bảo vật </font>"
 
@@ -1300,7 +1300,7 @@
 
 "modifier_bw_3_5_Description""Kỹ năng tăng cường +80%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'>3 Cấp bảo vật </font>"
 
-"modifier_bw_3_6_Description""Làm lạnh giảm bớt -17%<br/> Ma pháp khôi phục +5<br/><br/><br/><br/><br/><font color='#cfbf81'>3 Cấp bảo vật </font>"
+"modifier_bw_3_6_Description""Giảm CD -17%<br/> Ma pháp khôi phục +5<br/><br/><br/><br/><br/><font color='#cfbf81'>3 Cấp bảo vật </font>"
 
 "modifier_bw_3_7_Description""Người đeo HP thấp hơn 20% Lúc bị thực hiện một lần mạnh xua tan <br/> Đồng thời hồi phục mang theo người 50% HP <br/>cd:10S<br/><br/><br/><font color='#cfbf81'>3 Cấp bảo vật </font>"
 
@@ -1352,7 +1352,7 @@
 
 "modifier_bw_4_4_Description""Chủ thuộc tính tăng lên +150%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'>4 Cấp bảo vật </font>"
 
-"modifier_bw_4_5_Description""Công kích khoảng cách +500<br/> Mỗi lần công kích đều sẽ đánh lui địch nhân 50 Khoảng cách <br/> Cũng tạo thành trước mắt lực công kích x20 Vật lý tổn thương.<br/><font color='#ffffff'>( Sẽ không đánh lui BOSS)</font><br/><br/><font color='#cfbf81'>4 Cấp bảo vật </font>"
+"modifier_bw_4_5_Description""Công kích khoảng cách +500<br/> Mỗi lần công kích đều sẽ đánh lui địch nhân 50 Khoảng cách <br/> Cũng tạo thành Hiện tại lực công kích x20 Vật lý tổn thương.<br/><font color='#ffffff'>( Sẽ không đánh lui BOSS)</font><br/><br/><font color='#cfbf81'>4 Cấp bảo vật </font>"
 
 "modifier_bw_4_6_Description""Tốc độ công kích +99, tốc độ di chuyển +50<br/> Toàn thuộc tính +6666<br/> Ma pháp kháng tính +50%<br/> Trạng thái kháng tính +30%<br/> Kỹ năng tăng cường +99%<br/> Lực công kích +99%<br/><font color='#cfbf81'>4 Cấp bảo vật </font>"
 
@@ -1380,7 +1380,7 @@
 
 "modifier_bw_5_9_Description""Sức mạnh +22222<br/> Trí lực +18888<br/> Mỗi lần thi pháp hồi phục 20% Lớn nhất HP <br/><br/><br/><br/><font color='#cfbf81'>5 Cấp bảo vật </font>"
 
-"modifier_bw_5_10_Description""Lực công kích +99999<br/> Tự thân hộ giáp -150 Điểm <br/> Bị động: Công kích trúng đích có 1% Xác suất giảm bớt mục tiêu 5% Trước mắt sinh mệnh hạn mức cao nhất <br/><br/><br/><font color='#cfbf81'>5 Cấp bảo vật </font>"
+"modifier_bw_5_10_Description""Lực công kích +99999<br/> Tự thân hộ giáp -150 Điểm <br/> Bị động: Công kích trúng đích có 1% Xác suất giảm bớt mục tiêu 5% Hiện tại sinh mệnh hạn mức cao nhất <br/><br/><br/><font color='#cfbf81'>5 Cấp bảo vật </font>"
 
 "modifier_bw_5_11_Description""Cơ sở lực công kích +666%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'>5 Cấp bảo vật </font>"
 
@@ -1393,11 +1393,11 @@
 
 "modifier_bw_all_4_Description""Mỗi 60S Gia tăng 5% Toàn thuộc tính <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_5_Description""Trước mắt cơ sở Sức mạnh +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_5_Description""Hiện tại cơ sở Sức mạnh +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_6_Description""Trước mắt cơ sở nhanh nhẹn +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_6_Description""Hiện tại cơ sở nhanh nhẹn +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_7_Description""Trước mắt cơ sở trí lực +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_7_Description""Hiện tại cơ sở trí lực +60%<br/> Cái khác thuộc tính -20%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_8_Description""Kỹ năng tăng cường +100%<br/> Tốc độ công kích -200<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1462,15 +1462,15 @@
 
 "modifier_bw_all_44_Description""Công kích trúng đích địch nhân gia tăng tự thân đẳng cấp kim tệ <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_45_Description""Mỗi lần đánh giết tiểu quái gia tăng trước mắt đẳng cấp /6 Toàn thuộc tính <br/> Tử vong phục sinh thời gian +7s<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_45_Description""Mỗi lần đánh giết tiểu quái gia tăng Hiện tại đẳng cấp /6 Toàn thuộc tính <br/> Tử vong phục sinh thời gian +7s<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_46_Description""Mỗi qua 60s Gia tăng Trước mắt đẳng cấp bình phương * Trước mắt sóng đếm được kim tệ <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_46_Description""Mỗi qua 60s Gia tăng Hiện tại đẳng cấp bình phương * Hiện tại sóng đếm được kim tệ <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_47_Description""Mỗi lần tai ách lãnh chúa xuất hiện lúc, vĩnh cửu gia tăng 30% Thuộc tính cơ sở <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_48_Description""Tử vong có 30% Xác suất nguyên địa phục sinh <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_49_Description""Mỗi lần tử vong cũng sẽ tăng thêm trước mắt đẳng cấp *3 Toàn thuộc tính <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_49_Description""Mỗi lần tử vong cũng sẽ tăng thêm Hiện tại đẳng cấp *3 Toàn thuộc tính <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_50_Description""Tử vong phục sinh thời gian -6s<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1482,9 +1482,9 @@
 
 "modifier_bw_all_54_Description""Kinh nghiệm tăng thêm +200%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_55_Description""Sử dụng kỹ năng tăng lên trị số +25%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_55_Description""Cường hóa kỹ năng chủ động +25%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_56_Description""Sử dụng kỹ năng tăng lên trị số +50%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_56_Description""Cường hóa kỹ năng chủ động +50%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_57_Description""Mỗi qua 120S Đều có thể thu hoạch được 1 Cái bảo vật <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1502,7 +1502,7 @@
 
 "modifier_bw_all_64_Description""Mua sách kỹ năng tại cửa hàng giảm giá 80%% <br/> Cùng cái khác thẻ không điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_65_Description""Sử dụng kỹ năng tăng lên trị số +100%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_65_Description""Cường hóa kỹ năng chủ động +100%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_66_Description""Đánh giết quái vật kim tệ +150<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1514,7 +1514,7 @@
 
 "modifier_bw_all_70_Description""Đệ tử chỉ số tăng +200%<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_71_Description""Mỗi qua 75s Đều sẽ cho 1 Bản trước mắt đẳng cấp /30 Kỹ năng thiên thư <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_71_Description""Mỗi qua 75s Đều sẽ cho 1 Bản Hiện tại đẳng cấp /30 Kỹ năng thiên thư <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_72_Description""Mỗi qua 90S Đều sẽ cho 1 Kiện phẩm chất tử sắc, đẳng cấp là ( Anh hùng đẳng cấp /30)+1 Ngẫu nhiên trang bị <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1524,9 +1524,9 @@
 
 "modifier_bw_all_75_Description""Mỗi qua 90S Đều sẽ cho 1 Kiện phẩm chất màu đỏ, đẳng cấp là ( Anh hùng đẳng cấp /30)+1 Ngẫu nhiên trang bị <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_76_Description""Phe mình lối ra Quái vật chỉ số tăng +50%<br/> Quái vật rơi xuống tiền tài, kinh nghiệm +50%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_76_Description""Phe mình lối ra quái vật cường độ +50%<br/> Quái vật rơi xuống tiền tài, kinh nghiệm +50%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_77_Description""Phe mình lối ra Quái vật chỉ số tăng +100%<br/> Quái vật rơi xuống tiền tài, kinh nghiệm +100%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_77_Description""Phe mình lối ra quái vật cường độ +100%<br/> Quái vật rơi xuống tiền tài, kinh nghiệm +100%<br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_78_Description""Giảm tổn thương hệ số +100<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1548,9 +1548,9 @@
 
 "modifier_bw_all_87_Description""Kĩ năng thiên phú đẳng cấp +1<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_88_Description""Cách mỗi 3S Liền sẽ đối chung quanh ngẫu nhiên địch quân đơn vị phát ra một đạo Hỏa thuộc tính khí lưu <br/> Đối trải qua địch nhân tạo thành trước mắt đẳng cấp /2+10 Chủ thuộc tính ma pháp tổn thương <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_88_Description""Cách mỗi 3S Liền sẽ đối chung quanh ngẫu nhiên địch quân đơn vị phát ra một đạo Hỏa thuộc tính khí lưu <br/> Đối trải qua địch nhân tạo thành Hiện tại đẳng cấp /2+10 Chủ thuộc tính ma pháp tổn thương <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_89_Description""Cách mỗi 15S Liền sẽ đóng băng chung quanh 800 Mã địch quân đơn vị <br/> Tạo thành trước mắt đẳng cấp *2* Trí lực ma pháp tổn thương <br/ Đóng băng 1.5s( Đối boss Đơn vị đóng băng 0.5s)<br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_89_Description""Cách mỗi 15S Liền sẽ đóng băng chung quanh 800 Mã địch quân đơn vị <br/> Tạo thành Hiện tại đẳng cấp *2* Trí lực ma pháp tổn thương <br/ Đóng băng 1.5s( Đối boss Đơn vị đóng băng 0.5s)<br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_90_Description""Cách mỗi 3 Giây quất roi chung quanh đơn vị <br/> Tạo thành lực công kích * Anh hùng đẳng cấp /2 Vật lý tổn thương <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
@@ -1564,42 +1564,42 @@
 
 "modifier_bw_all_95_Description""Nhảy vọt kết thúc có 50% Xác suất đổi mới nhảy vọt cd<br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_96_Description""Mỗi qua 20S Tiến vào một lần cuồng bạo trạng thái <br/> Gia tăng 100+ Trước mắt đẳng cấp *2 Tốc độ công kích cùng chờ giá trị tỉ lệ phần trăm cơ sở lực công kích <br/> Cũng giảm bớt 10+ Trước mắt đẳng cấp hộ giáp <br/> Tiếp tục 12s<br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_96_Description""Mỗi qua 20S Tiến vào một lần cuồng bạo trạng thái <br/> Gia tăng 100+ Hiện tại đẳng cấp *2 Tốc độ công kích cùng chờ giá trị tỉ lệ phần trăm cơ sở lực công kích <br/> Cũng giảm bớt 10+ Hiện tại đẳng cấp hộ giáp <br/> Tiếp tục 12s<br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_97_Description""Mỗi một lần tử vong đều có 9+ Trước mắt đẳng cấp /10 Xác suất thu hoạch được 1 Bản bảo vật sách <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_97_Description""Mỗi một lần tử vong đều có 9+ Hiện tại đẳng cấp /10 Xác suất thu hoạch được 1 Bản bảo vật sách <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_98_Description""Công kích trúng đích lúc tạo thành địch quân trước mắt HP 20% Vật lý tổn thương <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_98_Description""Công kích trúng đích lúc tạo thành địch quân Hiện tại HP 20% Vật lý tổn thương <br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_99_Description""Mỗi lần công kích giảm bớt mục tiêu lấy trước mắt anh hùng đẳng cấp /10 Hộ giáp, tiếp tục 10s<br/> Nhưng điệp gia, mỗi lần giảm giáp độc lập tính toán <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_99_Description""Mỗi lần công kích giảm bớt mục tiêu lấy Hiện tại anh hùng đẳng cấp /10 Hộ giáp, tiếp tục 10s<br/> Nhưng điệp gia, mỗi lần giảm giáp độc lập tính toán <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 "modifier_bw_all_100_Description""Mỗi lần công kích ngẫu nhiên đối chung quanh địch quân đơn vị phát xạ 1 Mai tụ hợp pháo <br/> Tổn thương vì trí lực *30 Ma pháp tổn thương <br/><br/><br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
-"modifier_bw_all_101_Description""Mỗi lần thi pháp chuyển hóa trước mắt MP 20% Vì kỹ năng tổn thương <br/> Tiếp tục 20S, không thể điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
+"modifier_bw_all_101_Description""Mỗi lần thi pháp chuyển hóa Hiện tại MP 20% Vì kỹ năng tổn thương <br/> Tiếp tục 20S, không thể điệp gia <br/><br/><br/><br/><font color='#cfbf81'> Thần bí bảo vật </font>"
 
 
 "achievement_hero_single_1""Thông quan 1 Lần"
 "achievement_hero_single_1_desc""Sử dụng nên anh hùng thông quan 1 Lần"
-"achievement_hero_single_1_bonus""Sử dụng nên anh hùng lúc mỗi lần thăng cấp chủ thuộc tính +3"
+"achievement_hero_single_1_bonus""Lúc chơi anh hùng này mỗi lần thăng cấp chủ thuộc tính +3"
 //"achievement_hero_single_1_bonus_desc"""
 
 "achievement_hero_single_2""Thông quan 3 Lần"
 "achievement_hero_single_2_desc""Sử dụng nên anh hùng thông quan 3 Lần"
-"achievement_hero_single_2_bonus""Sử dụng nên anh hùng lúc chủ thuộc tính +30"
+"achievement_hero_single_2_bonus""Lúc chơi anh hùng này chủ thuộc tính +30"
 //"achievement_hero_single_2_bonus_desc"""
 
 "achievement_hero_single_3""Thông quan 10 Lần"
 "achievement_hero_single_3_desc""Sử dụng nên anh hùng thông quan 10 Lần"
-"achievement_hero_single_3_bonus""Sử dụng nên anh hùng lúc cuối cùng tổn thương +5%"
+"achievement_hero_single_3_bonus""Lúc chơi anh hùng này cuối cùng tổn thương +5%"
 //"achievement_hero_single_3_bonus_desc"""
 
 "achievement_hero_single_4""Thông quan 20 Lần"
 "achievement_hero_single_4_desc""Sử dụng nên anh hùng thông quan 20 Lần"
-"achievement_hero_single_4_bonus""Sử dụng nên anh hùng lúc mỗi lần thăng cấp chủ thuộc tính +10"
+"achievement_hero_single_4_bonus""Lúc chơi anh hùng này mỗi lần thăng cấp chủ thuộc tính +10"
 //"achievement_hero_single_4_bonus_desc"""
 
 "achievement_hero_single_5""Thông quan 30 Lần"
 "achievement_hero_single_5_desc""Sử dụng nên anh hùng thông quan 30 Lần"
-"achievement_hero_single_5_bonus""Sử dụng nên anh hùng lúc anh hùng thiên phú đẳng cấp +1"
+"achievement_hero_single_5_bonus""Lúc chơi anh hùng này anh hùng thiên phú đẳng cấp +1"
 //"achievement_hero_single_5_bonus_desc"""
 
 
@@ -1813,7 +1813,7 @@
 
 "achievement_difficulty_19_1""Thông quan N19"
 //"achievement_difficulty_19_1_desc"""
-"achievement_difficulty_19_1_bonus""Sử dụng kỹ năng tăng lên trị số +20%"
+"achievement_difficulty_19_1_bonus""Cường hóa kỹ năng chủ động +20%"
 //"achievement_difficulty_19_1_bonus_des
 
 
@@ -1953,7 +1953,7 @@
 
 "achievement_difficulty_6_3""Thông quan N6- Áo thuật hình thức"
 //"achievement_difficulty_6_3_desc"""
-"achievement_difficulty_6_3_bonus""Làm lạnh giảm bớt -2%"
+"achievement_difficulty_6_3_bonus""Giảm CD -2%"
 //"achievement_difficulty_6_3_bonus_desc"""
 
 
@@ -1974,7 +1974,7 @@
 
 "achievement_difficulty_9_3""Thông quan N9- Áo thuật hình thức"
 //"achievement_difficulty_9_3_desc"""
-"achievement_difficulty_9_3_bonus""Làm lạnh giảm bớt -2%"
+"achievement_difficulty_9_3_bonus""Giảm CD -2%"
 //"achievement_difficulty_9_3_bonus_desc"""
 
 
@@ -2148,7 +2148,7 @@
 "achievement_difficulty_40_6_bonus""Cuối cùng tổn thương +1%"
 //"achievement_difficulty_40_6_bonus_des
 
-"achievement_difficulty_41_7""Thông quan N441-- Đặc thù hình thức"
+"achievement_difficulty_41_7""Thông quan N41-- Đặc thù hình thức"
 //"achievement_difficulty_41_7_desc"""
 "achievement_difficulty_41_7_bonus""Cuối cùng tổn thương +1%"
 //"achievement_difficulty_41_7_bonus_des
@@ -2338,7 +2338,7 @@
 "add_qsx" "Sử dụng năng lượng tinh thạch <Panel> Gia tăng {s:value} Điểm toàn thuộc tính"
 "level_not""Cấp bậc chưa đủ"
 "ct_not""Kỹ năng này tạm thời không có đặc thù từ đầu"
-"sds_not""Giết địch điểm tích lũy không đủ, trước mắt giết địch điểm tích lũy vì {s:value} Điểm"
+"sds_not""Giết địch điểm tích lũy không đủ, Hiện tại giết địch điểm tích lũy vì {s:value} Điểm"
 "sds_not2""Giết địch điểm tích lũy không đủ, còn cần {s:value} Điểm"
 "ablity_not""Không có có thể thăng cấp kỹ năng, sử dụng thất bại"
 "money_no""Kim tệ không đủ"
@@ -2395,7 +2395,7 @@
 "events5""Tao ngộ cao nhân truyền công, thu hoạch được {s:value} Điểm toàn thuộc tính"
 "events6""Gặp được Nam Hoa lão tiên, thu hoạch được 1 Bản {s:value} Cấp thiên thư"
 "events7""Đi ra ngoài nhặt được bảo, thu hoạch được {s:value} Bản bảo vật"
-"events8""Tà ác nồng độ trên phạm vi lớn gia tăng, tiến công Quái vật chỉ số tăng gia tăng, tiến công quái vật tiền tài cùng kinh nghiệm ban thưởng tăng lên {s:value}%, tiếp tục 120s"
+"events8""Tà ác nồng độ trên phạm vi lớn gia tăng, tiến công quái vật cường độ gia tăng, tiến công quái vật tiền tài cùng kinh nghiệm ban thưởng tăng lên {s:value}%, tiếp tục 120s"
 "events9""Tà ác nồng độ biên độ nhỏ gia tăng, tiến công quái vật HP cùng phòng ngự gia tăng, tiến công quái vật tiền tài cùng kinh nghiệm ban thưởng tăng lên {s:value}%, tiếp tục 120s"
 "events10""Tà ác nồng độ biên độ nhỏ gia tăng, tiến công quái vật HP cùng công kích gia tăng, tiến công quái vật tiền tài cùng kinh nghiệm ban thưởng tăng lên {s:value}%, tiếp tục 120s"
 "jstzboss_1""Lần đầu đánh giết sơ cấp lãnh chúa Lv3, ban thưởng {s:value} Bản bảo vật <Panel>"
@@ -2550,11 +2550,21 @@
 
 "bp_quest_day_hero_killunit_1""Đánh giết 5000 Cái tiểu quái"
 
-"bp_quest_day_hero_getboss_1""Thu hoạch được 500Boss Điểm số"
+"bp_quest_day_hero_getboss_1""Thu hoạch được 1000Boss Điểm số"
 
-"bp_quest_week_hero_killunit_1""Tích lũy đánh giết tiểu quái 30000 Chỉ"
+"bp_quest_week_hero_pass_1""Sử dụng Sức mạnh anh hùng thông quan"
+"bp_quest_week_hero_pass_2""Sử dụng nhanh nhẹn anh hùng thông quan"
+"bp_quest_week_hero_pass_3""Sử dụng trí lực anh hùng thông quan"
 
-"bp_quest_week_hero_getboss_1""Thu hoạch được 3000BOSS Điểm số"
+
+"bp_quest_week_hero_killunit_1""Tích lũy đánh giết tiểu quái 50000 Chỉ"
+"bp_quest_week_hero_killboss_1""Đánh giết tai ách lãnh chúa đốn củi cơ"
+"bp_quest_week_hero_killboss_2""Đánh giết tai ách lãnh chúa Carl"
+"bp_quest_week_hero_killboss_3""Đánh giết tai ách lãnh chúa Tử Vong Kỵ Sĩ"
+"bp_quest_week_hero_killboss_4""Đánh giết tai ách lãnh chúa sơn khâu cự nhân"
+"bp_quest_week_hero_killboss_5""Đánh giết tai ách lãnh chúa Phượng Hoàng"
+"bp_quest_week_hero_killboss_6""Đánh giết tai ách lãnh chúa huyễn ảnh thích khách"
+"bp_quest_week_hero_getboss_1""Thu hoạch được 10000BOSS Điểm số"
 
 "npc_dota_hero_hoodwink_desc""《 Tu tiên quyết 》 Người chơi chuyên môn"
 "npc_dota_hero_dark_willow_desc""《 Tru tiên quyết 》 Người chơi chuyên môn"
